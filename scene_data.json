@@ -1,0 +1,5019 @@
+[
+  {
+    "arena": {
+      "stage_order": 96,
+      "requires_dlc": false,
+      "credits": 220,
+      "bonus_credits": 0,
+      "base": {
+        "Chests": {
+          "weight": 45.0,
+          "cards": [
+            {
+              "spawn_card_id": -1787181762717442208,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4658197768250411586,
+              "weight": 4,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -259025203479567796,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -142617524173986595,
+              "weight": 8,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Barrels": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -4105316475097180351,
+              "weight": 10,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Rare": {
+          "weight": 0.30000001192092896,
+          "cards": [
+            {
+              "spawn_card_id": 2455490976297329690,
+              "weight": 6,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Duplicator": {
+          "weight": 8.0,
+          "cards": [
+            {
+              "spawn_card_id": -1924278848936078724,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2451371359369345469,
+              "weight": 6,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 6772900317670755121,
+              "weight": 1,
+              "min_stage": 4
+            },
+            {
+              "spawn_card_id": 3648462352079848114,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 7192472982119214389,
+              "weight": 12,
+              "min_stage": 0
+            }
+          ]
+        }
+      },
+      "dlc1": {
+        "Chests": {
+          "weight": 45.0,
+          "cards": [
+            {
+              "spawn_card_id": -1787181762717442208,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4658197768250411586,
+              "weight": 4,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -259025203479567796,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -142617524173986595,
+              "weight": 8,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Barrels": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -4105316475097180351,
+              "weight": 10,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Rare": {
+          "weight": 0.30000001192092896,
+          "cards": [
+            {
+              "spawn_card_id": 2455490976297329690,
+              "weight": 6,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Duplicator": {
+          "weight": 8.0,
+          "cards": [
+            {
+              "spawn_card_id": -1924278848936078724,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2451371359369345469,
+              "weight": 6,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 6772900317670755121,
+              "weight": 1,
+              "min_stage": 4
+            },
+            {
+              "spawn_card_id": 3648462352079848114,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 7192472982119214389,
+              "weight": 12,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Void Chest": {
+          "weight": 2.0,
+          "cards": [
+            {
+              "spawn_card_id": 5494586380173231422,
+              "weight": 1,
+              "min_stage": 0
+            }
+          ]
+        }
+      }
+    },
+    "blackbeach": {
+      "stage_order": 0,
+      "requires_dlc": false,
+      "credits": 220,
+      "bonus_credits": 0,
+      "base": {
+        "Chests": {
+          "weight": 45.0,
+          "cards": [
+            {
+              "spawn_card_id": -1787181762717442208,
+              "weight": 24,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4658197768250411586,
+              "weight": 4,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -259025203479567796,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -142617524173986595,
+              "weight": 8,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -6961249876208590983,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6538025604498464353,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6597889499373180092,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1072599594769966728,
+              "weight": 2,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Barrels": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -4105316475097180351,
+              "weight": 10,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Shrines": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": 921110595425582871,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -786049937202950068,
+              "weight": 3,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2051058626853407253,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4218165528132030544,
+              "weight": 4,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Drones": {
+          "weight": 14.0,
+          "cards": [
+            {
+              "spawn_card_id": -1833288381870162175,
+              "weight": 7,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -5321360606323667184,
+              "weight": 7,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7618021964188324368,
+              "weight": 2,
+              "min_stage": 4
+            }
+          ]
+        },
+        "Misc": {
+          "weight": 7.0,
+          "cards": [
+            {
+              "spawn_card_id": 1120404781927760198,
+              "weight": 7,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Rare": {
+          "weight": 0.4000000059604645,
+          "cards": [
+            {
+              "spawn_card_id": 2455490976297329690,
+              "weight": 6,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 502394262216918230,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7795284347361956579,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": -7520952789603501604,
+              "weight": 2,
+              "min_stage": 3
+            }
+          ]
+        },
+        "Duplicator": {
+          "weight": 8.0,
+          "cards": [
+            {
+              "spawn_card_id": -1924278848936078724,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2451371359369345469,
+              "weight": 6,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 6772900317670755121,
+              "weight": 1,
+              "min_stage": 4
+            },
+            {
+              "spawn_card_id": 3648462352079848114,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 7192472982119214389,
+              "weight": 12,
+              "min_stage": 0
+            }
+          ]
+        }
+      },
+      "dlc1": {
+        "Chests": {
+          "weight": 45.0,
+          "cards": [
+            {
+              "spawn_card_id": -1787181762717442208,
+              "weight": 240,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4658197768250411586,
+              "weight": 37,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -259025203479567796,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -142617524173986595,
+              "weight": 80,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -6961249876208590983,
+              "weight": 10,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6538025604498464353,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6597889499373180092,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1072599594769966728,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -5612224723733788790,
+              "weight": 3,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Barrels": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -4105316475097180351,
+              "weight": 10,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Shrines": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": 921110595425582871,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -786049937202950068,
+              "weight": 3,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2051058626853407253,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4218165528132030544,
+              "weight": 4,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Drones": {
+          "weight": 14.0,
+          "cards": [
+            {
+              "spawn_card_id": -1833288381870162175,
+              "weight": 7,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -5321360606323667184,
+              "weight": 7,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7618021964188324368,
+              "weight": 2,
+              "min_stage": 4
+            }
+          ]
+        },
+        "Misc": {
+          "weight": 7.0,
+          "cards": [
+            {
+              "spawn_card_id": 1120404781927760198,
+              "weight": 7,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Rare": {
+          "weight": 0.4000000059604645,
+          "cards": [
+            {
+              "spawn_card_id": 2455490976297329690,
+              "weight": 6,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 502394262216918230,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7795284347361956579,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": -7520952789603501604,
+              "weight": 2,
+              "min_stage": 3
+            }
+          ]
+        },
+        "Duplicator": {
+          "weight": 8.0,
+          "cards": [
+            {
+              "spawn_card_id": -1924278848936078724,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2451371359369345469,
+              "weight": 6,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 6772900317670755121,
+              "weight": 1,
+              "min_stage": 4
+            },
+            {
+              "spawn_card_id": 3648462352079848114,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 7192472982119214389,
+              "weight": 12,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Void Stuff": {
+          "weight": 3.0,
+          "cards": [
+            {
+              "spawn_card_id": 5494586380173231422,
+              "weight": 15,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -2289983297839774259,
+              "weight": 7,
+              "min_stage": 1
+            }
+          ]
+        }
+      }
+    },
+    "dampcavesimple": {
+      "stage_order": 3,
+      "requires_dlc": false,
+      "credits": 400,
+      "bonus_credits": 160,
+      "base": {
+        "Chests": {
+          "weight": 45.0,
+          "cards": [
+            {
+              "spawn_card_id": -1787181762717442208,
+              "weight": 24,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4658197768250411586,
+              "weight": 4,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -259025203479567796,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -1674118216963768849,
+              "weight": 4,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -6961249876208590983,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6538025604498464353,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6597889499373180092,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1072599594769966728,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -3894179908210951297,
+              "weight": 1,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Barrels": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -4105316475097180351,
+              "weight": 10,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Shrines": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": 2712983300663020643,
+              "weight": 3,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2051058626853407253,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4218165528132030544,
+              "weight": 4,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Drones": {
+          "weight": 14.0,
+          "cards": [
+            {
+              "spawn_card_id": -5200898366706438381,
+              "weight": 7,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -5321360606323667184,
+              "weight": 7,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -2630044531894957723,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -1951723453665813659,
+              "weight": 2,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Misc": {
+          "weight": 7.0,
+          "cards": [
+            {
+              "spawn_card_id": 1120404781927760198,
+              "weight": 7,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Rare": {
+          "weight": 0.4000000059604645,
+          "cards": [
+            {
+              "spawn_card_id": 2455490976297329690,
+              "weight": 6,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 502394262216918230,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7795284347361956579,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": -7520952789603501604,
+              "weight": 2,
+              "min_stage": 3
+            }
+          ]
+        },
+        "Duplicator": {
+          "weight": 8.0,
+          "cards": [
+            {
+              "spawn_card_id": -1924278848936078724,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2451371359369345469,
+              "weight": 6,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 6772900317670755121,
+              "weight": 1,
+              "min_stage": 4
+            },
+            {
+              "spawn_card_id": 3648462352079848114,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 7192472982119214389,
+              "weight": 12,
+              "min_stage": 0
+            }
+          ]
+        }
+      },
+      "dlc1": {
+        "Chests": {
+          "weight": 45.0,
+          "cards": [
+            {
+              "spawn_card_id": -1787181762717442208,
+              "weight": 240,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4658197768250411586,
+              "weight": 37,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -259025203479567796,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -1674118216963768849,
+              "weight": 40,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -6961249876208590983,
+              "weight": 10,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6538025604498464353,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6597889499373180092,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1072599594769966728,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -3894179908210951297,
+              "weight": 10,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1514526096162962272,
+              "weight": 3,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Barrels": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -4105316475097180351,
+              "weight": 10,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Shrines": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": 2712983300663020643,
+              "weight": 3,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2051058626853407253,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4218165528132030544,
+              "weight": 4,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Drones": {
+          "weight": 14.0,
+          "cards": [
+            {
+              "spawn_card_id": -5200898366706438381,
+              "weight": 7,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -5321360606323667184,
+              "weight": 7,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -2630044531894957723,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -1951723453665813659,
+              "weight": 2,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Misc": {
+          "weight": 7.0,
+          "cards": [
+            {
+              "spawn_card_id": 1120404781927760198,
+              "weight": 7,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Rare": {
+          "weight": 0.4000000059604645,
+          "cards": [
+            {
+              "spawn_card_id": 2455490976297329690,
+              "weight": 6,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 502394262216918230,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7795284347361956579,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": -7520952789603501604,
+              "weight": 2,
+              "min_stage": 3
+            }
+          ]
+        },
+        "Duplicator": {
+          "weight": 8.0,
+          "cards": [
+            {
+              "spawn_card_id": -1924278848936078724,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2451371359369345469,
+              "weight": 6,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 6772900317670755121,
+              "weight": 1,
+              "min_stage": 4
+            },
+            {
+              "spawn_card_id": 3648462352079848114,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 7192472982119214389,
+              "weight": 12,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Void Stuff": {
+          "weight": 3.0,
+          "cards": [
+            {
+              "spawn_card_id": 5494586380173231422,
+              "weight": 15,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -2289983297839774259,
+              "weight": 7,
+              "min_stage": 1
+            }
+          ]
+        }
+      }
+    },
+    "foggyswamp": {
+      "stage_order": 1,
+      "requires_dlc": false,
+      "credits": 280,
+      "bonus_credits": 0,
+      "base": {
+        "Chests": {
+          "weight": 45.0,
+          "cards": [
+            {
+              "spawn_card_id": -1787181762717442208,
+              "weight": 24,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4658197768250411586,
+              "weight": 4,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -259025203479567796,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -142617524173986595,
+              "weight": 8,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -6961249876208590983,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -1674118216963768849,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6538025604498464353,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6597889499373180092,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1072599594769966728,
+              "weight": 2,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Barrels": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -4105316475097180351,
+              "weight": 10,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Shrines": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -786049937202950068,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2051058626853407253,
+              "weight": 10,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4218165528132030544,
+              "weight": 40,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4790013224512222604,
+              "weight": 3,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Drones": {
+          "weight": 14.0,
+          "cards": [
+            {
+              "spawn_card_id": -1833288381870162175,
+              "weight": 7,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -5321360606323667184,
+              "weight": 7,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Misc": {
+          "weight": 7.0,
+          "cards": [
+            {
+              "spawn_card_id": 1120404781927760198,
+              "weight": 7,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Rare": {
+          "weight": 0.4000000059604645,
+          "cards": [
+            {
+              "spawn_card_id": 2455490976297329690,
+              "weight": 6,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 502394262216918230,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7795284347361956579,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": -7520952789603501604,
+              "weight": 2,
+              "min_stage": 3
+            }
+          ]
+        },
+        "Duplicator": {
+          "weight": 8.0,
+          "cards": [
+            {
+              "spawn_card_id": -1924278848936078724,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2451371359369345469,
+              "weight": 6,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 6772900317670755121,
+              "weight": 1,
+              "min_stage": 4
+            },
+            {
+              "spawn_card_id": 3648462352079848114,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 7192472982119214389,
+              "weight": 12,
+              "min_stage": 0
+            }
+          ]
+        }
+      },
+      "dlc1": {
+        "Chests": {
+          "weight": 45.0,
+          "cards": [
+            {
+              "spawn_card_id": -1787181762717442208,
+              "weight": 240,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4658197768250411586,
+              "weight": 37,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -259025203479567796,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -142617524173986595,
+              "weight": 80,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -6961249876208590983,
+              "weight": 10,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -1674118216963768849,
+              "weight": 10,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6538025604498464353,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6597889499373180092,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1072599594769966728,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 572107247311387015,
+              "weight": 3,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Barrels": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -4105316475097180351,
+              "weight": 10,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Shrines": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -786049937202950068,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2051058626853407253,
+              "weight": 10,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4218165528132030544,
+              "weight": 40,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4790013224512222604,
+              "weight": 3,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Drones": {
+          "weight": 14.0,
+          "cards": [
+            {
+              "spawn_card_id": -1833288381870162175,
+              "weight": 7,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -5321360606323667184,
+              "weight": 7,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Misc": {
+          "weight": 7.0,
+          "cards": [
+            {
+              "spawn_card_id": 1120404781927760198,
+              "weight": 7,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Rare": {
+          "weight": 0.4000000059604645,
+          "cards": [
+            {
+              "spawn_card_id": 2455490976297329690,
+              "weight": 6,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 502394262216918230,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7795284347361956579,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": -7520952789603501604,
+              "weight": 2,
+              "min_stage": 3
+            }
+          ]
+        },
+        "Duplicator": {
+          "weight": 8.0,
+          "cards": [
+            {
+              "spawn_card_id": -1924278848936078724,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2451371359369345469,
+              "weight": 6,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 6772900317670755121,
+              "weight": 1,
+              "min_stage": 4
+            },
+            {
+              "spawn_card_id": 3648462352079848114,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 7192472982119214389,
+              "weight": 12,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Void Stuff": {
+          "weight": 3.0,
+          "cards": [
+            {
+              "spawn_card_id": 5494586380173231422,
+              "weight": 15,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -2289983297839774259,
+              "weight": 7,
+              "min_stage": 1
+            }
+          ]
+        }
+      }
+    },
+    "frozenwall": {
+      "stage_order": 2,
+      "requires_dlc": false,
+      "credits": 280,
+      "bonus_credits": 0,
+      "base": {
+        "Chests": {
+          "weight": 45.0,
+          "cards": [
+            {
+              "spawn_card_id": -1787181762717442208,
+              "weight": 24,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4658197768250411586,
+              "weight": 4,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -259025203479567796,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -142617524173986595,
+              "weight": 8,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -6961249876208590983,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6538025604498464353,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6597889499373180092,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1072599594769966728,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -3894179908210951297,
+              "weight": 1,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Barrels": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -4105316475097180351,
+              "weight": 10,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Shrines": {
+          "weight": 7.0,
+          "cards": [
+            {
+              "spawn_card_id": 8538074367547150647,
+              "weight": 3,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 7509809844053021050,
+              "weight": 4,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -4141993549085298290,
+              "weight": 1,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": -6688833176595254185,
+              "weight": 2,
+              "min_stage": 1
+            }
+          ]
+        },
+        "Drones": {
+          "weight": 4.5,
+          "cards": [
+            {
+              "spawn_card_id": -6579748372351645992,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -1833288381870162175,
+              "weight": 2,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Rare": {
+          "weight": 0.4000000059604645,
+          "cards": [
+            {
+              "spawn_card_id": 2455490976297329690,
+              "weight": 6,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 502394262216918230,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7795284347361956579,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": -7520952789603501604,
+              "weight": 2,
+              "min_stage": 3
+            }
+          ]
+        },
+        "Duplicator": {
+          "weight": 8.0,
+          "cards": [
+            {
+              "spawn_card_id": -1924278848936078724,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2451371359369345469,
+              "weight": 6,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 6772900317670755121,
+              "weight": 1,
+              "min_stage": 4
+            },
+            {
+              "spawn_card_id": 3648462352079848114,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 7192472982119214389,
+              "weight": 12,
+              "min_stage": 0
+            }
+          ]
+        }
+      },
+      "dlc1": {
+        "Chests": {
+          "weight": 45.0,
+          "cards": [
+            {
+              "spawn_card_id": -1787181762717442208,
+              "weight": 240,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4658197768250411586,
+              "weight": 37,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -259025203479567796,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -142617524173986595,
+              "weight": 80,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -6961249876208590983,
+              "weight": 10,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6538025604498464353,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6597889499373180092,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1072599594769966728,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -3894179908210951297,
+              "weight": 10,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -5612224723733788790,
+              "weight": 3,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Barrels": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -4105316475097180351,
+              "weight": 10,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Shrines": {
+          "weight": 7.0,
+          "cards": [
+            {
+              "spawn_card_id": 8538074367547150647,
+              "weight": 3,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 7509809844053021050,
+              "weight": 4,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -4141993549085298290,
+              "weight": 1,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": -6688833176595254185,
+              "weight": 2,
+              "min_stage": 1
+            }
+          ]
+        },
+        "Drones": {
+          "weight": 4.5,
+          "cards": [
+            {
+              "spawn_card_id": -6579748372351645992,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -1833288381870162175,
+              "weight": 2,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Rare": {
+          "weight": 0.4000000059604645,
+          "cards": [
+            {
+              "spawn_card_id": 2455490976297329690,
+              "weight": 6,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 502394262216918230,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7795284347361956579,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": -7520952789603501604,
+              "weight": 2,
+              "min_stage": 3
+            }
+          ]
+        },
+        "Duplicator": {
+          "weight": 8.0,
+          "cards": [
+            {
+              "spawn_card_id": -1924278848936078724,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2451371359369345469,
+              "weight": 6,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 6772900317670755121,
+              "weight": 1,
+              "min_stage": 4
+            },
+            {
+              "spawn_card_id": 3648462352079848114,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 7192472982119214389,
+              "weight": 12,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Void Stuff": {
+          "weight": 3.0,
+          "cards": [
+            {
+              "spawn_card_id": 5494586380173231422,
+              "weight": 15,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -2289983297839774259,
+              "weight": 7,
+              "min_stage": 1
+            }
+          ]
+        }
+      }
+    },
+    "golemplains": {
+      "stage_order": 0,
+      "requires_dlc": false,
+      "credits": 220,
+      "bonus_credits": 0,
+      "base": {
+        "Chests": {
+          "weight": 45.0,
+          "cards": [
+            {
+              "spawn_card_id": -1787181762717442208,
+              "weight": 24,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4658197768250411586,
+              "weight": 4,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -259025203479567796,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -142617524173986595,
+              "weight": 8,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -6961249876208590983,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6538025604498464353,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6597889499373180092,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1072599594769966728,
+              "weight": 2,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Barrels": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -4105316475097180351,
+              "weight": 10,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Shrines": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": 2712983300663020643,
+              "weight": 3,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2051058626853407253,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4218165528132030544,
+              "weight": 4,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Drones": {
+          "weight": 14.0,
+          "cards": [
+            {
+              "spawn_card_id": -1833288381870162175,
+              "weight": 7,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -5321360606323667184,
+              "weight": 7,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7618021964188324368,
+              "weight": 2,
+              "min_stage": 4
+            }
+          ]
+        },
+        "Misc": {
+          "weight": 7.0,
+          "cards": [
+            {
+              "spawn_card_id": 1120404781927760198,
+              "weight": 7,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Rare": {
+          "weight": 0.4000000059604645,
+          "cards": [
+            {
+              "spawn_card_id": 2455490976297329690,
+              "weight": 6,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 502394262216918230,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7795284347361956579,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": -7520952789603501604,
+              "weight": 2,
+              "min_stage": 3
+            }
+          ]
+        },
+        "Duplicator": {
+          "weight": 8.0,
+          "cards": [
+            {
+              "spawn_card_id": -1924278848936078724,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2451371359369345469,
+              "weight": 6,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 6772900317670755121,
+              "weight": 1,
+              "min_stage": 4
+            },
+            {
+              "spawn_card_id": 3648462352079848114,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 7192472982119214389,
+              "weight": 12,
+              "min_stage": 0
+            }
+          ]
+        }
+      },
+      "dlc1": {
+        "Chests": {
+          "weight": 45.0,
+          "cards": [
+            {
+              "spawn_card_id": -1787181762717442208,
+              "weight": 240,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4658197768250411586,
+              "weight": 37,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -259025203479567796,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -142617524173986595,
+              "weight": 80,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -6961249876208590983,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6538025604498464353,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6597889499373180092,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1072599594769966728,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 572107247311387015,
+              "weight": 3,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Barrels": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -4105316475097180351,
+              "weight": 10,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Shrines": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": 2712983300663020643,
+              "weight": 3,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2051058626853407253,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4218165528132030544,
+              "weight": 4,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Drones": {
+          "weight": 14.0,
+          "cards": [
+            {
+              "spawn_card_id": -1833288381870162175,
+              "weight": 7,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -5321360606323667184,
+              "weight": 7,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7618021964188324368,
+              "weight": 2,
+              "min_stage": 4
+            }
+          ]
+        },
+        "Misc": {
+          "weight": 7.0,
+          "cards": [
+            {
+              "spawn_card_id": 1120404781927760198,
+              "weight": 7,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Rare": {
+          "weight": 0.4000000059604645,
+          "cards": [
+            {
+              "spawn_card_id": 2455490976297329690,
+              "weight": 6,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 502394262216918230,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7795284347361956579,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": -7520952789603501604,
+              "weight": 2,
+              "min_stage": 3
+            }
+          ]
+        },
+        "Duplicator": {
+          "weight": 8.0,
+          "cards": [
+            {
+              "spawn_card_id": -1924278848936078724,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2451371359369345469,
+              "weight": 6,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 6772900317670755121,
+              "weight": 1,
+              "min_stage": 4
+            },
+            {
+              "spawn_card_id": 3648462352079848114,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 7192472982119214389,
+              "weight": 12,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Void Stuff": {
+          "weight": 3.0,
+          "cards": [
+            {
+              "spawn_card_id": 5494586380173231422,
+              "weight": 15,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -2289983297839774259,
+              "weight": 7,
+              "min_stage": 1
+            }
+          ]
+        }
+      }
+    },
+    "goolake": {
+      "stage_order": 1,
+      "requires_dlc": false,
+      "credits": 220,
+      "bonus_credits": 0,
+      "base": {
+        "Chests": {
+          "weight": 45.0,
+          "cards": [
+            {
+              "spawn_card_id": -1787181762717442208,
+              "weight": 24,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4658197768250411586,
+              "weight": 4,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -259025203479567796,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -142617524173986595,
+              "weight": 8,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -6961249876208590983,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -1674118216963768849,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6538025604498464353,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6597889499373180092,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1072599594769966728,
+              "weight": 2,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Barrels": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -4105316475097180351,
+              "weight": 10,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Shrines": {
+          "weight": 8.0,
+          "cards": [
+            {
+              "spawn_card_id": -3712590189206574212,
+              "weight": 3,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -6115579601300082432,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -293038580010385263,
+              "weight": 4,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 671097985432861733,
+              "weight": 2,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Drones": {
+          "weight": 3.0,
+          "cards": [
+            {
+              "spawn_card_id": -5200898366706438381,
+              "weight": 3,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Rare": {
+          "weight": 0.4000000059604645,
+          "cards": [
+            {
+              "spawn_card_id": 2455490976297329690,
+              "weight": 6,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 502394262216918230,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7795284347361956579,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": -7520952789603501604,
+              "weight": 2,
+              "min_stage": 3
+            }
+          ]
+        },
+        "Duplicator": {
+          "weight": 8.0,
+          "cards": [
+            {
+              "spawn_card_id": -1924278848936078724,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2451371359369345469,
+              "weight": 6,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 6772900317670755121,
+              "weight": 1,
+              "min_stage": 4
+            },
+            {
+              "spawn_card_id": 3648462352079848114,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 7192472982119214389,
+              "weight": 12,
+              "min_stage": 0
+            }
+          ]
+        }
+      },
+      "dlc1": {
+        "Chests": {
+          "weight": 45.0,
+          "cards": [
+            {
+              "spawn_card_id": -1787181762717442208,
+              "weight": 240,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4658197768250411586,
+              "weight": 37,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -259025203479567796,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -142617524173986595,
+              "weight": 80,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -6961249876208590983,
+              "weight": 10,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -1674118216963768849,
+              "weight": 10,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6538025604498464353,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6597889499373180092,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1072599594769966728,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1514526096162962272,
+              "weight": 3,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Barrels": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -4105316475097180351,
+              "weight": 10,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Shrines": {
+          "weight": 8.0,
+          "cards": [
+            {
+              "spawn_card_id": -3712590189206574212,
+              "weight": 3,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -6115579601300082432,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -293038580010385263,
+              "weight": 4,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 671097985432861733,
+              "weight": 2,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Drones": {
+          "weight": 3.0,
+          "cards": [
+            {
+              "spawn_card_id": -5200898366706438381,
+              "weight": 3,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Rare": {
+          "weight": 0.4000000059604645,
+          "cards": [
+            {
+              "spawn_card_id": 2455490976297329690,
+              "weight": 6,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 502394262216918230,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7795284347361956579,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": -7520952789603501604,
+              "weight": 2,
+              "min_stage": 3
+            }
+          ]
+        },
+        "Duplicator": {
+          "weight": 8.0,
+          "cards": [
+            {
+              "spawn_card_id": -1924278848936078724,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2451371359369345469,
+              "weight": 6,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 6772900317670755121,
+              "weight": 1,
+              "min_stage": 4
+            },
+            {
+              "spawn_card_id": 3648462352079848114,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 7192472982119214389,
+              "weight": 12,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Void Stuff": {
+          "weight": 3.0,
+          "cards": [
+            {
+              "spawn_card_id": 5494586380173231422,
+              "weight": 15,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -2289983297839774259,
+              "weight": 7,
+              "min_stage": 1
+            }
+          ]
+        }
+      }
+    },
+    "moon2": {
+      "stage_order": 5,
+      "requires_dlc": false,
+      "credits": 0,
+      "bonus_credits": 0,
+      "base": {
+        "Chests": {
+          "weight": 45.0,
+          "cards": [
+            {
+              "spawn_card_id": -1787181762717442208,
+              "weight": 24,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4658197768250411586,
+              "weight": 4,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -259025203479567796,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -1674118216963768849,
+              "weight": 4,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -6961249876208590983,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6538025604498464353,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6597889499373180092,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1072599594769966728,
+              "weight": 2,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Barrels": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -4105316475097180351,
+              "weight": 10,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Shrines": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -786049937202950068,
+              "weight": 3,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2051058626853407253,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 921110595425582871,
+              "weight": 2,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Drones": {
+          "weight": 14.0,
+          "cards": [
+            {
+              "spawn_card_id": -5200898366706438381,
+              "weight": 7,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -5321360606323667184,
+              "weight": 7,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -2630044531894957723,
+              "weight": 2,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Misc": {
+          "weight": 7.0,
+          "cards": [
+            {
+              "spawn_card_id": 1120404781927760198,
+              "weight": 7,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Rare": {
+          "weight": 0.4000000059604645,
+          "cards": [
+            {
+              "spawn_card_id": 2455490976297329690,
+              "weight": 6,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 502394262216918230,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7795284347361956579,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": -7520952789603501604,
+              "weight": 2,
+              "min_stage": 3
+            }
+          ]
+        },
+        "Duplicator": {
+          "weight": 8.0,
+          "cards": [
+            {
+              "spawn_card_id": -1924278848936078724,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2451371359369345469,
+              "weight": 6,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 6772900317670755121,
+              "weight": 1,
+              "min_stage": 4
+            },
+            {
+              "spawn_card_id": 7192472982119214389,
+              "weight": 12,
+              "min_stage": 0
+            }
+          ]
+        }
+      },
+      "dlc1": {
+        "Chests": {
+          "weight": 45.0,
+          "cards": [
+            {
+              "spawn_card_id": -1787181762717442208,
+              "weight": 24,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4658197768250411586,
+              "weight": 4,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -259025203479567796,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -1674118216963768849,
+              "weight": 4,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -6961249876208590983,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6538025604498464353,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6597889499373180092,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1072599594769966728,
+              "weight": 2,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Barrels": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -4105316475097180351,
+              "weight": 10,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Shrines": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -786049937202950068,
+              "weight": 3,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2051058626853407253,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 921110595425582871,
+              "weight": 2,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Drones": {
+          "weight": 14.0,
+          "cards": [
+            {
+              "spawn_card_id": -5200898366706438381,
+              "weight": 7,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -5321360606323667184,
+              "weight": 7,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -2630044531894957723,
+              "weight": 2,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Misc": {
+          "weight": 7.0,
+          "cards": [
+            {
+              "spawn_card_id": 1120404781927760198,
+              "weight": 7,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Rare": {
+          "weight": 0.4000000059604645,
+          "cards": [
+            {
+              "spawn_card_id": 2455490976297329690,
+              "weight": 6,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 502394262216918230,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7795284347361956579,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": -7520952789603501604,
+              "weight": 2,
+              "min_stage": 3
+            }
+          ]
+        },
+        "Duplicator": {
+          "weight": 8.0,
+          "cards": [
+            {
+              "spawn_card_id": -1924278848936078724,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2451371359369345469,
+              "weight": 6,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 6772900317670755121,
+              "weight": 1,
+              "min_stage": 4
+            },
+            {
+              "spawn_card_id": 7192472982119214389,
+              "weight": 12,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Void Stuff": {
+          "weight": 3.0,
+          "cards": [
+            {
+              "spawn_card_id": 5494586380173231422,
+              "weight": 15,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -2289983297839774259,
+              "weight": 7,
+              "min_stage": 1
+            }
+          ]
+        },
+        "Void Coin Barrel": {
+          "weight": 2.0,
+          "cards": [
+            {
+              "spawn_card_id": -1988190408239904200,
+              "weight": 1,
+              "min_stage": 0
+            }
+          ]
+        }
+      }
+    },
+    "rootjungle": {
+      "stage_order": 3,
+      "requires_dlc": false,
+      "credits": 400,
+      "bonus_credits": 0,
+      "base": {
+        "Chests": {
+          "weight": 45.0,
+          "cards": [
+            {
+              "spawn_card_id": -1787181762717442208,
+              "weight": 24,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4658197768250411586,
+              "weight": 4,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -259025203479567796,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -1674118216963768849,
+              "weight": 4,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -6961249876208590983,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6538025604498464353,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6597889499373180092,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1072599594769966728,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -3894179908210951297,
+              "weight": 1,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Barrels": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -4105316475097180351,
+              "weight": 10,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Shrines": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": 2712983300663020643,
+              "weight": 3,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2051058626853407253,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4218165528132030544,
+              "weight": 4,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Drones": {
+          "weight": 14.0,
+          "cards": [
+            {
+              "spawn_card_id": -5200898366706438381,
+              "weight": 7,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -5321360606323667184,
+              "weight": 7,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -2630044531894957723,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -1951723453665813659,
+              "weight": 2,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Misc": {
+          "weight": 7.0,
+          "cards": [
+            {
+              "spawn_card_id": 1120404781927760198,
+              "weight": 7,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Rare": {
+          "weight": 0.4000000059604645,
+          "cards": [
+            {
+              "spawn_card_id": 2455490976297329690,
+              "weight": 6,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 502394262216918230,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7795284347361956579,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": -7520952789603501604,
+              "weight": 2,
+              "min_stage": 3
+            }
+          ]
+        },
+        "Duplicator": {
+          "weight": 8.0,
+          "cards": [
+            {
+              "spawn_card_id": -1924278848936078724,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2451371359369345469,
+              "weight": 6,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 6772900317670755121,
+              "weight": 1,
+              "min_stage": 4
+            },
+            {
+              "spawn_card_id": 3648462352079848114,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 7192472982119214389,
+              "weight": 12,
+              "min_stage": 0
+            }
+          ]
+        }
+      },
+      "dlc1": {
+        "Chests": {
+          "weight": 45.0,
+          "cards": [
+            {
+              "spawn_card_id": -1787181762717442208,
+              "weight": 240,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4658197768250411586,
+              "weight": 37,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -259025203479567796,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -1674118216963768849,
+              "weight": 40,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -6961249876208590983,
+              "weight": 10,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6538025604498464353,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6597889499373180092,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1072599594769966728,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -3894179908210951297,
+              "weight": 10,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -5612224723733788790,
+              "weight": 3,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Barrels": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -4105316475097180351,
+              "weight": 10,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Shrines": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": 2712983300663020643,
+              "weight": 3,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2051058626853407253,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4218165528132030544,
+              "weight": 4,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Drones": {
+          "weight": 14.0,
+          "cards": [
+            {
+              "spawn_card_id": -5200898366706438381,
+              "weight": 7,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -5321360606323667184,
+              "weight": 7,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -2630044531894957723,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -1951723453665813659,
+              "weight": 2,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Misc": {
+          "weight": 7.0,
+          "cards": [
+            {
+              "spawn_card_id": 1120404781927760198,
+              "weight": 7,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Rare": {
+          "weight": 0.4000000059604645,
+          "cards": [
+            {
+              "spawn_card_id": 2455490976297329690,
+              "weight": 6,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 502394262216918230,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7795284347361956579,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": -7520952789603501604,
+              "weight": 2,
+              "min_stage": 3
+            }
+          ]
+        },
+        "Duplicator": {
+          "weight": 8.0,
+          "cards": [
+            {
+              "spawn_card_id": -1924278848936078724,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2451371359369345469,
+              "weight": 6,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 6772900317670755121,
+              "weight": 1,
+              "min_stage": 4
+            },
+            {
+              "spawn_card_id": 3648462352079848114,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 7192472982119214389,
+              "weight": 12,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Void Stuff": {
+          "weight": 3.0,
+          "cards": [
+            {
+              "spawn_card_id": 5494586380173231422,
+              "weight": 15,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -2289983297839774259,
+              "weight": 7,
+              "min_stage": 1
+            }
+          ]
+        }
+      }
+    },
+    "shipgraveyard": {
+      "stage_order": 3,
+      "requires_dlc": false,
+      "credits": 400,
+      "bonus_credits": 0,
+      "base": {
+        "Chests": {
+          "weight": 45.0,
+          "cards": [
+            {
+              "spawn_card_id": -1787181762717442208,
+              "weight": 24,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4658197768250411586,
+              "weight": 4,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -259025203479567796,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -1674118216963768849,
+              "weight": 4,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -6961249876208590983,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6538025604498464353,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6597889499373180092,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1072599594769966728,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -3894179908210951297,
+              "weight": 1,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Barrels": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -4105316475097180351,
+              "weight": 10,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Shrines": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -786049937202950068,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2051058626853407253,
+              "weight": 10,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 921110595425582871,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4790013224512222604,
+              "weight": 3,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Drones": {
+          "weight": 11.0,
+          "cards": [
+            {
+              "spawn_card_id": -5200898366706438381,
+              "weight": 7,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7618021964188324368,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -2630044531894957723,
+              "weight": 2,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Misc": {
+          "weight": 7.0,
+          "cards": [
+            {
+              "spawn_card_id": 1120404781927760198,
+              "weight": 7,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Rare": {
+          "weight": 0.4000000059604645,
+          "cards": [
+            {
+              "spawn_card_id": 2455490976297329690,
+              "weight": 6,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 502394262216918230,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7795284347361956579,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": -7520952789603501604,
+              "weight": 2,
+              "min_stage": 3
+            }
+          ]
+        },
+        "Duplicator": {
+          "weight": 8.0,
+          "cards": [
+            {
+              "spawn_card_id": -1924278848936078724,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2451371359369345469,
+              "weight": 6,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 6772900317670755121,
+              "weight": 1,
+              "min_stage": 4
+            },
+            {
+              "spawn_card_id": 3648462352079848114,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 7192472982119214389,
+              "weight": 12,
+              "min_stage": 0
+            }
+          ]
+        }
+      },
+      "dlc1": {
+        "Chests": {
+          "weight": 45.0,
+          "cards": [
+            {
+              "spawn_card_id": -1787181762717442208,
+              "weight": 240,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4658197768250411586,
+              "weight": 37,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -259025203479567796,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -1674118216963768849,
+              "weight": 40,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -6961249876208590983,
+              "weight": 10,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6538025604498464353,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6597889499373180092,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1072599594769966728,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -3894179908210951297,
+              "weight": 10,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 572107247311387015,
+              "weight": 3,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Barrels": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -4105316475097180351,
+              "weight": 10,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Shrines": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -786049937202950068,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2051058626853407253,
+              "weight": 10,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 921110595425582871,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4790013224512222604,
+              "weight": 3,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Drones": {
+          "weight": 11.0,
+          "cards": [
+            {
+              "spawn_card_id": -5200898366706438381,
+              "weight": 7,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7618021964188324368,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -2630044531894957723,
+              "weight": 2,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Misc": {
+          "weight": 7.0,
+          "cards": [
+            {
+              "spawn_card_id": 1120404781927760198,
+              "weight": 7,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Rare": {
+          "weight": 0.4000000059604645,
+          "cards": [
+            {
+              "spawn_card_id": 2455490976297329690,
+              "weight": 6,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 502394262216918230,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7795284347361956579,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": -7520952789603501604,
+              "weight": 2,
+              "min_stage": 3
+            }
+          ]
+        },
+        "Duplicator": {
+          "weight": 8.0,
+          "cards": [
+            {
+              "spawn_card_id": -1924278848936078724,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2451371359369345469,
+              "weight": 6,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 6772900317670755121,
+              "weight": 1,
+              "min_stage": 4
+            },
+            {
+              "spawn_card_id": 3648462352079848114,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 7192472982119214389,
+              "weight": 12,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Void Stuff": {
+          "weight": 3.0,
+          "cards": [
+            {
+              "spawn_card_id": 5494586380173231422,
+              "weight": 15,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -2289983297839774259,
+              "weight": 7,
+              "min_stage": 1
+            }
+          ]
+        }
+      }
+    },
+    "skymeadow": {
+      "stage_order": 4,
+      "requires_dlc": false,
+      "credits": 520,
+      "bonus_credits": 0,
+      "base": {
+        "Chests": {
+          "weight": 45.0,
+          "cards": [
+            {
+              "spawn_card_id": -1787181762717442208,
+              "weight": 24,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4658197768250411586,
+              "weight": 4,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -259025203479567796,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -1674118216963768849,
+              "weight": 4,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -6961249876208590983,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6538025604498464353,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6597889499373180092,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1072599594769966728,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2834211342608719221,
+              "weight": 2,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Barrels": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -4105316475097180351,
+              "weight": 10,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Shrines": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": 2712983300663020643,
+              "weight": 3,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2051058626853407253,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4218165528132030544,
+              "weight": 4,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Drones": {
+          "weight": 14.0,
+          "cards": [
+            {
+              "spawn_card_id": -5200898366706438381,
+              "weight": 7,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -5321360606323667184,
+              "weight": 7,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -2630044531894957723,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -1951723453665813659,
+              "weight": 2,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Misc": {
+          "weight": 7.0,
+          "cards": [
+            {
+              "spawn_card_id": 1120404781927760198,
+              "weight": 7,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Rare": {
+          "weight": 0.4000000059604645,
+          "cards": [
+            {
+              "spawn_card_id": 2455490976297329690,
+              "weight": 6,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 502394262216918230,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7795284347361956579,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": -7520952789603501604,
+              "weight": 2,
+              "min_stage": 3
+            }
+          ]
+        },
+        "Duplicator": {
+          "weight": 8.0,
+          "cards": [
+            {
+              "spawn_card_id": -1924278848936078724,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2451371359369345469,
+              "weight": 6,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 6772900317670755121,
+              "weight": 1,
+              "min_stage": 4
+            },
+            {
+              "spawn_card_id": 7192472982119214389,
+              "weight": 12,
+              "min_stage": 0
+            }
+          ]
+        }
+      },
+      "dlc1": {
+        "Chests": {
+          "weight": 45.0,
+          "cards": [
+            {
+              "spawn_card_id": -1787181762717442208,
+              "weight": 240,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4658197768250411586,
+              "weight": 31,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -259025203479567796,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -1674118216963768849,
+              "weight": 40,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -6961249876208590983,
+              "weight": 10,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6538025604498464353,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6597889499373180092,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1072599594769966728,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2834211342608719221,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 572107247311387015,
+              "weight": 3,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -5612224723733788790,
+              "weight": 3,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1514526096162962272,
+              "weight": 3,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Barrels": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -4105316475097180351,
+              "weight": 10,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Shrines": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": 2712983300663020643,
+              "weight": 3,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2051058626853407253,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4218165528132030544,
+              "weight": 4,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Drones": {
+          "weight": 14.0,
+          "cards": [
+            {
+              "spawn_card_id": -5200898366706438381,
+              "weight": 7,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -5321360606323667184,
+              "weight": 7,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -2630044531894957723,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -1951723453665813659,
+              "weight": 2,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Misc": {
+          "weight": 7.0,
+          "cards": [
+            {
+              "spawn_card_id": 1120404781927760198,
+              "weight": 7,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Rare": {
+          "weight": 0.4000000059604645,
+          "cards": [
+            {
+              "spawn_card_id": 2455490976297329690,
+              "weight": 6,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 502394262216918230,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7795284347361956579,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": -7520952789603501604,
+              "weight": 2,
+              "min_stage": 3
+            }
+          ]
+        },
+        "Duplicator": {
+          "weight": 8.0,
+          "cards": [
+            {
+              "spawn_card_id": -1924278848936078724,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2451371359369345469,
+              "weight": 6,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 6772900317670755121,
+              "weight": 1,
+              "min_stage": 4
+            },
+            {
+              "spawn_card_id": 7192472982119214389,
+              "weight": 12,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Void Stuff": {
+          "weight": 3.0,
+          "cards": [
+            {
+              "spawn_card_id": 5494586380173231422,
+              "weight": 15,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -2289983297839774259,
+              "weight": 7,
+              "min_stage": 1
+            }
+          ]
+        }
+      }
+    },
+    "wispgraveyard": {
+      "stage_order": 2,
+      "requires_dlc": false,
+      "credits": 280,
+      "bonus_credits": 0,
+      "base": {
+        "Chests": {
+          "weight": 45.0,
+          "cards": [
+            {
+              "spawn_card_id": -1787181762717442208,
+              "weight": 24,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4658197768250411586,
+              "weight": 4,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -259025203479567796,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -142617524173986595,
+              "weight": 8,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -6961249876208590983,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6538025604498464353,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6597889499373180092,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1072599594769966728,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -3894179908210951297,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2834211342608719221,
+              "weight": 2,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Barrels": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -4105316475097180351,
+              "weight": 10,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Shrines": {
+          "weight": 7.0,
+          "cards": [
+            {
+              "spawn_card_id": -786049937202950068,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4218165528132030544,
+              "weight": 40,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 921110595425582871,
+              "weight": 10,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4790013224512222604,
+              "weight": 3,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Drones": {
+          "weight": 3.0,
+          "cards": [
+            {
+              "spawn_card_id": -1951723453665813659,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -2630044531894957723,
+              "weight": 2,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Rare": {
+          "weight": 0.4000000059604645,
+          "cards": [
+            {
+              "spawn_card_id": 2455490976297329690,
+              "weight": 6,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 502394262216918230,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7795284347361956579,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": -7520952789603501604,
+              "weight": 2,
+              "min_stage": 3
+            }
+          ]
+        },
+        "Duplicator": {
+          "weight": 8.0,
+          "cards": [
+            {
+              "spawn_card_id": -1924278848936078724,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2451371359369345469,
+              "weight": 6,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 6772900317670755121,
+              "weight": 1,
+              "min_stage": 4
+            },
+            {
+              "spawn_card_id": 3648462352079848114,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 7192472982119214389,
+              "weight": 12,
+              "min_stage": 0
+            }
+          ]
+        }
+      },
+      "dlc1": {
+        "Chests": {
+          "weight": 45.0,
+          "cards": [
+            {
+              "spawn_card_id": -1787181762717442208,
+              "weight": 240,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4658197768250411586,
+              "weight": 37,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -142617524173986595,
+              "weight": 80,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -6961249876208590983,
+              "weight": 10,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6538025604498464353,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6597889499373180092,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1072599594769966728,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -3894179908210951297,
+              "weight": 10,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2834211342608719221,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1514526096162962272,
+              "weight": 3,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Barrels": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -4105316475097180351,
+              "weight": 10,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Shrines": {
+          "weight": 7.0,
+          "cards": [
+            {
+              "spawn_card_id": -786049937202950068,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4218165528132030544,
+              "weight": 40,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 921110595425582871,
+              "weight": 10,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4790013224512222604,
+              "weight": 3,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Drones": {
+          "weight": 3.0,
+          "cards": [
+            {
+              "spawn_card_id": -1951723453665813659,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -2630044531894957723,
+              "weight": 2,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Rare": {
+          "weight": 0.4000000059604645,
+          "cards": [
+            {
+              "spawn_card_id": 2455490976297329690,
+              "weight": 6,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 502394262216918230,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7795284347361956579,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": -7520952789603501604,
+              "weight": 2,
+              "min_stage": 3
+            }
+          ]
+        },
+        "Duplicator": {
+          "weight": 8.0,
+          "cards": [
+            {
+              "spawn_card_id": -1924278848936078724,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2451371359369345469,
+              "weight": 6,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 6772900317670755121,
+              "weight": 1,
+              "min_stage": 4
+            },
+            {
+              "spawn_card_id": 3648462352079848114,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 7192472982119214389,
+              "weight": 12,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Void Stuff": {
+          "weight": 3.0,
+          "cards": [
+            {
+              "spawn_card_id": 5494586380173231422,
+              "weight": 15,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -2289983297839774259,
+              "weight": 7,
+              "min_stage": 1
+            }
+          ]
+        }
+      }
+    },
+    "ancientloft": {
+      "stage_order": 1,
+      "requires_dlc": true,
+      "credits": 280,
+      "bonus_credits": 0,
+      "base": {},
+      "dlc1": {
+        "Chests": {
+          "weight": 45.0,
+          "cards": [
+            {
+              "spawn_card_id": -1787181762717442208,
+              "weight": 240,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4658197768250411586,
+              "weight": 37,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -259025203479567796,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -142617524173986595,
+              "weight": 80,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -6961249876208590983,
+              "weight": 10,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6538025604498464353,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6597889499373180092,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1072599594769966728,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -3894179908210951297,
+              "weight": 10,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -5612224723733788790,
+              "weight": 3,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Barrels": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -4105316475097180351,
+              "weight": 10,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Shrines": {
+          "weight": 7.0,
+          "cards": [
+            {
+              "spawn_card_id": 4218165528132030544,
+              "weight": 40,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 921110595425582871,
+              "weight": 10,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4790013224512222604,
+              "weight": 15,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Drones": {
+          "weight": 3.0,
+          "cards": [
+            {
+              "spawn_card_id": -1951723453665813659,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -2630044531894957723,
+              "weight": 2,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Rare": {
+          "weight": 0.4000000059604645,
+          "cards": [
+            {
+              "spawn_card_id": 2455490976297329690,
+              "weight": 6,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 502394262216918230,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7795284347361956579,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": -7520952789603501604,
+              "weight": 2,
+              "min_stage": 3
+            }
+          ]
+        },
+        "Duplicator": {
+          "weight": 8.0,
+          "cards": [
+            {
+              "spawn_card_id": -1924278848936078724,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2451371359369345469,
+              "weight": 6,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 6772900317670755121,
+              "weight": 1,
+              "min_stage": 4
+            },
+            {
+              "spawn_card_id": 3648462352079848114,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 7192472982119214389,
+              "weight": 12,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Void Stuff": {
+          "weight": 3.0,
+          "cards": [
+            {
+              "spawn_card_id": 5494586380173231422,
+              "weight": 15,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -2289983297839774259,
+              "weight": 7,
+              "min_stage": 1
+            }
+          ]
+        }
+      }
+    },
+    "snowyforest": {
+      "stage_order": 0,
+      "requires_dlc": true,
+      "credits": 300,
+      "bonus_credits": 0,
+      "base": {},
+      "dlc1": {
+        "Chests": {
+          "weight": 45.0,
+          "cards": [
+            {
+              "spawn_card_id": -1787181762717442208,
+              "weight": 240,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4658197768250411586,
+              "weight": 37,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -259025203479567796,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -142617524173986595,
+              "weight": 80,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -6961249876208590983,
+              "weight": 10,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6538025604498464353,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6597889499373180092,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1072599594769966728,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1514526096162962272,
+              "weight": 3,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Barrels": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -4105316475097180351,
+              "weight": 10,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Shrines": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": 8538074367547150647,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 7538294449954057380,
+              "weight": 10,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 7509809844053021050,
+              "weight": 40,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Drones": {
+          "weight": 14.0,
+          "cards": [
+            {
+              "spawn_card_id": -1833288381870162175,
+              "weight": 7,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -5321360606323667184,
+              "weight": 7,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Misc": {
+          "weight": 7.0,
+          "cards": [
+            {
+              "spawn_card_id": 1120404781927760198,
+              "weight": 7,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Rare": {
+          "weight": 0.4000000059604645,
+          "cards": [
+            {
+              "spawn_card_id": 2455490976297329690,
+              "weight": 6,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 502394262216918230,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7795284347361956579,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": -7520952789603501604,
+              "weight": 2,
+              "min_stage": 3
+            }
+          ]
+        },
+        "Duplicator": {
+          "weight": 8.0,
+          "cards": [
+            {
+              "spawn_card_id": -1924278848936078724,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2451371359369345469,
+              "weight": 6,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 6772900317670755121,
+              "weight": 1,
+              "min_stage": 4
+            },
+            {
+              "spawn_card_id": 3648462352079848114,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 7192472982119214389,
+              "weight": 12,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Void Stuff": {
+          "weight": 3.0,
+          "cards": [
+            {
+              "spawn_card_id": 5494586380173231422,
+              "weight": 15,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -2289983297839774259,
+              "weight": 7,
+              "min_stage": 1
+            }
+          ]
+        }
+      }
+    },
+    "sulfurpools": {
+      "stage_order": 2,
+      "requires_dlc": true,
+      "credits": 280,
+      "bonus_credits": 0,
+      "base": {},
+      "dlc1": {
+        "Chests": {
+          "weight": 45.0,
+          "cards": [
+            {
+              "spawn_card_id": -1787181762717442208,
+              "weight": 240,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4658197768250411586,
+              "weight": 37,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -259025203479567796,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -142617524173986595,
+              "weight": 80,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -6961249876208590983,
+              "weight": 10,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6538025604498464353,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 6597889499373180092,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 1072599594769966728,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2834211342608719221,
+              "weight": 20,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 572107247311387015,
+              "weight": 3,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Barrels": {
+          "weight": 10.0,
+          "cards": [
+            {
+              "spawn_card_id": -4105316475097180351,
+              "weight": 10,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Shrines": {
+          "weight": 7.0,
+          "cards": [
+            {
+              "spawn_card_id": -786049937202950068,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4218165528132030544,
+              "weight": 40,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 921110595425582871,
+              "weight": 10,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 4790013224512222604,
+              "weight": 3,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Drones": {
+          "weight": 3.0,
+          "cards": [
+            {
+              "spawn_card_id": -1951723453665813659,
+              "weight": 1,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -2630044531894957723,
+              "weight": 2,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Rare": {
+          "weight": 0.4000000059604645,
+          "cards": [
+            {
+              "spawn_card_id": 2455490976297329690,
+              "weight": 6,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 502394262216918230,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7795284347361956579,
+              "weight": 2,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": -7520952789603501604,
+              "weight": 2,
+              "min_stage": 3
+            }
+          ]
+        },
+        "Duplicator": {
+          "weight": 8.0,
+          "cards": [
+            {
+              "spawn_card_id": -1924278848936078724,
+              "weight": 30,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 2451371359369345469,
+              "weight": 6,
+              "min_stage": 1
+            },
+            {
+              "spawn_card_id": 6772900317670755121,
+              "weight": 1,
+              "min_stage": 4
+            },
+            {
+              "spawn_card_id": 3648462352079848114,
+              "weight": 2,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": 7192472982119214389,
+              "weight": 12,
+              "min_stage": 0
+            }
+          ]
+        },
+        "Void Stuff": {
+          "weight": 3.0,
+          "cards": [
+            {
+              "spawn_card_id": 5494586380173231422,
+              "weight": 15,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -2289983297839774259,
+              "weight": 7,
+              "min_stage": 1
+            }
+          ]
+        }
+      }
+    },
+    "voidstage": {
+      "stage_order": 98,
+      "requires_dlc": true,
+      "credits": 220,
+      "bonus_credits": 0,
+      "base": {},
+      "dlc1": {
+        "VoidStuff": {
+          "weight": 45.0,
+          "cards": [
+            {
+              "spawn_card_id": 5494586380173231422,
+              "weight": 24,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -7370910874672192691,
+              "weight": 24,
+              "min_stage": 0
+            },
+            {
+              "spawn_card_id": -1988190408239904200,
+              "weight": 24,
+              "min_stage": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "-1787181762717442208": {
+      "name": "iscChest1",
+      "cost": 15,
+      "sacrifice_skip": true,
+      "sacrifice_weight": 0.0,
+      "limit": -1
+    },
+    "4658197768250411586": {
+      "name": "iscChest2",
+      "cost": 30,
+      "sacrifice_skip": true,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "-259025203479567796": {
+      "name": "iscEquipmentBarrel",
+      "cost": 1,
+      "sacrifice_skip": true,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "-142617524173986595": {
+      "name": "iscTripleShop",
+      "cost": 20,
+      "sacrifice_skip": true,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "-4105316475097180351": {
+      "name": "iscBarrel1",
+      "cost": 1,
+      "sacrifice_skip": false,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "2455490976297329690": {
+      "name": "iscChest1Stealthed",
+      "cost": 10,
+      "sacrifice_skip": true,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "-1924278848936078724": {
+      "name": "iscDuplicator",
+      "cost": 5,
+      "sacrifice_skip": false,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "2451371359369345469": {
+      "name": "iscDuplicatorLarge",
+      "cost": 10,
+      "sacrifice_skip": false,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "6772900317670755121": {
+      "name": "iscDuplicatorMilitary",
+      "cost": 15,
+      "sacrifice_skip": false,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "3648462352079848114": {
+      "name": "iscDuplicatorWild",
+      "cost": 10,
+      "sacrifice_skip": false,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "7192472982119214389": {
+      "name": "iscScrapper",
+      "cost": 5,
+      "sacrifice_skip": false,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "5494586380173231422": {
+      "name": "iscVoidChest",
+      "cost": 25,
+      "sacrifice_skip": true,
+      "sacrifice_weight": 0.0,
+      "limit": -1
+    },
+    "-6961249876208590983": {
+      "name": "iscLunarChest",
+      "cost": 25,
+      "sacrifice_skip": true,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "6538025604498464353": {
+      "name": "iscCategoryChestDamage",
+      "cost": 15,
+      "sacrifice_skip": true,
+      "sacrifice_weight": 0.0,
+      "limit": -1
+    },
+    "6597889499373180092": {
+      "name": "iscCategoryChestHealing",
+      "cost": 15,
+      "sacrifice_skip": true,
+      "sacrifice_weight": 0.0,
+      "limit": -1
+    },
+    "1072599594769966728": {
+      "name": "iscCategoryChestUtility",
+      "cost": 15,
+      "sacrifice_skip": true,
+      "sacrifice_weight": 0.0,
+      "limit": -1
+    },
+    "921110595425582871": {
+      "name": "iscShrineHealing",
+      "cost": 15,
+      "sacrifice_skip": false,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "-786049937202950068": {
+      "name": "iscShrineBlood",
+      "cost": 20,
+      "sacrifice_skip": false,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "2051058626853407253": {
+      "name": "iscShrineBoss",
+      "cost": 20,
+      "sacrifice_skip": false,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "4218165528132030544": {
+      "name": "iscShrineChance",
+      "cost": 20,
+      "sacrifice_skip": true,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "-1833288381870162175": {
+      "name": "iscBrokenDrone1",
+      "cost": 15,
+      "sacrifice_skip": false,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "-5321360606323667184": {
+      "name": "iscBrokenDrone2",
+      "cost": 15,
+      "sacrifice_skip": false,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "-7618021964188324368": {
+      "name": "iscBrokenEmergencyDrone",
+      "cost": 30,
+      "sacrifice_skip": false,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "1120404781927760198": {
+      "name": "iscBrokenTurret1",
+      "cost": 10,
+      "sacrifice_skip": false,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "502394262216918230": {
+      "name": "iscRadarTower",
+      "cost": 1,
+      "sacrifice_skip": false,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "-7795284347361956579": {
+      "name": "iscShrineGoldshoresAccess",
+      "cost": 1,
+      "sacrifice_skip": false,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "-7520952789603501604": {
+      "name": "iscGoldChest",
+      "cost": 50,
+      "sacrifice_skip": true,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "-5612224723733788790": {
+      "name": "iscCategoryChest2Utility",
+      "cost": 30,
+      "sacrifice_skip": true,
+      "sacrifice_weight": 0.0,
+      "limit": -1
+    },
+    "-2289983297839774259": {
+      "name": "iscVoidCamp",
+      "cost": 50,
+      "sacrifice_skip": false,
+      "sacrifice_weight": 0.5,
+      "limit": 3
+    },
+    "-1674118216963768849": {
+      "name": "iscTripleShopLarge",
+      "cost": 40,
+      "sacrifice_skip": true,
+      "sacrifice_weight": 0.0,
+      "limit": -1
+    },
+    "-3894179908210951297": {
+      "name": "iscCasinoChest",
+      "cost": 20,
+      "sacrifice_skip": true,
+      "sacrifice_weight": 0.0,
+      "limit": -1
+    },
+    "2712983300663020643": {
+      "name": "iscShrineCombat",
+      "cost": 20,
+      "sacrifice_skip": false,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "-5200898366706438381": {
+      "name": "iscBrokenMissileDrone",
+      "cost": 20,
+      "sacrifice_skip": false,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "-2630044531894957723": {
+      "name": "iscBrokenEquipmentDrone",
+      "cost": 15,
+      "sacrifice_skip": false,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "-1951723453665813659": {
+      "name": "iscBrokenFlameDrone",
+      "cost": 30,
+      "sacrifice_skip": false,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "1514526096162962272": {
+      "name": "iscCategoryChest2Damage",
+      "cost": 30,
+      "sacrifice_skip": true,
+      "sacrifice_weight": 0.0,
+      "limit": -1
+    },
+    "4790013224512222604": {
+      "name": "iscShrineCleanse",
+      "cost": 5,
+      "sacrifice_skip": false,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "572107247311387015": {
+      "name": "iscCategoryChest2Healing",
+      "cost": 30,
+      "sacrifice_skip": true,
+      "sacrifice_weight": 0.0,
+      "limit": -1
+    },
+    "8538074367547150647": {
+      "name": "iscShrineBloodSnowy",
+      "cost": 20,
+      "sacrifice_skip": false,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "7509809844053021050": {
+      "name": "iscShrineChanceSnowy",
+      "cost": 20,
+      "sacrifice_skip": true,
+      "sacrifice_weight": 0.0,
+      "limit": -1
+    },
+    "-4141993549085298290": {
+      "name": "iscShrineRestackSnowy",
+      "cost": 30,
+      "sacrifice_skip": false,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "-6688833176595254185": {
+      "name": "iscShrineCombatSnowy",
+      "cost": 20,
+      "sacrifice_skip": false,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "-6579748372351645992": {
+      "name": "iscBrokenMegaDrone",
+      "cost": 40,
+      "sacrifice_skip": false,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "-3712590189206574212": {
+      "name": "iscShrineBloodSandy",
+      "cost": 20,
+      "sacrifice_skip": false,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "-6115579601300082432": {
+      "name": "iscShrineBossSandy",
+      "cost": 20,
+      "sacrifice_skip": false,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "-293038580010385263": {
+      "name": "iscShrineChanceSandy",
+      "cost": 20,
+      "sacrifice_skip": true,
+      "sacrifice_weight": 0.0,
+      "limit": -1
+    },
+    "671097985432861733": {
+      "name": "iscShrineCombatSandy",
+      "cost": 20,
+      "sacrifice_skip": false,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "-1988190408239904200": {
+      "name": "iscVoidCoinBarrel",
+      "cost": 15,
+      "sacrifice_skip": true,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "2834211342608719221": {
+      "name": "iscTripleShopEquipment",
+      "cost": 2,
+      "sacrifice_skip": true,
+      "sacrifice_weight": 0.0,
+      "limit": -1
+    },
+    "7538294449954057380": {
+      "name": "iscShrineBossSnowy",
+      "cost": 20,
+      "sacrifice_skip": false,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    },
+    "-7370910874672192691": {
+      "name": "iscVoidTriple",
+      "cost": 40,
+      "sacrifice_skip": true,
+      "sacrifice_weight": 1.0,
+      "limit": -1
+    }
+  }
+]
