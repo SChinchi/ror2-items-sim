@@ -116,3 +116,10 @@ Some of the game's data has been extracted and stored in `json` files under `dat
 - Director Card Category Selection
 - Scenes & Void Seed
 - Simulacrum Waves
+
+The extraction script can be run from `data_parser.py` and one only needs to change `DIR_TO_STREAM` within the script, which is the directory to Stream.
+
+```
+from data_parser import extract_file_data
+extract_file_data()
+```
