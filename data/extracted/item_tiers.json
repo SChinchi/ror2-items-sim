@@ -1,0 +1,72 @@
+{
+  "NoTier": {
+    "_name": "NoTier",
+    "_tier": 5,
+    "is_droppable": false,
+    "can_scrap": false,
+    "can_restack": false
+  },
+  "BossTier": {
+    "_name": "BossTierDef",
+    "_tier": 4,
+    "is_droppable": true,
+    "can_scrap": true,
+    "can_restack": true
+  },
+  "LunarTier": {
+    "_name": "LunarTierDef",
+    "_tier": 3,
+    "is_droppable": true,
+    "can_scrap": false,
+    "can_restack": true
+  },
+  "Tier3": {
+    "_name": "Tier3Def",
+    "_tier": 2,
+    "is_droppable": true,
+    "can_scrap": true,
+    "can_restack": true
+  },
+  "Tier2": {
+    "_name": "Tier2Def",
+    "_tier": 1,
+    "is_droppable": true,
+    "can_scrap": true,
+    "can_restack": true
+  },
+  "Tier1": {
+    "_name": "Tier1Def",
+    "_tier": 0,
+    "is_droppable": true,
+    "can_scrap": true,
+    "can_restack": true
+  },
+  "VoidBoss": {
+    "_name": "VoidBossDef",
+    "_tier": 9,
+    "is_droppable": true,
+    "can_scrap": false,
+    "can_restack": true
+  },
+  "VoidTier1": {
+    "_name": "VoidTier1Def",
+    "_tier": 6,
+    "is_droppable": true,
+    "can_scrap": false,
+    "can_restack": true
+  },
+  "VoidTier3": {
+    "_name": "VoidTier3Def",
+    "_tier": 8,
+    "is_droppable": true,
+    "can_scrap": false,
+    "can_restack": true
+  },
+  "VoidTier2": {
+    "_name": "VoidTier2Def",
+    "_tier": 7,
+    "is_droppable": true,
+    "can_scrap": false,
+    "can_restack": true
+  }
+}

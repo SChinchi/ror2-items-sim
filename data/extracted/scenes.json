@@ -1,0 +1,2079 @@
+{
+  "arena": {
+    "scene_type": 1,
+    "stage_order": 96,
+    "required_dlc": null,
+    "stage_info": {
+      "interactable_credits": 220,
+      "monster_credits": 0,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpArenaInteractables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsArenaInteractablesDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsArenaInteractables",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpArenaMonsters",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsArenaMonstersDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsArenaMonsters",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": null,
+      "exp_coeff": 0.066667,
+      "elite_bias": 2.0
+    }
+  },
+  "artifactworld": {
+    "scene_type": 2,
+    "stage_order": 99,
+    "required_dlc": null,
+    "stage_info": {
+      "interactable_credits": 100,
+      "monster_credits": 0,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpArtifactWorldInteractables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsArtifactWorldInteractablesDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsArtifactWorldInteractables",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpArtifactWorldMonsters",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsArtifactWorldMonstersDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsArtifactWorldMonsters",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": null,
+      "exp_coeff": 0.066667,
+      "elite_bias": 2.0
+    }
+  },
+  "bazaar": {
+    "scene_type": 2,
+    "stage_order": 97,
+    "required_dlc": null,
+    "stage_info": null,
+    "scene_director": {
+      "teleporter": null,
+      "exp_coeff": 0.0,
+      "elite_bias": 0.0
+    }
+  },
+  "blackbeach": {
+    "scene_type": 1,
+    "stage_order": 0,
+    "required_dlc": null,
+    "stage_info": {
+      "interactable_credits": 220,
+      "monster_credits": 100,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpBlackBeachInteractables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsBlackBeachInteractablesDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsBlackBeachInteractables",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpBlackBeachMonsters",
+        "categories": [
+          {
+            "name": "Standard",
+            "weight": 0.98,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsBlackBeachMonstersDLC",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsBlackBeachMonsters",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "name": "Family",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsGolemFamilyNature",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsJellyfishFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsBeetleFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsWispFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              }
+            ],
+            "included_conditions_not_met": []
+          },
+          {
+            "name": "VoidInvasion",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsVoidFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": "iscTeleporter",
+      "exp_coeff": 0.066667,
+      "elite_bias": 2.0
+    }
+  },
+  "dampcavesimple": {
+    "scene_type": 1,
+    "stage_order": 3,
+    "required_dlc": null,
+    "stage_info": {
+      "interactable_credits": 400,
+      "monster_credits": 230,
+      "bonus_credits": 160,
+      "interactables": {
+        "name": "dpDampCaveInteractables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsDampCaveInteractablesDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsDampCaveInteractables",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpDampCaveMonsters",
+        "categories": [
+          {
+            "name": "Standard",
+            "weight": 0.98,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsDampCaveMonstersDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsDampCaveMonsters",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "name": "Family",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsImpFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsLemurianFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsGupFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          },
+          {
+            "name": "VoidInvasion",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsVoidFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": "iscTeleporter",
+      "exp_coeff": 0.066667,
+      "elite_bias": 2.0
+    }
+  },
+  "foggyswamp": {
+    "scene_type": 1,
+    "stage_order": 1,
+    "required_dlc": null,
+    "stage_info": {
+      "interactable_credits": 280,
+      "monster_credits": 100,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpFoggySwampInteractables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsFoggySwampInteractablesDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsFoggySwampInteractables",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpFoggySwampMonsters",
+        "categories": [
+          {
+            "name": "Standard",
+            "weight": 0.98,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsFoggySwampMonstersDLC",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsFoggySwampMonsters",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "name": "Family",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsGolemFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsJellyfishFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsLemurianFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsWispFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsGupFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          },
+          {
+            "name": "VoidInvasion",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsVoidFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": "iscTeleporter",
+      "exp_coeff": 0.066667,
+      "elite_bias": 2.0
+    }
+  },
+  "frozenwall": {
+    "scene_type": 1,
+    "stage_order": 2,
+    "required_dlc": null,
+    "stage_info": {
+      "interactable_credits": 280,
+      "monster_credits": 100,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpFrozenWallInteractables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsFrozenWallInteractablesDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsFrozenWallInteractables",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpFrozenWallMonsters",
+        "categories": [
+          {
+            "name": "Standard",
+            "weight": 0.98,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsFrozenWallMonstersDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsFrozenWallMonsters",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "name": "Family",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsImpFamily",
+                "weight": 2.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsGolemFamilySnowy",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsWispFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              }
+            ],
+            "included_conditions_not_met": []
+          },
+          {
+            "name": "VoidInvasion",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsVoidFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": "iscTeleporter",
+      "exp_coeff": 0.066667,
+      "elite_bias": 2.0
+    }
+  },
+  "goldshores": {
+    "scene_type": 2,
+    "stage_order": 95,
+    "required_dlc": null,
+    "stage_info": {
+      "interactable_credits": 0,
+      "monster_credits": 200,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpGoldshoresInteractables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsGoldshoresInteractablesDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsGoldshoresInteractables",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpGoldshoresMonsters",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsGoldshoresMonstersDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsGoldshoresMonsters",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": null,
+      "exp_coeff": 0.066667,
+      "elite_bias": 2.0
+    }
+  },
+  "golemplains": {
+    "scene_type": 1,
+    "stage_order": 0,
+    "required_dlc": null,
+    "stage_info": {
+      "interactable_credits": 220,
+      "monster_credits": 100,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpGolemplainsInteractables",
+        "categories": [
+          {
+            "name": "Standard",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsGolemplainsInteractablesDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsGolemplainsInteractables",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpGolemplainsMonsters",
+        "categories": [
+          {
+            "name": "Standard",
+            "weight": 0.98,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsGolemplainsMonstersDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsGolemplainsMonsters",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "name": "Family",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsBeetleFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsGolemFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsJellyfishFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsWispFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              }
+            ],
+            "included_conditions_not_met": []
+          },
+          {
+            "name": "VoidInvasion",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsVoidFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": "iscTeleporter",
+      "exp_coeff": 0.066667,
+      "elite_bias": 2.0
+    }
+  },
+  "goolake": {
+    "scene_type": 1,
+    "stage_order": 1,
+    "required_dlc": null,
+    "stage_info": {
+      "interactable_credits": 220,
+      "monster_credits": 100,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpGooLakeInteractables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsGooLakeInteractablesDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsGooLakeInteractables",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpGooLakeMonsters",
+        "categories": [
+          {
+            "name": "Standard",
+            "weight": 0.98,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsGooLakeMonstersDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsGooLakeMonsters",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "name": "Family",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsGolemFamilySandy",
+                "weight": 2.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsWispFamily",
+                "weight": 3.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsBeetleFamily",
+                "weight": 3.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsImpFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              }
+            ],
+            "included_conditions_not_met": []
+          },
+          {
+            "name": "VoidInvasion",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsVoidFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": "iscTeleporter",
+      "exp_coeff": 0.066667,
+      "elite_bias": 2.0
+    }
+  },
+  "limbo": {
+    "scene_type": 2,
+    "stage_order": 98,
+    "required_dlc": null,
+    "stage_info": {
+      "interactable_credits": 0,
+      "monster_credits": 0,
+      "bonus_credits": 0,
+      "interactables": null,
+      "monsters": null
+    },
+    "scene_director": {
+      "teleporter": null,
+      "exp_coeff": 0.066667,
+      "elite_bias": 2.0
+    }
+  },
+  "moon2": {
+    "scene_type": 1,
+    "stage_order": 5,
+    "required_dlc": null,
+    "stage_info": {
+      "interactable_credits": 0,
+      "monster_credits": 900,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpMoonInteractables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsMoonInteractablesDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsMoonInteractables",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpMoonMonsters",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsMoonMonstersDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsMoonMonsters",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": null,
+      "exp_coeff": 0.066667,
+      "elite_bias": 2.0
+    }
+  },
+  "mysteryspace": {
+    "scene_type": 2,
+    "stage_order": 99,
+    "required_dlc": null,
+    "stage_info": {
+      "interactable_credits": 0,
+      "monster_credits": 0,
+      "bonus_credits": 0,
+      "interactables": null,
+      "monsters": null
+    },
+    "scene_director": {
+      "teleporter": null,
+      "exp_coeff": 0.066667,
+      "elite_bias": 2.0
+    }
+  },
+  "rootjungle": {
+    "scene_type": 1,
+    "stage_order": 3,
+    "required_dlc": null,
+    "stage_info": {
+      "interactable_credits": 400,
+      "monster_credits": 230,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpRootJungleInteractables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsRootJungleInteractablesDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsRootJungleInteractables",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpRootJungleMonsters",
+        "categories": [
+          {
+            "name": "Standard",
+            "weight": 0.98,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsRootJungleMonstersDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsRootJungleMonsters",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "name": "Family",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsImpFamily",
+                "weight": 2.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsGolemFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsWispFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsAcidLarvaFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              },
+              {
+                "dccs": "dccsGupFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          },
+          {
+            "name": "VoidInvasion",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsVoidFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": "iscTeleporter",
+      "exp_coeff": 0.066667,
+      "elite_bias": 2.0
+    }
+  },
+  "shipgraveyard": {
+    "scene_type": 1,
+    "stage_order": 3,
+    "required_dlc": null,
+    "stage_info": {
+      "interactable_credits": 400,
+      "monster_credits": 230,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpShipgraveyardInteractables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsShipgraveyardInteractablesDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsShipgraveyardInteractables",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpShipgraveyardMonsters",
+        "categories": [
+          {
+            "name": "Standard",
+            "weight": 0.98,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsShipgraveyardMonstersDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsShipgraveyardMonsters",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "name": "Family",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsLemurianFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsJellyfishFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsBeetleFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsWispFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsAcidLarvaFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          },
+          {
+            "name": "VoidInvasion",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsVoidFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": "iscTeleporter",
+      "exp_coeff": 0.066667,
+      "elite_bias": 2.0
+    }
+  },
+  "skymeadow": {
+    "scene_type": 1,
+    "stage_order": 4,
+    "required_dlc": null,
+    "stage_info": {
+      "interactable_credits": 520,
+      "monster_credits": 230,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpSkyMeadowInteractables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsSkyMeadowInteractablesDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsSkyMeadowInteractables",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpSkyMeadowMonsters",
+        "categories": [
+          {
+            "name": "Standard",
+            "weight": 0.98,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsSkyMeadowMonstersDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsSkyMeadowMonsters",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "name": "Family",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsLunarFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsGupFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          },
+          {
+            "name": "VoidInvasion",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsVoidFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": "iscLunarTeleporter",
+      "exp_coeff": 0.066667,
+      "elite_bias": 2.0
+    }
+  },
+  "wispgraveyard": {
+    "scene_type": 1,
+    "stage_order": 2,
+    "required_dlc": null,
+    "stage_info": {
+      "interactable_credits": 280,
+      "monster_credits": 100,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpWispGraveyardInteractables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsWispGraveyardInteractablesDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsWispGraveyardInteractables",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpWispGraveyardMonsters",
+        "categories": [
+          {
+            "name": "Standard",
+            "weight": 0.98,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsWispGraveyardMonstersDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsWispGraveyardMonsters",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "name": "Family",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsWispFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsImpFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              }
+            ],
+            "included_conditions_not_met": []
+          },
+          {
+            "name": "VoidInvasion",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsVoidFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": "iscTeleporter",
+      "exp_coeff": 0.066667,
+      "elite_bias": 2.0
+    }
+  },
+  "ancientloft": {
+    "scene_type": 1,
+    "stage_order": 1,
+    "required_dlc": "DLC1",
+    "stage_info": {
+      "interactable_credits": 280,
+      "monster_credits": 100,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpAncientLoftInteractables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsAncientLoftInteractablesDLC1",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpAncientLoftMonsters",
+        "categories": [
+          {
+            "name": "Standard",
+            "weight": 0.98,
+            "always_included": [],
+            "included_conditions_met": [],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsAncientLoftMonstersDLC1",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "name": "Family",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsGolemFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsJellyfishFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsBeetleFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsWispFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              }
+            ],
+            "included_conditions_not_met": []
+          },
+          {
+            "name": "VoidInvasion",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsVoidFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": "iscTeleporter",
+      "exp_coeff": 0.066667,
+      "elite_bias": 2.0
+    }
+  },
+  "itancientloft": {
+    "scene_type": 1,
+    "stage_order": 96,
+    "required_dlc": null,
+    "stage_info": {
+      "interactable_credits": 280,
+      "monster_credits": 100,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpInfiniteTowerInteractables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsInfiniteTowerInteractables",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpITAncientLoftMonsters",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsITAncientLoftMonsters",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": null,
+      "exp_coeff": 0.0,
+      "elite_bias": 0.0
+    }
+  },
+  "itdampcave": {
+    "scene_type": 1,
+    "stage_order": 96,
+    "required_dlc": null,
+    "stage_info": {
+      "interactable_credits": 400,
+      "monster_credits": 230,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpInfiniteTowerInteractables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsInfiniteTowerInteractables",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpITDampCaveMonsters",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsITDampCaveMonsters",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": null,
+      "exp_coeff": 0.0,
+      "elite_bias": 0.0
+    }
+  },
+  "itfrozenwall": {
+    "scene_type": 1,
+    "stage_order": 96,
+    "required_dlc": null,
+    "stage_info": {
+      "interactable_credits": 280,
+      "monster_credits": 100,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpInfiniteTowerInteractables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsInfiniteTowerInteractables",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpITFrozenWallMonsters",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsITFrozenWallMonsters",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": null,
+      "exp_coeff": 0.0,
+      "elite_bias": 0.0
+    }
+  },
+  "itgolemplains": {
+    "scene_type": 1,
+    "stage_order": 96,
+    "required_dlc": null,
+    "stage_info": {
+      "interactable_credits": 220,
+      "monster_credits": 100,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpInfiniteTowerInteractables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsInfiniteTowerInteractables",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpITGolemplainsMonsters",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsITGolemplainsMonsters",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": null,
+      "exp_coeff": 0.0,
+      "elite_bias": 0.0
+    }
+  },
+  "itgoolake": {
+    "scene_type": 1,
+    "stage_order": 96,
+    "required_dlc": null,
+    "stage_info": {
+      "interactable_credits": 220,
+      "monster_credits": 100,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpInfiniteTowerInteractables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsInfiniteTowerInteractables",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpITGooLakeMonsters",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsITGooLakeMonsters",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": null,
+      "exp_coeff": 0.0,
+      "elite_bias": 0.0
+    }
+  },
+  "itmoon": {
+    "scene_type": 1,
+    "stage_order": 96,
+    "required_dlc": null,
+    "stage_info": {
+      "interactable_credits": 0,
+      "monster_credits": 900,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpInfiniteTowerInteractables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsInfiniteTowerInteractables",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpITMoonMonsters",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsITMoonMonsters",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": null,
+      "exp_coeff": 0.0,
+      "elite_bias": 0.0
+    }
+  },
+  "itskymeadow": {
+    "scene_type": 1,
+    "stage_order": 96,
+    "required_dlc": null,
+    "stage_info": {
+      "interactable_credits": 520,
+      "monster_credits": 230,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpInfiniteTowerInteractables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsInfiniteTowerInteractables",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpITSkyMeadowMonsters",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsITSkyMeadowMonsters",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": null,
+      "exp_coeff": 0.0,
+      "elite_bias": 0.0
+    }
+  },
+  "snowyforest": {
+    "scene_type": 1,
+    "stage_order": 0,
+    "required_dlc": "DLC1",
+    "stage_info": {
+      "interactable_credits": 300,
+      "monster_credits": 110,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpSnowyForestInteractables",
+        "categories": [
+          {
+            "name": "Standard",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsSnowyForestInteractablesDLC1",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpSnowyForestMonsters",
+        "categories": [
+          {
+            "name": "Standard",
+            "weight": 0.98,
+            "always_included": [],
+            "included_conditions_met": [],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsSnowyForestMonstersDLC1",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "name": "Family",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsGolemFamilySnowy",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsLemurianFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsJellyfishFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsWispFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              }
+            ],
+            "included_conditions_not_met": []
+          },
+          {
+            "name": "VoidInvasion",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsVoidFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": "iscTeleporter",
+      "exp_coeff": 0.066667,
+      "elite_bias": 2.0
+    }
+  },
+  "sulfurpools": {
+    "scene_type": 1,
+    "stage_order": 2,
+    "required_dlc": "DLC1",
+    "stage_info": {
+      "interactable_credits": 280,
+      "monster_credits": 100,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpSulfurPoolsInteractables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsSulfurPoolsInteractablesDLC1",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpSulfurPoolsMonsters",
+        "categories": [
+          {
+            "name": "Standard",
+            "weight": 0.98,
+            "always_included": [],
+            "included_conditions_met": [],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsSulfurPoolsMonstersDLC1",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "name": "Family",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsWispFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsBeetleFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsConstructFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          },
+          {
+            "name": "VoidInvasion",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsVoidFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": "iscTeleporter",
+      "exp_coeff": 0.066667,
+      "elite_bias": 2.0
+    }
+  },
+  "voidraid": {
+    "scene_type": 1,
+    "stage_order": 98,
+    "required_dlc": "DLC1",
+    "stage_info": {
+      "interactable_credits": 0,
+      "monster_credits": 0,
+      "bonus_credits": 0,
+      "interactables": null,
+      "monsters": null
+    },
+    "scene_director": {
+      "teleporter": null,
+      "exp_coeff": 0.066667,
+      "elite_bias": 2.0
+    }
+  },
+  "voidstage": {
+    "scene_type": 1,
+    "stage_order": 98,
+    "required_dlc": "DLC1",
+    "stage_info": {
+      "interactable_credits": 220,
+      "monster_credits": 230,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpVoidStageInteractables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsVoidStageInteractables",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpVoidStageMonsters",
+        "categories": [
+          {
+            "name": "Standard",
+            "weight": 0.98,
+            "always_included": [],
+            "included_conditions_met": [],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsVoidStageMonsters",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "name": "Family",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsLunarFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              }
+            ],
+            "included_conditions_not_met": []
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": null,
+      "exp_coeff": 0.066667,
+      "elite_bias": 2.0
+    }
+  }
+}

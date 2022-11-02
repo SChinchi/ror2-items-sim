@@ -1,0 +1,4090 @@
+{
+  ",-9025129108051204657": {
+    "_name": "",
+    "name": "",
+    "flags": 4,
+    "health": [
+      120.0,
+      36.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      20.0,
+      4.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 1.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "ARTIFACTSHELL_BODY_NAME,-3914538112699275637": {
+    "_name": "ARTIFACTSHELL_BODY_NAME",
+    "name": "Artifact Reliquary",
+    "flags": 0,
+    "health": [
+      100000.0,
+      30000.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 100000.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "BANDIT2_BODY_NAME,669639482491022699": {
+    "_name": "BANDIT2_BODY_NAME",
+    "name": "Bandit",
+    "flags": 144,
+    "health": [
+      110.0,
+      33.0
+    ],
+    "regen": [
+      1.0,
+      0.2
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "BEETLEGUARD_BODY_NAME,-6780364390142151300": {
+    "_name": "BEETLEGUARD_BODY_NAME",
+    "name": "Beetle Guard",
+    "flags": 0,
+    "health": [
+      480.0,
+      144.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 17.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 60.0,
+    "jump": 1,
+    "jump_power": 12.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "BEETLEGUARD_BODY_NAME,6061442183798677008": {
+    "_name": "BEETLEGUARD_BODY_NAME",
+    "name": "Beetle Guard",
+    "flags": 0,
+    "health": [
+      480.0,
+      144.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 17.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 60.0,
+    "jump": 1,
+    "jump_power": 12.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "BEETLEQUEEN_BODY_NAME,6296977388130626750": {
+    "_name": "BEETLEQUEEN_BODY_NAME",
+    "name": "Beetle Queen",
+    "flags": 1,
+    "health": [
+      2100.0,
+      630.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      25.0,
+      5.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 6.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "item_drop": "BeetleGland"
+  },
+  ",7131737044197916325": {
+    "_name": "",
+    "name": "",
+    "flags": 4,
+    "health": [
+      80.0,
+      24.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 30.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "BEETLE_BODY_NAME,9218121131735363861": {
+    "_name": "BEETLE_BODY_NAME",
+    "name": "Beetle",
+    "flags": 0,
+    "health": [
+      80.0,
+      24.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 6.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 40.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "BELL_BODY_NAME,5971066070144350629": {
+    "_name": "BELL_BODY_NAME",
+    "name": "Brass Contraption",
+    "flags": 0,
+    "health": [
+      300.0,
+      90.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 10.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 12.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  ",-7304019558028869079": {
+    "_name": "",
+    "name": "",
+    "flags": 4,
+    "health": [
+      1.0,
+      0.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "BISON_BODY_NAME,-6194373484793097358": {
+    "_name": "BISON_BODY_NAME",
+    "name": "Bighorn Bison",
+    "flags": 0,
+    "health": [
+      480.0,
+      144.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 3.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 60.0,
+    "jump": 1,
+    "jump_power": 5.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "UNIDENTIFIED,6767039347170867422": {
+    "_name": "UNIDENTIFIED",
+    "name": "",
+    "flags": 64,
+    "health": [
+      200.0,
+      60.0
+    ],
+    "regen": [
+      7.5,
+      1.5
+    ],
+    "damage": [
+      18.0,
+      3.6
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "BROTHER_BODY_NAME,-6280498815603321506": {
+    "_name": "BROTHER_BODY_NAME",
+    "name": "Mithrix",
+    "flags": 2048,
+    "health": [
+      1400.0,
+      420.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      3.0,
+      0.6
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 4.0,
+    "sprint_multiplier": 2.6,
+    "acceleration": 45.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "item_drop": null
+  },
+  "BROTHER_BODY_NAME,-262345486723689649": {
+    "_name": "BROTHER_BODY_NAME",
+    "name": "Mithrix",
+    "flags": 2048,
+    "health": [
+      1000.0,
+      300.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      16.0,
+      3.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 15.0,
+    "sprint_multiplier": 2.6,
+    "acceleration": 45.0,
+    "jump": 1,
+    "jump_power": 25.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "item_drop": null
+  },
+  "CAPTAIN_BODY_NAME,-6781644716941010891": {
+    "_name": "CAPTAIN_BODY_NAME",
+    "name": "Captain",
+    "flags": 16,
+    "health": [
+      110.0,
+      33.0
+    ],
+    "regen": [
+      1.0,
+      0.2
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "CLAYBOSS_BODY_NAME,2780849810617343179": {
+    "_name": "CLAYBOSS_BODY_NAME",
+    "name": "Clay Dunestrider",
+    "flags": 9,
+    "health": [
+      2100.0,
+      630.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      20.0,
+      4.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 9.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 20.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "item_drop": "SiphonOnLowHealth"
+  },
+  "CLAYBRUISER_BODY_NAME,2797552104482198067": {
+    "_name": "CLAYBRUISER_BODY_NAME",
+    "name": "Clay Templar",
+    "flags": 8,
+    "health": [
+      700.0,
+      210.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      16.0,
+      3.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 6.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 45.0,
+    "jump": 1,
+    "jump_power": 20.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "COMMANDO_BODY_NAME,-4877347282271843132": {
+    "_name": "COMMANDO_BODY_NAME",
+    "name": "Commando",
+    "flags": 16,
+    "health": [
+      110.0,
+      33.0
+    ],
+    "regen": [
+      1.0,
+      0.2
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "CROCO_BODY_NAME,4503057478411439415": {
+    "_name": "CROCO_BODY_NAME",
+    "name": "Acrid",
+    "flags": 16,
+    "health": [
+      160.0,
+      48.0
+    ],
+    "regen": [
+      2.5,
+      0.5
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  ",-436709731581117415": {
+    "_name": "",
+    "name": "",
+    "flags": 0,
+    "health": [
+      0.0,
+      0.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "DRONE_GUNNER_BODY_NAME,-8825901108628147836": {
+    "_name": "DRONE_GUNNER_BODY_NAME",
+    "name": "Gunner Drone",
+    "flags": 2,
+    "health": [
+      150.0,
+      45.0
+    ],
+    "regen": [
+      5.0,
+      1.0
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 17.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 17.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "DRONE_HEALING_BODY_NAME,-5528296088830052421": {
+    "_name": "DRONE_HEALING_BODY_NAME",
+    "name": "Healing Drone",
+    "flags": 2,
+    "health": [
+      150.0,
+      45.0
+    ],
+    "regen": [
+      5.0,
+      1.0
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 17.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 17.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "TURRET1_BODY_NAME,-3515718513093576349": {
+    "_name": "TURRET1_BODY_NAME",
+    "name": "Gunner Turret",
+    "flags": 2,
+    "health": [
+      200.0,
+      60.0
+    ],
+    "regen": [
+      7.5,
+      1.5
+    ],
+    "damage": [
+      18.0,
+      3.6
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "DRONE_BACKUP_BODY_NAME,-2787967666877948505": {
+    "_name": "DRONE_BACKUP_BODY_NAME",
+    "name": "Strike Drone",
+    "flags": 2,
+    "health": [
+      225.0,
+      68.0
+    ],
+    "regen": [
+      5.0,
+      1.0
+    ],
+    "damage": [
+      7.0,
+      1.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 17.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 17.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "EQUIPMENTDRONE_BODY_NAME,-2190652651611884519": {
+    "_name": "EQUIPMENTDRONE_BODY_NAME",
+    "name": "Equipment Drone",
+    "flags": 2,
+    "health": [
+      250.0,
+      75.0
+    ],
+    "regen": [
+      5.0,
+      1.0
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 10.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 17.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "DRONE_MISSILE_BODY_NAME,-930782364652045900": {
+    "_name": "DRONE_MISSILE_BODY_NAME",
+    "name": "Missile Drone",
+    "flags": 2,
+    "health": [
+      225.0,
+      68.0
+    ],
+    "regen": [
+      5.0,
+      1.0
+    ],
+    "damage": [
+      14.0,
+      2.8
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 17.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 17.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "EMERGENCYDRONE_BODY_NAME,-754235010027196859": {
+    "_name": "EMERGENCYDRONE_BODY_NAME",
+    "name": "Emergency Drone",
+    "flags": 2,
+    "health": [
+      300.0,
+      90.0
+    ],
+    "regen": [
+      2.0,
+      0.4
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 17.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 17.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "DRONE_MEGA_BODY_NAME,1087201758615568584": {
+    "_name": "DRONE_MEGA_BODY_NAME",
+    "name": "TC-280 Prototype",
+    "flags": 2,
+    "health": [
+      900.0,
+      270.0
+    ],
+    "regen": [
+      5.0,
+      1.0
+    ],
+    "damage": [
+      14.0,
+      2.8
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 20.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 20.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "FLAMEDRONE_BODY_NAME,8858345548042082531": {
+    "_name": "FLAMEDRONE_BODY_NAME",
+    "name": "Incinerator Drone",
+    "flags": 2,
+    "health": [
+      300.0,
+      90.0
+    ],
+    "regen": [
+      5.0,
+      1.0
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 10.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 17.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "ELECTRICWORM_BODY_NAME,9174004011289029256": {
+    "_name": "ELECTRICWORM_BODY_NAME",
+    "name": "Overloading Worm",
+    "flags": 9,
+    "health": [
+      12000.0,
+      3600.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      50.0,
+      10.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 20.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 160.0,
+    "jump": 1,
+    "jump_power": 25.0,
+    "armor": 15.0,
+    "is_champion": true,
+    "item_drop": "LightningStrikeOnHit"
+  },
+  "URCHINTURRET_BODY_NAME,-6998624659205682130": {
+    "_name": "URCHINTURRET_BODY_NAME",
+    "name": "Malachite Urchin",
+    "flags": 0,
+    "health": [
+      250.0,
+      75.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      18.0,
+      3.6
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 100.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "ENGI_BODY_NAME,-8789523071473435693": {
+    "_name": "ENGI_BODY_NAME",
+    "name": "Engineer",
+    "flags": 16,
+    "health": [
+      130.0,
+      39.0
+    ],
+    "regen": [
+      1.0,
+      0.2
+    ],
+    "damage": [
+      14.0,
+      2.8
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "ENGITURRET_BODY_NAME,-6177697971644106893": {
+    "_name": "ENGITURRET_BODY_NAME",
+    "name": "Engineer Turret",
+    "flags": 2,
+    "health": [
+      130.0,
+      39.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      16.0,
+      3.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 60.0,
+    "jump": 1,
+    "jump_power": 16.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "ENGITURRET_BODY_NAME,-1255655987304471632": {
+    "_name": "ENGITURRET_BODY_NAME",
+    "name": "Engineer Turret",
+    "flags": 2,
+    "health": [
+      130.0,
+      39.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      16.0,
+      3.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "POT2_BODY_NAME,-5760713260235152733": {
+    "_name": "POT2_BODY_NAME",
+    "name": "Pot",
+    "flags": 260,
+    "health": [
+      1.0,
+      0.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      20.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "FUSIONCELL_BODY_NAME,-8883669369203079694": {
+    "_name": "FUSIONCELL_BODY_NAME",
+    "name": "Fusion Cell",
+    "flags": 260,
+    "health": [
+      1.0,
+      0.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      20.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "GOLEM_BODY_NAME,-7322432328827242503": {
+    "_name": "GOLEM_BODY_NAME",
+    "name": "Stone Golem",
+    "flags": 0,
+    "health": [
+      480.0,
+      144.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      20.0,
+      4.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 6.6,
+    "sprint_multiplier": 1.45,
+    "acceleration": 40.0,
+    "jump": 1,
+    "jump_power": 20.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "GRANDPARENT_BODY_NAME,4479202618591268875": {
+    "_name": "GRANDPARENT_BODY_NAME",
+    "name": "Grandparent",
+    "flags": 512,
+    "health": [
+      3625.0,
+      1088.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      26.0,
+      5.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "item_drop": "ParentEgg"
+  },
+  "GRAVEKEEPER_BODY_NAME,4801396543259066670": {
+    "_name": "GRAVEKEEPER_BODY_NAME",
+    "name": "Grovetender",
+    "flags": 0,
+    "health": [
+      2800.0,
+      840.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      23.0,
+      4.6
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 10.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 25.0,
+    "jump": 1,
+    "jump_power": 25.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "item_drop": "SprintWisp"
+  },
+  ",6957333352716087917": {
+    "_name": "",
+    "name": "",
+    "flags": 4,
+    "health": [
+      20.0,
+      6.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 20.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 20.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 99.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "GREATERWISP_BODY_NAME,772358279179203213": {
+    "_name": "GREATERWISP_BODY_NAME",
+    "name": "Greater Wisp",
+    "flags": 0,
+    "health": [
+      750.0,
+      225.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 14.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "HERETIC_BODY_NAME,-8738633977848228628": {
+    "_name": "HERETIC_BODY_NAME",
+    "name": "Heretic",
+    "flags": 16,
+    "health": [
+      440.0,
+      132.0
+    ],
+    "regen": [
+      -6.0,
+      -1.2
+    ],
+    "damage": [
+      18.0,
+      3.6
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 8.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 3,
+    "jump_power": 15.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "HERMIT_CRAB_BODY_NAME,-857145930845917152": {
+    "_name": "HERMIT_CRAB_BODY_NAME",
+    "name": "Hermit Crab",
+    "flags": 0,
+    "health": [
+      100.0,
+      30.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 10.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 30.0,
+    "jump": 1,
+    "jump_power": 8.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "HUNTRESS_BODY_NAME,3308767006502102819": {
+    "_name": "HUNTRESS_BODY_NAME",
+    "name": "Huntress",
+    "flags": 16,
+    "health": [
+      90.0,
+      27.0
+    ],
+    "regen": [
+      1.0,
+      0.2
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "IMPBOSS_BODY_NAME,430081133749015043": {
+    "_name": "IMPBOSS_BODY_NAME",
+    "name": "Imp Overlord",
+    "flags": 1,
+    "health": [
+      2800.0,
+      840.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      16.0,
+      3.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 13.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 15.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "item_drop": "BleedOnHitAndExplode"
+  },
+  "IMP_BODY_NAME,-138269560369502470": {
+    "_name": "IMP_BODY_NAME",
+    "name": "Imp",
+    "flags": 0,
+    "health": [
+      140.0,
+      42.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 10.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 30.0,
+    "jump": 1,
+    "jump_power": 26.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "JELLYFISH_BODY_NAME,-4949183844312373554": {
+    "_name": "JELLYFISH_BODY_NAME",
+    "name": "Jellyfish",
+    "flags": 0,
+    "health": [
+      60.0,
+      18.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      5.0,
+      1.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 10.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 20.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "LEMURIANBRUISER_BODY_NAME,-3714437810204064942": {
+    "_name": "LEMURIANBRUISER_BODY_NAME",
+    "name": "Elder Lemurian",
+    "flags": 0,
+    "health": [
+      900.0,
+      270.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      16.0,
+      3.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 13.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 45.0,
+    "jump": 1,
+    "jump_power": 30.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "LEMURIAN_BODY_NAME,1717460702084677953": {
+    "_name": "LEMURIAN_BODY_NAME",
+    "name": "Lemurian",
+    "flags": 0,
+    "health": [
+      80.0,
+      24.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 30.0,
+    "jump": 1,
+    "jump_power": 22.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "LOADER_BODY_NAME,-6859875765546660339": {
+    "_name": "LOADER_BODY_NAME",
+    "name": "Loader",
+    "flags": 17,
+    "health": [
+      160.0,
+      48.0
+    ],
+    "regen": [
+      2.5,
+      0.5
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "LUNAREXPLODER_BODY_NAME,-2274684077375776811": {
+    "_name": "LUNAREXPLODER_BODY_NAME",
+    "name": "Lunar Chimera",
+    "flags": 0,
+    "health": [
+      180.0,
+      54.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      11.0,
+      2.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 8.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 16.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "LUNARGOLEM_BODY_NAME,-4784653761091027702": {
+    "_name": "LUNARGOLEM_BODY_NAME",
+    "name": "Lunar Chimera",
+    "flags": 0,
+    "health": [
+      1615.0,
+      485.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      35.0,
+      7.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 8.0,
+    "sprint_multiplier": 3.0,
+    "acceleration": 30.0,
+    "jump": 1,
+    "jump_power": 20.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  ",2588996205700975627": {
+    "_name": "",
+    "name": "",
+    "flags": 4,
+    "health": [
+      75.0,
+      22.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "LUNARWISP_BODY_NAME,7359358192127432510": {
+    "_name": "LUNARWISP_BODY_NAME",
+    "name": "Lunar Chimera",
+    "flags": 0,
+    "health": [
+      850.0,
+      255.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 18.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 14.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "MAGE_BODY_NAME,-6856047328575062848": {
+    "_name": "MAGE_BODY_NAME",
+    "name": "Artificer",
+    "flags": 16,
+    "health": [
+      110.0,
+      33.0
+    ],
+    "regen": [
+      1.0,
+      0.2
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 40.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "MAGMAWORM_BODY_NAME,-7045467416351155679": {
+    "_name": "MAGMAWORM_BODY_NAME",
+    "name": "Magma Worm",
+    "flags": 9,
+    "health": [
+      2400.0,
+      720.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 20.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 160.0,
+    "jump": 1,
+    "jump_power": 25.0,
+    "armor": 15.0,
+    "is_champion": true,
+    "item_drop": "FireballsOnHit"
+  },
+  "MERC_BODY_NAME,6614850250781190916": {
+    "_name": "MERC_BODY_NAME",
+    "name": "Mercenary",
+    "flags": 16,
+    "health": [
+      110.0,
+      33.0
+    ],
+    "regen": [
+      1.0,
+      0.2
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 2,
+    "jump_power": 15.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "MINIMUSHROOM_BODY_NAME,-4639850564068037783": {
+    "_name": "MINIMUSHROOM_BODY_NAME",
+    "name": "Mini Mushrum",
+    "flags": 0,
+    "health": [
+      290.0,
+      87.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      16.0,
+      3.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 2.0,
+    "sprint_multiplier": 2.5,
+    "acceleration": 30.0,
+    "jump": 1,
+    "jump_power": 14.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "NULLIFIER_BODY_NAME,-6498387048547021316": {
+    "_name": "NULLIFIER_BODY_NAME",
+    "name": "Void Reaver",
+    "flags": 1024,
+    "health": [
+      1900.0,
+      570.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 6.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 40.0,
+    "jump": 1,
+    "jump_power": 18.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "NULLIFIER_BODY_NAME,566661308468529568": {
+    "_name": "NULLIFIER_BODY_NAME",
+    "name": "Void Reaver",
+    "flags": 1024,
+    "health": [
+      1900.0,
+      570.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 6.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 40.0,
+    "jump": 1,
+    "jump_power": 18.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "PARENT_BODY_NAME,-2897949650595737385": {
+    "_name": "PARENT_BODY_NAME",
+    "name": "Parent",
+    "flags": 512,
+    "health": [
+      585.0,
+      176.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      16.0,
+      3.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 11.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 40.0,
+    "jump": 1,
+    "jump_power": 20.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "ROBOBALLBOSS_BODY_NAME,-6752485905745916689": {
+    "_name": "ROBOBALLBOSS_BODY_NAME",
+    "name": "Solus Control Unit",
+    "flags": 2,
+    "health": [
+      2500.0,
+      750.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 14.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "item_drop": "RoboBallBuddy"
+  },
+  "SUPERROBOBALLBOSS_BODY_NAME,-783938501872950032": {
+    "_name": "SUPERROBOBALLBOSS_BODY_NAME",
+    "name": "Alloy Worship Unit",
+    "flags": 2,
+    "health": [
+      2500.0,
+      750.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 14.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 30.0,
+    "is_champion": true,
+    "item_drop": "RoboBallBuddy"
+  },
+  "ROBOBALLMINI_BODY_NAME,4258152529575623049": {
+    "_name": "ROBOBALLMINI_BODY_NAME",
+    "name": "Solus Probe",
+    "flags": 2,
+    "health": [
+      220.0,
+      66.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 10.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 14.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 10.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "ROBOBALLGREENBUDDY_BODY_NAME,1987581938210224088": {
+    "_name": "ROBOBALLGREENBUDDY_BODY_NAME",
+    "name": "Delighted Probe",
+    "flags": 66,
+    "health": [
+      880.0,
+      264.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 10.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 14.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 10.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "ROBOBALLREDBUDDY_BODY_NAME,4982025405444595260": {
+    "_name": "ROBOBALLREDBUDDY_BODY_NAME",
+    "name": "Quiet Probe",
+    "flags": 66,
+    "health": [
+      880.0,
+      264.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 10.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 14.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 10.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "SCAVLUNAR3_BODY_NAME,-6607532490618943043": {
+    "_name": "SCAVLUNAR3_BODY_NAME",
+    "name": "Twiptwip the Devotee",
+    "flags": 0,
+    "health": [
+      3230.0,
+      969.0
+    ],
+    "regen": [
+      2.0,
+      0.4
+    ],
+    "damage": [
+      4.0,
+      0.8
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 3.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 10.0,
+    "jump": 1,
+    "jump_power": 20.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "item_drop": null
+  },
+  "SCAVLUNAR2_BODY_NAME,565595897824143465": {
+    "_name": "SCAVLUNAR2_BODY_NAME",
+    "name": "Wipwip the Wild",
+    "flags": 0,
+    "health": [
+      4845.0,
+      1454.0
+    ],
+    "regen": [
+      2.0,
+      0.4
+    ],
+    "damage": [
+      2.5,
+      0.5
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 3.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 10.0,
+    "jump": 1,
+    "jump_power": 20.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "item_drop": null
+  },
+  "SCAVLUNAR4_BODY_NAME,7340738978162743476": {
+    "_name": "SCAVLUNAR4_BODY_NAME",
+    "name": "Guragura the Lucky",
+    "flags": 0,
+    "health": [
+      3230.0,
+      969.0
+    ],
+    "regen": [
+      2.0,
+      0.4
+    ],
+    "damage": [
+      4.0,
+      0.8
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 3.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 10.0,
+    "jump": 1,
+    "jump_power": 20.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "item_drop": null
+  },
+  "SCAVLUNAR1_BODY_NAME,7355107013850095935": {
+    "_name": "SCAVLUNAR1_BODY_NAME",
+    "name": "Kipkip the Gentle",
+    "flags": 0,
+    "health": [
+      3230.0,
+      969.0
+    ],
+    "regen": [
+      2.0,
+      0.4
+    ],
+    "damage": [
+      4.0,
+      0.8
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 3.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 10.0,
+    "jump": 1,
+    "jump_power": 20.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "item_drop": null
+  },
+  "SCAV_BODY_NAME,-5148886553018568663": {
+    "_name": "SCAV_BODY_NAME",
+    "name": "Scavenger",
+    "flags": 0,
+    "health": [
+      3800.0,
+      1140.0
+    ],
+    "regen": [
+      2.0,
+      0.4
+    ],
+    "damage": [
+      4.0,
+      0.8
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 3.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 10.0,
+    "jump": 1,
+    "jump_power": 20.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "item_drop": null
+  },
+  ",7698067029231285145": {
+    "_name": "",
+    "name": "",
+    "flags": 4,
+    "health": [
+      5.0,
+      2.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  ",-3587561474380917418": {
+    "_name": "",
+    "name": "",
+    "flags": 260,
+    "health": [
+      1.0,
+      0.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "SHOPKEEPER_BODY_NAME,-7205432084159651845": {
+    "_name": "SHOPKEEPER_BODY_NAME",
+    "name": "Newt",
+    "flags": 1,
+    "health": [
+      500000.0,
+      150000.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 0,
+    "jump_power": 22.0,
+    "armor": 100.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "MAULINGROCK_BODY_NAME,-5708058512711267651": {
+    "_name": "MAULINGROCK_BODY_NAME",
+    "name": "Flying Rock",
+    "flags": 260,
+    "health": [
+      40.0,
+      12.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "MAULINGROCK_BODY_NAME,-168175402333531614": {
+    "_name": "MAULINGROCK_BODY_NAME",
+    "name": "Flying Rock",
+    "flags": 260,
+    "health": [
+      10.0,
+      3.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "MAULINGROCK_BODY_NAME,5357870678088444318": {
+    "_name": "MAULINGROCK_BODY_NAME",
+    "name": "Flying Rock",
+    "flags": 260,
+    "health": [
+      20.0,
+      6.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  ",4964951459575563997": {
+    "_name": "",
+    "name": "",
+    "flags": 0,
+    "health": [
+      150.0,
+      45.0
+    ],
+    "regen": [
+      2.0,
+      0.4
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 30.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 60.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  ",7806610397694495710": {
+    "_name": "",
+    "name": "",
+    "flags": 0,
+    "health": [
+      150.0,
+      45.0
+    ],
+    "regen": [
+      2.0,
+      0.4
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 5.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 60.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "SQUIDTURRET_BODY_NAME,-4895553308416995978": {
+    "_name": "SQUIDTURRET_BODY_NAME",
+    "name": "Squid Turret",
+    "flags": 0,
+    "health": [
+      300.0,
+      90.0
+    ],
+    "regen": [
+      1.0,
+      0.2
+    ],
+    "damage": [
+      4.0,
+      0.8
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 3.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "TITAN_BODY_NAME,-3645550656977854452": {
+    "_name": "TITAN_BODY_NAME",
+    "name": "Stone Titan",
+    "flags": 1,
+    "health": [
+      2100.0,
+      630.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      40.0,
+      8.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 5.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 20.0,
+    "jump": 1,
+    "jump_power": 5.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "item_drop": "Knurl"
+  },
+  "TITANGOLD_BODY_NAME,1669286690219817468": {
+    "_name": "TITANGOLD_BODY_NAME",
+    "name": "Aurelionite",
+    "flags": 1,
+    "health": [
+      2100.0,
+      630.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      40.0,
+      8.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 5.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 20.0,
+    "jump": 1,
+    "jump_power": 5.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "item_drop": "TitanGoldDuringTP"
+  },
+  "TOOLBOT_BODY_NAME,4132792340586605851": {
+    "_name": "TOOLBOT_BODY_NAME",
+    "name": "MUL-T",
+    "flags": 18,
+    "health": [
+      200.0,
+      60.0
+    ],
+    "regen": [
+      1.0,
+      0.2
+    ],
+    "damage": [
+      11.0,
+      2.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 30.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 12.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "TREEBOT_BODY_NAME,38330065492897553": {
+    "_name": "TREEBOT_BODY_NAME",
+    "name": "REX",
+    "flags": 18,
+    "health": [
+      130.0,
+      39.0
+    ],
+    "regen": [
+      1.0,
+      0.2
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "VAGRANT_BODY_NAME,-5111004683916885433": {
+    "_name": "VAGRANT_BODY_NAME",
+    "name": "Wandering Vagrant",
+    "flags": 0,
+    "health": [
+      2100.0,
+      630.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      6.5,
+      1.3
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 6.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 15.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 15.0,
+    "is_champion": true,
+    "item_drop": "NovaOnLowHealth"
+  },
+  ",191341689701117552": {
+    "_name": "",
+    "name": "",
+    "flags": 4,
+    "health": [
+      75.0,
+      22.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "VULTURE_BODY_NAME,-7157857937764117919": {
+    "_name": "VULTURE_BODY_NAME",
+    "name": "Alloy Vulture",
+    "flags": 1,
+    "health": [
+      140.0,
+      42.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 3.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "TIMECRYSTAL_BODY_NAME,-2636278627983904951": {
+    "_name": "TIMECRYSTAL_BODY_NAME",
+    "name": "Time Crystal",
+    "flags": 269,
+    "health": [
+      200.0,
+      0.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "WISP_BODY_NAME,1185924391367202977": {
+    "_name": "WISP_BODY_NAME",
+    "name": "Lesser Wisp",
+    "flags": 0,
+    "health": [
+      35.0,
+      10.0
+    ],
+    "regen": [
+      -3.0,
+      -0.6
+    ],
+    "damage": [
+      3.5,
+      0.7
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 6.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 12.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "WISP_BODY_NAME,-2789288942580116804": {
+    "_name": "WISP_BODY_NAME",
+    "name": "Lesser Wisp",
+    "flags": 0,
+    "health": [
+      35.0,
+      10.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      3.5,
+      0.7
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 6.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 12.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "ACIDLARVA_BODY_NAME,8163345891220534571": {
+    "_name": "ACIDLARVA_BODY_NAME",
+    "name": "Larva",
+    "flags": 0,
+    "health": [
+      45.0,
+      14.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      11.0,
+      2.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 1.5,
+    "sprint_multiplier": 8.0,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 16.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "ASSASSIN2_BODY_NAME,-7615402970195009080": {
+    "_name": "ASSASSIN2_BODY_NAME",
+    "name": "Assassin",
+    "flags": 0,
+    "health": [
+      120.0,
+      36.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.2,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 12.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 10.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "CLAYGRENADIER_BODY_NAME,-1771443897819026626": {
+    "_name": "CLAYGRENADIER_BODY_NAME",
+    "name": "Clay Apothecary",
+    "flags": 8,
+    "health": [
+      1050.0,
+      315.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      20.0,
+      4.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 5.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 45.0,
+    "jump": 1,
+    "jump_power": 20.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "DRONE_COMMANDER_BODY_NAME,5302431856122207826": {
+    "_name": "DRONE_COMMANDER_BODY_NAME",
+    "name": "Col. Droneman",
+    "flags": 2,
+    "health": [
+      180.0,
+      54.0
+    ],
+    "regen": [
+      6.0,
+      1.2
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 20.0,
+    "sprint_multiplier": 1.75,
+    "acceleration": 20.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "AFFIXEARTH_HEALER_BODY_NAME,-6994677797297897056": {
+    "_name": "AFFIXEARTH_HEALER_BODY_NAME",
+    "name": "Healing Core",
+    "flags": 256,
+    "health": [
+      50.0,
+      0.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      20.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "VOIDINFESTOR_BODY_NAME,-1430807577356982535": {
+    "_name": "VOIDINFESTOR_BODY_NAME",
+    "name": "Void Infestor",
+    "flags": 1025,
+    "health": [
+      45.0,
+      14.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      11.0,
+      2.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 14.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 180.0,
+    "jump": 1,
+    "jump_power": 16.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "FLYINGVERMIN_BODY_NAME,-9101152544961197874": {
+    "_name": "FLYINGVERMIN_BODY_NAME",
+    "name": "Blind Pest",
+    "flags": 1,
+    "health": [
+      80.0,
+      24.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 6.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 25.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "GUP_BODY_NAME,-8261587017098189037": {
+    "_name": "GUP_BODY_NAME",
+    "name": "Gup",
+    "flags": 0,
+    "health": [
+      1000.0,
+      300.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 12.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 20.0,
+    "jump": 1,
+    "jump_power": 16.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "GIP_BODY_NAME,-7639822576229365795": {
+    "_name": "GIP_BODY_NAME",
+    "name": "Gip",
+    "flags": 0,
+    "health": [
+      250.0,
+      75.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      3.0,
+      0.6
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 5.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 20.0,
+    "jump": 1,
+    "jump_power": 16.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "GEEP_BODY_NAME,452395785471370210": {
+    "_name": "GEEP_BODY_NAME",
+    "name": "Geep",
+    "flags": 0,
+    "health": [
+      500.0,
+      150.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      6.0,
+      1.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 8.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 20.0,
+    "jump": 1,
+    "jump_power": 16.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "MAULINGROCK_BODY_NAME,1606572563492293369": {
+    "_name": "MAULINGROCK_BODY_NAME",
+    "name": "Flying Rock",
+    "flags": 260,
+    "health": [
+      20.0,
+      6.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "MAULINGROCK_BODY_NAME,6799920854954917123": {
+    "_name": "MAULINGROCK_BODY_NAME",
+    "name": "Flying Rock",
+    "flags": 260,
+    "health": [
+      40.0,
+      12.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "MAULINGROCK_BODY_NAME,8652171154657999799": {
+    "_name": "MAULINGROCK_BODY_NAME",
+    "name": "Flying Rock",
+    "flags": 260,
+    "health": [
+      10.0,
+      3.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "MINORCONSTRUCT_BODY_NAME,103632605104745492": {
+    "_name": "MINORCONSTRUCT_BODY_NAME",
+    "name": "Alpha Construct",
+    "flags": 0,
+    "health": [
+      100.0,
+      30.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.5,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "MAJORCONSTRUCT_BODY_NAME,2862358289959180157": {
+    "_name": "MAJORCONSTRUCT_BODY_NAME",
+    "name": "",
+    "flags": 2,
+    "health": [
+      2100.0,
+      630.0
+    ],
+    "regen": [
+      7.5,
+      1.5
+    ],
+    "damage": [
+      25.0,
+      5.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 0.0,
+    "acceleration": 0.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 15.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "MINORCONSTRUCT_BODY_NAME,8669585889829841887": {
+    "_name": "MINORCONSTRUCT_BODY_NAME",
+    "name": "Alpha Construct",
+    "flags": 0,
+    "health": [
+      100.0,
+      30.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "MEGACONSTRUCT_BODY_NAME,8822941250623968081": {
+    "_name": "MEGACONSTRUCT_BODY_NAME",
+    "name": "Xi Construct",
+    "flags": 0,
+    "health": [
+      2800.0,
+      840.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      13.0,
+      2.6
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 60.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 100.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 15.0,
+    "is_champion": true,
+    "item_drop": "MinorConstructOnKill"
+  },
+  "MINORCONSTRUCT_BODY_NAME,9115672286494309088": {
+    "_name": "MINORCONSTRUCT_BODY_NAME",
+    "name": "Alpha Construct",
+    "flags": 0,
+    "health": [
+      100.0,
+      30.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "RAILGUNNER_BODY_NAME,-1973283156996698076": {
+    "_name": "RAILGUNNER_BODY_NAME",
+    "name": "Railgunner",
+    "flags": 16,
+    "health": [
+      110.0,
+      33.0
+    ],
+    "regen": [
+      1.0,
+      0.2
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "SULFURPOD_BODY_NAME,2655071089965811302": {
+    "_name": "SULFURPOD_BODY_NAME",
+    "name": "Sulfur Pod",
+    "flags": 260,
+    "health": [
+      1.0,
+      0.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      8.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "VERMIN_BODY_NAME,5474593460213496322": {
+    "_name": "VERMIN_BODY_NAME",
+    "name": "Blind Vermin",
+    "flags": 0,
+    "health": [
+      90.0,
+      27.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 13.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 16.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "VOIDBARNACLE_BODY_NAME,-6692666532592548283": {
+    "_name": "VOIDBARNACLE_BODY_NAME",
+    "name": "Void Barnacle",
+    "flags": 1024,
+    "health": [
+      225.0,
+      68.0
+    ],
+    "regen": [
+      7.5,
+      1.5
+    ],
+    "damage": [
+      6.0,
+      1.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "VOIDBARNACLE_BODY_NAME,4069858657717369816": {
+    "_name": "VOIDBARNACLE_BODY_NAME",
+    "name": "Void Barnacle",
+    "flags": 1024,
+    "health": [
+      225.0,
+      68.0
+    ],
+    "regen": [
+      7.5,
+      1.5
+    ],
+    "damage": [
+      6.0,
+      1.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "VOIDJAILER_BODY_NAME,-3833664764396390861": {
+    "_name": "VOIDJAILER_BODY_NAME",
+    "name": "Void Jailer",
+    "flags": 1024,
+    "health": [
+      2200.0,
+      660.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      14.0,
+      2.8
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 50.0,
+    "jump": 1,
+    "jump_power": 18.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "VOIDJAILER_BODY_NAME,3674306644515702106": {
+    "_name": "VOIDJAILER_BODY_NAME",
+    "name": "Void Jailer",
+    "flags": 1024,
+    "health": [
+      2200.0,
+      660.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      14.0,
+      2.8
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 50.0,
+    "jump": 1,
+    "jump_power": 18.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "VOIDMEGACRAB_BODY_NAME,5712417530778252731": {
+    "_name": "VOIDMEGACRAB_BODY_NAME",
+    "name": "Void Devastator",
+    "flags": 1024,
+    "health": [
+      2800.0,
+      840.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 8.0,
+    "sprint_multiplier": 4.0,
+    "acceleration": 60.0,
+    "jump": 1,
+    "jump_power": 18.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "item_drop": "VoidMegaCrabItem"
+  },
+  "VOIDMEGACRAB_BODY_NAME,7241651002536686107": {
+    "_name": "VOIDMEGACRAB_BODY_NAME",
+    "name": "Void Devastator",
+    "flags": 1024,
+    "health": [
+      2800.0,
+      840.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 8.0,
+    "sprint_multiplier": 4.0,
+    "acceleration": 60.0,
+    "jump": 1,
+    "jump_power": 18.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "item_drop": "VoidMegaCrabItem"
+  },
+  "VOIDRAIDCRAB_BODY_NAME,-3998090436078429083": {
+    "_name": "VOIDRAIDCRAB_BODY_NAME",
+    "name": "\u300cVoidling\u300d",
+    "flags": 1280,
+    "health": [
+      8000.0,
+      2400.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      18.0,
+      3.6
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "VOIDRAIDCRAB_BODY_NAME,-2696937696508725749": {
+    "_name": "VOIDRAIDCRAB_BODY_NAME",
+    "name": "\u300cVoidling\u300d",
+    "flags": 3073,
+    "health": [
+      2000.0,
+      600.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 45.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 20.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "item_drop": null
+  },
+  "VOIDRAIDCRAB_BODY_NAME,-2297594400751855282": {
+    "_name": "VOIDRAIDCRAB_BODY_NAME",
+    "name": "\u300cVoidling\u300d",
+    "flags": 3073,
+    "health": [
+      2000.0,
+      600.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 45.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 20.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "item_drop": null
+  },
+  "VOIDRAIDCRAB_BODY_NAME,-1956854656259439178": {
+    "_name": "VOIDRAIDCRAB_BODY_NAME",
+    "name": "\u300cVoidling\u300d",
+    "flags": 1280,
+    "health": [
+      1000.0,
+      300.0
+    ],
+    "regen": [
+      7.5,
+      1.5
+    ],
+    "damage": [
+      18.0,
+      3.6
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "VOIDRAIDCRAB_BODY_NAME,3487969746502550014": {
+    "_name": "VOIDRAIDCRAB_BODY_NAME",
+    "name": "\u300cVoidling\u300d",
+    "flags": 3073,
+    "health": [
+      2000.0,
+      600.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 45.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 20.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "item_drop": null
+  },
+  "VOIDRAIDCRAB_BODY_NAME,5253315355278031168": {
+    "_name": "VOIDRAIDCRAB_BODY_NAME",
+    "name": "\u300cVoidling\u300d",
+    "flags": 3073,
+    "health": [
+      2000.0,
+      600.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 45.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 20.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "item_drop": null
+  },
+  "VOIDSURVIVOR_BODY_NAME,7254558834924720360": {
+    "_name": "VOIDSURVIVOR_BODY_NAME",
+    "name": "\u300cV??oid Fiend\u300f",
+    "flags": 1040,
+    "health": [
+      110.0,
+      33.0
+    ],
+    "regen": [
+      1.0,
+      0.2
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "ANCIENTWISP_BODY_NAME,-1926536020116777831": {
+    "_name": "ANCIENTWISP_BODY_NAME",
+    "name": "",
+    "flags": 0,
+    "health": [
+      1650.0,
+      495.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      65.0,
+      13.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 28.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": true,
+    "item_drop": null
+  },
+  "ARCHWISP_BODY_NAME,2943882077010194847": {
+    "_name": "ARCHWISP_BODY_NAME",
+    "name": "",
+    "flags": 0,
+    "health": [
+      1500.0,
+      450.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      25.0,
+      5.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 14.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 1.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "ENGI_BODY_NAME,2184376616736218088": {
+    "_name": "ENGI_BODY_NAME",
+    "name": "Engineer",
+    "flags": 0,
+    "health": [
+      140.0,
+      42.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      19.0,
+      3.8
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 9.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 2,
+    "jump_power": 15.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "DRONEBACKUP_BODY_NAME,-6438311804816853948": {
+    "_name": "DRONEBACKUP_BODY_NAME",
+    "name": "",
+    "flags": 2,
+    "health": [
+      150.0,
+      45.0
+    ],
+    "regen": [
+      2.0,
+      0.4
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 17.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 17.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "BANDIT_BODY_NAME,-7454048968033889674": {
+    "_name": "BANDIT_BODY_NAME",
+    "name": "Bandit",
+    "flags": 16,
+    "health": [
+      100.0,
+      30.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "BEETLE_CRYSTAL_BODY_NAME,-7349018413671303926": {
+    "_name": "BEETLE_CRYSTAL_BODY_NAME",
+    "name": "",
+    "flags": 0,
+    "health": [
+      10.0,
+      3.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 8.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 40.0,
+    "jump": 1,
+    "jump_power": 18.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "BEETLEGUARD_BODY_NAME,-3930080638668933223": {
+    "_name": "BEETLEGUARD_BODY_NAME",
+    "name": "Beetle Guard",
+    "flags": 0,
+    "health": [
+      480.0,
+      144.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 17.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 60.0,
+    "jump": 1,
+    "jump_power": 12.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "BOMBER_BODY_NAME,-7773859179574032082": {
+    "_name": "BOMBER_BODY_NAME",
+    "name": "Bomber",
+    "flags": 0,
+    "health": [
+      220.0,
+      66.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      16.0,
+      3.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "BROTHER_BODY_NAME,8171978806095182334": {
+    "_name": "BROTHER_BODY_NAME",
+    "name": "Mithrix",
+    "flags": 2048,
+    "health": [
+      2000.0,
+      600.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      4.0,
+      0.8
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 15.0,
+    "sprint_multiplier": 2.6,
+    "acceleration": 45.0,
+    "jump": 1,
+    "jump_power": 25.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "item_drop": null
+  },
+  "CLAY_BODY_NAME,5890446788926524932": {
+    "_name": "CLAY_BODY_NAME",
+    "name": "Clay Man",
+    "flags": 0,
+    "health": [
+      110.0,
+      33.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 9.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 12.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "COMMANDO_BODY_NAME,3407773436254906257": {
+    "_name": "COMMANDO_BODY_NAME",
+    "name": "Commando",
+    "flags": 16,
+    "health": [
+      110.0,
+      33.0
+    ],
+    "regen": [
+      1.0,
+      0.2
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 10.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "ENFORCER_BODY_NAME,5739200980008436006": {
+    "_name": "ENFORCER_BODY_NAME",
+    "name": "Enforcer",
+    "flags": 0,
+    "health": [
+      60.0,
+      18.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 7.5,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 12.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "ENGITURRET_BODY_NAME,-5181724143421127883": {
+    "_name": "ENGITURRET_BODY_NAME",
+    "name": "Engineer Turret",
+    "flags": 2,
+    "health": [
+      110.0,
+      33.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      16.0,
+      3.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 3.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "GOLEM_BODY_NAME,9010093125566289731": {
+    "_name": "GOLEM_BODY_NAME",
+    "name": "Stone Golem",
+    "flags": 0,
+    "health": [
+      4799999770624.0,
+      1439999983616.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      20.0,
+      4.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 6.6,
+    "sprint_multiplier": 1.45,
+    "acceleration": 40.0,
+    "jump": 1,
+    "jump_power": 20.0,
+    "armor": 99.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "HAND_BODY_NAME,-5524676904519603587": {
+    "_name": "HAND_BODY_NAME",
+    "name": "HAN-D",
+    "flags": 0,
+    "health": [
+      300.0,
+      90.0
+    ],
+    "regen": [
+      1.0,
+      0.2
+    ],
+    "damage": [
+      20.0,
+      4.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 8.5,
+    "sprint_multiplier": 1.45,
+    "acceleration": 25.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 3.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "POTMOBILE_BODY_NAME,5952753717479384627": {
+    "_name": "POTMOBILE_BODY_NAME",
+    "name": "Potmobile",
+    "flags": 0,
+    "health": [
+      600.0,
+      180.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 15.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "POD_BODY_NAME,-121151419735600607": {
+    "_name": "POD_BODY_NAME",
+    "name": "Ancestral Pod",
+    "flags": 0,
+    "health": [
+      200.0,
+      60.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "COMMANDO_BODY_NAME,-1683886214470233312": {
+    "_name": "COMMANDO_BODY_NAME",
+    "name": "Commando",
+    "flags": 0,
+    "health": [
+      150.0,
+      45.0
+    ],
+    "regen": [
+      0.9,
+      0.18
+    ],
+    "damage": [
+      18.0,
+      3.6
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 800.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "POT2_BODY_NAME,-4275993658677149468": {
+    "_name": "POT2_BODY_NAME",
+    "name": "Pot",
+    "flags": 0,
+    "health": [
+      0.0,
+      0.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "POTMOBILE_BODY_NAME,6050533330871346120": {
+    "_name": "POTMOBILE_BODY_NAME",
+    "name": "Potmobile",
+    "flags": 0,
+    "health": [
+      600.0,
+      180.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 15.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "POTMOBILE_BODY_NAME,8575317944272511556": {
+    "_name": "POTMOBILE_BODY_NAME",
+    "name": "Potmobile",
+    "flags": 0,
+    "health": [
+      600.0,
+      180.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 15.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  },
+  "SNIPER_BODY_NAME,-1476916418868677818": {
+    "_name": "SNIPER_BODY_NAME",
+    "name": "",
+    "flags": 0,
+    "health": [
+      110.0,
+      33.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "item_drop": null
+  }
+}

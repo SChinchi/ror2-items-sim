@@ -1,0 +1,58 @@
+{
+  "scVoidCampTallGrassCluster2": {
+    "class": "SpawnCard",
+    "_name": "scVoidCampTallGrassCluster2",
+    "name": "",
+    "required_flags": 0,
+    "forbidden_flags": 0,
+    "cost": 3
+  },
+  "scVoidCampTallGrassCluster1": {
+    "class": "SpawnCard",
+    "_name": "scVoidCampTallGrassCluster1",
+    "name": "",
+    "required_flags": 0,
+    "forbidden_flags": 0,
+    "cost": 6
+  },
+  "scVoidCampTallGrassCluster3": {
+    "class": "SpawnCard",
+    "_name": "scVoidCampTallGrassCluster3",
+    "name": "",
+    "required_flags": 0,
+    "forbidden_flags": 0,
+    "cost": 6
+  },
+  "scVoidCampKelp": {
+    "class": "SpawnCard",
+    "_name": "scVoidCampKelp",
+    "name": "",
+    "required_flags": 1,
+    "forbidden_flags": 0,
+    "cost": 3
+  },
+  "scVoidCampXYZOpen": {
+    "class": "SpawnCard",
+    "_name": "scVoidCampXYZOpen",
+    "name": "",
+    "required_flags": 0,
+    "forbidden_flags": 2,
+    "cost": 6
+  },
+  "scVoidCampGrass": {
+    "class": "SpawnCard",
+    "_name": "scVoidCampGrass",
+    "name": "",
+    "required_flags": 0,
+    "forbidden_flags": 0,
+    "cost": 1
+  },
+  "scVoidCampXYZ": {
+    "class": "SpawnCard",
+    "_name": "scVoidCampXYZ",
+    "name": "",
+    "required_flags": 0,
+    "forbidden_flags": 2,
+    "cost": 6
+  }
+}
