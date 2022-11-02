@@ -141,8 +141,8 @@ def compute_horde_chance(scene_name, stages_cleared, num_players=1, is_dlc_enabl
     Parameters
     ----------
     scene_name : str
-        The name of the scene. This will use the default monster pool, as any
-        Family Events always have either 0% or 100% chance.
+        The internal name of the scene. This will use the default monster pool,
+         as any Family Events always have either 0% or 100% chance.
     stages_cleared : int
         The number of cleared stages. This affects which monsters and elite
         tiers will be available for selection.

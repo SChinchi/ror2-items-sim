@@ -1,10 +1,10 @@
-# RoR2 Stage Items Simulator
+# RoR2 Stage Item Simulator
 
 Simulate item generation for any stage and collect statistics for the spawned interactables, or simulate a run session to see how many and what items are encountered.
 
 ## How to use
 
-Numpy and UnityPy are required to run the code.
+Numpy is required to run the code, as is UnityPy if one requires extracting more data from the assets.
 
 ### Interactable generation simulation
 
@@ -36,6 +36,7 @@ director.is_sacrifice_enabled = True
 The `CampDirector` is responsible for interactable generation for the Void Seeds and is a simpler version of the `SceneDirector` as it doesn't depend on most of its variables for the outcome. Note that the game spawns two such directors; one for interactables and void enemies, and the other for kelp and voidtouched stage enemies.
 
 ```
+from directors import CampDirector
 director1 = CampDirector()                   # Type 1 director
 director1.populate_camp()                    # The number of stages cleared doesn't affect the result
 director2 = CampDirector(spawns_kelp=True)   # Type 2 director
@@ -46,7 +47,7 @@ director2.populate_camp(print_result=False)  # Return the generated spawn cards 
 
 The `Run` class is an implementation of a run session, which can be used to analyse how many items of each tier one can obtain by full looting a number of stages. Since it has no intelligent agent to make context-related decisions, it is limited in some aspects. For example,
 
-- While it supports multiplayer, it can't make decisions for how to split the loot. For the purposes of this simulation loot distribution is irrelevant, therefore, a unified inventory is used.
+- While it supports multiplayer, it cannot make decisions for how to split the loot. For the purposes of this simulation loot distribution is irrelevant, therefore, a unified inventory is used.
 - It randomly selects an item to purchase from a multishop, but it will aggressively search for an Executive Card from equipment multishops.
 - Due to their interactive and rare nature, Adaptive Chests are not looted but their encounter is logged.
 - It doesn't utilise printers and scrappers to optimise the build, as this technically doesn't change the number of items within an item tier.
@@ -72,7 +73,7 @@ print(stats['tiers'])
 
 ### Scripts
 
-The are two prepared scripts for statistical analysis.
+There are two prepared scripts for statistical analysis.
 
 #### sim_items.py
 
@@ -89,6 +90,7 @@ simulate_run(10, 1, 2)   # Visiting the Void Fields after stage 1, 2 players
 Compute the Horde of Many chance for any stage on Monsoon difficulty. As this depends on the credits available for the Teleporter Boss Director, the chance is broken down in credit thresholds. Along with it, it provides the maximum time for that threshold to not be crossed for 0-3 activated Shrines of the Mountain.
 
 ```
+from sim_horde import compute_horde_chance
 for threshold, p, times in compute_horde_chance('dampcavesimple', 3):
 	times = ''.join('{:>10s}'.format(str(t) if t else 'N/A') for t in times)
 	print(f'{str(threshold):<20s}{p:^8.3f}|{times}')
