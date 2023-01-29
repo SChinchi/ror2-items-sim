@@ -262,7 +262,7 @@ class SceneDirector(BaseSceneDirector):
                 spawn_card = card.spawn_card
                 skip_command = self.is_command_enabled and spawn_card.offers_choice
                 skip_sacrifice = self.is_sacrifice_enabled and spawn_card.skip_with_sacrifice
-                skip_log = self.is_log_available and spawn_card.name == 'iscRadarTower'
+                skip_log = self.is_log_available and spawn_card._name == 'iscRadarTower'
                 if skip_command or skip_sacrifice or skip_log:
                     continue
                 # Since we'll need to access the index of a card in a list a lot,
