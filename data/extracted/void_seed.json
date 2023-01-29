@@ -1,11 +1,13 @@
 {
-  "Camp 1 - Void Monsters & Interactables": {
+  "camp1": {
+    "name": "Camp 1 - Void Monsters & Interactables",
     "interactable_credits": 100,
     "monster_credits": 60,
     "interactables": "dccsVoidCampInteractables",
     "monsters": "dccsVoidCampMonsters"
   },
-  "Camp 2 - Flavor Props & Void Elites": {
+  "camp2": {
+    "name": "Camp 2 - Flavor Props & Void Elites",
     "interactable_credits": 35,
     "monster_credits": 60,
     "interactables": "dccsVoidCampFlavorProps",

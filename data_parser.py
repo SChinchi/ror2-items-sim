@@ -318,14 +318,13 @@ def extract_file_data(src_path=FILES_DIR):
             asset = obj.read_typetree()
             ids[obj.path_id] = asset
             if 'Camp 1' in asset['m_Name'] or 'Camp 2' in asset['m_Name']:
-                voidcamps[asset['m_Name']] = obj.path_id
-    for obj_name, obj_id in voidcamps.items():
-        director = _get_component(ids, obj_id, CampDirector)
-        data = CampDirector.parse(director)
-        data['interactables'] = ids[data['interactables']]['m_Name']
-        monsters_file = ids[data['monsters']]['_monsterCards']['m_PathID']
-        data['monsters'] = ids[monsters_file]['m_Name'] if monsters_file else None
-        voidcamps[obj_name] = data
+                director = _get_component(ids, obj.path_id, CampDirector)
+                data = CampDirector.parse(director)
+                data['name'] = asset['m_Name']
+                data['interactables'] = ids[data['interactables']]['m_Name']
+                monsters_file = ids[data['monsters']]['_monsterCards']['m_PathID']
+                data['monsters'] = ids[monsters_file]['m_Name'] if monsters_file else None
+                voidcamps['camp1' if 'Camp 1' in asset['m_Name'] else 'camp2'] = data
 
     simulacrum = {}
     env = UnityPy.load(path.join(FILES_DIR, 'ror2-dlc1-gamemodes-infinitetowerrun_text_assets_all.bundle'))

@@ -70,19 +70,6 @@ class Scene:
         return dccs_pool
 
 
-class VoidCamp:
-    def __init__(self, name, data):
-        self.name = name
-        for key, value in data.items():
-            setattr(self, key, value)
-        self.interactables = dccs[self.interactables]
-        if self.monsters:
-            self.monsters = dccs[self.monsters]
-
-    def __repr__(self):
-        return self.name
-
-
 def _init_items(data):
     items = Items(data)
     for item in items._items:
@@ -129,10 +116,12 @@ def _init_dccs(data):
     return dccs
 
 
-def _init_camp(name, data):
-    name = 'camp1' if 'Camp 1' in name else 'camp2'
-    camp = VoidCamp(name, data)
-    return name, camp
+def _init_camp(data):
+    camp = CampDirector(data)
+    camp.interactables = dccs[camp.interactables]
+    if camp.monsters:
+        camp.monsters = dccs[camp.monsters]
+    return camp
 
 
 def _init_simulacrum(data):
@@ -199,5 +188,5 @@ bodies = {name: _init_body(data) for name, data in load_data('bodies').items()}
 csc = {name: _init_csc(data) for name, data in load_data('csc').items()}
 dccs = {name: _init_dccs(data) for name, data in load_data('dccs').items()}
 scenes = {name: Scene(name, data) for name, data in load_data('scenes').items()}
-voidseed = dict(_init_camp(name, data) for name, data in load_data('voidcamp').items())
+voidseed = {name: _init_camp(data) for name, data in load_data('voidcamp').items()}
 simulacrum = _init_simulacrum(load_data('simulacrum'))

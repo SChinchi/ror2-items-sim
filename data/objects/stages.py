@@ -25,9 +25,18 @@ class ClassicStageInfo:
 class CampDirector:
     SCRIPT = -3655719543255941067
 
+    def __init__(self, data):
+        for key, value in data.items():
+            setattr(self, key, value)
+
+    def __repr__(self):
+        return self.name
+
     @staticmethod
     def parse(asset):
         return {
+            # To be filled out once all file_ids have been collected
+            'name': asset['m_GameObject']['m_PathID'],
             'interactable_credits': asset['baseInteractableCredit'],
             'monster_credits': asset['baseMonsterCredit'],
             # To be filled out once all file ids have been collected
