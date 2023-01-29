@@ -328,31 +328,25 @@ def extract_file_data(src_path=FILES_DIR):
         voidcamps[obj_name] = data
 
     simulacrum = {}
-    env = UnityPy.load(path.join(FILES_DIR, 'ror2-dlc1-gamemodes-infinitetowerrun-infinitetowerassets-infinitetowerwavecategories_text_assets_all.bundle'))
+    env = UnityPy.load(path.join(FILES_DIR, 'ror2-dlc1-gamemodes-infinitetowerrun_text_assets_all.bundle'))
     for obj in env.objects:
         if obj.type.name == 'MonoBehaviour':
             asset = obj.read_typetree()
-            data = []
-            for wave in asset['wavePrefabs']:
-                requirement = wave['prerequisites']['m_PathID']
-                prefab_id = wave['wavePrefab']['m_PathID']
-                for cls in (
-                    InfiniteTowerWaveController,
-                    InfiniteTowerBossWaveController,
-                    InfiniteTowerExplicitWaveController,
-                ):
-                    controller = _get_component(ids, prefab_id, cls)
-                    if controller:
-                        wave_data = cls.parse(controller, ids)
-                        break
-                data.append({
-                    'name': ids[prefab_id]['m_Name'],
-                    'wave': wave_data,
-                    'prerequisites': ids[requirement]['m_Name'] if requirement else None,
-                    'weight': wave['weight'],
-                })
-            category = 'common' if 'Common' in asset['m_Name'] else 'boss'
-            simulacrum[category] = data
+            if asset['m_Script']['m_PathID'] == InfiniteTowerRun.SCRIPT:
+                simulacrum = InfiniteTowerRun.parse(asset, ids)
+                for category in simulacrum['wave_categories']:
+                    for wave in category['waves']:
+                        for cls in (
+                            InfiniteTowerWaveController,
+                            InfiniteTowerBossWaveController,
+                            InfiniteTowerExplicitWaveController,
+                        ):
+                            controller = _get_component(ids, wave['wave'], cls)
+                            if controller:
+                                data = cls.parse(controller, ids)
+                                data['name'] = ids[wave['wave']]['m_Name']
+                                wave['wave'] = data
+                                break
 
     for fname, data in (
         (ITEMS_FILE, items),

@@ -1,0 +1,226 @@
+{
+  "class": "InfiniteTowerRun",
+  "interactable_credits": 600,
+  "blacklisted_tags": [
+    18,
+    19
+  ],
+  "blacklisted_items": [
+    "FocusConvergence",
+    "TitanGoldDuringTP",
+    "DroneWeapons"
+  ],
+  "wave_categories": [
+    {
+      "name": "BossWaveCategory",
+      "waves": [
+        {
+          "wave": {
+            "class": "InfiniteTowerBossWaveController",
+            "name": "InfiniteTowerWaveBoss",
+            "credits": 500.0,
+            "wave_period": 60.0,
+            "immediate_credits_fraction": 0.3,
+            "max_squad": 30,
+            "drop_table": "dtITBossWave",
+            "guarantee_champion": false
+          },
+          "prerequisites": null,
+          "weight": 100.0
+        },
+        {
+          "wave": {
+            "class": "InfiniteTowerBossWaveController",
+            "name": "InfiniteTowerWaveBossLunar",
+            "credits": 500.0,
+            "wave_period": 60.0,
+            "immediate_credits_fraction": 0.3,
+            "max_squad": 30,
+            "drop_table": "dtITLunar",
+            "guarantee_champion": false
+          },
+          "prerequisites": null,
+          "weight": 4.0
+        },
+        {
+          "wave": {
+            "class": "InfiniteTowerBossWaveController",
+            "name": "InfiniteTowerWaveBossVoid",
+            "credits": 500.0,
+            "wave_period": 60.0,
+            "immediate_credits_fraction": 0.3,
+            "max_squad": 30,
+            "drop_table": "dtITVoid",
+            "guarantee_champion": false
+          },
+          "prerequisites": null,
+          "weight": 10.0
+        },
+        {
+          "wave": {
+            "class": "InfiniteTowerExplicitWaveController",
+            "name": "InfiniteTowerWaveBossScav",
+            "credits": 0.0,
+            "wave_period": 30.0,
+            "immediate_credits_fraction": 0.0,
+            "max_squad": 30,
+            "drop_table": "dtITLunar",
+            "spawn_list": [
+              [
+                "cscScavBoss",
+                1
+              ]
+            ]
+          },
+          "prerequisites": "Wave11OrGreaterPrerequisite",
+          "weight": 2.0
+        },
+        {
+          "wave": {
+            "class": "InfiniteTowerExplicitWaveController",
+            "name": "InfiniteTowerWaveBossBrother",
+            "credits": 0.0,
+            "wave_period": 30.0,
+            "immediate_credits_fraction": 0.0,
+            "max_squad": 30,
+            "drop_table": "dtITSpecialBossWave",
+            "spawn_list": [
+              [
+                "cscBrotherIT",
+                1
+              ]
+            ]
+          },
+          "prerequisites": "Wave11OrGreaterPrerequisite",
+          "weight": 2.0
+        }
+      ],
+      "availability_period": 5,
+      "min_wave": 0
+    },
+    {
+      "name": "CommonWaveCategory",
+      "waves": [
+        {
+          "wave": {
+            "class": "InfiniteTowerWaveController",
+            "name": "InfiniteTowerWaveDefault",
+            "credits": 159.0,
+            "wave_period": 30.0,
+            "immediate_credits_fraction": 0.15,
+            "max_squad": 30,
+            "drop_table": "dtITDefaultWave"
+          },
+          "prerequisites": null,
+          "weight": 80.0
+        },
+        {
+          "wave": {
+            "class": "InfiniteTowerWaveController",
+            "name": "InfiniteTowerWaveArtifactBomb",
+            "credits": 159.0,
+            "wave_period": 30.0,
+            "immediate_credits_fraction": 0.15,
+            "max_squad": 30,
+            "drop_table": "dtITDefaultWave"
+          },
+          "prerequisites": "ArtifactBombDisabledPrerequisite",
+          "weight": 1.0
+        },
+        {
+          "wave": {
+            "class": "InfiniteTowerWaveController",
+            "name": "InfiniteTowerWaveArtifactGlass",
+            "credits": 159.0,
+            "wave_period": 30.0,
+            "immediate_credits_fraction": 0.15,
+            "max_squad": 30,
+            "drop_table": "dtITDefaultWave"
+          },
+          "prerequisites": "ArtifactGlassDisabledPrerequisite",
+          "weight": 1.0
+        },
+        {
+          "wave": {
+            "class": "InfiniteTowerWaveController",
+            "name": "InfiniteTowerWaveArtifactSingleMonsterType",
+            "credits": 159.0,
+            "wave_period": 30.0,
+            "immediate_credits_fraction": 0.15,
+            "max_squad": 30,
+            "drop_table": "dtITDefaultWave"
+          },
+          "prerequisites": "ArtifactSingleMonsterTypeDisabledPrerequisite",
+          "weight": 1.0
+        },
+        {
+          "wave": {
+            "class": "InfiniteTowerWaveController",
+            "name": "InfiniteTowerWaveArtifactWeakAssKnees",
+            "credits": 159.0,
+            "wave_period": 30.0,
+            "immediate_credits_fraction": 0.15,
+            "max_squad": 30,
+            "drop_table": "dtITDefaultWave"
+          },
+          "prerequisites": "ArtifactWeakAssKneesDisabledPrerequisite",
+          "weight": 1.0
+        },
+        {
+          "wave": {
+            "class": "InfiniteTowerWaveController",
+            "name": "InfiniteTowerWaveArtifactWispOnDeath",
+            "credits": 159.0,
+            "wave_period": 30.0,
+            "immediate_credits_fraction": 0.15,
+            "max_squad": 30,
+            "drop_table": "dtITDefaultWave"
+          },
+          "prerequisites": "ArtifactWispOnDeathDisabledPrerequisite",
+          "weight": 1.0
+        },
+        {
+          "wave": {
+            "class": "InfiniteTowerWaveController",
+            "name": "InfiniteTowerWaveArtifactMixEnemy",
+            "credits": 159.0,
+            "wave_period": 30.0,
+            "immediate_credits_fraction": 0.15,
+            "max_squad": 30,
+            "drop_table": "dtITDefaultWave"
+          },
+          "prerequisites": "ArtifactMixEnemyDisabledPrerequisite",
+          "weight": 1.0
+        },
+        {
+          "wave": {
+            "class": "InfiniteTowerWaveController",
+            "name": "InfiniteTowerWaveArtifactCommand",
+            "credits": 159.0,
+            "wave_period": 30.0,
+            "immediate_credits_fraction": 0.15,
+            "max_squad": 30,
+            "drop_table": "dtITDefaultWave"
+          },
+          "prerequisites": "ArtifactCommandDisabledPrerequisite",
+          "weight": 1.0
+        },
+        {
+          "wave": {
+            "class": "InfiniteTowerWaveController",
+            "name": "InfiniteTowerWaveArtifactEnigma",
+            "credits": 159.0,
+            "wave_period": 30.0,
+            "immediate_credits_fraction": 0.15,
+            "max_squad": 30,
+            "drop_table": "dtITDefaultWave"
+          },
+          "prerequisites": "ArtifactEnigmaDisabledPrerequisite",
+          "weight": 1.0
+        }
+      ],
+      "availability_period": 1,
+      "min_wave": 0
+    }
+  ]
+}

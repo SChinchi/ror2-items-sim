@@ -135,6 +135,19 @@ def _init_camp(name, data):
     return name, camp
 
 
+def _init_simulacrum(data):
+    simulacrum = eval(data['class'])(data)
+    simulacrum.blacklisted_items = [getattr(Items, item) for item in simulacrum.blacklisted_items]
+    simulacrum.wave_categories = [InfiniteTowerWaveCategory(wave) for wave in simulacrum.wave_categories]
+    for category in simulacrum.wave_categories:
+        for wave in category.waves:
+            wave = wave.wave
+            if isinstance(wave, InfiniteTowerExplicitWaveController):
+                for spawn_info in wave.spawn_list:
+                    spawn_info[0] = csc[spawn_info[0]]
+    return simulacrum
+
+
 def load_data(category):
     """
     Load data extracted from the game.
@@ -144,7 +157,7 @@ def load_data(category):
     category : str
         Keyword to decide which category of data to load. The options include
         'items', 'equipment', 'tiers', 'droptables', 'bodies', 'sc', 'isc',
-        'csc', 'skills', 'dccs', 'scenes', and 'voidcamp'.
+        'csc', 'skills', 'dccs', 'scenes', 'voidcamp', and 'simulacrum'.
 
     Returns
     -------
@@ -165,6 +178,7 @@ def load_data(category):
         'dccs': DCCS_FILE,
         'scenes': SCENES_FILE,
         'voidcamp': CAMP_FILE,
+        'simulacrum': SIMULACRUM_FILE,
     }
     fname = choices[category]
     if not os.path.exists(fname):
@@ -186,3 +200,4 @@ csc = {name: _init_csc(data) for name, data in load_data('csc').items()}
 dccs = {name: _init_dccs(data) for name, data in load_data('dccs').items()}
 scenes = {name: Scene(name, data) for name, data in load_data('scenes').items()}
 voidseed = dict(_init_camp(name, data) for name, data in load_data('voidcamp').items())
+simulacrum = _init_simulacrum(load_data('simulacrum'))

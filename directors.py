@@ -3,9 +3,9 @@ import warnings
 
 import numpy as np
 
-from constants import ALL_EXPANSIONS
+from constants import ALL_EXPANSIONS, IT_STAGES
 from data.objects.dccs import DirectorCardCategorySelection
-from data_loader import scenes, voidseed
+from data_loader import scenes, voidseed, simulacrum
 
 
 class IndexedDirectorCard:
@@ -14,7 +14,8 @@ class IndexedDirectorCard:
         self.name = card.spawn_card.name
         self.cost = card.spawn_card.cost
         # We're dealing with both SpawnCard and InteractableSpawnCard objects,
-        # and the former don't have some fields, for which we need some defaults.
+        # and the former do not have some fields, for which we need some
+        # defaults.
         self.limit = getattr(card.spawn_card, 'limit', np.inf)
         self.weight = card.weight
         self.skip_with_sacrifice = getattr(card.spawn_card, 'skip_with_sacrifice', False)
@@ -215,6 +216,8 @@ class SceneDirector(BaseSceneDirector):
             interactable_credit = int(stage_info.interactable_credits * (.5 + self.num_players * .5))
             if self.is_bonus_credits_available:
                 interactable_credit += stage_info.bonus_credits
+            if self._scene_name in IT_STAGES:
+                interactable_credit = simulacrum.interactable_credits
             if self.is_sacrifice_enabled:
                 interactable_credit //= 2
         else:
