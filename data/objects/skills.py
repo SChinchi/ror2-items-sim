@@ -1,32 +1,6 @@
 from ._utils import round_value
 
 
-class AISkillDriver:
-    SCRIPT = -945280087658747711
-
-    @staticmethod
-    def parse(asset):
-        return {
-            'name': asset['customName'],
-            'skill_slot': asset['skillSlot'],
-            # To be filled out once all file ids have been collected
-            'required_skill': asset['requiredSkill']['m_PathID'],
-            'requires_skill_ready': bool(asset['requireSkillReady']),
-            'requires_equipment_ready': bool(asset['requireEquipmentReady']),
-            'user_hp_range': (round_value(asset['maxUserHealthFraction']),
-                              round_value(asset['minUserHealthFraction'])),
-            'target_hp_range': (round_value(asset['maxTargetHealthFraction']),
-                                round_value(asset['minTargetHealthFraction'])),
-            'distance_range': (round_value(asset['minDistance']),
-                               round_value(asset['maxDistance'])),
-            'max_times_selected': asset['maxTimesSelected'],
-            'should_sprint': bool(asset['shouldSprint']),
-            'no_repeat': bool(asset['noRepeat']),
-            # To be filled out once all file ids have been collected
-            'next_high_priority': asset['nextHighPriorityOverride']['m_PathID'],
-        }
-
-
 class SkillDef:
     SCRIPT = 7610544427805846859
 

@@ -44,6 +44,16 @@ class DirectorCard:
         return f'({self.spawn_card._name}, {self.weight}, {self.min_stages_cleared})'
 
 
+class Master:
+    def __init__(self, name, data):
+        self.name = name
+        for key, value in data.items():
+            setattr(self, key, value)
+
+    def __repr__(self):
+        return self.name
+
+
 class Scene:
     def __init__(self, name, data):
         self.name = name
@@ -98,10 +108,18 @@ def _init_body(data):
     return body
 
 
+def _init_master(name, data):
+    master = Master(name, data) if data else None
+    if master is not None:
+        for i, name in enumerate(master.drivers):
+            master.drivers[i] = drivers[name]
+    return master
+
+
 def _init_csc(data):
     card = eval(data['class'])(data)
     card.body = bodies[card.body]
-    # TODO: Assign `self.master`
+    card.master = masters[card.master]
     return card
 
 
@@ -145,8 +163,8 @@ def load_data(category):
     ----------
     category : str
         Keyword to decide which category of data to load. The options include
-        'items', 'equipment', 'tiers', 'droptables', 'bodies', 'sc', 'isc',
-        'csc', 'skills', 'dccs', 'scenes', 'voidcamp', and 'simulacrum'.
+        'items', 'equipment', 'tiers', 'droptables', 'masters', 'bodies', 'sc'
+        'isc', 'csc', 'skills', 'dccs', 'scenes', 'voidcamp', and 'simulacrum'.
 
     Returns
     -------
@@ -159,6 +177,7 @@ def load_data(category):
         'equipment': EQUIPMENT_FILE,
         'tiers': TIERS_FILE,
         'droptables': DROPTABLES_FILE,
+        'masters': MASTERS_FILE,
         'bodies': BODIES_FILE,
         'sc': SC_FILE,
         'isc': ISC_FILE,
@@ -185,6 +204,12 @@ droptables = {name: _init_droptable(data) for name, data in load_data('droptable
 sc = {name: SpawnCard(data) for name, data in load_data('sc').items()}
 isc = {name: _init_isc(data) for name, data in load_data('isc').items()}
 bodies = {name: _init_body(data) for name, data in load_data('bodies').items()}
+drivers = {name: AISkillDriver(data) for name, data in load_data('masters')['AI_driver'].items()}
+for driver in drivers.values():
+    if driver.next_high_priority:
+        driver.next_high_priority = drivers[driver.next_high_priority]
+del driver
+masters = {name: _init_master(name, data) for name, data in load_data('masters')['masters'].items()}
 csc = {name: _init_csc(data) for name, data in load_data('csc').items()}
 dccs = {name: _init_dccs(data) for name, data in load_data('dccs').items()}
 scenes = {name: Scene(name, data) for name, data in load_data('scenes').items()}

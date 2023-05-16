@@ -103,8 +103,8 @@ def extract_file_data(src_path=FILES_DIR):
     isc = {}
     csc = {}
     bodies = {}
-    masters = []
-    skills = {'masters': {}, 'AI_driver': {}, 'skills': {}}
+    masters = {'masters_temp': [], 'masters': {}, 'AI_driver': {}}
+    skills = {}
     dccs = {}
     for fname in os.listdir(src_path):
         if re.match('(ror2-(base|dlc1|junk)-.*_text)|(ror2-dlc1_assets_all.bundle)', fname):
@@ -135,13 +135,13 @@ def extract_file_data(src_path=FILES_DIR):
                         bodies[unique_name] = CharacterBody.parse(asset, token_names)
                     elif script == CharacterMaster.SCRIPT:
                         # To be parsed once all file ids have been collected
-                        masters.append(asset['m_GameObject']['m_PathID'])
+                        masters['masters_temp'].append(asset['m_GameObject']['m_PathID'])
                     elif script == AISkillDriver.SCRIPT:
                         unique_name = f'{asset["customName"]},{obj.path_id}'
-                        skills['AI_driver'][unique_name] = AISkillDriver.parse(asset)
+                        masters['AI_driver'][unique_name] = AISkillDriver.parse(asset)
                     elif script in skill_defs:
                         unique_name = f'{asset["m_Name"]},{obj.path_id}'
-                        skills['skills'][unique_name] = skill_defs[script].parse(asset)
+                        skills[unique_name] = skill_defs[script].parse(asset)
                     elif script in dccs_classes:
                         dccs[asset['m_Name']] = dccs_classes[script].parse(asset)
     for item_type in (items, equipment):
@@ -242,16 +242,23 @@ def extract_file_data(src_path=FILES_DIR):
             else:
                 item_drop = None
         data['item_drop'] = item_drop
-    for master_id in masters:
+    for i, master_id in enumerate(masters['masters_temp']):
         master_name = ids[master_id]['m_Name']
-        ai_skills = _get_all_components(ids, master_id, AISkillDriver, keep_path_id=True)
-        ai_skills = [f'{s["customName"]},{path_id}' for s, path_id in ai_skills]
-        skills['masters'][master_name] = ai_skills
-    for data in skills['AI_driver'].values():
+        ai = _get_component(ids, master_id, BaseAI)
+        if ai:
+            ai = BaseAI.parse(ai, ids)
+            ai_drivers = _get_all_components(ids, master_id, AISkillDriver, keep_path_id=True)
+            ai['drivers'] = [f'{s["customName"]},{path_id}' for s, path_id in ai_drivers]
+        else:
+            ai = None
+        masters['masters'][master_name] = ai
+    del masters['masters_temp']
+    for data in masters['AI_driver'].values():
         for key in ('required_skill', 'next_high_priority'):
             path_id = data[key]
-            data[key] = f'{ids[path_id]["m_Name"]},{path_id}' if path_id else None
-    for data in skills['skills'].values():
+            name = 'm_Name' if key == 'required_skill' else 'customName'
+            data[key] = f'{ids[path_id][name]},{path_id}' if path_id else None
+    for data in skills.values():
         if data['class'] == 'PassiveItemSkillDef':
             data['passive_item'] = ids[data['passive_item']]['m_Name']
 
@@ -355,6 +362,7 @@ def extract_file_data(src_path=FILES_DIR):
         (SC_FILE, sc),
         (ISC_FILE, isc),
         (CSC_FILE, csc),
+        (MASTERS_FILE, masters),
         (BODIES_FILE, bodies),
         (SKILLS_FILE, skills),
         (DCCS_FILE, dccs),
