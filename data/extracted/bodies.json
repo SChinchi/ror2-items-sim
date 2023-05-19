@@ -25,6 +25,10 @@
     "jump_power": 0.0,
     "armor": 1.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "ARTIFACTSHELL_BODY_NAME,-3914538112699275637": {
@@ -53,6 +57,10 @@
     "jump_power": 0.0,
     "armor": 100000.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "BANDIT2_BODY_NAME,669639482491022699": {
@@ -81,6 +89,10 @@
     "jump_power": 15.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 5.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "BEETLEGUARD_BODY_NAME,-6780364390142151300": {
@@ -109,6 +121,10 @@
     "jump_power": 12.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.15,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "BEETLEGUARD_BODY_NAME,6061442183798677008": {
@@ -137,6 +153,10 @@
     "jump_power": 12.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.15,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "BEETLEQUEEN_BODY_NAME,6296977388130626750": {
@@ -165,6 +185,10 @@
     "jump_power": 0.0,
     "armor": 20.0,
     "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": "BeetleGland"
   },
   ",7131737044197916325": {
@@ -193,6 +217,10 @@
     "jump_power": 0.0,
     "armor": 30.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "BEETLE_BODY_NAME,9218121131735363861": {
@@ -221,6 +249,10 @@
     "jump_power": 15.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.2,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "BELL_BODY_NAME,5971066070144350629": {
@@ -249,6 +281,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.1,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   ",-7304019558028869079": {
@@ -277,6 +313,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "BISON_BODY_NAME,-6194373484793097358": {
@@ -305,6 +345,10 @@
     "jump_power": 5.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.15,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "UNIDENTIFIED,6767039347170867422": {
@@ -333,6 +377,10 @@
     "jump_power": 0.0,
     "armor": 20.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "BROTHER_BODY_NAME,-6280498815603321506": {
@@ -361,6 +409,10 @@
     "jump_power": 0.0,
     "armor": 20.0,
     "is_champion": true,
+    "pain_threshold": 0.3,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "BROTHER_BODY_NAME,-262345486723689649": {
@@ -389,6 +441,10 @@
     "jump_power": 25.0,
     "armor": 20.0,
     "is_champion": true,
+    "pain_threshold": 0.15,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "CAPTAIN_BODY_NAME,-6781644716941010891": {
@@ -417,6 +473,10 @@
     "jump_power": 15.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 5.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "CLAYBOSS_BODY_NAME,2780849810617343179": {
@@ -445,6 +505,10 @@
     "jump_power": 0.0,
     "armor": 20.0,
     "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": "SiphonOnLowHealth"
   },
   "CLAYBRUISER_BODY_NAME,2797552104482198067": {
@@ -473,6 +537,10 @@
     "jump_power": 20.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.15,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "COMMANDO_BODY_NAME,-4877347282271843132": {
@@ -501,6 +569,10 @@
     "jump_power": 15.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 5.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "CROCO_BODY_NAME,4503057478411439415": {
@@ -529,6 +601,10 @@
     "jump_power": 15.0,
     "armor": 20.0,
     "is_champion": false,
+    "pain_threshold": 0.15,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
     "item_drop": null
   },
   ",-436709731581117415": {
@@ -557,6 +633,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "DRONE_GUNNER_BODY_NAME,-8825901108628147836": {
@@ -585,6 +665,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "DRONE_HEALING_BODY_NAME,-5528296088830052421": {
@@ -613,6 +697,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "TURRET1_BODY_NAME,-3515718513093576349": {
@@ -641,6 +729,10 @@
     "jump_power": 0.0,
     "armor": 20.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "DRONE_BACKUP_BODY_NAME,-2787967666877948505": {
@@ -669,6 +761,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "EQUIPMENTDRONE_BODY_NAME,-2190652651611884519": {
@@ -697,6 +793,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "DRONE_MISSILE_BODY_NAME,-930782364652045900": {
@@ -725,6 +825,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "EMERGENCYDRONE_BODY_NAME,-754235010027196859": {
@@ -753,6 +857,10 @@
     "jump_power": 0.0,
     "armor": 20.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "DRONE_MEGA_BODY_NAME,1087201758615568584": {
@@ -781,6 +889,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "FLAMEDRONE_BODY_NAME,8858345548042082531": {
@@ -809,6 +921,10 @@
     "jump_power": 0.0,
     "armor": 20.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "ELECTRICWORM_BODY_NAME,9174004011289029256": {
@@ -837,6 +953,10 @@
     "jump_power": 25.0,
     "armor": 15.0,
     "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": "LightningStrikeOnHit"
   },
   "URCHINTURRET_BODY_NAME,-6998624659205682130": {
@@ -865,6 +985,10 @@
     "jump_power": 0.0,
     "armor": 100.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "ENGI_BODY_NAME,-8789523071473435693": {
@@ -893,6 +1017,10 @@
     "jump_power": 15.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 5.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "ENGITURRET_BODY_NAME,-6177697971644106893": {
@@ -921,6 +1049,10 @@
     "jump_power": 16.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 5.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "ENGITURRET_BODY_NAME,-1255655987304471632": {
@@ -949,6 +1081,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 5.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "POT2_BODY_NAME,-5760713260235152733": {
@@ -977,6 +1113,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "FUSIONCELL_BODY_NAME,-8883669369203079694": {
@@ -1005,6 +1145,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "GOLEM_BODY_NAME,-7322432328827242503": {
@@ -1033,6 +1177,10 @@
     "jump_power": 20.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.3,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "GRANDPARENT_BODY_NAME,4479202618591268875": {
@@ -1061,6 +1209,10 @@
     "jump_power": 0.0,
     "armor": 20.0,
     "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": "ParentEgg"
   },
   "GRAVEKEEPER_BODY_NAME,4801396543259066670": {
@@ -1089,6 +1241,10 @@
     "jump_power": 25.0,
     "armor": 20.0,
     "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": "SprintWisp"
   },
   ",6957333352716087917": {
@@ -1117,6 +1273,10 @@
     "jump_power": 0.0,
     "armor": 99.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "GREATERWISP_BODY_NAME,772358279179203213": {
@@ -1145,6 +1305,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.4,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "HERETIC_BODY_NAME,-8738633977848228628": {
@@ -1173,6 +1337,10 @@
     "jump_power": 15.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 5.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "HERMIT_CRAB_BODY_NAME,-857145930845917152": {
@@ -1201,6 +1369,10 @@
     "jump_power": 8.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.5,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "HUNTRESS_BODY_NAME,3308767006502102819": {
@@ -1229,6 +1401,10 @@
     "jump_power": 15.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 5.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "IMPBOSS_BODY_NAME,430081133749015043": {
@@ -1257,6 +1433,10 @@
     "jump_power": 0.0,
     "armor": 20.0,
     "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": "BleedOnHitAndExplode"
   },
   "IMP_BODY_NAME,-138269560369502470": {
@@ -1285,6 +1465,10 @@
     "jump_power": 26.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.35,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "JELLYFISH_BODY_NAME,-4949183844312373554": {
@@ -1313,6 +1497,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.2,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "LEMURIANBRUISER_BODY_NAME,-3714437810204064942": {
@@ -1341,6 +1529,10 @@
     "jump_power": 30.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.15,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "LEMURIAN_BODY_NAME,1717460702084677953": {
@@ -1369,6 +1561,10 @@
     "jump_power": 22.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.15,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "LOADER_BODY_NAME,-6859875765546660339": {
@@ -1397,6 +1593,10 @@
     "jump_power": 15.0,
     "armor": 20.0,
     "is_champion": false,
+    "pain_threshold": 5.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "LUNAREXPLODER_BODY_NAME,-2274684077375776811": {
@@ -1425,6 +1625,10 @@
     "jump_power": 16.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.5,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "LUNARGOLEM_BODY_NAME,-4784653761091027702": {
@@ -1453,6 +1657,10 @@
     "jump_power": 20.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.5,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   ",2588996205700975627": {
@@ -1481,6 +1689,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "LUNARWISP_BODY_NAME,7359358192127432510": {
@@ -1509,6 +1721,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "MAGE_BODY_NAME,-6856047328575062848": {
@@ -1537,6 +1753,10 @@
     "jump_power": 15.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 5.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "MAGMAWORM_BODY_NAME,-7045467416351155679": {
@@ -1565,6 +1785,10 @@
     "jump_power": 25.0,
     "armor": 15.0,
     "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": "FireballsOnHit"
   },
   "MERC_BODY_NAME,6614850250781190916": {
@@ -1593,6 +1817,10 @@
     "jump_power": 15.0,
     "armor": 20.0,
     "is_champion": false,
+    "pain_threshold": 5.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "MINIMUSHROOM_BODY_NAME,-4639850564068037783": {
@@ -1621,6 +1849,10 @@
     "jump_power": 14.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.5,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "NULLIFIER_BODY_NAME,-6498387048547021316": {
@@ -1649,6 +1881,10 @@
     "jump_power": 18.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.5,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "NULLIFIER_BODY_NAME,566661308468529568": {
@@ -1677,6 +1913,10 @@
     "jump_power": 18.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.5,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "PARENT_BODY_NAME,-2897949650595737385": {
@@ -1705,6 +1945,10 @@
     "jump_power": 20.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.15,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "ROBOBALLBOSS_BODY_NAME,-6752485905745916689": {
@@ -1733,6 +1977,10 @@
     "jump_power": 0.0,
     "armor": 20.0,
     "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": "RoboBallBuddy"
   },
   "SUPERROBOBALLBOSS_BODY_NAME,-783938501872950032": {
@@ -1761,6 +2009,10 @@
     "jump_power": 0.0,
     "armor": 30.0,
     "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": "RoboBallBuddy"
   },
   "ROBOBALLMINI_BODY_NAME,4258152529575623049": {
@@ -1789,6 +2041,10 @@
     "jump_power": 0.0,
     "armor": 10.0,
     "is_champion": false,
+    "pain_threshold": 1.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "ROBOBALLGREENBUDDY_BODY_NAME,1987581938210224088": {
@@ -1817,6 +2073,10 @@
     "jump_power": 0.0,
     "armor": 10.0,
     "is_champion": false,
+    "pain_threshold": 1.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "ROBOBALLREDBUDDY_BODY_NAME,4982025405444595260": {
@@ -1845,6 +2105,10 @@
     "jump_power": 0.0,
     "armor": 10.0,
     "is_champion": false,
+    "pain_threshold": 1.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "SCAVLUNAR3_BODY_NAME,-6607532490618943043": {
@@ -1873,6 +2137,10 @@
     "jump_power": 20.0,
     "armor": 20.0,
     "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "SCAVLUNAR2_BODY_NAME,565595897824143465": {
@@ -1901,6 +2169,10 @@
     "jump_power": 20.0,
     "armor": 20.0,
     "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "SCAVLUNAR4_BODY_NAME,7340738978162743476": {
@@ -1929,6 +2201,10 @@
     "jump_power": 20.0,
     "armor": 20.0,
     "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "SCAVLUNAR1_BODY_NAME,7355107013850095935": {
@@ -1957,6 +2233,10 @@
     "jump_power": 20.0,
     "armor": 20.0,
     "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "SCAV_BODY_NAME,-5148886553018568663": {
@@ -1985,6 +2265,10 @@
     "jump_power": 20.0,
     "armor": 20.0,
     "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   ",7698067029231285145": {
@@ -2013,6 +2297,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   ",-3587561474380917418": {
@@ -2041,6 +2329,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "SHOPKEEPER_BODY_NAME,-7205432084159651845": {
@@ -2069,6 +2361,10 @@
     "jump_power": 22.0,
     "armor": 100.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "MAULINGROCK_BODY_NAME,-5708058512711267651": {
@@ -2097,6 +2393,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "MAULINGROCK_BODY_NAME,-168175402333531614": {
@@ -2125,6 +2425,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "MAULINGROCK_BODY_NAME,5357870678088444318": {
@@ -2153,6 +2457,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   ",4964951459575563997": {
@@ -2181,6 +2489,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   ",7806610397694495710": {
@@ -2209,6 +2521,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "SQUIDTURRET_BODY_NAME,-4895553308416995978": {
@@ -2237,6 +2553,10 @@
     "jump_power": 0.0,
     "armor": 3.0,
     "is_champion": false,
+    "pain_threshold": 0.3,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "TITAN_BODY_NAME,-3645550656977854452": {
@@ -2265,6 +2585,10 @@
     "jump_power": 5.0,
     "armor": 20.0,
     "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": "Knurl"
   },
   "TITANGOLD_BODY_NAME,1669286690219817468": {
@@ -2293,6 +2617,10 @@
     "jump_power": 5.0,
     "armor": 20.0,
     "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": "TitanGoldDuringTP"
   },
   "TOOLBOT_BODY_NAME,4132792340586605851": {
@@ -2321,6 +2649,10 @@
     "jump_power": 15.0,
     "armor": 12.0,
     "is_champion": false,
+    "pain_threshold": 5.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "TREEBOT_BODY_NAME,38330065492897553": {
@@ -2349,6 +2681,10 @@
     "jump_power": 15.0,
     "armor": 20.0,
     "is_champion": false,
+    "pain_threshold": 5.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "VAGRANT_BODY_NAME,-5111004683916885433": {
@@ -2377,6 +2713,10 @@
     "jump_power": 0.0,
     "armor": 15.0,
     "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": "NovaOnLowHealth"
   },
   ",191341689701117552": {
@@ -2405,6 +2745,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "VULTURE_BODY_NAME,-7157857937764117919": {
@@ -2433,6 +2777,10 @@
     "jump_power": 15.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.2,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "TIMECRYSTAL_BODY_NAME,-2636278627983904951": {
@@ -2461,6 +2809,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "WISP_BODY_NAME,1185924391367202977": {
@@ -2489,6 +2841,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.1,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "WISP_BODY_NAME,-2789288942580116804": {
@@ -2517,6 +2873,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.1,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "ACIDLARVA_BODY_NAME,8163345891220534571": {
@@ -2545,6 +2905,10 @@
     "jump_power": 16.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.5,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "ASSASSIN2_BODY_NAME,-7615402970195009080": {
@@ -2573,6 +2937,10 @@
     "jump_power": 10.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.1,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "CLAYGRENADIER_BODY_NAME,-1771443897819026626": {
@@ -2601,6 +2969,10 @@
     "jump_power": 20.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.15,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "DRONE_COMMANDER_BODY_NAME,5302431856122207826": {
@@ -2629,6 +3001,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "AFFIXEARTH_HEALER_BODY_NAME,-6994677797297897056": {
@@ -2657,6 +3033,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "VOIDINFESTOR_BODY_NAME,-1430807577356982535": {
@@ -2685,6 +3065,10 @@
     "jump_power": 16.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.5,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "FLYINGVERMIN_BODY_NAME,-9101152544961197874": {
@@ -2713,6 +3097,10 @@
     "jump_power": 25.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.2,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "GUP_BODY_NAME,-8261587017098189037": {
@@ -2741,6 +3129,10 @@
     "jump_power": 16.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.5,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "GIP_BODY_NAME,-7639822576229365795": {
@@ -2769,6 +3161,10 @@
     "jump_power": 16.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.5,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "GEEP_BODY_NAME,452395785471370210": {
@@ -2797,6 +3193,10 @@
     "jump_power": 16.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.5,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "MAULINGROCK_BODY_NAME,1606572563492293369": {
@@ -2825,6 +3225,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "MAULINGROCK_BODY_NAME,6799920854954917123": {
@@ -2853,6 +3257,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "MAULINGROCK_BODY_NAME,8652171154657999799": {
@@ -2881,6 +3289,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "MINORCONSTRUCT_BODY_NAME,103632605104745492": {
@@ -2909,6 +3321,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.5,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "MAJORCONSTRUCT_BODY_NAME,2862358289959180157": {
@@ -2937,6 +3353,10 @@
     "jump_power": 0.0,
     "armor": 15.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "MINORCONSTRUCT_BODY_NAME,8669585889829841887": {
@@ -2965,6 +3385,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.5,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "MEGACONSTRUCT_BODY_NAME,8822941250623968081": {
@@ -2993,6 +3417,10 @@
     "jump_power": 0.0,
     "armor": 15.0,
     "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": "MinorConstructOnKill"
   },
   "MINORCONSTRUCT_BODY_NAME,9115672286494309088": {
@@ -3021,6 +3449,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.5,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "RAILGUNNER_BODY_NAME,-1973283156996698076": {
@@ -3049,6 +3481,10 @@
     "jump_power": 15.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 5.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "SULFURPOD_BODY_NAME,2655071089965811302": {
@@ -3077,6 +3513,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "VERMIN_BODY_NAME,5474593460213496322": {
@@ -3105,6 +3545,10 @@
     "jump_power": 16.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.2,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "VOIDBARNACLE_BODY_NAME,-6692666532592548283": {
@@ -3133,6 +3577,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.5,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "VOIDBARNACLE_BODY_NAME,4069858657717369816": {
@@ -3161,6 +3609,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.5,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "VOIDJAILER_BODY_NAME,-3833664764396390861": {
@@ -3189,6 +3641,10 @@
     "jump_power": 18.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.15,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "VOIDJAILER_BODY_NAME,3674306644515702106": {
@@ -3217,6 +3673,10 @@
     "jump_power": 18.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.15,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "VOIDMEGACRAB_BODY_NAME,5712417530778252731": {
@@ -3245,6 +3705,10 @@
     "jump_power": 18.0,
     "armor": 20.0,
     "is_champion": true,
+    "pain_threshold": 0.5,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
     "item_drop": "VoidMegaCrabItem"
   },
   "VOIDMEGACRAB_BODY_NAME,7241651002536686107": {
@@ -3273,6 +3737,10 @@
     "jump_power": 18.0,
     "armor": 20.0,
     "is_champion": true,
+    "pain_threshold": 0.5,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
     "item_drop": "VoidMegaCrabItem"
   },
   "VOIDRAIDCRAB_BODY_NAME,-3998090436078429083": {
@@ -3301,6 +3769,10 @@
     "jump_power": 0.0,
     "armor": 20.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "VOIDRAIDCRAB_BODY_NAME,-2696937696508725749": {
@@ -3329,6 +3801,10 @@
     "jump_power": 0.0,
     "armor": 20.0,
     "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "VOIDRAIDCRAB_BODY_NAME,-2297594400751855282": {
@@ -3357,6 +3833,10 @@
     "jump_power": 0.0,
     "armor": 20.0,
     "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "VOIDRAIDCRAB_BODY_NAME,-1956854656259439178": {
@@ -3385,6 +3865,10 @@
     "jump_power": 0.0,
     "armor": 20.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "VOIDRAIDCRAB_BODY_NAME,3487969746502550014": {
@@ -3413,6 +3897,10 @@
     "jump_power": 0.0,
     "armor": 20.0,
     "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "VOIDRAIDCRAB_BODY_NAME,5253315355278031168": {
@@ -3441,6 +3929,10 @@
     "jump_power": 0.0,
     "armor": 20.0,
     "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "VOIDSURVIVOR_BODY_NAME,7254558834924720360": {
@@ -3469,6 +3961,10 @@
     "jump_power": 15.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 5.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "ANCIENTWISP_BODY_NAME,-1926536020116777831": {
@@ -3497,6 +3993,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "ARCHWISP_BODY_NAME,2943882077010194847": {
@@ -3525,6 +4025,10 @@
     "jump_power": 0.0,
     "armor": 1.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "ENGI_BODY_NAME,2184376616736218088": {
@@ -3553,6 +4057,10 @@
     "jump_power": 15.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "DRONEBACKUP_BODY_NAME,-6438311804816853948": {
@@ -3581,6 +4089,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "BANDIT_BODY_NAME,-7454048968033889674": {
@@ -3609,6 +4121,10 @@
     "jump_power": 15.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 5.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "BEETLE_CRYSTAL_BODY_NAME,-7349018413671303926": {
@@ -3637,6 +4153,10 @@
     "jump_power": 18.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.2,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "BEETLEGUARD_BODY_NAME,-3930080638668933223": {
@@ -3665,6 +4185,10 @@
     "jump_power": 12.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 0.15,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "BOMBER_BODY_NAME,-7773859179574032082": {
@@ -3693,6 +4217,10 @@
     "jump_power": 15.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "BROTHER_BODY_NAME,8171978806095182334": {
@@ -3721,6 +4249,10 @@
     "jump_power": 25.0,
     "armor": 20.0,
     "is_champion": true,
+    "pain_threshold": 0.15,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "CLAY_BODY_NAME,5890446788926524932": {
@@ -3749,6 +4281,10 @@
     "jump_power": 12.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "COMMANDO_BODY_NAME,3407773436254906257": {
@@ -3777,6 +4313,10 @@
     "jump_power": 15.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": 5.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "ENFORCER_BODY_NAME,5739200980008436006": {
@@ -3805,6 +4345,10 @@
     "jump_power": 12.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "ENGITURRET_BODY_NAME,-5181724143421127883": {
@@ -3833,6 +4377,10 @@
     "jump_power": 0.0,
     "armor": 3.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "GOLEM_BODY_NAME,9010093125566289731": {
@@ -3861,6 +4409,10 @@
     "jump_power": 20.0,
     "armor": 99.0,
     "is_champion": false,
+    "pain_threshold": 0.3,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null
   },
   "HAND_BODY_NAME,-5524676904519603587": {
@@ -3889,6 +4441,10 @@
     "jump_power": 15.0,
     "armor": 3.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "POTMOBILE_BODY_NAME,5952753717479384627": {
@@ -3917,6 +4473,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "POD_BODY_NAME,-121151419735600607": {
@@ -3945,6 +4505,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "COMMANDO_BODY_NAME,-1683886214470233312": {
@@ -3973,6 +4537,10 @@
     "jump_power": 15.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "POT2_BODY_NAME,-4275993658677149468": {
@@ -4001,6 +4569,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "POTMOBILE_BODY_NAME,6050533330871346120": {
@@ -4029,6 +4601,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "POTMOBILE_BODY_NAME,8575317944272511556": {
@@ -4057,6 +4633,10 @@
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   },
   "SNIPER_BODY_NAME,-1476916418868677818": {
@@ -4085,6 +4665,10 @@
     "jump_power": 15.0,
     "armor": 0.0,
     "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null
   }
 }

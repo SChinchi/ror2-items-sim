@@ -34,6 +34,14 @@ class CharacterBody:
             'armor': round_value(asset['baseArmor']),
             'is_champion': bool(asset['isChampion']),
             # To be filled out once all file ids have been collected
+            'pain_threshold': asset['m_GameObject']['m_PathID'],
+            # To be filled out once all file ids have been collected
+            'can_be_hit_stunned': asset['m_GameObject']['m_PathID'],
+            # To be filled out once all file ids have been collected
+            'can_be_stunned': asset['m_GameObject']['m_PathID'],
+            # To be filled out once all file ids have been collected
+            'can_be_frozen': asset['m_GameObject']['m_PathID'],
+            # To be filled out once all file ids have been collected
             'item_drop': asset['m_GameObject']['m_PathID'],
         }
 
@@ -44,6 +52,19 @@ class CharacterMaster:
 
 class DeathRewards:
     SCRIPT = 8463862091779802982
+
+
+class SetStateOnHurt:
+    SCRIPT = -6843609685409672426
+
+    @staticmethod
+    def parse(asset):
+        return {
+            'pain_threshold': round_value(asset['hitThreshold']),
+            'can_be_hit_stunned': bool(asset['canBeHitStunned']),
+            'can_be_stunned': bool(asset['canBeStunned']),
+            'can_be_frozen': bool(asset['canBeFrozen']),
+        }
 
 
 class BaseAI:

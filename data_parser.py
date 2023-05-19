@@ -1,4 +1,5 @@
 import json
+import math
 import os
 import os.path as path
 import re
@@ -233,6 +234,16 @@ def extract_file_data(src_path=FILES_DIR):
             for card in category['cards']:
                 card['spawn_card'] = ids[card['spawn_card']]['m_Name']
     for data in bodies.values():
+        hurt_state = _get_component(ids, data['pain_threshold'], SetStateOnHurt)
+        if hurt_state:
+            hurt_state = SetStateOnHurt.parse(hurt_state)
+            for key, value in hurt_state.items():
+                data[key] = value
+        else:
+            data['pain_threshold'] = math.inf
+            data['can_be_hit_stunned'] = False
+            data['can_be_stunned'] = False
+            data['can_be_frozen'] = False
         item_drop = _get_component(ids, data['item_drop'], DeathRewards)
         if item_drop:
             item_drop = item_drop['bossDropTable']['m_PathID']
