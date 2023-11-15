@@ -469,7 +469,7 @@ class Run:
             interactables.extend(self._camp_director.populate_camp(False))
         if self._scene_name in (SceneName.AD, SceneName.SG):
             interactables.append('iscGoldChest')
-        elif self._scene_name == SceneName.GS:
+        elif self._scene_name == SceneName.GC:
             interactables.extend(['iscChest1'] * 4)
         if scenes[self._scene_name].scene_type == 1:
             if LOCKBOX_ALLOWED:

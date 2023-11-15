@@ -20,7 +20,7 @@ class SceneName:
     PL = 'voidraid'             # The Planetarium
     # Intermission
     BA = 'artifactworld'        # Bulwark's Ambry
-    GS = 'goldshores'           # Gilded Coast
+    GC = 'goldshores'           # Gilded Coast
     BT = 'bazaar'               # Bazaar Between Time
     MF = 'mysteryspace'         # A Moment, Fractured
     MW = 'limbo'                # A Moment, Whole
