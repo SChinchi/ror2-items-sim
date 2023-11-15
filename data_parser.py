@@ -279,14 +279,12 @@ def extract_file_data(src_path=FILES_DIR):
             scene_def = UnityPy.load(path.join(src_path, fname))
             for def_container in scene_def.container.values():
                 asset = def_container.get_obj().read_typetree()
-                # Skipping the alternative stage 1 variations
-                if asset['baseSceneNameOverride']:
-                    continue
+                name = asset['m_Name']
+                ids[def_container.get_obj().path_id] = asset
                 # `sceneType == 1` are playable stages
                 # `sceneType == 2` are intermission stages
                 # `sceneType == 4` are timed intermission stages
                 # Other scene types are not playable
-                name = asset['m_Name']
                 if asset['sceneType'] in (1, 2, 4):
                     dlc_id = asset['requiredExpansion']['m_PathID']
                     dlc_name = ids[dlc_id]['m_Name'] if dlc_id else None
@@ -294,20 +292,20 @@ def extract_file_data(src_path=FILES_DIR):
                         'scene_type': asset['sceneType'],
                         'stage_order': asset['stageOrder']-1,
                         'required_dlc': dlc_name,
+                        'destinations': asset['destinationsGroup']['m_PathID'],
                         'stage_info': None,
                         'scene_director': None,
+                        'newt': None,
                     }
                     scene_file = fname.replace('scenedef_assets', 'scenes')
                     scene_all = UnityPy.load(path.join(src_path, scene_file))
-                    for obj in scene_all.objects:
+                    # 'blackbeach' has a test scene cabinet which we ignore
+                    cabinet = [cab for name, cab in scene_all.cabs.items() if '.' not in name][0]
+                    for obj in cabinet.objects.values():
                         if obj.type.name == 'MonoBehaviour':
                             asset = obj.read_typetree()
                             script = asset['m_Script']['m_PathID']
                             if script == ClassicStageInfo.SCRIPT:
-                                # Distant Roost has two files, and we're
-                                # skipping the old one with 180 credits.
-                                if 'beach' in fname and asset['m_GameObject']['m_PathID'] == 856:
-                                    continue
                                 stage_info = ClassicStageInfo.parse(asset, ids)
                                 stage_info['bonus_credits'] = sum(stage_info['bonus_credits'])
                                 # The Simulacrum Abyssal Depths doesn't have a
@@ -324,10 +322,24 @@ def extract_file_data(src_path=FILES_DIR):
                                                 stage_info['monsters'] = DccsPool.parse(text_asset, ids)
                                 scene_data['stage_info'] = stage_info
                             elif script == SceneDirector.SCRIPT:
-                                if 'beach' in fname and asset['m_GameObject']['m_PathID'] == 2312:
-                                    continue
                                 scene_data['scene_director'] = SceneDirector.parse(asset, ids)
+                            elif script == SceneObjectToggleGroup.SCRIPT:
+                                for group in asset['toggleGroups']:
+                                    obj = cabinet.objects[group['objects'][0]['m_PathID']]
+                                    if 'Newt' in obj.read_typetree()['m_Name']:
+                                        scene_data['newt'] = (
+                                            group['minEnabled'],
+                                            group['maxEnabled'],
+                                        )
                     scenes[name] = scene_data
+    for data in scenes.values():
+        destinations = []
+        path_id = data['destinations']
+        if path_id:
+            for entry in ids[path_id]['_sceneEntries']:
+                scene = ids[entry['sceneDef']['m_PathID']]
+                destinations.append((scene['m_Name'], entry['weightMinusOne'] + 1))
+        data['destinations'] = destinations
 
     voidcamps = {}
     text_file = 'ror2-dlc1-voidcamp_text_assets_all.bundle'

@@ -93,3 +93,7 @@ class SceneDirector:
             'exp_coeff': round_value(asset['expRewardCoefficient']),
             'elite_bias': round_value(asset['eliteBias']),
         }
+
+
+class SceneObjectToggleGroup:
+    SCRIPT = -5674775494453513432
