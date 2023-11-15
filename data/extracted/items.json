@@ -1429,7 +1429,8 @@
     "can_remove": true,
     "required_dlc": "DLC1",
     "tags": [
-      3
+      3,
+      11
     ]
   },
   {
@@ -1969,7 +1970,8 @@
     "can_remove": true,
     "required_dlc": "DLC1",
     "tags": [
-      3
+      3,
+      13
     ]
   },
   {

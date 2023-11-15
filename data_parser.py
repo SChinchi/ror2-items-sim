@@ -284,9 +284,10 @@ def extract_file_data(src_path=FILES_DIR):
                     continue
                 # `sceneType == 1` are playable stages
                 # `sceneType == 2` are intermission stages
+                # `sceneType == 4` are timed intermission stages
                 # Other scene types are not playable
                 name = asset['m_Name']
-                if asset['sceneType'] in (1, 2):
+                if asset['sceneType'] in (1, 2, 4):
                     dlc_id = asset['requiredExpansion']['m_PathID']
                     dlc_name = ids[dlc_id]['m_Name'] if dlc_id else None
                     scene_data = {

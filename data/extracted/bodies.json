@@ -3709,7 +3709,7 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": false,
     "can_be_frozen": true,
-    "item_drop": "VoidMegaCrabItem"
+    "item_drop": null
   },
   "VOIDMEGACRAB_BODY_NAME,7241651002536686107": {
     "_name": "VOIDMEGACRAB_BODY_NAME",
