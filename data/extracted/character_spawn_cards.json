@@ -9,7 +9,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "BEETLEGUARD_BODY_NAME,-6780364390142151300",
+    "body": "BeetleGuardAllyBody",
     "master": "BeetleGuardAllyMaster"
   },
   "cscBeetleQueen": {
@@ -22,7 +22,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "BEETLEQUEEN_BODY_NAME,6296977388130626750",
+    "body": "BeetleQueen2Body",
     "master": "BeetleQueenMaster"
   },
   "cscBeetleSulfur": {
@@ -35,7 +35,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "BEETLE_BODY_NAME,9218121131735363861",
+    "body": "BeetleBody",
     "master": "BeetleMaster"
   },
   "cscBeetleQueenSulfur": {
@@ -48,7 +48,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "BEETLEQUEEN_BODY_NAME,6296977388130626750",
+    "body": "BeetleQueen2Body",
     "master": "BeetleQueenMaster"
   },
   "cscBeetleGuard": {
@@ -61,7 +61,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "BEETLEGUARD_BODY_NAME,6061442183798677008",
+    "body": "BeetleGuardBody",
     "master": "BeetleGuardMaster"
   },
   "cscBeetle": {
@@ -74,7 +74,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "BEETLE_BODY_NAME,9218121131735363861",
+    "body": "BeetleBody",
     "master": "BeetleMaster"
   },
   "cscBeetleGuardSulfur": {
@@ -87,7 +87,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "BEETLEGUARD_BODY_NAME,6061442183798677008",
+    "body": "BeetleGuardBody",
     "master": "BeetleGuardMaster"
   },
   "cscBell": {
@@ -100,7 +100,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "BELL_BODY_NAME,5971066070144350629",
+    "body": "BellBody",
     "master": "BellMaster"
   },
   "cscBison": {
@@ -113,7 +113,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "BISON_BODY_NAME,-6194373484793097358",
+    "body": "BisonBody",
     "master": "BisonMaster"
   },
   "cscBrotherHurt": {
@@ -126,7 +126,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "BROTHER_BODY_NAME,-6280498815603321506",
+    "body": "BrotherHurtBody",
     "master": "BrotherHurtMaster"
   },
   "cscBrother": {
@@ -139,7 +139,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "BROTHER_BODY_NAME,-262345486723689649",
+    "body": "BrotherBody",
     "master": "BrotherMaster"
   },
   "cscClayBoss": {
@@ -152,7 +152,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "CLAYBOSS_BODY_NAME,2780849810617343179",
+    "body": "ClayBossBody",
     "master": "ClayBossMaster"
   },
   "cscClayBruiser": {
@@ -165,7 +165,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "CLAYBRUISER_BODY_NAME,2797552104482198067",
+    "body": "ClayBruiserBody",
     "master": "ClayBruiserMaster"
   },
   "cscBackupDrone": {
@@ -178,7 +178,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "DRONE_BACKUP_BODY_NAME,-2787967666877948505",
+    "body": "BackupDroneBody",
     "master": "DroneBackupMaster"
   },
   "cscMegaDrone": {
@@ -191,7 +191,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "DRONE_MEGA_BODY_NAME,1087201758615568584",
+    "body": "MegaDroneBody",
     "master": "MegaDroneMaster"
   },
   "cscDrone2": {
@@ -204,7 +204,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "DRONE_HEALING_BODY_NAME,-5528296088830052421",
+    "body": "Drone2Body",
     "master": "Drone2Master"
   },
   "cscDrone1": {
@@ -217,7 +217,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "DRONE_GUNNER_BODY_NAME,-8825901108628147836",
+    "body": "Drone1Body",
     "master": "Drone1Master"
   },
   "cscElectricWorm": {
@@ -230,7 +230,7 @@
     "elite_rules": 0,
     "no_elites": true,
     "forbidden_as_boss": false,
-    "body": "ELECTRICWORM_BODY_NAME,9174004011289029256",
+    "body": "ElectricWormBody",
     "master": "ElectricWormMaster"
   },
   "cscGolemSnowy": {
@@ -243,7 +243,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": true,
-    "body": "GOLEM_BODY_NAME,-7322432328827242503",
+    "body": "GolemBody",
     "master": "GolemMaster"
   },
   "cscGolemNature": {
@@ -256,7 +256,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": true,
-    "body": "GOLEM_BODY_NAME,-7322432328827242503",
+    "body": "GolemBody",
     "master": "GolemMaster"
   },
   "cscGolemSandy": {
@@ -269,7 +269,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": true,
-    "body": "GOLEM_BODY_NAME,-7322432328827242503",
+    "body": "GolemBody",
     "master": "GolemMaster"
   },
   "cscGolem": {
@@ -282,7 +282,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": true,
-    "body": "GOLEM_BODY_NAME,-7322432328827242503",
+    "body": "GolemBody",
     "master": "GolemMaster"
   },
   "cscGrandparent": {
@@ -295,7 +295,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "GRANDPARENT_BODY_NAME,4479202618591268875",
+    "body": "GrandParentBody",
     "master": "GrandparentMaster"
   },
   "cscGravekeeper": {
@@ -308,7 +308,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "GRAVEKEEPER_BODY_NAME,4801396543259066670",
+    "body": "GravekeeperBody",
     "master": "GravekeeperMaster"
   },
   "cscGreaterWisp": {
@@ -321,7 +321,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "GREATERWISP_BODY_NAME,772358279179203213",
+    "body": "GreaterWispBody",
     "master": "GreaterWispMaster"
   },
   "cscHermitCrab": {
@@ -334,7 +334,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "HERMIT_CRAB_BODY_NAME,-857145930845917152",
+    "body": "HermitCrabBody",
     "master": "HermitCrabMaster"
   },
   "cscImpBoss": {
@@ -347,7 +347,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "IMPBOSS_BODY_NAME,430081133749015043",
+    "body": "ImpBossBody",
     "master": "ImpBossMaster"
   },
   "cscImp": {
@@ -360,7 +360,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "IMP_BODY_NAME,-138269560369502470",
+    "body": "ImpBody",
     "master": "ImpMaster"
   },
   "cscJellyfish": {
@@ -373,7 +373,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "JELLYFISH_BODY_NAME,-4949183844312373554",
+    "body": "JellyfishBody",
     "master": "JellyfishMaster"
   },
   "cscLemurianBruiser": {
@@ -386,7 +386,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "LEMURIANBRUISER_BODY_NAME,-3714437810204064942",
+    "body": "LemurianBruiserBody",
     "master": "LemurianBruiserMaster"
   },
   "cscLemurian": {
@@ -399,7 +399,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "LEMURIAN_BODY_NAME,1717460702084677953",
+    "body": "LemurianBody",
     "master": "LemurianMaster"
   },
   "cscLunarExploder": {
@@ -412,7 +412,7 @@
     "elite_rules": 2,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "LUNAREXPLODER_BODY_NAME,-2274684077375776811",
+    "body": "LunarExploderBody",
     "master": "LunarExploderMaster"
   },
   "cscLunarGolem": {
@@ -425,7 +425,7 @@
     "elite_rules": 2,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "LUNARGOLEM_BODY_NAME,-4784653761091027702",
+    "body": "LunarGolemBody",
     "master": "LunarGolemMaster"
   },
   "cscLunarWisp": {
@@ -438,7 +438,7 @@
     "elite_rules": 2,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "LUNARWISP_BODY_NAME,7359358192127432510",
+    "body": "LunarWispBody",
     "master": "LunarWispMaster"
   },
   "cscMagmaWorm": {
@@ -451,7 +451,7 @@
     "elite_rules": 0,
     "no_elites": true,
     "forbidden_as_boss": false,
-    "body": "MAGMAWORM_BODY_NAME,-7045467416351155679",
+    "body": "MagmaWormBody",
     "master": "MagmaWormMaster"
   },
   "cscMiniMushroom": {
@@ -464,7 +464,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "MINIMUSHROOM_BODY_NAME,-4639850564068037783",
+    "body": "MiniMushroomBody",
     "master": "MiniMushroomMaster"
   },
   "cscNullifierAlly": {
@@ -477,7 +477,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "NULLIFIER_BODY_NAME,-6498387048547021316",
+    "body": "NullifierAllyBody",
     "master": "NullifierAllyMaster"
   },
   "cscNullifier": {
@@ -490,7 +490,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "NULLIFIER_BODY_NAME,566661308468529568",
+    "body": "NullifierBody",
     "master": "NullifierMaster"
   },
   "cscParent": {
@@ -503,7 +503,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "PARENT_BODY_NAME,-2897949650595737385",
+    "body": "ParentBody",
     "master": "ParentMaster"
   },
   "cscSuperRoboBallBoss": {
@@ -516,7 +516,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "SUPERROBOBALLBOSS_BODY_NAME,-783938501872950032",
+    "body": "SuperRoboBallBossBody",
     "master": "SuperRoboBallBossMaster"
   },
   "cscRoboBallBoss": {
@@ -529,7 +529,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "ROBOBALLBOSS_BODY_NAME,-6752485905745916689",
+    "body": "RoboBallBossBody",
     "master": "RoboBallBossMaster"
   },
   "cscRoboBallMini": {
@@ -542,7 +542,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "ROBOBALLMINI_BODY_NAME,4258152529575623049",
+    "body": "RoboBallMiniBody",
     "master": "RoboBallMiniMaster"
   },
   "cscRoboBallRedBuddy": {
@@ -555,7 +555,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "ROBOBALLREDBUDDY_BODY_NAME,4982025405444595260",
+    "body": "RoboBallRedBuddyBody",
     "master": "RoboBallRedBuddyMaster"
   },
   "cscRoboBallGreenBuddy": {
@@ -568,7 +568,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "ROBOBALLGREENBUDDY_BODY_NAME,1987581938210224088",
+    "body": "RoboBallGreenBuddyBody",
     "master": "RoboBallGreenBuddyMaster"
   },
   "cscScavLunar": {
@@ -581,7 +581,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "SCAVLUNAR3_BODY_NAME,-6607532490618943043",
+    "body": "ScavLunar3Body",
     "master": "ScavLunar3Master"
   },
   "cscScavBoss": {
@@ -594,7 +594,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "SCAV_BODY_NAME,-5148886553018568663",
+    "body": "ScavBody",
     "master": "ScavMaster"
   },
   "cscScav": {
@@ -607,7 +607,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": true,
-    "body": "SCAV_BODY_NAME,-5148886553018568663",
+    "body": "ScavBody",
     "master": "ScavMaster"
   },
   "cscSquidTurret": {
@@ -620,7 +620,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "SQUIDTURRET_BODY_NAME,-4895553308416995978",
+    "body": "SquidTurretBody",
     "master": "SquidTurretMaster"
   },
   "cscTitanGoldAlly": {
@@ -633,7 +633,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "TITANGOLD_BODY_NAME,1669286690219817468",
+    "body": "TitanGoldBody",
     "master": "TitanGoldAllyMaster"
   },
   "cscTitanGolemPlains": {
@@ -646,7 +646,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "TITAN_BODY_NAME,-3645550656977854452",
+    "body": "TitanBody",
     "master": "TitanMaster"
   },
   "cscTitanBlackBeach": {
@@ -659,7 +659,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "TITAN_BODY_NAME,-3645550656977854452",
+    "body": "TitanBody",
     "master": "TitanMaster"
   },
   "cscTitanGold": {
@@ -672,7 +672,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "TITANGOLD_BODY_NAME,1669286690219817468",
+    "body": "TitanGoldBody",
     "master": "TitanGoldMaster"
   },
   "cscTitanDampCave": {
@@ -685,7 +685,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "TITAN_BODY_NAME,-3645550656977854452",
+    "body": "TitanBody",
     "master": "TitanMaster"
   },
   "cscTitanGooLake": {
@@ -698,7 +698,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "TITAN_BODY_NAME,-3645550656977854452",
+    "body": "TitanBody",
     "master": "TitanMaster"
   },
   "cscVagrant": {
@@ -711,7 +711,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "VAGRANT_BODY_NAME,-5111004683916885433",
+    "body": "VagrantBody",
     "master": "VagrantMaster"
   },
   "cscVulture": {
@@ -724,7 +724,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "VULTURE_BODY_NAME,-7157857937764117919",
+    "body": "VultureBody",
     "master": "VultureMaster"
   },
   "cscLesserWisp": {
@@ -737,7 +737,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "WISP_BODY_NAME,-2789288942580116804",
+    "body": "WispBody",
     "master": "WispMaster"
   },
   "cscAcidLarva": {
@@ -750,7 +750,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "ACIDLARVA_BODY_NAME,8163345891220534571",
+    "body": "AcidLarvaBody",
     "master": "AcidLarvaMaster"
   },
   "cscAssassin2": {
@@ -763,7 +763,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "ASSASSIN2_BODY_NAME,-7615402970195009080",
+    "body": "Assassin2Body",
     "master": "Assassin2Master"
   },
   "cscClayGrenadier": {
@@ -776,7 +776,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "CLAYGRENADIER_BODY_NAME,-1771443897819026626",
+    "body": "ClayGrenadierBody",
     "master": "ClayGrenadierMaster"
   },
   "cscDroneCommander": {
@@ -789,7 +789,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "DRONE_COMMANDER_BODY_NAME,5302431856122207826",
+    "body": "DroneCommanderBody",
     "master": "DroneCommanderMaster"
   },
   "cscVoidInfestor": {
@@ -802,7 +802,7 @@
     "elite_rules": 0,
     "no_elites": true,
     "forbidden_as_boss": false,
-    "body": "VOIDINFESTOR_BODY_NAME,-1430807577356982535",
+    "body": "VoidInfestorBody",
     "master": "VoidInfestorMaster"
   },
   "cscFlyingVerminSnowy": {
@@ -815,7 +815,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "FLYINGVERMIN_BODY_NAME,-9101152544961197874",
+    "body": "FlyingVerminBody",
     "master": "FlyingVerminMaster"
   },
   "cscFlyingVermin": {
@@ -828,7 +828,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "FLYINGVERMIN_BODY_NAME,-9101152544961197874",
+    "body": "FlyingVerminBody",
     "master": "FlyingVerminMaster"
   },
   "cscBrotherIT": {
@@ -841,7 +841,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "BROTHER_BODY_NAME,-262345486723689649",
+    "body": "BrotherBody",
     "master": "BrotherMaster"
   },
   "cscGupBody": {
@@ -854,7 +854,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": true,
-    "body": "GUP_BODY_NAME,-8261587017098189037",
+    "body": "GupBody",
     "master": "GupMaster"
   },
   "cscGipBody": {
@@ -867,7 +867,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": true,
-    "body": "GIP_BODY_NAME,-7639822576229365795",
+    "body": "GipBody",
     "master": "GipMaster"
   },
   "cscGeepBody": {
@@ -880,7 +880,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": true,
-    "body": "GEEP_BODY_NAME,452395785471370210",
+    "body": "GeepBody",
     "master": "GeepMaster"
   },
   "cscMinorConstructOnKill": {
@@ -893,7 +893,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "MINORCONSTRUCT_BODY_NAME,8669585889829841887",
+    "body": "MinorConstructOnKillBody",
     "master": "MinorConstructOnKillMaster"
   },
   "cscMajorConstruct": {
@@ -906,7 +906,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "MAJORCONSTRUCT_BODY_NAME,2862358289959180157",
+    "body": "MajorConstructBody",
     "master": "MajorConstructMaster"
   },
   "cscMinorConstructAttachable": {
@@ -919,7 +919,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "MINORCONSTRUCT_BODY_NAME,103632605104745492",
+    "body": "MinorConstructAttachableBody",
     "master": "MinorConstructAttachableMaster"
   },
   "cscMinorConstruct": {
@@ -932,7 +932,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "MINORCONSTRUCT_BODY_NAME,9115672286494309088",
+    "body": "MinorConstructBody",
     "master": "MinorConstructMaster"
   },
   "cscMegaConstruct": {
@@ -945,7 +945,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "MEGACONSTRUCT_BODY_NAME,8822941250623968081",
+    "body": "MegaConstructBody",
     "master": "MegaConstructMaster"
   },
   "cscVermin": {
@@ -958,7 +958,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "VERMIN_BODY_NAME,5474593460213496322",
+    "body": "VerminBody",
     "master": "VerminMaster"
   },
   "cscVerminSnowy": {
@@ -971,7 +971,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "VERMIN_BODY_NAME,5474593460213496322",
+    "body": "VerminBody",
     "master": "VerminMaster"
   },
   "cscVoidBarnacleNoCast": {
@@ -984,7 +984,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": true,
-    "body": "VOIDBARNACLE_BODY_NAME,4069858657717369816",
+    "body": "VoidBarnacleNoCastBody",
     "master": "VoidBarnacleNoCastMaster"
   },
   "cscVoidBarnacle": {
@@ -997,7 +997,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": true,
-    "body": "VOIDBARNACLE_BODY_NAME,-6692666532592548283",
+    "body": "VoidBarnacleBody",
     "master": "VoidBarnacleMaster"
   },
   "cscVoidBarnacleAlly": {
@@ -1010,7 +1010,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": true,
-    "body": "VOIDBARNACLE_BODY_NAME,4069858657717369816",
+    "body": "VoidBarnacleNoCastBody",
     "master": "VoidBarnacleAllyMaster"
   },
   "cscVoidJailerAlly": {
@@ -1023,7 +1023,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "VOIDJAILER_BODY_NAME,3674306644515702106",
+    "body": "VoidJailerAllyBody",
     "master": "VoidJailerAllyMaster"
   },
   "cscVoidJailer": {
@@ -1036,7 +1036,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "VOIDJAILER_BODY_NAME,-3833664764396390861",
+    "body": "VoidJailerBody",
     "master": "VoidJailerMaster"
   },
   "cscVoidMegaCrabAlly": {
@@ -1049,7 +1049,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "VOIDMEGACRAB_BODY_NAME,5712417530778252731",
+    "body": "VoidMegaCrabAllyBody",
     "master": "VoidMegaCrabAllyMaster"
   },
   "cscVoidMegaCrab": {
@@ -1062,7 +1062,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "VOIDMEGACRAB_BODY_NAME,7241651002536686107",
+    "body": "VoidMegaCrabBody",
     "master": "VoidMegaCrabMaster"
   },
   "cscVoidRaidCrabJoint": {
@@ -1075,7 +1075,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "VOIDRAIDCRAB_BODY_NAME,-1956854656259439178",
+    "body": "VoidRaidCrabJointBody",
     "master": "VoidRaidCrabJointMaster"
   },
   "cscMiniVoidRaidCrabPhase1": {
@@ -1088,7 +1088,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "VOIDRAIDCRAB_BODY_NAME,-2297594400751855282",
+    "body": "MiniVoidRaidCrabBodyPhase1",
     "master": "MiniVoidRaidCrabMasterPhase1"
   },
   "cscMiniVoidRaidCrabBase": {
@@ -1101,7 +1101,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "VOIDRAIDCRAB_BODY_NAME,5253315355278031168",
+    "body": "MiniVoidRaidCrabBodyBase",
     "master": "MiniVoidRaidCrabMasterBase"
   },
   "cscVoidRaidCrab": {
@@ -1114,7 +1114,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "VOIDRAIDCRAB_BODY_NAME,-3998090436078429083",
+    "body": "VoidRaidCrabBody",
     "master": "VoidRaidCrabMaster"
   },
   "cscMiniVoidRaidCrabPhase3": {
@@ -1127,7 +1127,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "VOIDRAIDCRAB_BODY_NAME,3487969746502550014",
+    "body": "MiniVoidRaidCrabBodyPhase3",
     "master": "MiniVoidRaidCrabMasterPhase3"
   },
   "cscMiniVoidRaidCrabPhase2": {
@@ -1140,7 +1140,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "VOIDRAIDCRAB_BODY_NAME,-2696937696508725749",
+    "body": "MiniVoidRaidCrabBodyPhase2",
     "master": "MiniVoidRaidCrabMasterPhase2"
   },
   "cscArchWisp": {
@@ -1153,7 +1153,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "ARCHWISP_BODY_NAME,2943882077010194847",
+    "body": "ArchWispBody",
     "master": "ArchWispMaster"
   },
   "cscBeetleCrystal": {
@@ -1166,7 +1166,7 @@
     "elite_rules": 0,
     "no_elites": true,
     "forbidden_as_boss": false,
-    "body": "BEETLE_CRYSTAL_BODY_NAME,-7349018413671303926",
+    "body": "BeetleCrystalBody",
     "master": "BeetleCrystalMaster"
   },
   "cscBeetleGuardCrystal": {
@@ -1179,7 +1179,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "BEETLEGUARD_BODY_NAME,-3930080638668933223",
+    "body": "BeetleGuardCrystalBody",
     "master": "BeetleGuardMasterCrystal"
   },
   "cscBrotherGlass": {
@@ -1192,7 +1192,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "BROTHER_BODY_NAME,8171978806095182334",
+    "body": "BrotherGlassBody",
     "master": "BrotherGlassMaster"
   },
   "cscParentPod": {
@@ -1205,7 +1205,7 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
-    "body": "POD_BODY_NAME,-121151419735600607",
+    "body": "ParentPodBody",
     "master": "ParentPodMaster"
   }
 }

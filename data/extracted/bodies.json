@@ -1,6 +1,6 @@
 {
-  ",-9025129108051204657": {
-    "_name": "",
+  "AltarSkeletonBody": {
+    "_name": "AltarSkeletonBody",
     "name": "",
     "flags": 4,
     "health": [
@@ -31,8 +31,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "ARTIFACTSHELL_BODY_NAME,-3914538112699275637": {
-    "_name": "ARTIFACTSHELL_BODY_NAME",
+  "ArtifactShellBody": {
+    "_name": "ArtifactShellBody",
     "name": "Artifact Reliquary",
     "flags": 0,
     "health": [
@@ -63,8 +63,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "BANDIT2_BODY_NAME,669639482491022699": {
-    "_name": "BANDIT2_BODY_NAME",
+  "Bandit2Body": {
+    "_name": "Bandit2Body",
     "name": "Bandit",
     "flags": 144,
     "health": [
@@ -95,8 +95,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "BEETLEGUARD_BODY_NAME,-6780364390142151300": {
-    "_name": "BEETLEGUARD_BODY_NAME",
+  "BeetleGuardAllyBody": {
+    "_name": "BeetleGuardAllyBody",
     "name": "Beetle Guard",
     "flags": 0,
     "health": [
@@ -127,8 +127,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "BEETLEGUARD_BODY_NAME,6061442183798677008": {
-    "_name": "BEETLEGUARD_BODY_NAME",
+  "BeetleGuardBody": {
+    "_name": "BeetleGuardBody",
     "name": "Beetle Guard",
     "flags": 0,
     "health": [
@@ -159,8 +159,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "BEETLEQUEEN_BODY_NAME,6296977388130626750": {
-    "_name": "BEETLEQUEEN_BODY_NAME",
+  "BeetleQueen2Body": {
+    "_name": "BeetleQueen2Body",
     "name": "Beetle Queen",
     "flags": 1,
     "health": [
@@ -191,8 +191,8 @@
     "can_be_frozen": false,
     "item_drop": "BeetleGland"
   },
-  ",7131737044197916325": {
-    "_name": "",
+  "BeetleWard": {
+    "_name": "BeetleWard",
     "name": "",
     "flags": 4,
     "health": [
@@ -223,8 +223,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "BEETLE_BODY_NAME,9218121131735363861": {
-    "_name": "BEETLE_BODY_NAME",
+  "BeetleBody": {
+    "_name": "BeetleBody",
     "name": "Beetle",
     "flags": 0,
     "health": [
@@ -255,8 +255,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "BELL_BODY_NAME,5971066070144350629": {
-    "_name": "BELL_BODY_NAME",
+  "BellBody": {
+    "_name": "BellBody",
     "name": "Brass Contraption",
     "flags": 0,
     "health": [
@@ -287,8 +287,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  ",-7304019558028869079": {
-    "_name": "",
+  "BirdsharkBody": {
+    "_name": "BirdsharkBody",
     "name": "",
     "flags": 4,
     "health": [
@@ -319,8 +319,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "BISON_BODY_NAME,-6194373484793097358": {
-    "_name": "BISON_BODY_NAME",
+  "BisonBody": {
+    "_name": "BisonBody",
     "name": "Bighorn Bison",
     "flags": 0,
     "health": [
@@ -351,8 +351,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "UNIDENTIFIED,6767039347170867422": {
-    "_name": "UNIDENTIFIED",
+  "BrotherHauntBody": {
+    "_name": "BrotherHauntBody",
     "name": "",
     "flags": 64,
     "health": [
@@ -383,8 +383,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "BROTHER_BODY_NAME,-6280498815603321506": {
-    "_name": "BROTHER_BODY_NAME",
+  "BrotherHurtBody": {
+    "_name": "BrotherHurtBody",
     "name": "Mithrix",
     "flags": 2048,
     "health": [
@@ -415,8 +415,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "BROTHER_BODY_NAME,-262345486723689649": {
-    "_name": "BROTHER_BODY_NAME",
+  "BrotherBody": {
+    "_name": "BrotherBody",
     "name": "Mithrix",
     "flags": 2048,
     "health": [
@@ -447,8 +447,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "CAPTAIN_BODY_NAME,-6781644716941010891": {
-    "_name": "CAPTAIN_BODY_NAME",
+  "CaptainBody": {
+    "_name": "CaptainBody",
     "name": "Captain",
     "flags": 16,
     "health": [
@@ -479,8 +479,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "CLAYBOSS_BODY_NAME,2780849810617343179": {
-    "_name": "CLAYBOSS_BODY_NAME",
+  "ClayBossBody": {
+    "_name": "ClayBossBody",
     "name": "Clay Dunestrider",
     "flags": 9,
     "health": [
@@ -511,8 +511,8 @@
     "can_be_frozen": false,
     "item_drop": "SiphonOnLowHealth"
   },
-  "CLAYBRUISER_BODY_NAME,2797552104482198067": {
-    "_name": "CLAYBRUISER_BODY_NAME",
+  "ClayBruiserBody": {
+    "_name": "ClayBruiserBody",
     "name": "Clay Templar",
     "flags": 8,
     "health": [
@@ -543,8 +543,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "COMMANDO_BODY_NAME,-4877347282271843132": {
-    "_name": "COMMANDO_BODY_NAME",
+  "CommandoBody": {
+    "_name": "CommandoBody",
     "name": "Commando",
     "flags": 16,
     "health": [
@@ -575,8 +575,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "CROCO_BODY_NAME,4503057478411439415": {
-    "_name": "CROCO_BODY_NAME",
+  "CrocoBody": {
+    "_name": "CrocoBody",
     "name": "Acrid",
     "flags": 16,
     "health": [
@@ -607,8 +607,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  ",-436709731581117415": {
-    "_name": "",
+  "DeathProjectile": {
+    "_name": "DeathProjectile",
     "name": "",
     "flags": 0,
     "health": [
@@ -639,8 +639,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "DRONE_GUNNER_BODY_NAME,-8825901108628147836": {
-    "_name": "DRONE_GUNNER_BODY_NAME",
+  "Drone1Body": {
+    "_name": "Drone1Body",
     "name": "Gunner Drone",
     "flags": 2,
     "health": [
@@ -671,8 +671,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "DRONE_HEALING_BODY_NAME,-5528296088830052421": {
-    "_name": "DRONE_HEALING_BODY_NAME",
+  "Drone2Body": {
+    "_name": "Drone2Body",
     "name": "Healing Drone",
     "flags": 2,
     "health": [
@@ -703,8 +703,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "TURRET1_BODY_NAME,-3515718513093576349": {
-    "_name": "TURRET1_BODY_NAME",
+  "Turret1Body": {
+    "_name": "Turret1Body",
     "name": "Gunner Turret",
     "flags": 2,
     "health": [
@@ -735,8 +735,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "DRONE_BACKUP_BODY_NAME,-2787967666877948505": {
-    "_name": "DRONE_BACKUP_BODY_NAME",
+  "BackupDroneBody": {
+    "_name": "BackupDroneBody",
     "name": "Strike Drone",
     "flags": 2,
     "health": [
@@ -767,8 +767,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "EQUIPMENTDRONE_BODY_NAME,-2190652651611884519": {
-    "_name": "EQUIPMENTDRONE_BODY_NAME",
+  "EquipmentDroneBody": {
+    "_name": "EquipmentDroneBody",
     "name": "Equipment Drone",
     "flags": 2,
     "health": [
@@ -799,8 +799,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "DRONE_MISSILE_BODY_NAME,-930782364652045900": {
-    "_name": "DRONE_MISSILE_BODY_NAME",
+  "MissileDroneBody": {
+    "_name": "MissileDroneBody",
     "name": "Missile Drone",
     "flags": 2,
     "health": [
@@ -831,8 +831,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "EMERGENCYDRONE_BODY_NAME,-754235010027196859": {
-    "_name": "EMERGENCYDRONE_BODY_NAME",
+  "EmergencyDroneBody": {
+    "_name": "EmergencyDroneBody",
     "name": "Emergency Drone",
     "flags": 2,
     "health": [
@@ -863,8 +863,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "DRONE_MEGA_BODY_NAME,1087201758615568584": {
-    "_name": "DRONE_MEGA_BODY_NAME",
+  "MegaDroneBody": {
+    "_name": "MegaDroneBody",
     "name": "TC-280 Prototype",
     "flags": 2,
     "health": [
@@ -895,8 +895,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "FLAMEDRONE_BODY_NAME,8858345548042082531": {
-    "_name": "FLAMEDRONE_BODY_NAME",
+  "FlameDroneBody": {
+    "_name": "FlameDroneBody",
     "name": "Incinerator Drone",
     "flags": 2,
     "health": [
@@ -927,8 +927,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "ELECTRICWORM_BODY_NAME,9174004011289029256": {
-    "_name": "ELECTRICWORM_BODY_NAME",
+  "ElectricWormBody": {
+    "_name": "ElectricWormBody",
     "name": "Overloading Worm",
     "flags": 9,
     "health": [
@@ -959,8 +959,8 @@
     "can_be_frozen": false,
     "item_drop": "LightningStrikeOnHit"
   },
-  "URCHINTURRET_BODY_NAME,-6998624659205682130": {
-    "_name": "URCHINTURRET_BODY_NAME",
+  "UrchinTurretBody": {
+    "_name": "UrchinTurretBody",
     "name": "Malachite Urchin",
     "flags": 0,
     "health": [
@@ -991,8 +991,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "ENGI_BODY_NAME,-8789523071473435693": {
-    "_name": "ENGI_BODY_NAME",
+  "EngiBody": {
+    "_name": "EngiBody",
     "name": "Engineer",
     "flags": 16,
     "health": [
@@ -1023,8 +1023,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "ENGITURRET_BODY_NAME,-6177697971644106893": {
-    "_name": "ENGITURRET_BODY_NAME",
+  "EngiWalkerTurretBody": {
+    "_name": "EngiWalkerTurretBody",
     "name": "Engineer Turret",
     "flags": 2,
     "health": [
@@ -1055,8 +1055,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "ENGITURRET_BODY_NAME,-1255655987304471632": {
-    "_name": "ENGITURRET_BODY_NAME",
+  "EngiTurretBody": {
+    "_name": "EngiTurretBody",
     "name": "Engineer Turret",
     "flags": 2,
     "health": [
@@ -1087,8 +1087,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "POT2_BODY_NAME,-5760713260235152733": {
-    "_name": "POT2_BODY_NAME",
+  "ExplosivePotDestructibleBody": {
+    "_name": "ExplosivePotDestructibleBody",
     "name": "Pot",
     "flags": 260,
     "health": [
@@ -1119,8 +1119,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "FUSIONCELL_BODY_NAME,-8883669369203079694": {
-    "_name": "FUSIONCELL_BODY_NAME",
+  "FusionCellDestructibleBody": {
+    "_name": "FusionCellDestructibleBody",
     "name": "Fusion Cell",
     "flags": 260,
     "health": [
@@ -1151,8 +1151,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "GOLEM_BODY_NAME,-7322432328827242503": {
-    "_name": "GOLEM_BODY_NAME",
+  "GolemBody": {
+    "_name": "GolemBody",
     "name": "Stone Golem",
     "flags": 0,
     "health": [
@@ -1183,8 +1183,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "GRANDPARENT_BODY_NAME,4479202618591268875": {
-    "_name": "GRANDPARENT_BODY_NAME",
+  "GrandParentBody": {
+    "_name": "GrandParentBody",
     "name": "Grandparent",
     "flags": 512,
     "health": [
@@ -1215,8 +1215,8 @@
     "can_be_frozen": false,
     "item_drop": "ParentEgg"
   },
-  "GRAVEKEEPER_BODY_NAME,4801396543259066670": {
-    "_name": "GRAVEKEEPER_BODY_NAME",
+  "GravekeeperBody": {
+    "_name": "GravekeeperBody",
     "name": "Grovetender",
     "flags": 0,
     "health": [
@@ -1247,8 +1247,8 @@
     "can_be_frozen": false,
     "item_drop": "SprintWisp"
   },
-  ",6957333352716087917": {
-    "_name": "",
+  "GravekeeperTrackingFireball": {
+    "_name": "GravekeeperTrackingFireball",
     "name": "",
     "flags": 4,
     "health": [
@@ -1279,8 +1279,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "GREATERWISP_BODY_NAME,772358279179203213": {
-    "_name": "GREATERWISP_BODY_NAME",
+  "GreaterWispBody": {
+    "_name": "GreaterWispBody",
     "name": "Greater Wisp",
     "flags": 0,
     "health": [
@@ -1311,8 +1311,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "HERETIC_BODY_NAME,-8738633977848228628": {
-    "_name": "HERETIC_BODY_NAME",
+  "HereticBody": {
+    "_name": "HereticBody",
     "name": "Heretic",
     "flags": 16,
     "health": [
@@ -1343,8 +1343,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "HERMIT_CRAB_BODY_NAME,-857145930845917152": {
-    "_name": "HERMIT_CRAB_BODY_NAME",
+  "HermitCrabBody": {
+    "_name": "HermitCrabBody",
     "name": "Hermit Crab",
     "flags": 0,
     "health": [
@@ -1375,8 +1375,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "HUNTRESS_BODY_NAME,3308767006502102819": {
-    "_name": "HUNTRESS_BODY_NAME",
+  "HuntressBody": {
+    "_name": "HuntressBody",
     "name": "Huntress",
     "flags": 16,
     "health": [
@@ -1407,8 +1407,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "IMPBOSS_BODY_NAME,430081133749015043": {
-    "_name": "IMPBOSS_BODY_NAME",
+  "ImpBossBody": {
+    "_name": "ImpBossBody",
     "name": "Imp Overlord",
     "flags": 1,
     "health": [
@@ -1439,8 +1439,8 @@
     "can_be_frozen": false,
     "item_drop": "BleedOnHitAndExplode"
   },
-  "IMP_BODY_NAME,-138269560369502470": {
-    "_name": "IMP_BODY_NAME",
+  "ImpBody": {
+    "_name": "ImpBody",
     "name": "Imp",
     "flags": 0,
     "health": [
@@ -1471,8 +1471,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "JELLYFISH_BODY_NAME,-4949183844312373554": {
-    "_name": "JELLYFISH_BODY_NAME",
+  "JellyfishBody": {
+    "_name": "JellyfishBody",
     "name": "Jellyfish",
     "flags": 0,
     "health": [
@@ -1503,8 +1503,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "LEMURIANBRUISER_BODY_NAME,-3714437810204064942": {
-    "_name": "LEMURIANBRUISER_BODY_NAME",
+  "LemurianBruiserBody": {
+    "_name": "LemurianBruiserBody",
     "name": "Elder Lemurian",
     "flags": 0,
     "health": [
@@ -1535,8 +1535,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "LEMURIAN_BODY_NAME,1717460702084677953": {
-    "_name": "LEMURIAN_BODY_NAME",
+  "LemurianBody": {
+    "_name": "LemurianBody",
     "name": "Lemurian",
     "flags": 0,
     "health": [
@@ -1567,8 +1567,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "LOADER_BODY_NAME,-6859875765546660339": {
-    "_name": "LOADER_BODY_NAME",
+  "LoaderBody": {
+    "_name": "LoaderBody",
     "name": "Loader",
     "flags": 17,
     "health": [
@@ -1599,8 +1599,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "LUNAREXPLODER_BODY_NAME,-2274684077375776811": {
-    "_name": "LUNAREXPLODER_BODY_NAME",
+  "LunarExploderBody": {
+    "_name": "LunarExploderBody",
     "name": "Lunar Chimera",
     "flags": 0,
     "health": [
@@ -1631,8 +1631,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "LUNARGOLEM_BODY_NAME,-4784653761091027702": {
-    "_name": "LUNARGOLEM_BODY_NAME",
+  "LunarGolemBody": {
+    "_name": "LunarGolemBody",
     "name": "Lunar Chimera",
     "flags": 0,
     "health": [
@@ -1663,8 +1663,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  ",2588996205700975627": {
-    "_name": "",
+  "LunarWispTrackingBomb": {
+    "_name": "LunarWispTrackingBomb",
     "name": "",
     "flags": 4,
     "health": [
@@ -1695,8 +1695,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "LUNARWISP_BODY_NAME,7359358192127432510": {
-    "_name": "LUNARWISP_BODY_NAME",
+  "LunarWispBody": {
+    "_name": "LunarWispBody",
     "name": "Lunar Chimera",
     "flags": 0,
     "health": [
@@ -1727,8 +1727,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "MAGE_BODY_NAME,-6856047328575062848": {
-    "_name": "MAGE_BODY_NAME",
+  "MageBody": {
+    "_name": "MageBody",
     "name": "Artificer",
     "flags": 16,
     "health": [
@@ -1759,8 +1759,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "MAGMAWORM_BODY_NAME,-7045467416351155679": {
-    "_name": "MAGMAWORM_BODY_NAME",
+  "MagmaWormBody": {
+    "_name": "MagmaWormBody",
     "name": "Magma Worm",
     "flags": 9,
     "health": [
@@ -1791,8 +1791,8 @@
     "can_be_frozen": false,
     "item_drop": "FireballsOnHit"
   },
-  "MERC_BODY_NAME,6614850250781190916": {
-    "_name": "MERC_BODY_NAME",
+  "MercBody": {
+    "_name": "MercBody",
     "name": "Mercenary",
     "flags": 16,
     "health": [
@@ -1823,8 +1823,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "MINIMUSHROOM_BODY_NAME,-4639850564068037783": {
-    "_name": "MINIMUSHROOM_BODY_NAME",
+  "MiniMushroomBody": {
+    "_name": "MiniMushroomBody",
     "name": "Mini Mushrum",
     "flags": 0,
     "health": [
@@ -1855,8 +1855,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "NULLIFIER_BODY_NAME,-6498387048547021316": {
-    "_name": "NULLIFIER_BODY_NAME",
+  "NullifierAllyBody": {
+    "_name": "NullifierAllyBody",
     "name": "Void Reaver",
     "flags": 1024,
     "health": [
@@ -1887,8 +1887,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "NULLIFIER_BODY_NAME,566661308468529568": {
-    "_name": "NULLIFIER_BODY_NAME",
+  "NullifierBody": {
+    "_name": "NullifierBody",
     "name": "Void Reaver",
     "flags": 1024,
     "health": [
@@ -1919,8 +1919,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "PARENT_BODY_NAME,-2897949650595737385": {
-    "_name": "PARENT_BODY_NAME",
+  "ParentBody": {
+    "_name": "ParentBody",
     "name": "Parent",
     "flags": 512,
     "health": [
@@ -1951,8 +1951,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "ROBOBALLBOSS_BODY_NAME,-6752485905745916689": {
-    "_name": "ROBOBALLBOSS_BODY_NAME",
+  "RoboBallBossBody": {
+    "_name": "RoboBallBossBody",
     "name": "Solus Control Unit",
     "flags": 2,
     "health": [
@@ -1983,8 +1983,8 @@
     "can_be_frozen": false,
     "item_drop": "RoboBallBuddy"
   },
-  "SUPERROBOBALLBOSS_BODY_NAME,-783938501872950032": {
-    "_name": "SUPERROBOBALLBOSS_BODY_NAME",
+  "SuperRoboBallBossBody": {
+    "_name": "SuperRoboBallBossBody",
     "name": "Alloy Worship Unit",
     "flags": 2,
     "health": [
@@ -2015,8 +2015,8 @@
     "can_be_frozen": false,
     "item_drop": "RoboBallBuddy"
   },
-  "ROBOBALLMINI_BODY_NAME,4258152529575623049": {
-    "_name": "ROBOBALLMINI_BODY_NAME",
+  "RoboBallMiniBody": {
+    "_name": "RoboBallMiniBody",
     "name": "Solus Probe",
     "flags": 2,
     "health": [
@@ -2047,8 +2047,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "ROBOBALLGREENBUDDY_BODY_NAME,1987581938210224088": {
-    "_name": "ROBOBALLGREENBUDDY_BODY_NAME",
+  "RoboBallGreenBuddyBody": {
+    "_name": "RoboBallGreenBuddyBody",
     "name": "Delighted Probe",
     "flags": 66,
     "health": [
@@ -2079,8 +2079,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "ROBOBALLREDBUDDY_BODY_NAME,4982025405444595260": {
-    "_name": "ROBOBALLREDBUDDY_BODY_NAME",
+  "RoboBallRedBuddyBody": {
+    "_name": "RoboBallRedBuddyBody",
     "name": "Quiet Probe",
     "flags": 66,
     "health": [
@@ -2111,8 +2111,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "SCAVLUNAR3_BODY_NAME,-6607532490618943043": {
-    "_name": "SCAVLUNAR3_BODY_NAME",
+  "ScavLunar3Body": {
+    "_name": "ScavLunar3Body",
     "name": "Twiptwip the Devotee",
     "flags": 0,
     "health": [
@@ -2143,8 +2143,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "SCAVLUNAR2_BODY_NAME,565595897824143465": {
-    "_name": "SCAVLUNAR2_BODY_NAME",
+  "ScavLunar2Body": {
+    "_name": "ScavLunar2Body",
     "name": "Wipwip the Wild",
     "flags": 0,
     "health": [
@@ -2175,8 +2175,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "SCAVLUNAR4_BODY_NAME,7340738978162743476": {
-    "_name": "SCAVLUNAR4_BODY_NAME",
+  "ScavLunar4Body": {
+    "_name": "ScavLunar4Body",
     "name": "Guragura the Lucky",
     "flags": 0,
     "health": [
@@ -2207,8 +2207,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "SCAVLUNAR1_BODY_NAME,7355107013850095935": {
-    "_name": "SCAVLUNAR1_BODY_NAME",
+  "ScavLunar1Body": {
+    "_name": "ScavLunar1Body",
     "name": "Kipkip the Gentle",
     "flags": 0,
     "health": [
@@ -2239,8 +2239,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "SCAV_BODY_NAME,-5148886553018568663": {
-    "_name": "SCAV_BODY_NAME",
+  "ScavBody": {
+    "_name": "ScavBody",
     "name": "Scavenger",
     "flags": 0,
     "health": [
@@ -2271,8 +2271,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  ",7698067029231285145": {
-    "_name": "",
+  "ScavSackProjectile": {
+    "_name": "ScavSackProjectile",
     "name": "",
     "flags": 4,
     "health": [
@@ -2303,8 +2303,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  ",-3587561474380917418": {
-    "_name": "",
+  "VultureEggBody": {
+    "_name": "VultureEggBody",
     "name": "",
     "flags": 260,
     "health": [
@@ -2335,8 +2335,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "SHOPKEEPER_BODY_NAME,-7205432084159651845": {
-    "_name": "SHOPKEEPER_BODY_NAME",
+  "ShopkeeperBody": {
+    "_name": "ShopkeeperBody",
     "name": "Newt",
     "flags": 1,
     "health": [
@@ -2367,8 +2367,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "MAULINGROCK_BODY_NAME,-5708058512711267651": {
-    "_name": "MAULINGROCK_BODY_NAME",
+  "SMMaulingRockLarge": {
+    "_name": "SMMaulingRockLarge",
     "name": "Flying Rock",
     "flags": 260,
     "health": [
@@ -2399,8 +2399,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "MAULINGROCK_BODY_NAME,-168175402333531614": {
-    "_name": "MAULINGROCK_BODY_NAME",
+  "SMMaulingRockSmall": {
+    "_name": "SMMaulingRockSmall",
     "name": "Flying Rock",
     "flags": 260,
     "health": [
@@ -2431,8 +2431,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "MAULINGROCK_BODY_NAME,5357870678088444318": {
-    "_name": "MAULINGROCK_BODY_NAME",
+  "SMMaulingRockMedium": {
+    "_name": "SMMaulingRockMedium",
     "name": "Flying Rock",
     "flags": 260,
     "health": [
@@ -2463,8 +2463,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  ",4964951459575563997": {
-    "_name": "",
+  "SpectatorBody": {
+    "_name": "SpectatorBody",
     "name": "",
     "flags": 0,
     "health": [
@@ -2495,8 +2495,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  ",7806610397694495710": {
-    "_name": "",
+  "SpectatorSlowBody": {
+    "_name": "SpectatorSlowBody",
     "name": "",
     "flags": 0,
     "health": [
@@ -2527,8 +2527,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "SQUIDTURRET_BODY_NAME,-4895553308416995978": {
-    "_name": "SQUIDTURRET_BODY_NAME",
+  "SquidTurretBody": {
+    "_name": "SquidTurretBody",
     "name": "Squid Turret",
     "flags": 0,
     "health": [
@@ -2559,8 +2559,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "TITAN_BODY_NAME,-3645550656977854452": {
-    "_name": "TITAN_BODY_NAME",
+  "TitanBody": {
+    "_name": "TitanBody",
     "name": "Stone Titan",
     "flags": 1,
     "health": [
@@ -2591,8 +2591,8 @@
     "can_be_frozen": false,
     "item_drop": "Knurl"
   },
-  "TITANGOLD_BODY_NAME,1669286690219817468": {
-    "_name": "TITANGOLD_BODY_NAME",
+  "TitanGoldBody": {
+    "_name": "TitanGoldBody",
     "name": "Aurelionite",
     "flags": 1,
     "health": [
@@ -2623,8 +2623,8 @@
     "can_be_frozen": false,
     "item_drop": "TitanGoldDuringTP"
   },
-  "TOOLBOT_BODY_NAME,4132792340586605851": {
-    "_name": "TOOLBOT_BODY_NAME",
+  "ToolbotBody": {
+    "_name": "ToolbotBody",
     "name": "MUL-T",
     "flags": 18,
     "health": [
@@ -2655,8 +2655,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "TREEBOT_BODY_NAME,38330065492897553": {
-    "_name": "TREEBOT_BODY_NAME",
+  "TreebotBody": {
+    "_name": "TreebotBody",
     "name": "REX",
     "flags": 18,
     "health": [
@@ -2687,8 +2687,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "VAGRANT_BODY_NAME,-5111004683916885433": {
-    "_name": "VAGRANT_BODY_NAME",
+  "VagrantBody": {
+    "_name": "VagrantBody",
     "name": "Wandering Vagrant",
     "flags": 0,
     "health": [
@@ -2719,8 +2719,8 @@
     "can_be_frozen": false,
     "item_drop": "NovaOnLowHealth"
   },
-  ",191341689701117552": {
-    "_name": "",
+  "VagrantTrackingBomb": {
+    "_name": "VagrantTrackingBomb",
     "name": "",
     "flags": 4,
     "health": [
@@ -2751,8 +2751,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "VULTURE_BODY_NAME,-7157857937764117919": {
-    "_name": "VULTURE_BODY_NAME",
+  "VultureBody": {
+    "_name": "VultureBody",
     "name": "Alloy Vulture",
     "flags": 1,
     "health": [
@@ -2783,8 +2783,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "TIMECRYSTAL_BODY_NAME,-2636278627983904951": {
-    "_name": "TIMECRYSTAL_BODY_NAME",
+  "TimeCrystalBody": {
+    "_name": "TimeCrystalBody",
     "name": "Time Crystal",
     "flags": 269,
     "health": [
@@ -2815,8 +2815,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "WISP_BODY_NAME,1185924391367202977": {
-    "_name": "WISP_BODY_NAME",
+  "WispSoulBody": {
+    "_name": "WispSoulBody",
     "name": "Lesser Wisp",
     "flags": 0,
     "health": [
@@ -2847,8 +2847,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "WISP_BODY_NAME,-2789288942580116804": {
-    "_name": "WISP_BODY_NAME",
+  "WispBody": {
+    "_name": "WispBody",
     "name": "Lesser Wisp",
     "flags": 0,
     "health": [
@@ -2879,8 +2879,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "ACIDLARVA_BODY_NAME,8163345891220534571": {
-    "_name": "ACIDLARVA_BODY_NAME",
+  "AcidLarvaBody": {
+    "_name": "AcidLarvaBody",
     "name": "Larva",
     "flags": 0,
     "health": [
@@ -2911,8 +2911,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "ASSASSIN2_BODY_NAME,-7615402970195009080": {
-    "_name": "ASSASSIN2_BODY_NAME",
+  "Assassin2Body": {
+    "_name": "Assassin2Body",
     "name": "Assassin",
     "flags": 0,
     "health": [
@@ -2943,8 +2943,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "CLAYGRENADIER_BODY_NAME,-1771443897819026626": {
-    "_name": "CLAYGRENADIER_BODY_NAME",
+  "ClayGrenadierBody": {
+    "_name": "ClayGrenadierBody",
     "name": "Clay Apothecary",
     "flags": 8,
     "health": [
@@ -2975,8 +2975,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "DRONE_COMMANDER_BODY_NAME,5302431856122207826": {
-    "_name": "DRONE_COMMANDER_BODY_NAME",
+  "DroneCommanderBody": {
+    "_name": "DroneCommanderBody",
     "name": "Col. Droneman",
     "flags": 2,
     "health": [
@@ -3007,8 +3007,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "AFFIXEARTH_HEALER_BODY_NAME,-6994677797297897056": {
-    "_name": "AFFIXEARTH_HEALER_BODY_NAME",
+  "AffixEarthHealerBody": {
+    "_name": "AffixEarthHealerBody",
     "name": "Healing Core",
     "flags": 256,
     "health": [
@@ -3039,8 +3039,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "VOIDINFESTOR_BODY_NAME,-1430807577356982535": {
-    "_name": "VOIDINFESTOR_BODY_NAME",
+  "VoidInfestorBody": {
+    "_name": "VoidInfestorBody",
     "name": "Void Infestor",
     "flags": 1025,
     "health": [
@@ -3071,8 +3071,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "FLYINGVERMIN_BODY_NAME,-9101152544961197874": {
-    "_name": "FLYINGVERMIN_BODY_NAME",
+  "FlyingVerminBody": {
+    "_name": "FlyingVerminBody",
     "name": "Blind Pest",
     "flags": 1,
     "health": [
@@ -3103,8 +3103,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "GUP_BODY_NAME,-8261587017098189037": {
-    "_name": "GUP_BODY_NAME",
+  "GupBody": {
+    "_name": "GupBody",
     "name": "Gup",
     "flags": 0,
     "health": [
@@ -3135,8 +3135,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "GIP_BODY_NAME,-7639822576229365795": {
-    "_name": "GIP_BODY_NAME",
+  "GipBody": {
+    "_name": "GipBody",
     "name": "Gip",
     "flags": 0,
     "health": [
@@ -3167,8 +3167,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "GEEP_BODY_NAME,452395785471370210": {
-    "_name": "GEEP_BODY_NAME",
+  "GeepBody": {
+    "_name": "GeepBody",
     "name": "Geep",
     "flags": 0,
     "health": [
@@ -3199,8 +3199,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "MAULINGROCK_BODY_NAME,1606572563492293369": {
-    "_name": "MAULINGROCK_BODY_NAME",
+  "SMInfiniteTowerMaulingRockMedium": {
+    "_name": "SMInfiniteTowerMaulingRockMedium",
     "name": "Flying Rock",
     "flags": 260,
     "health": [
@@ -3231,8 +3231,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "MAULINGROCK_BODY_NAME,6799920854954917123": {
-    "_name": "MAULINGROCK_BODY_NAME",
+  "SMInfiniteTowerMaulingRockLarge": {
+    "_name": "SMInfiniteTowerMaulingRockLarge",
     "name": "Flying Rock",
     "flags": 260,
     "health": [
@@ -3263,8 +3263,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "MAULINGROCK_BODY_NAME,8652171154657999799": {
-    "_name": "MAULINGROCK_BODY_NAME",
+  "SMInfiniteTowerMaulingRockSmall": {
+    "_name": "SMInfiniteTowerMaulingRockSmall",
     "name": "Flying Rock",
     "flags": 260,
     "health": [
@@ -3295,8 +3295,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "MINORCONSTRUCT_BODY_NAME,103632605104745492": {
-    "_name": "MINORCONSTRUCT_BODY_NAME",
+  "MinorConstructAttachableBody": {
+    "_name": "MinorConstructAttachableBody",
     "name": "Alpha Construct",
     "flags": 0,
     "health": [
@@ -3327,8 +3327,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "MAJORCONSTRUCT_BODY_NAME,2862358289959180157": {
-    "_name": "MAJORCONSTRUCT_BODY_NAME",
+  "MajorConstructBody": {
+    "_name": "MajorConstructBody",
     "name": "",
     "flags": 2,
     "health": [
@@ -3359,8 +3359,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "MINORCONSTRUCT_BODY_NAME,8669585889829841887": {
-    "_name": "MINORCONSTRUCT_BODY_NAME",
+  "MinorConstructOnKillBody": {
+    "_name": "MinorConstructOnKillBody",
     "name": "Alpha Construct",
     "flags": 0,
     "health": [
@@ -3391,8 +3391,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "MEGACONSTRUCT_BODY_NAME,8822941250623968081": {
-    "_name": "MEGACONSTRUCT_BODY_NAME",
+  "MegaConstructBody": {
+    "_name": "MegaConstructBody",
     "name": "Xi Construct",
     "flags": 0,
     "health": [
@@ -3423,8 +3423,8 @@
     "can_be_frozen": false,
     "item_drop": "MinorConstructOnKill"
   },
-  "MINORCONSTRUCT_BODY_NAME,9115672286494309088": {
-    "_name": "MINORCONSTRUCT_BODY_NAME",
+  "MinorConstructBody": {
+    "_name": "MinorConstructBody",
     "name": "Alpha Construct",
     "flags": 0,
     "health": [
@@ -3455,8 +3455,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "RAILGUNNER_BODY_NAME,-1973283156996698076": {
-    "_name": "RAILGUNNER_BODY_NAME",
+  "RailgunnerBody": {
+    "_name": "RailgunnerBody",
     "name": "Railgunner",
     "flags": 16,
     "health": [
@@ -3487,8 +3487,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "SULFURPOD_BODY_NAME,2655071089965811302": {
-    "_name": "SULFURPOD_BODY_NAME",
+  "SulfurPodBody": {
+    "_name": "SulfurPodBody",
     "name": "Sulfur Pod",
     "flags": 260,
     "health": [
@@ -3519,8 +3519,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "VERMIN_BODY_NAME,5474593460213496322": {
-    "_name": "VERMIN_BODY_NAME",
+  "VerminBody": {
+    "_name": "VerminBody",
     "name": "Blind Vermin",
     "flags": 0,
     "health": [
@@ -3551,8 +3551,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "VOIDBARNACLE_BODY_NAME,-6692666532592548283": {
-    "_name": "VOIDBARNACLE_BODY_NAME",
+  "VoidBarnacleBody": {
+    "_name": "VoidBarnacleBody",
     "name": "Void Barnacle",
     "flags": 1024,
     "health": [
@@ -3583,8 +3583,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "VOIDBARNACLE_BODY_NAME,4069858657717369816": {
-    "_name": "VOIDBARNACLE_BODY_NAME",
+  "VoidBarnacleNoCastBody": {
+    "_name": "VoidBarnacleNoCastBody",
     "name": "Void Barnacle",
     "flags": 1024,
     "health": [
@@ -3615,8 +3615,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "VOIDJAILER_BODY_NAME,-3833664764396390861": {
-    "_name": "VOIDJAILER_BODY_NAME",
+  "VoidJailerBody": {
+    "_name": "VoidJailerBody",
     "name": "Void Jailer",
     "flags": 1024,
     "health": [
@@ -3647,8 +3647,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "VOIDJAILER_BODY_NAME,3674306644515702106": {
-    "_name": "VOIDJAILER_BODY_NAME",
+  "VoidJailerAllyBody": {
+    "_name": "VoidJailerAllyBody",
     "name": "Void Jailer",
     "flags": 1024,
     "health": [
@@ -3679,8 +3679,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "VOIDMEGACRAB_BODY_NAME,5712417530778252731": {
-    "_name": "VOIDMEGACRAB_BODY_NAME",
+  "VoidMegaCrabAllyBody": {
+    "_name": "VoidMegaCrabAllyBody",
     "name": "Void Devastator",
     "flags": 1024,
     "health": [
@@ -3711,8 +3711,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "VOIDMEGACRAB_BODY_NAME,7241651002536686107": {
-    "_name": "VOIDMEGACRAB_BODY_NAME",
+  "VoidMegaCrabBody": {
+    "_name": "VoidMegaCrabBody",
     "name": "Void Devastator",
     "flags": 1024,
     "health": [
@@ -3743,8 +3743,8 @@
     "can_be_frozen": true,
     "item_drop": "VoidMegaCrabItem"
   },
-  "VOIDRAIDCRAB_BODY_NAME,-3998090436078429083": {
-    "_name": "VOIDRAIDCRAB_BODY_NAME",
+  "VoidRaidCrabBody": {
+    "_name": "VoidRaidCrabBody",
     "name": "\u300cVoidling\u300d",
     "flags": 1280,
     "health": [
@@ -3775,8 +3775,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "VOIDRAIDCRAB_BODY_NAME,-2696937696508725749": {
-    "_name": "VOIDRAIDCRAB_BODY_NAME",
+  "MiniVoidRaidCrabBodyPhase2": {
+    "_name": "MiniVoidRaidCrabBodyPhase2",
     "name": "\u300cVoidling\u300d",
     "flags": 3073,
     "health": [
@@ -3807,8 +3807,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "VOIDRAIDCRAB_BODY_NAME,-2297594400751855282": {
-    "_name": "VOIDRAIDCRAB_BODY_NAME",
+  "MiniVoidRaidCrabBodyPhase1": {
+    "_name": "MiniVoidRaidCrabBodyPhase1",
     "name": "\u300cVoidling\u300d",
     "flags": 3073,
     "health": [
@@ -3839,8 +3839,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "VOIDRAIDCRAB_BODY_NAME,-1956854656259439178": {
-    "_name": "VOIDRAIDCRAB_BODY_NAME",
+  "VoidRaidCrabJointBody": {
+    "_name": "VoidRaidCrabJointBody",
     "name": "\u300cVoidling\u300d",
     "flags": 1280,
     "health": [
@@ -3871,8 +3871,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "VOIDRAIDCRAB_BODY_NAME,3487969746502550014": {
-    "_name": "VOIDRAIDCRAB_BODY_NAME",
+  "MiniVoidRaidCrabBodyPhase3": {
+    "_name": "MiniVoidRaidCrabBodyPhase3",
     "name": "\u300cVoidling\u300d",
     "flags": 3073,
     "health": [
@@ -3903,8 +3903,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "VOIDRAIDCRAB_BODY_NAME,5253315355278031168": {
-    "_name": "VOIDRAIDCRAB_BODY_NAME",
+  "MiniVoidRaidCrabBodyBase": {
+    "_name": "MiniVoidRaidCrabBodyBase",
     "name": "\u300cVoidling\u300d",
     "flags": 3073,
     "health": [
@@ -3935,8 +3935,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "VOIDSURVIVOR_BODY_NAME,7254558834924720360": {
-    "_name": "VOIDSURVIVOR_BODY_NAME",
+  "VoidSurvivorBody": {
+    "_name": "VoidSurvivorBody",
     "name": "\u300cV??oid Fiend\u300f",
     "flags": 1040,
     "health": [
@@ -3967,8 +3967,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "ANCIENTWISP_BODY_NAME,-1926536020116777831": {
-    "_name": "ANCIENTWISP_BODY_NAME",
+  "AncientWispBody": {
+    "_name": "AncientWispBody",
     "name": "",
     "flags": 0,
     "health": [
@@ -3999,8 +3999,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "ARCHWISP_BODY_NAME,2943882077010194847": {
-    "_name": "ARCHWISP_BODY_NAME",
+  "ArchWispBody": {
+    "_name": "ArchWispBody",
     "name": "",
     "flags": 0,
     "health": [
@@ -4031,8 +4031,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "ENGI_BODY_NAME,2184376616736218088": {
-    "_name": "ENGI_BODY_NAME",
+  "AssassinBody": {
+    "_name": "AssassinBody",
     "name": "Engineer",
     "flags": 0,
     "health": [
@@ -4063,8 +4063,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "DRONEBACKUP_BODY_NAME,-6438311804816853948": {
-    "_name": "DRONEBACKUP_BODY_NAME",
+  "BackupDroneOldBody": {
+    "_name": "BackupDroneOldBody",
     "name": "",
     "flags": 2,
     "health": [
@@ -4095,8 +4095,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "BANDIT_BODY_NAME,-7454048968033889674": {
-    "_name": "BANDIT_BODY_NAME",
+  "BanditBody": {
+    "_name": "BanditBody",
     "name": "Bandit",
     "flags": 16,
     "health": [
@@ -4127,8 +4127,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "BEETLE_CRYSTAL_BODY_NAME,-7349018413671303926": {
-    "_name": "BEETLE_CRYSTAL_BODY_NAME",
+  "BeetleCrystalBody": {
+    "_name": "BeetleCrystalBody",
     "name": "",
     "flags": 0,
     "health": [
@@ -4159,8 +4159,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "BEETLEGUARD_BODY_NAME,-3930080638668933223": {
-    "_name": "BEETLEGUARD_BODY_NAME",
+  "BeetleGuardCrystalBody": {
+    "_name": "BeetleGuardCrystalBody",
     "name": "Beetle Guard",
     "flags": 0,
     "health": [
@@ -4191,8 +4191,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "BOMBER_BODY_NAME,-7773859179574032082": {
-    "_name": "BOMBER_BODY_NAME",
+  "BomberBody": {
+    "_name": "BomberBody",
     "name": "Bomber",
     "flags": 0,
     "health": [
@@ -4223,8 +4223,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "BROTHER_BODY_NAME,8171978806095182334": {
-    "_name": "BROTHER_BODY_NAME",
+  "BrotherGlassBody": {
+    "_name": "BrotherGlassBody",
     "name": "Mithrix",
     "flags": 2048,
     "health": [
@@ -4255,8 +4255,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "CLAY_BODY_NAME,5890446788926524932": {
-    "_name": "CLAY_BODY_NAME",
+  "ClayBody": {
+    "_name": "ClayBody",
     "name": "Clay Man",
     "flags": 0,
     "health": [
@@ -4287,8 +4287,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "COMMANDO_BODY_NAME,3407773436254906257": {
-    "_name": "COMMANDO_BODY_NAME",
+  "CommandoPerformanceTestBody": {
+    "_name": "CommandoPerformanceTestBody",
     "name": "Commando",
     "flags": 16,
     "health": [
@@ -4319,8 +4319,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "ENFORCER_BODY_NAME,5739200980008436006": {
-    "_name": "ENFORCER_BODY_NAME",
+  "EnforcerBody": {
+    "_name": "EnforcerBody",
     "name": "Enforcer",
     "flags": 0,
     "health": [
@@ -4351,8 +4351,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "ENGITURRET_BODY_NAME,-5181724143421127883": {
-    "_name": "ENGITURRET_BODY_NAME",
+  "EngiBeamTurretBody": {
+    "_name": "EngiBeamTurretBody",
     "name": "Engineer Turret",
     "flags": 2,
     "health": [
@@ -4383,8 +4383,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "GOLEM_BODY_NAME,9010093125566289731": {
-    "_name": "GOLEM_BODY_NAME",
+  "GolemBodyInvincible": {
+    "_name": "GolemBodyInvincible",
     "name": "Stone Golem",
     "flags": 0,
     "health": [
@@ -4415,8 +4415,8 @@
     "can_be_frozen": true,
     "item_drop": null
   },
-  "HAND_BODY_NAME,-5524676904519603587": {
-    "_name": "HAND_BODY_NAME",
+  "HANDBody": {
+    "_name": "HANDBody",
     "name": "HAN-D",
     "flags": 0,
     "health": [
@@ -4447,8 +4447,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "POTMOBILE_BODY_NAME,5952753717479384627": {
-    "_name": "POTMOBILE_BODY_NAME",
+  "HaulerBody": {
+    "_name": "HaulerBody",
     "name": "Potmobile",
     "flags": 0,
     "health": [
@@ -4479,8 +4479,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "POD_BODY_NAME,-121151419735600607": {
-    "_name": "POD_BODY_NAME",
+  "ParentPodBody": {
+    "_name": "ParentPodBody",
     "name": "Ancestral Pod",
     "flags": 0,
     "health": [
@@ -4511,8 +4511,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "COMMANDO_BODY_NAME,-1683886214470233312": {
-    "_name": "COMMANDO_BODY_NAME",
+  "PaladinBody": {
+    "_name": "PaladinBody",
     "name": "Commando",
     "flags": 0,
     "health": [
@@ -4543,8 +4543,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "POT2_BODY_NAME,-4275993658677149468": {
-    "_name": "POT2_BODY_NAME",
+  "Pot2Body": {
+    "_name": "Pot2Body",
     "name": "Pot",
     "flags": 0,
     "health": [
@@ -4575,8 +4575,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "POTMOBILE_BODY_NAME,6050533330871346120": {
-    "_name": "POTMOBILE_BODY_NAME",
+  "PotMobile2Body": {
+    "_name": "PotMobile2Body",
     "name": "Potmobile",
     "flags": 0,
     "health": [
@@ -4607,8 +4607,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "POTMOBILE_BODY_NAME,8575317944272511556": {
-    "_name": "POTMOBILE_BODY_NAME",
+  "PotMobileBody": {
+    "_name": "PotMobileBody",
     "name": "Potmobile",
     "flags": 0,
     "health": [
@@ -4639,8 +4639,8 @@
     "can_be_frozen": false,
     "item_drop": null
   },
-  "SNIPER_BODY_NAME,-1476916418868677818": {
-    "_name": "SNIPER_BODY_NAME",
+  "SniperBody": {
+    "_name": "SniperBody",
     "name": "",
     "flags": 0,
     "health": [

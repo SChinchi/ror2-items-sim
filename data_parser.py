@@ -104,47 +104,51 @@ def extract_file_data(src_path=FILES_DIR):
     isc = {}
     csc = {}
     bodies = {}
-    masters = {'masters_temp': [], 'masters': {}, 'AI_driver': {}}
+    masters = {'masters': {}, 'AI_driver': {}}
     skills = {}
     dccs = {}
     for fname in os.listdir(src_path):
         if re.match('(ror2-(base|dlc1|junk)-.*_text)|(ror2-dlc1_assets_all.bundle)', fname):
             env = UnityPy.load(path.join(src_path, fname))
-            for obj in env.objects:
-                if obj.type.name not in ('GameObject', 'MonoBehaviour'):
-                    continue
-                asset = obj.read_typetree()
-                ids[obj.path_id] = asset
-                if obj.type.name == 'MonoBehaviour':
-                    script = asset['m_Script']['m_PathID']
-                    if script == ItemDef.SCRIPT:
-                        items.append(ItemDef.parse(asset, token_names))
-                    elif script == EquipmentDef.SCRIPT:
-                        equipment.append(EquipmentDef.parse(asset, token_names))
-                    elif script == ItemTierDef.SCRIPT:
-                        item_tiers[asset['m_Name'].rstrip('Def')] = ItemTierDef.parse(asset)
-                    elif script in dt_classes:
-                        droptables[asset['m_Name']] = dt_classes[script].parse(asset)
-                    elif script == SpawnCard.SCRIPT:
-                        sc[asset['m_Name']] = SpawnCard.parse(asset)
-                    elif script == InteractableSpawnCard.SCRIPT:
-                        isc[asset['m_Name']] = InteractableSpawnCard.parse(asset)
-                    elif script in csc_classes:
-                        csc[asset['m_Name']] = csc_classes[script].parse(asset)
-                    elif script == CharacterBody.SCRIPT:
-                        unique_name = f'{asset["baseNameToken"]},{obj.path_id}'
-                        bodies[unique_name] = CharacterBody.parse(asset, token_names)
-                    elif script == CharacterMaster.SCRIPT:
-                        # To be parsed once all file ids have been collected
-                        masters['masters_temp'].append(asset['m_GameObject']['m_PathID'])
-                    elif script == AISkillDriver.SCRIPT:
-                        unique_name = f'{asset["customName"]},{obj.path_id}'
-                        masters['AI_driver'][unique_name] = AISkillDriver.parse(asset)
-                    elif script in skill_defs:
-                        unique_name = f'{asset["m_Name"]},{obj.path_id}'
-                        skills[unique_name] = skill_defs[script].parse(asset)
-                    elif script in dccs_classes:
-                        dccs[asset['m_Name']] = dccs_classes[script].parse(asset)
+            cabs = [cab for file, cab in env.cabs.items() if '.' not in file]
+            for cab in cabs:
+                objects = cab.objects
+                for obj in objects.values():
+                    if obj.type.name not in ('GameObject', 'MonoBehaviour'):
+                        continue
+                    asset = obj.read_typetree()
+                    ids[obj.path_id] = asset
+                    if obj.type.name == 'MonoBehaviour':
+                        script = asset['m_Script']['m_PathID']
+                        if script == ItemDef.SCRIPT:
+                            items.append(ItemDef.parse(asset, token_names))
+                        elif script == EquipmentDef.SCRIPT:
+                            equipment.append(EquipmentDef.parse(asset, token_names))
+                        elif script == ItemTierDef.SCRIPT:
+                            item_tiers[asset['m_Name'].rstrip('Def')] = ItemTierDef.parse(asset)
+                        elif script in dt_classes:
+                            droptables[asset['m_Name']] = dt_classes[script].parse(asset)
+                        elif script == SpawnCard.SCRIPT:
+                            sc[asset['m_Name']] = SpawnCard.parse(asset)
+                        elif script == InteractableSpawnCard.SCRIPT:
+                            isc[asset['m_Name']] = InteractableSpawnCard.parse(asset)
+                        elif script in csc_classes:
+                            csc[asset['m_Name']] = csc_classes[script].parse(asset)
+                        elif script == CharacterBody.SCRIPT:
+                            go = objects[asset['m_GameObject']['m_PathID']].read_typetree()
+                            bodies[go['m_Name']] = CharacterBody.parse(asset, token_names)
+                        elif script == CharacterMaster.SCRIPT:
+                            go = objects[asset['m_GameObject']['m_PathID']].read_typetree()
+                            # To be parsed once all file ids have been collected
+                            masters['masters'][go['m_Name']] = asset['m_GameObject']['m_PathID']
+                        elif script == AISkillDriver.SCRIPT:
+                            unique_name = f'{asset["customName"]},{obj.path_id}'
+                            masters['AI_driver'][unique_name] = AISkillDriver.parse(asset)
+                        elif script in skill_defs:
+                            unique_name = f'{asset["m_Name"]},{obj.path_id}'
+                            skills[unique_name] = skill_defs[script].parse(asset)
+                        elif script in dccs_classes:
+                            dccs[asset['m_Name']] = dccs_classes[script].parse(asset)
     for item_type in (items, equipment):
         for item in item_type:
             dlc_id = item['required_dlc']
@@ -227,13 +231,14 @@ def extract_file_data(src_path=FILES_DIR):
         body, path_id = _get_component(ids, master['bodyPrefab']['m_PathID'], CharacterBody, keep_path_id=True)
         token = body['baseNameToken']
         data['name'] = token_names.get(token, token)
-        data['body'] = f'{token},{path_id}'
+        data['body'] = ids[master['bodyPrefab']['m_PathID']]['m_Name']
         data['master'] = ids[master['m_GameObject']['m_PathID']]['m_Name']
     for data in dccs.values():
         for category in data['categories']:
             for card in category['cards']:
                 card['spawn_card'] = ids[card['spawn_card']]['m_Name']
     for data in bodies.values():
+        data['_name'] = ids[data['_name']]['m_Name']
         hurt_state = _get_component(ids, data['pain_threshold'], SetStateOnHurt)
         if hurt_state:
             hurt_state = SetStateOnHurt.parse(hurt_state)
@@ -253,8 +258,7 @@ def extract_file_data(src_path=FILES_DIR):
             else:
                 item_drop = None
         data['item_drop'] = item_drop
-    for i, master_id in enumerate(masters['masters_temp']):
-        master_name = ids[master_id]['m_Name']
+    for name, master_id in masters['masters'].items():
         ai = _get_component(ids, master_id, BaseAI)
         if ai:
             ai = BaseAI.parse(ai, ids)
@@ -262,8 +266,7 @@ def extract_file_data(src_path=FILES_DIR):
             ai['drivers'] = [f'{s["customName"]},{path_id}' for s, path_id in ai_drivers]
         else:
             ai = None
-        masters['masters'][master_name] = ai
-    del masters['masters_temp']
+        masters['masters'][name] = ai
     for data in masters['AI_driver'].values():
         for key in ('required_skill', 'next_high_priority'):
             path_id = data[key]

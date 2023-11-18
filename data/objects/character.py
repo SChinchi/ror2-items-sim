@@ -14,7 +14,8 @@ class CharacterBody:
     @staticmethod
     def parse(asset, token_names):
         return {
-            '_name': asset['baseNameToken'],
+            # To be filled out once all file ids have been collected
+            '_name': asset['m_GameObject']['m_PathID'],
             'name': token_names.get(asset['baseNameToken'], ''),
             'flags': asset['bodyFlags'],
             'health': (round_value(asset['baseMaxHealth']),
