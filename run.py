@@ -1,7 +1,7 @@
 from collections import Counter, defaultdict
 import random
 
-from constants import SceneName, STAGES, ALL_EXPANSIONS
+from constants import SceneName, Portal, Expansion, ALL_EXPANSIONS
 from data_loader import ItemTiers, Items, Equipment, isc, droptables, scenes
 from data.objects import EquipmentDef, ItemDef
 from data.objects.interactables import *
@@ -141,7 +141,8 @@ class LootReport:
         """
         out = {
             'scenes': self.scenes,
-            'portals': list(map(sum, zip(*self.portals))),
+            'portals': [sum(portal in stage_portals for stage_portals in self.portals)
+                        for portal in (Portal.B, Portal.G, Portal.V)],
         }
         isc_counter = Counter()
         for interactables in self.interactables:
@@ -192,7 +193,7 @@ class LootReport:
                 item_count
             )
         }
-        total = {'family_event': sum('Family' in dccs for dccs in self.dccs)}
+        total = {'family_event': sum(dccs and 'Family' in dccs for dccs in self.dccs)}
         for isc_name, name in (
             ('iscShrineBoss', 'mountain_shrine'),
             ('iscChest1Stealthed', 'cloaked_chect'),
@@ -352,11 +353,12 @@ class Run:
         """
         self._num_players = num_players
         self._expansions = set(expansions)
+        self._is_sotv_enabled = Expansion.SOTV in self._expansions
         self._is_command_enabled = False
         self._is_sacrifice_enabled = False
         # Bogus scene just to initialise the director; it will be rerolled
         self._scene_director = SceneDirector(
-            'blackbeach',
+            SceneName.DR,
             num_players=num_players,
             expansions=self._expansions,
             is_command_enabled=self._is_command_enabled,
@@ -379,10 +381,11 @@ class Run:
     def _restart(self):
         """Initialise variables for a session."""
         self._stages_cleared = 0
-        self._stage_order = 0
-        self._scene_name = self._select_scene(self._stage_order)
+        self._scene_name = self._pick_next_stage_scene(scenes[SceneName.SM].destinations)
+        self._scene_data = scenes[self._scene_name]
         self._scene_director.change_scene(self._scene_name)
         self._next_scene_name = None
+        self._explicit_next_scene_name = None
         self._blue_portals_opened = 0
         self._void_fields_visited = False
         self._inventory.reset()
@@ -418,38 +421,63 @@ class Run:
         actions['iscVoidTriple'] = OptionChestBehavior.generate_purchase_action(
             droptables['dtVoidTriple'], self._tier_droplists, 3
         )
-        for cell_type in ('Tier1', 'Tier2', 'Tier3'):
-            actions[f'cell_{cell_type.lower()}'] = OptionChestBehavior.generate_purchase_action(
-                droptables[f'dt{cell_type}Item'], self._tier_droplists, 3
-            )
         # Green printer
         actions['green_printer'] = ShopTerminalBehavior.generate_purchase_action(
             isc['iscDuplicatorLarge'], self._tier_droplists, self._inventory
         )
+        # Void Fields cell drops
+        for tier in range(1, 4):
+            actions[f'cell{tier}_drop'] = OptionChestBehavior.generate_purchase_action(
+                droptables[f'dtTier{tier}Item'], self._tier_droplists, 3
+            )
         # Boss drops
         actions['teleporter_drop'] = lambda: random.choice(self._tier_droplists[1])
         actions['AWU_drop'] = lambda: random.choice(self._tier_droplists[2])
         return actions
 
-    def _select_scene(self, order):
+    def _pick_next_stage_scene(self, destination_group=None):
         """
         Select the next scene.
 
         Parameters
         ----------
-        order : int
-            The current stage order we're moving to. For example, Distant Roost
-            is 0 and Sky Meadow is 4. Then it loops back to 0.
+        destination_group : list, default None
+            The explicit destination group to select from, e.g., for the
+            starting stage. By default it will use the destination group of the
+            current scene.
 
         Returns
         str
             The internal name of the selected scene.
+
+        Notes
+        -----
+        An implementation of `RoR2.Run.PickNextStageSceneFromCurrentSceneDestinations`.
         """
-        available_scenes = [
-            scene for scene in STAGES[order % len(STAGES)]
-            if not scenes[scene].required_dlc or scenes[scene].required_dlc in self._expansions
-        ]
-        return random.choice(available_scenes)
+        destination_group = destination_group or scenes[self._scene_name].destinations
+        destinations = [d for d in destination_group if self._can_pick_stage(d[0])]
+        d, w = zip(*destinations)
+        return random.choices(d, w)[0]
+
+    def _can_pick_stage(self, scene_name):
+        """
+        Checks whether a scene is available for selection.
+
+        Parameters
+        ----------
+        scene_name : str
+            The internal name of the scene.
+
+        Returns
+        -------
+        bool
+
+        Notes
+        -----
+        An implementation of `RoR2.Run.CanPickStage`.
+        """
+        required_dlc = scenes[scene_name].required_dlc
+        return not required_dlc or required_dlc in self._expansions
 
     def _generate_interactables(self):
         """
@@ -462,16 +490,26 @@ class Run:
 
         Notes
         -----
-        Fixed stage spawns are also handled here.
+        - Fixed stage spawns are also handled here.
+        - Bulwark's Ambry has the Artifact of Command enabled, which affects
+          interactable generation.
         """
+        scene_name = self._scene_name
+        if scene_name == SceneName.AD:
+            self._scene_director.is_bonus_credits_available = random.random() > .5
+        if scene_name == SceneName.BA:
+            is_command_enabled = self._scene_director.is_command_enabled
+            self._scene_director.is_command_enabled = True
         interactables = self._scene_director.populate_scene(self._stages_cleared, False)
+        if scene_name == SceneName.BA:
+            self._scene_director.is_command_enabled = is_command_enabled
         for _ in range(interactables.count('iscVoidCamp')):
             interactables.extend(self._camp_director.populate_camp(False))
-        if self._scene_name in (SceneName.AD, SceneName.SG):
+        if scene_name in (SceneName.AD, SceneName.SG):
             interactables.append('iscGoldChest')
-        elif self._scene_name == SceneName.GC:
+        elif scene_name == SceneName.GC:
             interactables.extend(['iscChest1'] * 4)
-        if scenes[self._scene_name].scene_type == 1:
+        if scenes[scene_name].scene_type == 1:
             if LOCKBOX_ALLOWED:
                 # For multiplayer we assume the Rusted Keys are as evenly spread out
                 # as possible to maximise spawning Lockboxes.
@@ -576,11 +614,11 @@ class Run:
 
         Notes
         -----
-        The algorithm doesn't take into account the time the teleporter is
+        The algorithm does not take into account the time the teleporter is
         activated. This has a direct consequence of not knowing whether the
         selected monster will be too cheap/expensive to spawn, thus altering
         the real probability of a Horde of Many event occurring. Therefore, this
-        doesn't exactly correspond to the real chance of boss loot dropping.
+        does not exactly correspond to the real chance of boss loot dropping.
         """
         total_drops = self._num_players * (shrines_activated + 1)
         boss = Run.spawn_teleporter_boss(dccs, self._stages_cleared)
@@ -673,19 +711,19 @@ class Run:
             A dict of lists with all the items and equipment that were picked up.
         boss_shrines : int
             The number of Shrines of the Mountain activated.
+        gold_shrines : int
+            The number of Shrines of Gold encountered.
         free_chest_items : list
             All items collected from Shipping Request Forms.
         card_multibuys : list
             The names of the interactable spawn card of any multishop that was
             fully looted using an Executive Card.
-        gold_orb_spawned : bool
-            Whether a Shrine of Gold was encountered.
         """
         loot = {ItemDef: [], EquipmentDef: []}
         boss_shrines = 0
+        gold_shrines = 0
         free_chest_items = []
         card_multibuys = []
-        gold_orb_spawned = False
         for isc in interactables:
             if isc in self._actions:
                 if 'TripleShop' in isc or 'FreeChest' in isc:
@@ -712,52 +750,99 @@ class Run:
             elif 'ShrineBoss' in isc:
                 boss_shrines += 1
             elif 'Goldshores' in isc:
-                gold_orb_spawned = True
-        return loot, boss_shrines, free_chest_items, card_multibuys, gold_orb_spawned
+                gold_shrines += 1
+        return loot, boss_shrines, gold_shrines, free_chest_items, card_multibuys
     
-    def _loot_stage(self):
+    def _loot_stage(self, void_fields, stage_preferences):
         """Fully loot a normal stage."""
         scene_name = self._scene_name
-        if scene_name == SceneName.AD:
-            scene_name += '-open' if self._scene_director.is_bonus_credits_available else '-closed'
-        stage_dccs = (
-            scenes[self._scene_name].stage_info.monsters
-            .generate_weighted_selection(self._expansions, self._stages_cleared)
-        )
-        blue_orb_spawned = random.random() <= BLUE_PORTAL_CHANCE / (self._blue_portals_opened + 1)
-        purple_orb_spawned = random.random() <= PURPLE_PORTAL_CHANCE and self._stages_cleared >= 6
+        if scene_name == SceneName.VF:
+            self._void_fields_visited = True
+        stage_info = self._scene_data.stage_info
+        if stage_info:
+            stage_dccs = (
+                stage_info.monsters.
+                generate_weighted_selection(self._expansions, self._stages_cleared)
+            )
+        portals = set()
+        teleporter_exists = self._scene_data.scene_director.teleporter
+        if teleporter_exists:
+            self._next_scene_name = self._pick_next_stage_scene()
+            if random.random() <= BLUE_PORTAL_CHANCE / (self._blue_portals_opened + 1):
+                portals.add(Portal.B)
+            if self._stages_cleared >= 5 and self._stages_cleared % 5 == 2:
+                portals.add(Portal.C)
+            if self._is_sotv_enabled and random.random() <= PURPLE_PORTAL_CHANCE and self._stages_cleared >= 6:
+                portals.add(Portal.V)
 
         interactables = self._generate_interactables()
-        loot, boss_shrines, free_chest_items, card_multibuys, gold_orb_spawned = self._loot_interactables(interactables)
+        loot, boss_shrines, gold_shrines, free_chest_items, card_multibuys = self._loot_interactables(interactables)
 
-        for item, count in self._loot_teleporter(stage_dccs, boss_shrines).items():
-            self._inventory.give_item(item, count)
-            loot[ItemDef].extend([item] * count)
-        if blue_orb_spawned:
-            self._blue_portals_opened += 1
+        if teleporter_exists and not Portal.B in portals:
+            # In some cases the only available Newt Statue is either locked
+            # behind an inaccessible area, or requires a lot of mobility to get
+            # to. While it may not be consistently reachable in the early game
+            # with every Survivor, or without clipping through walls, we make
+            # the hard assumption that if it exists, it can be activated.
+            # If we intend to visit the Void Fields next, we force open the
+            # portal whether it exists or not to ensure the condition is met.
+            if self._stages_cleared + 1 == void_fields:
+                portals.add(Portal.B)
+            elif self._scene_data.stage_order in stage_preferences:
+                newt = self._scene_data.newt
+                if newt:
+                    newt = random.randint(*newt)
+                    if self._scene_name in (SceneName.AA, SceneName.RD, SceneName.SA):
+                        newt += 1
+                    if newt:
+                        portals.add(Portal.B)
+
+        if teleporter_exists:
+            for item, count in self._loot_teleporter(stage_dccs, boss_shrines).items():
+                self._inventory.give_item(item, count)
+                loot[ItemDef].extend([item] * count)
+            if Portal.B in portals:
+                self._blue_portals_opened += 1
+            if gold_shrines:
+                portals.add(Portal.G)
+
+        if scene_name == SceneName.VF:
+            for cell in range(9):
+                tier = cell // 4 + 1
+                potential = self._actions[f'cell{tier}_drop']()
+                for _ in range(self._num_players):
+                    item = random.choice(potential)
+                    self._inventory.give_item(item)
+                    loot[ItemDef].append(item)
+            if self._is_sotv_enabled:
+                portals.add(Portal.V)
+
+        if scene_name == SceneName.SM:
+            portals.add(Portal.A)
 
         regen_scraps = self._inventory.count(Items.RegeneratingScrap)
         if TRADE_REGEN_SCRAP and regen_scraps and 'iscDuplicatorLarge' in interactables:
             item = self._actions['green_printer']()
             self._inventory.give_item(item, regen_scraps)
             loot[ItemDef].extend([item] * regen_scraps)
-        if self._scene_name == SceneName.AA:
+        if scene_name == SceneName.AA:
             self._inventory.give_item(Items.IceRing)
             self._inventory.give_item(Items.FireRing)
             loot[ItemDef].extend([Items.IceRing, Items.FireRing])
-        elif self._scene_name == SceneName.SC:
+        elif scene_name == SceneName.SC:
             item = self._actions['AWU_drop']()
             self._inventory.give_item(item, self._num_players)
             loot[ItemDef].extend([item] * self._num_players)
+        elif scene_name == SceneName.GC:
+            self._inventory.give_item(Items.TitanGoldDuringTP, self._num_players)
+            loot[ItemDef].extend([Items.TitanGoldDuringTP] * self._num_players)
 
-        if USE_GOLD_PORTAL and gold_orb_spawned:
-            self._next_scene_name = 'goldshores'
-        if USE_ARTIFACT_PORTAL and self._scene_name == 'skymeadow':
-            self._next_scene_name = 'artifactworld'
+        if scene_name == SceneName.AD:
+            scene_name += '-open' if self._scene_director.is_bonus_credits_available else '-closed'
 
         self.stats.update_data(
             scene_name,
-            (blue_orb_spawned, gold_orb_spawned, purple_orb_spawned),
+            portals,
             stage_dccs,
             interactables,
             loot,
@@ -766,115 +851,79 @@ class Run:
         )
         return
 
-    def _loot_void_fields(self):
-        """Fully loot the Void Fields."""
-        scene_name = self._scene_name
-        stage_dccs = (
-            scenes[scene_name].monsters
-            .generate_weighted_selection(self._expansions, self._stages_cleared)
-        )
+    def _choose_next_destination(self, void_fields, stage_preferences):
+        """
+        Choose whether to use a portal or advance to the next stage naturally.
 
-        interactables = self._generate_interactables()
-        loot, _, free_chest_items, card_multibuys, _ = self._loot_interactables(interactables)
-        for cell in range(9):
-            if cell < 4:
-                tier = 'tier1'
-            elif cell < 8:
-                tier = 'tier2'
-            else:
-                tier = 'tier3'
-            potential = self._actions[f'cell_{tier}']()
-            for _ in range(self._num_players):
-                item = random.choice(potential)
-                self._inventory.give_item(item)
-                loot[ItemDef].append(item)
+        The order of preference is Null > Artifact > Gold > Lunar Seer > RNG.
+        Returns
+        -------
+        None
+        """
+        portals = self.stats.portals[-1]
+        blue = Portal.B in portals
+        self._explicit_next_scene_name = None
+        if blue and self._stages_cleared + 1 == void_fields and not self._void_fields_visited:
+            self._explicit_next_scene_name = SceneName.VF
+        elif USE_ARTIFACT_PORTAL and Portal.A in portals:
+            self._explicit_next_scene_name = SceneName.BA
+        elif USE_GOLD_PORTAL and Portal.G in portals:
+            self._explicit_next_scene_name = SceneName.GC
+        elif blue and self._scene_data.stage_order in stage_preferences:
+            preferences = stage_preferences[self._scene_data.stage_order]
+            if preferences:
+                stations = self._setup_seer_stations()
+                for preference in preferences:
+                    if preference in stations:
+                        self._explicit_next_scene_name = preference
+                        break
 
-        regen_scraps = self._inventory.count(Items.RegeneratingScrap)
-        if TRADE_REGEN_SCRAP and regen_scraps and 'iscDuplicatorLarge' in interactables:
-            item = self._actions['green_printer']()
-            self._inventory.give_item(item, regen_scraps)
-            loot[ItemDef].extend([item] * regen_scraps)
+    def _setup_seer_stations(self):
+        """
+        Generate override scenes with the Lunar Seer.
 
-        self.stats.update_data(
-            scene_name,
-            (False, False, True),
-            stage_dccs,
-            interactables,
-            loot,
-            free_chest_items,
-            card_multibuys,
-        )
-        self._void_fields_visited = True
-        return
+        Returns
+        -------
+        stations : list
+            The internal name of the selected override scenes.
 
-    def _loot_gilded_coast(self):
-        """Fully loot the Gilded Coast."""
-        scene_name = self._scene_name
-        stage_dccs = (
-            scenes[scene_name].monsters
-            .generate_weighted_selection(self._expansions, self._stages_cleared)
-        )
-        interactables = self._generate_interactables()
-        loot, _, free_chest_items, card_multibuys, _ = self._loot_interactables(interactables)
-        self._inventory.give_item(Items.TitanGoldDuringTP, self._num_players)
-        loot[ItemDef].extend([Items.TitanGoldDuringTP] * self._num_players)
-        
-        self.stats.update_data(
-            scene_name,
-            (False, False, False),
-            stage_dccs,
-            interactables,
-            loot,
-            free_chest_items,
-            card_multibuys,
-        )
-        return
-
-    def _loot_bulwark_ambry(self):
-        """Fully loot Bulwark's Ambry with the Artifact of Command."""
-        scene_name = self._scene_name
-        stage_dccs = (
-            scenes[scene_name].monsters
-            .generate_weighted_selection(self._expansions, self._stages_cleared)
-        )
-        # Cache whether the Artifact of Command is enabled, as it will be turned
-        # on for this stage.
-        is_command_enabled = self._scene_director.is_command_enabled
-        self._scene_director.is_command_enabled = True
-        interactables = self._generate_interactables()
-        self._scene_director.is_command_enabled = is_command_enabled
-        loot, _, free_chest_items, card_multibuys, _ = self._loot_interactables(interactables)
-
-        regen_scraps = self._inventory.count(Items.RegeneratingScrap)
-        if TRADE_REGEN_SCRAP and regen_scraps and 'iscDuplicatorLarge' in interactables:
-            item = self._actions['green_printer']()
-            self._inventory.give_item(item, regen_scraps)
-            loot[ItemDef].extend([item] * regen_scraps)
-
-        self.stats.update_data(
-            scene_name,
-            (False, False, True),
-            stage_dccs,
-            interactables,
-            loot,
-            free_chest_items,
-            card_multibuys,
-        )
-        return
+        Notes
+        -----
+        An implementation of `RoR2.BazaarController.SetUpSeerStations`.
+        """
+        if not self._next_scene_name:
+            return
+        stage_order = self._scene_data.stage_order
+        destinations = [scene for scene, data in scenes.items()
+                        if stage_order == data.stage_order and self._can_pick_stage(scene)]
+        replacements = [SceneName.GC]
+        if self._is_sotv_enabled and self._stages_cleared >= 4:
+            replacements.append(SceneName.VL)
+        replacement_chance = .05 * len(replacements)
+        stations = []
+        for _ in range(2):
+            if not destinations:
+                break
+            random.shuffle(destinations)
+            target_scene = destinations.pop()
+            if random.random() < replacement_chance:
+                target_scene = random.choice(replacements)
+            stations.append(target_scene)
+        return stations
 
     def _advance_stage(self):
         """Advance to the next stage."""
-        if scenes[self._scene_name].scene_type == 1:
+        if self._scene_data.scene_type == 1:
             self._stages_cleared += 1
-            if self._scene_name != 'arena':
-                self._stage_order = (scenes[self._scene_name].stage_order + 1) % len(STAGES)
-        if not self._next_scene_name:
-            self._next_scene_name = self._select_scene(self._stage_order)
-        self._scene_name = self._next_scene_name
-        self._next_scene_name = None
+        if self._explicit_next_scene_name:
+            self._scene_name = self._explicit_next_scene_name
+        else:
+            self._scene_name = self._next_scene_name
+            self._next_scene_name = None
+        if self._scene_name in (SceneName.MW, SceneName.CO, SceneName.VL, SceneName.PL):
+            raise ValueError(f'Cannot go to {self._scene_name} as this will end the run.')
+        self._scene_data = scenes[self._scene_name]
         self._scene_director.change_scene(self._scene_name)
-        if self._scene_name == SceneName.AD:
-            self._scene_director.is_bonus_credits_available = random.random() > .5
 
     @staticmethod
     def calculate_difficulty_coefficient(time, stages_cleared, players=1, difficulty=3):
@@ -931,7 +980,7 @@ class Run:
                     if not item.required_dlc or item.required_dlc in expansions]
         def meets_requirement(item, tier):
             return item.tier == tier and 9 not in item.tags
-        
+
         items = filter_available(Items._items, expansions)
         equipment = filter_available(Equipment._items, expansions)
         drops = [None] * 12
@@ -988,39 +1037,37 @@ class Run:
         filtered, weights = zip(*monsters)
         return random.choices(filtered, weights)[0].spawn_card
 
-    def loot_stages(self, num_stages=5, void_fields=-1):
+    def loot_stages(self, num_stages=5, void_fields=-1, stage_preferences=dict()):
         """
         Simulate a run by full looting a number of stages.
 
         Parameters
         ----------
         num_stages : int, optional
-            The number of normal stages to loot. This doesn't include any Hidden
-            Realms, even if they increase the stages cleared counter.
+            The number of normal stages to loot.
         void_fields : int, optional
             After what stage to visit the Void Fields. It is assumed it will be
             completed and looted fully. If on the same stage a Gold Portal
             spawns, visiting the Void Fields will still take priority. The
             default setting is to not visit it at all during a run.
+        stage_preferences : dict, optional
+            A dictionary with keys the "stage_order" of the destination scene
+            and values a list with the internal name of the preferred
+            destinations, ordered from most to least preferred. If the
+            destination "stage_order" is not found, or none of the preferred
+            scenes have spawned for the Lunar Seer, there will be no overrides
+            and the next scene will be chosen at random as normal.
 
         Returns
         -------
         None
         """
-        loot_scene = {scene_name: self._loot_stage for scene_name in
-                      (scene_name for stage in STAGES for scene_name in stage)}
-        loot_scene['arena'] = self._loot_void_fields
-        loot_scene['goldshores'] = self._loot_gilded_coast
-        loot_scene['artifactworld'] = self._loot_bulwark_ambry
         self._restart()
         if num_stages <= 0:
             return
         if void_fields == 0:
             void_fields = -1
-        elif void_fields >= 1:
-            num_stages += 1
         while self._stages_cleared < num_stages:
-            loot_scene[self._scene_name]()
-            if self._stages_cleared == void_fields:
-                self._next_scene_name = 'arena'
+            self._loot_stage(void_fields, stage_preferences)
+            self._choose_next_destination(void_fields, stage_preferences)
             self._advance_stage()

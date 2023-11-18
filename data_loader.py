@@ -65,6 +65,8 @@ class Scene:
                 self.stage_info.interactables =  self._init_dccs_pool(self.stage_info.interactables)
             if self.stage_info.monsters:
                 self.stage_info.monsters = self._init_dccs_pool(self.stage_info.monsters)
+        if self.scene_director:
+            self.scene_director = SceneDirector(self.scene_director)
 
     def __repr__(self):
         return self.name

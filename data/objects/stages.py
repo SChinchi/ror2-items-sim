@@ -85,6 +85,13 @@ class CombatDirector:
 class SceneDirector:
     SCRIPT = -2207557892185297087
 
+    def __init__(self, data):
+        for key, value in data.items():
+            setattr(self, key, value)
+
+    def __repr__(self):
+        return self.name
+
     @staticmethod
     def parse(asset, ids):
         teleporter_id = asset['teleporterSpawnCard']['m_PathID']

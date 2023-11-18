@@ -34,20 +34,22 @@ class SceneName:
     SCO = 'itmoon'              # Simulacrum, Commencement
 
 
+class Portal:
+    A = 'artifact'
+    B = 'blue'
+    C = 'celestial'
+    D = 'deepvoid'
+    G = 'gold'
+    N = 'null'
+    V = 'void'
+
+
 class Expansion:
     SOTV = 'DLC1'
 
 
 ALL_EXPANSIONS = set([Expansion.SOTV])
 NO_EXPANSIONS = set()
-
-STAGES = (
-    (SceneName.DR, SceneName.TP, SceneName.SF),
-    (SceneName.AA, SceneName.WA, SceneName.AS),
-    (SceneName.RD, SceneName.SA, SceneName.SP),
-    (SceneName.AD, SceneName.SC, SceneName.SG),
-    (SceneName.SM,),
-)
 
 IT_STAGES = (
     SceneName.STP, SceneName.SAS, SceneName.SAA, SceneName.SRD,
