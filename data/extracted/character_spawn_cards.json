@@ -9,6 +9,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "BeetleGuardAllyBody",
     "master": "BeetleGuardAllyMaster"
   },
@@ -22,6 +24,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "BeetleQueen2Body",
     "master": "BeetleQueenMaster"
   },
@@ -35,6 +39,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "BeetleBody",
     "master": "BeetleMaster"
   },
@@ -48,6 +54,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "BeetleQueen2Body",
     "master": "BeetleQueenMaster"
   },
@@ -61,6 +69,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "BeetleGuardBody",
     "master": "BeetleGuardMaster"
   },
@@ -74,6 +84,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "BeetleBody",
     "master": "BeetleMaster"
   },
@@ -87,6 +99,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "BeetleGuardBody",
     "master": "BeetleGuardMaster"
   },
@@ -100,6 +114,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "BellBody",
     "master": "BellMaster"
   },
@@ -113,6 +129,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "BisonBody",
     "master": "BisonMaster"
   },
@@ -126,6 +144,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "BrotherHurtBody",
     "master": "BrotherHurtMaster"
   },
@@ -139,6 +159,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "BrotherBody",
     "master": "BrotherMaster"
   },
@@ -152,6 +174,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "ClayBossBody",
     "master": "ClayBossMaster"
   },
@@ -165,6 +189,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "ClayBruiserBody",
     "master": "ClayBruiserMaster"
   },
@@ -178,6 +204,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "BackupDroneBody",
     "master": "DroneBackupMaster"
   },
@@ -191,6 +219,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "MegaDroneBody",
     "master": "MegaDroneMaster"
   },
@@ -204,6 +234,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "Drone2Body",
     "master": "Drone2Master"
   },
@@ -217,6 +249,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "Drone1Body",
     "master": "Drone1Master"
   },
@@ -230,6 +264,8 @@
     "elite_rules": 0,
     "no_elites": true,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "ElectricWormBody",
     "master": "ElectricWormMaster"
   },
@@ -243,6 +279,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": true,
+    "equipment": [],
+    "items": [],
     "body": "GolemBody",
     "master": "GolemMaster"
   },
@@ -256,6 +294,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": true,
+    "equipment": [],
+    "items": [],
     "body": "GolemBody",
     "master": "GolemMaster"
   },
@@ -269,6 +309,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": true,
+    "equipment": [],
+    "items": [],
     "body": "GolemBody",
     "master": "GolemMaster"
   },
@@ -282,6 +324,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": true,
+    "equipment": [],
+    "items": [],
     "body": "GolemBody",
     "master": "GolemMaster"
   },
@@ -295,6 +339,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "GrandParentBody",
     "master": "GrandparentMaster"
   },
@@ -308,6 +354,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "GravekeeperBody",
     "master": "GravekeeperMaster"
   },
@@ -321,6 +369,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "GreaterWispBody",
     "master": "GreaterWispMaster"
   },
@@ -334,6 +384,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "HermitCrabBody",
     "master": "HermitCrabMaster"
   },
@@ -347,6 +399,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "ImpBossBody",
     "master": "ImpBossMaster"
   },
@@ -360,6 +414,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "ImpBody",
     "master": "ImpMaster"
   },
@@ -373,6 +429,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "JellyfishBody",
     "master": "JellyfishMaster"
   },
@@ -386,6 +444,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "LemurianBruiserBody",
     "master": "LemurianBruiserMaster"
   },
@@ -399,6 +459,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "LemurianBody",
     "master": "LemurianMaster"
   },
@@ -412,6 +474,8 @@
     "elite_rules": 2,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "LunarExploderBody",
     "master": "LunarExploderMaster"
   },
@@ -425,6 +489,8 @@
     "elite_rules": 2,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "LunarGolemBody",
     "master": "LunarGolemMaster"
   },
@@ -438,6 +504,8 @@
     "elite_rules": 2,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "LunarWispBody",
     "master": "LunarWispMaster"
   },
@@ -451,6 +519,8 @@
     "elite_rules": 0,
     "no_elites": true,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "MagmaWormBody",
     "master": "MagmaWormMaster"
   },
@@ -464,6 +534,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "MiniMushroomBody",
     "master": "MiniMushroomMaster"
   },
@@ -477,6 +549,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "NullifierAllyBody",
     "master": "NullifierAllyMaster"
   },
@@ -490,6 +564,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "NullifierBody",
     "master": "NullifierMaster"
   },
@@ -503,6 +579,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "ParentBody",
     "master": "ParentMaster"
   },
@@ -516,6 +594,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "SuperRoboBallBossBody",
     "master": "SuperRoboBallBossMaster"
   },
@@ -529,6 +609,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "RoboBallBossBody",
     "master": "RoboBallBossMaster"
   },
@@ -542,6 +624,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "RoboBallMiniBody",
     "master": "RoboBallMiniMaster"
   },
@@ -555,6 +639,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "RoboBallRedBuddyBody",
     "master": "RoboBallRedBuddyMaster"
   },
@@ -568,6 +654,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "RoboBallGreenBuddyBody",
     "master": "RoboBallGreenBuddyMaster"
   },
@@ -581,6 +669,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "ScavLunar3Body",
     "master": "ScavLunar3Master"
   },
@@ -594,6 +684,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "ScavBody",
     "master": "ScavMaster"
   },
@@ -607,6 +699,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": true,
+    "equipment": [],
+    "items": [],
     "body": "ScavBody",
     "master": "ScavMaster"
   },
@@ -620,6 +714,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "SquidTurretBody",
     "master": "SquidTurretMaster"
   },
@@ -633,6 +729,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "TitanGoldBody",
     "master": "TitanGoldAllyMaster"
   },
@@ -646,6 +744,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "TitanBody",
     "master": "TitanMaster"
   },
@@ -659,6 +759,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "TitanBody",
     "master": "TitanMaster"
   },
@@ -672,6 +774,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "TitanGoldBody",
     "master": "TitanGoldMaster"
   },
@@ -685,6 +789,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "TitanBody",
     "master": "TitanMaster"
   },
@@ -698,6 +804,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "TitanBody",
     "master": "TitanMaster"
   },
@@ -711,6 +819,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "VagrantBody",
     "master": "VagrantMaster"
   },
@@ -724,6 +834,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "VultureBody",
     "master": "VultureMaster"
   },
@@ -737,6 +849,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "WispBody",
     "master": "WispMaster"
   },
@@ -750,6 +864,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "AcidLarvaBody",
     "master": "AcidLarvaMaster"
   },
@@ -763,6 +879,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "Assassin2Body",
     "master": "Assassin2Master"
   },
@@ -776,6 +894,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "ClayGrenadierBody",
     "master": "ClayGrenadierMaster"
   },
@@ -789,6 +909,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "DroneCommanderBody",
     "master": "DroneCommanderMaster"
   },
@@ -802,6 +924,8 @@
     "elite_rules": 0,
     "no_elites": true,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "VoidInfestorBody",
     "master": "VoidInfestorMaster"
   },
@@ -815,6 +939,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "FlyingVerminBody",
     "master": "FlyingVerminMaster"
   },
@@ -828,6 +954,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "FlyingVerminBody",
     "master": "FlyingVerminMaster"
   },
@@ -841,6 +969,13 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [
+      [
+        "TeleportWhenOob",
+        1
+      ]
+    ],
     "body": "BrotherBody",
     "master": "BrotherMaster"
   },
@@ -854,6 +989,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": true,
+    "equipment": [],
+    "items": [],
     "body": "GupBody",
     "master": "GupMaster"
   },
@@ -867,6 +1004,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": true,
+    "equipment": [],
+    "items": [],
     "body": "GipBody",
     "master": "GipMaster"
   },
@@ -880,6 +1019,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": true,
+    "equipment": [],
+    "items": [],
     "body": "GeepBody",
     "master": "GeepMaster"
   },
@@ -893,6 +1034,17 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [
+      [
+        "BoostDamage",
+        30
+      ],
+      [
+        "BoostHp",
+        30
+      ]
+    ],
     "body": "MinorConstructOnKillBody",
     "master": "MinorConstructOnKillMaster"
   },
@@ -906,6 +1058,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "MajorConstructBody",
     "master": "MajorConstructMaster"
   },
@@ -919,6 +1073,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "MinorConstructAttachableBody",
     "master": "MinorConstructAttachableMaster"
   },
@@ -932,6 +1088,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "MinorConstructBody",
     "master": "MinorConstructMaster"
   },
@@ -945,6 +1103,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "MegaConstructBody",
     "master": "MegaConstructMaster"
   },
@@ -958,6 +1118,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "VerminBody",
     "master": "VerminMaster"
   },
@@ -971,6 +1133,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "VerminBody",
     "master": "VerminMaster"
   },
@@ -984,6 +1148,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": true,
+    "equipment": [],
+    "items": [],
     "body": "VoidBarnacleNoCastBody",
     "master": "VoidBarnacleNoCastMaster"
   },
@@ -997,6 +1163,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": true,
+    "equipment": [],
+    "items": [],
     "body": "VoidBarnacleBody",
     "master": "VoidBarnacleMaster"
   },
@@ -1010,6 +1178,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": true,
+    "equipment": [],
+    "items": [],
     "body": "VoidBarnacleNoCastBody",
     "master": "VoidBarnacleAllyMaster"
   },
@@ -1023,6 +1193,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "VoidJailerAllyBody",
     "master": "VoidJailerAllyMaster"
   },
@@ -1036,6 +1208,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "VoidJailerBody",
     "master": "VoidJailerMaster"
   },
@@ -1049,6 +1223,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "VoidMegaCrabAllyBody",
     "master": "VoidMegaCrabAllyMaster"
   },
@@ -1062,6 +1238,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "VoidMegaCrabBody",
     "master": "VoidMegaCrabMaster"
   },
@@ -1075,6 +1253,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "VoidRaidCrabJointBody",
     "master": "VoidRaidCrabJointMaster"
   },
@@ -1088,6 +1268,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "MiniVoidRaidCrabBodyPhase1",
     "master": "MiniVoidRaidCrabMasterPhase1"
   },
@@ -1101,6 +1283,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "MiniVoidRaidCrabBodyBase",
     "master": "MiniVoidRaidCrabMasterBase"
   },
@@ -1114,6 +1298,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "VoidRaidCrabBody",
     "master": "VoidRaidCrabMaster"
   },
@@ -1127,6 +1313,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "MiniVoidRaidCrabBodyPhase3",
     "master": "MiniVoidRaidCrabMasterPhase3"
   },
@@ -1140,6 +1328,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "MiniVoidRaidCrabBodyPhase2",
     "master": "MiniVoidRaidCrabMasterPhase2"
   },
@@ -1153,6 +1343,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "ArchWispBody",
     "master": "ArchWispMaster"
   },
@@ -1166,6 +1358,8 @@
     "elite_rules": 0,
     "no_elites": true,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "BeetleCrystalBody",
     "master": "BeetleCrystalMaster"
   },
@@ -1179,6 +1373,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "BeetleGuardCrystalBody",
     "master": "BeetleGuardMasterCrystal"
   },
@@ -1192,6 +1388,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "BrotherGlassBody",
     "master": "BrotherGlassMaster"
   },
@@ -1205,6 +1403,8 @@
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
     "body": "ParentPodBody",
     "master": "ParentPodMaster"
   }

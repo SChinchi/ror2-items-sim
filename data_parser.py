@@ -232,6 +232,8 @@ def extract_file_data(src_path=FILES_DIR):
         data['name'] = token_names.get(token, token)
         data['body'] = ids[master['bodyPrefab']['m_PathID']]['m_Name']
         data['master'] = ids[master['m_GameObject']['m_PathID']]['m_Name']
+        data['equipment'] = [ids[e]['m_Name'] for e in data['equipment'] if e]
+        data['items'] = [(ids[i]['m_Name'], c) for i, c in data['items'] if i]
     for data in dccs.values():
         for category in data['categories']:
             for card in category['cards']:

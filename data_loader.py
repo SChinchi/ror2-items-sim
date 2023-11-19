@@ -116,6 +116,8 @@ def _init_master(data):
 
 def _init_csc(data):
     card = eval(data['class'])(data)
+    card.equipment = [getattr(Equipment, e) for e in card.equipment]
+    card.items = [(getattr(Items, i), c) for i, c in card.items]
     card.body = bodies[card.body]
     card.master = masters[card.master]
     return card

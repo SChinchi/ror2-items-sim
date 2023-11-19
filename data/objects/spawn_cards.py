@@ -58,6 +58,10 @@ class CharacterSpawnCard(SpawnCard):
             'no_elites': bool(asset['noElites']),
             'forbidden_as_boss': bool(asset['forbiddenAsBoss']),
             # To be filled out once all file ids have been collected
+            'equipment': [e['m_PathID'] for e in asset['equipmentToGrant']],
+            # To be filled out once all file ids have been collected
+            'items': [(i['itemDef']['m_PathID'], i['count']) for i in asset['itemsToGrant']],
+            # To be filled out once all file ids have been collected
             'body': asset['prefab']['m_PathID'],
             # To be filled out once all file ids have been collected
             'master': asset['prefab']['m_PathID'],
