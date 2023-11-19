@@ -139,8 +139,7 @@ def extract_file_data(src_path=FILES_DIR):
                             bodies[go['m_Name']] = CharacterBody.parse(asset, token_names)
                         elif script == CharacterMaster.SCRIPT:
                             go = objects[asset['m_GameObject']['m_PathID']].read_typetree()
-                            # To be parsed once all file ids have been collected
-                            masters['masters'][go['m_Name']] = asset['m_GameObject']['m_PathID']
+                            masters['masters'][go['m_Name']] = CharacterMaster.parse(asset)
                         elif script == AISkillDriver.SCRIPT:
                             unique_name = f'{asset["customName"]},{obj.path_id}'
                             masters['AI_driver'][unique_name] = AISkillDriver.parse(asset)
@@ -258,15 +257,19 @@ def extract_file_data(src_path=FILES_DIR):
             else:
                 item_drop = None
         data['item_drop'] = item_drop
-    for name, master_id in masters['masters'].items():
-        ai = _get_component(ids, master_id, BaseAI)
+    for name, data in masters['masters'].items():
+        data['_name'] = name
+        data['body'] = ids[data['body']]['m_Name'] if data['body'] else None
+        ai = _get_component(ids, data['ai'], BaseAI)
         if ai:
             ai = BaseAI.parse(ai, ids)
-            ai_drivers = _get_all_components(ids, master_id, AISkillDriver, keep_path_id=True)
+            ai_drivers = _get_all_components(ids, data['ai'], AISkillDriver, keep_path_id=True)
             ai['drivers'] = [f'{s["customName"]},{path_id}' for s, path_id in ai_drivers]
-        else:
-            ai = None
-        masters['masters'][name] = ai
+        data['ai'] = ai
+        pickups = _get_component(ids, data['pickups'], GivePickupsOnStart)
+        if pickups:
+            pickups = GivePickupsOnStart.parse(pickups, ids)
+        data['pickups'] = pickups
     for data in masters['AI_driver'].values():
         for key in ('required_skill', 'next_high_priority'):
             path_id = data[key]

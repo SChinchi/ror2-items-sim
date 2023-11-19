@@ -1,1628 +1,2538 @@
 {
   "masters": {
     "ArtifactShellMaster": {
-      "full_vision": true,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        ",-1954963046013293847",
-        ",-5082835787377266652"
-      ]
+      "_name": "ArtifactShellMaster",
+      "body": "ArtifactShellBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          ",-1954963046013293847",
+          ",-5082835787377266652"
+        ]
+      },
+      "pickups": null
     },
     "Bandit2MonsterMaster": {
-      "full_vision": true,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "UseKnifeClose,-2170801230325509210",
-        "CloseInForKnife,3176505716033816788",
-        "FireRevolver,6211950657084746307",
-        "FireShotgunCloseEntry,8665185555580614132",
-        "StealthRetreat,-7097753356963301964",
-        "StealthToTarget,-5124105824849535652",
-        "ThrowKnife,9066121073918249728",
-        "FireRifleMedium,-1341091837205371090",
-        "FireLunarWhirlwind,7674301253804187987",
-        "FireLunarNeedles,1137701270568979940",
-        "RetreatWhenNoOptions,-6270258875489744929",
-        "StrafeMedium,-4420647810307568230",
-        "ChaseTarget,6426829775951514319",
-        "ReleaseButton,8075147744967030593",
-        "WaitForRevolver,-5232670300853694696",
-        "ShotgunFireClose,7160437673166890640"
-      ]
+      "_name": "Bandit2MonsterMaster",
+      "body": "Bandit2Body",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "UseKnifeClose,-2170801230325509210",
+          "CloseInForKnife,3176505716033816788",
+          "FireRevolver,6211950657084746307",
+          "FireShotgunCloseEntry,8665185555580614132",
+          "StealthRetreat,-7097753356963301964",
+          "StealthToTarget,-5124105824849535652",
+          "ThrowKnife,9066121073918249728",
+          "FireRifleMedium,-1341091837205371090",
+          "FireLunarWhirlwind,7674301253804187987",
+          "FireLunarNeedles,1137701270568979940",
+          "RetreatWhenNoOptions,-6270258875489744929",
+          "StrafeMedium,-4420647810307568230",
+          "ChaseTarget,6426829775951514319",
+          "ReleaseButton,8075147744967030593",
+          "WaitForRevolver,-5232670300853694696",
+          "ShotgunFireClose,7160437673166890640"
+        ]
+      },
+      "pickups": null
     },
     "BeetleGuardAllyMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Slam,-1764170300238096954",
-        "ReturnToOwnerLeash,3922910620696433188",
-        "StrafeBecausePrimaryIsntReady,7542861150530016350",
-        "ChaseOffNodegraph,-8848950806504466130",
-        "FireSunder,-4070818311001410855",
-        "Chase,-2664778763316527471",
-        "ReturnToLeaderDefault,-2399972701204332220",
-        "WaitNearLeaderDefault,-3606028346469664495"
-      ]
+      "_name": "BeetleGuardAllyMaster",
+      "body": "BeetleGuardAllyBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Slam,-1764170300238096954",
+          "ReturnToOwnerLeash,3922910620696433188",
+          "StrafeBecausePrimaryIsntReady,7542861150530016350",
+          "ChaseOffNodegraph,-8848950806504466130",
+          "FireSunder,-4070818311001410855",
+          "Chase,-2664778763316527471",
+          "ReturnToLeaderDefault,-2399972701204332220",
+          "WaitNearLeaderDefault,-3606028346469664495"
+        ]
+      },
+      "pickups": null
     },
     "BeetleGuardMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Slam,3562848930408291229",
-        "ReturnToOwnerLeash,1782424838281237892",
-        "StrafeBecausePrimaryIsntReady,-5886842746103412951",
-        "ChaseOffNodegraph,7582128348649270366",
-        "FireSunder,4642692592616266967",
-        "Chase,9149811198403067763",
-        "ReturnToLeaderDefault,-6896376483262043323",
-        "WaitNearLeaderDefault,-6693026156911298422"
-      ]
+      "_name": "BeetleGuardMaster",
+      "body": "BeetleGuardBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Slam,3562848930408291229",
+          "ReturnToOwnerLeash,1782424838281237892",
+          "StrafeBecausePrimaryIsntReady,-5886842746103412951",
+          "ChaseOffNodegraph,7582128348649270366",
+          "FireSunder,4642692592616266967",
+          "Chase,9149811198403067763",
+          "ReturnToLeaderDefault,-6896376483262043323",
+          "WaitNearLeaderDefault,-6693026156911298422"
+        ]
+      },
+      "pickups": null
     },
     "BeetleMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "HeadbuttOffNodegraph,-6939216102098188888",
-        "ChaseOffNodegraph,4985747100246868731",
-        "FollowNodeGraphToTarget,-2031681846847286344"
-      ]
+      "_name": "BeetleMaster",
+      "body": "BeetleBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "HeadbuttOffNodegraph,-6939216102098188888",
+          "ChaseOffNodegraph,4985747100246868731",
+          "FollowNodeGraphToTarget,-2031681846847286344"
+        ]
+      },
+      "pickups": null
     },
     "BeetleQueenMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "SummonEggs,3189883576417271493",
-        "SpawnWards,-8789801449677516913",
-        "ShootSpit,1507653010482825320",
-        "Chase,2101752084505761958"
-      ]
+      "_name": "BeetleQueenMaster",
+      "body": "BeetleQueen2Body",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "SummonEggs,3189883576417271493",
+          "SpawnWards,-8789801449677516913",
+          "ShootSpit,1507653010482825320",
+          "Chase,2101752084505761958"
+        ]
+      },
+      "pickups": null
     },
     "BellMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "FleeAndFire,-8857455972411809329",
-        "StrafeAndFire,7310192618533068404",
-        "Chase,-6172373609195952016"
-      ]
+      "_name": "BellMaster",
+      "body": "BellBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "FleeAndFire,-8857455972411809329",
+          "StrafeAndFire,7310192618533068404",
+          "Chase,-6172373609195952016"
+        ]
+      },
+      "pickups": null
     },
     "BisonMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        ",-4763937922923923927",
-        ",4490677864667159959",
-        ",9204609103809523294"
-      ]
+      "_name": "BisonMaster",
+      "body": "BisonBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          ",-4763937922923923927",
+          ",4490677864667159959",
+          ",9204609103809523294"
+        ]
+      },
+      "pickups": null
     },
     "BrotherHauntMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Guard",
-      "main_state": "EntityStates.AI.Walker.Guard",
-      "drivers": [
-        "PressM1,-4866331952685656318"
-      ]
+      "_name": "BrotherHauntMaster",
+      "body": "BrotherHauntBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Guard",
+        "main_state": "EntityStates.AI.Walker.Guard",
+        "drivers": [
+          "PressM1,-4866331952685656318"
+        ]
+      },
+      "pickups": null
     },
     "BrotherHurtMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Guard",
-      "main_state": "EntityStates.AI.Walker.Guard",
-      "drivers": [
-        "SlamGround,4129732036495649769",
-        "Shoot,-3093536577356728951",
-        "Walk,2751395599102256143"
-      ]
+      "_name": "BrotherHurtMaster",
+      "body": "BrotherHurtBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Guard",
+        "main_state": "EntityStates.AI.Walker.Guard",
+        "drivers": [
+          "SlamGround,4129732036495649769",
+          "Shoot,-3093536577356728951",
+          "Walk,2751395599102256143"
+        ]
+      },
+      "pickups": null
     },
     "BrotherMaster": {
-      "full_vision": true,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Guard",
-      "main_state": "EntityStates.AI.Walker.Guard",
-      "drivers": [
-        "CastUlt,8927288916433254947",
-        "Leap to Center,-4237906217365298861",
-        "DashStrafe,8134326704063295970",
-        "DashForward,-5346207211935913938",
-        "SprintBash,-6866438584964773514",
-        "WeaponSlam,-3445075511592703129",
-        "Sprint and FireLunarShards,-8232841385686544381",
-        "Walk After Target Off Nodegraph,-4532987231877491980",
-        "Sprint After Target,-8790800022060882305",
-        "Follow Nodegraph,-7729279045481953641"
-      ]
+      "_name": "BrotherMaster",
+      "body": "BrotherBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Guard",
+        "main_state": "EntityStates.AI.Walker.Guard",
+        "drivers": [
+          "CastUlt,8927288916433254947",
+          "Leap to Center,-4237906217365298861",
+          "DashStrafe,8134326704063295970",
+          "DashForward,-5346207211935913938",
+          "SprintBash,-6866438584964773514",
+          "WeaponSlam,-3445075511592703129",
+          "Sprint and FireLunarShards,-8232841385686544381",
+          "Walk After Target Off Nodegraph,-4532987231877491980",
+          "Sprint After Target,-8790800022060882305",
+          "Follow Nodegraph,-7729279045481953641"
+        ]
+      },
+      "pickups": {
+        "overwrite_equipment": true,
+        "equipment": null,
+        "items": [
+          [
+            "AdaptiveArmor",
+            1,
+            false
+          ]
+        ]
+      }
     },
     "CaptainMonsterMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "FireTazer,2005525833725921050",
-        "MarkOrbitalStrike,163771848763906041",
-        "StartOrbitalStrike,1264466645945770460",
-        "FireShotgun,1998842436426420856",
-        "BackUpIfClose,4765339868073314470",
-        "FireLongRange,3198491953001195546",
-        "ChaseEnemy,-7540301168110194851",
-        "ShortStrafe,7352734143207202039"
-      ]
+      "_name": "CaptainMonsterMaster",
+      "body": "CaptainBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "FireTazer,2005525833725921050",
+          "MarkOrbitalStrike,163771848763906041",
+          "StartOrbitalStrike,1264466645945770460",
+          "FireShotgun,1998842436426420856",
+          "BackUpIfClose,4765339868073314470",
+          "FireLongRange,3198491953001195546",
+          "ChaseEnemy,-7540301168110194851",
+          "ShortStrafe,7352734143207202039"
+        ]
+      },
+      "pickups": null
     },
     "ClayBossMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "SukFriends,-3303173907096421630",
-        "SukEnemies,-8480499996270116935",
-        "Tarball,-4052202243452673013",
-        "PotsAndStrafe,-621661853608299941",
-        "PotsAndChase,2299811253964833840",
-        ",-8876052654887826102"
-      ]
+      "_name": "ClayBossMaster",
+      "body": "ClayBossBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "SukFriends,-3303173907096421630",
+          "SukEnemies,-8480499996270116935",
+          "Tarball,-4052202243452673013",
+          "PotsAndStrafe,-621661853608299941",
+          "PotsAndChase,2299811253964833840",
+          ",-8876052654887826102"
+        ]
+      },
+      "pickups": null
     },
     "ClayBruiserMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "BlastAway,-575684706247578645",
-        "WalkAndShoot,-335226288178669611",
-        "WalkTowardsTarget,-3331643345171380681"
-      ]
+      "_name": "ClayBruiserMaster",
+      "body": "ClayBruiserBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "BlastAway,-575684706247578645",
+          "WalkAndShoot,-335226288178669611",
+          "WalkTowardsTarget,-3331643345171380681"
+        ]
+      },
+      "pickups": null
     },
     "CommandoMonsterMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        ",-8136361825872303401",
-        ",-1228117416850461303",
-        ",-1968179422106162826",
-        ",9023038889545125897",
-        ",6765001859502694431",
-        ",470699169819584727",
-        ",-7006077389153148917",
-        ",3942136385800023192"
-      ]
+      "_name": "CommandoMonsterMaster",
+      "body": "CommandoBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          ",-8136361825872303401",
+          ",-1228117416850461303",
+          ",-1968179422106162826",
+          ",9023038889545125897",
+          ",6765001859502694431",
+          ",470699169819584727",
+          ",-7006077389153148917",
+          ",3942136385800023192"
+        ]
+      },
+      "pickups": null
     },
-    "PlayerMaster": null,
+    "PlayerMaster": {
+      "_name": "PlayerMaster",
+      "body": null,
+      "ai": null,
+      "pickups": null
+    },
     "CrocoMonsterMaster": {
-      "full_vision": true,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "LeapAwayFromEnemy,8816360571944774083",
-        "StrafeAndSlashTarget,-2984317156022006370",
-        "LeapToEnemy,-8792600515147349648",
-        "ChaseAndSlashTarget,5917918433223687332",
-        "FireContagion,5962071086062377207",
-        "FireSecondary,3654691163139482146",
-        "ChaseEnemy,-2122089880423495766"
-      ]
+      "_name": "CrocoMonsterMaster",
+      "body": "CrocoBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "LeapAwayFromEnemy,8816360571944774083",
+          "StrafeAndSlashTarget,-2984317156022006370",
+          "LeapToEnemy,-8792600515147349648",
+          "ChaseAndSlashTarget,5917918433223687332",
+          "FireContagion,5962071086062377207",
+          "FireSecondary,3654691163139482146",
+          "ChaseEnemy,-2122089880423495766"
+        ]
+      },
+      "pickups": null
     },
     "Drone2Master": {
-      "full_vision": true,
-      "no_friendly_fire": true,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "HardLeashToLeader,8157860354835501382",
-        "HealLeader,-6533874174977131037",
-        "GoToHealLeaderDirect,932833105102829308",
-        "GoToHealLeader,-7587849568985068626",
-        "HealNearAlly,-1850645039086423070",
-        "GoToNearAllyDirect,-1125557448902404185",
-        "GoToNearAlly,-4058635628207601037",
-        "IdleNearLeaderWhenNoEnemies,5400378360478573902",
-        "ReturnToLeader,-29020732864990107"
-      ]
+      "_name": "Drone2Master",
+      "body": "Drone2Body",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": true,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "HardLeashToLeader,8157860354835501382",
+          "HealLeader,-6533874174977131037",
+          "GoToHealLeaderDirect,932833105102829308",
+          "GoToHealLeader,-7587849568985068626",
+          "HealNearAlly,-1850645039086423070",
+          "GoToNearAllyDirect,-1125557448902404185",
+          "GoToNearAlly,-4058635628207601037",
+          "IdleNearLeaderWhenNoEnemies,5400378360478573902",
+          "ReturnToLeader,-29020732864990107"
+        ]
+      },
+      "pickups": null
     },
     "DroneMissileMaster": {
-      "full_vision": true,
-      "no_friendly_fire": true,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Chase",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "HardLeashToLeader,5849603447090445286",
-        "SoftLeashAttack,6033502209102654186",
-        "SoftLeashToLeader,-1862401505201533058",
-        "StrafeNearbyEnemies,3944044943354322042",
-        "ChaseFarEnemies,-3045811543204512182",
-        "IdleNearLeaderWhenNoEnemies,1785280077402073538",
-        "ReturnToLeaderWhenNoEnemies,-547295968595725832"
-      ]
+      "_name": "DroneMissileMaster",
+      "body": "MissileDroneBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": true,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Chase",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "HardLeashToLeader,5849603447090445286",
+          "SoftLeashAttack,6033502209102654186",
+          "SoftLeashToLeader,-1862401505201533058",
+          "StrafeNearbyEnemies,3944044943354322042",
+          "ChaseFarEnemies,-3045811543204512182",
+          "IdleNearLeaderWhenNoEnemies,1785280077402073538",
+          "ReturnToLeaderWhenNoEnemies,-547295968595725832"
+        ]
+      },
+      "pickups": null
     },
     "MegaDroneMaster": {
-      "full_vision": true,
-      "no_friendly_fire": true,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "LeashLeaderHard,9027441795568496563",
-        "StopTooCloseTarget,-7384408844215686678",
-        "StrafeCloseEnemy,-3854258754008991348",
-        "ChaseFarEnemiesRocket,-6531939892898143700",
-        "ChaseFarEnemiesGun,6891436448847835380",
-        "IdleNearLeaderWhenNoEnemies,9018558904210485587",
-        "ReturnToLeaderWhenNoEnemies,6845664084940889031",
-        "ChaseDownRandomEnemiesIfLeaderIsDead,-1585997855327619634"
-      ]
+      "_name": "MegaDroneMaster",
+      "body": "MegaDroneBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": true,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "LeashLeaderHard,9027441795568496563",
+          "StopTooCloseTarget,-7384408844215686678",
+          "StrafeCloseEnemy,-3854258754008991348",
+          "ChaseFarEnemiesRocket,-6531939892898143700",
+          "ChaseFarEnemiesGun,6891436448847835380",
+          "IdleNearLeaderWhenNoEnemies,9018558904210485587",
+          "ReturnToLeaderWhenNoEnemies,6845664084940889031",
+          "ChaseDownRandomEnemiesIfLeaderIsDead,-1585997855327619634"
+        ]
+      },
+      "pickups": null
     },
     "Drone1Master": {
-      "full_vision": true,
-      "no_friendly_fire": true,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "HardLeashToLeader,3844877512740874490",
-        "SoftLeashAttack,-6305806219340028879",
-        "SoftLeashToLeader,726674717155187617",
-        "StrafeNearbyEnemies,478493757173926676",
-        "ChaseFarEnemies,-2161642879786393630",
-        "IdleNearLeaderWhenNoEnemies,-3867744158200615377",
-        "ReturnToLeaderWhenNoEnemies,-7621546733958419908",
-        "ChaseDownRandomEnemiesIfLeaderIsDead,-8251579215286819757"
-      ]
+      "_name": "Drone1Master",
+      "body": "Drone1Body",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": true,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "HardLeashToLeader,3844877512740874490",
+          "SoftLeashAttack,-6305806219340028879",
+          "SoftLeashToLeader,726674717155187617",
+          "StrafeNearbyEnemies,478493757173926676",
+          "ChaseFarEnemies,-2161642879786393630",
+          "IdleNearLeaderWhenNoEnemies,-3867744158200615377",
+          "ReturnToLeaderWhenNoEnemies,-7621546733958419908",
+          "ChaseDownRandomEnemiesIfLeaderIsDead,-8251579215286819757"
+        ]
+      },
+      "pickups": null
     },
     "EmergencyDroneMaster": {
-      "full_vision": true,
-      "no_friendly_fire": true,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "HardLeashToLeader,1245701103669300936",
-        "HealLeader,-8209624626832996311",
-        "GoToHealLeaderDirect,4759429106175493367",
-        "GoToHealLeader,4133609007899743289",
-        "HealNearAlly,-6649653646109083990",
-        "GoToNearAllyDirect,6530278194144109306",
-        "GoToNearAlly,-7376887891010669304",
-        "IdleNearLeaderWhenNoEnemies,4321230269619103185",
-        "ReturnToLeader,-5311337878029951161",
-        "GoToAnyAlly,-4917104846194688197"
-      ]
+      "_name": "EmergencyDroneMaster",
+      "body": "EmergencyDroneBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": true,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "HardLeashToLeader,1245701103669300936",
+          "HealLeader,-8209624626832996311",
+          "GoToHealLeaderDirect,4759429106175493367",
+          "GoToHealLeader,4133609007899743289",
+          "HealNearAlly,-6649653646109083990",
+          "GoToNearAllyDirect,6530278194144109306",
+          "GoToNearAlly,-7376887891010669304",
+          "IdleNearLeaderWhenNoEnemies,4321230269619103185",
+          "ReturnToLeader,-5311337878029951161",
+          "GoToAnyAlly,-4917104846194688197"
+        ]
+      },
+      "pickups": null
     },
     "DroneBackupMaster": {
-      "full_vision": true,
-      "no_friendly_fire": true,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Chase",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "HardLeashToLeader,8915096859084521714",
-        "SoftLeashAttack,985395449754719918",
-        "SoftLeashToLeader,1287265920115619390",
-        "StrafeNearbyEnemies,-5090494825072390279",
-        "ChaseFarEnemies,4808762326261329361",
-        "IdleNearLeaderWhenNoEnemies,-6278733562793935950",
-        "ReturnToLeaderWhenNoEnemies,-4187526388231538647",
-        "ChaseDownRandomEnemiesIfLeaderIsDead,-32241665929977918"
-      ]
+      "_name": "DroneBackupMaster",
+      "body": "BackupDroneBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": true,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Chase",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "HardLeashToLeader,8915096859084521714",
+          "SoftLeashAttack,985395449754719918",
+          "SoftLeashToLeader,1287265920115619390",
+          "StrafeNearbyEnemies,-5090494825072390279",
+          "ChaseFarEnemies,4808762326261329361",
+          "IdleNearLeaderWhenNoEnemies,-6278733562793935950",
+          "ReturnToLeaderWhenNoEnemies,-4187526388231538647",
+          "ChaseDownRandomEnemiesIfLeaderIsDead,-32241665929977918"
+        ]
+      },
+      "pickups": null
     },
     "Turret1Master": {
-      "full_vision": true,
-      "no_friendly_fire": true,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        ",-5890972503264806078",
-        "SearchForTarget,-9009978894620276422"
-      ]
+      "_name": "Turret1Master",
+      "body": "Turret1Body",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": true,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          ",-5890972503264806078",
+          "SearchForTarget,-9009978894620276422"
+        ]
+      },
+      "pickups": null
     },
     "EquipmentDroneMaster": {
-      "full_vision": true,
-      "no_friendly_fire": true,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "HardLeashToLeader,737798854364331377",
-        "SoftLeashAttack,7058557778081397397",
-        "SoftLeashToLeader,888490368716710194",
-        "StrafeNearbyEnemies,-7350701884531288041",
-        "ChaseFarEnemies,9159675154462160470",
-        "IdleNearLeaderWhenNoEnemies,-1709755750410978",
-        "ReturnToLeaderWhenNoEnemies,1841415396641836158",
-        "ChaseDownRandomEnemiesIfLeaderIsDead,6996422503738633360"
-      ]
+      "_name": "EquipmentDroneMaster",
+      "body": "EquipmentDroneBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": true,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "HardLeashToLeader,737798854364331377",
+          "SoftLeashAttack,7058557778081397397",
+          "SoftLeashToLeader,888490368716710194",
+          "StrafeNearbyEnemies,-7350701884531288041",
+          "ChaseFarEnemies,9159675154462160470",
+          "IdleNearLeaderWhenNoEnemies,-1709755750410978",
+          "ReturnToLeaderWhenNoEnemies,1841415396641836158",
+          "ChaseDownRandomEnemiesIfLeaderIsDead,6996422503738633360"
+        ]
+      },
+      "pickups": null
     },
     "FlameDroneMaster": {
-      "full_vision": true,
-      "no_friendly_fire": true,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "HardLeashToLeader,92478129529657216",
-        "StrafeNearbyEnemies,6168782477568635008",
-        "ChaseCloseEnemiesOffNodegraph,5629313600467113075",
-        "ChaseFarEnemies,2493209601449638590",
-        "IdleNearLeaderWhenNoEnemies,-7070802807052864917",
-        "ReturnToLeaderWhenNoEnemies,-7156799193472538774",
-        "ChaseDownRandomEnemiesIfLeaderIsDead,7906820959383512805"
-      ]
+      "_name": "FlameDroneMaster",
+      "body": "FlameDroneBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": true,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "HardLeashToLeader,92478129529657216",
+          "StrafeNearbyEnemies,6168782477568635008",
+          "ChaseCloseEnemiesOffNodegraph,5629313600467113075",
+          "ChaseFarEnemies,2493209601449638590",
+          "IdleNearLeaderWhenNoEnemies,-7070802807052864917",
+          "ReturnToLeaderWhenNoEnemies,-7156799193472538774",
+          "ChaseDownRandomEnemiesIfLeaderIsDead,7906820959383512805"
+        ]
+      },
+      "pickups": null
     },
     "ElectricWormMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "FollowTargetOnNodegraphAndChangeStance,2099743532423264056",
-        "Blink,-1875067292250943054",
-        "ChaseAndSteerAtTarget,-3177394028609541252",
-        "FollowTargetOnNodegraph,4865041248555875269"
-      ]
+      "_name": "ElectricWormMaster",
+      "body": "ElectricWormBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "FollowTargetOnNodegraphAndChangeStance,2099743532423264056",
+          "Blink,-1875067292250943054",
+          "ChaseAndSteerAtTarget,-3177394028609541252",
+          "FollowTargetOnNodegraph,4865041248555875269"
+        ]
+      },
+      "pickups": null
     },
     "UrchinTurretMaster": {
-      "full_vision": true,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Shoot,8866965474688209580",
-        "SearchForTarget,3188750408090146053"
-      ]
+      "_name": "UrchinTurretMaster",
+      "body": "UrchinTurretBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Shoot,8866965474688209580",
+          "SearchForTarget,3188750408090146053"
+        ]
+      },
+      "pickups": null
     },
     "EngiMonsterMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "PaintHarpoons,3104697618068206463",
-        "CancelPaintingIfNoLoS,-8989367222315580316",
-        "ThrowMine,6902650812243367239",
-        "PlaceTurret,-8188783611865394256",
-        "ActivateHarpoonPaintingMode,9052573811132311674",
-        "ThrowShield,9163212816158119164",
-        "StrafeAndChargeGrenades,9039327885670311272",
-        "ReturnToTurrets,6747972696470940520",
-        "ChaseAndChargeGrenades,-3858985528830148458",
-        "ChaseEnemy,-4716344855639535215"
-      ]
+      "_name": "EngiMonsterMaster",
+      "body": "EngiBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "PaintHarpoons,3104697618068206463",
+          "CancelPaintingIfNoLoS,-8989367222315580316",
+          "ThrowMine,6902650812243367239",
+          "PlaceTurret,-8188783611865394256",
+          "ActivateHarpoonPaintingMode,9052573811132311674",
+          "ThrowShield,9163212816158119164",
+          "StrafeAndChargeGrenades,9039327885670311272",
+          "ReturnToTurrets,6747972696470940520",
+          "ChaseAndChargeGrenades,-3858985528830148458",
+          "ChaseEnemy,-4716344855639535215"
+        ]
+      },
+      "pickups": null
     },
     "EngiTurretMaster": {
-      "full_vision": true,
-      "no_friendly_fire": true,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "FireAtEnemy,6938402492174515503",
-        "SearchForTarget,-3599555546870491518"
-      ]
+      "_name": "EngiTurretMaster",
+      "body": "EngiTurretBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": true,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "FireAtEnemy,6938402492174515503",
+          "SearchForTarget,-3599555546870491518"
+        ]
+      },
+      "pickups": null
     },
     "EngiWalkerTurretMaster": {
-      "full_vision": true,
-      "no_friendly_fire": true,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "ReturnToLeader,8961619473923707040",
-        "StrafeAndFireAtEnemy,-7391176486328795801",
-        "ChaseAndFireAtEnemy,-4931228151770922543",
-        "ReturnToLeader,8511619717544342695",
-        "Rest,8642130946032830284"
-      ]
+      "_name": "EngiWalkerTurretMaster",
+      "body": "EngiWalkerTurretBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": true,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "ReturnToLeader,8961619473923707040",
+          "StrafeAndFireAtEnemy,-7391176486328795801",
+          "ChaseAndFireAtEnemy,-4931228151770922543",
+          "ReturnToLeader,8511619717544342695",
+          "Rest,8642130946032830284"
+        ]
+      },
+      "pickups": null
     },
     "GolemMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        ",4972756763905126249",
-        ",5954787634552727781",
-        ",8481433285489771358"
-      ]
+      "_name": "GolemMaster",
+      "body": "GolemBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          ",4972756763905126249",
+          ",5954787634552727781",
+          ",8481433285489771358"
+        ]
+      },
+      "pickups": null
     },
     "LemurianBruiserMasterFire": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Flamebreath,941454165112374000",
-        "RunAndShoot,7788860116142584577",
-        "StopAndShoot,4625736682106515669",
-        "ChaseTarget,-2498757492404779103"
-      ]
+      "_name": "LemurianBruiserMasterFire",
+      "body": "LemurianBruiserBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Flamebreath,941454165112374000",
+          "RunAndShoot,7788860116142584577",
+          "StopAndShoot,4625736682106515669",
+          "ChaseTarget,-2498757492404779103"
+        ]
+      },
+      "pickups": null
     },
     "LemurianBruiserMasterIce": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Flamebreath,7740621629540816668",
-        "RunAndShoot,2640247385434885511",
-        "StopAndShoot,-7196443580283339410",
-        "ChaseTarget,-3972338689550806350"
-      ]
+      "_name": "LemurianBruiserMasterIce",
+      "body": "LemurianBruiserBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Flamebreath,7740621629540816668",
+          "RunAndShoot,2640247385434885511",
+          "StopAndShoot,-7196443580283339410",
+          "ChaseTarget,-3972338689550806350"
+        ]
+      },
+      "pickups": null
     },
     "GrandparentMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "RotateToEnemyPriority,5832576503764700266",
-        "ChannelSun,787988459542944907",
-        "FireSecondaryProjectile,7856848401616585596",
-        "GroundSwipe,-935202138811490346",
-        "RotateToEnemy,-2926087991664075873"
-      ]
+      "_name": "GrandparentMaster",
+      "body": "GrandParentBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "RotateToEnemyPriority,5832576503764700266",
+          "ChannelSun,787988459542944907",
+          "FireSecondaryProjectile,7856848401616585596",
+          "GroundSwipe,-935202138811490346",
+          "RotateToEnemy,-2926087991664075873"
+        ]
+      },
+      "pickups": null
     },
     "GravekeeperMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "RunAndShoot,2890874205585318650",
-        "Hooks,-5267927878517504721",
-        "WaitAroundUntilSkillIsBack,1350024192457012667",
-        "ChaseTarget,-6101824367515996688"
-      ]
+      "_name": "GravekeeperMaster",
+      "body": "GravekeeperBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "RunAndShoot,2890874205585318650",
+          "Hooks,-5267927878517504721",
+          "WaitAroundUntilSkillIsBack,1350024192457012667",
+          "ChaseTarget,-6101824367515996688"
+        ]
+      },
+      "pickups": null
     },
     "GreaterWispMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        ",-2487911494737536813",
-        ",-6796573281333920983",
-        ",-1785158791038103121"
-      ]
+      "_name": "GreaterWispMaster",
+      "body": "GreaterWispBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          ",-2487911494737536813",
+          ",-6796573281333920983",
+          ",-1785158791038103121"
+        ]
+      },
+      "pickups": null
     },
     "HereticMonsterMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        ",-8712323262217524196",
-        ",1518826174254667331",
-        ",2010085041473149333",
-        ",1794794908905125797",
-        ",1732775957773277232",
-        ",8756338444004650284",
-        ",8888557485616483673",
-        ",4530754162155959626"
-      ]
+      "_name": "HereticMonsterMaster",
+      "body": "HereticBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          ",-8712323262217524196",
+          ",1518826174254667331",
+          ",2010085041473149333",
+          ",1794794908905125797",
+          ",1732775957773277232",
+          ",8756338444004650284",
+          ",8888557485616483673",
+          ",4530754162155959626"
+        ]
+      },
+      "pickups": {
+        "overwrite_equipment": true,
+        "equipment": null,
+        "items": [
+          [
+            "LunarUtilityReplacement",
+            1,
+            true
+          ],
+          [
+            "LunarPrimaryReplacement",
+            1,
+            true
+          ],
+          [
+            "LunarSecondaryReplacement",
+            1,
+            true
+          ],
+          [
+            "LunarSpecialReplacement",
+            1,
+            true
+          ]
+        ]
+      }
     },
     "HermitCrabMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "BurrowOutAndFlee,-3130605010929274164",
-        "FirePrimaries,4299652842899324558",
-        "BurrowIn,-3759696365605572625",
-        "Path,-6714976231016655188"
-      ]
+      "_name": "HermitCrabMaster",
+      "body": "HermitCrabBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "BurrowOutAndFlee,-3130605010929274164",
+          "FirePrimaries,4299652842899324558",
+          "BurrowIn,-3759696365605572625",
+          "Path,-6714976231016655188"
+        ]
+      },
+      "pickups": null
     },
     "HuntressMonsterMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "ArrowRain,8704130761567657031",
-        "BlinkAwayFromEnemy,-5667922133742769732",
-        "ThrowGlaive,4618250753444053866",
-        "BlinkToCloseGap,7593362257328154190",
-        "StrafeEnemy,2365203779262857986",
-        "ChaseEnemy,1928603570383516000"
-      ]
+      "_name": "HuntressMonsterMaster",
+      "body": "HuntressBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "ArrowRain,8704130761567657031",
+          "BlinkAwayFromEnemy,-5667922133742769732",
+          "ThrowGlaive,4618250753444053866",
+          "BlinkToCloseGap,7593362257328154190",
+          "StrafeEnemy,2365203779262857986",
+          "ChaseEnemy,1928603570383516000"
+        ]
+      },
+      "pickups": null
     },
     "ImpBossMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "GroundPound,8097024347603968394",
-        "BlinkToTarget,-2213025398150337898",
-        "FireVoidspikesWhenInRange,-2421425801034399393",
-        "PathToTarget,5965636031968205458"
-      ]
+      "_name": "ImpBossMaster",
+      "body": "ImpBossBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "GroundPound,8097024347603968394",
+          "BlinkToTarget,-2213025398150337898",
+          "FireVoidspikesWhenInRange,-2421425801034399393",
+          "PathToTarget,5965636031968205458"
+        ]
+      },
+      "pickups": null
     },
     "ImpMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Slash,7105014606309073889",
-        "BlinkBecauseClose,1146850139897396150",
-        "StrafeBecausePrimaryIsntReady,-7017554986504681466",
-        "LeaveNodegraph,932462503937357727",
-        "BlinkToTraverse,6242736064622957175",
-        "PathToTarget,-4413383323364509741"
-      ]
+      "_name": "ImpMaster",
+      "body": "ImpBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Slash,7105014606309073889",
+          "BlinkBecauseClose,1146850139897396150",
+          "StrafeBecausePrimaryIsntReady,-7017554986504681466",
+          "LeaveNodegraph,932462503937357727",
+          "BlinkToTraverse,6242736064622957175",
+          "PathToTarget,-4413383323364509741"
+        ]
+      },
+      "pickups": null
     },
     "JellyfishMaster": {
-      "full_vision": true,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        ",1355998261686134349",
-        ",6423190731218184591",
-        ",4413097871236124859",
-        ",-6367475677696112019"
-      ]
+      "_name": "JellyfishMaster",
+      "body": "JellyfishBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          ",1355998261686134349",
+          ",6423190731218184591",
+          ",4413097871236124859",
+          ",-6367475677696112019"
+        ]
+      },
+      "pickups": null
     },
     "LemurianBruiserMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Flamebreath,7965582969363522892",
-        "RunAndShoot,-7750291802318847745",
-        "StopAndShoot,-5529143816165157792",
-        "ChaseTarget,-2669256127542261288"
-      ]
+      "_name": "LemurianBruiserMaster",
+      "body": "LemurianBruiserBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Flamebreath,7965582969363522892",
+          "RunAndShoot,-7750291802318847745",
+          "StopAndShoot,-5529143816165157792",
+          "ChaseTarget,-2669256127542261288"
+        ]
+      },
+      "pickups": null
     },
     "LemurianMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "ChaseAndBiteOffNodegraphWhileSlowingDown,887681256297437442",
-        "ChaseAndBiteOffNodegraph,-3961934514414434507",
-        "StrafeAndShoot,-2275973990325734996",
-        "StrafeIdley,1182141438984054342",
-        "ChaseOffNodegraph,7992785183649591102",
-        "PathFromAfar,-8206200762432804046"
-      ]
+      "_name": "LemurianMaster",
+      "body": "LemurianBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "ChaseAndBiteOffNodegraphWhileSlowingDown,887681256297437442",
+          "ChaseAndBiteOffNodegraph,-3961934514414434507",
+          "StrafeAndShoot,-2275973990325734996",
+          "StrafeIdley,1182141438984054342",
+          "ChaseOffNodegraph,7992785183649591102",
+          "PathFromAfar,-8206200762432804046"
+        ]
+      },
+      "pickups": null
     },
     "LoaderMonsterMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "ThrowPylon,-11096757996769100",
-        "StrafeAndPunch,7391540443081543909",
-        "ChaseAndPunch,8995831843996776187",
-        "FireHookAtEnemy,-8576419824544810456",
-        "ChargePunch,1833769619075279720",
-        "ChaseEnemy,755258431904531187"
-      ]
+      "_name": "LoaderMonsterMaster",
+      "body": "LoaderBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "ThrowPylon,-11096757996769100",
+          "StrafeAndPunch,7391540443081543909",
+          "ChaseAndPunch,8995831843996776187",
+          "FireHookAtEnemy,-8576419824544810456",
+          "ChargePunch,1833769619075279720",
+          "ChaseEnemy,755258431904531187"
+        ]
+      },
+      "pickups": null
     },
     "LunarExploderMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "StrafeAndShoot,2199419693755200761",
-        "SprintNodegraphAndShoot,4981997094723858595",
-        "SprintNodeGraphToTarget,-1387013104830704819"
-      ]
+      "_name": "LunarExploderMaster",
+      "body": "LunarExploderBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "StrafeAndShoot,2199419693755200761",
+          "SprintNodegraphAndShoot,4981997094723858595",
+          "SprintNodeGraphToTarget,-1387013104830704819"
+        ]
+      },
+      "pickups": null
     },
     "LunarGolemMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "StrafeAndShoot,190696194335392372",
-        "ChaseAndShoot,7596188838911920916",
-        "PathFromAfar,6730636275300005813",
-        "SprintFromAfar,973806113481244780"
-      ]
+      "_name": "LunarGolemMaster",
+      "body": "LunarGolemBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "StrafeAndShoot,190696194335392372",
+          "ChaseAndShoot,7596188838911920916",
+          "PathFromAfar,6730636275300005813",
+          "SprintFromAfar,973806113481244780"
+        ]
+      },
+      "pickups": null
     },
     "LunarWispMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Back Up,-5861484278993146342",
-        "SeekingBomb,-4614882417561451034",
-        "Minigun,8268150536255128899",
-        "Chase,4329869876610762984",
-        "Strafe,-4669174992818157750"
-      ]
+      "_name": "LunarWispMaster",
+      "body": "LunarWispBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Back Up,-5861484278993146342",
+          "SeekingBomb,-4614882417561451034",
+          "Minigun,8268150536255128899",
+          "Chase,4329869876610762984",
+          "Strafe,-4669174992818157750"
+        ]
+      },
+      "pickups": null
     },
     "MageMonsterMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "EscapeWithSuperJump,8688700876054791588",
-        "StrafeAndFlamethrower,6694087595962153995",
-        "StrafeAndFirePrimary,-2078686732227488562",
-        "StrafeAndChargeSecondary,1270213680998306907",
-        "ChaseAndUtility,-6352157157281628873",
-        "ChaseEnemy,583558432719821789"
-      ]
+      "_name": "MageMonsterMaster",
+      "body": "MageBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "EscapeWithSuperJump,8688700876054791588",
+          "StrafeAndFlamethrower,6694087595962153995",
+          "StrafeAndFirePrimary,-2078686732227488562",
+          "StrafeAndChargeSecondary,1270213680998306907",
+          "ChaseAndUtility,-6352157157281628873",
+          "ChaseEnemy,583558432719821789"
+        ]
+      },
+      "pickups": null
     },
     "MagmaWormMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "FollowTargetOnNodegraphAndChangeStance,3897111024215516873",
-        "Blink,-4656278972054836535",
-        "ChaseAndSteerAtTarget,342833867379878824",
-        "FollowTargetOnNodegraph,1335763847551409955"
-      ]
+      "_name": "MagmaWormMaster",
+      "body": "MagmaWormBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "FollowTargetOnNodegraphAndChangeStance,3897111024215516873",
+          "Blink,-4656278972054836535",
+          "ChaseAndSteerAtTarget,342833867379878824",
+          "FollowTargetOnNodegraph,1335763847551409955"
+        ]
+      },
+      "pickups": null
     },
     "MercMonsterMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Eviscerate Whenever Possible,423085674499277690",
-        "Whirlwhind Whenever Possible,-5901340994377351355",
-        "Slash,-4135986644322531413",
-        "Dash,3890848760413065294",
-        "Chase,1059981559321982364"
-      ]
+      "_name": "MercMonsterMaster",
+      "body": "MercBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Eviscerate Whenever Possible,423085674499277690",
+          "Whirlwhind Whenever Possible,-5901340994377351355",
+          "Slash,-4135986644322531413",
+          "Dash,3890848760413065294",
+          "Chase,1059981559321982364"
+        ]
+      },
+      "pickups": null
     },
     "MiniMushroomMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Spore Grenade,8398146180179687064",
-        "Flee,1749310476535783853",
-        "Harvest,-3286839337388513038",
-        "Path,5513174020399221238",
-        "PathStrafe,2470400959342850673"
-      ]
+      "_name": "MiniMushroomMaster",
+      "body": "MiniMushroomBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Spore Grenade,8398146180179687064",
+          "Flee,1749310476535783853",
+          "Harvest,-3286839337388513038",
+          "Path,5513174020399221238",
+          "PathStrafe,2470400959342850673"
+        ]
+      },
+      "pickups": null
     },
     "NullifierMaster": {
-      "full_vision": true,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "PanicFireWhenClose,8389633134572288462",
-        "FireAndStrafe,-7565516992273600876",
-        "FireAndChase,-932438501482516075",
-        "FollowNodeGraphToTarget,-2241424184668877695"
-      ]
+      "_name": "NullifierMaster",
+      "body": "NullifierBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "PanicFireWhenClose,8389633134572288462",
+          "FireAndStrafe,-7565516992273600876",
+          "FireAndChase,-932438501482516075",
+          "FollowNodeGraphToTarget,-2241424184668877695"
+        ]
+      },
+      "pickups": null
     },
     "NullifierAllyMaster": {
-      "full_vision": true,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "PanicFireWhenClose,9044298664067750359",
-        "FireAndStrafe,7965922032672574950",
-        "FireAndChase,-4201923620432359776",
-        "FollowNodeGraphToTarget,6116496790857974224"
-      ]
+      "_name": "NullifierAllyMaster",
+      "body": "NullifierAllyBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "PanicFireWhenClose,9044298664067750359",
+          "FireAndStrafe,7965922032672574950",
+          "FireAndChase,-4201923620432359776",
+          "FollowNodeGraphToTarget,6116496790857974224"
+        ]
+      },
+      "pickups": null
     },
     "ParentMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Ground Slam,-2291222720785095600",
-        "Teleport,7591496644022273333",
-        "Path,-1924420674717988419"
-      ]
+      "_name": "ParentMaster",
+      "body": "ParentBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Ground Slam,-2291222720785095600",
+          "Teleport,7591496644022273333",
+          "Path,-1924420674717988419"
+        ]
+      },
+      "pickups": null
     },
     "RoboBallMiniMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "ShootAndFlee,-229536726464721041",
-        "StrafeAndShoot,4476940050509919651",
-        "ChaseTarget,5654410090010976534",
-        "ReturnToLeaderWhenNoEnemies,-6911119933473833123"
-      ]
+      "_name": "RoboBallMiniMaster",
+      "body": "RoboBallMiniBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "ShootAndFlee,-229536726464721041",
+          "StrafeAndShoot,4476940050509919651",
+          "ChaseTarget,5654410090010976534",
+          "ReturnToLeaderWhenNoEnemies,-6911119933473833123"
+        ]
+      },
+      "pickups": null
     },
     "SuperRoboBallBossMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "EnableEyebeam,7623811868243995732",
-        "DeployMinion,-4579819052739761205",
-        "FireAndFlee,4751102587258070958",
-        "FireAndStop,-4850606154619670438",
-        "FireAndChase,-7932952170778522400"
-      ]
+      "_name": "SuperRoboBallBossMaster",
+      "body": "SuperRoboBallBossBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "EnableEyebeam,7623811868243995732",
+          "DeployMinion,-4579819052739761205",
+          "FireAndFlee,4751102587258070958",
+          "FireAndStop,-4850606154619670438",
+          "FireAndChase,-7932952170778522400"
+        ]
+      },
+      "pickups": null
     },
     "RoboBallBossMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "EnableEyebeam,-8285022024650908114",
-        "DeployMinion,7616563909721295089",
-        "FireAndFlee,5912784377841029127",
-        "FireAndStop,-7788196738882051688",
-        "FireAndChase,-7822773632562988872"
-      ]
+      "_name": "RoboBallBossMaster",
+      "body": "RoboBallBossBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "EnableEyebeam,-8285022024650908114",
+          "DeployMinion,7616563909721295089",
+          "FireAndFlee,5912784377841029127",
+          "FireAndStop,-7788196738882051688",
+          "FireAndChase,-7822773632562988872"
+        ]
+      },
+      "pickups": null
     },
     "RoboBallGreenBuddyMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "ShootAndFlee,-8638103252608574041",
-        "StrafeAndShoot,-7014008083598664185",
-        "ChaseTarget,7007155959125574098",
-        "ReturnToLeaderWhenNoEnemies,-4813897503569888164"
-      ]
+      "_name": "RoboBallGreenBuddyMaster",
+      "body": "RoboBallGreenBuddyBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "ShootAndFlee,-8638103252608574041",
+          "StrafeAndShoot,-7014008083598664185",
+          "ChaseTarget,7007155959125574098",
+          "ReturnToLeaderWhenNoEnemies,-4813897503569888164"
+        ]
+      },
+      "pickups": null
     },
     "RoboBallRedBuddyMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "ShootAndFlee,-6978366597932236799",
-        "StrafeAndShoot,2933717803552171581",
-        "ChaseTarget,1712801296690209903",
-        "ReturnToLeaderWhenNoEnemies,-7386319442608323917"
-      ]
+      "_name": "RoboBallRedBuddyMaster",
+      "body": "RoboBallRedBuddyBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "ShootAndFlee,-6978366597932236799",
+          "StrafeAndShoot,2933717803552171581",
+          "ChaseTarget,1712801296690209903",
+          "ReturnToLeaderWhenNoEnemies,-7386319442608323917"
+        ]
+      },
+      "pickups": null
     },
     "ScavLunar2Master": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Guard",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "UseEquipmentAndFireCannon,3833128739066964075",
-        "Sit,3057512608562962506",
-        "ThrowSack,1252480224198760027",
-        "FireCannon,-2058691627935644355",
-        "FollowNodeGraphToTarget,-5991329913863510769",
-        "MoveBetweenShots,4940623377753951693"
-      ]
+      "_name": "ScavLunar2Master",
+      "body": "ScavLunar2Body",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Guard",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "UseEquipmentAndFireCannon,3833128739066964075",
+          "Sit,3057512608562962506",
+          "ThrowSack,1252480224198760027",
+          "FireCannon,-2058691627935644355",
+          "FollowNodeGraphToTarget,-5991329913863510769",
+          "MoveBetweenShots,4940623377753951693"
+        ]
+      },
+      "pickups": {
+        "overwrite_equipment": false,
+        "equipment": "DroneBackup",
+        "items": [
+          [
+            "Medkit",
+            3,
+            false
+          ],
+          [
+            "BarrierOnKill",
+            5,
+            false
+          ],
+          [
+            "Tooth",
+            10,
+            false
+          ],
+          [
+            "Infusion",
+            2,
+            false
+          ],
+          [
+            "BeetleGland",
+            4,
+            false
+          ],
+          [
+            "NovaOnLowHealth",
+            3,
+            false
+          ],
+          [
+            "IncreaseHealing",
+            1,
+            false
+          ],
+          [
+            "RepeatHeal",
+            1,
+            false
+          ]
+        ]
+      }
     },
     "ScavLunar1Master": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Guard",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "UseEquipmentAndFireCannon,149961192618070140",
-        "Sit,462116511496762302",
-        "ThrowSack,7354723403896880630",
-        "FireCannon,-7898161481687115099",
-        "FollowNodeGraphToTarget,-7591966643720905247",
-        "MoveBetweenShots,-5407598359290800442"
-      ]
+      "_name": "ScavLunar1Master",
+      "body": "ScavLunar1Body",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Guard",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "UseEquipmentAndFireCannon,149961192618070140",
+          "Sit,462116511496762302",
+          "ThrowSack,7354723403896880630",
+          "FireCannon,-7898161481687115099",
+          "FollowNodeGraphToTarget,-7591966643720905247",
+          "MoveBetweenShots,-5407598359290800442"
+        ]
+      },
+      "pickups": {
+        "overwrite_equipment": false,
+        "equipment": "DroneBackup",
+        "items": [
+          [
+            "Medkit",
+            3,
+            false
+          ],
+          [
+            "BarrierOnKill",
+            5,
+            false
+          ],
+          [
+            "Tooth",
+            10,
+            false
+          ],
+          [
+            "Infusion",
+            2,
+            false
+          ],
+          [
+            "BeetleGland",
+            4,
+            false
+          ],
+          [
+            "NovaOnLowHealth",
+            3,
+            false
+          ],
+          [
+            "IncreaseHealing",
+            1,
+            false
+          ],
+          [
+            "RepeatHeal",
+            1,
+            false
+          ]
+        ]
+      }
     },
     "ScavLunar3Master": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Guard",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "UseEquipmentAndFireCannon,-6613771324526527828",
-        "Sit,-6186430483952158224",
-        "ThrowSack,-852454629382112847",
-        "FireCannon,-5897651881138510690",
-        "FollowNodeGraphToTarget,196582152770202453",
-        "MoveBetweenShots,-1534050334984572229"
-      ]
+      "_name": "ScavLunar3Master",
+      "body": "ScavLunar3Body",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Guard",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "UseEquipmentAndFireCannon,-6613771324526527828",
+          "Sit,-6186430483952158224",
+          "ThrowSack,-852454629382112847",
+          "FireCannon,-5897651881138510690",
+          "FollowNodeGraphToTarget,196582152770202453",
+          "MoveBetweenShots,-1534050334984572229"
+        ]
+      },
+      "pickups": {
+        "overwrite_equipment": false,
+        "equipment": "DroneBackup",
+        "items": [
+          [
+            "Medkit",
+            3,
+            false
+          ],
+          [
+            "BarrierOnKill",
+            5,
+            false
+          ],
+          [
+            "Tooth",
+            10,
+            false
+          ],
+          [
+            "Infusion",
+            2,
+            false
+          ],
+          [
+            "BeetleGland",
+            4,
+            false
+          ],
+          [
+            "NovaOnLowHealth",
+            3,
+            false
+          ],
+          [
+            "IncreaseHealing",
+            1,
+            false
+          ],
+          [
+            "RepeatHeal",
+            1,
+            false
+          ]
+        ]
+      }
     },
     "ScavLunar4Master": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Guard",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "UseEquipmentAndFireCannon,246846033345727082",
-        "Sit,-3475294825148169253",
-        "ThrowSack,-3730101129254175837",
-        "FireCannon,1101487164456702266",
-        "FollowNodeGraphToTarget,6247339068344471367",
-        "MoveBetweenShots,-1958388861300730213"
-      ]
+      "_name": "ScavLunar4Master",
+      "body": "ScavLunar4Body",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Guard",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "UseEquipmentAndFireCannon,246846033345727082",
+          "Sit,-3475294825148169253",
+          "ThrowSack,-3730101129254175837",
+          "FireCannon,1101487164456702266",
+          "FollowNodeGraphToTarget,6247339068344471367",
+          "MoveBetweenShots,-1958388861300730213"
+        ]
+      },
+      "pickups": {
+        "overwrite_equipment": false,
+        "equipment": "DroneBackup",
+        "items": [
+          [
+            "Medkit",
+            3,
+            false
+          ],
+          [
+            "BarrierOnKill",
+            5,
+            false
+          ],
+          [
+            "Tooth",
+            10,
+            false
+          ],
+          [
+            "Infusion",
+            2,
+            false
+          ],
+          [
+            "BeetleGland",
+            4,
+            false
+          ],
+          [
+            "NovaOnLowHealth",
+            3,
+            false
+          ],
+          [
+            "IncreaseHealing",
+            1,
+            false
+          ],
+          [
+            "RepeatHeal",
+            1,
+            false
+          ]
+        ]
+      }
     },
     "ScavMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "UseEquipmentAndFireCannon,-2289483736352369327",
-        "Sit,5640514135229570993",
-        "ThrowSack,-5277464508201294895",
-        "FireCannon,5980767912444743208",
-        "FollowNodeGraphToTarget,-7052259146008113035",
-        "MoveBetweenShots,6924980886264947001"
-      ]
+      "_name": "ScavMaster",
+      "body": "ScavBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "UseEquipmentAndFireCannon,-2289483736352369327",
+          "Sit,5640514135229570993",
+          "ThrowSack,-5277464508201294895",
+          "FireCannon,5980767912444743208",
+          "FollowNodeGraphToTarget,-7052259146008113035",
+          "MoveBetweenShots,6924980886264947001"
+        ]
+      },
+      "pickups": null
     },
     "ShopkeeperMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "KickFromShop,4363335962124101140",
-        "DoNothing,-1939423099997405434"
-      ]
+      "_name": "ShopkeeperMaster",
+      "body": "ShopkeeperBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "KickFromShop,4363335962124101140",
+          "DoNothing,-1939423099997405434"
+        ]
+      },
+      "pickups": null
     },
     "SquidTurretMaster": {
-      "full_vision": true,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "FireAtEnemy,-3252951379114993932",
-        "SearchForTarget,6470828677167594778"
-      ]
+      "_name": "SquidTurretMaster",
+      "body": "SquidTurretBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "FireAtEnemy,-3252951379114993932",
+          "SearchForTarget,6470828677167594778"
+        ]
+      },
+      "pickups": null
     },
     "TitanGoldAllyMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 15.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        ",-8620454794725308034",
-        "RechargeRocks,5887367652306290989",
-        ",-145578891313275317",
-        ",-4661398912471510540"
-      ]
+      "_name": "TitanGoldAllyMaster",
+      "body": "TitanGoldBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 15.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          ",-8620454794725308034",
+          "RechargeRocks,5887367652306290989",
+          ",-145578891313275317",
+          ",-4661398912471510540"
+        ]
+      },
+      "pickups": null
     },
     "TitanMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        ",390747353734205814",
-        "RechargeRocks,-1902346510453131794",
-        ",135955864928613837",
-        ",6001600020512896559"
-      ]
+      "_name": "TitanMaster",
+      "body": "TitanBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          ",390747353734205814",
+          "RechargeRocks,-1902346510453131794",
+          ",135955864928613837",
+          ",6001600020512896559"
+        ]
+      },
+      "pickups": null
     },
     "TitanGoldMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        ",4088005397193021111",
-        "RechargeRocks,5991762233620094615",
-        ",-7784782536251130955",
-        ",-8935839166229065678"
-      ]
+      "_name": "TitanGoldMaster",
+      "body": "TitanGoldBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          ",4088005397193021111",
+          "RechargeRocks,5991762233620094615",
+          ",-7784782536251130955",
+          ",-8935839166229065678"
+        ]
+      },
+      "pickups": null
     },
     "ToolbotMonsterMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "ThrowStunCanister,3884675595035968743",
-        "SwapWeapons,-7876239010981771124",
-        "RamTarget,-1538433122389995208",
-        "StrafeAndSaw,-6548556982800039998",
-        "ChaseAndSaw,6554629429521029137",
-        "StrafeAndNailgun,3479418408753520801",
-        "ChaseAndNailgun,4325241578317999058",
-        "BackupAndRailgun,4410423412228762371",
-        "ChaseAndRailgun,-8570131699865458619",
-        "StrafeAndRailgun,6347420443912555621",
-        "StrafeAndGrenadeLauncher,1214324470660413153",
-        "ChaseAndGrenadeLauncher,-1896561381178252083",
-        "SwitchOffNailgun,6881818342974969042",
-        "ChaseEnemy,-6752270673184613041"
-      ]
+      "_name": "ToolbotMonsterMaster",
+      "body": "ToolbotBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "ThrowStunCanister,3884675595035968743",
+          "SwapWeapons,-7876239010981771124",
+          "RamTarget,-1538433122389995208",
+          "StrafeAndSaw,-6548556982800039998",
+          "ChaseAndSaw,6554629429521029137",
+          "StrafeAndNailgun,3479418408753520801",
+          "ChaseAndNailgun,4325241578317999058",
+          "BackupAndRailgun,4410423412228762371",
+          "ChaseAndRailgun,-8570131699865458619",
+          "StrafeAndRailgun,6347420443912555621",
+          "StrafeAndGrenadeLauncher,1214324470660413153",
+          "ChaseAndGrenadeLauncher,-1896561381178252083",
+          "SwitchOffNailgun,6881818342974969042",
+          "ChaseEnemy,-6752270673184613041"
+        ]
+      },
+      "pickups": null
     },
     "TreebotMonsterMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "KnockBackEnemy,-4536278522439626127",
-        "FireEnsnare,-7302582342772695047",
-        "FireMortar,4445887828282925475",
-        "StrafeAndFireSyringe,5600043540790862425",
-        "ChaseAndFireSyringe,7140245274253875920",
-        "ChaseEnemy,-2205095658250748416"
-      ]
+      "_name": "TreebotMonsterMaster",
+      "body": "TreebotBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "KnockBackEnemy,-4536278522439626127",
+          "FireEnsnare,-7302582342772695047",
+          "FireMortar,4445887828282925475",
+          "StrafeAndFireSyringe,5600043540790862425",
+          "ChaseAndFireSyringe,7140245274253875920",
+          "ChaseEnemy,-2205095658250748416"
+        ]
+      },
+      "pickups": null
     },
     "VagrantMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "FireNova,-5173235482855641174",
-        "TrackingBomb,-7470000487722972210",
-        "Barrage,5778250860753617220",
-        "Chase,-1101872705306239814"
-      ]
+      "_name": "VagrantMaster",
+      "body": "VagrantBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "FireNova,-5173235482855641174",
+          "TrackingBomb,-7470000487722972210",
+          "Barrage,5778250860753617220",
+          "Chase,-1101872705306239814"
+        ]
+      },
+      "pickups": null
     },
     "VultureMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "ToLanding,1066554460959773888",
-        "ToFlying,-6347246555409027052",
-        "ShootWindblade,-4930350089986853062",
-        "FollowNodeGraphToTarget,-3206024604265985925"
-      ]
+      "_name": "VultureMaster",
+      "body": "VultureBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "ToLanding,1066554460959773888",
+          "ToFlying,-6347246555409027052",
+          "ShootWindblade,-4930350089986853062",
+          "FollowNodeGraphToTarget,-3206024604265985925"
+        ]
+      },
+      "pickups": null
     },
     "WispSoulMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        ",2619803697667044120",
-        ",3015802182920010014",
-        ",-3011376146841975688",
-        ",4259240355592610301"
-      ]
+      "_name": "WispSoulMaster",
+      "body": "WispSoulBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          ",2619803697667044120",
+          ",3015802182920010014",
+          ",-3011376146841975688",
+          ",4259240355592610301"
+        ]
+      },
+      "pickups": null
     },
     "WispMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        ",-2457280967287227384",
-        ",4694120625842253079",
-        ",1439942892839955908",
-        ",4964964126508945668"
-      ]
+      "_name": "WispMaster",
+      "body": "WispBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          ",-2457280967287227384",
+          ",4694120625842253079",
+          ",1439942892839955908",
+          ",4964964126508945668"
+        ]
+      },
+      "pickups": null
     },
     "AcidLarvaMaster": {
-      "full_vision": true,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "LarvaLeap,-2399900171721980455",
-        "StrafeWhileWaitingForLeap,-1043697028112550057",
-        "ChaseOffNodegraph,-8208528590828921028",
-        "SprintNodeGraphToTarget,6320711249620551751"
-      ]
+      "_name": "AcidLarvaMaster",
+      "body": "AcidLarvaBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "LarvaLeap,-2399900171721980455",
+          "StrafeWhileWaitingForLeap,-1043697028112550057",
+          "ChaseOffNodegraph,-8208528590828921028",
+          "SprintNodeGraphToTarget,6320711249620551751"
+        ]
+      },
+      "pickups": null
     },
     "Assassin2Master": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Invisible (close, strafe),-5071965796639923054",
-        "Sword Slash,2719097229348194144",
-        "Fire Shuriken,-1768012416218751476",
-        "Invisible (far, chase),7647016954049295083",
-        "FollowNodeGraphToTarget,8604608137570258487"
-      ]
+      "_name": "Assassin2Master",
+      "body": "Assassin2Body",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Invisible (close, strafe),-5071965796639923054",
+          "Sword Slash,2719097229348194144",
+          "Fire Shuriken,-1768012416218751476",
+          "Invisible (far, chase),7647016954049295083",
+          "FollowNodeGraphToTarget,8604608137570258487"
+        ]
+      },
+      "pickups": null
     },
     "ClayGrenadierMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "FaceSlam,-3775544316195837956",
-        "LongDistanceMortar,2960162926549012226",
-        "ThrowBarrel,7863569948865266228",
-        "FollowNodeGraphToTarget,6907027949053743668"
-      ]
+      "_name": "ClayGrenadierMaster",
+      "body": "ClayGrenadierBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "FaceSlam,-3775544316195837956",
+          "LongDistanceMortar,2960162926549012226",
+          "ThrowBarrel,7863569948865266228",
+          "FollowNodeGraphToTarget,6907027949053743668"
+        ]
+      },
+      "pickups": null
     },
     "DroneCommanderMaster": {
-      "full_vision": true,
-      "no_friendly_fire": true,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "HardLeashToLeader,5011095990514943963",
-        "SoftLeashAttack,-6850300141103804850",
-        "IdleNearLeaderWhenNoEnemies,6234106526921409794",
-        "ReturnToLeaderWhenNoEnemies,-344448477045725131"
-      ]
+      "_name": "DroneCommanderMaster",
+      "body": "DroneCommanderBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": true,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "HardLeashToLeader,5011095990514943963",
+          "SoftLeashAttack,-6850300141103804850",
+          "IdleNearLeaderWhenNoEnemies,6234106526921409794",
+          "ReturnToLeaderWhenNoEnemies,-344448477045725131"
+        ]
+      },
+      "pickups": null
     },
     "AffixEarthHealerMaster": {
-      "full_vision": true,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "None,692677512912469759"
-      ]
+      "_name": "AffixEarthHealerMaster",
+      "body": "AffixEarthHealerBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "None,692677512912469759"
+        ]
+      },
+      "pickups": null
     },
     "VoidInfestorMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Flee,9213051329680836477",
-        "Infest,-7732964390893435792",
-        "ChaseOffNodegraph,-2085299776153425989",
-        "FollowNodeGraphToTarget,-2051798763721899609"
-      ]
+      "_name": "VoidInfestorMaster",
+      "body": "VoidInfestorBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Flee,9213051329680836477",
+          "Infest,-7732964390893435792",
+          "ChaseOffNodegraph,-2085299776153425989",
+          "FollowNodeGraphToTarget,-2051798763721899609"
+        ]
+      },
+      "pickups": {
+        "overwrite_equipment": true,
+        "equipment": null,
+        "items": [
+          [
+            "HealthDecay",
+            30,
+            false
+          ]
+        ]
+      }
     },
     "FlyingVerminMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "ShootSpit,-2984017077680889930",
-        "StrafeWhileWaitingForSpit,-7572280636084982388",
-        "FollowNodeGraphToTarget,-8683977014774700809"
-      ]
+      "_name": "FlyingVerminMaster",
+      "body": "FlyingVerminBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "ShootSpit,-2984017077680889930",
+          "StrafeWhileWaitingForSpit,-7572280636084982388",
+          "FollowNodeGraphToTarget,-8683977014774700809"
+        ]
+      },
+      "pickups": null
     },
     "GupMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Spike,4282334784969447017",
-        "FollowNodeGraphToTarget,4002241191272714027"
-      ]
+      "_name": "GupMaster",
+      "body": "GupBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Spike,4282334784969447017",
+          "FollowNodeGraphToTarget,4002241191272714027"
+        ]
+      },
+      "pickups": null
     },
     "GipMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Spike,-8103278698962545378",
-        "FollowNodeGraphToTarget,-8138625626525301788"
-      ]
+      "_name": "GipMaster",
+      "body": "GipBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Spike,-8103278698962545378",
+          "FollowNodeGraphToTarget,-8138625626525301788"
+        ]
+      },
+      "pickups": null
     },
     "GeepMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Spike,-6467730999487019715",
-        "FollowNodeGraphToTarget,2357281909671894177"
-      ]
+      "_name": "GeepMaster",
+      "body": "GeepBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Spike,-6467730999487019715",
+          "FollowNodeGraphToTarget,2357281909671894177"
+        ]
+      },
+      "pickups": null
     },
     "MajorConstructMaster": {
-      "full_vision": true,
-      "no_friendly_fire": true,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "SpawnMinorConstructs,1286957445803353184",
-        "SwitchStance,5372933640738798090",
-        "Shooty,-4903305936087526696",
-        "LookAtTarget,4284437388480323726",
-        "SearchForTarget,-6924552044837010701"
-      ]
+      "_name": "MajorConstructMaster",
+      "body": "MajorConstructBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": true,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "SpawnMinorConstructs,1286957445803353184",
+          "SwitchStance,5372933640738798090",
+          "Shooty,-4903305936087526696",
+          "LookAtTarget,4284437388480323726",
+          "SearchForTarget,-6924552044837010701"
+        ]
+      },
+      "pickups": null
     },
     "MegaConstructMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Guard",
-      "main_state": "EntityStates.AI.Walker.Guard",
-      "drivers": [
-        "SpawnMinorConstructs,9177845723716468168",
-        "Shield,-4386323926989971603",
-        "FollowFast,2080835069330701349",
-        "ShootStep,3868388632249592206",
-        "FollowStep,-4641016815799602039",
-        "StrafeStep,-5721227227743081651",
-        "FleeStep,3505260809044073704",
-        "StopStep,423057637949276754"
-      ]
+      "_name": "MegaConstructMaster",
+      "body": "MegaConstructBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Guard",
+        "main_state": "EntityStates.AI.Walker.Guard",
+        "drivers": [
+          "SpawnMinorConstructs,9177845723716468168",
+          "Shield,-4386323926989971603",
+          "FollowFast,2080835069330701349",
+          "ShootStep,3868388632249592206",
+          "FollowStep,-4641016815799602039",
+          "StrafeStep,-5721227227743081651",
+          "FleeStep,3505260809044073704",
+          "StopStep,423057637949276754"
+        ]
+      },
+      "pickups": null
     },
     "MinorConstructOnKillMaster": {
-      "full_vision": true,
-      "no_friendly_fire": true,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Shooty,4103563463603068279",
-        "SearchForTarget,8797243931302716133"
-      ]
+      "_name": "MinorConstructOnKillMaster",
+      "body": "MinorConstructOnKillBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": true,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Shooty,4103563463603068279",
+          "SearchForTarget,8797243931302716133"
+        ]
+      },
+      "pickups": null
     },
     "MinorConstructAttachableMaster": {
-      "full_vision": true,
-      "no_friendly_fire": true,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Shooty,9024608143043552535",
-        "SearchForTarget,-5480050180089351208"
-      ]
+      "_name": "MinorConstructAttachableMaster",
+      "body": "MinorConstructAttachableBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": true,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Shooty,9024608143043552535",
+          "SearchForTarget,-5480050180089351208"
+        ]
+      },
+      "pickups": null
     },
     "MinorConstructMaster": {
-      "full_vision": true,
-      "no_friendly_fire": true,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Shooty,-567776955916309166",
-        "SearchForTarget,8690326330742924689"
-      ]
+      "_name": "MinorConstructMaster",
+      "body": "MinorConstructBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": true,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Shooty,-567776955916309166",
+          "SearchForTarget,8690326330742924689"
+        ]
+      },
+      "pickups": null
     },
     "RailgunnerMonsterMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Prep Special Attack,2151939141085484136",
-        "Strafe and Shoot SMG,4547196952683628506",
-        "Zoom in on enemy,5111042573372926930",
-        "Attempt to Snipe,-8818431689987846428",
-        "Throw Mine at Enemy,-1363260625339816602",
-        "Back up a little for comfort,5924593710494281872",
-        "Chase Enemy,-1856805646047874566"
-      ]
+      "_name": "RailgunnerMonsterMaster",
+      "body": "RailgunnerBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Prep Special Attack,2151939141085484136",
+          "Strafe and Shoot SMG,4547196952683628506",
+          "Zoom in on enemy,5111042573372926930",
+          "Attempt to Snipe,-8818431689987846428",
+          "Throw Mine at Enemy,-1363260625339816602",
+          "Back up a little for comfort,5924593710494281872",
+          "Chase Enemy,-1856805646047874566"
+        ]
+      },
+      "pickups": null
     },
-    "RailgunnerMaster": null,
+    "RailgunnerMaster": {
+      "_name": "RailgunnerMaster",
+      "body": null,
+      "ai": null,
+      "pickups": null
+    },
     "VerminMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "PreBiteStrafe,7273791139785580385",
-        "Bite,1609479054727906734",
-        "ChaseOffNodegraph,-1653402231751361611",
-        "ChaseNear,-3254436904275940240",
-        "ChaseMedium,4208282628028607182",
-        "FollowNodeGraphToTarget,7865354557276512578",
-        "RunToFriendly,8677035013194712527"
-      ]
+      "_name": "VerminMaster",
+      "body": "VerminBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "PreBiteStrafe,7273791139785580385",
+          "Bite,1609479054727906734",
+          "ChaseOffNodegraph,-1653402231751361611",
+          "ChaseNear,-3254436904275940240",
+          "ChaseMedium,4208282628028607182",
+          "FollowNodeGraphToTarget,7865354557276512578",
+          "RunToFriendly,8677035013194712527"
+        ]
+      },
+      "pickups": null
     },
     "VoidBarnacleNoCastMaster": {
-      "full_vision": true,
-      "no_friendly_fire": true,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Shooty,8461700337226304797",
-        "SearchForTarget,7986586633595036460"
-      ]
+      "_name": "VoidBarnacleNoCastMaster",
+      "body": "VoidBarnacleNoCastBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": true,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Shooty,8461700337226304797",
+          "SearchForTarget,7986586633595036460"
+        ]
+      },
+      "pickups": null
     },
     "VoidBarnacleMaster": {
-      "full_vision": true,
-      "no_friendly_fire": true,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Shooty,-8835707492610678970",
-        "SearchForTarget,8623307243551903145"
-      ]
+      "_name": "VoidBarnacleMaster",
+      "body": "VoidBarnacleBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": true,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Shooty,-8835707492610678970",
+          "SearchForTarget,8623307243551903145"
+        ]
+      },
+      "pickups": null
     },
     "VoidBarnacleAllyMaster": {
-      "full_vision": true,
-      "no_friendly_fire": true,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Shooty,-519912321551475540",
-        "SearchForTarget,-2230845989031407856"
-      ]
+      "_name": "VoidBarnacleAllyMaster",
+      "body": "VoidBarnacleNoCastBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": true,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Shooty,-519912321551475540",
+          "SearchForTarget,-2230845989031407856"
+        ]
+      },
+      "pickups": null
     },
     "VoidJailerAllyMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Capture,1587039744239239147",
-        "PrimaryCharge,-3839077250704031110",
-        "PrimaryStrafe,-5722053188382936198",
-        "PathFromAfar,-6743120444474806604"
-      ]
+      "_name": "VoidJailerAllyMaster",
+      "body": "VoidJailerAllyBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Capture,1587039744239239147",
+          "PrimaryCharge,-3839077250704031110",
+          "PrimaryStrafe,-5722053188382936198",
+          "PathFromAfar,-6743120444474806604"
+        ]
+      },
+      "pickups": null
     },
     "VoidJailerMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Capture,-4995215874549841342",
-        "PrimaryCharge,4012938799860872563",
-        "PrimaryStrafe,9156924250615702642",
-        "PathFromAfar,4262874101091052266"
-      ]
+      "_name": "VoidJailerMaster",
+      "body": "VoidJailerBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Capture,-4995215874549841342",
+          "PrimaryCharge,4012938799860872563",
+          "PrimaryStrafe,9156924250615702642",
+          "PathFromAfar,4262874101091052266"
+        ]
+      },
+      "pickups": null
     },
     "VoidMegaCrabAllyMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "FireBackMissiles,-148274237153175951",
-        "FireSecondaryStrafe,2855918428521714121",
-        "FirePrimaryStrafe,8788106785612743907",
-        "FireSecondaryChase,766027374856931559",
-        "FirePrimaryChase,-4262872691196074407",
-        "Chase,-5969756490510207080"
-      ]
+      "_name": "VoidMegaCrabAllyMaster",
+      "body": "VoidMegaCrabAllyBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "FireBackMissiles,-148274237153175951",
+          "FireSecondaryStrafe,2855918428521714121",
+          "FirePrimaryStrafe,8788106785612743907",
+          "FireSecondaryChase,766027374856931559",
+          "FirePrimaryChase,-4262872691196074407",
+          "Chase,-5969756490510207080"
+        ]
+      },
+      "pickups": null
     },
     "VoidMegaCrabMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "FireBackMissiles,3731373797116628968",
-        "FireSecondaryStrafe,-687390343221361527",
-        "FirePrimaryStrafe,-1693355634455572185",
-        "FireSecondaryChase,854793884569281755",
-        "FirePrimaryChase,5511176657352425557",
-        "Chase,4556043106884531140"
-      ]
+      "_name": "VoidMegaCrabMaster",
+      "body": "VoidMegaCrabBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "FireBackMissiles,3731373797116628968",
+          "FireSecondaryStrafe,-687390343221361527",
+          "FirePrimaryStrafe,-1693355634455572185",
+          "FireSecondaryChase,854793884569281755",
+          "FirePrimaryChase,5511176657352425557",
+          "Chase,4556043106884531140"
+        ]
+      },
+      "pickups": null
     },
     "MiniVoidRaidCrabMasterPhase1": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Ult,488631386169047292",
-        "Back Up,-5375897604053535215",
-        "SpinBeam,301344179867705852",
-        "MultiBeam,7723340217109777474",
-        "EyeMissiles,-2619285359539949707",
-        "Strafe,5130416286463425677",
-        "Chase,7049861052659573440"
-      ]
+      "_name": "MiniVoidRaidCrabMasterPhase1",
+      "body": "MiniVoidRaidCrabBodyPhase1",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Ult,488631386169047292",
+          "Back Up,-5375897604053535215",
+          "SpinBeam,301344179867705852",
+          "MultiBeam,7723340217109777474",
+          "EyeMissiles,-2619285359539949707",
+          "Strafe,5130416286463425677",
+          "Chase,7049861052659573440"
+        ]
+      },
+      "pickups": {
+        "overwrite_equipment": true,
+        "equipment": null,
+        "items": [
+          [
+            "AdaptiveArmor",
+            1,
+            false
+          ]
+        ]
+      }
     },
     "MiniVoidRaidCrabMasterBase": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Ult,671468506347550168",
-        "Back Up,-4295135403258452480",
-        "SpinBeam,7585766723336920986",
-        "MultiBeam,6958897529381333817",
-        "EyeMissiles,8375920880149266219",
-        "Strafe,8027526884228018384",
-        "Chase,1469047846707490189"
-      ]
+      "_name": "MiniVoidRaidCrabMasterBase",
+      "body": "MiniVoidRaidCrabBodyBase",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Ult,671468506347550168",
+          "Back Up,-4295135403258452480",
+          "SpinBeam,7585766723336920986",
+          "MultiBeam,6958897529381333817",
+          "EyeMissiles,8375920880149266219",
+          "Strafe,8027526884228018384",
+          "Chase,1469047846707490189"
+        ]
+      },
+      "pickups": {
+        "overwrite_equipment": true,
+        "equipment": null,
+        "items": [
+          [
+            "AdaptiveArmor",
+            1,
+            false
+          ]
+        ]
+      }
     },
     "MiniVoidRaidCrabMasterPhase3": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Ult,-1388676614881406831",
-        "Back Up,6071018626865505630",
-        "SpinBeam,6625294659953374810",
-        "MultiBeam,-6720122626505722977",
-        "EyeMissiles,2110686488168683304",
-        "Strafe,-8167063785435426907",
-        "Chase,-1011844419303884700"
-      ]
+      "_name": "MiniVoidRaidCrabMasterPhase3",
+      "body": "MiniVoidRaidCrabBodyPhase3",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Ult,-1388676614881406831",
+          "Back Up,6071018626865505630",
+          "SpinBeam,6625294659953374810",
+          "MultiBeam,-6720122626505722977",
+          "EyeMissiles,2110686488168683304",
+          "Strafe,-8167063785435426907",
+          "Chase,-1011844419303884700"
+        ]
+      },
+      "pickups": {
+        "overwrite_equipment": true,
+        "equipment": null,
+        "items": [
+          [
+            "AdaptiveArmor",
+            1,
+            false
+          ]
+        ]
+      }
     },
-    "VoidRaidCrabJointMaster": null,
+    "VoidRaidCrabJointMaster": {
+      "_name": "VoidRaidCrabJointMaster",
+      "body": "VoidRaidCrabJointBody",
+      "ai": null,
+      "pickups": {
+        "overwrite_equipment": true,
+        "equipment": null,
+        "items": [
+          [
+            "AdaptiveArmor",
+            1,
+            false
+          ]
+        ]
+      }
+    },
     "MiniVoidRaidCrabMasterPhase2": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Ult,-3707259016848189137",
-        "Back Up,-7027267034673363449",
-        "SpinBeam,-4887015408550476640",
-        "MultiBeam,-5418995872343814086",
-        "EyeMissiles,6127966804393331835",
-        "Strafe,8843093208124982404",
-        "Chase,4493917480702003764"
-      ]
+      "_name": "MiniVoidRaidCrabMasterPhase2",
+      "body": "MiniVoidRaidCrabBodyPhase2",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Ult,-3707259016848189137",
+          "Back Up,-7027267034673363449",
+          "SpinBeam,-4887015408550476640",
+          "MultiBeam,-5418995872343814086",
+          "EyeMissiles,6127966804393331835",
+          "Strafe,8843093208124982404",
+          "Chase,4493917480702003764"
+        ]
+      },
+      "pickups": {
+        "overwrite_equipment": true,
+        "equipment": null,
+        "items": [
+          [
+            "AdaptiveArmor",
+            1,
+            false
+          ]
+        ]
+      }
     },
     "VoidRaidCrabMaster": {
-      "full_vision": true,
-      "no_friendly_fire": true,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Final Stand,-3100770088637393655",
-        "Channel Gauntlet 2,2301901113356683642",
-        "Channel Gauntlet 1,8578979649735400889",
-        "WardWipe,-3101564256978072233",
-        "Vacuum Attack,-1036852237204306793",
-        "SpinBeam,-2465886766801874908",
-        "GravityBump,-2974765403628831480",
-        "FireMissiles,-440153850165963000",
-        "FireMultiBeam,7082938084260334774",
-        "LookAtTarget,-3064652662624148590",
-        "Force Release All Buttons,-1726261622952660220"
-      ]
+      "_name": "VoidRaidCrabMaster",
+      "body": "VoidRaidCrabBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": true,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Final Stand,-3100770088637393655",
+          "Channel Gauntlet 2,2301901113356683642",
+          "Channel Gauntlet 1,8578979649735400889",
+          "WardWipe,-3101564256978072233",
+          "Vacuum Attack,-1036852237204306793",
+          "SpinBeam,-2465886766801874908",
+          "GravityBump,-2974765403628831480",
+          "FireMissiles,-440153850165963000",
+          "FireMultiBeam,7082938084260334774",
+          "LookAtTarget,-3064652662624148590",
+          "Force Release All Buttons,-1726261622952660220"
+        ]
+      },
+      "pickups": {
+        "overwrite_equipment": true,
+        "equipment": null,
+        "items": [
+          [
+            "AdaptiveArmor",
+            1,
+            false
+          ]
+        ]
+      }
     },
     "VoidSurvivorMonsterMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Fire Corrupt Beam,-3115284130696451702",
-        "Charge and Fire Secondary Ball,5962841384430582112",
-        "Fire Corrupt Ball,1273310976748454793",
-        "Void Blink Up,2159118772755594665",
-        "Void Blink Corrupt Down,-4667898616052167497",
-        "Crush Self Heal,3552676454395596962",
-        "Flee and Heal,8337108570657673727",
-        "Fire Hand Beam,-8233759945177340359",
-        "Chase,7835943073194729343",
-        "Chase Aggressively Corrupted,-5038222213048277836",
-        "Back up a little for comfort,-5394380262160713443"
-      ]
+      "_name": "VoidSurvivorMonsterMaster",
+      "body": "VoidSurvivorBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Fire Corrupt Beam,-3115284130696451702",
+          "Charge and Fire Secondary Ball,5962841384430582112",
+          "Fire Corrupt Ball,1273310976748454793",
+          "Void Blink Up,2159118772755594665",
+          "Void Blink Corrupt Down,-4667898616052167497",
+          "Crush Self Heal,3552676454395596962",
+          "Flee and Heal,8337108570657673727",
+          "Fire Hand Beam,-8233759945177340359",
+          "Chase,7835943073194729343",
+          "Chase Aggressively Corrupted,-5038222213048277836",
+          "Back up a little for comfort,-5394380262160713443"
+        ]
+      },
+      "pickups": null
     },
     "AncientWispMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": []
+      "_name": "AncientWispMaster",
+      "body": "AncientWispBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": []
+      },
+      "pickups": null
     },
     "ArchWispMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        ",-1293671107708173235",
-        ",6639555010396512370",
-        ",3769046567220641227"
-      ]
+      "_name": "ArchWispMaster",
+      "body": "ArchWispBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          ",-1293671107708173235",
+          ",6639555010396512370",
+          ",3769046567220641227"
+        ]
+      },
+      "pickups": null
     },
     "BeetleCrystalMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "HeadbuttOffNodegraph,4576358147936769185",
-        "ChaseOffNodegraph,6826989623377164022",
-        "FollowNodeGraphToTarget,-1911919174362692313"
-      ]
+      "_name": "BeetleCrystalMaster",
+      "body": "BeetleCrystalBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "HeadbuttOffNodegraph,4576358147936769185",
+          "ChaseOffNodegraph,6826989623377164022",
+          "FollowNodeGraphToTarget,-1911919174362692313"
+        ]
+      },
+      "pickups": {
+        "overwrite_equipment": true,
+        "equipment": null,
+        "items": [
+          [
+            "",
+            2,
+            false
+          ]
+        ]
+      }
     },
     "BeetleGuardMasterCrystal": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Slam,-2183564591654149267",
-        "ReturnToOwnerLeash,-618918512037971845",
-        "StrafeBecausePrimaryIsntReady,-918934658236444375",
-        "ChaseOffNodegraph,3313682679561252512",
-        "FireSunder,1236821320415536675",
-        "Chase,-99540339729856542",
-        "ReturnToLeaderDefault,1582629426257650572",
-        "WaitNearLeaderDefault,4539896340613611403"
-      ]
+      "_name": "BeetleGuardMasterCrystal",
+      "body": "BeetleGuardCrystalBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Slam,-2183564591654149267",
+          "ReturnToOwnerLeash,-618918512037971845",
+          "StrafeBecausePrimaryIsntReady,-918934658236444375",
+          "ChaseOffNodegraph,3313682679561252512",
+          "FireSunder,1236821320415536675",
+          "Chase,-99540339729856542",
+          "ReturnToLeaderDefault,1582629426257650572",
+          "WaitNearLeaderDefault,4539896340613611403"
+        ]
+      },
+      "pickups": {
+        "overwrite_equipment": true,
+        "equipment": null,
+        "items": [
+          [
+            "",
+            2,
+            false
+          ]
+        ]
+      }
     },
     "BrotherGlassMaster": {
-      "full_vision": true,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Guard",
-      "main_state": "EntityStates.AI.Walker.Guard",
-      "drivers": [
-        "CastUlt,-7389219762955713778",
-        "Leap to Center,3791645797247996729",
-        "DashStrafe,8314728667115057282",
-        "DashForward,6677486741408915917",
-        "SprintBash,-1417659415962753001",
-        "WeaponSlam,1725658659444206",
-        "Sprint and FireLunarShards,3095642312089294671",
-        "Walk After Target Off Nodegraph,-9120093350246229805",
-        "Sprint After Target,2007430885147772934",
-        "Follow Nodegraph,-5485372827539946887"
-      ]
+      "_name": "BrotherGlassMaster",
+      "body": "BrotherGlassBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Guard",
+        "main_state": "EntityStates.AI.Walker.Guard",
+        "drivers": [
+          "CastUlt,-7389219762955713778",
+          "Leap to Center,3791645797247996729",
+          "DashStrafe,8314728667115057282",
+          "DashForward,6677486741408915917",
+          "SprintBash,-1417659415962753001",
+          "WeaponSlam,1725658659444206",
+          "Sprint and FireLunarShards,3095642312089294671",
+          "Walk After Target Off Nodegraph,-9120093350246229805",
+          "Sprint After Target,2007430885147772934",
+          "Follow Nodegraph,-5485372827539946887"
+        ]
+      },
+      "pickups": {
+        "overwrite_equipment": true,
+        "equipment": null,
+        "items": [
+          [
+            "AdaptiveArmor",
+            1,
+            false
+          ]
+        ]
+      }
     },
     "ClaymanMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        ",7922982763374554503",
-        ",6131688452894457196",
-        ",-3367816324366180865"
-      ]
+      "_name": "ClaymanMaster",
+      "body": "ClayBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          ",7922982763374554503",
+          ",6131688452894457196",
+          ",-3367816324366180865"
+        ]
+      },
+      "pickups": null
     },
     "EngiBeamTurretMaster": {
-      "full_vision": true,
-      "no_friendly_fire": true,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        ",-2869663066143431251"
-      ]
+      "_name": "EngiBeamTurretMaster",
+      "body": "EngiBeamTurretBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": true,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          ",-2869663066143431251"
+        ]
+      },
+      "pickups": null
     },
     "ParentPodMaster": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Cocoon,-9199436017337988229"
-      ]
+      "_name": "ParentPodMaster",
+      "body": "ParentPodBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Cocoon,-9199436017337988229"
+        ]
+      },
+      "pickups": null
     },
     "LemurianBruiserMasterHaunted": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Flamebreath,-8140259953264774630",
-        "RunAndShoot,-2918060903362644077",
-        "StopAndShoot,-2230319270168031337",
-        "ChaseTarget,-7493128931052913988"
-      ]
+      "_name": "LemurianBruiserMasterHaunted",
+      "body": "LemurianBruiserBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Flamebreath,-8140259953264774630",
+          "RunAndShoot,-2918060903362644077",
+          "StopAndShoot,-2230319270168031337",
+          "ChaseTarget,-7493128931052913988"
+        ]
+      },
+      "pickups": null
     },
     "LemurianBruiserMasterPoison": {
-      "full_vision": false,
-      "no_friendly_fire": false,
-      "enemy_attention": 5.0,
-      "initial_state": "EntityStates.AI.Walker.Wander",
-      "main_state": "EntityStates.AI.Walker.Wander",
-      "drivers": [
-        "Flamebreath,-8916627863817072841",
-        "RunAndShoot,6053059007331702410",
-        "StopAndShoot,3615518007502740686",
-        "ChaseTarget,-4152283952955211014"
-      ]
+      "_name": "LemurianBruiserMasterPoison",
+      "body": "LemurianBruiserBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Flamebreath,-8916627863817072841",
+          "RunAndShoot,6053059007331702410",
+          "StopAndShoot,3615518007502740686",
+          "ChaseTarget,-4152283952955211014"
+        ]
+      },
+      "pickups": null
     }
   },
   "AI_driver": {

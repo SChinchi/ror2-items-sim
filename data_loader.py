@@ -44,16 +44,6 @@ class DirectorCard:
         return f'({self.spawn_card._name}, {self.weight}, {self.min_stages_cleared})'
 
 
-class Master:
-    def __init__(self, name, data):
-        self.name = name
-        for key, value in data.items():
-            setattr(self, key, value)
-
-    def __repr__(self):
-        return self.name
-
-
 class Scene:
     def __init__(self, name, data):
         self.name = name
@@ -110,11 +100,17 @@ def _init_body(data):
     return body
 
 
-def _init_master(name, data):
-    master = Master(name, data) if data else None
-    if master is not None:
-        for i, name in enumerate(master.drivers):
-            master.drivers[i] = drivers[name]
+def _init_master(data):
+    master = CharacterMaster(data)
+    if master.body:
+        master.body = bodies[master.body]
+    if master.ai:
+        for i, name in enumerate(master.ai.drivers):
+            master.ai.drivers[i] = drivers[name]
+    if master.pickups:
+        if master.pickups.equipment:
+            master.pickups.equipment = getattr(Equipment, master.pickups.equipment)
+        master.pickups.items = [(getattr(Items, i), c, e) for i, c, e in master.pickups.items if i]
     return master
 
 
@@ -211,7 +207,7 @@ for driver in drivers.values():
     if driver.next_high_priority:
         driver.next_high_priority = drivers[driver.next_high_priority]
 del driver
-masters = {name: _init_master(name, data) for name, data in load_data('masters')['masters'].items()}
+masters = {name: _init_master(data) for name, data in load_data('masters')['masters'].items()}
 csc = {name: _init_csc(data) for name, data in load_data('csc').items()}
 dccs = {name: _init_dccs(data) for name, data in load_data('dccs').items()}
 scenes = {name: Scene(name, data) for name, data in load_data('scenes').items()}

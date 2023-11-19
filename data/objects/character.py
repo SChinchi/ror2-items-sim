@@ -47,10 +47,6 @@ class CharacterBody:
         }
 
 
-class CharacterMaster:
-    SCRIPT = -7300313650832695883
-
-
 class DeathRewards:
     SCRIPT = 8463862091779802982
 
@@ -68,8 +64,40 @@ class SetStateOnHurt:
         }
 
 
+class CharacterMaster:
+    SCRIPT = -7300313650832695883
+
+    def __init__(self, data):
+        for key, value in data.items():
+            setattr(self, key, value)
+        if self.ai:
+            self.ai = BaseAI(self.ai)
+        if self.pickups:
+            self.pickups = GivePickupsOnStart(self.pickups)
+
+    def __repr__(self):
+        return self._name
+
+    @staticmethod
+    def parse(asset):
+        return {
+            # To be filled out once all file ids have been collected
+            '_name': asset['m_GameObject']['m_PathID'],
+            # To be filled out once all file ids have been collected
+            'body': asset['bodyPrefab']['m_PathID'],
+            # To be filled out once all file ids have been collected
+            'ai': asset['m_GameObject']['m_PathID'],
+            # To be filled out once all file ids have been collected
+            'pickups': asset['m_GameObject']['m_PathID'],
+        }
+
+
 class BaseAI:
     SCRIPT = 8404199760932312366
+
+    def __init__(self, data):
+        for key, value in data.items():
+            setattr(self, key, value)
 
     @staticmethod
     def parse(asset, ids):
@@ -122,4 +150,33 @@ class AISkillDriver:
             'no_repeat': bool(asset['noRepeat']),
             # To be filled out once all file ids have been collected
             'next_high_priority': asset['nextHighPriorityOverride']['m_PathID'],
+        }
+
+
+class GivePickupsOnStart:
+    SCRIPT = 7377157888656513569
+
+    def __init__(self, data):
+        for key, value in data.items():
+            setattr(self, key, value)
+
+    @staticmethod
+    def parse(asset, ids):
+        equipment = None
+        if asset['equipmentDef']['m_PathID']:
+            equipment = ids[asset['equipmentDef']['m_PathID']['m_Name']]
+        elif asset['equipmentString']:
+            equipment = asset['equipmentString']
+        items = []
+        for itemInfo in asset['itemDefInfos']:
+            if itemInfo['itemDef']['m_PathID']:
+                items.append((ids[itemInfo['itemDef']['m_PathID']]['m_Name'],
+                              itemInfo['count'],
+                              bool(itemInfo['dontExceedCount'])))
+        for itemInfo in asset['itemInfos']:
+            items.append((itemInfo['itemString'], itemInfo['count'], False))
+        return {
+            'overwrite_equipment': bool(asset['overwriteEquipment']),
+            'equipment': equipment,
+            'items': items,
         }
