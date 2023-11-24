@@ -64,6 +64,7 @@ class EquipmentDef:
             'cooldown': asset['cooldown'],
             'can_drop': asset['canDrop'],
             'death_drop_chance': round_value(asset['dropOnDeathChance']),
+            'randomly_triggered': bool(asset['canBeRandomlyTriggered']),
             'enigma_compatible': bool(asset['enigmaCompatible']),
             'is_lunar': bool(asset['isLunar']),
             'is_boss': bool(asset['isBoss']),
