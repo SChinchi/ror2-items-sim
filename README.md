@@ -2,6 +2,8 @@
 
 Simulate item generation for any stage and collect statistics for the spawned interactables, or simulate a run session to see how many and what items are encountered.
 
+_Targetting game version 1.2.4.4_
+
 ## How to use
 
 Numpy is required to run the code, as is UnityPy if one requires extracting more data from the assets.
@@ -55,8 +57,9 @@ The `Run` class is an implementation of a run session, which can be used to anal
 - While it can handle items which spawn more interactables, e.g., Rusted Key, the lack of corruption means the Encrusted Cache will not spawn.
 - It selects the highest tier choice for Void Potentials and Shipping Request Forms.
 - The mechanics of items that can change the inventory, i.e., Egocentrism, Eulogy Zero, and Benthic Bloom, are not implemented, even though they are picked up.
-- The Bazaar Between Time is never visited, as it's only about context-related decisions. However, one can control when or whether to visit the Void Fields at all. Implementing the Seer Station for a bias towards specific environments may be added in a future version.
-- The choice to use the Gold/Artifact portals can be toggled. If more than one portal options are available on the same stage, the priority is Null > Artifact > Gold.
+- The Lunar Cauldrons and Shop in the Bazaar Between Time are not utilised as they are only about context-related decisions. However, one can set a stage preference for the Lunar Seer for a bias towards specific stages. One can also control when or whether to visit the Void Fields at all.
+- The code calculates how many Newt Altars can spawn on each stage, but it does not take into account whether they are reachable in order to open a Blue Portal. It is assumed that if at least one altar has spawned, it can be reached. Only one of the Distant Roost variants has a true chance of not spawning any altars, in which case the Lunar Seer cannot be used. However, a portal is forcefully opened for the Void Fields, simulating the scenario where if the player wants to visit the Void Fields after the first stage and is unable to, they restart the game.
+- The choice to use the Gold/Artifact portals can be toggled. If more than one portal options are available on the same stage, the priority is Blue (for Void Fields) > Artifact > Gold > Blue (for Lunar Seer) > normal stage RNG.
 - Bulwark's Ambry assumes the Artifact of Command is selected, which affects interactable generation.
 
 Throughout the stages it keeps track of various things, e.g., on which stage the Executive Card was found, how many multishops were purchased with it, how many Regenerating Scrap the player had at the end of each stage, etc.
@@ -65,9 +68,13 @@ Throughout the stages it keeps track of various things, e.g., on which stage the
 from run import Run
 
 r = Run()
-r.loot_stages(5, 1)   # Up to Sky Meadow and doing the Void Fields after the first stage
+# Up to Sky Meadow and doing the Void Fields after the first stage, no Lunar Seer bias
+r.loot_stages(5, 1)
 stats = r.stats.consolidate_data()
 print(stats['tiers'])
+
+# No Void Fields, prioritise Abandonded Aqueduct > Gilded Coast if available for the Lunar Seer for Stage 2
+run.loot_stages(10, stage_preferences={1: [SceneName.AA, SceneName.GC]})
 ```
 
 
@@ -90,19 +97,18 @@ simulate_run(10, 1, 2)   # Visiting the Void Fields after stage 1, 2 players
 Compute the Horde of Many chance for any stage on Monsoon difficulty. As this depends on the credits available for the Teleporter Boss Director, the chance is broken down in credit thresholds. Along with it, it provides the maximum time for that threshold to not be crossed for 0-3 activated Shrines of the Mountain.
 
 ```
+from constants import SceneName
 from sim_horde import compute_horde_chance
-for threshold, p, times in compute_horde_chance('dampcavesimple', 3):
+
+for threshold, p, times in compute_horde_chance(SceneName.AD, 3):
 	times = ''.join('{:>10s}'.format(str(t) if t else 'N/A') for t in times)
 	print(f'{str(threshold):<20s}{p:^8.3f}|{times}')
-```
 
-The number of players and whether the DLC is available can affect the result.
-
-```
 # 2 players, DLC disabled
-for threshold, p, times in compute_horde_chance('dampcavesimple', 3, 2, False):
+for threshold, p, times in compute_horde_chance(SceneName.AD, 3, 2, False):
     pass
 ```
+
 
 ## Data
 
@@ -112,7 +118,8 @@ Some of the game's data has been extracted and stored in `json` files under `dat
 - Item Tiers
 - Droptables
 - Spawn Cards
-- Bodies & Skills
+- Bodies & Masters
+- Skills
 - Director Card Category Selection
 - Scenes & Void Seed
 - Simulacrum Waves
