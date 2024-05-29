@@ -1686,6 +1686,29 @@
       },
       "pickups": null
     },
+    "DevotedLemurianMaster": {
+      "_name": "DevotedLemurianMaster",
+      "body": "LemurianBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": true,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "DevotedSecondarySkill,-4250181436592784317",
+          "StrafeAndShoot,8807731394288110750",
+          "ReturnToLeaderDefault,8327767131348125734",
+          "WaitNearLeaderDefault,5829196091342339304",
+          "StrafeNearbyEnemies,-9122179168338963792",
+          "ChaseFarEnemies,8410212479791929273",
+          "ReturnToOwnerLeash,365152500220574318",
+          "ChaseOffNodegraph,1921513038657211676",
+          "StopAndShoot,-6906070044642417739"
+        ]
+      },
+      "pickups": null
+    },
     "AcidLarvaMaster": {
       "_name": "AcidLarvaMaster",
       "body": "AcidLarvaBody",
@@ -14959,6 +14982,285 @@
       "require_grounded": false,
       "max_times_selected": -1,
       "move_type": 1,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "StrafeNearbyEnemies,-9122179168338963792": {
+      "name": "StrafeNearbyEnemies",
+      "skill_slot": 0,
+      "required_skill": null,
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        15.0
+      ],
+      "require_target_los": true,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 2,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "StopAndShoot,-6906070044642417739": {
+      "name": "StopAndShoot",
+      "skill_slot": 0,
+      "required_skill": null,
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        50.0,
+        80.0
+      ],
+      "require_target_los": true,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 0,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "DevotedSecondarySkill,-4250181436592784317": {
+      "name": "DevotedSecondarySkill",
+      "skill_slot": 1,
+      "required_skill": null,
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        15.0
+      ],
+      "require_target_los": true,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "ReturnToOwnerLeash,365152500220574318": {
+      "name": "ReturnToOwnerLeash",
+      "skill_slot": -1,
+      "required_skill": null,
+      "requires_skill_ready": false,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        100.0,
+        Infinity
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 2,
+      "aim_type": 2,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": true,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "ChaseOffNodegraph,1921513038657211676": {
+      "name": "ChaseOffNodegraph",
+      "skill_slot": -1,
+      "required_skill": null,
+      "requires_skill_ready": false,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        10.0,
+        25.0
+      ],
+      "require_target_los": true,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 1,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "WaitNearLeaderDefault,5829196091342339304": {
+      "name": "WaitNearLeaderDefault",
+      "skill_slot": -1,
+      "required_skill": null,
+      "requires_skill_ready": false,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        Infinity
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 0,
+      "target_type": 2,
+      "aim_type": 3,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "ReturnToLeaderDefault,8327767131348125734": {
+      "name": "ReturnToLeaderDefault",
+      "skill_slot": -1,
+      "required_skill": null,
+      "requires_skill_ready": false,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        15.0,
+        Infinity
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 2,
+      "aim_type": 2,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "ChaseFarEnemies,8410212479791929273": {
+      "name": "ChaseFarEnemies",
+      "skill_slot": 0,
+      "required_skill": null,
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        45.0
+      ],
+      "require_target_los": true,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 1,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "StrafeAndShoot,8807731394288110750": {
+      "name": "StrafeAndShoot",
+      "skill_slot": 0,
+      "required_skill": null,
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        65.0
+      ],
+      "require_target_los": true,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 2,
       "target_type": 0,
       "aim_type": 2,
       "should_sprint": false,

@@ -50,6 +50,11 @@ def _extract_names(src_path=LANGUAGE_DIR):
                 m = re.match('.*"([A-Z0-9_]+_NAME)".*:.*"(.*)".*\n', line)
                 if m:
                     names[m.group(1)] = m.group(2)
+    with open(path.join(src_path, 'cu8.json')) as f:
+        for line in f.readlines():
+            m = re.match('.*"([A-Z0-9_]+_NAME)".*:.*"(.*)".*\n', line)
+            if m:
+                names[m.group(1)] = m.group(2)
     return names
 
 
@@ -108,7 +113,7 @@ def extract_file_data(src_path=FILES_DIR):
     skills = {}
     dccs = {}
     for fname in os.listdir(src_path):
-        if re.match('(ror2-(base|dlc1|junk)-.*_text)|(ror2-dlc1_assets_all.bundle)', fname):
+        if re.match('(ror2-(base|dlc1|cu8|junk)-.*_text)|(ror2-dlc1_assets_all.bundle)|(ror2-cu8_assets_all.bundle)', fname):
             env = UnityPy.load(path.join(src_path, fname))
             cabs = [cab for file, cab in env.cabs.items() if '.' not in file]
             for cab in cabs:
@@ -283,7 +288,7 @@ def extract_file_data(src_path=FILES_DIR):
 
     scenes = {}
     for fname in os.listdir(src_path):
-        if re.match('ror2-(base|dlc1)-.*_scenedef', fname):
+        if re.match('ror2-(base|dlc1|cu8)-.*_scenedef', fname):
             scene_def = UnityPy.load(path.join(src_path, fname))
             for def_container in scene_def.container.values():
                 asset = def_container.get_obj().read_typetree()
@@ -301,6 +306,7 @@ def extract_file_data(src_path=FILES_DIR):
                         'stage_order': asset['stageOrder']-1,
                         'required_dlc': dlc_name,
                         'destinations': asset['destinationsGroup']['m_PathID'],
+                        'skip_devotion': bool(asset['needSkipDevotionRespawn']),
                         'stage_info': None,
                         'scene_director': None,
                         'newt': None,

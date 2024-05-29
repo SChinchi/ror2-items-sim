@@ -783,6 +783,20 @@
     "controller": "MultiShopController",
     "offers_choice": true
   },
+  "iscLemurianEgg": {
+    "class": "InteractableSpawnCard",
+    "_name": "iscLemurianEgg",
+    "name": "Lemurian Egg",
+    "required_flags": 0,
+    "forbidden_flags": 0,
+    "cost": 15,
+    "skip_with_sacrifice": false,
+    "sacrifice_weight": 1.0,
+    "limit": -1,
+    "drop_table": null,
+    "controller": null,
+    "offers_choice": false
+  },
   "iscCategoryChest2Utility": {
     "class": "InteractableSpawnCard",
     "_name": "iscCategoryChest2Utility",

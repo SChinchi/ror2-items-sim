@@ -1410,6 +1410,15 @@
     ]
   },
   {
+    "_name": "LemurianHarness",
+    "name": "ITEM_LEMURIANHARNESS_NAME",
+    "tier": "NoTier",
+    "hidden": true,
+    "can_remove": true,
+    "required_dlc": null,
+    "tags": []
+  },
+  {
     "_name": "AttackSpeedAndMoveSpeed",
     "name": "Mocha",
     "tier": "Tier1",

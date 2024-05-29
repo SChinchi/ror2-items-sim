@@ -1506,7 +1506,7 @@
   "LemurianBruiserBody": {
     "_name": "LemurianBruiserBody",
     "name": "Elder Lemurian",
-    "flags": 0,
+    "flags": 4096,
     "health": [
       900.0,
       270.0
@@ -1538,7 +1538,7 @@
   "LemurianBody": {
     "_name": "LemurianBody",
     "name": "Lemurian",
-    "flags": 0,
+    "flags": 4096,
     "health": [
       80.0,
       24.0
