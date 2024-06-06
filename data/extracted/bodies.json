@@ -1,4 +1,70 @@
 {
+  "AcidLarvaBody": {
+    "_name": "AcidLarvaBody",
+    "name": "Larva",
+    "flags": 0,
+    "health": [
+      45.0,
+      14.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      11.0,
+      2.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 1.5,
+    "sprint_multiplier": 8.0,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 16.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.5,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": "DLC1"
+  },
+  "AffixEarthHealerBody": {
+    "_name": "AffixEarthHealerBody",
+    "name": "Healing Core",
+    "flags": 256,
+    "health": [
+      50.0,
+      0.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      20.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
   "AltarSkeletonBody": {
     "_name": "AltarSkeletonBody",
     "name": "",
@@ -21,6 +87,72 @@
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 1.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "AncientWispBody": {
+    "_name": "AncientWispBody",
+    "name": "",
+    "flags": 0,
+    "health": [
+      1650.0,
+      495.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      65.0,
+      13.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 28.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "ArchWispBody": {
+    "_name": "ArchWispBody",
+    "name": "",
+    "flags": 0,
+    "health": [
+      1500.0,
+      450.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      25.0,
+      5.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 14.0,
     "jump": 1,
     "jump_power": 0.0,
     "armor": 1.0,
@@ -65,6 +197,138 @@
     "item_drop": null,
     "expansion": null
   },
+  "Assassin2Body": {
+    "_name": "Assassin2Body",
+    "name": "Assassin",
+    "flags": 0,
+    "health": [
+      120.0,
+      36.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.2,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 12.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 10.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.1,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
+  "AssassinBody": {
+    "_name": "AssassinBody",
+    "name": "Engineer",
+    "flags": 0,
+    "health": [
+      140.0,
+      42.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      19.0,
+      3.8
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 9.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 2,
+    "jump_power": 15.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "BackupDroneBody": {
+    "_name": "BackupDroneBody",
+    "name": "Strike Drone",
+    "flags": 2,
+    "health": [
+      225.0,
+      68.0
+    ],
+    "regen": [
+      5.0,
+      1.0
+    ],
+    "damage": [
+      7.0,
+      1.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 17.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 17.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "BackupDroneOldBody": {
+    "_name": "BackupDroneOldBody",
+    "name": "",
+    "flags": 2,
+    "health": [
+      150.0,
+      45.0
+    ],
+    "regen": [
+      2.0,
+      0.4
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 17.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 17.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
   "Bandit2Body": {
     "_name": "Bandit2Body",
     "name": "Bandit",
@@ -94,6 +358,105 @@
     "pain_threshold": 5.0,
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
+  "BanditBody": {
+    "_name": "BanditBody",
+    "name": "Bandit",
+    "flags": 16,
+    "health": [
+      100.0,
+      30.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 5.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
+  "BeetleBody": {
+    "_name": "BeetleBody",
+    "name": "Beetle",
+    "flags": 0,
+    "health": [
+      80.0,
+      24.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 6.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 40.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.2,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
+  "BeetleCrystalBody": {
+    "_name": "BeetleCrystalBody",
+    "name": "",
+    "flags": 0,
+    "health": [
+      10.0,
+      3.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 8.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 40.0,
+    "jump": 1,
+    "jump_power": 18.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.2,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
     "can_be_frozen": true,
     "item_drop": null,
     "expansion": null
@@ -133,6 +496,39 @@
   },
   "BeetleGuardBody": {
     "_name": "BeetleGuardBody",
+    "name": "Beetle Guard",
+    "flags": 0,
+    "health": [
+      480.0,
+      144.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 17.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 60.0,
+    "jump": 1,
+    "jump_power": 12.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.15,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
+  "BeetleGuardCrystalBody": {
+    "_name": "BeetleGuardCrystalBody",
     "name": "Beetle Guard",
     "flags": 0,
     "health": [
@@ -227,39 +623,6 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "BeetleBody": {
-    "_name": "BeetleBody",
-    "name": "Beetle",
-    "flags": 0,
-    "health": [
-      80.0,
-      24.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      12.0,
-      2.4
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 6.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 40.0,
-    "jump": 1,
-    "jump_power": 15.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": 0.2,
-    "can_be_hit_stunned": true,
-    "can_be_stunned": true,
-    "can_be_frozen": true,
     "item_drop": null,
     "expansion": null
   },
@@ -362,6 +725,105 @@
     "item_drop": null,
     "expansion": null
   },
+  "BomberBody": {
+    "_name": "BomberBody",
+    "name": "Bomber",
+    "flags": 0,
+    "health": [
+      220.0,
+      66.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      16.0,
+      3.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "BrotherBody": {
+    "_name": "BrotherBody",
+    "name": "Mithrix",
+    "flags": 2048,
+    "health": [
+      1000.0,
+      300.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      16.0,
+      3.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 15.0,
+    "sprint_multiplier": 2.6,
+    "acceleration": 45.0,
+    "jump": 1,
+    "jump_power": 25.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "pain_threshold": 0.15,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
+  "BrotherGlassBody": {
+    "_name": "BrotherGlassBody",
+    "name": "Mithrix",
+    "flags": 2048,
+    "health": [
+      2000.0,
+      600.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      4.0,
+      0.8
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 15.0,
+    "sprint_multiplier": 2.6,
+    "acceleration": 45.0,
+    "jump": 1,
+    "jump_power": 25.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "pain_threshold": 0.15,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
   "BrotherHauntBody": {
     "_name": "BrotherHauntBody",
     "name": "",
@@ -428,39 +890,6 @@
     "item_drop": null,
     "expansion": null
   },
-  "BrotherBody": {
-    "_name": "BrotherBody",
-    "name": "Mithrix",
-    "flags": 2048,
-    "health": [
-      1000.0,
-      300.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      16.0,
-      3.2
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 15.0,
-    "sprint_multiplier": 2.6,
-    "acceleration": 45.0,
-    "jump": 1,
-    "jump_power": 25.0,
-    "armor": 20.0,
-    "is_champion": true,
-    "pain_threshold": 0.15,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": null
-  },
   "CaptainBody": {
     "_name": "CaptainBody",
     "name": "Captain",
@@ -491,6 +920,39 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
+  "ClayBody": {
+    "_name": "ClayBody",
+    "name": "Clay Man",
+    "flags": 0,
+    "health": [
+      110.0,
+      33.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 9.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 12.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null,
     "expansion": null
   },
@@ -560,6 +1022,39 @@
     "item_drop": null,
     "expansion": null
   },
+  "ClayGrenadierBody": {
+    "_name": "ClayGrenadierBody",
+    "name": "Clay Apothecary",
+    "flags": 8,
+    "health": [
+      1050.0,
+      315.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      20.0,
+      4.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 5.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 45.0,
+    "jump": 1,
+    "jump_power": 20.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.15,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": "DLC1"
+  },
   "CommandoBody": {
     "_name": "CommandoBody",
     "name": "Commando",
@@ -577,6 +1072,39 @@
       2.4
     ],
     "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 5.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
+  "CommandoPerformanceTestBody": {
+    "_name": "CommandoPerformanceTestBody",
+    "name": "Commando",
+    "flags": 16,
+    "health": [
+      110.0,
+      33.0
+    ],
+    "regen": [
+      1.0,
+      0.2
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 10.0,
     "crit": 1.0,
     "luck": 0,
     "speed": 7.0,
@@ -725,28 +1253,94 @@
     "item_drop": null,
     "expansion": null
   },
-  "Turret1Body": {
-    "_name": "Turret1Body",
-    "name": "Gunner Turret",
+  "DroneCommanderBody": {
+    "_name": "DroneCommanderBody",
+    "name": "Col. Droneman",
     "flags": 2,
     "health": [
-      200.0,
-      60.0
+      180.0,
+      54.0
     ],
     "regen": [
-      7.5,
-      1.5
+      6.0,
+      1.2
     ],
     "damage": [
-      18.0,
-      3.6
+      12.0,
+      2.4
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
     "luck": 0,
-    "speed": 0.0,
+    "speed": 20.0,
+    "sprint_multiplier": 1.75,
+    "acceleration": 20.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "ElectricWormBody": {
+    "_name": "ElectricWormBody",
+    "name": "Overloading Worm",
+    "flags": 9,
+    "health": [
+      12000.0,
+      3600.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      50.0,
+      10.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 20.0,
     "sprint_multiplier": 1.45,
-    "acceleration": 0.0,
+    "acceleration": 160.0,
+    "jump": 1,
+    "jump_power": 25.0,
+    "armor": 15.0,
+    "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": "LightningStrikeOnHit",
+    "expansion": null
+  },
+  "EmergencyDroneBody": {
+    "_name": "EmergencyDroneBody",
+    "name": "Emergency Drone",
+    "flags": 2,
+    "health": [
+      300.0,
+      90.0
+    ],
+    "regen": [
+      2.0,
+      0.4
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 17.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 17.0,
     "jump": 1,
     "jump_power": 0.0,
     "armor": 20.0,
@@ -758,36 +1352,168 @@
     "item_drop": null,
     "expansion": null
   },
-  "BackupDroneBody": {
-    "_name": "BackupDroneBody",
-    "name": "Strike Drone",
-    "flags": 2,
+  "EnforcerBody": {
+    "_name": "EnforcerBody",
+    "name": "Enforcer",
+    "flags": 0,
     "health": [
-      225.0,
-      68.0
+      60.0,
+      18.0
     ],
     "regen": [
-      5.0,
-      1.0
+      0.6,
+      0.12
     ],
     "damage": [
-      7.0,
-      1.4
+      12.0,
+      2.4
     ],
     "attack_speed": 1.0,
-    "crit": 0.0,
+    "crit": 1.0,
     "luck": 0,
-    "speed": 17.0,
+    "speed": 7.5,
     "sprint_multiplier": 1.45,
-    "acceleration": 17.0,
+    "acceleration": 80.0,
     "jump": 1,
-    "jump_power": 0.0,
+    "jump_power": 12.0,
     "armor": 0.0,
     "is_champion": false,
     "pain_threshold": Infinity,
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "EngiBeamTurretBody": {
+    "_name": "EngiBeamTurretBody",
+    "name": "Engineer Turret",
+    "flags": 2,
+    "health": [
+      110.0,
+      33.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      16.0,
+      3.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 3.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "EngiBody": {
+    "_name": "EngiBody",
+    "name": "Engineer",
+    "flags": 16,
+    "health": [
+      130.0,
+      39.0
+    ],
+    "regen": [
+      1.0,
+      0.2
+    ],
+    "damage": [
+      14.0,
+      2.8
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 5.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
+  "EngiTurretBody": {
+    "_name": "EngiTurretBody",
+    "name": "Engineer Turret",
+    "flags": 2,
+    "health": [
+      130.0,
+      39.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      16.0,
+      3.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 5.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
+  "EngiWalkerTurretBody": {
+    "_name": "EngiWalkerTurretBody",
+    "name": "Engineer Turret",
+    "flags": 2,
+    "health": [
+      130.0,
+      39.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      16.0,
+      3.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 60.0,
+    "jump": 1,
+    "jump_power": 16.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 5.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
     "item_drop": null,
     "expansion": null
   },
@@ -824,94 +1550,28 @@
     "item_drop": null,
     "expansion": null
   },
-  "MissileDroneBody": {
-    "_name": "MissileDroneBody",
-    "name": "Missile Drone",
-    "flags": 2,
+  "ExplosivePotDestructibleBody": {
+    "_name": "ExplosivePotDestructibleBody",
+    "name": "Pot",
+    "flags": 260,
     "health": [
-      225.0,
-      68.0
+      1.0,
+      0.0
     ],
     "regen": [
-      5.0,
-      1.0
+      0.0,
+      0.0
     ],
     "damage": [
-      14.0,
-      2.8
+      20.0,
+      0.0
     ],
-    "attack_speed": 1.0,
+    "attack_speed": 0.0,
     "crit": 0.0,
     "luck": 0,
-    "speed": 17.0,
+    "speed": 0.0,
     "sprint_multiplier": 1.45,
-    "acceleration": 17.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "EmergencyDroneBody": {
-    "_name": "EmergencyDroneBody",
-    "name": "Emergency Drone",
-    "flags": 2,
-    "health": [
-      300.0,
-      90.0
-    ],
-    "regen": [
-      2.0,
-      0.4
-    ],
-    "damage": [
-      10.0,
-      2.0
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 17.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 17.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 20.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "MegaDroneBody": {
-    "_name": "MegaDroneBody",
-    "name": "TC-280 Prototype",
-    "flags": 2,
-    "health": [
-      900.0,
-      270.0
-    ],
-    "regen": [
-      5.0,
-      1.0
-    ],
-    "damage": [
-      14.0,
-      2.8
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 20.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 20.0,
+    "acceleration": 0.0,
     "jump": 1,
     "jump_power": 0.0,
     "armor": 0.0,
@@ -956,203 +1616,38 @@
     "item_drop": null,
     "expansion": null
   },
-  "ElectricWormBody": {
-    "_name": "ElectricWormBody",
-    "name": "Overloading Worm",
-    "flags": 9,
+  "FlyingVerminBody": {
+    "_name": "FlyingVerminBody",
+    "name": "Blind Pest",
+    "flags": 1,
     "health": [
-      12000.0,
-      3600.0
+      80.0,
+      24.0
     ],
     "regen": [
       0.0,
       0.0
     ],
     "damage": [
-      50.0,
-      10.0
+      15.0,
+      3.0
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
     "luck": 0,
-    "speed": 20.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 160.0,
-    "jump": 1,
-    "jump_power": 25.0,
-    "armor": 15.0,
-    "is_champion": true,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": "LightningStrikeOnHit",
-    "expansion": null
-  },
-  "UrchinTurretBody": {
-    "_name": "UrchinTurretBody",
-    "name": "Malachite Urchin",
-    "flags": 0,
-    "health": [
-      250.0,
-      75.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      18.0,
-      3.6
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 0.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 0.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 100.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "EngiBody": {
-    "_name": "EngiBody",
-    "name": "Engineer",
-    "flags": 16,
-    "health": [
-      130.0,
-      39.0
-    ],
-    "regen": [
-      1.0,
-      0.2
-    ],
-    "damage": [
-      14.0,
-      2.8
-    ],
-    "attack_speed": 1.0,
-    "crit": 1.0,
-    "luck": 0,
-    "speed": 7.0,
+    "speed": 6.0,
     "sprint_multiplier": 1.45,
     "acceleration": 80.0,
     "jump": 1,
-    "jump_power": 15.0,
+    "jump_power": 25.0,
     "armor": 0.0,
     "is_champion": false,
-    "pain_threshold": 5.0,
+    "pain_threshold": 0.2,
     "can_be_hit_stunned": false,
-    "can_be_stunned": false,
+    "can_be_stunned": true,
     "can_be_frozen": true,
     "item_drop": null,
-    "expansion": null
-  },
-  "EngiWalkerTurretBody": {
-    "_name": "EngiWalkerTurretBody",
-    "name": "Engineer Turret",
-    "flags": 2,
-    "health": [
-      130.0,
-      39.0
-    ],
-    "regen": [
-      0.6,
-      0.12
-    ],
-    "damage": [
-      16.0,
-      3.2
-    ],
-    "attack_speed": 1.0,
-    "crit": 1.0,
-    "luck": 0,
-    "speed": 7.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 60.0,
-    "jump": 1,
-    "jump_power": 16.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": 5.0,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": null
-  },
-  "EngiTurretBody": {
-    "_name": "EngiTurretBody",
-    "name": "Engineer Turret",
-    "flags": 2,
-    "health": [
-      130.0,
-      39.0
-    ],
-    "regen": [
-      0.6,
-      0.12
-    ],
-    "damage": [
-      16.0,
-      3.2
-    ],
-    "attack_speed": 1.0,
-    "crit": 1.0,
-    "luck": 0,
-    "speed": 0.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 0.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": 5.0,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": null
-  },
-  "ExplosivePotDestructibleBody": {
-    "_name": "ExplosivePotDestructibleBody",
-    "name": "Pot",
-    "flags": 260,
-    "health": [
-      1.0,
-      0.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      20.0,
-      0.0
-    ],
-    "attack_speed": 0.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 0.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 0.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
+    "expansion": "DLC1"
   },
   "FusionCellDestructibleBody": {
     "_name": "FusionCellDestructibleBody",
@@ -1187,6 +1682,72 @@
     "item_drop": null,
     "expansion": null
   },
+  "GeepBody": {
+    "_name": "GeepBody",
+    "name": "Geep",
+    "flags": 0,
+    "health": [
+      500.0,
+      150.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      6.0,
+      1.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 8.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 20.0,
+    "jump": 1,
+    "jump_power": 16.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.5,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": "DLC1"
+  },
+  "GipBody": {
+    "_name": "GipBody",
+    "name": "Gip",
+    "flags": 0,
+    "health": [
+      250.0,
+      75.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      3.0,
+      0.6
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 5.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 20.0,
+    "jump": 1,
+    "jump_power": 16.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.5,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": "DLC1"
+  },
   "GolemBody": {
     "_name": "GolemBody",
     "name": "Stone Golem",
@@ -1212,6 +1773,39 @@
     "jump": 1,
     "jump_power": 20.0,
     "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.3,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
+  "GolemBodyInvincible": {
+    "_name": "GolemBodyInvincible",
+    "name": "Stone Golem",
+    "flags": 0,
+    "health": [
+      4799999770624.0,
+      1439999983616.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      20.0,
+      4.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 6.6,
+    "sprint_multiplier": 1.45,
+    "acceleration": 40.0,
+    "jump": 1,
+    "jump_power": 20.0,
+    "armor": 99.0,
     "is_champion": false,
     "pain_threshold": 0.3,
     "can_be_hit_stunned": true,
@@ -1352,6 +1946,105 @@
     "item_drop": null,
     "expansion": null
   },
+  "GupBody": {
+    "_name": "GupBody",
+    "name": "Gup",
+    "flags": 0,
+    "health": [
+      1000.0,
+      300.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 12.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 20.0,
+    "jump": 1,
+    "jump_power": 16.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.5,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": "DLC1"
+  },
+  "HANDBody": {
+    "_name": "HANDBody",
+    "name": "HAN-D",
+    "flags": 0,
+    "health": [
+      300.0,
+      90.0
+    ],
+    "regen": [
+      1.0,
+      0.2
+    ],
+    "damage": [
+      20.0,
+      4.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 8.5,
+    "sprint_multiplier": 1.45,
+    "acceleration": 25.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 3.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "HaulerBody": {
+    "_name": "HaulerBody",
+    "name": "Potmobile",
+    "flags": 0,
+    "health": [
+      600.0,
+      180.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 15.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
   "HereticBody": {
     "_name": "HereticBody",
     "name": "Heretic",
@@ -1451,39 +2144,6 @@
     "item_drop": null,
     "expansion": null
   },
-  "ImpBossBody": {
-    "_name": "ImpBossBody",
-    "name": "Imp Overlord",
-    "flags": 1,
-    "health": [
-      2800.0,
-      840.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      16.0,
-      3.2
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 13.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 15.0,
-    "jump": 0,
-    "jump_power": 0.0,
-    "armor": 20.0,
-    "is_champion": true,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": "BleedOnHitAndExplode",
-    "expansion": null
-  },
   "ImpBody": {
     "_name": "ImpBody",
     "name": "Imp",
@@ -1515,6 +2175,39 @@
     "can_be_stunned": true,
     "can_be_frozen": true,
     "item_drop": null,
+    "expansion": null
+  },
+  "ImpBossBody": {
+    "_name": "ImpBossBody",
+    "name": "Imp Overlord",
+    "flags": 1,
+    "health": [
+      2800.0,
+      840.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      16.0,
+      3.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 13.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 15.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": "BleedOnHitAndExplode",
     "expansion": null
   },
   "JellyfishBody": {
@@ -1550,39 +2243,6 @@
     "item_drop": null,
     "expansion": null
   },
-  "LemurianBruiserBody": {
-    "_name": "LemurianBruiserBody",
-    "name": "Elder Lemurian",
-    "flags": 4096,
-    "health": [
-      900.0,
-      270.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      16.0,
-      3.2
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 13.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 45.0,
-    "jump": 1,
-    "jump_power": 30.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": 0.15,
-    "can_be_hit_stunned": true,
-    "can_be_stunned": true,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": null
-  },
   "LemurianBody": {
     "_name": "LemurianBody",
     "name": "Lemurian",
@@ -1607,6 +2267,39 @@
     "acceleration": 30.0,
     "jump": 1,
     "jump_power": 22.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.15,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
+  "LemurianBruiserBody": {
+    "_name": "LemurianBruiserBody",
+    "name": "Elder Lemurian",
+    "flags": 4096,
+    "health": [
+      900.0,
+      270.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      16.0,
+      3.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 13.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 45.0,
+    "jump": 1,
+    "jump_power": 30.0,
     "armor": 0.0,
     "is_champion": false,
     "pain_threshold": 0.15,
@@ -1715,39 +2408,6 @@
     "item_drop": null,
     "expansion": null
   },
-  "LunarWispTrackingBomb": {
-    "_name": "LunarWispTrackingBomb",
-    "name": "",
-    "flags": 4,
-    "health": [
-      75.0,
-      22.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      0.0,
-      0.0
-    ],
-    "attack_speed": 0.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 0.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 0.0,
-    "jump": 0,
-    "jump_power": 0.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
   "LunarWispBody": {
     "_name": "LunarWispBody",
     "name": "Lunar Chimera",
@@ -1771,6 +2431,39 @@
     "sprint_multiplier": 1.45,
     "acceleration": 14.0,
     "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "LunarWispTrackingBomb": {
+    "_name": "LunarWispTrackingBomb",
+    "name": "",
+    "flags": 4,
+    "health": [
+      75.0,
+      22.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 0,
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
@@ -1847,6 +2540,105 @@
     "item_drop": "FireballsOnHit",
     "expansion": null
   },
+  "MajorConstructBody": {
+    "_name": "MajorConstructBody",
+    "name": "",
+    "flags": 2,
+    "health": [
+      2100.0,
+      630.0
+    ],
+    "regen": [
+      7.5,
+      1.5
+    ],
+    "damage": [
+      25.0,
+      5.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 0.0,
+    "acceleration": 0.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 15.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC1"
+  },
+  "MegaConstructBody": {
+    "_name": "MegaConstructBody",
+    "name": "Xi Construct",
+    "flags": 0,
+    "health": [
+      2800.0,
+      840.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      13.0,
+      2.6
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 60.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 100.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 15.0,
+    "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": "MinorConstructOnKill",
+    "expansion": "DLC1"
+  },
+  "MegaDroneBody": {
+    "_name": "MegaDroneBody",
+    "name": "TC-280 Prototype",
+    "flags": 2,
+    "health": [
+      900.0,
+      270.0
+    ],
+    "regen": [
+      5.0,
+      1.0
+    ],
+    "damage": [
+      14.0,
+      2.8
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 20.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 20.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
   "MercBody": {
     "_name": "MercBody",
     "name": "Mercenary",
@@ -1910,6 +2702,270 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
+  "MiniVoidRaidCrabBodyBase": {
+    "_name": "MiniVoidRaidCrabBodyBase",
+    "name": "\u300cVoidling\u300d",
+    "flags": 3073,
+    "health": [
+      2000.0,
+      600.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 45.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 20.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC1"
+  },
+  "MiniVoidRaidCrabBodyPhase1": {
+    "_name": "MiniVoidRaidCrabBodyPhase1",
+    "name": "\u300cVoidling\u300d",
+    "flags": 3073,
+    "health": [
+      2000.0,
+      600.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 45.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 20.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC1"
+  },
+  "MiniVoidRaidCrabBodyPhase2": {
+    "_name": "MiniVoidRaidCrabBodyPhase2",
+    "name": "\u300cVoidling\u300d",
+    "flags": 3073,
+    "health": [
+      2000.0,
+      600.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 45.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 20.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC1"
+  },
+  "MiniVoidRaidCrabBodyPhase3": {
+    "_name": "MiniVoidRaidCrabBodyPhase3",
+    "name": "\u300cVoidling\u300d",
+    "flags": 3073,
+    "health": [
+      2000.0,
+      600.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 45.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 20.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC1"
+  },
+  "MinorConstructAttachableBody": {
+    "_name": "MinorConstructAttachableBody",
+    "name": "Alpha Construct",
+    "flags": 0,
+    "health": [
+      100.0,
+      30.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.5,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.5,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": "DLC1"
+  },
+  "MinorConstructBody": {
+    "_name": "MinorConstructBody",
+    "name": "Alpha Construct",
+    "flags": 0,
+    "health": [
+      100.0,
+      30.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.5,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": "DLC1"
+  },
+  "MinorConstructOnKillBody": {
+    "_name": "MinorConstructOnKillBody",
+    "name": "Alpha Construct",
+    "flags": 0,
+    "health": [
+      100.0,
+      30.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.5,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": "DLC1"
+  },
+  "MissileDroneBody": {
+    "_name": "MissileDroneBody",
+    "name": "Missile Drone",
+    "flags": 2,
+    "health": [
+      225.0,
+      68.0
+    ],
+    "regen": [
+      5.0,
+      1.0
+    ],
+    "damage": [
+      14.0,
+      2.8
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 17.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 17.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null,
     "expansion": null
   },
@@ -1979,6 +3035,39 @@
     "item_drop": null,
     "expansion": null
   },
+  "PaladinBody": {
+    "_name": "PaladinBody",
+    "name": "Commando",
+    "flags": 0,
+    "health": [
+      150.0,
+      45.0
+    ],
+    "regen": [
+      0.9,
+      0.18
+    ],
+    "damage": [
+      18.0,
+      3.6
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 800.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
   "ParentBody": {
     "_name": "ParentBody",
     "name": "Parent",
@@ -2011,6 +3100,171 @@
     "can_be_frozen": true,
     "item_drop": null,
     "expansion": null
+  },
+  "ParentPodBody": {
+    "_name": "ParentPodBody",
+    "name": "Ancestral Pod",
+    "flags": 0,
+    "health": [
+      200.0,
+      60.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "Pot2Body": {
+    "_name": "Pot2Body",
+    "name": "Pot",
+    "flags": 0,
+    "health": [
+      0.0,
+      0.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "PotMobile2Body": {
+    "_name": "PotMobile2Body",
+    "name": "Potmobile",
+    "flags": 0,
+    "health": [
+      600.0,
+      180.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 15.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "PotMobileBody": {
+    "_name": "PotMobileBody",
+    "name": "Potmobile",
+    "flags": 0,
+    "health": [
+      600.0,
+      180.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 15.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "RailgunnerBody": {
+    "_name": "RailgunnerBody",
+    "name": "Railgunner",
+    "flags": 16,
+    "health": [
+      110.0,
+      33.0
+    ],
+    "regen": [
+      1.0,
+      0.2
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 5.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": "DLC1"
   },
   "RoboBallBossBody": {
     "_name": "RoboBallBossBody",
@@ -2045,46 +3299,13 @@
     "item_drop": "RoboBallBuddy",
     "expansion": null
   },
-  "SuperRoboBallBossBody": {
-    "_name": "SuperRoboBallBossBody",
-    "name": "Alloy Worship Unit",
-    "flags": 2,
+  "RoboBallGreenBuddyBody": {
+    "_name": "RoboBallGreenBuddyBody",
+    "name": "Delighted Probe",
+    "flags": 66,
     "health": [
-      2500.0,
-      750.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      15.0,
-      3.0
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 7.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 14.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 30.0,
-    "is_champion": true,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": "RoboBallBuddy",
-    "expansion": null
-  },
-  "RoboBallMiniBody": {
-    "_name": "RoboBallMiniBody",
-    "name": "Solus Probe",
-    "flags": 2,
-    "health": [
-      220.0,
-      66.0
+      880.0,
+      264.0
     ],
     "regen": [
       0.0,
@@ -2111,13 +3332,13 @@
     "item_drop": null,
     "expansion": null
   },
-  "RoboBallGreenBuddyBody": {
-    "_name": "RoboBallGreenBuddyBody",
-    "name": "Delighted Probe",
-    "flags": 66,
+  "RoboBallMiniBody": {
+    "_name": "RoboBallMiniBody",
+    "name": "Solus Probe",
+    "flags": 2,
     "health": [
-      880.0,
-      264.0
+      220.0,
+      66.0
     ],
     "regen": [
       0.0,
@@ -2177,9 +3398,240 @@
     "item_drop": null,
     "expansion": null
   },
-  "ScavLunar3Body": {
-    "_name": "ScavLunar3Body",
-    "name": "Twiptwip the Devotee",
+  "SMInfiniteTowerMaulingRockLarge": {
+    "_name": "SMInfiniteTowerMaulingRockLarge",
+    "name": "Flying Rock",
+    "flags": 260,
+    "health": [
+      40.0,
+      12.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "SMInfiniteTowerMaulingRockMedium": {
+    "_name": "SMInfiniteTowerMaulingRockMedium",
+    "name": "Flying Rock",
+    "flags": 260,
+    "health": [
+      20.0,
+      6.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "SMInfiniteTowerMaulingRockSmall": {
+    "_name": "SMInfiniteTowerMaulingRockSmall",
+    "name": "Flying Rock",
+    "flags": 260,
+    "health": [
+      10.0,
+      3.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "SMMaulingRockLarge": {
+    "_name": "SMMaulingRockLarge",
+    "name": "Flying Rock",
+    "flags": 260,
+    "health": [
+      40.0,
+      12.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "SMMaulingRockMedium": {
+    "_name": "SMMaulingRockMedium",
+    "name": "Flying Rock",
+    "flags": 260,
+    "health": [
+      20.0,
+      6.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "SMMaulingRockSmall": {
+    "_name": "SMMaulingRockSmall",
+    "name": "Flying Rock",
+    "flags": 260,
+    "health": [
+      10.0,
+      3.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "ScavBody": {
+    "_name": "ScavBody",
+    "name": "Scavenger",
+    "flags": 0,
+    "health": [
+      3800.0,
+      1140.0
+    ],
+    "regen": [
+      2.0,
+      0.4
+    ],
+    "damage": [
+      4.0,
+      0.8
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 3.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 10.0,
+    "jump": 1,
+    "jump_power": 20.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "ScavLunar1Body": {
+    "_name": "ScavLunar1Body",
+    "name": "Kipkip the Gentle",
     "flags": 0,
     "health": [
       3230.0,
@@ -2243,6 +3695,39 @@
     "item_drop": null,
     "expansion": null
   },
+  "ScavLunar3Body": {
+    "_name": "ScavLunar3Body",
+    "name": "Twiptwip the Devotee",
+    "flags": 0,
+    "health": [
+      3230.0,
+      969.0
+    ],
+    "regen": [
+      2.0,
+      0.4
+    ],
+    "damage": [
+      4.0,
+      0.8
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 3.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 10.0,
+    "jump": 1,
+    "jump_power": 20.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
   "ScavLunar4Body": {
     "_name": "ScavLunar4Body",
     "name": "Guragura the Lucky",
@@ -2250,72 +3735,6 @@
     "health": [
       3230.0,
       969.0
-    ],
-    "regen": [
-      2.0,
-      0.4
-    ],
-    "damage": [
-      4.0,
-      0.8
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 3.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 10.0,
-    "jump": 1,
-    "jump_power": 20.0,
-    "armor": 20.0,
-    "is_champion": true,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "ScavLunar1Body": {
-    "_name": "ScavLunar1Body",
-    "name": "Kipkip the Gentle",
-    "flags": 0,
-    "health": [
-      3230.0,
-      969.0
-    ],
-    "regen": [
-      2.0,
-      0.4
-    ],
-    "damage": [
-      4.0,
-      0.8
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 3.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 10.0,
-    "jump": 1,
-    "jump_power": 20.0,
-    "armor": 20.0,
-    "is_champion": true,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "ScavBody": {
-    "_name": "ScavBody",
-    "name": "Scavenger",
-    "flags": 0,
-    "health": [
-      3800.0,
-      1140.0
     ],
     "regen": [
       2.0,
@@ -2375,39 +3794,6 @@
     "item_drop": null,
     "expansion": null
   },
-  "VultureEggBody": {
-    "_name": "VultureEggBody",
-    "name": "",
-    "flags": 260,
-    "health": [
-      1.0,
-      0.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      0.0,
-      0.0
-    ],
-    "attack_speed": 0.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 0.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 0.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
   "ShopkeeperBody": {
     "_name": "ShopkeeperBody",
     "name": "Newt",
@@ -2441,96 +3827,30 @@
     "item_drop": null,
     "expansion": null
   },
-  "SMMaulingRockLarge": {
-    "_name": "SMMaulingRockLarge",
-    "name": "Flying Rock",
-    "flags": 260,
+  "SniperBody": {
+    "_name": "SniperBody",
+    "name": "",
+    "flags": 0,
     "health": [
-      40.0,
-      12.0
+      110.0,
+      33.0
     ],
     "regen": [
-      0.0,
-      0.0
+      0.6,
+      0.12
     ],
     "damage": [
-      0.0,
-      0.0
+      12.0,
+      2.4
     ],
-    "attack_speed": 0.0,
-    "crit": 0.0,
+    "attack_speed": 1.0,
+    "crit": 1.0,
     "luck": 0,
-    "speed": 0.0,
+    "speed": 7.0,
     "sprint_multiplier": 1.45,
-    "acceleration": 0.0,
+    "acceleration": 80.0,
     "jump": 1,
-    "jump_power": 0.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "SMMaulingRockSmall": {
-    "_name": "SMMaulingRockSmall",
-    "name": "Flying Rock",
-    "flags": 260,
-    "health": [
-      10.0,
-      3.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      0.0,
-      0.0
-    ],
-    "attack_speed": 0.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 0.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 0.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "SMMaulingRockMedium": {
-    "_name": "SMMaulingRockMedium",
-    "name": "Flying Rock",
-    "flags": 260,
-    "health": [
-      20.0,
-      6.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      0.0,
-      0.0
-    ],
-    "attack_speed": 0.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 0.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 0.0,
-    "jump": 1,
-    "jump_power": 0.0,
+    "jump_power": 15.0,
     "armor": 0.0,
     "is_champion": false,
     "pain_threshold": Infinity,
@@ -2636,6 +3956,105 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": true,
     "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
+  "SulfurPodBody": {
+    "_name": "SulfurPodBody",
+    "name": "Sulfur Pod",
+    "flags": 260,
+    "health": [
+      1.0,
+      0.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      8.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "SuperRoboBallBossBody": {
+    "_name": "SuperRoboBallBossBody",
+    "name": "Alloy Worship Unit",
+    "flags": 2,
+    "health": [
+      2500.0,
+      750.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 14.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 30.0,
+    "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": "RoboBallBuddy",
+    "expansion": null
+  },
+  "TimeCrystalBody": {
+    "_name": "TimeCrystalBody",
+    "name": "Time Crystal",
+    "flags": 269,
+    "health": [
+      200.0,
+      0.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null,
     "expansion": null
   },
@@ -2771,6 +4190,72 @@
     "item_drop": null,
     "expansion": null
   },
+  "Turret1Body": {
+    "_name": "Turret1Body",
+    "name": "Gunner Turret",
+    "flags": 2,
+    "health": [
+      200.0,
+      60.0
+    ],
+    "regen": [
+      7.5,
+      1.5
+    ],
+    "damage": [
+      18.0,
+      3.6
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "UrchinTurretBody": {
+    "_name": "UrchinTurretBody",
+    "name": "Malachite Urchin",
+    "flags": 0,
+    "health": [
+      250.0,
+      75.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      18.0,
+      3.6
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 100.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
   "VagrantBody": {
     "_name": "VagrantBody",
     "name": "Wandering Vagrant",
@@ -2827,798 +4312,6 @@
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
     "jump": 0,
-    "jump_power": 0.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "VultureBody": {
-    "_name": "VultureBody",
-    "name": "Alloy Vulture",
-    "flags": 1,
-    "health": [
-      140.0,
-      42.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      15.0,
-      3.0
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 3.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 80.0,
-    "jump": 1,
-    "jump_power": 15.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": 0.2,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": true,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": null
-  },
-  "TimeCrystalBody": {
-    "_name": "TimeCrystalBody",
-    "name": "Time Crystal",
-    "flags": 269,
-    "health": [
-      200.0,
-      0.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      15.0,
-      0.0
-    ],
-    "attack_speed": 0.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 0.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 0.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "WispSoulBody": {
-    "_name": "WispSoulBody",
-    "name": "Lesser Wisp",
-    "flags": 0,
-    "health": [
-      35.0,
-      10.0
-    ],
-    "regen": [
-      -3.0,
-      -0.6
-    ],
-    "damage": [
-      3.5,
-      0.7
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 6.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 12.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": 0.1,
-    "can_be_hit_stunned": true,
-    "can_be_stunned": true,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": null
-  },
-  "WispBody": {
-    "_name": "WispBody",
-    "name": "Lesser Wisp",
-    "flags": 0,
-    "health": [
-      35.0,
-      10.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      3.5,
-      0.7
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 6.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 12.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": 0.1,
-    "can_be_hit_stunned": true,
-    "can_be_stunned": true,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": null
-  },
-  "AcidLarvaBody": {
-    "_name": "AcidLarvaBody",
-    "name": "Larva",
-    "flags": 0,
-    "health": [
-      45.0,
-      14.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      11.0,
-      2.2
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 1.5,
-    "sprint_multiplier": 8.0,
-    "acceleration": 80.0,
-    "jump": 1,
-    "jump_power": 16.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": 0.5,
-    "can_be_hit_stunned": true,
-    "can_be_stunned": true,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": "DLC1"
-  },
-  "Assassin2Body": {
-    "_name": "Assassin2Body",
-    "name": "Assassin",
-    "flags": 0,
-    "health": [
-      120.0,
-      36.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      10.0,
-      2.0
-    ],
-    "attack_speed": 1.2,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 12.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 80.0,
-    "jump": 1,
-    "jump_power": 10.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": 0.1,
-    "can_be_hit_stunned": true,
-    "can_be_stunned": true,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": null
-  },
-  "ClayGrenadierBody": {
-    "_name": "ClayGrenadierBody",
-    "name": "Clay Apothecary",
-    "flags": 8,
-    "health": [
-      1050.0,
-      315.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      20.0,
-      4.0
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 5.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 45.0,
-    "jump": 1,
-    "jump_power": 20.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": 0.15,
-    "can_be_hit_stunned": true,
-    "can_be_stunned": true,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": "DLC1"
-  },
-  "DroneCommanderBody": {
-    "_name": "DroneCommanderBody",
-    "name": "Col. Droneman",
-    "flags": 2,
-    "health": [
-      180.0,
-      54.0
-    ],
-    "regen": [
-      6.0,
-      1.2
-    ],
-    "damage": [
-      12.0,
-      2.4
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 20.0,
-    "sprint_multiplier": 1.75,
-    "acceleration": 20.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "AffixEarthHealerBody": {
-    "_name": "AffixEarthHealerBody",
-    "name": "Healing Core",
-    "flags": 256,
-    "health": [
-      50.0,
-      0.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      20.0,
-      0.0
-    ],
-    "attack_speed": 0.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 0.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 0.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "VoidInfestorBody": {
-    "_name": "VoidInfestorBody",
-    "name": "Void Infestor",
-    "flags": 1025,
-    "health": [
-      45.0,
-      14.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      11.0,
-      2.2
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 14.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 180.0,
-    "jump": 1,
-    "jump_power": 16.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": 0.5,
-    "can_be_hit_stunned": true,
-    "can_be_stunned": true,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": "DLC1"
-  },
-  "FlyingVerminBody": {
-    "_name": "FlyingVerminBody",
-    "name": "Blind Pest",
-    "flags": 1,
-    "health": [
-      80.0,
-      24.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      15.0,
-      3.0
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 6.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 80.0,
-    "jump": 1,
-    "jump_power": 25.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": 0.2,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": true,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": "DLC1"
-  },
-  "GupBody": {
-    "_name": "GupBody",
-    "name": "Gup",
-    "flags": 0,
-    "health": [
-      1000.0,
-      300.0
-    ],
-    "regen": [
-      0.6,
-      0.12
-    ],
-    "damage": [
-      12.0,
-      2.4
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 12.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 20.0,
-    "jump": 1,
-    "jump_power": 16.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": 0.5,
-    "can_be_hit_stunned": true,
-    "can_be_stunned": true,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": "DLC1"
-  },
-  "GipBody": {
-    "_name": "GipBody",
-    "name": "Gip",
-    "flags": 0,
-    "health": [
-      250.0,
-      75.0
-    ],
-    "regen": [
-      0.6,
-      0.12
-    ],
-    "damage": [
-      3.0,
-      0.6
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 5.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 20.0,
-    "jump": 1,
-    "jump_power": 16.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": 0.5,
-    "can_be_hit_stunned": true,
-    "can_be_stunned": true,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": "DLC1"
-  },
-  "GeepBody": {
-    "_name": "GeepBody",
-    "name": "Geep",
-    "flags": 0,
-    "health": [
-      500.0,
-      150.0
-    ],
-    "regen": [
-      0.6,
-      0.12
-    ],
-    "damage": [
-      6.0,
-      1.2
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 8.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 20.0,
-    "jump": 1,
-    "jump_power": 16.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": 0.5,
-    "can_be_hit_stunned": true,
-    "can_be_stunned": true,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": "DLC1"
-  },
-  "SMInfiniteTowerMaulingRockMedium": {
-    "_name": "SMInfiniteTowerMaulingRockMedium",
-    "name": "Flying Rock",
-    "flags": 260,
-    "health": [
-      20.0,
-      6.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      0.0,
-      0.0
-    ],
-    "attack_speed": 0.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 0.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 0.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "SMInfiniteTowerMaulingRockLarge": {
-    "_name": "SMInfiniteTowerMaulingRockLarge",
-    "name": "Flying Rock",
-    "flags": 260,
-    "health": [
-      40.0,
-      12.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      0.0,
-      0.0
-    ],
-    "attack_speed": 0.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 0.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 0.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "SMInfiniteTowerMaulingRockSmall": {
-    "_name": "SMInfiniteTowerMaulingRockSmall",
-    "name": "Flying Rock",
-    "flags": 260,
-    "health": [
-      10.0,
-      3.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      0.0,
-      0.0
-    ],
-    "attack_speed": 0.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 0.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 0.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "MinorConstructAttachableBody": {
-    "_name": "MinorConstructAttachableBody",
-    "name": "Alpha Construct",
-    "flags": 0,
-    "health": [
-      100.0,
-      30.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      12.0,
-      2.4
-    ],
-    "attack_speed": 1.5,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 0.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 0.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": 0.5,
-    "can_be_hit_stunned": true,
-    "can_be_stunned": true,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": "DLC1"
-  },
-  "MajorConstructBody": {
-    "_name": "MajorConstructBody",
-    "name": "",
-    "flags": 2,
-    "health": [
-      2100.0,
-      630.0
-    ],
-    "regen": [
-      7.5,
-      1.5
-    ],
-    "damage": [
-      25.0,
-      5.0
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 0.0,
-    "sprint_multiplier": 0.0,
-    "acceleration": 0.0,
-    "jump": 0,
-    "jump_power": 0.0,
-    "armor": 15.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": "DLC1"
-  },
-  "MinorConstructOnKillBody": {
-    "_name": "MinorConstructOnKillBody",
-    "name": "Alpha Construct",
-    "flags": 0,
-    "health": [
-      100.0,
-      30.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      12.0,
-      2.4
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 0.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 0.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": 0.5,
-    "can_be_hit_stunned": true,
-    "can_be_stunned": true,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": "DLC1"
-  },
-  "MegaConstructBody": {
-    "_name": "MegaConstructBody",
-    "name": "Xi Construct",
-    "flags": 0,
-    "health": [
-      2800.0,
-      840.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      13.0,
-      2.6
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 60.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 100.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 15.0,
-    "is_champion": true,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": "MinorConstructOnKill",
-    "expansion": "DLC1"
-  },
-  "MinorConstructBody": {
-    "_name": "MinorConstructBody",
-    "name": "Alpha Construct",
-    "flags": 0,
-    "health": [
-      100.0,
-      30.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      12.0,
-      2.4
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 0.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 0.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": 0.5,
-    "can_be_hit_stunned": true,
-    "can_be_stunned": true,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": "DLC1"
-  },
-  "RailgunnerBody": {
-    "_name": "RailgunnerBody",
-    "name": "Railgunner",
-    "flags": 16,
-    "health": [
-      110.0,
-      33.0
-    ],
-    "regen": [
-      1.0,
-      0.2
-    ],
-    "damage": [
-      12.0,
-      2.4
-    ],
-    "attack_speed": 1.0,
-    "crit": 1.0,
-    "luck": 0,
-    "speed": 7.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 80.0,
-    "jump": 1,
-    "jump_power": 15.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": 5.0,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": "DLC1"
-  },
-  "SulfurPodBody": {
-    "_name": "SulfurPodBody",
-    "name": "Sulfur Pod",
-    "flags": 260,
-    "health": [
-      1.0,
-      0.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      8.0,
-      0.0
-    ],
-    "attack_speed": 0.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 0.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 0.0,
-    "jump": 1,
     "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
@@ -3728,8 +4421,41 @@
     "item_drop": null,
     "expansion": "DLC1"
   },
-  "VoidJailerBody": {
-    "_name": "VoidJailerBody",
+  "VoidInfestorBody": {
+    "_name": "VoidInfestorBody",
+    "name": "Void Infestor",
+    "flags": 1025,
+    "health": [
+      45.0,
+      14.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      11.0,
+      2.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 14.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 180.0,
+    "jump": 1,
+    "jump_power": 16.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.5,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": "DLC1"
+  },
+  "VoidJailerAllyBody": {
+    "_name": "VoidJailerAllyBody",
     "name": "Void Jailer",
     "flags": 1024,
     "health": [
@@ -3761,8 +4487,8 @@
     "item_drop": null,
     "expansion": "DLC1"
   },
-  "VoidJailerAllyBody": {
-    "_name": "VoidJailerAllyBody",
+  "VoidJailerBody": {
+    "_name": "VoidJailerBody",
     "name": "Void Jailer",
     "flags": 1024,
     "health": [
@@ -3893,72 +4619,6 @@
     "item_drop": null,
     "expansion": "DLC1"
   },
-  "MiniVoidRaidCrabBodyPhase2": {
-    "_name": "MiniVoidRaidCrabBodyPhase2",
-    "name": "\u300cVoidling\u300d",
-    "flags": 3073,
-    "health": [
-      2000.0,
-      600.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      15.0,
-      3.0
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 45.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 20.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 20.0,
-    "is_champion": true,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": "DLC1"
-  },
-  "MiniVoidRaidCrabBodyPhase1": {
-    "_name": "MiniVoidRaidCrabBodyPhase1",
-    "name": "\u300cVoidling\u300d",
-    "flags": 3073,
-    "health": [
-      2000.0,
-      600.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      15.0,
-      3.0
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 45.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 20.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 20.0,
-    "is_champion": true,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": "DLC1"
-  },
   "VoidRaidCrabJointBody": {
     "_name": "VoidRaidCrabJointBody",
     "name": "\u300cVoidling\u300d",
@@ -3985,72 +4645,6 @@
     "jump_power": 0.0,
     "armor": 20.0,
     "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": "DLC1"
-  },
-  "MiniVoidRaidCrabBodyPhase3": {
-    "_name": "MiniVoidRaidCrabBodyPhase3",
-    "name": "\u300cVoidling\u300d",
-    "flags": 3073,
-    "health": [
-      2000.0,
-      600.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      15.0,
-      3.0
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 45.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 20.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 20.0,
-    "is_champion": true,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": "DLC1"
-  },
-  "MiniVoidRaidCrabBodyBase": {
-    "_name": "MiniVoidRaidCrabBodyBase",
-    "name": "\u300cVoidling\u300d",
-    "flags": 3073,
-    "health": [
-      2000.0,
-      600.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      15.0,
-      3.0
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 45.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 20.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 20.0,
-    "is_champion": true,
     "pain_threshold": Infinity,
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
@@ -4091,729 +4685,135 @@
     "item_drop": null,
     "expansion": "DLC1"
   },
-  "AncientWispBody": {
-    "_name": "AncientWispBody",
-    "name": "",
-    "flags": 0,
-    "health": [
-      1650.0,
-      495.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      65.0,
-      13.0
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 7.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 28.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 0.0,
-    "is_champion": true,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "ArchWispBody": {
-    "_name": "ArchWispBody",
-    "name": "",
-    "flags": 0,
-    "health": [
-      1500.0,
-      450.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      25.0,
-      5.0
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 7.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 14.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 1.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "AssassinBody": {
-    "_name": "AssassinBody",
-    "name": "Engineer",
-    "flags": 0,
+  "VultureBody": {
+    "_name": "VultureBody",
+    "name": "Alloy Vulture",
+    "flags": 1,
     "health": [
       140.0,
       42.0
     ],
     "regen": [
-      0.6,
-      0.12
-    ],
-    "damage": [
-      19.0,
-      3.8
-    ],
-    "attack_speed": 1.0,
-    "crit": 1.0,
-    "luck": 0,
-    "speed": 9.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 80.0,
-    "jump": 2,
-    "jump_power": 15.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "BackupDroneOldBody": {
-    "_name": "BackupDroneOldBody",
-    "name": "",
-    "flags": 2,
-    "health": [
-      150.0,
-      45.0
-    ],
-    "regen": [
-      2.0,
-      0.4
-    ],
-    "damage": [
-      10.0,
-      2.0
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 17.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 17.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "BanditBody": {
-    "_name": "BanditBody",
-    "name": "Bandit",
-    "flags": 16,
-    "health": [
-      100.0,
-      30.0
-    ],
-    "regen": [
-      0.6,
-      0.12
-    ],
-    "damage": [
-      12.0,
-      2.4
-    ],
-    "attack_speed": 1.0,
-    "crit": 1.0,
-    "luck": 0,
-    "speed": 7.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 80.0,
-    "jump": 1,
-    "jump_power": 15.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": 5.0,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": null
-  },
-  "BeetleCrystalBody": {
-    "_name": "BeetleCrystalBody",
-    "name": "",
-    "flags": 0,
-    "health": [
-      10.0,
-      3.0
-    ],
-    "regen": [
       0.0,
       0.0
     ],
     "damage": [
-      12.0,
-      2.4
+      15.0,
+      3.0
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
     "luck": 0,
-    "speed": 8.0,
+    "speed": 3.0,
     "sprint_multiplier": 1.45,
-    "acceleration": 40.0,
+    "acceleration": 80.0,
     "jump": 1,
-    "jump_power": 18.0,
+    "jump_power": 15.0,
     "armor": 0.0,
     "is_champion": false,
     "pain_threshold": 0.2,
-    "can_be_hit_stunned": true,
+    "can_be_hit_stunned": false,
     "can_be_stunned": true,
     "can_be_frozen": true,
     "item_drop": null,
     "expansion": null
   },
-  "BeetleGuardCrystalBody": {
-    "_name": "BeetleGuardCrystalBody",
-    "name": "Beetle Guard",
-    "flags": 0,
-    "health": [
-      480.0,
-      144.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      12.0,
-      2.4
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 17.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 60.0,
-    "jump": 1,
-    "jump_power": 12.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": 0.15,
-    "can_be_hit_stunned": true,
-    "can_be_stunned": true,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": null
-  },
-  "BomberBody": {
-    "_name": "BomberBody",
-    "name": "Bomber",
-    "flags": 0,
-    "health": [
-      220.0,
-      66.0
-    ],
-    "regen": [
-      0.6,
-      0.12
-    ],
-    "damage": [
-      16.0,
-      3.2
-    ],
-    "attack_speed": 1.0,
-    "crit": 1.0,
-    "luck": 0,
-    "speed": 7.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 80.0,
-    "jump": 1,
-    "jump_power": 15.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "BrotherGlassBody": {
-    "_name": "BrotherGlassBody",
-    "name": "Mithrix",
-    "flags": 2048,
-    "health": [
-      2000.0,
-      600.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      4.0,
-      0.8
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 15.0,
-    "sprint_multiplier": 2.6,
-    "acceleration": 45.0,
-    "jump": 1,
-    "jump_power": 25.0,
-    "armor": 20.0,
-    "is_champion": true,
-    "pain_threshold": 0.15,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": null
-  },
-  "ClayBody": {
-    "_name": "ClayBody",
-    "name": "Clay Man",
-    "flags": 0,
-    "health": [
-      110.0,
-      33.0
-    ],
-    "regen": [
-      0.6,
-      0.12
-    ],
-    "damage": [
-      12.0,
-      2.4
-    ],
-    "attack_speed": 1.0,
-    "crit": 1.0,
-    "luck": 0,
-    "speed": 9.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 80.0,
-    "jump": 1,
-    "jump_power": 12.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "CommandoPerformanceTestBody": {
-    "_name": "CommandoPerformanceTestBody",
-    "name": "Commando",
-    "flags": 16,
-    "health": [
-      110.0,
-      33.0
-    ],
-    "regen": [
-      1.0,
-      0.2
-    ],
-    "damage": [
-      12.0,
-      2.4
-    ],
-    "attack_speed": 10.0,
-    "crit": 1.0,
-    "luck": 0,
-    "speed": 7.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 80.0,
-    "jump": 1,
-    "jump_power": 15.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": 5.0,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": null
-  },
-  "EnforcerBody": {
-    "_name": "EnforcerBody",
-    "name": "Enforcer",
-    "flags": 0,
-    "health": [
-      60.0,
-      18.0
-    ],
-    "regen": [
-      0.6,
-      0.12
-    ],
-    "damage": [
-      12.0,
-      2.4
-    ],
-    "attack_speed": 1.0,
-    "crit": 1.0,
-    "luck": 0,
-    "speed": 7.5,
-    "sprint_multiplier": 1.45,
-    "acceleration": 80.0,
-    "jump": 1,
-    "jump_power": 12.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "EngiBeamTurretBody": {
-    "_name": "EngiBeamTurretBody",
-    "name": "Engineer Turret",
-    "flags": 2,
-    "health": [
-      110.0,
-      33.0
-    ],
-    "regen": [
-      0.6,
-      0.12
-    ],
-    "damage": [
-      16.0,
-      3.2
-    ],
-    "attack_speed": 1.0,
-    "crit": 1.0,
-    "luck": 0,
-    "speed": 0.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 0.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 3.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "GolemBodyInvincible": {
-    "_name": "GolemBodyInvincible",
-    "name": "Stone Golem",
-    "flags": 0,
-    "health": [
-      4799999770624.0,
-      1439999983616.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      20.0,
-      4.0
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 6.6,
-    "sprint_multiplier": 1.45,
-    "acceleration": 40.0,
-    "jump": 1,
-    "jump_power": 20.0,
-    "armor": 99.0,
-    "is_champion": false,
-    "pain_threshold": 0.3,
-    "can_be_hit_stunned": true,
-    "can_be_stunned": true,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": null
-  },
-  "HANDBody": {
-    "_name": "HANDBody",
-    "name": "HAN-D",
-    "flags": 0,
-    "health": [
-      300.0,
-      90.0
-    ],
-    "regen": [
-      1.0,
-      0.2
-    ],
-    "damage": [
-      20.0,
-      4.0
-    ],
-    "attack_speed": 1.0,
-    "crit": 1.0,
-    "luck": 0,
-    "speed": 8.5,
-    "sprint_multiplier": 1.45,
-    "acceleration": 25.0,
-    "jump": 1,
-    "jump_power": 15.0,
-    "armor": 3.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "HaulerBody": {
-    "_name": "HaulerBody",
-    "name": "Potmobile",
-    "flags": 0,
-    "health": [
-      600.0,
-      180.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      12.0,
-      2.4
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 15.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 0.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "ParentPodBody": {
-    "_name": "ParentPodBody",
-    "name": "Ancestral Pod",
-    "flags": 0,
-    "health": [
-      200.0,
-      60.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      0.0,
-      0.0
-    ],
-    "attack_speed": 0.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 0.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 0.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "PaladinBody": {
-    "_name": "PaladinBody",
-    "name": "Commando",
-    "flags": 0,
-    "health": [
-      150.0,
-      45.0
-    ],
-    "regen": [
-      0.9,
-      0.18
-    ],
-    "damage": [
-      18.0,
-      3.6
-    ],
-    "attack_speed": 1.0,
-    "crit": 1.0,
-    "luck": 0,
-    "speed": 7.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 800.0,
-    "jump": 1,
-    "jump_power": 15.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "Pot2Body": {
-    "_name": "Pot2Body",
-    "name": "Pot",
-    "flags": 0,
-    "health": [
-      0.0,
-      0.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      0.0,
-      0.0
-    ],
-    "attack_speed": 0.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 0.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 0.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "PotMobile2Body": {
-    "_name": "PotMobile2Body",
-    "name": "Potmobile",
-    "flags": 0,
-    "health": [
-      600.0,
-      180.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      12.0,
-      2.4
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 15.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 0.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "PotMobileBody": {
-    "_name": "PotMobileBody",
-    "name": "Potmobile",
-    "flags": 0,
-    "health": [
-      600.0,
-      180.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      12.0,
-      2.4
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 15.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 0.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "SniperBody": {
-    "_name": "SniperBody",
+  "VultureEggBody": {
+    "_name": "VultureEggBody",
     "name": "",
-    "flags": 0,
+    "flags": 260,
     "health": [
-      110.0,
-      33.0
+      1.0,
+      0.0
     ],
     "regen": [
-      0.6,
-      0.12
+      0.0,
+      0.0
     ],
     "damage": [
-      12.0,
-      2.4
+      0.0,
+      0.0
     ],
-    "attack_speed": 1.0,
-    "crit": 1.0,
+    "attack_speed": 0.0,
+    "crit": 0.0,
     "luck": 0,
-    "speed": 7.0,
+    "speed": 0.0,
     "sprint_multiplier": 1.45,
-    "acceleration": 80.0,
+    "acceleration": 0.0,
     "jump": 1,
-    "jump_power": 15.0,
+    "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
     "pain_threshold": Infinity,
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "WispBody": {
+    "_name": "WispBody",
+    "name": "Lesser Wisp",
+    "flags": 0,
+    "health": [
+      35.0,
+      10.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      3.5,
+      0.7
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 6.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 12.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.1,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
+  "WispSoulBody": {
+    "_name": "WispSoulBody",
+    "name": "Lesser Wisp",
+    "flags": 0,
+    "health": [
+      35.0,
+      10.0
+    ],
+    "regen": [
+      -3.0,
+      -0.6
+    ],
+    "damage": [
+      3.5,
+      0.7
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 6.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 12.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.1,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
     "item_drop": null,
     "expansion": null
   }

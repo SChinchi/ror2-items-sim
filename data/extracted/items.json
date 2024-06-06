@@ -1,5 +1,14 @@
 [
   {
+    "_name": "AACannon",
+    "name": "ITEM_AACANNON_NAME",
+    "tier": "NoTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": null,
+    "tags": []
+  },
+  {
     "_name": "AdaptiveArmor",
     "name": "ITEM_ADAPTIVEARMOR_NAME",
     "tier": "NoTier",
@@ -52,6 +61,18 @@
     "required_dlc": null,
     "tags": [
       9
+    ]
+  },
+  {
+    "_name": "AttackSpeedAndMoveSpeed",
+    "name": "Mocha",
+    "tier": "Tier1",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      1,
+      3
     ]
   },
   {
@@ -127,6 +148,18 @@
     ]
   },
   {
+    "_name": "BearVoid",
+    "name": "Safer Spaces",
+    "tier": "VoidTier1",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      3,
+      11
+    ]
+  },
+  {
     "_name": "BeetleGland",
     "name": "Queen's Gland",
     "tier": "BossTier",
@@ -150,6 +183,17 @@
     ]
   },
   {
+    "_name": "BleedOnHit",
+    "name": "Tri-Tip Dagger",
+    "tier": "Tier1",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": null,
+    "tags": [
+      1
+    ]
+  },
+  {
     "_name": "BleedOnHitAndExplode",
     "name": "Shatterspleen",
     "tier": "BossTier",
@@ -161,12 +205,12 @@
     ]
   },
   {
-    "_name": "BleedOnHit",
-    "name": "Tri-Tip Dagger",
-    "tier": "Tier1",
+    "_name": "BleedOnHitVoid",
+    "name": "Needletick",
+    "tier": "VoidTier1",
     "hidden": false,
     "can_remove": true,
-    "required_dlc": null,
+    "required_dlc": "DLC1",
     "tags": [
       1
     ]
@@ -251,6 +295,17 @@
     ]
   },
   {
+    "_name": "BurnNearby",
+    "name": "ITEM_BURNNEARBY_NAME",
+    "tier": "NoTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": null,
+    "tags": [
+      1
+    ]
+  },
+  {
     "_name": "CaptainDefenseMatrix",
     "name": "Defensive Microbots",
     "tier": "Tier3",
@@ -274,9 +329,54 @@
     ]
   },
   {
+    "_name": "ChainLightningVoid",
+    "name": "Polylute",
+    "tier": "VoidTier2",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      1
+    ]
+  },
+  {
     "_name": "Clover",
     "name": "57 Leaf Clover",
     "tier": "Tier3",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": null,
+    "tags": [
+      3
+    ]
+  },
+  {
+    "_name": "CloverVoid",
+    "name": "Benthic Bloom",
+    "tier": "VoidTier3",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      3,
+      20
+    ]
+  },
+  {
+    "_name": "ConvertCritChanceToCritDamage",
+    "name": "ITEM_CONVERTCRITCHANCETOCRITDAMAGE_NAME",
+    "tier": "NoTier",
+    "hidden": true,
+    "can_remove": false,
+    "required_dlc": "DLC1",
+    "tags": [
+      1
+    ]
+  },
+  {
+    "_name": "CooldownOnCrit",
+    "name": "Wicked Ring",
+    "tier": "NoTier",
     "hidden": false,
     "can_remove": true,
     "required_dlc": null,
@@ -297,6 +397,17 @@
     ]
   },
   {
+    "_name": "CritDamage",
+    "name": "Laser Scope",
+    "tier": "Tier3",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      1
+    ]
+  },
+  {
     "_name": "CritGlasses",
     "name": "Lens-Maker's Glasses",
     "tier": "Tier1",
@@ -305,6 +416,28 @@
     "required_dlc": null,
     "tags": [
       1
+    ]
+  },
+  {
+    "_name": "CritGlassesVoid",
+    "name": "Lost Seer's Lenses",
+    "tier": "VoidTier1",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      1
+    ]
+  },
+  {
+    "_name": "CritHeal",
+    "name": "ITEM_CRITHEAL_NAME",
+    "tier": "NoTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": null,
+    "tags": [
+      2
     ]
   },
   {
@@ -361,25 +494,68 @@
     "tags": []
   },
   {
-    "_name": "IceRing",
-    "name": "Runald's Band",
-    "tier": "Tier2",
+    "_name": "DroneWeapons",
+    "name": "Spare Drone Parts",
+    "tier": "Tier3",
     "hidden": false,
     "can_remove": true,
-    "required_dlc": null,
+    "required_dlc": "DLC1",
     "tags": [
-      1
+      1,
+      13,
+      4,
+      11
     ]
   },
   {
-    "_name": "FireRing",
-    "name": "Kjaro's Band",
-    "tier": "Tier2",
+    "_name": "DroneWeaponsBoost",
+    "name": "ITEM_DRONEWEAPONSBOOST_NAME",
+    "tier": "NoTier",
+    "hidden": true,
+    "can_remove": false,
+    "required_dlc": "DLC1",
+    "tags": []
+  },
+  {
+    "_name": "DroneWeaponsDisplay1",
+    "name": "ITEM_DRONEWEAPONSDISPLAY1_NAME",
+    "tier": "NoTier",
+    "hidden": true,
+    "can_remove": false,
+    "required_dlc": "DLC1",
+    "tags": []
+  },
+  {
+    "_name": "DroneWeaponsDisplay2",
+    "name": "ITEM_DRONEWEAPONSDISPLAY2_NAME",
+    "tier": "NoTier",
+    "hidden": true,
+    "can_remove": false,
+    "required_dlc": "DLC1",
+    "tags": []
+  },
+  {
+    "_name": "ElementalRingVoid",
+    "name": "Singularity Band",
+    "tier": "VoidTier2",
     "hidden": false,
     "can_remove": true,
-    "required_dlc": null,
+    "required_dlc": "DLC1",
     "tags": [
-      1
+      1,
+      3
+    ]
+  },
+  {
+    "_name": "EmpowerAlways",
+    "name": "ITEM_EMPOWERALWAYS_NAME",
+    "tier": "NoTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      3,
+      11
     ]
   },
   {
@@ -407,6 +583,17 @@
     ]
   },
   {
+    "_name": "EquipmentMagazineVoid",
+    "name": "Lysate Cell",
+    "tier": "VoidTier2",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      3
+    ]
+  },
+  {
     "_name": "ExecuteLowHealthElite",
     "name": "Old Guillotine",
     "tier": "Tier2",
@@ -431,6 +618,28 @@
     ]
   },
   {
+    "_name": "ExplodeOnDeathVoid",
+    "name": "Voidsent Flame",
+    "tier": "VoidTier2",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      1
+    ]
+  },
+  {
+    "_name": "ExtraLife",
+    "name": "Dio's Best Friend",
+    "tier": "Tier3",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": null,
+    "tags": [
+      3
+    ]
+  },
+  {
     "_name": "ExtraLifeConsumed",
     "name": "Dio's Best Friend (Consumed)",
     "tier": "NoTier",
@@ -442,12 +651,23 @@
     ]
   },
   {
-    "_name": "ExtraLife",
-    "name": "Dio's Best Friend",
-    "tier": "Tier3",
+    "_name": "ExtraLifeVoid",
+    "name": "Pluripotent Larva",
+    "tier": "VoidTier3",
     "hidden": false,
     "can_remove": true,
-    "required_dlc": null,
+    "required_dlc": "DLC1",
+    "tags": [
+      3
+    ]
+  },
+  {
+    "_name": "ExtraLifeVoidConsumed",
+    "name": "Pluripotent Larva (Consumed)",
+    "tier": "NoTier",
+    "hidden": false,
+    "can_remove": false,
+    "required_dlc": "DLC1",
     "tags": [
       3
     ]
@@ -475,6 +695,17 @@
     "tags": [
       3,
       4
+    ]
+  },
+  {
+    "_name": "FireRing",
+    "name": "Kjaro's Band",
+    "tier": "Tier2",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": null,
+    "tags": [
+      1
     ]
   },
   {
@@ -528,6 +759,49 @@
     ]
   },
   {
+    "_name": "FragileDamageBonus",
+    "name": "Delicate Watch",
+    "tier": "Tier1",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      1,
+      16
+    ]
+  },
+  {
+    "_name": "FragileDamageBonusConsumed",
+    "name": "Delicate Watch (Broken)",
+    "tier": "NoTier",
+    "hidden": false,
+    "can_remove": false,
+    "required_dlc": "DLC1",
+    "tags": []
+  },
+  {
+    "_name": "FreeChest",
+    "name": "Shipping Request Form",
+    "tier": "Tier2",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      3,
+      20,
+      4
+    ]
+  },
+  {
+    "_name": "Ghost",
+    "name": "ITEM_GHOST_NAME",
+    "tier": "NoTier",
+    "hidden": false,
+    "can_remove": false,
+    "required_dlc": null,
+    "tags": []
+  },
+  {
     "_name": "GhostOnKill",
     "name": "Happiest Mask",
     "tier": "Tier3",
@@ -541,21 +815,55 @@
     ]
   },
   {
-    "_name": "Ghost",
-    "name": "ITEM_GHOST_NAME",
-    "tier": "NoTier",
-    "hidden": false,
-    "can_remove": false,
-    "required_dlc": null,
-    "tags": []
-  },
-  {
     "_name": "GoldOnHit",
     "name": "Brittle Crown",
     "tier": "LunarTier",
     "hidden": false,
     "can_remove": true,
     "required_dlc": null,
+    "tags": [
+      3
+    ]
+  },
+  {
+    "_name": "GoldOnHurt",
+    "name": "Roll of Pennies",
+    "tier": "Tier1",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      3,
+      4
+    ]
+  },
+  {
+    "_name": "GummyCloneIdentifier",
+    "name": "ITEM_GUMMYCLONEIDENTIFIER_NAME",
+    "tier": "NoTier",
+    "hidden": true,
+    "can_remove": false,
+    "required_dlc": null,
+    "tags": []
+  },
+  {
+    "_name": "HalfAttackSpeedHalfCooldowns",
+    "name": "Light Flux Pauldron",
+    "tier": "LunarTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      3
+    ]
+  },
+  {
+    "_name": "HalfSpeedDoubleHealth",
+    "name": "Stone Flux Pauldron",
+    "tier": "LunarTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
     "tags": [
       3
     ]
@@ -586,15 +894,6 @@
     ]
   },
   {
-    "_name": "HealthDecay",
-    "name": "ITEM_HEALTHDECAY_NAME",
-    "tier": "NoTier",
-    "hidden": false,
-    "can_remove": false,
-    "required_dlc": null,
-    "tags": []
-  },
-  {
     "_name": "HealWhileSafe",
     "name": "Cautious Slug",
     "tier": "Tier1",
@@ -606,6 +905,39 @@
     ]
   },
   {
+    "_name": "HealingPotion",
+    "name": "Power Elixir",
+    "tier": "Tier1",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      2,
+      16,
+      4
+    ]
+  },
+  {
+    "_name": "HealingPotionConsumed",
+    "name": "Empty Bottle",
+    "tier": "NoTier",
+    "hidden": false,
+    "can_remove": false,
+    "required_dlc": "DLC1",
+    "tags": [
+      2
+    ]
+  },
+  {
+    "_name": "HealthDecay",
+    "name": "ITEM_HEALTHDECAY_NAME",
+    "tier": "NoTier",
+    "hidden": false,
+    "can_remove": false,
+    "required_dlc": null,
+    "tags": []
+  },
+  {
     "_name": "Hoof",
     "name": "Paul's Goat Hoof",
     "tier": "Tier1",
@@ -614,6 +946,17 @@
     "required_dlc": null,
     "tags": [
       3
+    ]
+  },
+  {
+    "_name": "IceRing",
+    "name": "Runald's Band",
+    "tier": "Tier2",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": null,
+    "tags": [
+      1
     ]
   },
   {
@@ -641,6 +984,18 @@
     ]
   },
   {
+    "_name": "ImmuneToDebuff",
+    "name": "Ben's Raincoat",
+    "tier": "Tier3",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      3,
+      2
+    ]
+  },
+  {
     "_name": "IncreaseHealing",
     "name": "Rejuvenation Rack",
     "tier": "Tier3",
@@ -649,6 +1004,18 @@
     "required_dlc": null,
     "tags": [
       2
+    ]
+  },
+  {
+    "_name": "Incubator",
+    "name": "Ancestral Incubator",
+    "tier": "NoTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": null,
+    "tags": [
+      3,
+      6
     ]
   },
   {
@@ -723,6 +1090,15 @@
     ]
   },
   {
+    "_name": "LemurianHarness",
+    "name": "ITEM_LEMURIANHARNESS_NAME",
+    "tier": "NoTier",
+    "hidden": true,
+    "can_remove": true,
+    "required_dlc": null,
+    "tags": []
+  },
+  {
     "_name": "LevelBonus",
     "name": "ITEM_LEVELBONUS_NAME",
     "tier": "NoTier",
@@ -767,19 +1143,6 @@
     ]
   },
   {
-    "_name": "LunarSecondaryReplacement",
-    "name": "Hooks of Heresy",
-    "tier": "LunarTier",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": null,
-    "tags": [
-      1,
-      4,
-      12
-    ]
-  },
-  {
     "_name": "LunarPrimaryReplacement",
     "name": "Visions of Heresy",
     "tier": "LunarTier",
@@ -793,14 +1156,14 @@
     ]
   },
   {
-    "_name": "LunarUtilityReplacement",
-    "name": "Strides of Heresy",
+    "_name": "LunarSecondaryReplacement",
+    "name": "Hooks of Heresy",
     "tier": "LunarTier",
     "hidden": false,
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      3,
+      1,
       4,
       12
     ]
@@ -819,6 +1182,17 @@
     ]
   },
   {
+    "_name": "LunarSun",
+    "name": "Egocentrism",
+    "tier": "LunarTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      3
+    ]
+  },
+  {
     "_name": "LunarTrinket",
     "name": "Beads of Fealty",
     "tier": "LunarTier",
@@ -828,6 +1202,39 @@
     "tags": [
       19
     ]
+  },
+  {
+    "_name": "LunarUtilityReplacement",
+    "name": "Strides of Heresy",
+    "tier": "LunarTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": null,
+    "tags": [
+      3,
+      4,
+      12
+    ]
+  },
+  {
+    "_name": "LunarWings",
+    "name": "Blessings of Terafirmae",
+    "tier": "NoTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      3
+    ]
+  },
+  {
+    "_name": "MageAttunement",
+    "name": "ITEM_MAGEATTUNEMENT_NAME",
+    "tier": "NoTier",
+    "hidden": true,
+    "can_remove": false,
+    "required_dlc": null,
+    "tags": []
   },
   {
     "_name": "Medkit",
@@ -859,12 +1266,34 @@
     "tags": []
   },
   {
+    "_name": "MinorConstructOnKill",
+    "name": "Defense Nucleus",
+    "tier": "BossTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      6
+    ]
+  },
+  {
     "_name": "Missile",
     "name": "AtG Missile Mk. 1",
     "tier": "Tier2",
     "hidden": false,
     "can_remove": true,
     "required_dlc": null,
+    "tags": [
+      1
+    ]
+  },
+  {
+    "_name": "MissileVoid",
+    "name": "Plasma Shrimp",
+    "tier": "VoidTier2",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
     "tags": [
       1
     ]
@@ -891,6 +1320,28 @@
     ]
   },
   {
+    "_name": "MoreMissile",
+    "name": "Pocket I.C.B.M.",
+    "tier": "Tier3",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      1
+    ]
+  },
+  {
+    "_name": "MoveSpeedOnKill",
+    "name": "Hunter's Harpoon",
+    "tier": "Tier2",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      3
+    ]
+  },
+  {
     "_name": "Mushroom",
     "name": "Bustling Fungus",
     "tier": "Tier1",
@@ -900,6 +1351,17 @@
     "tags": [
       2,
       4
+    ]
+  },
+  {
+    "_name": "MushroomVoid",
+    "name": "Weeping Fungus",
+    "tier": "VoidTier1",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      2
     ]
   },
   {
@@ -937,6 +1399,17 @@
     ]
   },
   {
+    "_name": "OutOfCombatArmor",
+    "name": "Oddly-shaped Opal",
+    "tier": "Tier1",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      3
+    ]
+  },
+  {
     "_name": "ParentEgg",
     "name": "Planula",
     "tier": "BossTier",
@@ -957,6 +1430,17 @@
     "tags": [
       3,
       9
+    ]
+  },
+  {
+    "_name": "PermanentDebuffOnHit",
+    "name": "Symbiotic Scorpion",
+    "tier": "Tier3",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      1
     ]
   },
   {
@@ -995,6 +1479,39 @@
     ]
   },
   {
+    "_name": "PlantOnHit",
+    "name": "ITEM_PLANTONHIT_NAME",
+    "tier": "NoTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": null,
+    "tags": [
+      1
+    ]
+  },
+  {
+    "_name": "PlasmaCore",
+    "name": "ITEM_PLASMACORE_NAME",
+    "tier": "NoTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": null,
+    "tags": [
+      1
+    ]
+  },
+  {
+    "_name": "PrimarySkillShuriken",
+    "name": "Shuriken",
+    "tier": "Tier2",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      1
+    ]
+  },
+  {
     "_name": "RandomDamageZone",
     "name": "Mercurial Rachis",
     "tier": "LunarTier",
@@ -1003,6 +1520,56 @@
     "required_dlc": null,
     "tags": [
       3
+    ]
+  },
+  {
+    "_name": "RandomEquipmentTrigger",
+    "name": "Bottled Chaos",
+    "tier": "Tier3",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      3,
+      7
+    ]
+  },
+  {
+    "_name": "RandomlyLunar",
+    "name": "Eulogy Zero",
+    "tier": "LunarTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      3,
+      11
+    ]
+  },
+  {
+    "_name": "RegeneratingScrap",
+    "name": "Regenerating Scrap",
+    "tier": "Tier2",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      3,
+      14,
+      15,
+      20
+    ]
+  },
+  {
+    "_name": "RegeneratingScrapConsumed",
+    "name": "Regenerating Scrap (Consumed)",
+    "tier": "NoTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      3,
+      20
     ]
   },
   {
@@ -1029,12 +1596,48 @@
     ]
   },
   {
+    "_name": "ScrapGreen",
+    "name": "Item Scrap, Green",
+    "tier": "Tier2",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": null,
+    "tags": [
+      9,
+      10
+    ]
+  },
+  {
+    "_name": "ScrapGreenSuppressed",
+    "name": "Strange Scrap, Green",
+    "tier": "NoTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      9,
+      10
+    ]
+  },
+  {
     "_name": "ScrapRed",
     "name": "Item Scrap, Red",
     "tier": "Tier3",
     "hidden": false,
     "can_remove": true,
     "required_dlc": null,
+    "tags": [
+      9,
+      10
+    ]
+  },
+  {
+    "_name": "ScrapRedSuppressed",
+    "name": "Strange Scrap, Red",
+    "tier": "NoTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
     "tags": [
       9,
       10
@@ -1053,21 +1656,21 @@
     ]
   },
   {
-    "_name": "ScrapYellow",
-    "name": "Item Scrap, Yellow",
-    "tier": "BossTier",
+    "_name": "ScrapWhiteSuppressed",
+    "name": "Strange Scrap, White",
+    "tier": "NoTier",
     "hidden": false,
     "can_remove": true,
-    "required_dlc": null,
+    "required_dlc": "DLC1",
     "tags": [
       9,
       10
     ]
   },
   {
-    "_name": "ScrapGreen",
-    "name": "Item Scrap, Green",
-    "tier": "Tier2",
+    "_name": "ScrapYellow",
+    "name": "Item Scrap, Yellow",
+    "tier": "BossTier",
     "hidden": false,
     "can_remove": true,
     "required_dlc": null,
@@ -1147,12 +1750,32 @@
     ]
   },
   {
+    "_name": "SkullCounter",
+    "name": "Skull Token",
+    "tier": "NoTier",
+    "hidden": false,
+    "can_remove": false,
+    "required_dlc": null,
+    "tags": []
+  },
+  {
     "_name": "SlowOnHit",
     "name": "Chronobauble",
     "tier": "Tier2",
     "hidden": false,
     "can_remove": true,
     "required_dlc": null,
+    "tags": [
+      3
+    ]
+  },
+  {
+    "_name": "SlowOnHitVoid",
+    "name": "Tentabauble",
+    "tier": "VoidTier2",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
     "tags": [
       3
     ]
@@ -1229,6 +1852,17 @@
     ]
   },
   {
+    "_name": "StrengthenBurn",
+    "name": "Ignition Tank",
+    "tier": "Tier2",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      1
+    ]
+  },
+  {
     "_name": "StunChanceOnHit",
     "name": "Stun Grenade",
     "tier": "Tier1",
@@ -1249,6 +1883,20 @@
     "required_dlc": null,
     "tags": [
       1
+    ]
+  },
+  {
+    "_name": "TPHealingNova",
+    "name": "Lepton Daisy",
+    "tier": "Tier2",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": null,
+    "tags": [
+      2,
+      4,
+      13,
+      17
     ]
   },
   {
@@ -1283,6 +1931,18 @@
     "can_remove": false,
     "required_dlc": null,
     "tags": []
+  },
+  {
+    "_name": "TempestOnKill",
+    "name": "ITEM_TEMPESTONKILL_NAME",
+    "tier": "NoTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": null,
+    "tags": [
+      3,
+      6
+    ]
   },
   {
     "_name": "Thorns",
@@ -1335,26 +1995,25 @@
     ]
   },
   {
-    "_name": "TPHealingNova",
-    "name": "Lepton Daisy",
-    "tier": "Tier2",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": null,
-    "tags": [
-      2,
-      4,
-      13,
-      17
-    ]
-  },
-  {
     "_name": "TreasureCache",
     "name": "Rusted Key",
     "tier": "Tier1",
     "hidden": false,
     "can_remove": true,
     "required_dlc": null,
+    "tags": [
+      3,
+      4,
+      20
+    ]
+  },
+  {
+    "_name": "TreasureCacheVoid",
+    "name": "Encrusted Key",
+    "tier": "VoidTier1",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
     "tags": [
       3,
       4,
@@ -1385,6 +2044,38 @@
     ]
   },
   {
+    "_name": "VoidMegaCrabItem",
+    "name": "Newly Hatched Zoea",
+    "tier": "VoidBoss",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC1",
+    "tags": [
+      3,
+      13
+    ]
+  },
+  {
+    "_name": "VoidmanPassiveItem",
+    "name": "",
+    "tier": "NoTier",
+    "hidden": true,
+    "can_remove": false,
+    "required_dlc": "DLC1",
+    "tags": []
+  },
+  {
+    "_name": "WarCryOnCombat",
+    "name": "ITEM_WARCRYONCOMBAT_NAME",
+    "tier": "NoTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": null,
+    "tags": [
+      1
+    ]
+  },
+  {
     "_name": "WarCryOnMultiKill",
     "name": "Berzerker's Pauldron",
     "tier": "Tier2",
@@ -1407,697 +2098,6 @@
       3,
       4,
       13
-    ]
-  },
-  {
-    "_name": "LemurianHarness",
-    "name": "ITEM_LEMURIANHARNESS_NAME",
-    "tier": "NoTier",
-    "hidden": true,
-    "can_remove": true,
-    "required_dlc": null,
-    "tags": []
-  },
-  {
-    "_name": "AttackSpeedAndMoveSpeed",
-    "name": "Mocha",
-    "tier": "Tier1",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      1,
-      3
-    ]
-  },
-  {
-    "_name": "BearVoid",
-    "name": "Safer Spaces",
-    "tier": "VoidTier1",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      3,
-      11
-    ]
-  },
-  {
-    "_name": "BleedOnHitVoid",
-    "name": "Needletick",
-    "tier": "VoidTier1",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      1
-    ]
-  },
-  {
-    "_name": "ChainLightningVoid",
-    "name": "Polylute",
-    "tier": "VoidTier2",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      1
-    ]
-  },
-  {
-    "_name": "CloverVoid",
-    "name": "Benthic Bloom",
-    "tier": "VoidTier3",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      3,
-      20
-    ]
-  },
-  {
-    "_name": "ConvertCritChanceToCritDamage",
-    "name": "ITEM_CONVERTCRITCHANCETOCRITDAMAGE_NAME",
-    "tier": "NoTier",
-    "hidden": true,
-    "can_remove": false,
-    "required_dlc": "DLC1",
-    "tags": [
-      1
-    ]
-  },
-  {
-    "_name": "CritDamage",
-    "name": "Laser Scope",
-    "tier": "Tier3",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      1
-    ]
-  },
-  {
-    "_name": "CritGlassesVoid",
-    "name": "Lost Seer's Lenses",
-    "tier": "VoidTier1",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      1
-    ]
-  },
-  {
-    "_name": "DroneWeapons",
-    "name": "Spare Drone Parts",
-    "tier": "Tier3",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      1,
-      13,
-      4,
-      11
-    ]
-  },
-  {
-    "_name": "DroneWeaponsDisplay2",
-    "name": "ITEM_DRONEWEAPONSDISPLAY2_NAME",
-    "tier": "NoTier",
-    "hidden": true,
-    "can_remove": false,
-    "required_dlc": "DLC1",
-    "tags": []
-  },
-  {
-    "_name": "DroneWeaponsBoost",
-    "name": "ITEM_DRONEWEAPONSBOOST_NAME",
-    "tier": "NoTier",
-    "hidden": true,
-    "can_remove": false,
-    "required_dlc": "DLC1",
-    "tags": []
-  },
-  {
-    "_name": "DroneWeaponsDisplay1",
-    "name": "ITEM_DRONEWEAPONSDISPLAY1_NAME",
-    "tier": "NoTier",
-    "hidden": true,
-    "can_remove": false,
-    "required_dlc": "DLC1",
-    "tags": []
-  },
-  {
-    "_name": "ElementalRingVoid",
-    "name": "Singularity Band",
-    "tier": "VoidTier2",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      1,
-      3
-    ]
-  },
-  {
-    "_name": "EmpowerAlways",
-    "name": "ITEM_EMPOWERALWAYS_NAME",
-    "tier": "NoTier",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      3,
-      11
-    ]
-  },
-  {
-    "_name": "EquipmentMagazineVoid",
-    "name": "Lysate Cell",
-    "tier": "VoidTier2",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      3
-    ]
-  },
-  {
-    "_name": "ExplodeOnDeathVoid",
-    "name": "Voidsent Flame",
-    "tier": "VoidTier2",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      1
-    ]
-  },
-  {
-    "_name": "ExtraLifeVoidConsumed",
-    "name": "Pluripotent Larva (Consumed)",
-    "tier": "NoTier",
-    "hidden": false,
-    "can_remove": false,
-    "required_dlc": "DLC1",
-    "tags": [
-      3
-    ]
-  },
-  {
-    "_name": "ExtraLifeVoid",
-    "name": "Pluripotent Larva",
-    "tier": "VoidTier3",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      3
-    ]
-  },
-  {
-    "_name": "FragileDamageBonus",
-    "name": "Delicate Watch",
-    "tier": "Tier1",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      1,
-      16
-    ]
-  },
-  {
-    "_name": "FragileDamageBonusConsumed",
-    "name": "Delicate Watch (Broken)",
-    "tier": "NoTier",
-    "hidden": false,
-    "can_remove": false,
-    "required_dlc": "DLC1",
-    "tags": []
-  },
-  {
-    "_name": "FreeChest",
-    "name": "Shipping Request Form",
-    "tier": "Tier2",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      3,
-      20,
-      4
-    ]
-  },
-  {
-    "_name": "GoldOnHurt",
-    "name": "Roll of Pennies",
-    "tier": "Tier1",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      3,
-      4
-    ]
-  },
-  {
-    "_name": "GummyCloneIdentifier",
-    "name": "ITEM_GUMMYCLONEIDENTIFIER_NAME",
-    "tier": "NoTier",
-    "hidden": true,
-    "can_remove": false,
-    "required_dlc": null,
-    "tags": []
-  },
-  {
-    "_name": "HalfAttackSpeedHalfCooldowns",
-    "name": "Light Flux Pauldron",
-    "tier": "LunarTier",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      3
-    ]
-  },
-  {
-    "_name": "HalfSpeedDoubleHealth",
-    "name": "Stone Flux Pauldron",
-    "tier": "LunarTier",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      3
-    ]
-  },
-  {
-    "_name": "HealingPotion",
-    "name": "Power Elixir",
-    "tier": "Tier1",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      2,
-      16,
-      4
-    ]
-  },
-  {
-    "_name": "HealingPotionConsumed",
-    "name": "Empty Bottle",
-    "tier": "NoTier",
-    "hidden": false,
-    "can_remove": false,
-    "required_dlc": "DLC1",
-    "tags": [
-      2
-    ]
-  },
-  {
-    "_name": "ImmuneToDebuff",
-    "name": "Ben's Raincoat",
-    "tier": "Tier3",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      3,
-      2
-    ]
-  },
-  {
-    "_name": "LunarSun",
-    "name": "Egocentrism",
-    "tier": "LunarTier",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      3
-    ]
-  },
-  {
-    "_name": "LunarWings",
-    "name": "Blessings of Terafirmae",
-    "tier": "NoTier",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      3
-    ]
-  },
-  {
-    "_name": "MinorConstructOnKill",
-    "name": "Defense Nucleus",
-    "tier": "BossTier",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      6
-    ]
-  },
-  {
-    "_name": "MissileVoid",
-    "name": "Plasma Shrimp",
-    "tier": "VoidTier2",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      1
-    ]
-  },
-  {
-    "_name": "MoreMissile",
-    "name": "Pocket I.C.B.M.",
-    "tier": "Tier3",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      1
-    ]
-  },
-  {
-    "_name": "MoveSpeedOnKill",
-    "name": "Hunter's Harpoon",
-    "tier": "Tier2",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      3
-    ]
-  },
-  {
-    "_name": "MushroomVoid",
-    "name": "Weeping Fungus",
-    "tier": "VoidTier1",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      2
-    ]
-  },
-  {
-    "_name": "OutOfCombatArmor",
-    "name": "Oddly-shaped Opal",
-    "tier": "Tier1",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      3
-    ]
-  },
-  {
-    "_name": "PermanentDebuffOnHit",
-    "name": "Symbiotic Scorpion",
-    "tier": "Tier3",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      1
-    ]
-  },
-  {
-    "_name": "PrimarySkillShuriken",
-    "name": "Shuriken",
-    "tier": "Tier2",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      1
-    ]
-  },
-  {
-    "_name": "RandomEquipmentTrigger",
-    "name": "Bottled Chaos",
-    "tier": "Tier3",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      3,
-      7
-    ]
-  },
-  {
-    "_name": "RandomlyLunar",
-    "name": "Eulogy Zero",
-    "tier": "LunarTier",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      3,
-      11
-    ]
-  },
-  {
-    "_name": "RegeneratingScrapConsumed",
-    "name": "Regenerating Scrap (Consumed)",
-    "tier": "NoTier",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      3,
-      20
-    ]
-  },
-  {
-    "_name": "RegeneratingScrap",
-    "name": "Regenerating Scrap",
-    "tier": "Tier2",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      3,
-      14,
-      15,
-      20
-    ]
-  },
-  {
-    "_name": "ScrapGreenSuppressed",
-    "name": "Strange Scrap, Green",
-    "tier": "NoTier",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      9,
-      10
-    ]
-  },
-  {
-    "_name": "ScrapWhiteSuppressed",
-    "name": "Strange Scrap, White",
-    "tier": "NoTier",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      9,
-      10
-    ]
-  },
-  {
-    "_name": "ScrapRedSuppressed",
-    "name": "Strange Scrap, Red",
-    "tier": "NoTier",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      9,
-      10
-    ]
-  },
-  {
-    "_name": "SlowOnHitVoid",
-    "name": "Tentabauble",
-    "tier": "VoidTier2",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      3
-    ]
-  },
-  {
-    "_name": "StrengthenBurn",
-    "name": "Ignition Tank",
-    "tier": "Tier2",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      1
-    ]
-  },
-  {
-    "_name": "TreasureCacheVoid",
-    "name": "Encrusted Key",
-    "tier": "VoidTier1",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      3,
-      4,
-      20
-    ]
-  },
-  {
-    "_name": "VoidmanPassiveItem",
-    "name": "",
-    "tier": "NoTier",
-    "hidden": true,
-    "can_remove": false,
-    "required_dlc": "DLC1",
-    "tags": []
-  },
-  {
-    "_name": "VoidMegaCrabItem",
-    "name": "Newly Hatched Zoea",
-    "tier": "VoidBoss",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC1",
-    "tags": [
-      3,
-      13
-    ]
-  },
-  {
-    "_name": "AACannon",
-    "name": "ITEM_AACANNON_NAME",
-    "tier": "NoTier",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": null,
-    "tags": []
-  },
-  {
-    "_name": "BurnNearby",
-    "name": "ITEM_BURNNEARBY_NAME",
-    "tier": "NoTier",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": null,
-    "tags": [
-      1
-    ]
-  },
-  {
-    "_name": "CooldownOnCrit",
-    "name": "Wicked Ring",
-    "tier": "NoTier",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": null,
-    "tags": [
-      3
-    ]
-  },
-  {
-    "_name": "CritHeal",
-    "name": "ITEM_CRITHEAL_NAME",
-    "tier": "NoTier",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": null,
-    "tags": [
-      2
-    ]
-  },
-  {
-    "_name": "Incubator",
-    "name": "Ancestral Incubator",
-    "tier": "NoTier",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": null,
-    "tags": [
-      3,
-      6
-    ]
-  },
-  {
-    "_name": "MageAttunement",
-    "name": "ITEM_MAGEATTUNEMENT_NAME",
-    "tier": "NoTier",
-    "hidden": true,
-    "can_remove": false,
-    "required_dlc": null,
-    "tags": []
-  },
-  {
-    "_name": "PlantOnHit",
-    "name": "ITEM_PLANTONHIT_NAME",
-    "tier": "NoTier",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": null,
-    "tags": [
-      1
-    ]
-  },
-  {
-    "_name": "PlasmaCore",
-    "name": "ITEM_PLASMACORE_NAME",
-    "tier": "NoTier",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": null,
-    "tags": [
-      1
-    ]
-  },
-  {
-    "_name": "SkullCounter",
-    "name": "Skull Token",
-    "tier": "NoTier",
-    "hidden": false,
-    "can_remove": false,
-    "required_dlc": null,
-    "tags": []
-  },
-  {
-    "_name": "TempestOnKill",
-    "name": "ITEM_TEMPESTONKILL_NAME",
-    "tier": "NoTier",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": null,
-    "tags": [
-      3,
-      6
-    ]
-  },
-  {
-    "_name": "WarCryOnCombat",
-    "name": "ITEM_WARCRYONCOMBAT_NAME",
-    "tier": "NoTier",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": null,
-    "tags": [
-      1
     ]
   }
 ]

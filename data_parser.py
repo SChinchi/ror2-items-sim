@@ -427,6 +427,23 @@ def extract_file_data(src_path=FILES_DIR):
                                 wave['wave'] = data
                                 break
 
+    items.sort(key=lambda x: x['_name'])
+    equipment.sort(key=lambda x: x['_name'])
+    droptables = {key: droptables[key] for key in sorted(droptables)}
+    item_tiers = {key: item_tiers[key] for key in sorted(item_tiers, key=lambda x: item_tiers[x]['_tier'])}
+    sc = {key: sc[key] for key in sorted(sc)}
+    isc = {key: isc[key] for key in sorted(isc)}
+    csc = {key: csc[key] for key in sorted(csc)}
+    masters['masters'] = {key: masters['masters'][key] for key in sorted(masters['masters'])}
+    drivers_sorted_keys = []
+    for master in masters['masters'].values():
+        if master['ai']:
+            drivers_sorted_keys.extend(master['ai']['drivers'])
+    masters['AI_driver'] = {key: masters['AI_driver'][key] for key in drivers_sorted_keys}
+    bodies = {key: bodies[key] for key in sorted(bodies)}
+    dccs = {key: dccs[key] for key in sorted(dccs)}
+    scenes = {key: scenes[key] for key in sorted(scenes)}
+
     for fname, data in (
         (ITEMS_FILE, items),
         (EQUIPMENT_FILE, equipment),

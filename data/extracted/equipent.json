@@ -24,6 +24,30 @@
     "required_dlc": null
   },
   {
+    "_name": "BossHunter",
+    "name": "Trophy Hunter's Tricorn",
+    "cooldown": 0.0,
+    "can_drop": 1,
+    "death_drop_chance": 0.0,
+    "randomly_triggered": false,
+    "enigma_compatible": true,
+    "is_lunar": false,
+    "is_boss": false,
+    "required_dlc": "DLC1"
+  },
+  {
+    "_name": "BossHunterConsumed",
+    "name": "Trophy Hunter's Tricorn (Consumed)",
+    "cooldown": 60.0,
+    "can_drop": 0,
+    "death_drop_chance": 0.0,
+    "randomly_triggered": false,
+    "enigma_compatible": true,
+    "is_lunar": false,
+    "is_boss": false,
+    "required_dlc": "DLC1"
+  },
+  {
     "_name": "BurnNearby",
     "name": "Helfire Tincture",
     "cooldown": 45.0,
@@ -108,9 +132,33 @@
     "required_dlc": null
   },
   {
+    "_name": "EliteEarthEquipment",
+    "name": "His Reassurance",
+    "cooldown": 10.0,
+    "can_drop": 0,
+    "death_drop_chance": 0.00025,
+    "randomly_triggered": false,
+    "enigma_compatible": false,
+    "is_lunar": false,
+    "is_boss": false,
+    "required_dlc": "DLC1"
+  },
+  {
     "_name": "EliteFireEquipment",
     "name": "Ifrit's Distinction",
     "cooldown": 10.0,
+    "can_drop": 0,
+    "death_drop_chance": 0.00025,
+    "randomly_triggered": false,
+    "enigma_compatible": false,
+    "is_lunar": false,
+    "is_boss": false,
+    "required_dlc": null
+  },
+  {
+    "_name": "EliteGoldEquipment",
+    "name": "Coven of Gold",
+    "cooldown": 25.0,
     "can_drop": 0,
     "death_drop_chance": 0.00025,
     "randomly_triggered": false,
@@ -180,6 +228,54 @@
     "required_dlc": null
   },
   {
+    "_name": "EliteSecretSpeedEquipment",
+    "name": "Beyond the Limits",
+    "cooldown": 10.0,
+    "can_drop": 0,
+    "death_drop_chance": 1.0,
+    "randomly_triggered": false,
+    "enigma_compatible": false,
+    "is_lunar": false,
+    "is_boss": false,
+    "required_dlc": "DLC1"
+  },
+  {
+    "_name": "EliteVoidEquipment",
+    "name": "EQUIPMENT_AFFIXVOID_NAME",
+    "cooldown": 10.0,
+    "can_drop": 0,
+    "death_drop_chance": 0.0,
+    "randomly_triggered": false,
+    "enigma_compatible": false,
+    "is_lunar": false,
+    "is_boss": false,
+    "required_dlc": "DLC1"
+  },
+  {
+    "_name": "EliteYellowEquipment",
+    "name": "",
+    "cooldown": 25.0,
+    "can_drop": 0,
+    "death_drop_chance": 0.00025,
+    "randomly_triggered": false,
+    "enigma_compatible": false,
+    "is_lunar": false,
+    "is_boss": false,
+    "required_dlc": null
+  },
+  {
+    "_name": "Enigma",
+    "name": "EQUIPMENT_ENIGMA_NAME",
+    "cooldown": 60.0,
+    "can_drop": 0,
+    "death_drop_chance": 0.0,
+    "randomly_triggered": false,
+    "enigma_compatible": false,
+    "is_lunar": false,
+    "is_boss": false,
+    "required_dlc": null
+  },
+  {
     "_name": "FireBallDash",
     "name": "Volcanic Egg",
     "cooldown": 30.0,
@@ -228,6 +324,18 @@
     "required_dlc": null
   },
   {
+    "_name": "GhostGun",
+    "name": "Reaper's Remorse",
+    "cooldown": 10.0,
+    "can_drop": 0,
+    "death_drop_chance": 0.0,
+    "randomly_triggered": false,
+    "enigma_compatible": false,
+    "is_lunar": false,
+    "is_boss": false,
+    "required_dlc": null
+  },
+  {
     "_name": "GoldGat",
     "name": "The Crowdfunder",
     "cooldown": 5.0,
@@ -238,6 +346,30 @@
     "is_lunar": false,
     "is_boss": false,
     "required_dlc": null
+  },
+  {
+    "_name": "GummyClone",
+    "name": "Goobo Jr.",
+    "cooldown": 100.0,
+    "can_drop": 1,
+    "death_drop_chance": 0.0,
+    "randomly_triggered": true,
+    "enigma_compatible": true,
+    "is_lunar": false,
+    "is_boss": false,
+    "required_dlc": "DLC1"
+  },
+  {
+    "_name": "IrradiatingLaser",
+    "name": "Overloading Excavator",
+    "cooldown": 45.0,
+    "can_drop": 0,
+    "death_drop_chance": 0.0,
+    "randomly_triggered": true,
+    "enigma_compatible": false,
+    "is_lunar": false,
+    "is_boss": false,
+    "required_dlc": "DLC1"
   },
   {
     "_name": "Jetpack",
@@ -276,6 +408,18 @@
     "required_dlc": null
   },
   {
+    "_name": "LunarPortalOnUse",
+    "name": "Elegy of Extinction",
+    "cooldown": 140.0,
+    "can_drop": 0,
+    "death_drop_chance": 0.0,
+    "randomly_triggered": false,
+    "enigma_compatible": false,
+    "is_lunar": true,
+    "is_boss": false,
+    "required_dlc": "DLC1"
+  },
+  {
     "_name": "LunarPotion",
     "name": "EQUIPMENT_LUNARPOTION_NAME",
     "cooldown": 5.0,
@@ -296,6 +440,54 @@
     "randomly_triggered": false,
     "enigma_compatible": true,
     "is_lunar": true,
+    "is_boss": false,
+    "required_dlc": null
+  },
+  {
+    "_name": "Molotov",
+    "name": "Molotov (6-Pack)",
+    "cooldown": 45.0,
+    "can_drop": 1,
+    "death_drop_chance": 0.0,
+    "randomly_triggered": true,
+    "enigma_compatible": true,
+    "is_lunar": false,
+    "is_boss": false,
+    "required_dlc": "DLC1"
+  },
+  {
+    "_name": "MultiShopCard",
+    "name": "Executive Card",
+    "cooldown": 0.10000000149011612,
+    "can_drop": 1,
+    "death_drop_chance": 0.0,
+    "randomly_triggered": false,
+    "enigma_compatible": false,
+    "is_lunar": false,
+    "is_boss": false,
+    "required_dlc": "DLC1"
+  },
+  {
+    "_name": "OrbOnUse",
+    "name": "EQUIPMENT_ORBONUSE_NAME",
+    "cooldown": 45.0,
+    "can_drop": 0,
+    "death_drop_chance": 0.0,
+    "randomly_triggered": false,
+    "enigma_compatible": true,
+    "is_lunar": false,
+    "is_boss": false,
+    "required_dlc": "DLC1"
+  },
+  {
+    "_name": "OrbitalLaser",
+    "name": "EQUIPMENT_ORBITALLASER_NAME",
+    "cooldown": 1.0,
+    "can_drop": 0,
+    "death_drop_chance": 0.0,
+    "randomly_triggered": false,
+    "enigma_compatible": false,
+    "is_lunar": false,
     "is_boss": false,
     "required_dlc": null
   },
@@ -360,6 +552,30 @@
     "required_dlc": null
   },
   {
+    "_name": "SoulCorruptor",
+    "name": "EQUIPMENT_SOULCORRUPTOR_NAME",
+    "cooldown": 45.0,
+    "can_drop": 0,
+    "death_drop_chance": 0.0,
+    "randomly_triggered": false,
+    "enigma_compatible": false,
+    "is_lunar": false,
+    "is_boss": false,
+    "required_dlc": null
+  },
+  {
+    "_name": "SoulJar",
+    "name": "Jar of Souls",
+    "cooldown": 45.0,
+    "can_drop": 0,
+    "death_drop_chance": 0.0,
+    "randomly_triggered": false,
+    "enigma_compatible": false,
+    "is_lunar": false,
+    "is_boss": false,
+    "required_dlc": null
+  },
+  {
     "_name": "TeamWarCry",
     "name": "Gorag's Opus",
     "cooldown": 45.0,
@@ -384,126 +600,6 @@
     "required_dlc": null
   },
   {
-    "_name": "BossHunterConsumed",
-    "name": "Trophy Hunter's Tricorn (Consumed)",
-    "cooldown": 60.0,
-    "can_drop": 0,
-    "death_drop_chance": 0.0,
-    "randomly_triggered": false,
-    "enigma_compatible": true,
-    "is_lunar": false,
-    "is_boss": false,
-    "required_dlc": "DLC1"
-  },
-  {
-    "_name": "BossHunter",
-    "name": "Trophy Hunter's Tricorn",
-    "cooldown": 0.0,
-    "can_drop": 1,
-    "death_drop_chance": 0.0,
-    "randomly_triggered": false,
-    "enigma_compatible": true,
-    "is_lunar": false,
-    "is_boss": false,
-    "required_dlc": "DLC1"
-  },
-  {
-    "_name": "EliteEarthEquipment",
-    "name": "His Reassurance",
-    "cooldown": 10.0,
-    "can_drop": 0,
-    "death_drop_chance": 0.00025,
-    "randomly_triggered": false,
-    "enigma_compatible": false,
-    "is_lunar": false,
-    "is_boss": false,
-    "required_dlc": "DLC1"
-  },
-  {
-    "_name": "EliteVoidEquipment",
-    "name": "EQUIPMENT_AFFIXVOID_NAME",
-    "cooldown": 10.0,
-    "can_drop": 0,
-    "death_drop_chance": 0.0,
-    "randomly_triggered": false,
-    "enigma_compatible": false,
-    "is_lunar": false,
-    "is_boss": false,
-    "required_dlc": "DLC1"
-  },
-  {
-    "_name": "GummyClone",
-    "name": "Goobo Jr.",
-    "cooldown": 100.0,
-    "can_drop": 1,
-    "death_drop_chance": 0.0,
-    "randomly_triggered": true,
-    "enigma_compatible": true,
-    "is_lunar": false,
-    "is_boss": false,
-    "required_dlc": "DLC1"
-  },
-  {
-    "_name": "IrradiatingLaser",
-    "name": "Overloading Excavator",
-    "cooldown": 45.0,
-    "can_drop": 0,
-    "death_drop_chance": 0.0,
-    "randomly_triggered": true,
-    "enigma_compatible": false,
-    "is_lunar": false,
-    "is_boss": false,
-    "required_dlc": "DLC1"
-  },
-  {
-    "_name": "LunarPortalOnUse",
-    "name": "Elegy of Extinction",
-    "cooldown": 140.0,
-    "can_drop": 0,
-    "death_drop_chance": 0.0,
-    "randomly_triggered": false,
-    "enigma_compatible": false,
-    "is_lunar": true,
-    "is_boss": false,
-    "required_dlc": "DLC1"
-  },
-  {
-    "_name": "Molotov",
-    "name": "Molotov (6-Pack)",
-    "cooldown": 45.0,
-    "can_drop": 1,
-    "death_drop_chance": 0.0,
-    "randomly_triggered": true,
-    "enigma_compatible": true,
-    "is_lunar": false,
-    "is_boss": false,
-    "required_dlc": "DLC1"
-  },
-  {
-    "_name": "MultiShopCard",
-    "name": "Executive Card",
-    "cooldown": 0.10000000149011612,
-    "can_drop": 1,
-    "death_drop_chance": 0.0,
-    "randomly_triggered": false,
-    "enigma_compatible": false,
-    "is_lunar": false,
-    "is_boss": false,
-    "required_dlc": "DLC1"
-  },
-  {
-    "_name": "OrbOnUse",
-    "name": "EQUIPMENT_ORBONUSE_NAME",
-    "cooldown": 45.0,
-    "can_drop": 0,
-    "death_drop_chance": 0.0,
-    "randomly_triggered": false,
-    "enigma_compatible": true,
-    "is_lunar": false,
-    "is_boss": false,
-    "required_dlc": "DLC1"
-  },
-  {
     "_name": "VendingMachine",
     "name": "Remote Caffeinator",
     "cooldown": 60.0,
@@ -514,101 +610,5 @@
     "is_lunar": false,
     "is_boss": false,
     "required_dlc": "DLC1"
-  },
-  {
-    "_name": "EliteSecretSpeedEquipment",
-    "name": "Beyond the Limits",
-    "cooldown": 10.0,
-    "can_drop": 0,
-    "death_drop_chance": 1.0,
-    "randomly_triggered": false,
-    "enigma_compatible": false,
-    "is_lunar": false,
-    "is_boss": false,
-    "required_dlc": "DLC1"
-  },
-  {
-    "_name": "EliteGoldEquipment",
-    "name": "Coven of Gold",
-    "cooldown": 25.0,
-    "can_drop": 0,
-    "death_drop_chance": 0.00025,
-    "randomly_triggered": false,
-    "enigma_compatible": false,
-    "is_lunar": false,
-    "is_boss": false,
-    "required_dlc": null
-  },
-  {
-    "_name": "EliteYellowEquipment",
-    "name": "",
-    "cooldown": 25.0,
-    "can_drop": 0,
-    "death_drop_chance": 0.00025,
-    "randomly_triggered": false,
-    "enigma_compatible": false,
-    "is_lunar": false,
-    "is_boss": false,
-    "required_dlc": null
-  },
-  {
-    "_name": "Enigma",
-    "name": "EQUIPMENT_ENIGMA_NAME",
-    "cooldown": 60.0,
-    "can_drop": 0,
-    "death_drop_chance": 0.0,
-    "randomly_triggered": false,
-    "enigma_compatible": false,
-    "is_lunar": false,
-    "is_boss": false,
-    "required_dlc": null
-  },
-  {
-    "_name": "GhostGun",
-    "name": "Reaper's Remorse",
-    "cooldown": 10.0,
-    "can_drop": 0,
-    "death_drop_chance": 0.0,
-    "randomly_triggered": false,
-    "enigma_compatible": false,
-    "is_lunar": false,
-    "is_boss": false,
-    "required_dlc": null
-  },
-  {
-    "_name": "OrbitalLaser",
-    "name": "EQUIPMENT_ORBITALLASER_NAME",
-    "cooldown": 1.0,
-    "can_drop": 0,
-    "death_drop_chance": 0.0,
-    "randomly_triggered": false,
-    "enigma_compatible": false,
-    "is_lunar": false,
-    "is_boss": false,
-    "required_dlc": null
-  },
-  {
-    "_name": "SoulCorruptor",
-    "name": "EQUIPMENT_SOULCORRUPTOR_NAME",
-    "cooldown": 45.0,
-    "can_drop": 0,
-    "death_drop_chance": 0.0,
-    "randomly_triggered": false,
-    "enigma_compatible": false,
-    "is_lunar": false,
-    "is_boss": false,
-    "required_dlc": null
-  },
-  {
-    "_name": "SoulJar",
-    "name": "Jar of Souls",
-    "cooldown": 45.0,
-    "can_drop": 0,
-    "death_drop_chance": 0.0,
-    "randomly_triggered": false,
-    "enigma_compatible": false,
-    "is_lunar": false,
-    "is_boss": false,
-    "required_dlc": null
   }
 ]

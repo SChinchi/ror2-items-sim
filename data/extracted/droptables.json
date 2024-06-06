@@ -1,4 +1,95 @@
 {
+  "dtAISafeTier1Item": {
+    "class": "BasicPickupDropTable",
+    "can_be_replaced": true,
+    "required_tags": [],
+    "banned_tags": [
+      4
+    ],
+    "weights": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "dtAISafeTier2Item": {
+    "class": "BasicPickupDropTable",
+    "can_be_replaced": true,
+    "required_tags": [],
+    "banned_tags": [
+      4
+    ],
+    "weights": [
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "dtAISafeTier3Item": {
+    "class": "BasicPickupDropTable",
+    "can_be_replaced": true,
+    "required_tags": [],
+    "banned_tags": [
+      4
+    ],
+    "weights": [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "dtArenaMonsterTier1": {
+    "class": "ArenaMonsterItemDropTable",
+    "can_be_replaced": true,
+    "required_tags": [],
+    "banned_tags": [
+      4,
+      6,
+      7,
+      8
+    ],
+    "weights": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0,
+      0.0,
+      0,
+      0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
   "dtArenaMonsterTier2": {
     "class": "ArenaMonsterItemDropTable",
     "can_be_replaced": true,
@@ -49,31 +140,6 @@
       0.0
     ]
   },
-  "dtArenaMonsterTier1": {
-    "class": "ArenaMonsterItemDropTable",
-    "can_be_replaced": true,
-    "required_tags": [],
-    "banned_tags": [
-      4,
-      6,
-      7,
-      8
-    ],
-    "weights": [
-      1.0,
-      0.0,
-      0.0,
-      0.0,
-      0,
-      0.0,
-      0,
-      0,
-      0.0,
-      0.0,
-      0.0,
-      0.0
-    ]
-  },
   "dtArtifactKey": {
     "class": "ExplicitPickupDropTable",
     "can_be_replaced": false,
@@ -90,6 +156,126 @@
     "entries": [
       [
         "BeetleGland",
+        1.0
+      ]
+    ]
+  },
+  "dtBossClayBoss": {
+    "class": "ExplicitPickupDropTable",
+    "can_be_replaced": true,
+    "entries": [
+      [
+        "SiphonOnLowHealth",
+        1.0
+      ]
+    ]
+  },
+  "dtBossElectricWorm": {
+    "class": "ExplicitPickupDropTable",
+    "can_be_replaced": true,
+    "entries": [
+      [
+        "LightningStrikeOnHit",
+        1.0
+      ]
+    ]
+  },
+  "dtBossGrandParent": {
+    "class": "ExplicitPickupDropTable",
+    "can_be_replaced": true,
+    "entries": [
+      [
+        "ParentEgg",
+        1.0
+      ]
+    ]
+  },
+  "dtBossGravekeeper": {
+    "class": "ExplicitPickupDropTable",
+    "can_be_replaced": true,
+    "entries": [
+      [
+        "SprintWisp",
+        1.0
+      ]
+    ]
+  },
+  "dtBossImpBoss": {
+    "class": "ExplicitPickupDropTable",
+    "can_be_replaced": true,
+    "entries": [
+      [
+        "BleedOnHitAndExplode",
+        1.0
+      ]
+    ]
+  },
+  "dtBossMagmaWorm": {
+    "class": "ExplicitPickupDropTable",
+    "can_be_replaced": true,
+    "entries": [
+      [
+        "FireballsOnHit",
+        1.0
+      ]
+    ]
+  },
+  "dtBossMegaConstruct": {
+    "class": "ExplicitPickupDropTable",
+    "can_be_replaced": true,
+    "entries": [
+      [
+        "MinorConstructOnKill",
+        1.0
+      ]
+    ]
+  },
+  "dtBossRoboBallBoss": {
+    "class": "ExplicitPickupDropTable",
+    "can_be_replaced": true,
+    "entries": [
+      [
+        "RoboBallBuddy",
+        1.0
+      ]
+    ]
+  },
+  "dtBossTitan": {
+    "class": "ExplicitPickupDropTable",
+    "can_be_replaced": true,
+    "entries": [
+      [
+        "Knurl",
+        1.0
+      ]
+    ]
+  },
+  "dtBossTitanGold": {
+    "class": "ExplicitPickupDropTable",
+    "can_be_replaced": true,
+    "entries": [
+      [
+        "TitanGoldDuringTP",
+        1.0
+      ]
+    ]
+  },
+  "dtBossVagrant": {
+    "class": "ExplicitPickupDropTable",
+    "can_be_replaced": true,
+    "entries": [
+      [
+        "NovaOnLowHealth",
+        1.0
+      ]
+    ]
+  },
+  "dtBossVoidMegaCrab": {
+    "class": "ExplicitPickupDropTable",
+    "can_be_replaced": true,
+    "entries": [
+      [
+        "VoidMegaCrabItem",
         1.0
       ]
     ]
@@ -114,51 +300,7 @@
       0.0
     ]
   },
-  "dtSmallChestUtility": {
-    "class": "BasicPickupDropTable",
-    "can_be_replaced": true,
-    "required_tags": [
-      3
-    ],
-    "banned_tags": [],
-    "weights": [
-      0.8,
-      0.2,
-      0.01,
-      0.0,
-      0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0
-    ]
-  },
-  "dtSmallChestHealing": {
-    "class": "BasicPickupDropTable",
-    "can_be_replaced": true,
-    "required_tags": [
-      2
-    ],
-    "banned_tags": [],
-    "weights": [
-      0.8,
-      0.2,
-      0.01,
-      0.0,
-      0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0
-    ]
-  },
-  "dtSmallChestDamage": {
+  "dtCategoryChest2Damage": {
     "class": "BasicPickupDropTable",
     "can_be_replaced": true,
     "required_tags": [
@@ -166,9 +308,53 @@
     ],
     "banned_tags": [],
     "weights": [
+      0.0,
       0.8,
       0.2,
-      0.01,
+      0.0,
+      0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "dtCategoryChest2Healing": {
+    "class": "BasicPickupDropTable",
+    "can_be_replaced": true,
+    "required_tags": [
+      2
+    ],
+    "banned_tags": [],
+    "weights": [
+      0.0,
+      0.8,
+      0.2,
+      0.0,
+      0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "dtCategoryChest2Utility": {
+    "class": "BasicPickupDropTable",
+    "can_be_replaced": true,
+    "required_tags": [
+      3
+    ],
+    "banned_tags": [],
+    "weights": [
+      0.0,
+      0.8,
+      0.2,
       0.0,
       0,
       0.0,
@@ -220,167 +406,33 @@
       0.0
     ]
   },
-  "dtBossClayBoss": {
-    "class": "ExplicitPickupDropTable",
+  "dtDoppelganger": {
+    "class": "DoppelgangerDropTable",
     "can_be_replaced": true,
-    "entries": [
-      [
-        "SiphonOnLowHealth",
-        1.0
-      ]
+    "required_tags": [],
+    "banned_tags": [],
+    "weights": [
+      80.0,
+      20.0,
+      1.0,
+      10.0,
+      0,
+      10.0,
+      0,
+      0,
+      80.0,
+      20.0,
+      1.0,
+      0.0
     ]
   },
-  "dtAISafeTier2Item": {
+  "dtDuplicatorTier1": {
     "class": "BasicPickupDropTable",
     "can_be_replaced": true,
     "required_tags": [],
     "banned_tags": [
-      4
+      15
     ],
-    "weights": [
-      0.0,
-      1.0,
-      0.0,
-      0.0,
-      0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0
-    ]
-  },
-  "dtAISafeTier1Item": {
-    "class": "BasicPickupDropTable",
-    "can_be_replaced": true,
-    "required_tags": [],
-    "banned_tags": [
-      4
-    ],
-    "weights": [
-      1.0,
-      0.0,
-      0.0,
-      0.0,
-      0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0
-    ]
-  },
-  "dtEquipment": {
-    "class": "BasicPickupDropTable",
-    "can_be_replaced": true,
-    "required_tags": [],
-    "banned_tags": [],
-    "weights": [
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0,
-      0.0,
-      0.0,
-      1.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0
-    ]
-  },
-  "dtAISafeTier3Item": {
-    "class": "BasicPickupDropTable",
-    "can_be_replaced": true,
-    "required_tags": [],
-    "banned_tags": [
-      4
-    ],
-    "weights": [
-      0.0,
-      0.0,
-      1.0,
-      0.0,
-      0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0
-    ]
-  },
-  "dtVoidChest": {
-    "class": "BasicPickupDropTable",
-    "can_be_replaced": true,
-    "required_tags": [],
-    "banned_tags": [],
-    "weights": [
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0,
-      0.0,
-      0.0,
-      0.0,
-      6.0,
-      3.0,
-      1.0,
-      0.0
-    ]
-  },
-  "dtTier3Item": {
-    "class": "BasicPickupDropTable",
-    "can_be_replaced": true,
-    "required_tags": [],
-    "banned_tags": [],
-    "weights": [
-      0.0,
-      0.0,
-      1.0,
-      0.0,
-      0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0
-    ]
-  },
-  "dtTier2Item": {
-    "class": "BasicPickupDropTable",
-    "can_be_replaced": true,
-    "required_tags": [],
-    "banned_tags": [],
-    "weights": [
-      0.0,
-      1.0,
-      0.0,
-      0.0,
-      0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0
-    ]
-  },
-  "dtTier1Item": {
-    "class": "BasicPickupDropTable",
-    "can_be_replaced": true,
-    "required_tags": [],
-    "banned_tags": [],
     "weights": [
       1.0,
       0.0,
@@ -462,36 +514,52 @@
       0.0
     ]
   },
-  "dtDuplicatorTier1": {
+  "dtEquipment": {
     "class": "BasicPickupDropTable",
     "can_be_replaced": true,
     "required_tags": [],
-    "banned_tags": [
-      15
-    ],
+    "banned_tags": [],
     "weights": [
-      1.0,
+      0.0,
       0.0,
       0.0,
       0.0,
       0,
       0.0,
       0.0,
-      0.0,
+      1.0,
       0.0,
       0.0,
       0.0,
       0.0
     ]
   },
-  "dtBossElectricWorm": {
+  "dtFireRing": {
     "class": "ExplicitPickupDropTable",
     "can_be_replaced": true,
     "entries": [
       [
-        "LightningStrikeOnHit",
+        "FireRing",
         1.0
       ]
+    ]
+  },
+  "dtFreeChest": {
+    "class": "FreeChestDropTable",
+    "can_be_replaced": true,
+    "weights": [
+      0.79,
+      0.2,
+      0.01,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   "dtGoldChest": {
@@ -514,14 +582,104 @@
       0.0
     ]
   },
-  "dtFireRing": {
-    "class": "ExplicitPickupDropTable",
+  "dtITBossWave": {
+    "class": "BasicPickupDropTable",
     "can_be_replaced": true,
-    "entries": [
-      [
-        "FireRing",
-        1.0
-      ]
+    "required_tags": [],
+    "banned_tags": [],
+    "weights": [
+      0.0,
+      80.0,
+      7.5,
+      7.5,
+      0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "dtITDefaultWave": {
+    "class": "BasicPickupDropTable",
+    "can_be_replaced": true,
+    "required_tags": [],
+    "banned_tags": [],
+    "weights": [
+      80.0,
+      10.0,
+      0.25,
+      0.25,
+      0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "dtITLunar": {
+    "class": "BasicPickupDropTable",
+    "can_be_replaced": true,
+    "required_tags": [],
+    "banned_tags": [],
+    "weights": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0,
+      0.0,
+      100.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "dtITSpecialBossWave": {
+    "class": "BasicPickupDropTable",
+    "can_be_replaced": true,
+    "required_tags": [],
+    "banned_tags": [],
+    "weights": [
+      0.0,
+      0.0,
+      80.0,
+      20.0,
+      0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "dtITVoid": {
+    "class": "BasicPickupDropTable",
+    "can_be_replaced": true,
+    "required_tags": [],
+    "banned_tags": [],
+    "weights": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0,
+      0.0,
+      0.0,
+      0.0,
+      80.0,
+      20.0,
+      1.0,
+      0.0
     ]
   },
   "dtIceRing": {
@@ -534,34 +692,24 @@
       ]
     ]
   },
-  "dtBossGrandParent": {
-    "class": "ExplicitPickupDropTable",
+  "dtLockbox": {
+    "class": "BasicPickupDropTable",
     "can_be_replaced": true,
-    "entries": [
-      [
-        "ParentEgg",
-        1.0
-      ]
-    ]
-  },
-  "dtBossGravekeeper": {
-    "class": "ExplicitPickupDropTable",
-    "can_be_replaced": true,
-    "entries": [
-      [
-        "SprintWisp",
-        1.0
-      ]
-    ]
-  },
-  "dtBossImpBoss": {
-    "class": "ExplicitPickupDropTable",
-    "can_be_replaced": true,
-    "entries": [
-      [
-        "BleedOnHitAndExplode",
-        1.0
-      ]
+    "required_tags": [],
+    "banned_tags": [],
+    "weights": [
+      0.0,
+      4.0,
+      1.0,
+      0.0,
+      0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
     ]
   },
   "dtLunarChest": {
@@ -577,41 +725,6 @@
       0,
       0.0,
       1.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0
-    ]
-  },
-  "dtBossMagmaWorm": {
-    "class": "ExplicitPickupDropTable",
-    "can_be_replaced": true,
-    "entries": [
-      [
-        "FireballsOnHit",
-        1.0
-      ]
-    ]
-  },
-  "dtMonsterTeamTier3Item": {
-    "class": "BasicPickupDropTable",
-    "can_be_replaced": true,
-    "required_tags": [],
-    "banned_tags": [
-      4,
-      6,
-      7,
-      8
-    ],
-    "weights": [
-      0.0,
-      0.0,
-      1.0,
-      0.0,
-      0,
-      0.0,
-      0.0,
       0.0,
       0.0,
       0.0,
@@ -669,12 +782,41 @@
       0.0
     ]
   },
-  "dtBossRoboBallBoss": {
+  "dtMonsterTeamTier3Item": {
+    "class": "BasicPickupDropTable",
+    "can_be_replaced": true,
+    "required_tags": [],
+    "banned_tags": [
+      4,
+      6,
+      7,
+      8
+    ],
+    "weights": [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "dtPearls": {
     "class": "ExplicitPickupDropTable",
     "can_be_replaced": true,
     "entries": [
       [
-        "RoboBallBuddy",
+        "Pearl",
+        4.0
+      ],
+      [
+        "ShinyPearl",
         1.0
       ]
     ]
@@ -699,26 +841,6 @@
       0.0
     ]
   },
-  "dtDoppelganger": {
-    "class": "DoppelgangerDropTable",
-    "can_be_replaced": true,
-    "required_tags": [],
-    "banned_tags": [],
-    "weights": [
-      80.0,
-      20.0,
-      1.0,
-      10.0,
-      0,
-      10.0,
-      0,
-      0,
-      80.0,
-      20.0,
-      1.0,
-      0.0
-    ]
-  },
   "dtShrineChance": {
     "class": "BasicPickupDropTable",
     "can_be_replaced": true,
@@ -739,115 +861,7 @@
       0.0
     ]
   },
-  "dtPearls": {
-    "class": "ExplicitPickupDropTable",
-    "can_be_replaced": true,
-    "entries": [
-      [
-        "Pearl",
-        4.0
-      ],
-      [
-        "ShinyPearl",
-        1.0
-      ]
-    ]
-  },
-  "dtBossTitan": {
-    "class": "ExplicitPickupDropTable",
-    "can_be_replaced": true,
-    "entries": [
-      [
-        "Knurl",
-        1.0
-      ]
-    ]
-  },
-  "dtBossTitanGold": {
-    "class": "ExplicitPickupDropTable",
-    "can_be_replaced": true,
-    "entries": [
-      [
-        "TitanGoldDuringTP",
-        1.0
-      ]
-    ]
-  },
-  "dtLockbox": {
-    "class": "BasicPickupDropTable",
-    "can_be_replaced": true,
-    "required_tags": [],
-    "banned_tags": [],
-    "weights": [
-      0.0,
-      4.0,
-      1.0,
-      0.0,
-      0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0
-    ]
-  },
-  "dtBossVagrant": {
-    "class": "ExplicitPickupDropTable",
-    "can_be_replaced": true,
-    "entries": [
-      [
-        "NovaOnLowHealth",
-        1.0
-      ]
-    ]
-  },
-  "dtCategoryChest2Utility": {
-    "class": "BasicPickupDropTable",
-    "can_be_replaced": true,
-    "required_tags": [
-      3
-    ],
-    "banned_tags": [],
-    "weights": [
-      0.0,
-      0.8,
-      0.2,
-      0.0,
-      0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0
-    ]
-  },
-  "dtCategoryChest2Healing": {
-    "class": "BasicPickupDropTable",
-    "can_be_replaced": true,
-    "required_tags": [
-      2
-    ],
-    "banned_tags": [],
-    "weights": [
-      0.0,
-      0.8,
-      0.2,
-      0.0,
-      0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0
-    ]
-  },
-  "dtCategoryChest2Damage": {
+  "dtSmallChestDamage": {
     "class": "BasicPickupDropTable",
     "can_be_replaced": true,
     "required_tags": [
@@ -855,9 +869,9 @@
     ],
     "banned_tags": [],
     "weights": [
-      0.0,
       0.8,
       0.2,
+      0.01,
       0.0,
       0,
       0.0,
@@ -869,44 +883,18 @@
       0.0
     ]
   },
-  "dtVoidCoin": {
-    "class": "ExplicitPickupDropTable",
-    "can_be_replaced": false,
-    "entries": [
-      [
-        "VoidCoin",
-        1.0
-      ]
-    ]
-  },
-  "dtFreeChest": {
-    "class": "FreeChestDropTable",
+  "dtSmallChestHealing": {
+    "class": "BasicPickupDropTable",
     "can_be_replaced": true,
+    "required_tags": [
+      2
+    ],
+    "banned_tags": [],
     "weights": [
-      0.79,
+      0.8,
       0.2,
       0.01,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
-    ]
-  },
-  "dtITSpecialBossWave": {
-    "class": "BasicPickupDropTable",
-    "can_be_replaced": true,
-    "required_tags": [],
-    "banned_tags": [],
-    "weights": [
       0.0,
-      0.0,
-      80.0,
-      20.0,
       0,
       0.0,
       0.0,
@@ -917,16 +905,18 @@
       0.0
     ]
   },
-  "dtITDefaultWave": {
+  "dtSmallChestUtility": {
     "class": "BasicPickupDropTable",
     "can_be_replaced": true,
-    "required_tags": [],
+    "required_tags": [
+      3
+    ],
     "banned_tags": [],
     "weights": [
-      80.0,
-      10.0,
-      0.25,
-      0.25,
+      0.8,
+      0.2,
+      0.01,
+      0.0,
       0,
       0.0,
       0.0,
@@ -937,83 +927,13 @@
       0.0
     ]
   },
-  "dtITBossWave": {
+  "dtTier1Item": {
     "class": "BasicPickupDropTable",
     "can_be_replaced": true,
     "required_tags": [],
     "banned_tags": [],
     "weights": [
-      0.0,
-      80.0,
-      7.5,
-      7.5,
-      0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0
-    ]
-  },
-  "dtITLunar": {
-    "class": "BasicPickupDropTable",
-    "can_be_replaced": true,
-    "required_tags": [],
-    "banned_tags": [],
-    "weights": [
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0,
-      0.0,
-      100.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0
-    ]
-  },
-  "dtITVoid": {
-    "class": "BasicPickupDropTable",
-    "can_be_replaced": true,
-    "required_tags": [],
-    "banned_tags": [],
-    "weights": [
-      0.0,
-      0.0,
-      0.0,
-      0.0,
-      0,
-      0.0,
-      0.0,
-      0.0,
-      80.0,
-      20.0,
       1.0,
-      0.0
-    ]
-  },
-  "dtBossMegaConstruct": {
-    "class": "ExplicitPickupDropTable",
-    "can_be_replaced": true,
-    "entries": [
-      [
-        "MinorConstructOnKill",
-        1.0
-      ]
-    ]
-  },
-  "dtVoidLockbox": {
-    "class": "BasicPickupDropTable",
-    "can_be_replaced": true,
-    "required_tags": [],
-    "banned_tags": [],
-    "weights": [
-      0.0,
       0.0,
       0.0,
       0.0,
@@ -1021,9 +941,49 @@
       0.0,
       0.0,
       0.0,
-      5.0,
-      5.0,
-      2.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "dtTier2Item": {
+    "class": "BasicPickupDropTable",
+    "can_be_replaced": true,
+    "required_tags": [],
+    "banned_tags": [],
+    "weights": [
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "dtTier3Item": {
+    "class": "BasicPickupDropTable",
+    "can_be_replaced": true,
+    "required_tags": [],
+    "banned_tags": [],
+    "weights": [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
       0.0
     ]
   },
@@ -1047,14 +1007,54 @@
       0.0
     ]
   },
-  "dtBossVoidMegaCrab": {
-    "class": "ExplicitPickupDropTable",
+  "dtVoidChest": {
+    "class": "BasicPickupDropTable",
     "can_be_replaced": true,
+    "required_tags": [],
+    "banned_tags": [],
+    "weights": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0,
+      0.0,
+      0.0,
+      0.0,
+      6.0,
+      3.0,
+      1.0,
+      0.0
+    ]
+  },
+  "dtVoidCoin": {
+    "class": "ExplicitPickupDropTable",
+    "can_be_replaced": false,
     "entries": [
       [
-        "VoidMegaCrabItem",
+        "VoidCoin",
         1.0
       ]
+    ]
+  },
+  "dtVoidLockbox": {
+    "class": "BasicPickupDropTable",
+    "can_be_replaced": true,
+    "required_tags": [],
+    "banned_tags": [],
+    "weights": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0,
+      0.0,
+      0.0,
+      0.0,
+      5.0,
+      5.0,
+      2.0,
+      0.0
     ]
   },
   "dtVoidTriple": {
