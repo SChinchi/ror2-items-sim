@@ -29,7 +29,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "ArtifactShellBody": {
     "_name": "ArtifactShellBody",
@@ -61,7 +62,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "Bandit2Body": {
     "_name": "Bandit2Body",
@@ -93,7 +95,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "BeetleGuardAllyBody": {
     "_name": "BeetleGuardAllyBody",
@@ -125,7 +128,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "BeetleGuardBody": {
     "_name": "BeetleGuardBody",
@@ -157,7 +161,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "BeetleQueen2Body": {
     "_name": "BeetleQueen2Body",
@@ -189,7 +194,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": "BeetleGland"
+    "item_drop": "BeetleGland",
+    "expansion": null
   },
   "BeetleWard": {
     "_name": "BeetleWard",
@@ -221,7 +227,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "BeetleBody": {
     "_name": "BeetleBody",
@@ -253,7 +260,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "BellBody": {
     "_name": "BellBody",
@@ -285,7 +293,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "BirdsharkBody": {
     "_name": "BirdsharkBody",
@@ -317,7 +326,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "BisonBody": {
     "_name": "BisonBody",
@@ -349,7 +359,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "BrotherHauntBody": {
     "_name": "BrotherHauntBody",
@@ -381,7 +392,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "BrotherHurtBody": {
     "_name": "BrotherHurtBody",
@@ -413,7 +425,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "BrotherBody": {
     "_name": "BrotherBody",
@@ -445,7 +458,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "CaptainBody": {
     "_name": "CaptainBody",
@@ -477,7 +491,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "ClayBossBody": {
     "_name": "ClayBossBody",
@@ -509,7 +524,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": "SiphonOnLowHealth"
+    "item_drop": "SiphonOnLowHealth",
+    "expansion": null
   },
   "ClayBruiserBody": {
     "_name": "ClayBruiserBody",
@@ -541,7 +557,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "CommandoBody": {
     "_name": "CommandoBody",
@@ -573,7 +590,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "CrocoBody": {
     "_name": "CrocoBody",
@@ -605,7 +623,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "DeathProjectile": {
     "_name": "DeathProjectile",
@@ -637,7 +656,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "Drone1Body": {
     "_name": "Drone1Body",
@@ -669,7 +689,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "Drone2Body": {
     "_name": "Drone2Body",
@@ -701,7 +722,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "Turret1Body": {
     "_name": "Turret1Body",
@@ -733,7 +755,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "BackupDroneBody": {
     "_name": "BackupDroneBody",
@@ -765,7 +788,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "EquipmentDroneBody": {
     "_name": "EquipmentDroneBody",
@@ -797,7 +821,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "MissileDroneBody": {
     "_name": "MissileDroneBody",
@@ -829,7 +854,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "EmergencyDroneBody": {
     "_name": "EmergencyDroneBody",
@@ -861,7 +887,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "MegaDroneBody": {
     "_name": "MegaDroneBody",
@@ -893,7 +920,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "FlameDroneBody": {
     "_name": "FlameDroneBody",
@@ -925,7 +953,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "ElectricWormBody": {
     "_name": "ElectricWormBody",
@@ -957,7 +986,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": "LightningStrikeOnHit"
+    "item_drop": "LightningStrikeOnHit",
+    "expansion": null
   },
   "UrchinTurretBody": {
     "_name": "UrchinTurretBody",
@@ -989,7 +1019,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "EngiBody": {
     "_name": "EngiBody",
@@ -1021,7 +1052,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "EngiWalkerTurretBody": {
     "_name": "EngiWalkerTurretBody",
@@ -1053,7 +1085,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "EngiTurretBody": {
     "_name": "EngiTurretBody",
@@ -1085,7 +1118,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "ExplosivePotDestructibleBody": {
     "_name": "ExplosivePotDestructibleBody",
@@ -1117,7 +1151,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "FusionCellDestructibleBody": {
     "_name": "FusionCellDestructibleBody",
@@ -1149,7 +1184,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "GolemBody": {
     "_name": "GolemBody",
@@ -1181,7 +1217,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "GrandParentBody": {
     "_name": "GrandParentBody",
@@ -1213,7 +1250,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": "ParentEgg"
+    "item_drop": "ParentEgg",
+    "expansion": null
   },
   "GravekeeperBody": {
     "_name": "GravekeeperBody",
@@ -1245,7 +1283,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": "SprintWisp"
+    "item_drop": "SprintWisp",
+    "expansion": null
   },
   "GravekeeperTrackingFireball": {
     "_name": "GravekeeperTrackingFireball",
@@ -1277,7 +1316,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "GreaterWispBody": {
     "_name": "GreaterWispBody",
@@ -1309,7 +1349,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "HereticBody": {
     "_name": "HereticBody",
@@ -1341,7 +1382,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "HermitCrabBody": {
     "_name": "HermitCrabBody",
@@ -1373,7 +1415,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "HuntressBody": {
     "_name": "HuntressBody",
@@ -1405,7 +1448,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "ImpBossBody": {
     "_name": "ImpBossBody",
@@ -1437,7 +1481,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": "BleedOnHitAndExplode"
+    "item_drop": "BleedOnHitAndExplode",
+    "expansion": null
   },
   "ImpBody": {
     "_name": "ImpBody",
@@ -1469,7 +1514,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "JellyfishBody": {
     "_name": "JellyfishBody",
@@ -1501,7 +1547,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "LemurianBruiserBody": {
     "_name": "LemurianBruiserBody",
@@ -1533,7 +1580,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "LemurianBody": {
     "_name": "LemurianBody",
@@ -1565,7 +1613,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "LoaderBody": {
     "_name": "LoaderBody",
@@ -1597,7 +1646,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "LunarExploderBody": {
     "_name": "LunarExploderBody",
@@ -1629,7 +1679,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "LunarGolemBody": {
     "_name": "LunarGolemBody",
@@ -1661,7 +1712,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "LunarWispTrackingBomb": {
     "_name": "LunarWispTrackingBomb",
@@ -1693,7 +1745,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "LunarWispBody": {
     "_name": "LunarWispBody",
@@ -1725,7 +1778,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "MageBody": {
     "_name": "MageBody",
@@ -1757,7 +1811,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "MagmaWormBody": {
     "_name": "MagmaWormBody",
@@ -1789,7 +1844,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": "FireballsOnHit"
+    "item_drop": "FireballsOnHit",
+    "expansion": null
   },
   "MercBody": {
     "_name": "MercBody",
@@ -1821,7 +1877,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "MiniMushroomBody": {
     "_name": "MiniMushroomBody",
@@ -1853,7 +1910,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "NullifierAllyBody": {
     "_name": "NullifierAllyBody",
@@ -1885,7 +1943,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "NullifierBody": {
     "_name": "NullifierBody",
@@ -1917,7 +1976,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "ParentBody": {
     "_name": "ParentBody",
@@ -1949,7 +2009,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "RoboBallBossBody": {
     "_name": "RoboBallBossBody",
@@ -1981,7 +2042,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": "RoboBallBuddy"
+    "item_drop": "RoboBallBuddy",
+    "expansion": null
   },
   "SuperRoboBallBossBody": {
     "_name": "SuperRoboBallBossBody",
@@ -2013,7 +2075,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": "RoboBallBuddy"
+    "item_drop": "RoboBallBuddy",
+    "expansion": null
   },
   "RoboBallMiniBody": {
     "_name": "RoboBallMiniBody",
@@ -2045,7 +2108,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "RoboBallGreenBuddyBody": {
     "_name": "RoboBallGreenBuddyBody",
@@ -2077,7 +2141,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "RoboBallRedBuddyBody": {
     "_name": "RoboBallRedBuddyBody",
@@ -2109,7 +2174,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "ScavLunar3Body": {
     "_name": "ScavLunar3Body",
@@ -2141,7 +2207,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "ScavLunar2Body": {
     "_name": "ScavLunar2Body",
@@ -2173,7 +2240,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "ScavLunar4Body": {
     "_name": "ScavLunar4Body",
@@ -2205,7 +2273,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "ScavLunar1Body": {
     "_name": "ScavLunar1Body",
@@ -2237,7 +2306,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "ScavBody": {
     "_name": "ScavBody",
@@ -2269,7 +2339,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "ScavSackProjectile": {
     "_name": "ScavSackProjectile",
@@ -2301,7 +2372,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "VultureEggBody": {
     "_name": "VultureEggBody",
@@ -2333,7 +2405,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "ShopkeeperBody": {
     "_name": "ShopkeeperBody",
@@ -2365,7 +2438,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "SMMaulingRockLarge": {
     "_name": "SMMaulingRockLarge",
@@ -2397,7 +2471,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "SMMaulingRockSmall": {
     "_name": "SMMaulingRockSmall",
@@ -2429,7 +2504,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "SMMaulingRockMedium": {
     "_name": "SMMaulingRockMedium",
@@ -2461,7 +2537,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "SpectatorBody": {
     "_name": "SpectatorBody",
@@ -2493,7 +2570,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "SpectatorSlowBody": {
     "_name": "SpectatorSlowBody",
@@ -2525,7 +2603,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "SquidTurretBody": {
     "_name": "SquidTurretBody",
@@ -2557,7 +2636,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "TitanBody": {
     "_name": "TitanBody",
@@ -2589,7 +2669,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": "Knurl"
+    "item_drop": "Knurl",
+    "expansion": null
   },
   "TitanGoldBody": {
     "_name": "TitanGoldBody",
@@ -2621,7 +2702,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": "TitanGoldDuringTP"
+    "item_drop": "TitanGoldDuringTP",
+    "expansion": null
   },
   "ToolbotBody": {
     "_name": "ToolbotBody",
@@ -2653,7 +2735,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "TreebotBody": {
     "_name": "TreebotBody",
@@ -2685,7 +2768,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "VagrantBody": {
     "_name": "VagrantBody",
@@ -2717,7 +2801,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": "NovaOnLowHealth"
+    "item_drop": "NovaOnLowHealth",
+    "expansion": null
   },
   "VagrantTrackingBomb": {
     "_name": "VagrantTrackingBomb",
@@ -2749,7 +2834,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "VultureBody": {
     "_name": "VultureBody",
@@ -2781,7 +2867,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "TimeCrystalBody": {
     "_name": "TimeCrystalBody",
@@ -2813,7 +2900,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "WispSoulBody": {
     "_name": "WispSoulBody",
@@ -2845,7 +2933,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "WispBody": {
     "_name": "WispBody",
@@ -2877,7 +2966,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "AcidLarvaBody": {
     "_name": "AcidLarvaBody",
@@ -2909,7 +2999,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": "DLC1"
   },
   "Assassin2Body": {
     "_name": "Assassin2Body",
@@ -2941,7 +3032,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "ClayGrenadierBody": {
     "_name": "ClayGrenadierBody",
@@ -2973,7 +3065,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": "DLC1"
   },
   "DroneCommanderBody": {
     "_name": "DroneCommanderBody",
@@ -3005,7 +3098,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "AffixEarthHealerBody": {
     "_name": "AffixEarthHealerBody",
@@ -3037,7 +3131,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "VoidInfestorBody": {
     "_name": "VoidInfestorBody",
@@ -3069,7 +3164,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": "DLC1"
   },
   "FlyingVerminBody": {
     "_name": "FlyingVerminBody",
@@ -3101,7 +3197,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": "DLC1"
   },
   "GupBody": {
     "_name": "GupBody",
@@ -3133,7 +3230,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": "DLC1"
   },
   "GipBody": {
     "_name": "GipBody",
@@ -3165,7 +3263,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": "DLC1"
   },
   "GeepBody": {
     "_name": "GeepBody",
@@ -3197,7 +3296,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": "DLC1"
   },
   "SMInfiniteTowerMaulingRockMedium": {
     "_name": "SMInfiniteTowerMaulingRockMedium",
@@ -3229,7 +3329,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "SMInfiniteTowerMaulingRockLarge": {
     "_name": "SMInfiniteTowerMaulingRockLarge",
@@ -3261,7 +3362,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "SMInfiniteTowerMaulingRockSmall": {
     "_name": "SMInfiniteTowerMaulingRockSmall",
@@ -3293,7 +3395,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "MinorConstructAttachableBody": {
     "_name": "MinorConstructAttachableBody",
@@ -3325,7 +3428,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": "DLC1"
   },
   "MajorConstructBody": {
     "_name": "MajorConstructBody",
@@ -3357,7 +3461,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": "DLC1"
   },
   "MinorConstructOnKillBody": {
     "_name": "MinorConstructOnKillBody",
@@ -3389,7 +3494,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": "DLC1"
   },
   "MegaConstructBody": {
     "_name": "MegaConstructBody",
@@ -3421,7 +3527,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": "MinorConstructOnKill"
+    "item_drop": "MinorConstructOnKill",
+    "expansion": "DLC1"
   },
   "MinorConstructBody": {
     "_name": "MinorConstructBody",
@@ -3453,7 +3560,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": "DLC1"
   },
   "RailgunnerBody": {
     "_name": "RailgunnerBody",
@@ -3485,7 +3593,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": "DLC1"
   },
   "SulfurPodBody": {
     "_name": "SulfurPodBody",
@@ -3517,7 +3626,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "VerminBody": {
     "_name": "VerminBody",
@@ -3549,7 +3659,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": "DLC1"
   },
   "VoidBarnacleBody": {
     "_name": "VoidBarnacleBody",
@@ -3581,7 +3692,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": "DLC1"
   },
   "VoidBarnacleNoCastBody": {
     "_name": "VoidBarnacleNoCastBody",
@@ -3613,7 +3725,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": "DLC1"
   },
   "VoidJailerBody": {
     "_name": "VoidJailerBody",
@@ -3645,7 +3758,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": "DLC1"
   },
   "VoidJailerAllyBody": {
     "_name": "VoidJailerAllyBody",
@@ -3677,7 +3791,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": "DLC1"
   },
   "VoidMegaCrabAllyBody": {
     "_name": "VoidMegaCrabAllyBody",
@@ -3709,7 +3824,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": false,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": "DLC1"
   },
   "VoidMegaCrabBody": {
     "_name": "VoidMegaCrabBody",
@@ -3741,7 +3857,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": false,
     "can_be_frozen": true,
-    "item_drop": "VoidMegaCrabItem"
+    "item_drop": "VoidMegaCrabItem",
+    "expansion": "DLC1"
   },
   "VoidRaidCrabBody": {
     "_name": "VoidRaidCrabBody",
@@ -3773,7 +3890,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": "DLC1"
   },
   "MiniVoidRaidCrabBodyPhase2": {
     "_name": "MiniVoidRaidCrabBodyPhase2",
@@ -3805,7 +3923,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": "DLC1"
   },
   "MiniVoidRaidCrabBodyPhase1": {
     "_name": "MiniVoidRaidCrabBodyPhase1",
@@ -3837,7 +3956,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": "DLC1"
   },
   "VoidRaidCrabJointBody": {
     "_name": "VoidRaidCrabJointBody",
@@ -3869,7 +3989,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": "DLC1"
   },
   "MiniVoidRaidCrabBodyPhase3": {
     "_name": "MiniVoidRaidCrabBodyPhase3",
@@ -3901,7 +4022,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": "DLC1"
   },
   "MiniVoidRaidCrabBodyBase": {
     "_name": "MiniVoidRaidCrabBodyBase",
@@ -3933,7 +4055,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": "DLC1"
   },
   "VoidSurvivorBody": {
     "_name": "VoidSurvivorBody",
@@ -3965,7 +4088,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": "DLC1"
   },
   "AncientWispBody": {
     "_name": "AncientWispBody",
@@ -3997,7 +4121,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "ArchWispBody": {
     "_name": "ArchWispBody",
@@ -4029,7 +4154,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "AssassinBody": {
     "_name": "AssassinBody",
@@ -4061,7 +4187,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "BackupDroneOldBody": {
     "_name": "BackupDroneOldBody",
@@ -4093,7 +4220,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "BanditBody": {
     "_name": "BanditBody",
@@ -4125,7 +4253,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "BeetleCrystalBody": {
     "_name": "BeetleCrystalBody",
@@ -4157,7 +4286,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "BeetleGuardCrystalBody": {
     "_name": "BeetleGuardCrystalBody",
@@ -4189,7 +4319,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "BomberBody": {
     "_name": "BomberBody",
@@ -4221,7 +4352,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "BrotherGlassBody": {
     "_name": "BrotherGlassBody",
@@ -4253,7 +4385,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "ClayBody": {
     "_name": "ClayBody",
@@ -4285,7 +4418,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "CommandoPerformanceTestBody": {
     "_name": "CommandoPerformanceTestBody",
@@ -4317,7 +4451,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "EnforcerBody": {
     "_name": "EnforcerBody",
@@ -4349,7 +4484,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "EngiBeamTurretBody": {
     "_name": "EngiBeamTurretBody",
@@ -4381,7 +4517,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "GolemBodyInvincible": {
     "_name": "GolemBodyInvincible",
@@ -4413,7 +4550,8 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "HANDBody": {
     "_name": "HANDBody",
@@ -4445,7 +4583,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "HaulerBody": {
     "_name": "HaulerBody",
@@ -4477,7 +4616,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "ParentPodBody": {
     "_name": "ParentPodBody",
@@ -4509,7 +4649,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "PaladinBody": {
     "_name": "PaladinBody",
@@ -4541,7 +4682,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "Pot2Body": {
     "_name": "Pot2Body",
@@ -4573,7 +4715,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "PotMobile2Body": {
     "_name": "PotMobile2Body",
@@ -4605,7 +4748,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "PotMobileBody": {
     "_name": "PotMobileBody",
@@ -4637,7 +4781,8 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   },
   "SniperBody": {
     "_name": "SniperBody",
@@ -4669,6 +4814,7 @@
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": false,
-    "item_drop": null
+    "item_drop": null,
+    "expansion": null
   }
 }

@@ -253,6 +253,11 @@ def extract_file_data(src_path=FILES_DIR):
             _get_component(ids, data['offers_choice'], ScrapperController)
         )
         data['can_reset'] = _get_component(ids, data['can_reset'], DelusionChestController) is not None
+        expansion = _get_component(ids, data['expansion'], ExpansionRequirementComponent)
+        if expansion:
+            data['expansion'] = ExpansionRequirementComponent.parse(expansion, ids)
+        else:
+            data['expansion'] = None
     for data in csc.values():
         master = _get_component(ids, data['body'], CharacterMaster)
         body, path_id = _get_component(ids, master['bodyPrefab']['m_PathID'], CharacterBody, keep_path_id=True)
@@ -287,6 +292,11 @@ def extract_file_data(src_path=FILES_DIR):
             else:
                 item_drop = None
         data['item_drop'] = item_drop
+        expansion = _get_component(ids, data['expansion'], ExpansionRequirementComponent)
+        if expansion:
+            data['expansion'] = ExpansionRequirementComponent.parse(expansion, ids)
+        else:
+            data['expansion'] = None
     for name, data in masters['masters'].items():
         data['_name'] = name
         data['body'] = ids[data['body']]['m_Name'] if data['body'] else None

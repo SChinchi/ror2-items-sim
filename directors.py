@@ -3,13 +3,14 @@ import warnings
 
 import numpy as np
 
-from constants import ALL_EXPANSIONS, IT_STAGES
+from constants import Expansion, ALL_EXPANSIONS, IT_STAGES
 from data.objects.dccs import DirectorCardCategorySelection
 from data_loader import scenes, voidseed, simulacrum
 
 
 class IndexedDirectorCard:
     def __init__(self, card, index):
+        self.card = card
         self._name = card.spawn_card._name
         self.name = card.spawn_card.name
         self.cost = card.spawn_card.cost
@@ -22,6 +23,9 @@ class IndexedDirectorCard:
         self.sacrifice_weight = getattr(card.spawn_card, 'sacrifice_weight', 1.0)
         self.min_stages_cleared = card.min_stages_cleared
         self.index = index
+
+    def is_available(self, stages_cleared, expansions):
+        return self.card.is_available(stages_cleared, expansions)
 
 
 class BaseSceneDirector:
@@ -224,7 +228,7 @@ class SceneDirector(BaseSceneDirector):
             interactable_credit = 0
         interactables = self._generate_interactable_card_selection(stages_cleared)
         deck = interactables.generate_card_weighted_selection(
-            stages_cleared, self.is_sacrifice_enabled
+            stages_cleared, self._expansions, self.is_sacrifice_enabled
         )
         item_num = sum(len(category.cards) for category in interactables.categories)
         return interactable_credit, interactables, deck, item_num
@@ -460,7 +464,7 @@ class SceneDirector(BaseSceneDirector):
 class CampDirector(BaseSceneDirector):
     """Handle void seed interactable generation."""
     
-    def __init__(self, spawns_kelp=False, is_sacrifice_enabled=False):
+    def __init__(self, spawns_kelp=False, is_sacrifice_enabled=False, expansions={Expansion.SOTV}):
         """
         Instantiate the void seed director.
 
@@ -473,6 +477,11 @@ class CampDirector(BaseSceneDirector):
         is_sacrifice_enabled : bool, optional
             Whether the Artifact of Sacrifice is enabled, which will affect
             which interactables can spawn. By default it's disabled.
+        expansions : set, optional
+            The list of enabled expansions, which adds new scenes and
+            interactables. By default the Survivors of the Void expansion is
+            enabled and even if it is not included in the argument, it will be
+            forcefully included as it is required for the Void Seeds to exist.
 
         Returns
         -------
@@ -481,6 +490,7 @@ class CampDirector(BaseSceneDirector):
         camp_type = 'camp1' if not spawns_kelp else 'camp2'
         self._data = voidseed[camp_type]
         self.is_sacrifice_enabled = is_sacrifice_enabled
+        self._expansions = expansions.union({Expansion.SOTV})
 
     def _start(self):
         """
@@ -499,7 +509,9 @@ class CampDirector(BaseSceneDirector):
         """
         interactable_credit = self._data.interactable_credits
         interactables = self._generate_interactable_card_selection()
-        deck = interactables.generate_card_weighted_selection(0, self.is_sacrifice_enabled)
+        deck = interactables.generate_card_weighted_selection(
+            0, self._expansions, self.is_sacrifice_enabled
+        )
         item_num = sum(len(category.cards) for category in interactables.categories)
         return interactable_credit, interactables, deck, item_num
 

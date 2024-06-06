@@ -70,7 +70,7 @@ class DirectorCardCategorySelection:
         """
         self.categories.append(Category(name, weight, cards))
 
-    def generate_card_weighted_selection(self, stages_cleared, is_sacrifice_enabled=False):
+    def generate_card_weighted_selection(self, stages_cleared, expansions, is_sacrifice_enabled=False):
         """
         Generate all available interactable spawn cards for the scene.
 
@@ -79,6 +79,9 @@ class DirectorCardCategorySelection:
         stages_cleared : int
             The number of cleared stages, which affects which interactables
             will be available.
+        expansions : set
+            The currently enabled expansions, which can affect which
+            interactables ill be available.
         is_sacrifice_enabled : bool, default False
             Whether the Artifact of Sacrifice is enabled. This can affect what
             interactables can spawn.
@@ -97,11 +100,12 @@ class DirectorCardCategorySelection:
         for category in self.categories:
             category_weight = category.weight
             cards = category.cards
-            total_weight = sum(card.weight for card in cards if stages_cleared >= card.min_stages_cleared)
+            total_weight = sum(card.weight for card in cards
+                               if card.is_available(stages_cleared, expansions))
             if total_weight > 0:
                 modifier = category_weight / total_weight
                 for card in cards:
-                    if stages_cleared >= card.min_stages_cleared:
+                    if card.is_available(stages_cleared, expansions):
                         weight = card.weight * modifier
                         if is_sacrifice_enabled:
                             weight *= card.sacrifice_weight

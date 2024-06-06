@@ -1,5 +1,6 @@
 import math
 
+from constants import ALL_EXPANSIONS
 from data_loader import dccs, scenes
 
 
@@ -134,7 +135,7 @@ elite_tiers = (
 )
 
 
-def compute_horde_chance(scene_name, stages_cleared, num_players=1, is_dlc_enabled=True):
+def compute_horde_chance(scene_name, stages_cleared, num_players=1, expansions=ALL_EXPANSIONS):
     """
     Compute the Horde of Many (HoM) chance for the Teleporter Boss.
 
@@ -149,9 +150,9 @@ def compute_horde_chance(scene_name, stages_cleared, num_players=1, is_dlc_enabl
     num_players : int, optional
         The number of players. This only affects the maximum time a credit
         threshold will not be crossed.
-    is_dlc_enabled : bool, optional
-        The monster pool is different between the vanilla and DLC versions of
-        the game. By default the DLC is enabled.
+    expansions : set, optional
+        The list of enabled expansions, which affects the monster pool. By
+        default all expansions are enabled.
 
     Returns
     -------
@@ -162,18 +163,15 @@ def compute_horde_chance(scene_name, stages_cleared, num_players=1, is_dlc_enabl
         The time shown may be too low a number to reach normally, but it is
         possible with speedrunning or by using mods to skip to any stage.
     """
-    if scenes[scene_name].required_dlc and not is_dlc_enabled:
+    dlc = scenes[scene_name].required_dlc
+    if dlc and dlc not in expansions:
         raise ValueError('The selected scene requires the DLC to be enabled.')
     stage_info = scenes[scene_name].stage_info
     if not stage_info:
         raise ValueError('There is no DCCS related to this scene.')
-    dccs_category = stage_info.monsters.categories[0]
-    if is_dlc_enabled:
-        selected_dccs = dccs_category.included_conditions_met[0].dccs
-    else:
-        selected_dccs = dccs_category.included_conditions_not_met[0].dccs
-            
-    monsters = selected_dccs.generate_card_weighted_selection(stages_cleared, False)
+    selected_dccs = stage_info.monsters.generate_weighted_selection(expansions, stages_cleared)
+
+    monsters = selected_dccs.generate_card_weighted_selection(stages_cleared, expansions, False)
     monsters = dict([(m[0].spawn_card, m[1]) for m in monsters])
     credit_thresholds = {}
     for card, weight in monsters.items():

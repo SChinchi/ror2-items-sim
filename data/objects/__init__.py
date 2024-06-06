@@ -1,5 +1,6 @@
 from .character import *
 from .dccs import *
+from .dlc import *
 from .droptables import *
 from .interactables import *
 from .items import *

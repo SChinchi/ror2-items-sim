@@ -40,6 +40,16 @@ class DirectorCard:
         elif self.spawn_card.startswith('sc'):
             self.spawn_card = sc[self.spawn_card]
 
+    def is_available(self, stages_cleared, expansions):
+        if not stages_cleared >= self.min_stages_cleared:
+            return False
+        expansion = None
+        if isinstance(self.spawn_card, InteractableSpawnCard):
+            expansion = self.spawn_card.expansion
+        elif isinstance(self.spawn_card, CharacterSpawnCard):
+            expansion = self.spawn_card.body.expansion
+        return expansion is None or expansion in expansions
+
     def __repr__(self):
         return f'({self.spawn_card._name}, {self.weight}, {self.min_stages_cleared})'
 

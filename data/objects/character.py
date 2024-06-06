@@ -44,6 +44,8 @@ class CharacterBody:
             'can_be_frozen': asset['m_GameObject']['m_PathID'],
             # To be filled out once all file ids have been collected
             'item_drop': asset['m_GameObject']['m_PathID'],
+            # To be filled out once all file ids have been collected
+            'expansion': asset['m_GameObject']['m_PathID'],
         }
 
 

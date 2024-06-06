@@ -12,7 +12,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscCasinoChest": {
     "class": "InteractableSpawnCard",
@@ -27,7 +28,8 @@
     "drop_table": "dtCasinoChest",
     "controller": "RouletteChestController",
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscCategoryChestUtility": {
     "class": "InteractableSpawnCard",
@@ -42,7 +44,8 @@
     "drop_table": "dtSmallChestUtility",
     "controller": "ChestBehavior",
     "offers_choice": false,
-    "can_reset": true
+    "can_reset": true,
+    "expansion": null
   },
   "iscCategoryChestDamage": {
     "class": "InteractableSpawnCard",
@@ -57,7 +60,8 @@
     "drop_table": "dtSmallChestDamage",
     "controller": "ChestBehavior",
     "offers_choice": false,
-    "can_reset": true
+    "can_reset": true,
+    "expansion": null
   },
   "iscCategoryChestHealing": {
     "class": "InteractableSpawnCard",
@@ -72,7 +76,8 @@
     "drop_table": "dtSmallChestHealing",
     "controller": "ChestBehavior",
     "offers_choice": false,
-    "can_reset": true
+    "can_reset": true,
+    "expansion": null
   },
   "iscChest1Stealthed": {
     "class": "InteractableSpawnCard",
@@ -87,7 +92,8 @@
     "drop_table": "dtChest1",
     "controller": "ChestBehavior",
     "offers_choice": false,
-    "can_reset": true
+    "can_reset": true,
+    "expansion": null
   },
   "iscChest1": {
     "class": "InteractableSpawnCard",
@@ -102,7 +108,8 @@
     "drop_table": "dtChest1",
     "controller": "ChestBehavior",
     "offers_choice": false,
-    "can_reset": true
+    "can_reset": true,
+    "expansion": null
   },
   "iscChest2": {
     "class": "InteractableSpawnCard",
@@ -117,7 +124,8 @@
     "drop_table": "dtChest2",
     "controller": "ChestBehavior",
     "offers_choice": false,
-    "can_reset": true
+    "can_reset": true,
+    "expansion": null
   },
   "iscBrokenEmergencyDrone": {
     "class": "InteractableSpawnCard",
@@ -132,7 +140,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscBrokenMegaDrone": {
     "class": "InteractableSpawnCard",
@@ -147,7 +156,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscBrokenDrone2": {
     "class": "InteractableSpawnCard",
@@ -162,7 +172,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscBrokenMissileDrone": {
     "class": "InteractableSpawnCard",
@@ -177,7 +188,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscBrokenEquipmentDrone": {
     "class": "InteractableSpawnCard",
@@ -192,7 +204,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscBrokenFlameDrone": {
     "class": "InteractableSpawnCard",
@@ -207,7 +220,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscBrokenDrone1": {
     "class": "InteractableSpawnCard",
@@ -222,7 +236,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscBrokenTurret1": {
     "class": "InteractableSpawnCard",
@@ -237,7 +252,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscDuplicatorLarge": {
     "class": "InteractableSpawnCard",
@@ -252,7 +268,8 @@
     "drop_table": "dtDuplicatorTier2",
     "controller": "ShopTerminalBehavior",
     "offers_choice": true,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscDuplicatorMilitary": {
     "class": "InteractableSpawnCard",
@@ -267,7 +284,8 @@
     "drop_table": "dtDuplicatorTier3",
     "controller": "ShopTerminalBehavior",
     "offers_choice": true,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscDuplicatorWild": {
     "class": "InteractableSpawnCard",
@@ -282,7 +300,8 @@
     "drop_table": "dtDuplicatorWild",
     "controller": "ShopTerminalBehavior",
     "offers_choice": true,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscDuplicator": {
     "class": "InteractableSpawnCard",
@@ -297,7 +316,8 @@
     "drop_table": "dtDuplicatorTier1",
     "controller": "ShopTerminalBehavior",
     "offers_choice": true,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscEquipmentBarrel": {
     "class": "InteractableSpawnCard",
@@ -312,7 +332,8 @@
     "drop_table": "dtEquipment",
     "controller": "ChestBehavior",
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscGoldChest": {
     "class": "InteractableSpawnCard",
@@ -327,7 +348,8 @@
     "drop_table": "dtGoldChest",
     "controller": "ChestBehavior",
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscGoldshoresBeacon": {
     "class": "InteractableSpawnCard",
@@ -342,7 +364,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscLunarChest": {
     "class": "InteractableSpawnCard",
@@ -357,7 +380,8 @@
     "drop_table": "dtLunarChest",
     "controller": "ChestBehavior",
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscGoldshoresPortal": {
     "class": "InteractableSpawnCard",
@@ -372,7 +396,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscMSPortal": {
     "class": "InteractableSpawnCard",
@@ -387,7 +412,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscShopPortal": {
     "class": "InteractableSpawnCard",
@@ -402,7 +428,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscRadarTower": {
     "class": "InteractableSpawnCard",
@@ -417,7 +444,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscScavLunarBackpack": {
     "class": "InteractableSpawnCard",
@@ -432,7 +460,8 @@
     "drop_table": "dtChest1",
     "controller": "ChestBehavior",
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscScavBackpack": {
     "class": "InteractableSpawnCard",
@@ -447,7 +476,8 @@
     "drop_table": "dtChest1",
     "controller": "ChestBehavior",
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscScrapper": {
     "class": "InteractableSpawnCard",
@@ -462,7 +492,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": true,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscShrineBloodSandy": {
     "class": "InteractableSpawnCard",
@@ -477,7 +508,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscShrineBlood": {
     "class": "InteractableSpawnCard",
@@ -492,7 +524,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscShrineBloodSnowy": {
     "class": "InteractableSpawnCard",
@@ -507,7 +540,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscShrineBossSandy": {
     "class": "InteractableSpawnCard",
@@ -522,7 +556,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscShrineBoss": {
     "class": "InteractableSpawnCard",
@@ -537,7 +572,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscShrineBossSnowy": {
     "class": "InteractableSpawnCard",
@@ -552,7 +588,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscShrineChanceSandy": {
     "class": "InteractableSpawnCard",
@@ -567,7 +604,8 @@
     "drop_table": "dtShrineChance",
     "controller": "ShrineChanceBehavior",
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscShrineChance": {
     "class": "InteractableSpawnCard",
@@ -582,7 +620,8 @@
     "drop_table": "dtShrineChance",
     "controller": "ShrineChanceBehavior",
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscShrineChanceSnowy": {
     "class": "InteractableSpawnCard",
@@ -597,7 +636,8 @@
     "drop_table": "dtShrineChance",
     "controller": "ShrineChanceBehavior",
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscShrineCleanseSandy": {
     "class": "InteractableSpawnCard",
@@ -612,7 +652,8 @@
     "drop_table": "dtPearls",
     "controller": "ShopTerminalBehavior",
     "offers_choice": true,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscShrineCleanse": {
     "class": "InteractableSpawnCard",
@@ -627,7 +668,8 @@
     "drop_table": "dtPearls",
     "controller": "ShopTerminalBehavior",
     "offers_choice": true,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscShrineCleanseSnowy": {
     "class": "InteractableSpawnCard",
@@ -642,7 +684,8 @@
     "drop_table": "dtPearls",
     "controller": "ShopTerminalBehavior",
     "offers_choice": true,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscShrineCombatSnowy": {
     "class": "InteractableSpawnCard",
@@ -657,7 +700,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscShrineCombatSandy": {
     "class": "InteractableSpawnCard",
@@ -672,7 +716,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscShrineCombat": {
     "class": "InteractableSpawnCard",
@@ -687,7 +732,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscShrineGoldshoresAccess": {
     "class": "InteractableSpawnCard",
@@ -702,7 +748,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscShrineHealing": {
     "class": "InteractableSpawnCard",
@@ -717,7 +764,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscShrineRestackSnowy": {
     "class": "InteractableSpawnCard",
@@ -732,7 +780,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscShrineRestack": {
     "class": "InteractableSpawnCard",
@@ -747,7 +796,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscShrineRestackSandy": {
     "class": "InteractableSpawnCard",
@@ -762,7 +812,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscLunarTeleporter": {
     "class": "InteractableSpawnCard",
@@ -777,7 +828,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscTeleporter": {
     "class": "InteractableSpawnCard",
@@ -792,7 +844,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscTripleShopEquipment": {
     "class": "InteractableSpawnCard",
@@ -807,7 +860,8 @@
     "drop_table": "dtEquipment",
     "controller": "MultiShopController",
     "offers_choice": true,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscTripleShopLarge": {
     "class": "InteractableSpawnCard",
@@ -822,7 +876,8 @@
     "drop_table": "dtTier2Item",
     "controller": "MultiShopController",
     "offers_choice": true,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscTripleShop": {
     "class": "InteractableSpawnCard",
@@ -837,7 +892,8 @@
     "drop_table": "dtTier1Item",
     "controller": "MultiShopController",
     "offers_choice": true,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscLemurianEgg": {
     "class": "InteractableSpawnCard",
@@ -852,7 +908,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscCategoryChest2Utility": {
     "class": "InteractableSpawnCard",
@@ -867,7 +924,8 @@
     "drop_table": "dtCategoryChest2Utility",
     "controller": "ChestBehavior",
     "offers_choice": false,
-    "can_reset": true
+    "can_reset": true,
+    "expansion": "DLC1"
   },
   "iscCategoryChest2Healing": {
     "class": "InteractableSpawnCard",
@@ -882,7 +940,8 @@
     "drop_table": "dtCategoryChest2Healing",
     "controller": "ChestBehavior",
     "offers_choice": false,
-    "can_reset": true
+    "can_reset": true,
+    "expansion": "DLC1"
   },
   "iscCategoryChest2Damage": {
     "class": "InteractableSpawnCard",
@@ -897,7 +956,8 @@
     "drop_table": "dtCategoryChest2Damage",
     "controller": "ChestBehavior",
     "offers_choice": false,
-    "can_reset": true
+    "can_reset": true,
+    "expansion": "DLC1"
   },
   "iscDeepVoidPortalBattery": {
     "class": "InteractableSpawnCard",
@@ -912,7 +972,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": "DLC1"
   },
   "iscDeepVoidPortal": {
     "class": "InteractableSpawnCard",
@@ -927,7 +988,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": "DLC1"
   },
   "iscFreeChest": {
     "class": "InteractableSpawnCard",
@@ -942,7 +1004,8 @@
     "drop_table": "dtFreeChest",
     "controller": "MultiShopController",
     "offers_choice": true,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": "DLC1"
   },
   "iscInfiniteTowerSafeWardAwaitingInteraction": {
     "class": "InteractableSpawnCard",
@@ -957,7 +1020,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": "DLC1"
   },
   "iscInfiniteTowerPortal": {
     "class": "InteractableSpawnCard",
@@ -972,7 +1036,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": "DLC1"
   },
   "iscInfiniteTowerSafeWard": {
     "class": "InteractableSpawnCard",
@@ -987,7 +1052,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": "DLC1"
   },
   "iscGauntletEntrance": {
     "class": "InteractableSpawnCard",
@@ -1002,7 +1068,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscVoidPortal": {
     "class": "InteractableSpawnCard",
@@ -1017,7 +1084,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": "DLC1"
   },
   "iscLockboxVoid": {
     "class": "InteractableSpawnCard",
@@ -1032,7 +1100,8 @@
     "drop_table": "dtVoidLockbox",
     "controller": "OptionChestBehavior",
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": "DLC1"
   },
   "iscVoidCamp": {
     "class": "InteractableSpawnCard",
@@ -1047,7 +1116,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": "DLC1"
   },
   "iscVoidChest": {
     "class": "InteractableSpawnCard",
@@ -1062,7 +1132,8 @@
     "drop_table": "dtVoidChest",
     "controller": "ChestBehavior",
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": "DLC1"
   },
   "iscVoidChestSacrificeOn": {
     "class": "InteractableSpawnCard",
@@ -1077,7 +1148,8 @@
     "drop_table": "dtVoidChest",
     "controller": "ChestBehavior",
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": "DLC1"
   },
   "iscVoidCoinBarrel": {
     "class": "InteractableSpawnCard",
@@ -1092,7 +1164,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscVoidOutroPortal": {
     "class": "InteractableSpawnCard",
@@ -1107,7 +1180,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": "DLC1"
   },
   "iscVoidRaidSafeWard": {
     "class": "InteractableSpawnCard",
@@ -1122,7 +1196,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": "DLC1"
   },
   "iscVoidSuppressor": {
     "class": "InteractableSpawnCard",
@@ -1137,7 +1212,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": "DLC1"
   },
   "iscVoidTriple": {
     "class": "InteractableSpawnCard",
@@ -1152,7 +1228,8 @@
     "drop_table": "dtVoidTriple",
     "controller": "OptionChestBehavior",
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": "DLC1"
   },
   "iscSquidTurret": {
     "class": "InteractableSpawnCard",
@@ -1167,7 +1244,8 @@
     "drop_table": null,
     "controller": null,
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   },
   "iscLockbox": {
     "class": "InteractableSpawnCard",
@@ -1182,6 +1260,7 @@
     "drop_table": "dtLockbox",
     "controller": "ChestBehavior",
     "offers_choice": false,
-    "can_reset": false
+    "can_reset": false,
+    "expansion": null
   }
 }

@@ -528,7 +528,7 @@ class Run:
         elif scene_name == SceneName.GC:
             interactables.extend(['iscChest1'] * 4)
         if scene_name == SceneName.VF2:
-            interactables.append('iscChest2' random.random() < .5 else 'iscScrapper')
+            interactables.append('iscChest2' if random.random() < .5 else 'iscScrapper')
         if scenes[scene_name].scene_type == 1:
             if LOCKBOX_ALLOWED:
                 # For multiplayer we assume the Rusted Keys are as evenly spread out
@@ -641,7 +641,7 @@ class Run:
         does not exactly correspond to the real chance of boss loot dropping.
         """
         total_drops = self._num_players * (shrines_activated + 1)
-        boss = Run.spawn_teleporter_boss(dccs, self._stages_cleared)
+        boss = Run.spawn_teleporter_boss(dccs, self._stages_cleared, self._expansions)
         if boss.body.item_drop:
             green_item_count = sum(random.random() > BOSS_DROP_CHANCE for _ in range(total_drops))
         else:
@@ -1030,7 +1030,7 @@ class Run:
         return drops
 
     @staticmethod
-    def spawn_teleporter_boss(dccs, stages_cleared):
+    def spawn_teleporter_boss(dccs, stages_cleared, expansions=ALL_EXPANSIONS):
         """
         Select a monster for the teleporter.
 
@@ -1041,6 +1041,7 @@ class Run:
         stages_cleared : int
             The number of stages cleared, which affects which monsters are
             available for selection.
+        expansions : set, optional
 
         Returns
         -------
@@ -1055,7 +1056,7 @@ class Run:
         algorithm. The complete algorithm requires the time the teleporter is
         activated so it can compute the boss director monster credits.
         """
-        monsters = dccs.generate_card_weighted_selection(stages_cleared)
+        monsters = dccs.generate_card_weighted_selection(stages_cleared, expansions)
         filtered = []
         weights = []
         for card, weight in monsters:
