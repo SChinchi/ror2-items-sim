@@ -47,6 +47,7 @@ class LootReport:
         self.item_count = []
         self.free_chest_items = []
         self.card_multibuys = []
+        self.delusion_loot = []
 
     def reset_data(self):
         """Reset the logger data."""
@@ -58,9 +59,10 @@ class LootReport:
         self.item_count.clear()
         self.free_chest_items.clear()
         self.card_multibuys.clear()
+        self.delusion_loot.clear()
 
-    def update_data(self, scene_name, spawned_portals, dccs,
-                    interactables, loot, free_chest_items, card_multibuys):
+    def update_data(self, scene_name, spawned_portals, dccs, interactables,
+                    loot, free_chest_items, card_multibuys, delusion_loot):
         """
         Update the logger data.
 
@@ -87,6 +89,8 @@ class LootReport:
         card_multibuys : list
             A list of multishop interactables for which all loot was purchased
             using an Executive Card.
+        delusion_loot : list
+            A list of all loot from chests that can be reset with this Artifact.
 
         Returns
         -------
@@ -104,6 +108,7 @@ class LootReport:
         self.item_count.append(item_count)
         self.free_chest_items.append(free_chest_items)
         self.card_multibuys.append(card_multibuys)
+        self.delusion_loot.append(delusion_loot)
 
     def consolidate_data(self):
         """
@@ -138,6 +143,10 @@ class LootReport:
                 purchased while holding the Executive Card. The data regarding
                 the Multishops are in a list of 4 numbers, related to Common,
                 Uncommon, Equipment, and Shipping Request Form respectively.
+            - 'delusion_bonus': The number of items of the tiers 1-3 obtained
+                by interacting with chests that are reset by the respective
+                artifact. For each stage it is a list of 3 values, one for each
+                tier.
         """
         out = {
             'scenes': self.scenes,
@@ -237,6 +246,8 @@ class LootReport:
             'multishops': multishops,
             'card_multishops': card_multishops,
         }
+        delusion = [Counter([item.tier._tier for item in loot]) for loot in self.delusion_loot]
+        out['delusion_bonus'] = [[d.get(i, 0) for i in range(3)] for d in delusion]
         return out
 
 
@@ -334,7 +345,7 @@ class Inventory:
 
 class Run:
     """Simulates a run by full looting a number of stages."""
-    def __init__(self, num_players=1, expansions=ALL_EXPANSIONS):
+    def __init__(self, num_players=1, expansions=ALL_EXPANSIONS, is_delusion_enabled=False):
         """
         Initialise the run session.
 
@@ -346,6 +357,12 @@ class Run:
         expansions : set, optional
             The list of enabled expansions, which adds new scenes and
             interactables. By default they are all enabled.
+        is_delusion_enabled : bool, optional
+            Whether the Artifact of Delusion is enabled. This guarantees
+            double loot from all chests that can be reset at the end of
+            the Teleporter Event or Artifact Trial. Assumes that all
+            such chests have been looted before the reset and that they
+            are all then guessed correctly. Disabled by default.
 
         Returns
         -------
@@ -356,6 +373,7 @@ class Run:
         self._is_sotv_enabled = Expansion.SOTV in self._expansions
         self._is_command_enabled = False
         self._is_sacrifice_enabled = False
+        self._is_delusion_enabled = is_delusion_enabled
         # Bogus scene just to initialise the director; it will be rerolled
         self._scene_director = SceneDirector(
             SceneName.DR,
@@ -718,40 +736,46 @@ class Run:
         card_multibuys : list
             The names of the interactable spawn card of any multishop that was
             fully looted using an Executive Card.
+        delusion_loot : list
+            The extra stack of items that can be collected if the Artifact of
+            Delusion is enabled.
         """
         loot = {ItemDef: [], EquipmentDef: []}
         boss_shrines = 0
         gold_shrines = 0
         free_chest_items = []
         card_multibuys = []
-        for isc in interactables:
-            if isc in self._actions:
-                if 'TripleShop' in isc or 'FreeChest' in isc:
+        delusion_loot = []
+        for isc_name in interactables:
+            if isc_name in self._actions:
+                if 'TripleShop' in isc_name or 'FreeChest' in isc_name:
                     if self._inventory.has_card:
-                        card_multibuys.append(isc)
-                    drops = self._actions[isc]()
-                    collected_loot = self._loot_multishop(isc, drops)
+                        card_multibuys.append(isc_name)
+                    drops = self._actions[isc_name]()
+                    collected_loot = self._loot_multishop(isc_name, drops)
                     for item in collected_loot:
                         loot[type(item)].append(item)
-                    if isc == 'iscFreeChest':
+                    if isc_name == 'iscFreeChest':
                         free_chest_items.extend(collected_loot)
                 elif isc == 'iscVoidTriple':
-                    drops = self._actions[isc]()
+                    drops = self._actions[isc_name]()
                     item = max(drops, key=lambda x: x.tier._tier)
                     self._inventory.give_item(item)
                     loot[type(item)].append(item)
                 else:
-                    for item in self._actions[isc]():
+                    for item in self._actions[isc_name]():
                         if isinstance(item, ItemDef):
                             self._inventory.give_item(item)
                         elif isinstance(item, EquipmentDef):
                             item = self._collect_equipment(item)
                         loot[type(item)].append(item)
-            elif 'ShrineBoss' in isc:
+                        if isc[isc_name].can_reset and self._is_delusion_enabled:
+                            delusion_loot.append(item)
+            elif 'ShrineBoss' in isc_name:
                 boss_shrines += 1
-            elif 'Goldshores' in isc:
+            elif 'Goldshores' in isc_name:
                 gold_shrines += 1
-        return loot, boss_shrines, gold_shrines, free_chest_items, card_multibuys
+        return loot, boss_shrines, gold_shrines, free_chest_items, card_multibuys, delusion_loot
     
     def _loot_stage(self, void_fields, stage_preferences):
         """Fully loot a normal stage."""
@@ -776,7 +800,7 @@ class Run:
                 portals.add(Portal.V)
 
         interactables = self._generate_interactables()
-        loot, boss_shrines, gold_shrines, free_chest_items, card_multibuys = self._loot_interactables(interactables)
+        loot, boss_shrines, gold_shrines, free_chest_items, card_multibuys, delusion_loot = self._loot_interactables(interactables)
 
         if teleporter_exists and not Portal.B in portals:
             # In some cases the only available Newt Statue is either locked
@@ -805,6 +829,10 @@ class Run:
                 self._blue_portals_opened += 1
             if gold_shrines:
                 portals.add(Portal.G)
+
+        if (teleporter_exists or scene_name == SceneName.BA) and self._is_delusion_enabled:
+            for item in delusion_loot:
+                self._inventory.give_item(item)
 
         if scene_name == SceneName.VF:
             for cell in range(9):
@@ -848,6 +876,7 @@ class Run:
             loot,
             free_chest_items,
             card_multibuys,
+            delusion_loot,
         )
         return
 

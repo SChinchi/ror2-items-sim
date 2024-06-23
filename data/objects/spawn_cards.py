@@ -42,6 +42,8 @@ class InteractableSpawnCard(SpawnCard):
             'controller': asset['prefab']['m_PathID'],
             # To be filled out once all file ids have been collected
             'offers_choice': asset['prefab']['m_PathID'],
+            # To be filled out once all file ids have been collected
+            'can_reset': asset['prefab']['m_PathID'],
         })
         return data
 

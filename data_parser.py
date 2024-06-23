@@ -230,6 +230,7 @@ def extract_file_data(src_path=FILES_DIR):
             _get_component(ids, data['offers_choice'], MultiShopController) or
             _get_component(ids, data['offers_choice'], ScrapperController)
         )
+        data['can_reset'] = _get_component(ids, data['can_reset'], DelusionChestController) is not None
     for data in csc.values():
         master = _get_component(ids, data['body'], CharacterMaster)
         body, path_id = _get_component(ids, master['bodyPrefab']['m_PathID'], CharacterBody, keep_path_id=True)

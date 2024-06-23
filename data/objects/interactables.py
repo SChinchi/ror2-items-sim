@@ -133,3 +133,7 @@ class OptionChestBehavior:
             all_items.extend(tier_items)
             all_weights.extend([weight] * len(tier_items))
         return lambda: OptionChestBehavior._drop_unique_loot(all_items, all_weights, max_drops)
+
+
+class DelusionChestController:
+    SCRIPT = -1406854975882462628
