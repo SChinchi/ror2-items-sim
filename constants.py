@@ -3,6 +3,7 @@ class SceneName:
     DR = 'blackbeach'           # Distant Roost
     TP = 'golemplains'          # Titanic Plains
     SF = 'snowyforest'          # Siphoned Forest
+    VF2 = 'lakes'               # Verdant Falls (#2 due to Void Fields conflict)
     AA = 'goolake'              # Abandoned Aqueduct
     WA = 'foggyswamp'           # Wetland Aspects
     AS = 'ancientloft'          # Aphelian Sanctuary

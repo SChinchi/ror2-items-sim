@@ -527,6 +527,8 @@ class Run:
             interactables.append('iscGoldChest')
         elif scene_name == SceneName.GC:
             interactables.extend(['iscChest1'] * 4)
+        if scene_name == SceneName.VF2:
+            interactables.append('iscChest2' random.random() < .5 else 'iscScrapper')
         if scenes[scene_name].scene_type == 1:
             if LOCKBOX_ALLOWED:
                 # For multiplayer we assume the Rusted Keys are as evenly spread out
