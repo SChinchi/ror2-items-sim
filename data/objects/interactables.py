@@ -137,3 +137,7 @@ class OptionChestBehavior:
 
 class DelusionChestController:
     SCRIPT = -1406854975882462628
+
+
+class PortalStatueBehavior:
+    SCRIPT = 8917583605525748003

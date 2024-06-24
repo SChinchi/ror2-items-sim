@@ -1938,7 +1938,10 @@
       "exp_coeff": 0.066667,
       "elite_bias": 2.0
     },
-    "newt": null
+    "newt": [
+      1,
+      1
+    ]
   },
   "ancientloft": {
     "scene_type": 1,

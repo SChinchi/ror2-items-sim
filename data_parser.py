@@ -21,7 +21,7 @@ def _get_component(ids, prefab_id, component, keep_path_id=False):
         _id = c['component']['m_PathID']
         if _id in ids:
             _component = ids[_id]
-            if _component['m_Script']['m_PathID'] == component.SCRIPT:
+            if 'm_Script' in _component and _component['m_Script']['m_PathID'] == component.SCRIPT:
                 if keep_path_id:
                     return _component, _id
                 return _component
@@ -40,6 +40,13 @@ def _get_all_components(ids, prefab_id, component, keep_path_id=False):
                     out.append(_component)
     return out
 
+def _get_transform(ids, obj_id):
+    for c in ids[obj_id]['m_Component']:
+        _id = c['component']['m_PathID']
+        if _id in ids:
+            _component = ids[_id]
+            if 'm_LocalPosition' in _component:
+                return _component
 
 def _extract_names(src_path=LANGUAGE_DIR):
     names = {}
@@ -57,6 +64,20 @@ def _extract_names(src_path=LANGUAGE_DIR):
                 names[m.group(1)] = m.group(2)
     return names
 
+def _find_newt_group(groups, ids):
+    for group in groups:
+        if all(_is_newt_statue(o['m_PathID'], ids) for o in group['objects']):
+            return group['minEnabled'], group['maxEnabled']
+
+def _is_newt_statue(obj_id, ids):
+    if _get_component(ids, obj_id, PortalStatueBehavior):
+        return True
+    # The statue could be nested in a child object which needs to be identified
+    transform = _get_transform(ids, obj_id)
+    if transform:
+        return any(_is_newt_statue(ids[child['m_PathID']]['m_GameObject']['m_PathID'], ids)
+                   for child in transform['m_Children'] if child['m_PathID'] in ids)
+    return False
 
 def extract_file_data(src_path=FILES_DIR):
     """
@@ -112,6 +133,7 @@ def extract_file_data(src_path=FILES_DIR):
     masters = {'masters': {}, 'AI_driver': {}}
     skills = {}
     dccs = {}
+
     for fname in os.listdir(src_path):
         if re.match('(ror2-(base|dlc1|cu8|junk)-.*_text)|(ror2-dlc1_assets_all.bundle)|(ror2-cu8_assets_all.bundle)', fname):
             env = UnityPy.load(path.join(src_path, fname))
@@ -300,6 +322,7 @@ def extract_file_data(src_path=FILES_DIR):
                 # `sceneType == 4` are timed intermission stages
                 # Other scene types are not playable
                 if asset['sceneType'] in (1, 2, 4):
+                    scene_ids = {}
                     dlc_id = asset['requiredExpansion']['m_PathID']
                     dlc_name = ids[dlc_id]['m_Name'] if dlc_id else None
                     scene_data = {
@@ -316,10 +339,13 @@ def extract_file_data(src_path=FILES_DIR):
                     scene_all = UnityPy.load(path.join(src_path, scene_file))
                     # 'blackbeach' has a test scene cabinet which we ignore
                     cabinet = [cab for name, cab in scene_all.cabs.items() if '.' not in name][0]
+                    toggle_groups = None
                     for obj in cabinet.objects.values():
                         if obj.type.name == 'MonoBehaviour':
                             asset = obj.read_typetree()
+                            scene_ids[obj.path_id] = asset
                             script = asset['m_Script']['m_PathID']
+
                             if script == ClassicStageInfo.SCRIPT:
                                 stage_info = ClassicStageInfo.parse(asset, ids)
                                 stage_info['bonus_credits'] = sum(stage_info['bonus_credits'])
@@ -339,13 +365,11 @@ def extract_file_data(src_path=FILES_DIR):
                             elif script == SceneDirector.SCRIPT:
                                 scene_data['scene_director'] = SceneDirector.parse(asset, ids)
                             elif script == SceneObjectToggleGroup.SCRIPT:
-                                for group in asset['toggleGroups']:
-                                    obj = cabinet.objects[group['objects'][0]['m_PathID']]
-                                    if 'Newt' in obj.read_typetree()['m_Name']:
-                                        scene_data['newt'] = (
-                                            group['minEnabled'],
-                                            group['maxEnabled'],
-                                        )
+                                toggle_groups = asset['toggleGroups']
+                        elif obj.type.name in ('GameObject', 'Transform'):
+                            scene_ids[obj.path_id] = obj.read_typetree()
+                    if toggle_groups:
+                        scene_data['newt'] = _find_newt_group(toggle_groups, scene_ids)
                     scenes[name] = scene_data
     for data in scenes.values():
         destinations = []
