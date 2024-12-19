@@ -45,6 +45,8 @@ class InteractableSpawnCard(SpawnCard):
             # To be filled out once all file ids have been collected
             'can_reset': asset['prefab']['m_PathID'],
             # To be filled out once all file ids have been collected
+            'is_sale_star_compatible': asset['prefab']['m_PathID'],
+            # To be filled out once all file ids have been collected
             'expansion': asset['prefab']['m_PathID'],
         })
         return data

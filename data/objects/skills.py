@@ -17,6 +17,8 @@ class SkillDef:
             'cancel_sprinting': bool(asset['cancelSprintingOnActivation']),
             'cancel_from_sprinting': bool(asset['canceledFromSprinting']),
             'is_combat_skill': bool(asset['isCombatSkill']),
+            'scales_with_attack_speed': bool(asset['attackSpeedBuffsRestockSpeed']),
+            'attack_speed_scaling': round_value(asset['attackSpeedBuffsRestockSpeed_Multiplier']),
         }
 
 

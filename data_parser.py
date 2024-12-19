@@ -17,6 +17,8 @@ FILES_DIR = path.join(ASSETS_DIR, 'aa/StandaloneWindows64')
 
 
 def _get_component(ids, prefab_id, component, keep_path_id=False):
+    if not prefab_id:
+        return None
     for c in ids[prefab_id]['m_Component']:
         _id = c['component']['m_PathID']
         if _id in ids:
@@ -41,6 +43,8 @@ def _get_all_components(ids, prefab_id, component, keep_path_id=False):
     return out
 
 def _get_transform(ids, obj_id):
+    if not obj_id:
+        return
     for c in ids[obj_id]['m_Component']:
         _id = c['component']['m_PathID']
         if _id in ids:
@@ -50,18 +54,23 @@ def _get_transform(ids, obj_id):
 
 def _extract_names(src_path=LANGUAGE_DIR):
     names = {}
-    for file in ('Equipment', 'InfiniteTower', 'Interactors', 'Items', 'CharacterBodies'):
-        enc = 'utf8' if file == 'CharacterBodies' else None
-        with open(path.join(src_path, f'{file}.txt'), encoding=enc) as f:
-            for line in f.readlines():
-                m = re.match('.*"([A-Z0-9_]+_NAME)".*:.*"(.*)".*\n', line)
-                if m:
-                    names[m.group(1)] = m.group(2)
-    with open(path.join(src_path, 'cu8.json')) as f:
+    with open(path.join(src_path, 'output.json'), encoding='utf8') as f:
         for line in f.readlines():
             m = re.match('.*"([A-Z0-9_]+_NAME)".*:.*"(.*)".*\n', line)
             if m:
                 names[m.group(1)] = m.group(2)
+    #for file in ('Equipment', 'InfiniteTower', 'Interactors', 'Items', 'CharacterBodies', 'output'):
+    #    enc = 'utf8' if file == 'CharacterBodies' or file == 'output' else None
+    #    with open(path.join(src_path, f'{file}.json'), encoding=enc) as f:
+    #        for line in f.readlines():
+    #            m = re.match('.*"([A-Z0-9_]+_NAME)".*:.*"(.*)".*\n', line)
+    #            if m:
+    #                names[m.group(1)] = m.group(2)
+    #with open(path.join(src_path, 'cu8.json')) as f:
+    #    for line in f.readlines():
+    #        m = re.match('.*"([A-Z0-9_]+_NAME)".*:.*"(.*)".*\n', line)
+    #        if m:
+    #            names[m.group(1)] = m.group(2)
     return names
 
 def _find_newt_group(groups, ids):
@@ -113,6 +122,7 @@ def extract_file_data(src_path=FILES_DIR):
     dccs_classes = {s.SCRIPT: s for s in (DirectorCardCategorySelection, FamilyDirectorCardCategorySelection)}
     
     ids = {}
+    buffs = []
     items = []
     equipment = []
     # Initialising the "NoTier" pair here because it's not defined in the game.
@@ -135,7 +145,7 @@ def extract_file_data(src_path=FILES_DIR):
     dccs = {}
 
     for fname in os.listdir(src_path):
-        if re.match('(ror2-(base|dlc1|cu8|junk)-.*_text)|(ror2-dlc1_assets_all.bundle)|(ror2-cu8_assets_all.bundle)', fname):
+        if re.match('(ror2-(base|dlc1|cu8|dlc2|junk)-.*_text)|(ror2-dlc1_assets_all.bundle)|(ror2-cu8_assets_all.bundle)|(ror2-dlc2_assets_all.bundle)', fname):
             env = UnityPy.load(path.join(src_path, fname))
             cabs = [cab for file, cab in env.cabs.items() if '.' not in file]
             for cab in cabs:
@@ -147,7 +157,9 @@ def extract_file_data(src_path=FILES_DIR):
                     ids[obj.path_id] = asset
                     if obj.type.name == 'MonoBehaviour':
                         script = asset['m_Script']['m_PathID']
-                        if script == ItemDef.SCRIPT:
+                        if script == BuffDef.SCRIPT:
+                            buffs.append(BuffDef.parse(asset))
+                        elif script == ItemDef.SCRIPT:
                             items.append(ItemDef.parse(asset, token_names))
                         elif script == EquipmentDef.SCRIPT:
                             equipment.append(EquipmentDef.parse(asset, token_names))
@@ -237,7 +249,7 @@ def extract_file_data(src_path=FILES_DIR):
                 token = token_names[interaction['displayNameToken']]
             else:
                 token = _get_component(ids, data['name'], GenericDisplayNameProvider)
-                token = token_names[token['displayToken']] if token else ''
+                token = token_names.get(token['displayToken'], token['displayToken']) if token else ''
         data['name'] = token
         data['drop_table'] = dt
         controller_name = None
@@ -253,6 +265,8 @@ def extract_file_data(src_path=FILES_DIR):
             _get_component(ids, data['offers_choice'], ScrapperController)
         )
         data['can_reset'] = _get_component(ids, data['can_reset'], DelusionChestController) is not None
+        purchase = _get_component(ids, data['is_sale_star_compatible'], PurchaseInteraction)
+        data['is_sale_star_compatible'] = bool(purchase['saleStarCompatible']) if purchase else False
         expansion = _get_component(ids, data['expansion'], ExpansionRequirementComponent)
         if expansion:
             data['expansion'] = ExpansionRequirementComponent.parse(expansion, ids)
@@ -270,7 +284,7 @@ def extract_file_data(src_path=FILES_DIR):
     for data in dccs.values():
         for category in data['categories']:
             for card in category['cards']:
-                card['spawn_card'] = ids[card['spawn_card']]['m_Name']
+                card['spawn_card'] = ids[card['spawn_card']]['m_Name'] if card['spawn_card'] else None
     for data in bodies.values():
         data['_name'] = ids[data['_name']]['m_Name']
         hurt_state = _get_component(ids, data['pain_threshold'], SetStateOnHurt)
@@ -321,66 +335,71 @@ def extract_file_data(src_path=FILES_DIR):
 
     scenes = {}
     for fname in os.listdir(src_path):
-        if re.match('ror2-(base|dlc1|cu8)-.*_scenedef', fname):
+        if re.match('ror2-(base|dlc1|cu8|dlc2)-.*_scenedef', fname):
             scene_def = UnityPy.load(path.join(src_path, fname))
             for def_container in scene_def.container.values():
                 asset = def_container.get_obj().read_typetree()
                 name = asset['m_Name']
                 ids[def_container.get_obj().path_id] = asset
-                # `sceneType == 1` are playable stages
-                # `sceneType == 2` are intermission stages
-                # `sceneType == 4` are timed intermission stages
-                # Other scene types are not playable
-                if asset['sceneType'] in (1, 2, 4):
-                    scene_ids = {}
-                    dlc_id = asset['requiredExpansion']['m_PathID']
-                    dlc_name = ids[dlc_id]['m_Name'] if dlc_id else None
-                    scene_data = {
-                        'scene_type': asset['sceneType'],
-                        'stage_order': asset['stageOrder']-1,
-                        'required_dlc': dlc_name,
-                        'destinations': asset['destinationsGroup']['m_PathID'],
-                        'skip_devotion': bool(asset['needSkipDevotionRespawn']),
-                        'stage_info': None,
-                        'scene_director': None,
-                        'newt': None,
-                    }
-                    scene_file = fname.replace('scenedef_assets', 'scenes')
-                    scene_all = UnityPy.load(path.join(src_path, scene_file))
-                    # 'blackbeach' has a test scene cabinet which we ignore
-                    cabinet = [cab for name, cab in scene_all.cabs.items() if '.' not in name][0]
-                    toggle_groups = None
-                    for obj in cabinet.objects.values():
-                        if obj.type.name == 'MonoBehaviour':
-                            asset = obj.read_typetree()
-                            scene_ids[obj.path_id] = asset
-                            script = asset['m_Script']['m_PathID']
+                # `sceneType == -1` are invalid
+                # `sceneType == 0` are menu
+                # `sceneType == 3` are cutscenes
+                if asset['sceneType'] in (-1, 0, 3):
+                    continue
+                scene_ids = {}
+                dlc_id = asset['requiredExpansion']['m_PathID']
+                dlc_name = ids[dlc_id]['m_Name'] if dlc_id else None
+                scene_data = {
+                    'scene_type': asset['sceneType'],
+                    'stage_order': asset['stageOrder']-1,
+                    'required_dlc': dlc_name,
+                    'destinations': asset['destinationsGroup']['m_PathID'],
+                    'destinations_loop': asset['loopedDestinationsGroup']['m_PathID'],
+                    'use_looping_destinations': bool(asset['shouldUpdateSceneCollectionAfterLooping']),
+                    'skip_devotion': bool(asset['needSkipDevotionRespawn']),
+                    'stage_info': None,
+                    'scene_director': None,
+                    'newt': None,
+                }
+                scene_file = fname.replace('scenedef_assets', 'scenes')
+                # Is this file changing with every update? Pain...
+                if 'villagenight' in fname:
+                    scene_file = 'ror2-dlc2-villagenight_scenes_all_0fa1aadf2868d814cd081925a7349ef4.bundle'
+                scene_all = UnityPy.load(path.join(src_path, scene_file))
+                # 'blackbeach' has a test scene cabinet which we ignore
+                cabinet = [cab for name, cab in scene_all.cabs.items() if '.' not in name][0]
+                toggle_groups = None
+                for obj in cabinet.objects.values():
+                    if obj.type.name == 'MonoBehaviour':
+                        asset = obj.read_typetree()
+                        scene_ids[obj.path_id] = asset
+                        script = asset['m_Script']['m_PathID']
 
-                            if script == ClassicStageInfo.SCRIPT:
-                                stage_info = ClassicStageInfo.parse(asset, ids)
-                                stage_info['bonus_credits'] = sum(stage_info['bonus_credits'])
-                                # The Simulacrum Abyssal Depths doesn't have a
-                                # reference to its Monster DccsPool, so we have
-                                # to set it manually.
-                                if 'itdampcave' in scene_file:
-                                    text_file = fname.replace('scenedef', 'text')
-                                    scene_text = UnityPy.load(path.join(src_path, text_file))
-                                    for text_obj in scene_text.objects:
-                                        if text_obj.type.name == 'MonoBehaviour':
-                                            text_asset = text_obj.read_typetree()
-                                            if (text_asset['m_Script']['m_PathID'] == DccsPool.SCRIPT and
-                                                'Monsters' in text_asset['m_Name']):
-                                                stage_info['monsters'] = DccsPool.parse(text_asset, ids)
-                                scene_data['stage_info'] = stage_info
-                            elif script == SceneDirector.SCRIPT:
-                                scene_data['scene_director'] = SceneDirector.parse(asset, ids)
-                            elif script == SceneObjectToggleGroup.SCRIPT:
-                                toggle_groups = asset['toggleGroups']
-                        elif obj.type.name in ('GameObject', 'Transform'):
-                            scene_ids[obj.path_id] = obj.read_typetree()
-                    if toggle_groups:
-                        scene_data['newt'] = _find_newt_group(toggle_groups, scene_ids)
-                    scenes[name] = scene_data
+                        if script == ClassicStageInfo.SCRIPT:
+                            stage_info = ClassicStageInfo.parse(asset, ids)
+                            stage_info['bonus_credits'] = sum(stage_info['bonus_credits'])
+                            if not stage_info['monsters'] or not stage_info['interactables']:
+                                text_file = fname.replace('scenedef', 'text')
+                                scene_text = UnityPy.load(path.join(src_path, text_file))
+                                for text_obj in scene_text.objects:
+                                    if text_obj.type.name == 'MonoBehaviour':
+                                        text_asset = text_obj.read_typetree()
+                                        if text_asset['m_Script']['m_PathID'] != DccsPool.SCRIPT:
+                                            continue
+                                        if 'Monsters' in text_asset['m_Name']:
+                                            stage_info['monsters'] = DccsPool.parse(text_asset, ids)
+                                        elif 'Interactables' in text_asset['m_Name']:
+                                            stage_info['interactables'] = DccsPool.parse(text_asset, ids)
+                            scene_data['stage_info'] = stage_info
+                        elif script == SceneDirector.SCRIPT:
+                            scene_data['scene_director'] = SceneDirector.parse(asset, ids)
+                        elif script == SceneObjectToggleGroup.SCRIPT:
+                            toggle_groups = asset['toggleGroups']
+                    elif obj.type.name in ('GameObject', 'Transform'):
+                        scene_ids[obj.path_id] = obj.read_typetree()
+                if toggle_groups:
+                    scene_data['newt'] = _find_newt_group(toggle_groups, scene_ids)
+                scenes[name] = scene_data
     for data in scenes.values():
         destinations = []
         path_id = data['destinations']
@@ -389,6 +408,15 @@ def extract_file_data(src_path=FILES_DIR):
                 scene = ids[entry['sceneDef']['m_PathID']]
                 destinations.append((scene['m_Name'], entry['weightMinusOne'] + 1))
         data['destinations'] = destinations
+        destinations = []
+        path_id = data['destinations_loop']
+        if path_id:
+            for entry in ids[path_id]['_sceneEntries']:
+                scene = ids[entry['sceneDef']['m_PathID']]
+                destinations.append((scene['m_Name'], entry['weightMinusOne'] + 1))
+        data['destinations_loop'] = destinations
+    # The reference in the assets is somehow lost, quick fix
+    scenes['blackbeach2']['stage_info']['interactables'] = scenes['blackbeach']['stage_info']['interactables']
 
     voidcamps = {}
     text_file = 'ror2-dlc1-voidcamp_text_assets_all.bundle'
@@ -427,6 +455,7 @@ def extract_file_data(src_path=FILES_DIR):
                                 wave['wave'] = data
                                 break
 
+    buffs.sort(key=lambda x: x['_name'])
     items.sort(key=lambda x: x['_name'])
     equipment.sort(key=lambda x: x['_name'])
     droptables = {key: droptables[key] for key in sorted(droptables)}
@@ -445,6 +474,7 @@ def extract_file_data(src_path=FILES_DIR):
     scenes = {key: scenes[key] for key in sorted(scenes)}
 
     for fname, data in (
+        (BUFFS_FILE, buffs),
         (ITEMS_FILE, items),
         (EQUIPMENT_FILE, equipment),
         (DROPTABLES_FILE, droptables),

@@ -1,4 +1,28 @@
 {
+  "scHalcyonShardA": {
+    "class": "SpawnCard",
+    "_name": "scHalcyonShardA",
+    "name": "",
+    "required_flags": 0,
+    "forbidden_flags": 0,
+    "cost": 5
+  },
+  "scHalcyonShardB": {
+    "class": "SpawnCard",
+    "_name": "scHalcyonShardB",
+    "name": "",
+    "required_flags": 0,
+    "forbidden_flags": 0,
+    "cost": 20
+  },
+  "scHalcyonShardC": {
+    "class": "SpawnCard",
+    "_name": "scHalcyonShardC",
+    "name": "",
+    "required_flags": 0,
+    "forbidden_flags": 0,
+    "cost": 10
+  },
   "scVoidCampGrass": {
     "class": "SpawnCard",
     "_name": "scVoidCampGrass",

@@ -5,6 +5,15 @@ from data.dirpaths import *
 from data.objects import *
 
 
+class Buffs:
+    def __init__(self, data):
+        self._buffs = []
+        for buff_data in data:
+            buff = BuffDef(buff_data)
+            self._buffs.append(buff)
+            setattr(self, buff._name, buff)
+
+
 class ItemTiers:
     def __init__(self, data):
         for key, value in data.items():
@@ -33,12 +42,13 @@ class DirectorCard:
     def __init__(self, data):
         for key, value in data.items():
             setattr(self, key, value)
-        if self.spawn_card.startswith('isc'):
-            self.spawn_card = isc[self.spawn_card]
-        elif self.spawn_card.startswith('csc'):
-            self.spawn_card = csc[self.spawn_card]
-        elif self.spawn_card.startswith('sc'):
-            self.spawn_card = sc[self.spawn_card]
+        if self.spawn_card:
+            if self.spawn_card.startswith('isc'):
+                self.spawn_card = isc[self.spawn_card]
+            elif self.spawn_card.startswith('csc'):
+                self.spawn_card = csc[self.spawn_card]
+            elif self.spawn_card.startswith('sc'):
+                self.spawn_card = sc[self.spawn_card]
 
     def is_available(self, stages_cleared, expansions):
         if not stages_cleared >= self.min_stages_cleared:
@@ -173,8 +183,9 @@ def load_data(category):
     ----------
     category : str
         Keyword to decide which category of data to load. The options include
-        'items', 'equipment', 'tiers', 'droptables', 'masters', 'bodies', 'sc'
-        'isc', 'csc', 'skills', 'dccs', 'scenes', 'voidcamp', and 'simulacrum'.
+        'buffs', 'items', 'equipment', 'tiers', 'droptables', 'masters',
+        'bodies', 'sc', 'isc', 'csc', 'skills', 'dccs', 'scenes', 'voidcamp',
+        and 'simulacrum'.
 
     Returns
     -------
@@ -183,6 +194,7 @@ def load_data(category):
         everything else in a dictionary.
     """ 
     choices = {
+        'buffs': BUFFS_FILE,
         'items': ITEMS_FILE,
         'equipment': EQUIPMENT_FILE,
         'tiers': TIERS_FILE,
@@ -206,6 +218,7 @@ def load_data(category):
         return json.load(f)
 
 
+Buffs = Buffs(load_data('buffs'))
 # DO NOT CHANGE - The order of initialisation matters
 ItemTiers = ItemTiers(load_data('tiers'))
 Items = _init_items(load_data('items'))

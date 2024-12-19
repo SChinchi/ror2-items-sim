@@ -13,6 +13,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscBrokenDrone1": {
@@ -29,6 +30,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscBrokenDrone2": {
@@ -45,6 +47,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscBrokenEmergencyDrone": {
@@ -61,6 +64,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscBrokenEquipmentDrone": {
@@ -77,6 +81,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscBrokenFlameDrone": {
@@ -93,6 +98,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscBrokenMegaDrone": {
@@ -109,6 +115,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscBrokenMissileDrone": {
@@ -125,6 +132,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscBrokenTurret1": {
@@ -141,6 +149,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscCasinoChest": {
@@ -157,6 +166,7 @@
     "controller": "RouletteChestController",
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": true,
     "expansion": null
   },
   "iscCategoryChest2Damage": {
@@ -173,6 +183,7 @@
     "controller": "ChestBehavior",
     "offers_choice": false,
     "can_reset": true,
+    "is_sale_star_compatible": true,
     "expansion": "DLC1"
   },
   "iscCategoryChest2Healing": {
@@ -189,6 +200,7 @@
     "controller": "ChestBehavior",
     "offers_choice": false,
     "can_reset": true,
+    "is_sale_star_compatible": true,
     "expansion": "DLC1"
   },
   "iscCategoryChest2Utility": {
@@ -205,6 +217,7 @@
     "controller": "ChestBehavior",
     "offers_choice": false,
     "can_reset": true,
+    "is_sale_star_compatible": true,
     "expansion": "DLC1"
   },
   "iscCategoryChestDamage": {
@@ -221,6 +234,7 @@
     "controller": "ChestBehavior",
     "offers_choice": false,
     "can_reset": true,
+    "is_sale_star_compatible": true,
     "expansion": null
   },
   "iscCategoryChestHealing": {
@@ -237,6 +251,7 @@
     "controller": "ChestBehavior",
     "offers_choice": false,
     "can_reset": true,
+    "is_sale_star_compatible": true,
     "expansion": null
   },
   "iscCategoryChestUtility": {
@@ -253,6 +268,7 @@
     "controller": "ChestBehavior",
     "offers_choice": false,
     "can_reset": true,
+    "is_sale_star_compatible": true,
     "expansion": null
   },
   "iscChest1": {
@@ -269,6 +285,7 @@
     "controller": "ChestBehavior",
     "offers_choice": false,
     "can_reset": true,
+    "is_sale_star_compatible": true,
     "expansion": null
   },
   "iscChest1Stealthed": {
@@ -285,6 +302,7 @@
     "controller": "ChestBehavior",
     "offers_choice": false,
     "can_reset": true,
+    "is_sale_star_compatible": true,
     "expansion": null
   },
   "iscChest2": {
@@ -301,6 +319,24 @@
     "controller": "ChestBehavior",
     "offers_choice": false,
     "can_reset": true,
+    "is_sale_star_compatible": true,
+    "expansion": null
+  },
+  "iscColossusPortal": {
+    "class": "InteractableSpawnCard",
+    "_name": "iscColossusPortal",
+    "name": "Green Portal",
+    "required_flags": 0,
+    "forbidden_flags": 0,
+    "cost": 0,
+    "skip_with_sacrifice": false,
+    "sacrifice_weight": 1.0,
+    "limit": -1,
+    "drop_table": null,
+    "controller": null,
+    "offers_choice": false,
+    "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscDeepVoidPortal": {
@@ -317,6 +353,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": "DLC1"
   },
   "iscDeepVoidPortalBattery": {
@@ -333,7 +370,25 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": "DLC1"
+  },
+  "iscDestinationPortal": {
+    "class": "InteractableSpawnCard",
+    "_name": "iscDestinationPortal",
+    "name": "Destination Portal",
+    "required_flags": 0,
+    "forbidden_flags": 0,
+    "cost": 0,
+    "skip_with_sacrifice": false,
+    "sacrifice_weight": 1.0,
+    "limit": -1,
+    "drop_table": null,
+    "controller": null,
+    "offers_choice": false,
+    "can_reset": false,
+    "is_sale_star_compatible": false,
+    "expansion": null
   },
   "iscDuplicator": {
     "class": "InteractableSpawnCard",
@@ -349,6 +404,7 @@
     "controller": "ShopTerminalBehavior",
     "offers_choice": true,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscDuplicatorLarge": {
@@ -365,6 +421,7 @@
     "controller": "ShopTerminalBehavior",
     "offers_choice": true,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscDuplicatorMilitary": {
@@ -381,6 +438,7 @@
     "controller": "ShopTerminalBehavior",
     "offers_choice": true,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscDuplicatorWild": {
@@ -397,6 +455,7 @@
     "controller": "ShopTerminalBehavior",
     "offers_choice": true,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscEquipmentBarrel": {
@@ -413,6 +472,24 @@
     "controller": "ChestBehavior",
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": true,
+    "expansion": null
+  },
+  "iscEventTrigger": {
+    "class": "InteractableSpawnCard",
+    "_name": "iscEventTrigger",
+    "name": "Prime Meridian - Event Trigger",
+    "required_flags": 0,
+    "forbidden_flags": 8,
+    "cost": 1,
+    "skip_with_sacrifice": false,
+    "sacrifice_weight": 1.0,
+    "limit": -1,
+    "drop_table": null,
+    "controller": null,
+    "offers_choice": false,
+    "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscFreeChest": {
@@ -429,6 +506,7 @@
     "controller": "MultiShopController",
     "offers_choice": true,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": "DLC1"
   },
   "iscGauntletEntrance": {
@@ -445,6 +523,24 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
+    "expansion": null
+  },
+  "iscGeode": {
+    "class": "InteractableSpawnCard",
+    "_name": "iscGeode",
+    "name": "",
+    "required_flags": 0,
+    "forbidden_flags": 0,
+    "cost": 30,
+    "skip_with_sacrifice": false,
+    "sacrifice_weight": 1.0,
+    "limit": -1,
+    "drop_table": null,
+    "controller": null,
+    "offers_choice": false,
+    "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscGoldChest": {
@@ -461,6 +557,7 @@
     "controller": "ChestBehavior",
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": true,
     "expansion": null
   },
   "iscGoldshoresBeacon": {
@@ -477,6 +574,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscGoldshoresPortal": {
@@ -493,6 +591,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscInfiniteTowerPortal": {
@@ -509,6 +608,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": "DLC1"
   },
   "iscInfiniteTowerSafeWard": {
@@ -525,6 +625,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": "DLC1"
   },
   "iscInfiniteTowerSafeWardAwaitingInteraction": {
@@ -541,6 +642,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": "DLC1"
   },
   "iscLemurianEgg": {
@@ -557,6 +659,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscLockbox": {
@@ -573,6 +676,7 @@
     "controller": "ChestBehavior",
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": true,
     "expansion": null
   },
   "iscLockboxVoid": {
@@ -589,6 +693,7 @@
     "controller": "OptionChestBehavior",
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": "DLC1"
   },
   "iscLunarChest": {
@@ -605,6 +710,7 @@
     "controller": "ChestBehavior",
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscLunarTeleporter": {
@@ -621,6 +727,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscMSPortal": {
@@ -637,6 +744,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscRadarTower": {
@@ -653,6 +761,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscScavBackpack": {
@@ -669,6 +778,7 @@
     "controller": "ChestBehavior",
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscScavLunarBackpack": {
@@ -685,6 +795,7 @@
     "controller": "ChestBehavior",
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscScrapper": {
@@ -701,6 +812,7 @@
     "controller": null,
     "offers_choice": true,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscShopPortal": {
@@ -717,6 +829,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscShrineBlood": {
@@ -733,6 +846,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscShrineBloodSandy": {
@@ -749,6 +863,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscShrineBloodSnowy": {
@@ -765,6 +880,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscShrineBoss": {
@@ -781,6 +897,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscShrineBossSandy": {
@@ -797,6 +914,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscShrineBossSnowy": {
@@ -813,6 +931,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscShrineChance": {
@@ -829,6 +948,7 @@
     "controller": "ShrineChanceBehavior",
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscShrineChanceSandy": {
@@ -845,6 +965,7 @@
     "controller": "ShrineChanceBehavior",
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscShrineChanceSnowy": {
@@ -861,6 +982,7 @@
     "controller": "ShrineChanceBehavior",
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscShrineCleanse": {
@@ -877,6 +999,7 @@
     "controller": "ShopTerminalBehavior",
     "offers_choice": true,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscShrineCleanseSandy": {
@@ -893,6 +1016,7 @@
     "controller": "ShopTerminalBehavior",
     "offers_choice": true,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscShrineCleanseSnowy": {
@@ -909,6 +1033,24 @@
     "controller": "ShopTerminalBehavior",
     "offers_choice": true,
     "can_reset": false,
+    "is_sale_star_compatible": false,
+    "expansion": null
+  },
+  "iscShrineColossusAccess": {
+    "class": "InteractableSpawnCard",
+    "_name": "iscShrineColossusAccess",
+    "name": "Shrine of Shaping",
+    "required_flags": 0,
+    "forbidden_flags": 16,
+    "cost": 50,
+    "skip_with_sacrifice": false,
+    "sacrifice_weight": 1.0,
+    "limit": 1,
+    "drop_table": null,
+    "controller": null,
+    "offers_choice": false,
+    "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscShrineCombat": {
@@ -925,6 +1067,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscShrineCombatSandy": {
@@ -941,6 +1084,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscShrineCombatSnowy": {
@@ -957,6 +1101,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscShrineGoldshoresAccess": {
@@ -973,7 +1118,42 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
+  },
+  "iscShrineHalcyonite": {
+    "class": "InteractableSpawnCard",
+    "_name": "iscShrineHalcyonite",
+    "name": "Halcyon Shrine",
+    "required_flags": 3,
+    "forbidden_flags": 0,
+    "cost": 50,
+    "skip_with_sacrifice": false,
+    "sacrifice_weight": 0.5,
+    "limit": 1,
+    "drop_table": null,
+    "controller": null,
+    "offers_choice": false,
+    "can_reset": false,
+    "is_sale_star_compatible": false,
+    "expansion": "DLC2"
+  },
+  "iscShrineHalcyoniteTier1": {
+    "class": "InteractableSpawnCard",
+    "_name": "iscShrineHalcyoniteTier1",
+    "name": "Halcyon Shrine",
+    "required_flags": 3,
+    "forbidden_flags": 0,
+    "cost": 0,
+    "skip_with_sacrifice": false,
+    "sacrifice_weight": 1.0,
+    "limit": 1,
+    "drop_table": null,
+    "controller": null,
+    "offers_choice": false,
+    "can_reset": false,
+    "is_sale_star_compatible": false,
+    "expansion": "DLC2"
   },
   "iscShrineHealing": {
     "class": "InteractableSpawnCard",
@@ -989,6 +1169,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscShrineRestack": {
@@ -1005,6 +1186,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscShrineRestackSandy": {
@@ -1021,6 +1203,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscShrineRestackSnowy": {
@@ -1037,6 +1220,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscSquidTurret": {
@@ -1053,6 +1237,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscTeleporter": {
@@ -1069,6 +1254,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscTripleShop": {
@@ -1085,6 +1271,7 @@
     "controller": "MultiShopController",
     "offers_choice": true,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscTripleShopEquipment": {
@@ -1101,6 +1288,7 @@
     "controller": "MultiShopController",
     "offers_choice": true,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscTripleShopLarge": {
@@ -1117,6 +1305,7 @@
     "controller": "MultiShopController",
     "offers_choice": true,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscVoidCamp": {
@@ -1133,6 +1322,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": "DLC1"
   },
   "iscVoidChest": {
@@ -1149,6 +1339,7 @@
     "controller": "ChestBehavior",
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": "DLC1"
   },
   "iscVoidChestSacrificeOn": {
@@ -1165,6 +1356,7 @@
     "controller": "ChestBehavior",
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": "DLC1"
   },
   "iscVoidCoinBarrel": {
@@ -1181,6 +1373,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": null
   },
   "iscVoidOutroPortal": {
@@ -1197,6 +1390,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": "DLC1"
   },
   "iscVoidPortal": {
@@ -1213,6 +1407,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": "DLC1"
   },
   "iscVoidRaidSafeWard": {
@@ -1229,6 +1424,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": "DLC1"
   },
   "iscVoidSuppressor": {
@@ -1245,6 +1441,7 @@
     "controller": null,
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": "DLC1"
   },
   "iscVoidTriple": {
@@ -1261,6 +1458,7 @@
     "controller": "OptionChestBehavior",
     "offers_choice": false,
     "can_reset": false,
+    "is_sale_star_compatible": false,
     "expansion": "DLC1"
   }
 }

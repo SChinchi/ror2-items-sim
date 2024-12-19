@@ -3,6 +3,7 @@ import os.path as path
 
 
 DATA_DIR = path.join('data', 'extracted')
+BUFFS_FILE = path.join(DATA_DIR, 'buffs.json')
 ITEMS_FILE = path.join(DATA_DIR, 'items.json')
 EQUIPMENT_FILE = path.join(DATA_DIR, 'equipent.json')
 TIERS_FILE = path.join(DATA_DIR, 'item_tiers.json')

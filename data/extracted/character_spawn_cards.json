@@ -289,6 +289,21 @@
     "body": "BrotherBody",
     "master": "BrotherMaster"
   },
+  "cscChild": {
+    "class": "CharacterSpawnCard",
+    "_name": "cscChild",
+    "name": "Child",
+    "required_flags": 0,
+    "forbidden_flags": 4,
+    "cost": 35,
+    "elite_rules": 0,
+    "no_elites": false,
+    "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
+    "body": "ChildBody",
+    "master": "ChildMaster"
+  },
   "cscClayBoss": {
     "class": "CharacterSpawnCard",
     "_name": "cscClayBoss",
@@ -333,6 +348,21 @@
     "items": [],
     "body": "ClayGrenadierBody",
     "master": "ClayGrenadierMaster"
+  },
+  "cscCorruptionSpike": {
+    "class": "CharacterSpawnCard",
+    "_name": "cscCorruptionSpike",
+    "name": "Lunar Rain",
+    "required_flags": 0,
+    "forbidden_flags": 4,
+    "cost": 0,
+    "elite_rules": 0,
+    "no_elites": false,
+    "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
+    "body": "CorruptionSpike",
+    "master": "CorruptionSpikeMaster"
   },
   "cscDrone1": {
     "class": "CharacterSpawnCard",
@@ -393,6 +423,51 @@
     "items": [],
     "body": "ElectricWormBody",
     "master": "ElectricWormMaster"
+  },
+  "cscFalseSonBoss": {
+    "class": "CharacterSpawnCard",
+    "_name": "cscFalseSonBoss",
+    "name": "False Son",
+    "required_flags": 0,
+    "forbidden_flags": 4,
+    "cost": 0,
+    "elite_rules": 0,
+    "no_elites": false,
+    "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
+    "body": "FalseSonBossBody",
+    "master": "FalseSonBossMaster"
+  },
+  "cscFalseSonBossBrokenLunarShard": {
+    "class": "CharacterSpawnCard",
+    "_name": "cscFalseSonBossBrokenLunarShard",
+    "name": "False Son",
+    "required_flags": 0,
+    "forbidden_flags": 4,
+    "cost": 0,
+    "elite_rules": 0,
+    "no_elites": false,
+    "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
+    "body": "FalseSonBossBodyBrokenLunarShard",
+    "master": "FalseSonBossLunarShardBrokenMaster"
+  },
+  "cscFalseSonBossLunarShard": {
+    "class": "CharacterSpawnCard",
+    "_name": "cscFalseSonBossLunarShard",
+    "name": "False Son",
+    "required_flags": 0,
+    "forbidden_flags": 4,
+    "cost": 0,
+    "elite_rules": 0,
+    "no_elites": false,
+    "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
+    "body": "FalseSonBossBodyLunarShard",
+    "master": "FalseSonBossLunarShardMaster"
   },
   "cscFlyingVermin": {
     "class": "CharacterSpawnCard",
@@ -573,6 +648,21 @@
     "items": [],
     "body": "GupBody",
     "master": "GupMaster"
+  },
+  "cscHalcyonite": {
+    "class": "CharacterSpawnCard",
+    "_name": "cscHalcyonite",
+    "name": "Halcyonite",
+    "required_flags": 0,
+    "forbidden_flags": 4,
+    "cost": 200,
+    "elite_rules": 0,
+    "no_elites": false,
+    "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
+    "body": "HalcyoniteBody",
+    "master": "HalcyoniteMaster"
   },
   "cscHermitCrab": {
     "class": "CharacterSpawnCard",
@@ -1077,6 +1167,21 @@
     "items": [],
     "body": "ScavLunar3Body",
     "master": "ScavLunar3Master"
+  },
+  "cscScorchling": {
+    "class": "CharacterSpawnCard",
+    "_name": "cscScorchling",
+    "name": "Scorch Wurm",
+    "required_flags": 0,
+    "forbidden_flags": 4,
+    "cost": 80,
+    "elite_rules": 0,
+    "no_elites": false,
+    "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
+    "body": "ScorchlingBody",
+    "master": "ScorchlingMaster"
   },
   "cscSquidTurret": {
     "class": "CharacterSpawnCard",

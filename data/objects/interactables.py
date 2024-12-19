@@ -136,8 +136,12 @@ class OptionChestBehavior:
 
 
 class DelusionChestController:
-    SCRIPT = -1406854975882462628
+    SCRIPT = 2014820111434837422
 
 
 class PortalStatueBehavior:
     SCRIPT = 8917583605525748003
+
+
+class PurchaseInteraction:
+    SCRIPT = 3424499719950130566

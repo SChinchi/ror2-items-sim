@@ -132,6 +132,30 @@
     "required_dlc": null
   },
   {
+    "_name": "EliteAurelioniteEquipment",
+    "name": "Aurelionite's Blessing",
+    "cooldown": 25.0,
+    "can_drop": 0,
+    "death_drop_chance": 0.00025,
+    "randomly_triggered": false,
+    "enigma_compatible": false,
+    "is_lunar": false,
+    "is_boss": false,
+    "required_dlc": "DLC2"
+  },
+  {
+    "_name": "EliteBeadEquipment",
+    "name": "His Spiteful Boon",
+    "cooldown": 25.0,
+    "can_drop": 0,
+    "death_drop_chance": 0.00025,
+    "randomly_triggered": false,
+    "enigma_compatible": false,
+    "is_lunar": false,
+    "is_boss": false,
+    "required_dlc": "DLC2"
+  },
+  {
     "_name": "EliteEarthEquipment",
     "name": "His Reassurance",
     "cooldown": 10.0,
@@ -358,6 +382,30 @@
     "is_lunar": false,
     "is_boss": false,
     "required_dlc": "DLC1"
+  },
+  {
+    "_name": "HealAndRevive",
+    "name": "Seed of Life",
+    "cooldown": 60.0,
+    "can_drop": 1,
+    "death_drop_chance": 0.0,
+    "randomly_triggered": true,
+    "enigma_compatible": false,
+    "is_lunar": false,
+    "is_boss": false,
+    "required_dlc": "DLC2"
+  },
+  {
+    "_name": "HealAndReviveConsumed",
+    "name": "Seed of Life (Consumed)",
+    "cooldown": 15.0,
+    "can_drop": 0,
+    "death_drop_chance": 0.0,
+    "randomly_triggered": false,
+    "enigma_compatible": false,
+    "is_lunar": false,
+    "is_boss": false,
+    "required_dlc": "DLC2"
   },
   {
     "_name": "IrradiatingLaser",

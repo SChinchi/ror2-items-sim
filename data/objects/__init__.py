@@ -1,3 +1,4 @@
+from .buffs import *
 from .character import *
 from .dccs import *
 from .dlc import *

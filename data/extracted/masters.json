@@ -353,7 +353,7 @@
       "_name": "BrotherHurtMaster",
       "body": "BrotherHurtBody",
       "ai": {
-        "full_vision": false,
+        "full_vision": true,
         "no_friendly_fire": false,
         "enemy_attention": 5.0,
         "initial_state": "EntityStates.AI.Walker.Guard",
@@ -418,6 +418,43 @@
           "FireLongRange,3198491953001195546",
           "ChaseEnemy,-7540301168110194851",
           "ShortStrafe,7352734143207202039"
+        ]
+      },
+      "pickups": null
+    },
+    "ChefMonsterMaster": {
+      "_name": "ChefMonsterMaster",
+      "body": "ChefBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "ArrowRain,8277815675363782423",
+          "Sear,-4299158352814746877",
+          "RamTarget,4945057353919502289",
+          "StrafeEnemy,-2419901382102347507",
+          "ChaseEnemy,86254435934462223"
+        ]
+      },
+      "pickups": null
+    },
+    "ChildMaster": {
+      "_name": "ChildMaster",
+      "body": "ChildBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Frolic,3116090299839315463",
+          "RunAway,2135608764592283664",
+          "FireSparkBall,-922036583078213255",
+          "PathFromAfar,-1998272694079885475"
         ]
       },
       "pickups": null
@@ -516,6 +553,12 @@
       },
       "pickups": null
     },
+    "CorruptionSpikeMaster": {
+      "_name": "CorruptionSpikeMaster",
+      "body": "CorruptionSpike",
+      "ai": null,
+      "pickups": null
+    },
     "CrocoMonsterMaster": {
       "_name": "CrocoMonsterMaster",
       "body": "CrocoBody",
@@ -539,7 +582,7 @@
     },
     "DevotedLemurianMaster": {
       "_name": "DevotedLemurianMaster",
-      "body": "LemurianBody",
+      "body": "DevotedLemurianBody",
       "ai": {
         "full_vision": true,
         "no_friendly_fire": true,
@@ -549,13 +592,12 @@
         "drivers": [
           "DevotedSecondarySkill,-4250181436592784317",
           "StrafeAndShoot,8807731394288110750",
+          "StopAndShoot,-6906070044642417739",
           "ReturnToLeaderDefault,8327767131348125734",
           "WaitNearLeaderDefault,5829196091342339304",
           "StrafeNearbyEnemies,-9122179168338963792",
-          "ChaseFarEnemies,8410212479791929273",
           "ReturnToOwnerLeash,365152500220574318",
-          "ChaseOffNodegraph,1921513038657211676",
-          "StopAndShoot,-6906070044642417739"
+          "Chase,1921513038657211676"
         ]
       },
       "pickups": null
@@ -804,6 +846,90 @@
       },
       "pickups": null
     },
+    "FalseSonBossLunarShardBrokenMaster": {
+      "_name": "FalseSonBossLunarShardBrokenMaster",
+      "body": "FalseSonBossBodyBrokenLunarShard",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Guard",
+        "main_state": "EntityStates.AI.Walker.Guard",
+        "drivers": [
+          "PrimeDevastator,337192004896178816",
+          "Corrupted Paths,2027618380819104701",
+          "Lunar Rain,-4484933601960710722",
+          "LunarGazePlus,-111062846543885734",
+          "Walk After Target Off Nodegraph,-5251026218763529618",
+          "Sprint After Target,-1402291565618762937",
+          "Follow Nodegraph,-4115450818928858594"
+        ]
+      },
+      "pickups": null
+    },
+    "FalseSonBossLunarShardMaster": {
+      "_name": "FalseSonBossLunarShardMaster",
+      "body": "FalseSonBossBodyLunarShard",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Guard",
+        "main_state": "EntityStates.AI.Walker.Guard",
+        "drivers": [
+          "FissureSlam,-6645575482508385689",
+          "TaintedOffering,-1065628978650027742",
+          "Lunar Rain,-8314786116705205657",
+          "LunarGaze,-2453316177813991269",
+          "Walk After Target Off Nodegraph,-2176251677186879267",
+          "Sprint After Target,5021984255079322160",
+          "Follow Nodegraph,-2937234192475791400"
+        ]
+      },
+      "pickups": null
+    },
+    "FalseSonBossMaster": {
+      "_name": "FalseSonBossMaster",
+      "body": "FalseSonBossBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Guard",
+        "main_state": "EntityStates.AI.Walker.Guard",
+        "drivers": [
+          "Corrupted Paths (Step Brothers),-3545725482335874280",
+          "FissureSlam,-619347959426069436",
+          "TaintedOffering,8537235075610887245",
+          "Lunar Rain,-8658217120315830862",
+          "Walk After Target Off Nodegraph,-6164492461784759468",
+          "Sprint After Target,8982001301430365316",
+          "Follow Nodegraph,2633760335729831456"
+        ]
+      },
+      "pickups": null
+    },
+    "FalseSonMonsterMaster": {
+      "_name": "FalseSonMonsterMaster",
+      "body": "FalseSonBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "LunarSpikes,5369261496402686906",
+          "LaserFather,-2816559145122537050",
+          "Dash,-5606518238488416409",
+          "Club,2997402443852702039",
+          "ClubSlam,-3486971988061219196",
+          "Chase,2099651357482626073",
+          "LaserBurst,4011193608862388046"
+        ]
+      },
+      "pickups": null
+    },
     "FlameDroneMaster": {
       "_name": "FlameDroneMaster",
       "body": "FlameDroneBody",
@@ -957,6 +1083,26 @@
         "drivers": [
           "Spike,4282334784969447017",
           "FollowNodeGraphToTarget,4002241191272714027"
+        ]
+      },
+      "pickups": null
+    },
+    "HalcyoniteMaster": {
+      "_name": "HalcyoniteMaster",
+      "body": "HalcyoniteBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Guard",
+        "main_state": "EntityStates.AI.Walker.Guard",
+        "drivers": [
+          "Golden Slash,-3386473322028928978",
+          "Golden Swipe,-7057923495771597171",
+          "WhirlwindRush,-4610793793465382284",
+          "TriLaser,-8136431488481182571",
+          "Follow Target,-174132309048691233",
+          "Follow Nodegraph,1717850424557393018"
         ]
       },
       "pickups": null
@@ -2047,6 +2193,44 @@
           "FireCannon,5980767912444743208",
           "FollowNodeGraphToTarget,-7052259146008113035",
           "MoveBetweenShots,6924980886264947001"
+        ]
+      },
+      "pickups": null
+    },
+    "ScorchlingMaster": {
+      "_name": "ScorchlingMaster",
+      "body": "ScorchlingBody",
+      "ai": {
+        "full_vision": true,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Breach,-7244551048230090837",
+          "LavaBomb,671601684672711345",
+          "ChaseOffNodegraphClose,3169299393357882448",
+          "ChaseOffNodegraph,5439810884588725197",
+          "FollowNodeGraphToTarget,6506271764377838"
+        ]
+      },
+      "pickups": null
+    },
+    "SeekerMonsterMaster": {
+      "_name": "SeekerMonsterMaster",
+      "body": "SeekerBody",
+      "ai": {
+        "full_vision": false,
+        "no_friendly_fire": false,
+        "enemy_attention": 5.0,
+        "initial_state": "EntityStates.AI.Walker.Wander",
+        "main_state": "EntityStates.AI.Walker.Wander",
+        "drivers": [
+          "Meditate ?,3788649165569793177",
+          "Sojourn Towards Enemy,2745913489663962352",
+          "Fist,7338830750869558357",
+          "StrafeEnemy,7618097267409699468",
+          "ChaseEnemy,5378503474803804405"
         ]
       },
       "pickups": null
@@ -5752,6 +5936,285 @@
       "no_repeat": false,
       "next_high_priority": null
     },
+    "ArrowRain,8277815675363782423": {
+      "name": "ArrowRain",
+      "skill_slot": 3,
+      "required_skill": null,
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        10.0,
+        60.0
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 1,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "Sear,-4299158352814746877": {
+      "name": "Sear",
+      "skill_slot": 1,
+      "required_skill": null,
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        12.0
+      ],
+      "require_target_los": true,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 2,
+      "target_type": 0,
+      "aim_type": 1,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "RamTarget,4945057353919502289": {
+      "name": "RamTarget",
+      "skill_slot": 2,
+      "required_skill": null,
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        10.0,
+        20.0
+      ],
+      "require_target_los": true,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": true,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "StrafeEnemy,-2419901382102347507": {
+      "name": "StrafeEnemy",
+      "skill_slot": 0,
+      "required_skill": null,
+      "requires_skill_ready": false,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        15.0
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 2,
+      "target_type": 0,
+      "aim_type": 1,
+      "should_sprint": true,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "ChaseEnemy,86254435934462223": {
+      "name": "ChaseEnemy",
+      "skill_slot": 0,
+      "required_skill": null,
+      "requires_skill_ready": false,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        Infinity
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 1,
+      "should_sprint": true,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "Frolic,3116090299839315463": {
+      "name": "Frolic",
+      "skill_slot": 1,
+      "required_skill": "ChildBodyFrolic,-7704423927853055483",
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        Infinity
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 1,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": true,
+      "next_high_priority": null
+    },
+    "RunAway,2135608764592283664": {
+      "name": "RunAway",
+      "skill_slot": -1,
+      "required_skill": null,
+      "requires_skill_ready": false,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        30.0
+      ],
+      "require_target_los": true,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 3,
+      "target_type": 0,
+      "aim_type": 4,
+      "should_sprint": true,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "FireSparkBall,-922036583078213255": {
+      "name": "FireSparkBall",
+      "skill_slot": 0,
+      "required_skill": null,
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        27.0,
+        37.0
+      ],
+      "require_target_los": true,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 0,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": true,
+      "next_high_priority": null
+    },
+    "PathFromAfar,-1998272694079885475": {
+      "name": "PathFromAfar",
+      "skill_slot": -1,
+      "required_skill": null,
+      "requires_skill_ready": false,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        35.0,
+        Infinity
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 2,
+      "target_type": 0,
+      "aim_type": 1,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
     "SukFriends,-3303173907096421630": {
       "name": "SukFriends",
       "skill_slot": 3,
@@ -6729,7 +7192,7 @@
       ],
       "distance_range": [
         0.0,
-        15.0
+        10.0
       ],
       "require_target_los": true,
       "require_target_aim": false,
@@ -6767,6 +7230,37 @@
       "require_grounded": false,
       "max_times_selected": -1,
       "move_type": 2,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "StopAndShoot,-6906070044642417739": {
+      "name": "StopAndShoot",
+      "skill_slot": 0,
+      "required_skill": null,
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        30.0,
+        125.0
+      ],
+      "require_target_los": true,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 0,
       "target_type": 0,
       "aim_type": 2,
       "should_sprint": false,
@@ -6868,37 +7362,6 @@
       "no_repeat": false,
       "next_high_priority": null
     },
-    "ChaseFarEnemies,8410212479791929273": {
-      "name": "ChaseFarEnemies",
-      "skill_slot": 0,
-      "required_skill": null,
-      "requires_skill_ready": true,
-      "requires_equipment_ready": false,
-      "user_hp_range": [
-        Infinity,
-        -Infinity
-      ],
-      "target_hp_range": [
-        Infinity,
-        -Infinity
-      ],
-      "distance_range": [
-        0.0,
-        45.0
-      ],
-      "require_target_los": true,
-      "require_target_aim": false,
-      "require_grounded": false,
-      "max_times_selected": -1,
-      "move_type": 1,
-      "target_type": 0,
-      "aim_type": 1,
-      "should_sprint": false,
-      "should_fire_equipment": false,
-      "reset_enemy": false,
-      "no_repeat": false,
-      "next_high_priority": null
-    },
     "ReturnToOwnerLeash,365152500220574318": {
       "name": "ReturnToOwnerLeash",
       "skill_slot": -1,
@@ -6930,8 +7393,8 @@
       "no_repeat": false,
       "next_high_priority": null
     },
-    "ChaseOffNodegraph,1921513038657211676": {
-      "name": "ChaseOffNodegraph",
+    "Chase,1921513038657211676": {
+      "name": "Chase",
       "skill_slot": -1,
       "required_skill": null,
       "requires_skill_ready": false,
@@ -6945,47 +7408,16 @@
         -Infinity
       ],
       "distance_range": [
-        10.0,
-        25.0
+        0.0,
+        Infinity
       ],
-      "require_target_los": true,
+      "require_target_los": false,
       "require_target_aim": false,
       "require_grounded": false,
       "max_times_selected": -1,
       "move_type": 1,
       "target_type": 0,
-      "aim_type": 1,
-      "should_sprint": false,
-      "should_fire_equipment": false,
-      "reset_enemy": false,
-      "no_repeat": false,
-      "next_high_priority": null
-    },
-    "StopAndShoot,-6906070044642417739": {
-      "name": "StopAndShoot",
-      "skill_slot": 0,
-      "required_skill": null,
-      "requires_skill_ready": true,
-      "requires_equipment_ready": false,
-      "user_hp_range": [
-        Infinity,
-        -Infinity
-      ],
-      "target_hp_range": [
-        Infinity,
-        -Infinity
-      ],
-      "distance_range": [
-        50.0,
-        80.0
-      ],
-      "require_target_los": true,
-      "require_target_aim": false,
-      "require_grounded": false,
-      "max_times_selected": -1,
-      "move_type": 0,
-      "target_type": 0,
-      "aim_type": 2,
+      "aim_type": 4,
       "should_sprint": false,
       "should_fire_equipment": false,
       "reset_enemy": false,
@@ -9348,6 +9780,874 @@
       "no_repeat": false,
       "next_high_priority": null
     },
+    "PrimeDevastator,337192004896178816": {
+      "name": "PrimeDevastator",
+      "skill_slot": 3,
+      "required_skill": "FalseSonBossPrimeDevastator,-6674939807333048860",
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        1000.0
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 2,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": true,
+      "next_high_priority": null
+    },
+    "Corrupted Paths,2027618380819104701": {
+      "name": "Corrupted Paths",
+      "skill_slot": 0,
+      "required_skill": "FalseSonBossFissureSlam,8391214950709802735",
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        50.0,
+        250.0
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 0,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": true,
+      "no_repeat": true,
+      "next_high_priority": null
+    },
+    "Lunar Rain,-4484933601960710722": {
+      "name": "Lunar Rain",
+      "skill_slot": 1,
+      "required_skill": "FalseSonBossLunarRain,4477798112851646940",
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        1000.0
+      ],
+      "require_target_los": true,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 2,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": true,
+      "next_high_priority": null
+    },
+    "LunarGazePlus,-111062846543885734": {
+      "name": "LunarGazePlus",
+      "skill_slot": 2,
+      "required_skill": "FalseSonBossLunarGazePlus,-4337056061071140921",
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        0.55
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        20.0,
+        55.0
+      ],
+      "require_target_los": true,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": true,
+      "next_high_priority": null
+    },
+    "Walk After Target Off Nodegraph,-5251026218763529618": {
+      "name": "Walk After Target Off Nodegraph",
+      "skill_slot": -1,
+      "required_skill": null,
+      "requires_skill_ready": false,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        5.0,
+        20.0
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "Sprint After Target,-1402291565618762937": {
+      "name": "Sprint After Target",
+      "skill_slot": -1,
+      "required_skill": null,
+      "requires_skill_ready": false,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        20.0,
+        Infinity
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": true,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "Follow Nodegraph,-4115450818928858594": {
+      "name": "Follow Nodegraph",
+      "skill_slot": -1,
+      "required_skill": null,
+      "requires_skill_ready": false,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        Infinity
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 4,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": true,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "FissureSlam,-6645575482508385689": {
+      "name": "FissureSlam",
+      "skill_slot": 0,
+      "required_skill": "FalseSonBossFissureSlam,8391214950709802735",
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        25.0
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 0,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": true,
+      "next_high_priority": null
+    },
+    "TaintedOffering,-1065628978650027742": {
+      "name": "TaintedOffering",
+      "skill_slot": 3,
+      "required_skill": "FalseSonBossTaintedOffering,1391460647325209772",
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        1000.0
+      ],
+      "require_target_los": true,
+      "require_target_aim": true,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 2,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": true,
+      "next_high_priority": null
+    },
+    "Lunar Rain,-8314786116705205657": {
+      "name": "Lunar Rain",
+      "skill_slot": 1,
+      "required_skill": "FalseSonBossLunarRain,4477798112851646940",
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        1000.0
+      ],
+      "require_target_los": true,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 2,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "LunarGaze,-2453316177813991269": {
+      "name": "LunarGaze",
+      "skill_slot": 2,
+      "required_skill": "FalseSonBossLunarGaze,6807408675048283152",
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        20.0,
+        55.0
+      ],
+      "require_target_los": true,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": true,
+      "next_high_priority": null
+    },
+    "Walk After Target Off Nodegraph,-2176251677186879267": {
+      "name": "Walk After Target Off Nodegraph",
+      "skill_slot": -1,
+      "required_skill": null,
+      "requires_skill_ready": false,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        5.0,
+        20.0
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "Sprint After Target,5021984255079322160": {
+      "name": "Sprint After Target",
+      "skill_slot": -1,
+      "required_skill": null,
+      "requires_skill_ready": false,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        20.0,
+        Infinity
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": true,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "Follow Nodegraph,-2937234192475791400": {
+      "name": "Follow Nodegraph",
+      "skill_slot": -1,
+      "required_skill": null,
+      "requires_skill_ready": false,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        Infinity
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 4,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": true,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "Corrupted Paths (Step Brothers),-3545725482335874280": {
+      "name": "Corrupted Paths (Step Brothers)",
+      "skill_slot": 2,
+      "required_skill": "FalseSonBossCorruptedPaths,4299997019027292622",
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        0.55
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        25.0,
+        250.0
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 0,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": true,
+      "no_repeat": true,
+      "next_high_priority": null
+    },
+    "FissureSlam,-619347959426069436": {
+      "name": "FissureSlam",
+      "skill_slot": 0,
+      "required_skill": "FalseSonBossFissureSlam,8391214950709802735",
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        25.0
+      ],
+      "require_target_los": true,
+      "require_target_aim": true,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 0,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": true,
+      "next_high_priority": null
+    },
+    "TaintedOffering,8537235075610887245": {
+      "name": "TaintedOffering",
+      "skill_slot": 3,
+      "required_skill": "FalseSonBossTaintedOffering,1391460647325209772",
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        1000.0
+      ],
+      "require_target_los": true,
+      "require_target_aim": true,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 2,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": true,
+      "next_high_priority": null
+    },
+    "Lunar Rain,-8658217120315830862": {
+      "name": "Lunar Rain",
+      "skill_slot": 1,
+      "required_skill": "FalseSonBossLunarRain,4477798112851646940",
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        1000.0
+      ],
+      "require_target_los": true,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 2,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": true,
+      "next_high_priority": null
+    },
+    "Walk After Target Off Nodegraph,-6164492461784759468": {
+      "name": "Walk After Target Off Nodegraph",
+      "skill_slot": -1,
+      "required_skill": null,
+      "requires_skill_ready": false,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        5.0,
+        20.0
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "Sprint After Target,8982001301430365316": {
+      "name": "Sprint After Target",
+      "skill_slot": -1,
+      "required_skill": null,
+      "requires_skill_ready": false,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        20.0,
+        Infinity
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": true,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "Follow Nodegraph,2633760335729831456": {
+      "name": "Follow Nodegraph",
+      "skill_slot": -1,
+      "required_skill": null,
+      "requires_skill_ready": false,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        Infinity
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 4,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": true,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "LunarSpikes,5369261496402686906": {
+      "name": "LunarSpikes",
+      "skill_slot": 1,
+      "required_skill": null,
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        1.0,
+        15.0
+      ],
+      "require_target_los": true,
+      "require_target_aim": true,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 1,
+      "should_sprint": true,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "LaserFather,-2816559145122537050": {
+      "name": "LaserFather",
+      "skill_slot": 3,
+      "required_skill": "FalseSonBodyLaser,263243222230549801",
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        15.0,
+        45.0
+      ],
+      "require_target_los": true,
+      "require_target_aim": true,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 0,
+      "target_type": 0,
+      "aim_type": 1,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "Dash,-5606518238488416409": {
+      "name": "Dash",
+      "skill_slot": 2,
+      "required_skill": null,
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        5.0,
+        30.0
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 1,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "Club,2997402443852702039": {
+      "name": "Club",
+      "skill_slot": 0,
+      "required_skill": null,
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        6.0
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 1,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "ClubSlam,-3486971988061219196": {
+      "name": "ClubSlam",
+      "skill_slot": 0,
+      "required_skill": null,
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        6.0
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 1,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "Chase,2099651357482626073": {
+      "name": "Chase",
+      "skill_slot": -1,
+      "required_skill": null,
+      "requires_skill_ready": false,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        Infinity
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 1,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "LaserBurst,4011193608862388046": {
+      "name": "LaserBurst",
+      "skill_slot": 3,
+      "required_skill": "FalseSonBodyLaserBurst,5517776409752784798",
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        20.0
+      ],
+      "require_target_los": true,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 1,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
     "HardLeashToLeader,92478129529657216": {
       "name": "HardLeashToLeader",
       "skill_slot": -1,
@@ -10307,6 +11607,192 @@
       "should_fire_equipment": false,
       "reset_enemy": false,
       "no_repeat": false,
+      "next_high_priority": null
+    },
+    "Golden Slash,-3386473322028928978": {
+      "name": "Golden Slash",
+      "skill_slot": 3,
+      "required_skill": null,
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        15.0
+      ],
+      "require_target_los": false,
+      "require_target_aim": true,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 0,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "Golden Swipe,-7057923495771597171": {
+      "name": "Golden Swipe",
+      "skill_slot": 0,
+      "required_skill": null,
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        15.0,
+        20.0
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 0,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "WhirlwindRush,-4610793793465382284": {
+      "name": "WhirlwindRush",
+      "skill_slot": 2,
+      "required_skill": null,
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        20.0,
+        60.0
+      ],
+      "require_target_los": true,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 1,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": true,
+      "next_high_priority": null
+    },
+    "TriLaser,-8136431488481182571": {
+      "name": "TriLaser",
+      "skill_slot": 1,
+      "required_skill": null,
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        30.0,
+        120.0
+      ],
+      "require_target_los": true,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 0,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": true,
+      "next_high_priority": null
+    },
+    "Follow Target,-174132309048691233": {
+      "name": "Follow Target",
+      "skill_slot": -1,
+      "required_skill": null,
+      "requires_skill_ready": false,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        Infinity
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 1,
+      "should_sprint": true,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": true,
+      "next_high_priority": null
+    },
+    "Follow Nodegraph,1717850424557393018": {
+      "name": "Follow Nodegraph",
+      "skill_slot": -1,
+      "required_skill": null,
+      "requires_skill_ready": false,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        Infinity
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": 2,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 1,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": true,
       "next_high_priority": null
     },
     ",-8712323262217524196": {
@@ -17007,6 +18493,316 @@
     },
     "MoveBetweenShots,6924980886264947001": {
       "name": "MoveBetweenShots",
+      "skill_slot": 0,
+      "required_skill": null,
+      "requires_skill_ready": false,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        Infinity
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 1,
+      "should_sprint": true,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "Breach,-7244551048230090837": {
+      "name": "Breach",
+      "skill_slot": 0,
+      "required_skill": "ScorchlingBreach,-2234412226159209795",
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        3.0
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": true,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": true,
+      "next_high_priority": null
+    },
+    "LavaBomb,671601684672711345": {
+      "name": "LavaBomb",
+      "skill_slot": 1,
+      "required_skill": "ScorchlingLavaBomb,-8798508131264378428",
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        5.0,
+        80.0
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": true,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 1,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": true,
+      "next_high_priority": null
+    },
+    "ChaseOffNodegraphClose,3169299393357882448": {
+      "name": "ChaseOffNodegraphClose",
+      "skill_slot": 2,
+      "required_skill": "ScorchlingEnsureBurrow,-5620010734927282435",
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        7.5
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 1,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "ChaseOffNodegraph,5439810884588725197": {
+      "name": "ChaseOffNodegraph",
+      "skill_slot": 2,
+      "required_skill": "ScorchlingEnsureBurrow,-5620010734927282435",
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        7.5,
+        200.0
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 1,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "FollowNodeGraphToTarget,6506271764377838": {
+      "name": "FollowNodeGraphToTarget",
+      "skill_slot": 2,
+      "required_skill": "ScorchlingEnsureBurrow,-5620010734927282435",
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        80.0,
+        Infinity
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 2,
+      "should_sprint": true,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "Meditate ?,3788649165569793177": {
+      "name": "Meditate ?",
+      "skill_slot": 3,
+      "required_skill": null,
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        20.0
+      ],
+      "require_target_los": true,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 0,
+      "target_type": 1,
+      "aim_type": 1,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": true,
+      "next_high_priority": null
+    },
+    "Sojourn Towards Enemy,2745913489663962352": {
+      "name": "Sojourn Towards Enemy",
+      "skill_slot": 2,
+      "required_skill": null,
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        6.0
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 4,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "Fist,7338830750869558357": {
+      "name": "Fist",
+      "skill_slot": 1,
+      "required_skill": null,
+      "requires_skill_ready": true,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        30.0
+      ],
+      "require_target_los": true,
+      "require_target_aim": true,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 1,
+      "should_sprint": false,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "StrafeEnemy,7618097267409699468": {
+      "name": "StrafeEnemy",
+      "skill_slot": 0,
+      "required_skill": null,
+      "requires_skill_ready": false,
+      "requires_equipment_ready": false,
+      "user_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "target_hp_range": [
+        Infinity,
+        -Infinity
+      ],
+      "distance_range": [
+        0.0,
+        20.0
+      ],
+      "require_target_los": false,
+      "require_target_aim": false,
+      "require_grounded": false,
+      "max_times_selected": -1,
+      "move_type": 1,
+      "target_type": 0,
+      "aim_type": 1,
+      "should_sprint": true,
+      "should_fire_equipment": false,
+      "reset_enemy": false,
+      "no_repeat": false,
+      "next_high_priority": null
+    },
+    "ChaseEnemy,5378503474803804405": {
+      "name": "ChaseEnemy",
       "skill_slot": 0,
       "required_skill": null,
       "requires_skill_ready": false,

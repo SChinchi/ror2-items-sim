@@ -9,7 +9,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "SkullRevolver,-7089770753547668523": {
     "class": "SkillDef",
@@ -21,7 +23,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": true,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "FireShotgun2,-6761166976459585918": {
     "class": "ReloadSkillDef",
@@ -34,6 +38,8 @@
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
     "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0,
     "grace_duration": 0.4
   },
   "ResetRevolver,-2418065302146856139": {
@@ -46,7 +52,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": true,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "Bandit2Blast,-1238896621546758361": {
     "class": "ReloadSkillDef",
@@ -59,6 +67,8 @@
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
     "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0,
     "grace_duration": 0.4
   },
   "ThrowSmokebomb,2306269894342895847": {
@@ -71,7 +81,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "SlashBlade,3743257585725883219": {
     "class": "SkillDef",
@@ -83,7 +95,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "Bandit2SerratedShivs,6528636030365730438": {
     "class": "SkillDef",
@@ -95,7 +109,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "BeetleQueen2BodySpawnWards,-6319846129154787246": {
     "class": "SkillDef",
@@ -107,7 +123,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "BeetleBodySleep,-4940565272462608177": {
     "class": "SkillDef",
@@ -119,7 +137,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "BeetleGuardBodyGroundSlam,-1853508547964312773": {
     "class": "SkillDef",
@@ -131,7 +151,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "BeetleBodyHeadbutt,-1811636544500739988": {
     "class": "SkillDef",
@@ -143,7 +165,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "BeetleGuardBodyDefenseUp,1903209057840705140": {
     "class": "SkillDef",
@@ -155,7 +179,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "BeetleGuardBodySunder,2542884228786558265": {
     "class": "SkillDef",
@@ -167,7 +193,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "BeetleQueen2BodySpit,2995640988737571536": {
     "class": "SkillDef",
@@ -179,7 +207,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "BeetleQueen2BodySummonEggs,4080398948580990158": {
     "class": "SkillDef",
@@ -191,7 +221,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "BellBodyBellBlast,4936876176928111432": {
     "class": "SkillDef",
@@ -203,7 +235,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "BisonBodyHeadbutt,-8121924306838616631": {
     "class": "SkillDef",
@@ -215,7 +249,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "BisonBodyCharge,-2037291129998799821": {
     "class": "SkillDef",
@@ -227,7 +263,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "FireRandomProjectiles,5216631551206928890": {
     "class": "SkillDef",
@@ -239,7 +277,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "Slide,-7912506822823959193": {
     "class": "GroundedSkillDef",
@@ -251,7 +291,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "SkyLeap,-7645676651578839481": {
     "class": "GroundedSkillDef",
@@ -263,7 +305,9 @@
     "stock_consume": 5,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "SprintBash,-5501718309890253580": {
     "class": "SkillDef",
@@ -275,7 +319,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "FireLunarShardsHurt,-5138994687340375532": {
     "class": "SkillDef",
@@ -287,7 +333,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "FistSlam,-2396303124463565140": {
     "class": "SkillDef",
@@ -299,7 +347,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "Ult,1713258113871878297": {
     "class": "GroundedSkillDef",
@@ -311,7 +361,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "WeaponSlam,3114883548042395875": {
     "class": "SkillDef",
@@ -323,7 +375,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "FireLunarShards,8280677623502693651": {
     "class": "SkillDef",
@@ -335,7 +389,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "PrepSupplyDrop,-7926128112286623454": {
     "class": "CaptainSupplyDropSkillDef",
@@ -347,7 +403,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": true,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CaptainCancelDummy,-7532574393401503682": {
     "class": "SkillDef",
@@ -359,7 +417,9 @@
     "stock_consume": 0,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "PrepAirstrike,-7235065211087422835": {
     "class": "CaptainOrbitalSkillDef",
@@ -371,7 +431,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": true,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CallAirstrikeAlt,-7078745106578060510": {
     "class": "SkillDef",
@@ -383,7 +445,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": true,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CallAirstrike,-3558526637301642393": {
     "class": "SkillDef",
@@ -395,7 +459,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": true,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CaptainSkillUsedUp,-1442634712294851806": {
     "class": "SkillDef",
@@ -407,7 +473,9 @@
     "stock_consume": 0,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CallSupplyDropEquipmentRestock,-1324882627846859237": {
     "class": "SkillDef",
@@ -419,7 +487,9 @@
     "stock_consume": 0,
     "cancel_sprinting": true,
     "cancel_from_sprinting": true,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "PrepAirstrikeAlt,-1072701178522631180": {
     "class": "CaptainOrbitalSkillDef",
@@ -431,7 +501,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": true,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CallSupplyDropHealing,-841018302419496232": {
     "class": "SkillDef",
@@ -443,7 +515,9 @@
     "stock_consume": 0,
     "cancel_sprinting": true,
     "cancel_from_sprinting": true,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CaptainTazer,318828844380503378": {
     "class": "SkillDef",
@@ -455,7 +529,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CallSupplyDropShocking,1747334439719013766": {
     "class": "SkillDef",
@@ -467,7 +543,9 @@
     "stock_consume": 0,
     "cancel_sprinting": true,
     "cancel_from_sprinting": true,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CaptainSkillDisconnected,2722513389634585616": {
     "class": "SkillDef",
@@ -479,7 +557,9 @@
     "stock_consume": 0,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CallSupplyDropHacking,5332139860513262478": {
     "class": "SkillDef",
@@ -491,7 +571,9 @@
     "stock_consume": 0,
     "cancel_sprinting": true,
     "cancel_from_sprinting": true,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CaptainShotgun,6709767695597756339": {
     "class": "SkillDef",
@@ -503,7 +585,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ClayBossBodyCharge Bombardment,-6843058949935235088": {
     "class": "SkillDef",
@@ -515,7 +599,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ClayBossBodyRecover,247386774857512943": {
     "class": "SkillDef",
@@ -527,7 +613,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ClayBossBodyTarball,7508489618172055643": {
     "class": "SkillDef",
@@ -539,7 +627,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ClayBruiserBodyGun,2994711908823060195": {
     "class": "SkillDef",
@@ -551,7 +641,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ClayBruiserBodyKnockback,9002688679597229172": {
     "class": "SkillDef",
@@ -563,7 +655,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CommandoBodyFirePistol,-9194197841565037164": {
     "class": "SteppedSkillDef",
@@ -576,6 +670,8 @@
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
     "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0,
     "step_count": 2,
     "step_grace_duration": 0.10000000149011612
   },
@@ -589,7 +685,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CommandoBodyRoll,-1230561185856516233": {
     "class": "SkillDef",
@@ -601,7 +699,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CommandoBodyFireShotgunBlast,2012321440246146067": {
     "class": "SkillDef",
@@ -613,7 +713,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CommandoBodyFireFMJ,2059457204537207646": {
     "class": "SkillDef",
@@ -625,7 +727,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CommandoBodyBarrage,5645575322722868463": {
     "class": "SkillDef",
@@ -637,7 +741,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ThrowGrenade,5999453240191819640": {
     "class": "SkillDef",
@@ -649,7 +755,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CrocoSlash,-7473046869308091350": {
     "class": "SteppedSkillDef",
@@ -662,6 +770,8 @@
     "cancel_sprinting": true,
     "cancel_from_sprinting": true,
     "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0,
     "step_count": 3,
     "step_grace_duration": 0.5
   },
@@ -675,7 +785,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CrocoPassiveBlight,-1872352096675381015": {
     "class": "SkillDef",
@@ -687,7 +799,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CrocoBite,-1586137403237146089": {
     "class": "SkillDef",
@@ -699,7 +813,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CrocoPassivePoison,-603438061805661373": {
     "class": "SkillDef",
@@ -711,7 +827,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CrocoSpit,915550185693208260": {
     "class": "SkillDef",
@@ -723,7 +841,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CrocoLeap,3583555351726874122": {
     "class": "SkillDef",
@@ -735,7 +855,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CrocoDisease,8364077919649121256": {
     "class": "SkillDef",
@@ -747,7 +869,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "MegaDroneBodyRocket,-6619862497418342019": {
     "class": "SkillDef",
@@ -759,7 +883,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "FlameDroneBodyFlamethrower,-3002519422126571580": {
     "class": "SkillDef",
@@ -771,7 +897,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "MissileDroneBodyGun,599119700903101623": {
     "class": "SkillDef",
@@ -783,7 +911,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "BackupDroneBodyGun,1162750168738644271": {
     "class": "SkillDef",
@@ -795,7 +925,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "Turret1BodyTurret,1793844952597494003": {
     "class": "SkillDef",
@@ -807,7 +939,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "MegaDroneBodyGun,2245055657676380671": {
     "class": "SkillDef",
@@ -819,7 +953,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "StartHealBeam,3564430947918902324": {
     "class": "SkillDef",
@@ -831,7 +967,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "Drone2BodyHealingBeam,6111801534192210556": {
     "class": "SkillDef",
@@ -843,7 +981,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "Drone1BodyGun,8900867956701999466": {
     "class": "SkillDef",
@@ -855,7 +995,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ElectricWormBodyBlink,-581644840336051824": {
     "class": "SkillDef",
@@ -867,7 +1009,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ElectricWormBodyStanceSwitch,5011376586257917872": {
     "class": "SkillDef",
@@ -879,7 +1023,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "UrchinTurretBodyTurret,2215747100083864472": {
     "class": "SkillDef",
@@ -891,7 +1037,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "EngiTurretBodyTurret,-7242284519064166929": {
     "class": "SkillDef",
@@ -903,7 +1051,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "EngiBodyFireGrenade,-6156029984074417393": {
     "class": "SkillDef",
@@ -915,7 +1065,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "EngiConfirmTargetDummy,-5622258788493767405": {
     "class": "SkillDef",
@@ -927,7 +1079,9 @@
     "stock_consume": 0,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "EngiBodyPlaceBubbleShield,-3799714733472900165": {
     "class": "SkillDef",
@@ -939,7 +1093,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "EngiTurretFireBeam,1125535924593856119": {
     "class": "SkillDef",
@@ -951,7 +1107,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "EngiCancelTargetingDummy,1352124326212421953": {
     "class": "SkillDef",
@@ -963,7 +1121,9 @@
     "stock_consume": 0,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "EngiBodyPlaceMine,7287095856384068025": {
     "class": "SkillDef",
@@ -975,7 +1135,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "EngiBodyPlaceTurret,7987958082636497579": {
     "class": "SkillDef",
@@ -987,7 +1149,9 @@
     "stock_consume": 0,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "EngiBodyPlaceSpiderMine,8310011230957036491": {
     "class": "SkillDef",
@@ -999,7 +1163,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "EngiHarpoons,8467988339039360866": {
     "class": "SkillDef",
@@ -1011,7 +1177,9 @@
     "stock_consume": 0,
     "cancel_sprinting": true,
     "cancel_from_sprinting": true,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "EngiBodyPlaceWalkerTurret,9106876297725708565": {
     "class": "SkillDef",
@@ -1023,7 +1191,9 @@
     "stock_consume": 0,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "GolemBodyLaser,-8599290257368374082": {
     "class": "SkillDef",
@@ -1035,7 +1205,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "GolemBodyClap,894963417951580575": {
     "class": "SkillDef",
@@ -1047,7 +1219,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "GrandParentSecondary,-4145220229870680764": {
     "class": "SkillDef",
@@ -1059,7 +1233,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "GrandParentGroundSwipe,436085579007149843": {
     "class": "SteppedSkillDef",
@@ -1072,6 +1248,8 @@
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
     "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0,
     "step_count": 2,
     "step_grace_duration": 0.10000000149011612
   },
@@ -1085,7 +1263,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "GravekeeperBodyBarrage,2805061874972098770": {
     "class": "SkillDef",
@@ -1097,7 +1277,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "GravekeeperBodyPrepHook,3222168731367623127": {
     "class": "SkillDef",
@@ -1109,7 +1291,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "GreaterWispBodyCannons,-7560938156848046400": {
     "class": "SkillDef",
@@ -1121,7 +1305,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "HereticDefaultAbility,4748514347132408518": {
     "class": "SkillDef",
@@ -1133,7 +1319,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "HermitCrabBodyBurrowMortar,-2123101648597756192": {
     "class": "SkillDef",
@@ -1145,7 +1333,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "HuntressBodyMiniBlink,-9143758589619926298": {
     "class": "SkillDef",
@@ -1157,7 +1347,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "FireArrowSnipe,-5833876811955950380": {
     "class": "SkillDef",
@@ -1169,7 +1361,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "HuntressBodyArrowRain,-3283036243404365982": {
     "class": "SkillDef",
@@ -1181,7 +1375,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "HuntressBodyGlaive,-1558689645847749965": {
     "class": "HuntressTrackingSkillDef",
@@ -1193,7 +1389,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "FireFlurrySeekingArrow,1228846322250334206": {
     "class": "HuntressTrackingSkillDef",
@@ -1205,7 +1403,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "AimArrowSnipe,5602999592345657396": {
     "class": "SkillDef",
@@ -1217,7 +1417,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "HuntressBodyBlink,7886548116059911383": {
     "class": "SkillDef",
@@ -1229,7 +1431,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "HuntressBodyFireSeekingArrow,8944841565008202425": {
     "class": "HuntressTrackingSkillDef",
@@ -1241,7 +1445,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ImpBossBodyBlink,-2609460173652591435": {
     "class": "SkillDef",
@@ -1253,7 +1459,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ImpBossBodyGroundPound,-1684769228732896972": {
     "class": "SkillDef",
@@ -1265,7 +1473,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ImpBossBodyFireVoidspikes,-1556377762550489840": {
     "class": "SkillDef",
@@ -1277,7 +1487,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ImpBodyDoubleSlash,6456755867097242185": {
     "class": "SkillDef",
@@ -1289,7 +1501,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ImpBodyBlink,7608331412987262448": {
     "class": "SkillDef",
@@ -1301,7 +1515,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "JellyfishBodyNova,2164729926860389772": {
     "class": "SkillDef",
@@ -1313,7 +1529,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "LemurianBruiserBodyPrimary,-514164581804856929": {
     "class": "SkillDef",
@@ -1325,7 +1543,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "LemurianBruiserBodySecondary,2108455340560438357": {
     "class": "SkillDef",
@@ -1337,7 +1557,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "LemurianBodyFireball,3152025807542461515": {
     "class": "SkillDef",
@@ -1349,7 +1571,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "LemurianBodyBite,4688667020239550127": {
     "class": "SkillDef",
@@ -1361,7 +1585,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ChargeFist,-9000086167162389960": {
     "class": "SteppedSkillDef",
@@ -1374,6 +1600,8 @@
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
     "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0,
     "step_count": 2,
     "step_grace_duration": 0.10000000149011612
   },
@@ -1388,6 +1616,8 @@
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
     "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0,
     "step_count": 2,
     "step_grace_duration": 0.10000000149011612
   },
@@ -1401,7 +1631,9 @@
     "stock_consume": 0,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ChargeZapFist,229668419226273759": {
     "class": "SteppedSkillDef",
@@ -1414,6 +1646,8 @@
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
     "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0,
     "step_count": 2,
     "step_grace_duration": 0.10000000149011612
   },
@@ -1427,7 +1661,9 @@
     "stock_consume": 0,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ThrowPylon,6042907117484710445": {
     "class": "SkillDef",
@@ -1439,7 +1675,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "SwingFist,6778569091992314635": {
     "class": "SteppedSkillDef",
@@ -1452,6 +1690,8 @@
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
     "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0,
     "step_count": 2,
     "step_grace_duration": 0.10000000149011612
   },
@@ -1465,7 +1705,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "LunarGolemBodyShield,-303879416323675142": {
     "class": "SkillDef",
@@ -1477,7 +1719,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "LunarGolemBodyTwinShot,4382943112490586711": {
     "class": "SkillDef",
@@ -1489,7 +1733,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "LunarDetonatorSpecialReplacement,-6904073960562174216": {
     "class": "LunarDetonatorSkill",
@@ -1501,7 +1747,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "LunarSecondaryReplacement,-3290896122022510696": {
     "class": "LunarSecondaryReplacementSkill",
@@ -1513,7 +1761,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "LunarUtilityReplacement,2844548503235602201": {
     "class": "SkillDef",
@@ -1525,7 +1775,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "LunarPrimaryReplacement,8989249013395340607": {
     "class": "LunarPrimaryReplacementSkill",
@@ -1537,7 +1789,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "LunarWispBodySeekingBomb,-2134968264587519917": {
     "class": "SkillDef",
@@ -1549,7 +1803,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "LunarWispBodyMiniguns,2686613657362651286": {
     "class": "SkillDef",
@@ -1561,7 +1817,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "MageBodyIceBomb,-659457339041300631": {
     "class": "SkillDef",
@@ -1573,7 +1831,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "MageBodyFireLightningBolt,-34220107519451472": {
     "class": "SteppedSkillDef",
@@ -1586,6 +1846,8 @@
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
     "is_combat_skill": true,
+    "scales_with_attack_speed": true,
+    "attack_speed_scaling": 1.0,
     "step_count": 2,
     "step_grace_duration": 3.0
   },
@@ -1599,7 +1861,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": true,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "MageBodyFlyUp,5041947651364442823": {
     "class": "SkillDef",
@@ -1611,7 +1875,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "MageBodyNovaBomb,7114021506485593182": {
     "class": "SkillDef",
@@ -1623,7 +1889,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "MageBodyFireFirebolt,8466447152165123687": {
     "class": "SteppedSkillDef",
@@ -1636,6 +1904,8 @@
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
     "is_combat_skill": true,
+    "scales_with_attack_speed": true,
+    "attack_speed_scaling": 1.0,
     "step_count": 2,
     "step_grace_duration": 3.0
   },
@@ -1649,7 +1919,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": true,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "MagmaWormBodySteerAtTarget,-7484085232516769954": {
     "class": "SkillDef",
@@ -1661,7 +1933,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "MagmaWormBodyStanceSwitch,-3613085042519995666": {
     "class": "SkillDef",
@@ -1673,7 +1947,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "MagmaWormBodyBlink,6792188721843809637": {
     "class": "SkillDef",
@@ -1685,7 +1961,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "MercBodyWhirlwind,-7298476451458893583": {
     "class": "SkillDef",
@@ -1697,7 +1975,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "MercBodyAssaulter,-3690494050796419657": {
     "class": "MercDashSkillDef",
@@ -1710,6 +1990,8 @@
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
     "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0,
     "max_dashes": 3,
     "timeout": 3.0
   },
@@ -1723,7 +2005,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "MercBodyEvisProjectile,2430177825844823968": {
     "class": "SkillDef",
@@ -1735,7 +2019,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "MercBodyUppercut,4522265214981223890": {
     "class": "SkillDef",
@@ -1747,7 +2033,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "MercBodyFocusedAssault,4682993585293786901": {
     "class": "SkillDef",
@@ -1759,7 +2047,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "MercGroundLight2,7088282570665563668": {
     "class": "SteppedSkillDef",
@@ -1772,6 +2062,8 @@
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
     "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0,
     "step_count": 3,
     "step_grace_duration": 0.5
   },
@@ -1785,7 +2077,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "MiniMushroomSporeGrenade,122189164545586731": {
     "class": "SkillDef",
@@ -1797,7 +2091,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "FireNullifier,3785911606051432852": {
     "class": "SkillDef",
@@ -1809,7 +2105,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ParentLoomingPresence,-1117225135422924777": {
     "class": "SkillDef",
@@ -1821,7 +2119,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ParentGroundSlam,4106139345322987678": {
     "class": "GroundedSkillDef",
@@ -1833,7 +2133,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "EyeBlast,-4168164641979050198": {
     "class": "SkillDef",
@@ -1845,7 +2147,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "DeployMinion,-778590134323429762": {
     "class": "SkillDef",
@@ -1857,7 +2161,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "FireDelayKnockup,-171144168196533325": {
     "class": "SkillDef",
@@ -1869,7 +2175,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "SuperFireDelayKnockup,5457142242036331257": {
     "class": "SkillDef",
@@ -1881,7 +2189,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "FireEyeBeam,5778104154396331634": {
     "class": "SkillDef",
@@ -1893,7 +2203,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "SuperEyeblast,5938466653358177214": {
     "class": "SkillDef",
@@ -1905,7 +2217,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "FindItem,-9050818466185604257": {
     "class": "SkillDef",
@@ -1917,7 +2231,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "PrepSack,-3785710074173863488": {
     "class": "SkillDef",
@@ -1929,7 +2245,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "Sit,3732635828777278594": {
     "class": "SkillDef",
@@ -1941,7 +2259,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "PrepEnergyCannon,4974295024702866581": {
     "class": "SkillDef",
@@ -1953,7 +2273,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ShopkeeperBodyKickFromShop,3514947133021798991": {
     "class": "SkillDef",
@@ -1965,7 +2287,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "LockOn,4645632184172110133": {
     "class": "SkillDef",
@@ -1977,7 +2301,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "SquidTurretBodyTurret,-4377118367125219584": {
     "class": "SkillDef",
@@ -1989,7 +2315,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ChargeGoldLaser,-7400679043218558356": {
     "class": "SkillDef",
@@ -2001,7 +2329,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "FireGoldFist,-6280760096964496994": {
     "class": "SkillDef",
@@ -2013,7 +2343,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "TitanBodyRechargeRocks,5680919526226524987": {
     "class": "SkillDef",
@@ -2025,7 +2357,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "TitanBodyFist,6079727717794649352": {
     "class": "SkillDef",
@@ -2037,7 +2371,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "TitanBodyLaser,7073439702625946663": {
     "class": "SkillDef",
@@ -2049,7 +2385,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ToolbotCancelDualWield,-6028522093857215100": {
     "class": "SkillDef",
@@ -2061,7 +2399,9 @@
     "stock_consume": 0,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ToolbotBodyToolbotDash,-5180455911033495349": {
     "class": "SkillDef",
@@ -2073,7 +2413,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ToolbotBodyFireBuzzsaw,-1727225724161061867": {
     "class": "ToolbotWeaponSkillDef",
@@ -2085,7 +2427,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ToolbotBodyStunDrone,2435293741935245695": {
     "class": "SkillDef",
@@ -2097,7 +2441,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": true,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ToolbotDualWield,2870265963505646212": {
     "class": "SkillDef",
@@ -2109,7 +2455,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": true,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ToolbotBodyFireGrenadeLauncher,5114752979049507527": {
     "class": "ToolbotWeaponSkillDef",
@@ -2121,7 +2469,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ToolbotBodySwap,5530613451780468493": {
     "class": "SkillDef",
@@ -2133,7 +2483,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ToolbotBodyFireNailgun,7853006061384272548": {
     "class": "ToolbotWeaponSkillDef",
@@ -2145,7 +2497,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ToolbotBodyFireSpear,8875084835128674445": {
     "class": "ToolbotWeaponSkillDef",
@@ -2157,7 +2511,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "TreebotBodyAimMortar2,-1556226016816734663": {
     "class": "SkillDef",
@@ -2169,7 +2525,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": true,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "TreebotBodyFireFruitSeed,-635706423703134669": {
     "class": "SkillDef",
@@ -2181,7 +2539,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "TreebotBodySonicBoom,-100921233381315334": {
     "class": "SkillDef",
@@ -2193,7 +2553,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "TreebotBodyFireFlower2,2596583108985752903": {
     "class": "SkillDef",
@@ -2205,7 +2567,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "TreebotBodyAimMortarRain,3386543904798277596": {
     "class": "SkillDef",
@@ -2217,7 +2581,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": true,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "TreebotBodyFireSyringe,7500937876978938709": {
     "class": "SkillDef",
@@ -2229,7 +2595,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "TreebotBodyPlantSonicBoom,8716535341133389618": {
     "class": "SkillDef",
@@ -2241,7 +2609,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "VagrantBodyChargeMegaNova,-5830245793062170772": {
     "class": "SkillDef",
@@ -2253,7 +2623,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "VagrantBodyTrackingBomb,-5129855113259375126": {
     "class": "SkillDef",
@@ -2265,7 +2637,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "VagrantBodyJellyBarrage,7692792573771812878": {
     "class": "SkillDef",
@@ -2277,7 +2651,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ChargeWindblade,-6085509529653941010": {
     "class": "SkillDef",
@@ -2289,7 +2665,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "FlyToLand,-1271933690798879858": {
     "class": "SkillDef",
@@ -2301,7 +2679,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "Fly,2544391217966992299": {
     "class": "SkillDef",
@@ -2313,7 +2693,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "WispBodyFireEmber,-5113658753766500191": {
     "class": "SkillDef",
@@ -2325,7 +2707,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "LarvaLeap,-1558130389587055919": {
     "class": "SkillDef",
@@ -2337,7 +2721,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "Assassin2Shuriken,-4417061155793981649": {
     "class": "SkillDef",
@@ -2349,7 +2735,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "Assassin2Hide,-2096295849284716807": {
     "class": "SkillDef",
@@ -2361,7 +2749,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "Assassin2Strike,-662515311350381325": {
     "class": "SkillDef",
@@ -2373,7 +2763,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "FaceSlam,-4474443165692349364": {
     "class": "GroundedSkillDef",
@@ -2385,7 +2777,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ThrowBarrel,5088428186670579739": {
     "class": "SkillDef",
@@ -2397,7 +2791,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "VoidInfestorLeap,-8882759211240038783": {
     "class": "SkillDef",
@@ -2409,7 +2805,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "Spit,-4786917637173748735": {
     "class": "SkillDef",
@@ -2421,7 +2819,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "GupSpikes,3044794952602987576": {
     "class": "SkillDef",
@@ -2433,7 +2833,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "FireConstructBeam,-8405229094617087921": {
     "class": "SkillDef",
@@ -2445,7 +2847,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "SpawnMinorConstructs,-6422169399245225137": {
     "class": "MasterSpawnSlotSkillDef",
@@ -2457,7 +2861,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "FireTrackingLaser,-3960026974172388926": {
     "class": "SkillDef",
@@ -2469,7 +2875,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "RaiseShield,-3515683213167426107": {
     "class": "SkillDef",
@@ -2481,7 +2889,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "SpawnMinorConstructs,-1145113285504267759": {
     "class": "MasterSpawnSlotSkillDef",
@@ -2493,7 +2903,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "FireTrackingLaser,3580839114186480111": {
     "class": "SkillDef",
@@ -2505,7 +2917,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "SwitchStance,5747681194906630142": {
     "class": "SkillDef",
@@ -2517,7 +2931,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "RailgunnerBodyFirePistol,-8283956776263893135": {
     "class": "RailgunSkillDef",
@@ -2529,7 +2945,9 @@
     "stock_consume": 0,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "RailgunnerBodyFireSnipeCryo,-8080109478272153209": {
     "class": "RailgunSkillDef",
@@ -2541,7 +2959,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "RailgunnerBodyFireMineBlinding,-6930695181406473656": {
     "class": "SkillDef",
@@ -2553,7 +2973,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "RailgunnerBodyFireMineConcussive,-5925153439931873235": {
     "class": "SkillDef",
@@ -2565,7 +2987,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "RailgunnerBodyActiveReload,-1756076934108780998": {
     "class": "SkillDef",
@@ -2577,7 +3001,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "RailgunnerBodyChargeSnipeSuper,-472351453861268692": {
     "class": "RailgunSkillDef",
@@ -2589,7 +3015,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "RailgunnerBodyFireSnipeLight,-448402989411283432": {
     "class": "RailgunSkillDef",
@@ -2601,7 +3029,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "RailgunnerBodyChargeSnipeCryo,-178567581125151091": {
     "class": "RailgunSkillDef",
@@ -2613,7 +3043,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "RailgunnerBodyPassiveConvertCrit,1864245349271983618": {
     "class": "PassiveItemSkillDef",
@@ -2626,6 +3058,8 @@
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
     "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0,
     "passive_item": "ConvertCritChanceToCritDamage"
   },
   "RailgunnerBodyFireSnipeSuper,2555874998096884159": {
@@ -2638,7 +3072,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "RailgunnerBodyScopeLight,2848244994195543794": {
     "class": "RailgunSkillDef",
@@ -2650,7 +3086,9 @@
     "stock_consume": 0,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "RailgunnerBodyFireSnipeHeavy,3807236912338496713": {
     "class": "RailgunSkillDef",
@@ -2662,7 +3100,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "RailgunnerBodyScopeHeavy,6875308815242589922": {
     "class": "RailgunSkillDef",
@@ -2674,7 +3114,9 @@
     "stock_consume": 0,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "TongueLash,-7353502009291091163": {
     "class": "SteppedSkillDef",
@@ -2687,6 +3129,8 @@
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
     "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0,
     "step_count": 2,
     "step_grace_duration": 0.10000000149011612
   },
@@ -2700,7 +3144,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "VoidJailerChargeCapture,-2709668831513387697": {
     "class": "SkillDef",
@@ -2712,7 +3158,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "VoidJailerChargeFire,-1639341199099612444": {
     "class": "SkillDef",
@@ -2724,7 +3172,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "FireCrabBlackCannon,-1511660525058213268": {
     "class": "SkillDef",
@@ -2736,7 +3186,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "FireCrabWhiteCannon,3501354350918620236": {
     "class": "SkillDef",
@@ -2748,7 +3200,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "FireVoidMissiles,5175284533276876921": {
     "class": "SkillDef",
@@ -2760,7 +3214,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "RaidCrabVacuumAttack,-7158741182349184857": {
     "class": "SkillDef",
@@ -2772,7 +3228,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "RaidCrabEyeMissiles,-6478348277149845030": {
     "class": "SkillDef",
@@ -2784,7 +3242,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "RaidCrabMultiBeam,-6357865717861775654": {
     "class": "SkillDef",
@@ -2796,7 +3256,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "RaidCrabGravityBump,-3684106984574362549": {
     "class": "VoidRaidCrabBodySkillDef",
@@ -2808,7 +3270,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "RaidCrabWardWipe,-1400292590790449318": {
     "class": "VoidRaidCrabBodySkillDef",
@@ -2820,7 +3284,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "RaidCrabFinalStand,1633780766266984185": {
     "class": "VoidRaidCrabBodySkillDef",
@@ -2832,7 +3298,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "RaidCrabChannelGauntlet,4115415989133667918": {
     "class": "VoidRaidCrabBodySkillDef",
@@ -2844,7 +3312,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "RaidCrabSpinBeam,6905519587086280993": {
     "class": "SkillDef",
@@ -2856,7 +3326,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "VoidBlinkUp,-5520949690921738928": {
     "class": "SkillDef",
@@ -2868,7 +3340,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "VoidSurvivorPassive,-5141898409461764320": {
     "class": "PassiveItemSkillDef",
@@ -2881,6 +3355,8 @@
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
     "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0,
     "passive_item": "VoidmanPassiveItem"
   },
   "FireCorruptDisk,-4785022575573299981": {
@@ -2893,7 +3369,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "FireCorruptBeam,-4202074383581632293": {
     "class": "SkillDef",
@@ -2905,7 +3383,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CrushCorruption,-4135050836897073750": {
     "class": "VoidSurvivorSkillDef",
@@ -2918,6 +3398,8 @@
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
     "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0,
     "min_corruption": 25.0,
     "max_corruption": Infinity
   },
@@ -2931,7 +3413,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "SwingMelee,-1368931919935448636": {
     "class": "SteppedSkillDef",
@@ -2944,6 +3428,8 @@
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
     "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0,
     "step_count": 2,
     "step_grace_duration": 0.5
   },
@@ -2957,7 +3443,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CrushHealth,5046463400309461686": {
     "class": "SkillDef",
@@ -2969,7 +3457,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "VoidBlinkDown,6578282689076542641": {
     "class": "SkillDef",
@@ -2981,7 +3471,695 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "ChefSearBoosted,-7877848929223148244": {
+    "class": "SkillDef",
+    "name": "Sear",
+    "recharge": 5.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": false,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "ChefRolyPoly,-4998910475197288944": {
+    "class": "SkillDef",
+    "name": "RolyPoly",
+    "recharge": 9.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": false,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "YesChef,-4571354543370196086": {
+    "class": "SkillDef",
+    "name": "Yes Chef",
+    "recharge": 15.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "ChefChefsKiss,-3488096860420959722": {
+    "class": "SkillDef",
+    "name": "Sojourn",
+    "recharge": 1.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "ChefRolyPolyBoosted,-3449378250073605317": {
+    "class": "SkillDef",
+    "name": "RolyPoly",
+    "recharge": 9.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": false,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "ChefSear,-2638502826924366132": {
+    "class": "SkillDef",
+    "name": "Sear",
+    "recharge": 5.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": false,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "ChefDiceBoosted,2079804827044191405": {
+    "class": "SkillDef",
+    "name": "Dice",
+    "recharge": 1.75,
+    "stock": 3,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": true,
+    "attack_speed_scaling": 1.35
+  },
+  "ChefDice,4089872862998971150": {
+    "class": "SkillDef",
+    "name": "Dice",
+    "recharge": 1.75,
+    "stock": 3,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": true,
+    "attack_speed_scaling": 1.35
+  },
+  "ChefGlaze,6682420025553631911": {
+    "class": "SkillDef",
+    "name": "Glaze",
+    "recharge": 10.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "ChildBodyFrolic,-7704423927853055483": {
+    "class": "SkillDef",
+    "name": "Frolic",
+    "recharge": 20.0,
+    "stock": 1,
+    "recharge_stock": 0,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "ChildBodySparkBall,6950782515306261451": {
+    "class": "SkillDef",
+    "name": "SparkBall",
+    "recharge": 4.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "DisabledSkill,-1998800965733049531": {
+    "class": "SkillDef",
+    "name": "DisabledSkill",
+    "recharge": 0.0,
+    "stock": 0,
+    "recharge_stock": 0,
+    "required_stock": 1,
+    "stock_consume": 0,
+    "cancel_sprinting": false,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "FalseSonBossPrimeDevastator,-6674939807333048860": {
+    "class": "SkillDef",
+    "name": "PrimeDevastator",
+    "recharge": 45.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "FalseSonBossLunarGazePlus,-4337056061071140921": {
+    "class": "SkillDef",
+    "name": "LunarGazePlus",
+    "recharge": 20.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "FalseSonBossHeroRelic,-2727977205600879432": {
+    "class": "SteppedSkillDef",
+    "name": "HeroRelic",
+    "recharge": 5.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0,
+    "step_count": 2,
+    "step_grace_duration": 0.10000000149011612
+  },
+  "FalseSonBossOverloadSpike,-1754088937572012598": {
+    "class": "SkillDef",
+    "name": "CorruptedPaths",
+    "recharge": 1.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": false,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "FalseSonBossHeroRelicSwing,-456701886781513451": {
+    "class": "SkillDef",
+    "name": "FissureSlamWindup",
+    "recharge": 1.0,
+    "stock": 2,
+    "recharge_stock": 2,
+    "required_stock": 2,
+    "stock_consume": 2,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "FalseSonBossTaintedOffering,1391460647325209772": {
+    "class": "SkillDef",
+    "name": "TaintedOffering",
+    "recharge": 6.0,
+    "stock": 3,
+    "recharge_stock": 3,
+    "required_stock": 3,
+    "stock_consume": 3,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "FalseSonBossCorruptedPaths,4299997019027292622": {
+    "class": "SkillDef",
+    "name": "CorruptedPaths",
+    "recharge": 5.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": false,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "FalseSonBossLunarRain,4477798112851646940": {
+    "class": "SkillDef",
+    "name": "CorruptedPaths",
+    "recharge": 20.0,
+    "stock": 2,
+    "recharge_stock": 2,
+    "required_stock": 2,
+    "stock_consume": 2,
+    "cancel_sprinting": false,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "FalseSonBossLunarGaze,6807408675048283152": {
+    "class": "SkillDef",
+    "name": "Laser",
+    "recharge": 20.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "FalseSonBossFissureSlam,8391214950709802735": {
+    "class": "SkillDef",
+    "name": "FissureSlamWindup",
+    "recharge": 5.0,
+    "stock": 2,
+    "recharge_stock": 2,
+    "required_stock": 2,
+    "stock_consume": 2,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "FalseSonShotgunBlast,-8112048940486924294": {
+    "class": "SkillDef",
+    "name": "",
+    "recharge": 1.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": false,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "FalseSonBodyClub,-6957289980979817518": {
+    "class": "SteppedSkillDef",
+    "name": "ClubForsaken",
+    "recharge": 0.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0,
+    "step_count": 2,
+    "step_grace_duration": 0.5
+  },
+  "FalseSonBodyAurelioniteCore,-3542199106925195546": {
+    "class": "SkillDef",
+    "name": "AurelioniteCore",
+    "recharge": 1.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "FalseSonBodyTheTamperedHeart,-3238757994062080040": {
+    "class": "SkillDef",
+    "name": "LunarTampering",
+    "recharge": 1.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "FalseSonBodyLaser,263243222230549801": {
+    "class": "SteppedSkillDef",
+    "name": "LaserFather",
+    "recharge": 15.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0,
+    "step_count": 2,
+    "step_grace_duration": 0.10000000149011612
+  },
+  "FalseSonLunarSpikesShotgun,2210309577226432802": {
+    "class": "SkillDef",
+    "name": "LunarSpikesShotgun",
+    "recharge": 0.0,
+    "stock": 4,
+    "recharge_stock": 0,
+    "required_stock": 1,
+    "stock_consume": 3,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "FalseSonClubSlam,4166304513784580549": {
+    "class": "SkillDef",
+    "name": "FalseSonClubSlam",
+    "recharge": 0.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": false,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "FalseSonBodyLunarSpikes,5100249837422559539": {
+    "class": "SkillDef",
+    "name": "LunarSpikes",
+    "recharge": 4.0,
+    "stock": 4,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "FalseSonBodyLaserBurst,5517776409752784798": {
+    "class": "SteppedSkillDef",
+    "name": "LaserBurst",
+    "recharge": 7.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0,
+    "step_count": 2,
+    "step_grace_duration": 0.10000000149011612
+  },
+  "FalseSonBodyStep,7628362892485698873": {
+    "class": "SkillDef",
+    "name": "StepBrothers",
+    "recharge": 8.0,
+    "stock": 2,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": false,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "HalcyoniteMonsterTriLaser,-7511497473980682781": {
+    "class": "SkillDef",
+    "name": "TriLaser",
+    "recharge": 10.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "HalcyoniteMonsterGoldenSlash,2747984258515789995": {
+    "class": "SkillDef",
+    "name": "GoldenSwipe",
+    "recharge": 3.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "HalcyoniteMonsterWhirlwindRush,4725156298248455014": {
+    "class": "SkillDef",
+    "name": "WhirlWind",
+    "recharge": 10.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": false,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "HalcyoniteMonsterGoldenSwipe,5163258759872683428": {
+    "class": "SkillDef",
+    "name": "GoldenSwipe",
+    "recharge": 5.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "ScorchlingLavaBomb,-8798508131264378428": {
+    "class": "SkillDef",
+    "name": "Lava Bomb",
+    "recharge": 8.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "ScorchlingEnsureBurrow,-5620010734927282435": {
+    "class": "SkillDef",
+    "name": "EnsureBurrow",
+    "recharge": 1.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 0,
+    "cancel_sprinting": false,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "ScorchlingBreach,-2234412226159209795": {
+    "class": "SkillDef",
+    "name": "Breach",
+    "recharge": 1.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "SeekerBodyUmbraOrb,-9013598893678557154": {
+    "class": "SteppedSkillDef",
+    "name": "SpiritPunch",
+    "recharge": 1.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0,
+    "step_count": 3,
+    "step_grace_duration": 0.10000000149011612
+  },
+  "SeekerBodySoulSpiral,-6678431816200294537": {
+    "class": "SkillDef",
+    "name": "SoulSpiral",
+    "recharge": 7.0,
+    "stock": 3,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": false,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "SeekerBodySoulSearch,-1811339146726773948": {
+    "class": "SteppedSkillDef",
+    "name": "SoulSearch",
+    "recharge": 0.4,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0,
+    "step_count": 3,
+    "step_grace_duration": 0.10000000149011612
+  },
+  "SeekerBodyInnerStrength,1243325764176775382": {
+    "class": "SkillDef",
+    "name": "Sojourn",
+    "recharge": 1.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "SeekerBodySojourn,4306773817605077841": {
+    "class": "SkillDef",
+    "name": "Sojourn",
+    "recharge": 9.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "SeekerBodySpiritPunch,5012935593171460487": {
+    "class": "SteppedSkillDef",
+    "name": "SpiritPunch",
+    "recharge": 0.4,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0,
+    "step_count": 3,
+    "step_grace_duration": 0.10000000149011612
+  },
+  "SeekerBodyMeditate2,6506669007356937300": {
+    "class": "SkillDef",
+    "name": "Meditate",
+    "recharge": 15.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "SeekerBodyUnseenHand,8179662841040292512": {
+    "class": "SkillDef",
+    "name": "UnseenHand",
+    "recharge": 7.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "SeekerBodyMeditate,9088926454586075887": {
+    "class": "SkillDef",
+    "name": "Meditate",
+    "recharge": 1.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "AncientWispBodyEnrage,2409522602889948439": {
     "class": "SkillDef",
@@ -2993,7 +4171,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "AncientWispBodyRHCanon,2612263592701378511": {
     "class": "SkillDef",
@@ -3005,7 +4185,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "AncientWispBodyRain,3762199869636419283": {
     "class": "SkillDef",
@@ -3017,7 +4199,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ArchWispBodyCannons,3028426021178762371": {
     "class": "SkillDef",
@@ -3029,7 +4213,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "AssassinBodyUtility,-7975791782057261513": {
     "class": "SkillDef",
@@ -3041,7 +4227,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "AssassinBodyFireGrenade,-5626085221511103524": {
     "class": "SkillDef",
@@ -3053,7 +4241,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "AssassinBodyPlaceMine,1080774036271134077": {
     "class": "SkillDef",
@@ -3065,7 +4255,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "BackupDroneOldBodyGun,-100007878223079692": {
     "class": "SkillDef",
@@ -3077,7 +4269,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "BanditBodyCloak,-8596966141735407250": {
     "class": "SkillDef",
@@ -3089,7 +4283,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "BanditBodyFireShotgun,-4642704951932379138": {
     "class": "SkillDef",
@@ -3101,7 +4297,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "BanditBodyGrenade,-1892712723595271060": {
     "class": "SkillDef",
@@ -3113,7 +4311,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "BanditBodyLightsOut,6190427887205584678": {
     "class": "SkillDef",
@@ -3125,7 +4325,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "BomberBodyRoll,-4765502267899498621": {
     "class": "SkillDef",
@@ -3137,7 +4339,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "BomberBodyFireRocket,696268639746624240": {
     "class": "SkillDef",
@@ -3149,7 +4353,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "BomberBodyFireBarrage,2700695469245442907": {
     "class": "SkillDef",
@@ -3161,7 +4367,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "BomberBodyPaintMicroMissiles,8577849988138636205": {
     "class": "SkillDef",
@@ -3173,7 +4381,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CallSupplyDropDefense,4574265228113427950": {
     "class": "SkillDef",
@@ -3185,7 +4395,9 @@
     "stock_consume": 0,
     "cancel_sprinting": true,
     "cancel_from_sprinting": true,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ClayBodySwipeForward,-7041727149211418598": {
     "class": "SkillDef",
@@ -3197,7 +4409,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ClayBodyLeap,3850082291684283860": {
     "class": "SkillDef",
@@ -3209,7 +4423,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CommandoPerformanceTestBodyBarrage,-313528598616979605": {
     "class": "SkillDef",
@@ -3221,7 +4437,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CommandoPerformanceTestBodyFirePistol,971113682933396418": {
     "class": "SkillDef",
@@ -3233,7 +4451,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CommandoPerformanceTestBodyFireFMJ,2300237931881610752": {
     "class": "SkillDef",
@@ -3245,7 +4465,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CommandoPerformanceTestBodyRoll,8381869721324673668": {
     "class": "SkillDef",
@@ -3257,7 +4479,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "CommandoBodySweepBarrage,-1293665089800970507": {
     "class": "SkillDef",
@@ -3269,7 +4493,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ThrowStickyGrenade,-1069486143939103961": {
     "class": "SkillDef",
@@ -3281,7 +4507,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "EnforcerBodyFirePistol,-7726717824582225273": {
     "class": "SkillDef",
@@ -3293,7 +4521,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "EnforcerBodyFireFMJ,-2054958320279021696": {
     "class": "SkillDef",
@@ -3305,7 +4535,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "EnforcerBodyFireBarrage,4767806537476770162": {
     "class": "SkillDef",
@@ -3317,7 +4549,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "EnforcerBodyRoll,6052767256016440088": {
     "class": "SkillDef",
@@ -3329,7 +4563,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "ThrowMineDeployer,-8330375944545948723": {
     "class": "EngiMineDeployerSkillDef",
@@ -3341,7 +4577,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": true,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "EngiBeamTurretBodyTurret,-6450727866387336332": {
     "class": "SkillDef",
@@ -3353,7 +4591,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "PortalFist,-2769095254894144514": {
     "class": "SkillDef",
@@ -3365,7 +4605,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "HANDBodyOverclock,-8846940109491985225": {
     "class": "SkillDef",
@@ -3377,7 +4619,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "HANDBodyFire Winch,-5597287145214174920": {
     "class": "SkillDef",
@@ -3389,7 +4633,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "HANDBodyFullSwing,479655334270304313": {
     "class": "SkillDef",
@@ -3401,7 +4647,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "HANDBodySlam,5677498590452489528": {
     "class": "SkillDef",
@@ -3413,7 +4661,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "BeginOvercharge,-4723043262852629716": {
     "class": "SkillDef",
@@ -3425,7 +4675,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "BigPunch,6653285686089643902": {
     "class": "SteppedSkillDef",
@@ -3438,6 +4690,8 @@
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
     "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0,
     "step_count": 2,
     "step_grace_duration": 0.10000000149011612
   },
@@ -3451,7 +4705,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "MageBodyFireIceBolt,-4447457649595065823": {
     "class": "SteppedSkillDef",
@@ -3464,6 +4720,8 @@
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
     "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0,
     "step_count": 2,
     "step_grace_duration": 0.10000000149011612
   },
@@ -3477,7 +4735,9 @@
     "stock_consume": 1,
     "cancel_sprinting": false,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "PaladinBodyBarrierUp,-8446056492398361936": {
     "class": "SkillDef",
@@ -3489,7 +4749,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "PaladinBodyLeap,2856703291875736993": {
     "class": "SkillDef",
@@ -3501,7 +4763,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "PaladinBodyRocket,3001270377472916344": {
     "class": "SkillDef",
@@ -3513,7 +4777,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "PotMobile2BodyFireCannon,7753205312355515954": {
     "class": "SkillDef",
@@ -3525,7 +4791,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "PotMobileBodyFireCannon,950425803489691270": {
     "class": "SkillDef",
@@ -3537,7 +4805,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "EnableEyebeam,5566192359987866398": {
     "class": "SkillDef",
@@ -3549,7 +4819,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "SniperBodyFireFMJ,2613872301479837809": {
     "class": "SkillDef",
@@ -3561,7 +4833,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "SniperBodyReload,5684752178072176457": {
     "class": "SkillDef",
@@ -3573,7 +4847,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "SniperBodyRoll,8551728556241446954": {
     "class": "SkillDef",
@@ -3585,7 +4861,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": false
+    "is_combat_skill": false,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "SniperBodyFireRifle,8617782430623295708": {
     "class": "SkillDef",
@@ -3597,7 +4875,9 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "TreebotBodySonicPull,-1622714879175967012": {
     "class": "SkillDef",
@@ -3609,6 +4889,8 @@
     "stock_consume": 1,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
-    "is_combat_skill": true
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   }
 }
