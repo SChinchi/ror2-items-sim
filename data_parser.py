@@ -364,7 +364,7 @@ def extract_file_data(src_path=FILES_DIR):
                 scene_file = fname.replace('scenedef_assets', 'scenes')
                 # Is this file changing with every update? Pain...
                 if 'villagenight' in fname:
-                    scene_file = 'ror2-dlc2-villagenight_scenes_all_0fa1aadf2868d814cd081925a7349ef4.bundle'
+                    scene_file = 'ror2-dlc2-villagenight_scenes_all_162e96e97c434b84c2a48a63cc04280a.bundle'
                 scene_all = UnityPy.load(path.join(src_path, scene_file))
                 # 'blackbeach' has a test scene cabinet which we ignore
                 cabinet = [cab for name, cab in scene_all.cabs.items() if '.' not in name][0]

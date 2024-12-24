@@ -1171,7 +1171,7 @@
   "cscScorchling": {
     "class": "CharacterSpawnCard",
     "_name": "cscScorchling",
-    "name": "Scorch Wurm",
+    "name": "Scorch Worm",
     "required_flags": 0,
     "forbidden_flags": 4,
     "cost": 80,

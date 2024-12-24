@@ -725,7 +725,89 @@
           }
         ]
       },
-      "monsters": null
+      "monsters": {
+        "name": "dpBlackBeachMonsters",
+        "categories": [
+          {
+            "name": "Standard",
+            "weight": 0.98,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsBlackBeachMonstersDLC2",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1",
+                  "DLC2"
+                ]
+              },
+              {
+                "dccs": "dccsBlackBeachMonstersDLC",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              },
+              {
+                "dccs": "dccsBlackBeachMonstersDLC2",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC2"
+                ]
+              }
+            ],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsBlackBeachMonsters",
+                "weight": 1.0
+              }
+            ]
+          },
+          {
+            "name": "Family",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsGolemFamilyNature",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsJellyfishFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsBeetleFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsWispFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              }
+            ],
+            "included_conditions_not_met": []
+          },
+          {
+            "name": "VoidInvasion",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsVoidFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          }
+        ]
+      }
     },
     "scene_director": {
       "teleporter": "iscTeleporter",
@@ -1911,7 +1993,7 @@
       "monster_credits": 100,
       "bonus_credits": 0,
       "interactables": {
-        "name": "dpHabitatInteractables",
+        "name": "dpHabitatfallInteractables",
         "categories": [
           {
             "name": "",
@@ -1936,7 +2018,7 @@
         ]
       },
       "monsters": {
-        "name": "dpHabitatMonsters",
+        "name": "dpHabitatfallMonsters",
         "categories": [
           {
             "name": "Standard",
@@ -1944,7 +2026,7 @@
             "always_included": [],
             "included_conditions_met": [
               {
-                "dccs": "dccsHabitatMonsters_DLC1",
+                "dccs": "dccsHabitatfallMonsters_DLC1",
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC1"
@@ -1953,7 +2035,7 @@
             ],
             "included_conditions_not_met": [
               {
-                "dccs": "dccsHabitatMonsters",
+                "dccs": "dccsHabitatfallMonsters",
                 "weight": 1.0
               }
             ]

@@ -1136,7 +1136,7 @@
     "offers_choice": false,
     "can_reset": false,
     "is_sale_star_compatible": false,
-    "expansion": "DLC2"
+    "expansion": null
   },
   "iscShrineHalcyoniteTier1": {
     "class": "InteractableSpawnCard",
@@ -1153,7 +1153,7 @@
     "offers_choice": false,
     "can_reset": false,
     "is_sale_star_compatible": false,
-    "expansion": "DLC2"
+    "expansion": null
   },
   "iscShrineHealing": {
     "class": "InteractableSpawnCard",

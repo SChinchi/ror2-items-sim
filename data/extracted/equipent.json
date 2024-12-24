@@ -386,7 +386,7 @@
   {
     "_name": "HealAndRevive",
     "name": "Seed of Life",
-    "cooldown": 60.0,
+    "cooldown": 0.0,
     "can_drop": 1,
     "death_drop_chance": 0.0,
     "randomly_triggered": true,

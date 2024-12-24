@@ -14,6 +14,8 @@ class BuffDef:
             '_name': asset['m_Name'],
             'can_stack': bool(asset['canStack']),
             'is_debuff': bool(asset['isDebuff']),
+            'is_dot': bool(asset['isDOT']),
             'ignore_growth_nectar': bool(asset['ignoreGrowthNectar']),
             'is_cooldown': bool(asset['isCooldown']),
+            'flags': asset['flags'],
             }

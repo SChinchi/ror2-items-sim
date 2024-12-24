@@ -118,8 +118,8 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      3,
       2,
+      3,
       6
     ]
   },
@@ -131,8 +131,8 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      3,
-      2
+      2,
+      3
     ]
   },
   {
@@ -482,8 +482,8 @@
     "required_dlc": null,
     "tags": [
       1,
-      6,
-      4
+      4,
+      6
     ]
   },
   {
@@ -527,9 +527,9 @@
     "required_dlc": "DLC1",
     "tags": [
       1,
-      13,
       4,
-      11
+      11,
+      13
     ]
   },
   {
@@ -705,8 +705,8 @@
     "can_remove": true,
     "required_dlc": "DLC2",
     "tags": [
-      15,
       3,
+      15,
       21
     ]
   },
@@ -719,6 +719,7 @@
     "required_dlc": "DLC2",
     "tags": [
       3,
+      15,
       21
     ]
   },
@@ -730,8 +731,8 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      3,
       1,
+      3,
       4
     ]
   },
@@ -838,8 +839,8 @@
     "required_dlc": "DLC1",
     "tags": [
       3,
-      20,
-      4
+      4,
+      20
     ]
   },
   {
@@ -859,8 +860,8 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      3,
       1,
+      3,
       6
     ]
   },
@@ -895,7 +896,7 @@
     "can_remove": true,
     "required_dlc": "DLC2",
     "tags": [
-      3,
+      1,
       21
     ]
   },
@@ -938,8 +939,8 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      3,
       1,
+      3,
       4,
       6
     ]
@@ -975,8 +976,8 @@
     "required_dlc": "DLC1",
     "tags": [
       2,
-      16,
-      4
+      4,
+      16
     ]
   },
   {
@@ -1053,8 +1054,8 @@
     "can_remove": true,
     "required_dlc": "DLC1",
     "tags": [
-      3,
-      2
+      2,
+      3
     ]
   },
   {
@@ -1091,7 +1092,8 @@
     "tags": [
       1,
       3,
-      21
+      21,
+      23
     ]
   },
   {
@@ -1114,8 +1116,8 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      3,
       2,
+      3,
       6
     ]
   },
@@ -1155,14 +1157,17 @@
   },
   {
     "_name": "KnockBackHitEnemies",
-    "name": "Knockback Fin",
-    "tier": "Tier1",
+    "name": "Breaching Fin",
+    "tier": "Tier2",
     "hidden": false,
     "can_remove": true,
     "required_dlc": "DLC2",
     "tags": [
+      1,
       3,
-      21
+      4,
+      21,
+      23
     ]
   },
   {
@@ -1173,8 +1178,8 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      3,
-      2
+      2,
+      3
     ]
   },
   {
@@ -1228,7 +1233,6 @@
     "can_remove": true,
     "required_dlc": "DLC2",
     "tags": [
-      3,
       1,
       21
     ]
@@ -1241,8 +1245,8 @@
     "can_remove": true,
     "required_dlc": "DLC2",
     "tags": [
-      15,
       3,
+      15,
       21
     ]
   },
@@ -1526,19 +1530,6 @@
     ]
   },
   {
-    "_name": "NegateAttack",
-    "name": "Antler Shield",
-    "tier": "Tier1",
-    "hidden": false,
-    "can_remove": true,
-    "required_dlc": "DLC2",
-    "tags": [
-      3,
-      21,
-      4
-    ]
-  },
-  {
     "_name": "NovaOnHeal",
     "name": "N'kuhana's Opinion",
     "tier": "Tier3",
@@ -1569,9 +1560,9 @@
     "can_remove": false,
     "required_dlc": "DLC2",
     "tags": [
-      21,
+      1,
       3,
-      1
+      21
     ]
   },
   {
@@ -1768,6 +1759,7 @@
     "required_dlc": "DLC2",
     "tags": [
       3,
+      4,
       15,
       21
     ]
@@ -1971,6 +1963,19 @@
     ]
   },
   {
+    "_name": "SpeedBoostPickup",
+    "name": "Elusive Antlers",
+    "tier": "Tier1",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC2",
+    "tags": [
+      3,
+      4,
+      21
+    ]
+  },
+  {
     "_name": "SprintArmor",
     "name": "Rose Buckler",
     "tier": "Tier2",
@@ -2134,8 +2139,9 @@
     "required_dlc": "DLC2",
     "tags": [
       3,
-      21,
-      16
+      4,
+      16,
+      21
     ]
   },
   {
@@ -2252,9 +2258,9 @@
     "can_remove": true,
     "required_dlc": "DLC2",
     "tags": [
-      21,
-      3,
-      4
+      1,
+      4,
+      21
     ]
   },
   {

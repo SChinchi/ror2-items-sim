@@ -42,7 +42,7 @@ class ItemDef:
             'can_remove': bool(asset['canRemove']),
             # To be filled out once all file ids have been collected
             'required_dlc': asset['requiredExpansion']['m_PathID'],
-            'tags': asset['tags'],
+            'tags': sorted(asset['tags']),
         }
 
 
