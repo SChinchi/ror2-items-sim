@@ -15,6 +15,7 @@ class BuffDef:
             'can_stack': bool(asset['canStack']),
             'is_debuff': bool(asset['isDebuff']),
             'is_dot': bool(asset['isDOT']),
+            'is_hidden': bool(asset['isHidden']),
             'ignore_growth_nectar': bool(asset['ignoreGrowthNectar']),
             'is_cooldown': bool(asset['isCooldown']),
             'flags': asset['flags'],

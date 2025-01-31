@@ -176,7 +176,8 @@ class ConditionalPoolEntry:
         return {
             'dccs': ids[entry['dccs']['m_PathID']]['m_Name'],
             'weight': round_value(entry['weight']),
-            'required_dlc': [ids[r['m_PathID']]['m_Name'] for r in entry['requiredExpansions']],
+            'required_dlc': [ids[r['m_PathID']]['m_Name'] for r in entry['requiredExpansions']
+                             if r['m_PathID']],
         }
 
 
