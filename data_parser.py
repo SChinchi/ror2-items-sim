@@ -16,6 +16,34 @@ LANGUAGE_DIR = path.join(ASSETS_DIR, 'Language/en')
 FILES_DIR = path.join(ASSETS_DIR, 'aa/StandaloneWindows64')
 
 
+def _get_component_raw(ids, go, component):
+    for c in go['m_Component']:
+        obj = ids[c['component']['m_PathID']]
+        if obj.type.name == 'MonoBehaviour':
+            _component = obj.read_typetree()
+            if _component['m_Script']['m_PathID'] == component.SCRIPT:
+                return _component
+
+
+def _get_components_raw(ids, go, component):
+    out = []
+    for c in go['m_Component']:
+        obj = ids[c['component']['m_PathID']]
+        if obj.type.name == 'MonoBehaviour':
+            _component = obj.read_typetree()
+            if _component['m_Script']['m_PathID'] == component.SCRIPT:
+                out.append(_component)
+    return out
+
+
+def _get_child_raw(ids, game_object, child_index):
+    transform = ids[game_object['m_Component'][0]['component']['m_PathID']].read_typetree()
+    children = transform['m_Children']
+    if len(children) > child_index:
+        child_transform = ids[children[child_index]['m_PathID']].read_typetree()
+        return ids[child_transform['m_GameObject']['m_PathID']].read_typetree()
+
+
 def _get_component(ids, prefab_id, component, keep_path_id=False):
     if not prefab_id:
         return None
@@ -42,6 +70,7 @@ def _get_all_components(ids, prefab_id, component, keep_path_id=False):
                     out.append(_component)
     return out
 
+
 def _get_transform(ids, obj_id):
     if not obj_id:
         return
@@ -52,6 +81,7 @@ def _get_transform(ids, obj_id):
             if 'm_LocalPosition' in _component:
                 return _component
 
+
 def _extract_names(src_path=LANGUAGE_DIR):
     names = {}
     with open(path.join(src_path, 'output.json'), encoding='utf8') as f:
@@ -59,24 +89,14 @@ def _extract_names(src_path=LANGUAGE_DIR):
             m = re.match('.*"([A-Z0-9_]+_NAME)".*:.*"(.*)".*\n', line)
             if m:
                 names[m.group(1)] = m.group(2)
-    #for file in ('Equipment', 'InfiniteTower', 'Interactors', 'Items', 'CharacterBodies', 'output'):
-    #    enc = 'utf8' if file == 'CharacterBodies' or file == 'output' else None
-    #    with open(path.join(src_path, f'{file}.json'), encoding=enc) as f:
-    #        for line in f.readlines():
-    #            m = re.match('.*"([A-Z0-9_]+_NAME)".*:.*"(.*)".*\n', line)
-    #            if m:
-    #                names[m.group(1)] = m.group(2)
-    #with open(path.join(src_path, 'cu8.json')) as f:
-    #    for line in f.readlines():
-    #        m = re.match('.*"([A-Z0-9_]+_NAME)".*:.*"(.*)".*\n', line)
-    #        if m:
-    #            names[m.group(1)] = m.group(2)
     return names
+
 
 def _find_newt_group(groups, ids):
     for group in groups:
         if all(_is_newt_statue(o['m_PathID'], ids) for o in group['objects']):
             return group['minEnabled'], group['maxEnabled']
+
 
 def _is_newt_statue(obj_id, ids):
     if _get_component(ids, obj_id, PortalStatueBehavior):
@@ -87,6 +107,16 @@ def _is_newt_statue(obj_id, ids):
         return any(_is_newt_statue(ids[child['m_PathID']]['m_GameObject']['m_PathID'], ids)
                    for child in transform['m_Children'] if child['m_PathID'] in ids)
     return False
+
+
+def _find_object(src_path, fname, object_name):
+    env = UnityPy.load(path.join(src_path, fname))
+    for obj in env.objects:
+        if obj.type.name == 'GameObject':
+            asset = obj.read_typetree()
+            if asset['m_Name'] == object_name:
+                return obj.path_id
+
 
 def extract_file_data(src_path=FILES_DIR):
     """
@@ -333,6 +363,75 @@ def extract_file_data(src_path=FILES_DIR):
         if data['class'] == 'PassiveItemSkillDef':
             data['passive_item'] = ids[data['passive_item']]['m_Name']
 
+    combat_directors = {}
+    d = _get_all_components(
+        ids,
+        _find_object(src_path, 'ror2-base-common_text_assets_all.bundle', 'Director'),
+        CombatDirector,
+    )
+    for d_ in d:
+        data = CombatDirector.parse(d_, ids)
+        # Arbitrary limit which fits the pattern so far
+        type_name = 'fast' if data['reroll_spawn_interval'][0] < 10 else 'slow'
+        combat_directors[type_name] = data
+    combat_directors['combat_shrine'] = CombatDirector.parse(_get_component(
+        ids,
+        _find_object(src_path, 'ror2-base-shrinecombat_text_assets_all.bundle', 'ShrineCombat'),
+        CombatDirector,
+    ), ids)
+    combat_directors['gouge'] = CombatDirector.parse(_get_component(
+        ids,
+        _find_object(src_path, 'ror2-base-monstersonshrineuse_text_assets_all.bundle', 'MonstersOnShrineUseEncounter'),
+        CombatDirector,
+    ), ids)
+    d = _get_all_components(
+        ids,
+        _find_object(src_path, 'ror2-base-teleporters_text_assets_all.bundle', 'Teleporter1'),
+        CombatDirector,
+    )
+    combat_directors['teleporter_monsters'] = CombatDirector.parse(d[0], ids)
+    combat_directors['teleporter_boss'] = CombatDirector.parse(d[1], ids)
+    combat_directors['arena'] = CombatDirector.parse(_get_component(
+        ids,
+        _find_object(src_path, 'ror2-base-arena_text_assets_all.bundle', 'ArenaMissionController'),
+        CombatDirector,
+    ), ids)
+    combat_directors['moon_battery'] = CombatDirector.parse(_get_component(
+        ids,
+        _find_object(src_path, 'ror2-base-moon2_text_assets_all.bundle', 'MoonBatteryTemplate'),
+        CombatDirector,
+    ), ids)
+    combat_directors['void_battery'] = CombatDirector.parse(_get_component(
+        ids,
+        _find_object(src_path, 'ror2-dlc1-deepvoidportalbattery_text_assets_all.bundle', 'DeepVoidPortalBattery'),
+        CombatDirector,
+    ), ids)
+    combat_directors['voidcamp1'] = CombatDirector.parse(_get_component(
+        ids,
+        _find_object(src_path, 'ror2-dlc1-voidcamp_text_assets_all.bundle', 'Camp 1 - Void Monsters & Interactables'),
+        CombatDirector,
+    ), ids)
+    combat_directors['voidcamp2'] = CombatDirector.parse(_get_component(
+        ids,
+        _find_object(src_path, 'ror2-dlc1-voidcamp_text_assets_all.bundle', 'Camp 2 - Flavor Props & Void Elites'),
+        CombatDirector,
+    ), ids)
+    combat_directors['simulacrum'] = CombatDirector.parse(_get_component(
+        ids,
+        _find_object(src_path, 'ror2-dlc1-gamemodes-infinitetowerrun-infinitetowerassets_text_assets_all.bundle', 'InfiniteTowerWaveDefault'),
+        CombatDirector,
+    ), ids)
+    combat_directors['halcyon_shrine'] = CombatDirector.parse(_get_component(
+        ids,
+        _find_object(src_path, 'ror2-dlc2_assets_all.bundle', 'ShrineHalcyonite'),
+        CombatDirector,
+    ), ids)
+    combat_directors['halcyonite'] = CombatDirector.parse(_get_component(
+        ids,
+        _find_object(src_path, 'ror2-dlc2_assets_all.bundle', 'Activation and Tier Change Wave'),
+        CombatDirector,
+    ), ids)
+
     scenes = {}
     for fname in os.listdir(src_path):
         if re.match('ror2-(base|dlc1|cu8|dlc2)-.*_scenedef', fname):
@@ -359,6 +458,7 @@ def extract_file_data(src_path=FILES_DIR):
                     'skip_devotion': bool(asset['needSkipDevotionRespawn']),
                     'stage_info': None,
                     'scene_director': None,
+                    'combat_director': None,
                     'newt': None,
                 }
                 scene_file = fname.replace('scenedef_assets', 'scenes')
@@ -368,37 +468,61 @@ def extract_file_data(src_path=FILES_DIR):
                 scene_all = UnityPy.load(path.join(src_path, scene_file))
                 # 'blackbeach' has a test scene cabinet which we ignore
                 cabinet = [cab for name, cab in scene_all.cabs.items() if '.' not in name][0]
-                toggle_groups = None
-                for obj in cabinet.objects.values():
-                    if obj.type.name == 'MonoBehaviour':
+                objects = cabinet.objects
+                scene_info = None
+                director = None
+                for obj in objects.values():
+                    if obj.type.name in ('GameObject', 'Transform', 'MonoBehaviour'):
                         asset = obj.read_typetree()
                         scene_ids[obj.path_id] = asset
-                        script = asset['m_Script']['m_PathID']
-
-                        if script == ClassicStageInfo.SCRIPT:
-                            stage_info = ClassicStageInfo.parse(asset, ids)
-                            stage_info['bonus_credits'] = sum(stage_info['bonus_credits'])
-                            if not stage_info['monsters'] or not stage_info['interactables']:
-                                text_file = fname.replace('scenedef', 'text')
-                                scene_text = UnityPy.load(path.join(src_path, text_file))
-                                for text_obj in scene_text.objects:
-                                    if text_obj.type.name == 'MonoBehaviour':
-                                        text_asset = text_obj.read_typetree()
-                                        if text_asset['m_Script']['m_PathID'] != DccsPool.SCRIPT:
-                                            continue
-                                        if 'Monsters' in text_asset['m_Name']:
-                                            stage_info['monsters'] = DccsPool.parse(text_asset, ids)
-                                        elif 'Interactables' in text_asset['m_Name']:
-                                            stage_info['interactables'] = DccsPool.parse(text_asset, ids)
-                            scene_data['stage_info'] = stage_info
-                        elif script == SceneDirector.SCRIPT:
-                            scene_data['scene_director'] = SceneDirector.parse(asset, ids)
-                        elif script == SceneObjectToggleGroup.SCRIPT:
-                            toggle_groups = asset['toggleGroups']
-                    elif obj.type.name in ('GameObject', 'Transform'):
-                        scene_ids[obj.path_id] = obj.read_typetree()
-                if toggle_groups:
-                    scene_data['newt'] = _find_newt_group(toggle_groups, scene_ids)
+                        if obj.type.name == 'GameObject':
+                            if asset['m_Name'] == 'SceneInfo':
+                                scene_info = asset
+                            elif asset['m_Name'] in ('Director', 'InfiniteTowerSceneDirector'):
+                                director = asset
+                if scene_info:
+                    asset = _get_component_raw(objects, scene_info, ClassicStageInfo)
+                    if asset:
+                        stage_info = ClassicStageInfo.parse(asset, ids)
+                        stage_info['bonus_credits'] = sum(stage_info['bonus_credits'])
+                        if not stage_info['monsters'] or not stage_info['interactables']:
+                            text_file = fname.replace('scenedef', 'text')
+                            scene_text = UnityPy.load(path.join(src_path, text_file))
+                            for text_obj in scene_text.objects:
+                                if text_obj.type.name == 'MonoBehaviour':
+                                    text_asset = text_obj.read_typetree()
+                                    if text_asset['m_Script']['m_PathID'] != DccsPool.SCRIPT:
+                                        continue
+                                    if 'Monsters' in text_asset['m_Name']:
+                                        stage_info['monsters'] = DccsPool.parse(text_asset, ids)
+                                    elif 'Interactables' in text_asset['m_Name']:
+                                        stage_info['interactables'] = DccsPool.parse(text_asset, ids)
+                        scene_data['stage_info'] = stage_info
+                    # The SceneObjectToggleController is a child of
+                    # SceneInfo, so we can get it from its transform.
+                    toggle_controller = _get_child_raw(objects, scene_info, 0)
+                    if toggle_controller:
+                        toggle_groups = _get_component_raw(objects, toggle_controller, SceneObjectToggleGroup)
+                        if toggle_groups:
+                            scene_data['newt'] = _find_newt_group(toggle_groups['toggleGroups'], scene_ids)
+                if director:
+                    asset = _get_component_raw(objects, director, SceneDirector)
+                    if asset:
+                        scene_data['scene_director'] = SceneDirector.parse(asset, ids)
+                    if director['m_Name'] == 'Director':
+                        combat = _get_components_raw(objects, director, CombatDirector)
+                        if combat:
+                            combat_data = []
+                            for i, c in enumerate(combat):
+                                c = CombatDirector.parse(c, ids)
+                                diff = {}
+                                type_name = 'fast' if c['reroll_spawn_interval'][0] < 10 else 'slow'
+                                compare_to = combat_directors[type_name]
+                                for key, value in c.items():
+                                    if value != compare_to[key]:
+                                        diff[key] = value
+                                combat_data.append({'name': type_name, 'overrides': diff})
+                            scene_data['combat_director'] = combat_data
                 scenes[name] = scene_data
     for data in scenes.values():
         destinations = []
@@ -486,6 +610,7 @@ def extract_file_data(src_path=FILES_DIR):
         (BODIES_FILE, bodies),
         (SKILLS_FILE, skills),
         (DCCS_FILE, dccs),
+        (COMBAT_FILE, combat_directors),
         (SCENES_FILE, scenes),
         (CAMP_FILE, voidcamps),
         (SIMULACRUM_FILE, simulacrum),

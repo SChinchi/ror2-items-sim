@@ -1,0 +1,358 @@
+{
+  "fast": {
+    "credits": 0.0,
+    "exp_coeff": 0.2,
+    "gold_coeff": 1.0,
+    "series_spawn_interval": [
+      0.1,
+      1.0
+    ],
+    "reroll_spawn_interval": [
+      4.5,
+      9.0
+    ],
+    "money_wave_intervals": [
+      [
+        1.0,
+        1.0
+      ]
+    ],
+    "team": 2,
+    "credit_multiplier": 0.75,
+    "spawn_one_wave": false,
+    "skip_if_cheap": true,
+    "max_skips": 2147483647,
+    "reset_monster_card": true,
+    "max_spawns": 6,
+    "elite_bias": 1.0,
+    "ignore_team_size": false,
+    "_monster_cards": null
+  },
+  "slow": {
+    "credits": 0.0,
+    "exp_coeff": 0.2,
+    "gold_coeff": 1.0,
+    "series_spawn_interval": [
+      0.1,
+      1.0
+    ],
+    "reroll_spawn_interval": [
+      22.5,
+      30.0
+    ],
+    "money_wave_intervals": [
+      [
+        1.0,
+        1.0
+      ]
+    ],
+    "team": 2,
+    "credit_multiplier": 0.75,
+    "spawn_one_wave": false,
+    "skip_if_cheap": true,
+    "max_skips": 2147483647,
+    "reset_monster_card": true,
+    "max_spawns": 6,
+    "elite_bias": 1.0,
+    "ignore_team_size": false,
+    "_monster_cards": null
+  },
+  "combat_shrine": {
+    "credits": 0.0,
+    "exp_coeff": 0.2,
+    "gold_coeff": 1.0,
+    "series_spawn_interval": [
+      0.5,
+      0.5
+    ],
+    "reroll_spawn_interval": [
+      0.1,
+      0.1
+    ],
+    "money_wave_intervals": [],
+    "team": 2,
+    "credit_multiplier": 1.0,
+    "spawn_one_wave": true,
+    "skip_if_cheap": false,
+    "max_skips": 2147483647,
+    "reset_monster_card": true,
+    "max_spawns": 6,
+    "elite_bias": 1.0,
+    "ignore_team_size": false,
+    "_monster_cards": null
+  },
+  "gouge": {
+    "credits": 0.0,
+    "exp_coeff": 0.2,
+    "gold_coeff": 1.0,
+    "series_spawn_interval": [
+      0.5,
+      0.5
+    ],
+    "reroll_spawn_interval": [
+      0.1,
+      0.1
+    ],
+    "money_wave_intervals": [],
+    "team": 2,
+    "credit_multiplier": 1.0,
+    "spawn_one_wave": true,
+    "skip_if_cheap": false,
+    "max_skips": 2147483647,
+    "reset_monster_card": true,
+    "max_spawns": 6,
+    "elite_bias": 1.0,
+    "ignore_team_size": false,
+    "_monster_cards": null
+  },
+  "teleporter_monsters": {
+    "credits": 0.0,
+    "exp_coeff": 0.11,
+    "gold_coeff": 1.0,
+    "series_spawn_interval": [
+      0.5,
+      0.5
+    ],
+    "reroll_spawn_interval": [
+      2.0,
+      4.0
+    ],
+    "money_wave_intervals": [
+      [
+        1.0,
+        1.0
+      ]
+    ],
+    "team": 2,
+    "credit_multiplier": 2.0,
+    "spawn_one_wave": false,
+    "skip_if_cheap": true,
+    "max_skips": 2147483647,
+    "reset_monster_card": true,
+    "max_spawns": 6,
+    "elite_bias": 1.0,
+    "ignore_team_size": false,
+    "_monster_cards": null
+  },
+  "teleporter_boss": {
+    "credits": 0.0,
+    "exp_coeff": 0.02,
+    "gold_coeff": 1.0,
+    "series_spawn_interval": [
+      0.1,
+      1.0
+    ],
+    "reroll_spawn_interval": [
+      2.333333,
+      4.333333
+    ],
+    "money_wave_intervals": [],
+    "team": 2,
+    "credit_multiplier": 1.0,
+    "spawn_one_wave": true,
+    "skip_if_cheap": true,
+    "max_skips": 2147483647,
+    "reset_monster_card": true,
+    "max_spawns": 6,
+    "elite_bias": 1.0,
+    "ignore_team_size": true,
+    "_monster_cards": null
+  },
+  "arena": {
+    "credits": 0.0,
+    "exp_coeff": 0.2,
+    "gold_coeff": 1.0,
+    "series_spawn_interval": [
+      0.1,
+      1.0
+    ],
+    "reroll_spawn_interval": [
+      2.333333,
+      4.333333
+    ],
+    "money_wave_intervals": [
+      [
+        0.75,
+        0.75
+      ]
+    ],
+    "team": 2,
+    "credit_multiplier": 1.0,
+    "spawn_one_wave": false,
+    "skip_if_cheap": false,
+    "max_skips": 2147483647,
+    "reset_monster_card": false,
+    "max_spawns": 6,
+    "elite_bias": 1.0,
+    "ignore_team_size": false,
+    "_monster_cards": null
+  },
+  "moon_battery": {
+    "credits": 700.0,
+    "exp_coeff": 0.2,
+    "gold_coeff": 1.0,
+    "series_spawn_interval": [
+      1.0,
+      1.0
+    ],
+    "reroll_spawn_interval": [
+      0.1,
+      0.1
+    ],
+    "money_wave_intervals": [],
+    "team": 2,
+    "credit_multiplier": 1.0,
+    "spawn_one_wave": true,
+    "skip_if_cheap": false,
+    "max_skips": 2147483647,
+    "reset_monster_card": true,
+    "max_spawns": 12,
+    "elite_bias": 1.0,
+    "ignore_team_size": false,
+    "_monster_cards": null
+  },
+  "void_battery": {
+    "credits": 700.0,
+    "exp_coeff": 0.2,
+    "gold_coeff": 1.0,
+    "series_spawn_interval": [
+      1.0,
+      1.0
+    ],
+    "reroll_spawn_interval": [
+      0.1,
+      0.1
+    ],
+    "money_wave_intervals": [],
+    "team": 4,
+    "credit_multiplier": 1.0,
+    "spawn_one_wave": true,
+    "skip_if_cheap": false,
+    "max_skips": 2147483647,
+    "reset_monster_card": true,
+    "max_spawns": 12,
+    "elite_bias": 1.0,
+    "ignore_team_size": false,
+    "_monster_cards": null
+  },
+  "voidcamp1": {
+    "credits": 0.0,
+    "exp_coeff": 0.2,
+    "gold_coeff": 1.0,
+    "series_spawn_interval": [
+      0.1,
+      0.1
+    ],
+    "reroll_spawn_interval": [
+      0.1,
+      0.1
+    ],
+    "money_wave_intervals": [],
+    "team": 4,
+    "credit_multiplier": 1.0,
+    "spawn_one_wave": false,
+    "skip_if_cheap": true,
+    "max_skips": 2147483647,
+    "reset_monster_card": true,
+    "max_spawns": 6,
+    "elite_bias": 4.0,
+    "ignore_team_size": false,
+    "_monster_cards": "dccsVoidCampMonsters"
+  },
+  "voidcamp2": {
+    "credits": 0.0,
+    "exp_coeff": 0.2,
+    "gold_coeff": 1.0,
+    "series_spawn_interval": [
+      0.1,
+      0.1
+    ],
+    "reroll_spawn_interval": [
+      0.1,
+      0.1
+    ],
+    "money_wave_intervals": [],
+    "team": 4,
+    "credit_multiplier": 1.0,
+    "spawn_one_wave": false,
+    "skip_if_cheap": true,
+    "max_skips": 2147483647,
+    "reset_monster_card": true,
+    "max_spawns": 6,
+    "elite_bias": 1.0,
+    "ignore_team_size": false,
+    "_monster_cards": null
+  },
+  "simulacrum": {
+    "credits": 0.0,
+    "exp_coeff": 0.1,
+    "gold_coeff": 0.2,
+    "series_spawn_interval": [
+      0.5,
+      0.5
+    ],
+    "reroll_spawn_interval": [
+      3.0,
+      2.0
+    ],
+    "money_wave_intervals": [],
+    "team": 2,
+    "credit_multiplier": 0.75,
+    "spawn_one_wave": false,
+    "skip_if_cheap": true,
+    "max_skips": 10,
+    "reset_monster_card": true,
+    "max_spawns": 10,
+    "elite_bias": 1.5,
+    "ignore_team_size": false,
+    "_monster_cards": null
+  },
+  "halcyon_shrine": {
+    "credits": 0.0,
+    "exp_coeff": 0.2,
+    "gold_coeff": 1.0,
+    "series_spawn_interval": [
+      0.5,
+      0.5
+    ],
+    "reroll_spawn_interval": [
+      0.1,
+      0.1
+    ],
+    "money_wave_intervals": [],
+    "team": 2,
+    "credit_multiplier": 1.0,
+    "spawn_one_wave": true,
+    "skip_if_cheap": false,
+    "max_skips": 2147483647,
+    "reset_monster_card": true,
+    "max_spawns": 6,
+    "elite_bias": 0.1,
+    "ignore_team_size": false,
+    "_monster_cards": null
+  },
+  "halcyonite": {
+    "credits": 0.0,
+    "exp_coeff": 0.2,
+    "gold_coeff": 0.6,
+    "series_spawn_interval": [
+      0.1,
+      0.1
+    ],
+    "reroll_spawn_interval": [
+      0.1,
+      0.1
+    ],
+    "money_wave_intervals": [],
+    "team": 2,
+    "credit_multiplier": 1.0,
+    "spawn_one_wave": true,
+    "skip_if_cheap": true,
+    "max_skips": 2147483647,
+    "reset_monster_card": true,
+    "max_spawns": 6,
+    "elite_bias": 2.5,
+    "ignore_team_size": false,
+    "_monster_cards": "dccsShrineHalcyoniteActivationMonsterWave"
+  }
+}

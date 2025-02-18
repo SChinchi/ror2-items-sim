@@ -50,11 +50,9 @@ class CombatDirector:
     SCRIPT = 786565555335027584
 
     @staticmethod
-    def parse(asset):
+    def parse(asset, ids):
+        cards = asset['_monsterCards']['m_PathID']
         return {
-            # To be filled out once all file ids have been collected
-            'owner': asset['m_GameObject']['m_PathID'],
-            'name': asset['customName'],
             'credits': round_value(asset['monsterCredit']),
             'exp_coeff': round_value(asset['expRewardCoefficient']),
             'gold_coeff': round_value(asset['goldRewardCoefficient']),
@@ -66,19 +64,14 @@ class CombatDirector:
                                      for r in asset['moneyWaveIntervals']],
             'team': asset['teamIndex'],
             'credit_multiplier': round_value(asset['creditMultiplier']),
-            'spawn_once': bool(asset['shouldSpawnOneWave']),
-            'target_players': bool(asset['targetPlayers']),
+            'spawn_one_wave': bool(asset['shouldSpawnOneWave']),
             'skip_if_cheap': bool(asset['skipSpawnIfTooCheap']),
             'max_skips': asset['maxConsecutiveCheapSkips'],
-            'reset_if_failed': bool(asset['resetMonsterCardIfFailed']),
+            'reset_monster_card': bool(asset['resetMonsterCardIfFailed']),
             'max_spawns': asset['maximumNumberToSpawnBeforeSkipping'],
-            'elite_bias': asset['eliteBias'],
+            'elite_bias': round_value(asset['eliteBias']),
             'ignore_team_size': bool(asset['ignoreTeamSizeLimit']),
-            # To be filled out once all file ids have been collected
-            'monster_cards': asset['_monsterCards']['m_PathID'],
-            'stage_cards_fallback': bool(asset['fallBackToStageMonsterCards']),
-            # To be filled out once all file ids have been collected
-            'spawn_target': asset['currentSpawnTarget']['m_PathID'],
+            '_monster_cards': ids[cards]['m_Name'] if cards else None,
         }
 
 
