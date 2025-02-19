@@ -2,11 +2,11 @@
 
 Simulate item generation for any stage and collect statistics for the spawned interactables, or simulate a run session to see how many and what items are encountered.
 
-_Targetting game version 1.2.4.4_
+_Targetting game version 1.3.6, but some Seekers of the Storm features have not been implemented fully._
 
 ## How to use
 
-Numpy is required to run the code, as is UnityPy if one requires extracting more data from the assets.
+Numpy is required to run the code, as is UnityPy if one requires extracting more data from the assets. For UnityPy version 1.21.0 is recommended.
 
 ### Interactable generation simulation
 

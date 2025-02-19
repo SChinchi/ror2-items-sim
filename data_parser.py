@@ -437,9 +437,9 @@ def extract_file_data(src_path=FILES_DIR):
         if re.match('ror2-(base|dlc1|cu8|dlc2)-.*_scenedef', fname):
             scene_def = UnityPy.load(path.join(src_path, fname))
             for def_container in scene_def.container.values():
-                asset = def_container.get_obj().read_typetree()
+                asset = def_container.read_typetree()
                 name = asset['m_Name']
-                ids[def_container.get_obj().path_id] = asset
+                ids[def_container.path_id] = asset
                 # `sceneType == -1` are invalid
                 # `sceneType == 0` are menu
                 # `sceneType == 3` are cutscenes
