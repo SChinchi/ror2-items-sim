@@ -885,7 +885,9 @@
     "class": "BasicPickupDropTable",
     "can_be_replaced": true,
     "required_tags": [],
-    "banned_tags": [],
+    "banned_tags": [
+      24
+    ],
     "weights": [
       0.7,
       0.3,
@@ -929,8 +931,8 @@
     ],
     "banned_tags": [],
     "weights": [
-      0.6,
-      0.35,
+      0.65,
+      0.3,
       0.05,
       0.0,
       0,
@@ -951,8 +953,8 @@
     ],
     "banned_tags": [],
     "weights": [
-      0.6,
-      0.35,
+      0.65,
+      0.3,
       0.05,
       0.0,
       0,
@@ -969,12 +971,10 @@
     "class": "BasicPickupDropTable",
     "can_be_replaced": true,
     "required_tags": [],
-    "banned_tags": [
-      21
-    ],
+    "banned_tags": [],
     "weights": [
-      0.6,
-      0.35,
+      0.65,
+      0.3,
       0.05,
       0.0,
       0,
@@ -1059,8 +1059,8 @@
     "required_tags": [],
     "banned_tags": [],
     "weights": [
-      0.8,
-      0.2,
+      0.9,
+      0.1,
       0.001,
       0.0,
       0,

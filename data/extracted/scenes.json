@@ -43,7 +43,12 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsAncientLoftInteractablesDLC1",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsAncientLoftInteractablesDLC2",
@@ -53,12 +58,7 @@
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsAncientLoftInteractablesDLC1",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -68,14 +68,14 @@
           {
             "name": "Standard",
             "weight": 0.98,
-            "always_included": [],
-            "included_conditions_met": [],
-            "included_conditions_not_met": [
+            "always_included": [
               {
                 "dccs": "dccsAncientLoftMonstersDLC1",
                 "weight": 1.0
               }
-            ]
+            ],
+            "included_conditions_met": [],
+            "included_conditions_not_met": []
           },
           {
             "name": "Family",
@@ -144,7 +144,7 @@
     ]
   },
   "arena": {
-    "scene_type": 2,
+    "scene_type": 1,
     "stage_order": 96,
     "required_dlc": null,
     "destinations": [],
@@ -161,7 +161,12 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsArenaInteractables",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsArenaInteractablesDLC1",
@@ -171,12 +176,7 @@
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsArenaInteractables",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -186,7 +186,12 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsArenaMonsters",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsArenaMonstersDLC1",
@@ -196,12 +201,7 @@
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsArenaMonsters",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       }
@@ -232,22 +232,14 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
-            "included_conditions_met": [
-              {
-                "dccs": "dccsArtifactWorldInteractablesDLC1",
-                "weight": 1.0,
-                "required_dlc": [
-                  "DLC1"
-                ]
-              }
-            ],
-            "included_conditions_not_met": [
+            "always_included": [
               {
                 "dccs": "dccsArtifactWorldInteractables",
                 "weight": 1.0
               }
-            ]
+            ],
+            "included_conditions_met": [],
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -257,7 +249,12 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsArtifactWorldMonsters",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsArtifactWorldMonstersDLC1",
@@ -267,12 +264,7 @@
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsArtifactWorldMonsters",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       }
@@ -335,7 +327,12 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsArtifactWorld01Monsters",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsArtifactWorld01Monsters_DLC1",
@@ -343,14 +340,16 @@
                 "required_dlc": [
                   "DLC1"
                 ]
+              },
+              {
+                "dccs": "dccsArtifactWorld01Monsters_DLC2",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC2"
+                ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsArtifactWorld01Monsters",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       }
@@ -396,22 +395,14 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
-            "included_conditions_met": [
-              {
-                "dccs": "dccsArtifactWorldInteractablesDLC1",
-                "weight": 1.0,
-                "required_dlc": [
-                  "DLC1"
-                ]
-              }
-            ],
-            "included_conditions_not_met": [
+            "always_included": [
               {
                 "dccs": "dccsArtifactWorldInteractables",
                 "weight": 1.0
               }
-            ]
+            ],
+            "included_conditions_met": [],
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -421,7 +412,12 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsArtifactWorld02Monsters",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsArtifactWorld01Monsters_DLC1",
@@ -429,14 +425,16 @@
                 "required_dlc": [
                   "DLC1"
                 ]
+              },
+              {
+                "dccs": "dccsArtifactWorld02Monsters_DLC2",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC2"
+                ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsArtifactWorld02Monsters",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       }
@@ -476,22 +474,14 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
-            "included_conditions_met": [
-              {
-                "dccs": "dccsArtifactWorld03InteractablesDLC1",
-                "weight": 1.0,
-                "required_dlc": [
-                  "DLC1"
-                ]
-              }
-            ],
-            "included_conditions_not_met": [
+            "always_included": [
               {
                 "dccs": "dccsArtifactWorldInteractables",
                 "weight": 1.0
               }
-            ]
+            ],
+            "included_conditions_met": [],
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -501,7 +491,12 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsArtifactWorld03Monsters",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsArtifactWorld03MonstersDLC1",
@@ -509,14 +504,16 @@
                 "required_dlc": [
                   "DLC1"
                 ]
+              },
+              {
+                "dccs": "dccsArtifactWorld03MonstersDLC2",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC2"
+                ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsArtifactWorld03Monsters",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       }
@@ -605,7 +602,12 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsBlackBeachInteractables",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsBlackBeachInteractablesDLC1",
@@ -622,12 +624,7 @@
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsBlackBeachInteractables",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -637,23 +634,13 @@
           {
             "name": "Standard",
             "weight": 0.98,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsBlackBeachMonsters",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
-              {
-                "dccs": "dccsBlackBeachMonstersDLC2",
-                "weight": 1.0,
-                "required_dlc": [
-                  "DLC1",
-                  "DLC2"
-                ]
-              },
-              {
-                "dccs": "dccsBlackBeachMonstersDLC",
-                "weight": 1.0,
-                "required_dlc": [
-                  "DLC1"
-                ]
-              },
               {
                 "dccs": "dccsBlackBeachMonstersDLC2",
                 "weight": 1.0,
@@ -662,12 +649,7 @@
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsBlackBeachMonsters",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           },
           {
             "name": "Family",
@@ -779,7 +761,12 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsBlackBeachInteractables",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsBlackBeachInteractablesDLC1",
@@ -796,12 +783,7 @@
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsBlackBeachInteractables",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -811,23 +793,13 @@
           {
             "name": "Standard",
             "weight": 0.98,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsBlackBeachMonsters",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
-              {
-                "dccs": "dccsBlackBeachMonstersDLC2",
-                "weight": 1.0,
-                "required_dlc": [
-                  "DLC1",
-                  "DLC2"
-                ]
-              },
-              {
-                "dccs": "dccsBlackBeachMonstersDLC",
-                "weight": 1.0,
-                "required_dlc": [
-                  "DLC1"
-                ]
-              },
               {
                 "dccs": "dccsBlackBeachMonstersDLC2",
                 "weight": 1.0,
@@ -836,12 +808,7 @@
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsBlackBeachMonsters",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           },
           {
             "name": "Family",
@@ -945,7 +912,12 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsDampCaveInteractables",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsDampCaveInteractablesDLC1",
@@ -953,14 +925,16 @@
                 "required_dlc": [
                   "DLC1"
                 ]
+              },
+              {
+                "dccs": "dccsDampCaveInteractablesDLC2",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC2"
+                ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsDampCaveInteractables",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -970,16 +944,13 @@
           {
             "name": "Standard",
             "weight": 0.98,
-            "always_included": [],
-            "included_conditions_met": [
+            "always_included": [
               {
-                "dccs": "dccsDampCaveMonstersDLC2",
-                "weight": 1.0,
-                "required_dlc": [
-                  "DLC1",
-                  "DLC2"
-                ]
-              },
+                "dccs": "dccsDampCaveMonsters",
+                "weight": 1.0
+              }
+            ],
+            "included_conditions_met": [
               {
                 "dccs": "dccsDampCaveMonstersDLC1",
                 "weight": 1.0,
@@ -995,12 +966,7 @@
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsDampCaveMonsters",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           },
           {
             "name": "Family",
@@ -1109,7 +1075,12 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsFoggySwampInteractables",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsFoggySwampInteractablesDLC1",
@@ -1126,12 +1097,7 @@
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsFoggySwampInteractables",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -1141,16 +1107,13 @@
           {
             "name": "Standard",
             "weight": 0.98,
-            "always_included": [],
-            "included_conditions_met": [
+            "always_included": [
               {
-                "dccs": "dccsFoggySwampMonstersDLC2",
-                "weight": 1.0,
-                "required_dlc": [
-                  "DLC1",
-                  "DLC2"
-                ]
-              },
+                "dccs": "dccsFoggySwampMonsters",
+                "weight": 1.0
+              }
+            ],
+            "included_conditions_met": [
               {
                 "dccs": "dccsFoggySwampMonstersDLC",
                 "weight": 1.0,
@@ -1166,12 +1129,7 @@
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsFoggySwampMonsters",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           },
           {
             "name": "Family",
@@ -1290,7 +1248,12 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsFrozenWallInteractables",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsFrozenWallInteractablesDLC1",
@@ -1298,14 +1261,16 @@
                 "required_dlc": [
                   "DLC1"
                 ]
+              },
+              {
+                "dccs": "dccsFrozenWallInteractablesDLC2",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC2"
+                ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsFrozenWallInteractables",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -1315,16 +1280,13 @@
           {
             "name": "Standard",
             "weight": 0.98,
-            "always_included": [],
-            "included_conditions_met": [
+            "always_included": [
               {
-                "dccs": "dccsFrozenWallMonstersDLC2",
-                "weight": 1.0,
-                "required_dlc": [
-                  "DLC1",
-                  "DLC2"
-                ]
-              },
+                "dccs": "dccsFrozenWallMonsters",
+                "weight": 1.0
+              }
+            ],
+            "included_conditions_met": [
               {
                 "dccs": "dccsFrozenWallMonstersDLC1",
                 "weight": 1.0,
@@ -1340,12 +1302,7 @@
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsFrozenWallMonsters",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           },
           {
             "name": "Family",
@@ -1426,22 +1383,14 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
-            "included_conditions_met": [
-              {
-                "dccs": "dccsGoldshoresInteractablesDLC1",
-                "weight": 1.0,
-                "required_dlc": [
-                  "DLC1"
-                ]
-              }
-            ],
-            "included_conditions_not_met": [
+            "always_included": [
               {
                 "dccs": "dccsGoldshoresInteractables",
                 "weight": 1.0
               }
-            ]
+            ],
+            "included_conditions_met": [],
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -1451,15 +1400,13 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
-            "included_conditions_met": [
+            "always_included": [
               {
-                "dccs": "dccsGoldshoresMonstersDLC1",
-                "weight": 1.0,
-                "required_dlc": [
-                  "DLC1"
-                ]
-              },
+                "dccs": "dccsGoldshoresMonsters",
+                "weight": 1.0
+              }
+            ],
+            "included_conditions_met": [
               {
                 "dccs": "dccsGoldshoresMonstersDLC2",
                 "weight": 1.0,
@@ -1468,12 +1415,7 @@
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsGoldshoresMonsters",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       }
@@ -1539,7 +1481,12 @@
           {
             "name": "Standard",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsGolemplainsInteractables",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsGolemplainsInteractablesDLC1",
@@ -1556,12 +1503,7 @@
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsGolemplainsInteractables",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -1571,7 +1513,12 @@
           {
             "name": "Standard",
             "weight": 0.98,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsGolemplainsMonsters",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsGolemplainsMonstersDLC1",
@@ -1579,14 +1526,16 @@
                 "required_dlc": [
                   "DLC1"
                 ]
+              },
+              {
+                "dccs": "dccsGolemplainsMonstersDLC2Only",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC2"
+                ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsGolemplainsMonsters",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           },
           {
             "name": "Family",
@@ -1698,7 +1647,12 @@
           {
             "name": "Standard",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsGolemplainsInteractables",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsGolemplainsInteractablesDLC1",
@@ -1715,12 +1669,7 @@
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsGolemplainsInteractables",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -1730,7 +1679,12 @@
           {
             "name": "Standard",
             "weight": 0.98,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsGolemplainsMonsters",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsGolemplainsMonstersDLC1",
@@ -1738,14 +1692,16 @@
                 "required_dlc": [
                   "DLC1"
                 ]
+              },
+              {
+                "dccs": "dccsGolemplainsMonstersDLC2Only",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC2"
+                ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsGolemplainsMonsters",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           },
           {
             "name": "Family",
@@ -1857,7 +1813,12 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsGooLakeInteractables",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsGooLakeInteractablesDLC1",
@@ -1874,12 +1835,7 @@
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsGooLakeInteractables",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -1889,16 +1845,13 @@
           {
             "name": "Standard",
             "weight": 0.98,
-            "always_included": [],
-            "included_conditions_met": [
+            "always_included": [
               {
-                "dccs": "dccsGooLakeMonstersDLC2",
-                "weight": 1.0,
-                "required_dlc": [
-                  "DLC1",
-                  "DLC2"
-                ]
-              },
+                "dccs": "dccsGooLakeMonsters",
+                "weight": 1.0
+              }
+            ],
+            "included_conditions_met": [
               {
                 "dccs": "dccsGooLakeMonstersDLC1",
                 "weight": 1.0,
@@ -1914,12 +1867,7 @@
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsGooLakeMonsters",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           },
           {
             "name": "Family",
@@ -2031,22 +1979,22 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsHabitatInteractables_DLC2",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
-                "dccs": "dccsHabitatInteractables",
+                "dccs": "dccsHabitatInteractables_DLC1",
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC1"
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsHabitatInteractablesStormOnlyDLC2",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -2056,7 +2004,12 @@
           {
             "name": "Standard",
             "weight": 0.98,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsHabitatMonsters",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsHabitatMonsters_DLC1",
@@ -2066,12 +2019,7 @@
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsHabitatMonsters",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           },
           {
             "name": "Family",
@@ -2168,22 +2116,22 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsHabitatInteractables_DLC2",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
-                "dccs": "dccsHabitatInteractables",
+                "dccs": "dccsHabitatInteractables_DLC1",
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC1"
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsHabitatInteractablesStormOnlyDLC2",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -2193,7 +2141,12 @@
           {
             "name": "Standard",
             "weight": 0.98,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsHabitatMonsters",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsHabitatfallMonsters_DLC1",
@@ -2345,22 +2298,22 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsHelminthRoostInteractables_DLC2",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
-                "dccs": "dccsHelminthRoostInteractables",
+                "dccs": "dccsHelminthRoostInteractables_DLC1",
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC1"
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsHelminthRoostInteractablesStormOnlyDLC2",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -2370,22 +2323,22 @@
           {
             "name": "Standard",
             "weight": 0.98,
-            "always_included": [],
-            "included_conditions_met": [
+            "always_included": [
               {
                 "dccs": "dccsHelminthRoostMonsters",
+                "weight": 1.0
+              }
+            ],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsHelminthRoostMonstersDLC2Only",
                 "weight": 1.0,
                 "required_dlc": [
-                  "DLC1"
+                  "DLC2"
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsHelminthRoostMonstersDLC2Only",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           },
           {
             "name": "Family",
@@ -2488,14 +2441,14 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
-            "included_conditions_met": [],
-            "included_conditions_not_met": [
+            "always_included": [
               {
                 "dccs": "dccsInfiniteTowerInteractables",
                 "weight": 1.0
               }
-            ]
+            ],
+            "included_conditions_met": [],
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -2568,14 +2521,14 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
-            "included_conditions_met": [],
-            "included_conditions_not_met": [
+            "always_included": [
               {
                 "dccs": "dccsInfiniteTowerInteractables",
                 "weight": 1.0
               }
-            ]
+            ],
+            "included_conditions_met": [],
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -2585,22 +2538,22 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
-            "included_conditions_met": [
+            "always_included": [
               {
                 "dccs": "dccsITDampCaveMonsters",
+                "weight": 1.0
+              }
+            ],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsITDampCaveMonstersDLC2",
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC2"
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsITDampCaveMonsters",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       }
@@ -2656,14 +2609,14 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
-            "included_conditions_met": [],
-            "included_conditions_not_met": [
+            "always_included": [
               {
                 "dccs": "dccsInfiniteTowerInteractables",
                 "weight": 1.0
               }
-            ]
+            ],
+            "included_conditions_met": [],
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -2673,7 +2626,12 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsITFrozenWallMonsters",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsITFrozenWallMonstersDLC2",
@@ -2683,12 +2641,7 @@
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsITFrozenWallMonsters",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       }
@@ -2744,14 +2697,14 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
-            "included_conditions_met": [],
-            "included_conditions_not_met": [
+            "always_included": [
               {
                 "dccs": "dccsInfiniteTowerInteractables",
                 "weight": 1.0
               }
-            ]
+            ],
+            "included_conditions_met": [],
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -2761,7 +2714,12 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsITGolemplainsMonsters",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsITGolemplainsMonstersDLC2",
@@ -2771,12 +2729,7 @@
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsITGolemplainsMonsters",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       }
@@ -2832,14 +2785,14 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
-            "included_conditions_met": [],
-            "included_conditions_not_met": [
+            "always_included": [
               {
                 "dccs": "dccsInfiniteTowerInteractables",
                 "weight": 1.0
               }
-            ]
+            ],
+            "included_conditions_met": [],
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -2912,14 +2865,14 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
-            "included_conditions_met": [],
-            "included_conditions_not_met": [
+            "always_included": [
               {
                 "dccs": "dccsInfiniteTowerInteractables",
                 "weight": 1.0
               }
-            ]
+            ],
+            "included_conditions_met": [],
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -2992,14 +2945,14 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
-            "included_conditions_met": [],
-            "included_conditions_not_met": [
+            "always_included": [
               {
                 "dccs": "dccsInfiniteTowerInteractables",
                 "weight": 1.0
               }
-            ]
+            ],
+            "included_conditions_met": [],
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -3009,7 +2962,12 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsITSkyMeadowMonsters",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsITSkyMeadowMonstersDLC2",
@@ -3019,12 +2977,7 @@
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsITSkyMeadowMonsters",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       }
@@ -3081,7 +3034,12 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsLakesInteractables",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsLakesInteractablesDLC1",
@@ -3091,27 +3049,14 @@
                 ]
               },
               {
-                "dccs": "dccsLakesInteractablesStormOnlyDLC2",
+                "dccs": "dccsLakesInteractables_DLC2",
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC2"
                 ]
-              },
-              {
-                "dccs": "dccsLakesInteractablesDLC2",
-                "weight": 5.0,
-                "required_dlc": [
-                  "DLC1",
-                  "DLC2"
-                ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsLakesInteractables",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -3121,14 +3066,29 @@
           {
             "name": "Standard",
             "weight": 0.98,
-            "always_included": [],
-            "included_conditions_met": [],
-            "included_conditions_not_met": [
+            "always_included": [
               {
                 "dccs": "dccsLakesMonsters",
                 "weight": 1.0
               }
-            ]
+            ],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsLakesMonstersDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              },
+              {
+                "dccs": "dccsLakesMonstersDLC2",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC2"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
           },
           {
             "name": "Family",
@@ -3238,22 +3198,22 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsLakesnightInteractables_DLC2",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
-                "dccs": "dccsLakesnightInteractables",
+                "dccs": "dccsLakesnightInteractables_DLC1",
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC1"
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsLakesnightInteractablesStormOnlyDLC2",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -3263,22 +3223,22 @@
           {
             "name": "Standard",
             "weight": 0.98,
-            "always_included": [],
-            "included_conditions_met": [
+            "always_included": [
               {
                 "dccs": "dccsLakesnightMonsters",
+                "weight": 1.0
+              }
+            ],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsLakesnightMonsters_DLC1",
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC1"
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsLakesnightMonstersStormOnlyDLC2",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           },
           {
             "name": "Family",
@@ -3395,22 +3355,22 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsLemurianTempleInteractables_DLC2",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
-                "dccs": "dccsLemurianTempleInteractables",
+                "dccs": "dccsLemurianTempleInteractables_DLC1",
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC1"
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsLemurianTempleInteractablesStormOnlyDLC2",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -3420,7 +3380,12 @@
           {
             "name": "Standard",
             "weight": 0.98,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsLemurianTempleMonsters",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsLemurianTempleMonstersDLC1",
@@ -3430,12 +3395,7 @@
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsLemurianTempleMonsters",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           },
           {
             "name": "Family",
@@ -3539,7 +3499,7 @@
     "newt": null
   },
   "meridian": {
-    "scene_type": 5,
+    "scene_type": 2,
     "stage_order": 95,
     "required_dlc": "DLC2",
     "destinations": [],
@@ -3573,22 +3533,22 @@
           {
             "name": "Standard",
             "weight": 0.98,
-            "always_included": [],
-            "included_conditions_met": [
+            "always_included": [
               {
                 "dccs": "dccsMeridianMonsters",
+                "weight": 1.0
+              }
+            ],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsMeridianMonsters_DLC1",
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC1"
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsMeridianMonstersDLC2Only",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           },
           {
             "name": "Family",
@@ -3652,7 +3612,12 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsMoonInteractables",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsMoonInteractablesDLC1",
@@ -3662,12 +3627,7 @@
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsMoonInteractables",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -3677,22 +3637,14 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
-            "included_conditions_met": [
-              {
-                "dccs": "dccsMoonMonstersDLC1",
-                "weight": 1.0,
-                "required_dlc": [
-                  "DLC1"
-                ]
-              }
-            ],
-            "included_conditions_not_met": [
+            "always_included": [
               {
                 "dccs": "dccsMoonMonsters",
                 "weight": 1.0
               }
-            ]
+            ],
+            "included_conditions_met": [],
+            "included_conditions_not_met": []
           }
         ]
       }
@@ -3786,7 +3738,12 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsRootJungleInteractables",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsRootJungleInteractablesDLC1",
@@ -3794,14 +3751,16 @@
                 "required_dlc": [
                   "DLC1"
                 ]
+              },
+              {
+                "dccs": "dccsRootJungleInteractablesDLC2",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC2"
+                ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsRootJungleInteractables",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -3811,16 +3770,13 @@
           {
             "name": "Standard",
             "weight": 0.98,
-            "always_included": [],
-            "included_conditions_met": [
+            "always_included": [
               {
-                "dccs": "dccsRootJungleMonstersDLC2",
-                "weight": 1.0,
-                "required_dlc": [
-                  "DLC1",
-                  "DLC2"
-                ]
-              },
+                "dccs": "dccsRootJungleMonsters",
+                "weight": 1.0
+              }
+            ],
+            "included_conditions_met": [
               {
                 "dccs": "dccsRootJungleMonstersDLC1",
                 "weight": 1.0,
@@ -3829,19 +3785,14 @@
                 ]
               },
               {
-                "dccs": "dccsRootJungleMonstersDLC2Only",
+                "dccs": "dccsRootJungleMonstersDLC2",
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC2"
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsRootJungleMonsters",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           },
           {
             "name": "Family",
@@ -3954,7 +3905,12 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsShipgraveyardInteractables",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsShipgraveyardInteractablesDLC1",
@@ -3962,14 +3918,16 @@
                 "required_dlc": [
                   "DLC1"
                 ]
+              },
+              {
+                "dccs": "dccsShipgraveyardInteractablesDLC2",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC2"
+                ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsShipgraveyardInteractables",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -3979,16 +3937,13 @@
           {
             "name": "Standard",
             "weight": 0.98,
-            "always_included": [],
-            "included_conditions_met": [
+            "always_included": [
               {
-                "dccs": "dccsShipgraveyardMonstersDLC2",
-                "weight": 1.0,
-                "required_dlc": [
-                  "DLC1",
-                  "DLC2"
-                ]
-              },
+                "dccs": "dccsShipgraveyardMonsters",
+                "weight": 1.0
+              }
+            ],
+            "included_conditions_met": [
               {
                 "dccs": "dccsShipgraveyardMonstersDLC1",
                 "weight": 1.0,
@@ -4004,12 +3959,7 @@
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsShipgraveyardMonsters",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           },
           {
             "name": "Family",
@@ -4168,7 +4118,12 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsSkyMeadowInteractables",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsSkyMeadowInteractablesDLC1",
@@ -4176,14 +4131,16 @@
                 "required_dlc": [
                   "DLC1"
                 ]
+              },
+              {
+                "dccs": "dccsSkyMeadowInteractablesDLC2",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC2"
+                ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsSkyMeadowInteractables",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -4193,18 +4150,15 @@
           {
             "name": "Standard",
             "weight": 0.98,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsSkyMeadowMonsters",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsSkyMeadowMonstersDLC2",
-                "weight": 1.0,
-                "required_dlc": [
-                  "DLC1",
-                  "DLC2"
-                ]
-              },
-              {
-                "dccs": "dccsSkyMeadowMonstersDLC2Only",
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC2"
@@ -4218,12 +4172,7 @@
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsSkyMeadowMonsters",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           },
           {
             "name": "Family",
@@ -4327,7 +4276,12 @@
           {
             "name": "Standard",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsSnowyForestInteractablesDLC1",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsSnowyForestInteractablesDLC2",
@@ -4337,12 +4291,7 @@
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsSnowyForestInteractablesDLC1",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -4352,14 +4301,22 @@
           {
             "name": "Standard",
             "weight": 0.98,
-            "always_included": [],
-            "included_conditions_met": [],
-            "included_conditions_not_met": [
+            "always_included": [
               {
                 "dccs": "dccsSnowyForestMonstersDLC1",
                 "weight": 1.0
               }
-            ]
+            ],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsSnowyForestMonstersDLC2",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC2"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
           },
           {
             "name": "Family",
@@ -4471,14 +4428,22 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
-            "included_conditions_met": [],
-            "included_conditions_not_met": [
+            "always_included": [
               {
                 "dccs": "dccsSulfurPoolsInteractablesDLC1",
                 "weight": 1.0
               }
-            ]
+            ],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsSulfurPoolsInteractablesDLC2",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC2"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -4488,14 +4453,14 @@
           {
             "name": "Standard",
             "weight": 0.98,
-            "always_included": [],
-            "included_conditions_met": [],
-            "included_conditions_not_met": [
+            "always_included": [
               {
                 "dccs": "dccsSulfurPoolsMonstersDLC1",
                 "weight": 1.0
               }
-            ]
+            ],
+            "included_conditions_met": [],
+            "included_conditions_not_met": []
           },
           {
             "name": "Family",
@@ -4604,7 +4569,12 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsVillageInteractables_DLC2",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsVillageInteractablesDLC1",
@@ -4612,14 +4582,16 @@
                 "required_dlc": [
                   "DLC1"
                 ]
+              },
+              {
+                "dccs": "dccsVillagenightInteractablesDLC2",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC2"
+                ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsVillageInteractablesStormOnlyDLC2",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -4629,22 +4601,14 @@
           {
             "name": "Standard",
             "weight": 0.98,
-            "always_included": [],
-            "included_conditions_met": [
-              {
-                "dccs": "dccsVillageMonsters_DLC1",
-                "weight": 1.0,
-                "required_dlc": [
-                  "DLC1"
-                ]
-              }
-            ],
-            "included_conditions_not_met": [
+            "always_included": [
               {
                 "dccs": "dccsVillageMonsters",
                 "weight": 1.0
               }
-            ]
+            ],
+            "included_conditions_met": [],
+            "included_conditions_not_met": []
           },
           {
             "name": "Family",
@@ -4756,7 +4720,12 @@
           {
             "name": "Standard",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsGolemplainsInteractables",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsGolemplainsInteractablesDLC1",
@@ -4773,12 +4742,7 @@
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsGolemplainsInteractables",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -4788,22 +4752,20 @@
           {
             "name": "Standard",
             "weight": 0.98,
-            "always_included": [],
-            "included_conditions_met": [
-              {
-                "dccs": "dccsVillageNightMonsters",
-                "weight": 1.0,
-                "required_dlc": [
-                  "DLC1"
-                ]
-              }
-            ],
-            "included_conditions_not_met": [
+            "always_included": [
               {
                 "dccs": "dccsVillageMonsters",
                 "weight": 1.0
               }
-            ]
+            ],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsVillageNightMonsters_Additional",
+                "weight": 1.0,
+                "required_dlc": []
+              }
+            ],
+            "included_conditions_not_met": []
           },
           {
             "name": "Family",
@@ -4934,14 +4896,14 @@
           {
             "name": "Standard",
             "weight": 0.98,
-            "always_included": [],
-            "included_conditions_met": [],
-            "included_conditions_not_met": [
+            "always_included": [
               {
                 "dccs": "dccsVoidStageMonsters",
                 "weight": 1.0
               }
-            ]
+            ],
+            "included_conditions_met": [],
+            "included_conditions_not_met": []
           },
           {
             "name": "Family",
@@ -5024,7 +4986,12 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsWispGraveyardInteractables",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsWispGraveyardInteractablesDLC1",
@@ -5032,14 +4999,16 @@
                 "required_dlc": [
                   "DLC1"
                 ]
+              },
+              {
+                "dccs": "dccsWispGraveyardInteractablesDLC2",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC2"
+                ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsWispGraveyardInteractables",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           }
         ]
       },
@@ -5049,37 +5018,22 @@
           {
             "name": "Standard",
             "weight": 0.98,
-            "always_included": [],
+            "always_included": [
+              {
+                "dccs": "dccsWispGraveyardMonsters",
+                "weight": 1.0
+              }
+            ],
             "included_conditions_met": [
               {
                 "dccs": "dccsWispGraveyardMonstersDLC2",
-                "weight": 1.0,
-                "required_dlc": [
-                  "DLC1",
-                  "DLC2"
-                ]
-              },
-              {
-                "dccs": "dccsWispGraveyardMonstersDLC1",
-                "weight": 1.0,
-                "required_dlc": [
-                  "DLC1"
-                ]
-              },
-              {
-                "dccs": "dccsWispGraveyardMonstersDLC2Only",
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC2"
                 ]
               }
             ],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsWispGraveyardMonsters",
-                "weight": 1.0
-              }
-            ]
+            "included_conditions_not_met": []
           },
           {
             "name": "Family",

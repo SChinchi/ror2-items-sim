@@ -3660,7 +3660,7 @@
   "FalseSonBossLunarGazePlus,-4337056061071140921": {
     "class": "SkillDef",
     "name": "LunarGazePlus",
-    "recharge": 20.0,
+    "recharge": 35.0,
     "stock": 1,
     "recharge_stock": 1,
     "required_stock": 1,
@@ -3732,7 +3732,7 @@
   "FalseSonBossCorruptedPaths,4299997019027292622": {
     "class": "SkillDef",
     "name": "CorruptedPaths",
-    "recharge": 5.0,
+    "recharge": 4.0,
     "stock": 1,
     "recharge_stock": 1,
     "required_stock": 1,
@@ -3760,7 +3760,7 @@
   "FalseSonBossLunarGaze,6807408675048283152": {
     "class": "SkillDef",
     "name": "Laser",
-    "recharge": 20.0,
+    "recharge": 35.0,
     "stock": 1,
     "recharge_stock": 1,
     "required_stock": 1,
@@ -3771,10 +3771,24 @@
     "scales_with_attack_speed": false,
     "attack_speed_scaling": 1.0
   },
+  "FalseSonBossSwatAwayPlayers,8337137085803729754": {
+    "class": "SkillDef",
+    "name": "SwatAwayPlayersWindup",
+    "recharge": 8.0,
+    "stock": 2,
+    "recharge_stock": 2,
+    "required_stock": 2,
+    "stock_consume": 2,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
   "FalseSonBossFissureSlam,8391214950709802735": {
     "class": "SkillDef",
     "name": "FissureSlamWindup",
-    "recharge": 5.0,
+    "recharge": 8.0,
     "stock": 2,
     "recharge_stock": 2,
     "required_stock": 2,

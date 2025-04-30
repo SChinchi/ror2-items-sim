@@ -30,6 +30,16 @@
     "flags": 0
   },
   {
+    "_name": "bdAttackSpeedPerNearbyAllyOrEnemyBuff",
+    "can_stack": true,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 0
+  },
+  {
     "_name": "bdAurelioniteBlessing",
     "can_stack": false,
     "is_debuff": false,
@@ -852,7 +862,7 @@
   {
     "_name": "bdKnockUpHitEnemies",
     "can_stack": true,
-    "is_debuff": true,
+    "is_debuff": false,
     "is_dot": false,
     "is_hidden": false,
     "ignore_growth_nectar": false,
@@ -912,16 +922,6 @@
   {
     "_name": "bdLoaderPylonPowered",
     "can_stack": false,
-    "is_debuff": false,
-    "is_dot": false,
-    "is_hidden": false,
-    "ignore_growth_nectar": false,
-    "is_cooldown": false,
-    "flags": 0
-  },
-  {
-    "_name": "bdLowerHealthHigherDamageBuff",
-    "can_stack": true,
     "is_debuff": false,
     "is_dot": false,
     "is_hidden": false,
@@ -1264,8 +1264,8 @@
     "can_stack": false,
     "is_debuff": false,
     "is_dot": false,
-    "is_hidden": false,
-    "ignore_growth_nectar": false,
+    "is_hidden": true,
+    "ignore_growth_nectar": true,
     "is_cooldown": false,
     "flags": 0
   },
@@ -1327,6 +1327,16 @@
     "is_hidden": false,
     "ignore_growth_nectar": true,
     "is_cooldown": false,
+    "flags": 0
+  },
+  {
+    "_name": "bdVoidFogStackCooldown",
+    "can_stack": false,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": true,
+    "ignore_growth_nectar": true,
+    "is_cooldown": true,
     "flags": 0
   },
   {

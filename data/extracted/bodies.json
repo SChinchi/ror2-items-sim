@@ -1885,23 +1885,23 @@
     "name": "False Son",
     "flags": 2049,
     "health": [
-      1200.0,
-      360.0
+      1000.0,
+      300.0
     ],
     "regen": [
       0.0,
       0.0
     ],
     "damage": [
-      17.0,
-      3.4
+      18.0,
+      3.6
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
     "luck": 0,
-    "speed": 11.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 80.0,
+    "speed": 14.0,
+    "sprint_multiplier": 1.85,
+    "acceleration": 35.0,
     "jump": 1,
     "jump_power": 0.0,
     "armor": 23.0,
@@ -1911,63 +1911,30 @@
     "can_be_stunned": false,
     "can_be_frozen": false,
     "item_drop": null,
-    "expansion": "DLC2"
+    "expansion": null
   },
   "FalseSonBossBodyBrokenLunarShard": {
     "_name": "FalseSonBossBodyBrokenLunarShard",
     "name": "False Son",
     "flags": 2049,
     "health": [
-      1500.0,
-      450.0
+      1200.0,
+      360.0
     ],
     "regen": [
       0.0,
       0.0
     ],
     "damage": [
-      17.0,
-      3.4
+      18.0,
+      3.6
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
     "luck": 0,
-    "speed": 11.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 80.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 29.0,
-    "is_champion": true,
-    "pain_threshold": 5.0,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": "DLC2"
-  },
-  "FalseSonBossBodyLunarShard": {
-    "_name": "FalseSonBossBodyLunarShard",
-    "name": "False Son",
-    "flags": 2049,
-    "health": [
-      1300.0,
-      390.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      17.0,
-      3.4
-    ],
-    "attack_speed": 1.0,
-    "crit": 1.0,
-    "luck": 0,
-    "speed": 11.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 80.0,
+    "speed": 10.0,
+    "sprint_multiplier": 1.85,
+    "acceleration": 35.0,
     "jump": 1,
     "jump_power": 0.0,
     "armor": 26.0,
@@ -1977,7 +1944,40 @@
     "can_be_stunned": false,
     "can_be_frozen": false,
     "item_drop": null,
-    "expansion": "DLC2"
+    "expansion": null
+  },
+  "FalseSonBossBodyLunarShard": {
+    "_name": "FalseSonBossBodyLunarShard",
+    "name": "False Son",
+    "flags": 2049,
+    "health": [
+      1100.0,
+      330.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      18.0,
+      3.6
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 12.0,
+    "sprint_multiplier": 1.85,
+    "acceleration": 35.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 29.0,
+    "is_champion": true,
+    "pain_threshold": 5.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
   },
   "FlameDroneBody": {
     "_name": "FlameDroneBody",
@@ -2427,7 +2427,7 @@
     "attack_speed": 1.0,
     "crit": 0.0,
     "luck": 0,
-    "speed": 4.95,
+    "speed": 6.6,
     "sprint_multiplier": 1.45,
     "acceleration": 40.0,
     "jump": 1,
@@ -2972,10 +2972,10 @@
   "LunarRain": {
     "_name": "LunarRain",
     "name": "Lunar Rain Shard",
-    "flags": 260,
+    "flags": 261,
     "health": [
-      100.0,
-      30.0
+      75.0,
+      22.0
     ],
     "regen": [
       0.0,
@@ -3331,6 +3331,39 @@
     "can_be_frozen": true,
     "item_drop": null,
     "expansion": null
+  },
+  "MiniGeodeBody": {
+    "_name": "MiniGeodeBody",
+    "name": "",
+    "flags": 260,
+    "health": [
+      1.0,
+      0.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC2"
   },
   "MiniMushroomBody": {
     "_name": "MiniMushroomBody",
