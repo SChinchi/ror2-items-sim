@@ -1,6 +1,7 @@
 import math
 
 from constants import ALL_EXPANSIONS
+from data.objects.dccs import DCCSBlender
 from data_loader import dccs, scenes
 
 
@@ -110,19 +111,19 @@ elite_tiers = (
     ),
     EliteTierDef(
         ELITE_COST_MULTIPLIER,
-        ['Lightning', 'Ice', 'Fire', 'Earth'],
+        ['Lightning', 'Ice', 'Fire', 'Earth', 'Gilded'],
         lambda rules, stages_cleared: not IS_HONOR_ENABLED and rules == 0,
         False,
     ),
     EliteTierDef(
         HONOR_COST_MULTIPLIER,
-        ['LightningHonor', 'IceHonor', 'FireHonor', 'EarthHonor'],
+        ['LightningHonor', 'IceHonor', 'FireHonor', 'EarthHonor', 'GildedHonor'],
         lambda rules, stages_cleared: IS_HONOR_ENABLED,
         False,
     ),
     EliteTierDef(
         ELITE_COST_MULTIPLIER * 6,
-        ['Poison', 'Haunted'],
+        ['Poison', 'Haunted', 'Twisted'],
         lambda rules, stages_cleared: stages_cleared >= 5 and rules == 0,
         False,
     ),
@@ -169,7 +170,9 @@ def compute_horde_chance(scene_name, stages_cleared, num_players=1, expansions=A
     stage_info = scenes[scene_name].stage_info
     if not stage_info:
         raise ValueError('There is no DCCS related to this scene.')
-    selected_dccs = stage_info.monsters.generate_weighted_selection(expansions, stages_cleared)
+    selected_dccs = DCCSBlender.get_blended_dccs(
+        stage_info.monsters.categories[0], expansions, stages_cleared
+    )
 
     monsters = selected_dccs.generate_card_weighted_selection(stages_cleared, expansions, False)
     monsters = dict([(m[0].spawn_card, m[1]) for m in monsters])
@@ -326,3 +329,15 @@ def solve_coeff(coeff, stages_cleared, num_players=1, difficulty=3):
     stage_factor = 1.15**stages_cleared
     time = ((coeff / stage_factor) - player_factor) / time_factor
     return int(math.floor(time)) if time >= 0 else None
+
+
+def print_horde_chance(scene_name, stages_cleared, num_players=1, expansions=ALL_EXPANSIONS):
+    result = compute_horde_chance(scene_name, stages_cleared, num_players, expansions)
+    header = f'{"Credit Threshold":20s}{"Chance":>7s}{"None":>8s}{"One":>8s}{"Two":>8s}{"Three":>8s}'
+    print(header)
+    print('-' * len(header))
+    for r in result:
+        t = r[2]
+        t = t + [math.inf] * (4 - len(t))
+        t = [str(t_) for t_ in t]
+        print(f'{str(r[0]):20s}{round(100*r[1], 2):6.2f}%{t[0]:>8s}{t[1]:>8s}{t[2]:>8s}{t[3]:>8s}')

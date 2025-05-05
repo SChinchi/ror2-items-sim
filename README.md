@@ -109,6 +109,8 @@ for threshold, p, times in compute_horde_chance(SceneName.AD, 3, 2, False):
     pass
 ```
 
+A helper function that already prints the above result in a nice format is `print_horde_chance`.
+
 
 ## Data
 
