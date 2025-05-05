@@ -4,7 +4,7 @@ import warnings
 import numpy as np
 
 from constants import Expansion, ALL_EXPANSIONS, IT_STAGES
-from data.objects.dccs import DirectorCardCategorySelection
+from data.objects.dccs import DirectorCardCategorySelection, DCCSBlender
 from data_loader import scenes, voidseed, simulacrum
 
 
@@ -256,8 +256,8 @@ class SceneDirector(BaseSceneDirector):
         stage_info = self._scene_data.stage_info
         if not stage_info or not stage_info.interactables:
             return categories
-        interactables = stage_info.interactables.generate_weighted_selection(
-            self._expansions, stages_cleared
+        interactables = DCCSBlender.get_blended_dccs(
+            stage_info.interactables.categories[0], self._expansions, stages_cleared
         )
         index = 0
         for category in interactables.categories:

@@ -24,6 +24,7 @@ class DirectorCardCategorySelection:
         else:
             self.name = ''
             self.categories = []
+        self.expansions_in_effect = set()
     
     def __repr__(self):
         return self.name
@@ -94,7 +95,7 @@ class DirectorCardCategorySelection:
         Notes
         -----
         An implementation of
-        `RoR2.DirectorCardCategorySelection.GenerateDirectorCardWeightedSelection()`.
+        `RoR2.DirectorCardCategorySelection.GenerateDirectorCardWeightedSelection`.
         """
         weighted_selections = []
         for category in self.categories:
@@ -130,6 +131,29 @@ class DirectorCardCategorySelection:
         An implementation of `RoR2.DirectorCardCategorySelection.IsAvailable`.
         """
         return True
+
+    def get_category_index(self, name):
+        """
+        Find a category index by its name.
+
+        Parameters
+        ----------
+        name : str
+            The name of the category.
+
+        Returns
+        -------
+        int
+
+        Notes
+        -----
+        An implementation of
+        `RoR2.DirectorCardCategorySelection.FindCategoryIndexByName`.
+        """
+        for i, category in enumerate(self.categories):
+            if category.name == name:
+                return i
+        return -1
 
 
 class FamilyDirectorCardCategorySelection(DirectorCardCategorySelection):
@@ -293,3 +317,168 @@ class DccsPool:
                     values.append(pool_entry.dccs)
                     weights.append(pool_entry.weight * modifier)
         return random.choices(values, weights)[0]
+
+
+class DCCSBlender:
+    CONTENT_MIX_LIMIT = 2
+
+    def get_blended_dccs(dccs_category, expansions, stages_cleared):
+        """
+        Blend all available DCCS from the selected category in the DccsPool.
+
+        Parameters
+        ----------
+        dccs_category : DccsCategory
+            The selected DCCS category for the current pool.
+        expansions
+            The expansions enabled, which affects which selections are available.
+        stages_cleared : int
+            The number of stages cleared, which also affects which selections
+            are available.
+
+        Returns
+        -------
+        blended_dccs : DirectorCardCategorySelection
+
+        Notes
+        -----
+        An implementation of `RoR2.DCCSBlender.GetBlendedDccs`.
+        """
+        weighted_selection = DCCSBlender.generate_weighted_category_selections(
+            dccs_category, expansions, stages_cleared
+        )
+        selected_dccs = []
+        used_expansions = set()
+        content_num = 0
+        while content_num < DCCSBlender.CONTENT_MIX_LIMIT and weighted_selection:
+            index = random.choices(range(len(weighted_selection)),
+                                   weights=[w for _, w in weighted_selection])[0]
+            pool_entry = weighted_selection[index][0]
+            selected_dccs.append((pool_entry.dccs, pool_entry.weight))
+            if pool_entry is ConditionalPoolEntry:
+                used_expansions.union(pool_entry.required_dlc)
+            weighted_selection.pop(index)
+            content_num += 1
+        for pool_entry in dccs_category.always_included:
+            if pool_entry.dccs.is_available(stages_cleared):
+                selected_dccs.append((pool_entry.dccs, pool_entry.weight))
+        blended_dccs = DirectorCardCategorySelection()
+        DCCSBlender.ensure_all_categories_exist(blended_dccs, selected_dccs)
+        DCCSBlender.merge_categories(blended_dccs, selected_dccs)
+        blended_dccs.expansions_in_effect = used_expansions
+        return blended_dccs
+
+    def generate_weighted_category_selections(dccs_category, expansions, stages_cleared):
+        """
+        Collect all available DCCS from the selected category.
+
+        Parameters
+        ----------
+        dccs_category: DccsCategory
+            The selected category.
+        expansions : set
+            The currently enabled expansions, which affects which spawn cards
+            will be available.
+        stages_cleared : int
+            The number of cleared stages, which affects which spawn cards
+            will be available.
+
+        Returns
+        -------
+        weighted_selections : list
+            The list of available pool entries.
+
+        Notes
+        -----
+        An implementation of `RoR2.DCCSBlender.GenerateWeightedCategorySelections`.
+        """
+        weighted_selection = []
+        has_selected_any_conditional_entries = False
+        for pool_entry in dccs_category.included_conditions_met:
+            if (pool_entry.dccs.is_available(stages_cleared) and
+                DCCSBlender.are_conditions_met(pool_entry, expansions)):
+                is_entry_available = True
+                if len(expansions) > 0:
+                    for dlc in pool_entry.required_dlc:
+                        if dlc not in expansions:
+                            is_entry_available = False
+                            break;
+                if is_entry_available:
+                    has_selected_any_conditional_entries = True
+                    weighted_selection.append((pool_entry, pool_entry.weight))
+        if not has_selected_any_conditional_entries:
+            for pool_entry in dccs_category.included_conditions_not_met:
+                if pool_entry.is_available(stages_cleared):
+                    weighted_selection.append((pool_entry, pool_entry.weight))
+        return weighted_selection
+
+    def are_conditions_met(pool_entry, expansions):
+        """
+        Whether this DCCS meets the requirements.
+
+        Parameters
+        ----------
+        pool_entry: PoolEntry
+            The selected pool entry.
+        expansions : set
+            The currently enabled expansions.
+
+        Returns
+        -------
+        bool
+
+        An implementation of `RoR2.DCCSBlender.AreConditionsMet`.
+        """
+        return all(dlc in expansions for dlc in pool_entry.required_dlc)
+
+    def ensure_all_categories_exist(blended_dccs, selected_dccs):
+        """
+        Add any missing categories a selected DCCS to the blended one.
+
+        Parameters
+        ----------
+        blended_dccs : DirectorCardCategorySelection
+            The blended DCCS. Note that this is modified in place.
+        selected_dccs : DirectorCardCategorySelection
+            DCCS chosen to be blended in.
+
+        Returns
+        -------
+        None
+
+        An implementation of `RoR2.DCCSBlender.EnsureAllCategoriesExist`.
+        """
+        for dccs in selected_dccs:
+            for category in dccs[0].categories:
+                if blended_dccs.get_category_index(category.name) == -1:
+                    blended_dccs.add_category(category.name, 1, [])
+
+    def merge_categories(blended_dccs, selected_dccs):
+        """
+        Blend all selected DCCS.
+
+        Parameters
+        ----------
+        blended_dccs : DirectorCardCategorySelection
+            The blended DCCS. Note that this is modified in place.
+        selected_dccs : list
+            All selected DCCS chosen to be blended.
+
+        Returns
+        -------
+        None
+
+        An implementation of `RoR2.DCCSBlender.MergeCategories`.
+        """
+        for i, category in enumerate(blended_dccs.categories):
+            name = category.name
+            num = 0
+            weight = 0
+            for dccs in selected_dccs:
+                index = dccs[0].get_category_index(name)
+                dccs_category = dccs[0].categories[index]
+                if index != -1:
+                    num += 1
+                    weight += dccs_category.weight
+                    blended_dccs.categories[i].cards.extend(dccs_category.cards)
+            blended_dccs.categories[i].weight = weight / num if num > 0 else weight
