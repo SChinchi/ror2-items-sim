@@ -4,16 +4,23 @@ class SceneName:
     TP = 'golemplains'          # Titanic Plains
     SF = 'snowyforest'          # Siphoned Forest
     VF2 = 'lakes'               # Verdant Falls (#2 due to Void Fields conflict)
+    VF3 = 'lakesnight'          # Viscous Falls
+    SA2 = 'village'             # Shattered Abodes
+    DI = 'villagenight'         # Disturbed Impact
     AA = 'goolake'              # Abandoned Aqueduct
     WA = 'foggyswamp'           # Wetland Aspects
     AS = 'ancientloft'          # Aphelian Sanctuary
+    RA = 'lemuriantemple'       # Reformed Altar
     RD = 'frozenwall'           # Rallypoint Delta
     SA = 'wispgraveyard'        # Scorched Acres
     SP = 'sulfurpools'          # Sulfur Pools
+    TC = 'habitat'              # Treeborn Colony
+    GD = 'habitatfall'          # Golden Dieback
     AD = 'dampcavesimple'       # Abyssal Depths
     SC = 'shipgraveyard'        # Siren's Call
     SG = 'rootjungle'           # Sundered Grove
     SM = 'skymeadow'            # Sky Meadow
+    HH = 'helminthroost'        # Helminth Hatchery
     CO = 'moon2'                # Commencement
     # Void
     VF = 'arena'                # Void Fields
@@ -25,6 +32,7 @@ class SceneName:
     BT = 'bazaar'               # Bazaar Between Time
     MF = 'mysteryspace'         # A Moment, Fractured
     MW = 'limbo'                # A Moment, Whole
+    PM = 'meridian'             # Prime Meridian
     # Simulacrum
     STP = 'itgolemplains'       # Simulacrum, Titanic Plains
     SAS = 'itancientloft'       # Simulacrum, Aphelian Sanctuary
