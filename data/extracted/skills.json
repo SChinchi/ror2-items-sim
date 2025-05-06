@@ -3478,7 +3478,7 @@
   "ChefSearBoosted,-7877848929223148244": {
     "class": "SkillDef",
     "name": "Sear",
-    "recharge": 5.0,
+    "recharge": 6.0,
     "stock": 1,
     "recharge_stock": 1,
     "required_stock": 1,
@@ -3492,7 +3492,7 @@
   "ChefRolyPoly,-4998910475197288944": {
     "class": "SkillDef",
     "name": "RolyPoly",
-    "recharge": 9.0,
+    "recharge": 8.0,
     "stock": 1,
     "recharge_stock": 1,
     "required_stock": 1,
@@ -3505,8 +3505,8 @@
   },
   "YesChef,-4571354543370196086": {
     "class": "SkillDef",
-    "name": "Yes Chef",
-    "recharge": 15.0,
+    "name": "YesChef",
+    "recharge": 10.0,
     "stock": 1,
     "recharge_stock": 1,
     "required_stock": 1,
@@ -3534,7 +3534,7 @@
   "ChefRolyPolyBoosted,-3449378250073605317": {
     "class": "SkillDef",
     "name": "RolyPoly",
-    "recharge": 9.0,
+    "recharge": 8.0,
     "stock": 1,
     "recharge_stock": 1,
     "required_stock": 1,
@@ -3548,8 +3548,22 @@
   "ChefSear,-2638502826924366132": {
     "class": "SkillDef",
     "name": "Sear",
-    "recharge": 5.0,
+    "recharge": 6.0,
     "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": false,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
+  "ChefIceBox,71918586533558317": {
+    "class": "SkillDef",
+    "name": "Ice Box",
+    "recharge": 5.0,
+    "stock": 2,
     "recharge_stock": 1,
     "required_stock": 1,
     "stock_consume": 1,
@@ -3562,11 +3576,11 @@
   "ChefDiceBoosted,2079804827044191405": {
     "class": "SkillDef",
     "name": "Dice",
-    "recharge": 1.75,
-    "stock": 3,
-    "recharge_stock": 1,
+    "recharge": 0.0,
+    "stock": 1,
+    "recharge_stock": 0,
     "required_stock": 1,
-    "stock_consume": 1,
+    "stock_consume": 0,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
     "is_combat_skill": true,
@@ -3576,21 +3590,35 @@
   "ChefDice,4089872862998971150": {
     "class": "SkillDef",
     "name": "Dice",
-    "recharge": 1.75,
+    "recharge": 0.0,
     "stock": 3,
-    "recharge_stock": 1,
+    "recharge_stock": 0,
     "required_stock": 1,
-    "stock_consume": 1,
+    "stock_consume": 0,
     "cancel_sprinting": true,
     "cancel_from_sprinting": false,
     "is_combat_skill": true,
     "scales_with_attack_speed": true,
     "attack_speed_scaling": 1.35
   },
+  "ChefIceBoxBoosted,4199207630505568002": {
+    "class": "SkillDef",
+    "name": "Ice Box",
+    "recharge": 5.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": false,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
   "ChefGlaze,6682420025553631911": {
     "class": "SkillDef",
     "name": "Glaze",
-    "recharge": 10.0,
+    "recharge": 12.0,
     "stock": 1,
     "recharge_stock": 1,
     "required_stock": 1,
@@ -3857,6 +3885,20 @@
     "scales_with_attack_speed": false,
     "attack_speed_scaling": 1.0
   },
+  "FalseSonMeridiansWill,-1771131750640128279": {
+    "class": "SkillDef",
+    "name": "MeridiansWill",
+    "recharge": 10.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": false,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
   "FalseSonBodyLaser,263243222230549801": {
     "class": "SteppedSkillDef",
     "name": "LaserFather",
@@ -3901,11 +3943,11 @@
     "scales_with_attack_speed": false,
     "attack_speed_scaling": 1.0
   },
-  "FalseSonBodyLunarSpikes,5100249837422559539": {
+  "FalseSonLunarStake,4975405913214249034": {
     "class": "SkillDef",
-    "name": "LunarSpikes",
-    "recharge": 4.0,
-    "stock": 4,
+    "name": "LunarStake",
+    "recharge": 11.0,
+    "stock": 2,
     "recharge_stock": 1,
     "required_stock": 1,
     "stock_consume": 1,
@@ -3915,10 +3957,24 @@
     "scales_with_attack_speed": false,
     "attack_speed_scaling": 1.0
   },
+  "FalseSonBodyLunarSpikes,5100249837422559539": {
+    "class": "SkillDef",
+    "name": "LunarSpikes",
+    "recharge": 4.0,
+    "stock": 4,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": false,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
   "FalseSonBodyLaserBurst,5517776409752784798": {
     "class": "SteppedSkillDef",
     "name": "LaserBurst",
-    "recharge": 7.0,
+    "recharge": 8.0,
     "stock": 1,
     "recharge_stock": 1,
     "required_stock": 1,
@@ -4073,6 +4129,20 @@
     "scales_with_attack_speed": false,
     "attack_speed_scaling": 1.0
   },
+  "SeekerBodyReprieve,-2782308932085858554": {
+    "class": "SkillDef",
+    "name": "Reprieve",
+    "recharge": 9.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
+  },
   "SeekerBodySoulSearch,-1811339146726773948": {
     "class": "SteppedSkillDef",
     "name": "SoulSearch",
@@ -4088,6 +4158,20 @@
     "attack_speed_scaling": 1.0,
     "step_count": 3,
     "step_grace_duration": 0.10000000149011612
+  },
+  "SeekerPalmBlast,-764597527613956991": {
+    "class": "SkillDef",
+    "name": "PalmBlast",
+    "recharge": 12.0,
+    "stock": 1,
+    "recharge_stock": 1,
+    "required_stock": 1,
+    "stock_consume": 1,
+    "cancel_sprinting": true,
+    "cancel_from_sprinting": false,
+    "is_combat_skill": true,
+    "scales_with_attack_speed": false,
+    "attack_speed_scaling": 1.0
   },
   "SeekerBodyInnerStrength,1243325764176775382": {
     "class": "SkillDef",
@@ -4106,7 +4190,7 @@
   "SeekerBodySojourn,4306773817605077841": {
     "class": "SkillDef",
     "name": "Sojourn",
-    "recharge": 9.0,
+    "recharge": 8.0,
     "stock": 1,
     "recharge_stock": 1,
     "required_stock": 1,
@@ -4133,10 +4217,10 @@
     "step_count": 3,
     "step_grace_duration": 0.10000000149011612
   },
-  "SeekerBodyMeditate2,6506669007356937300": {
+  "SeekerBodyMeditate,6506669007356937300": {
     "class": "SkillDef",
     "name": "Meditate",
-    "recharge": 15.0,
+    "recharge": 14.0,
     "stock": 1,
     "recharge_stock": 1,
     "required_stock": 1,
@@ -4151,20 +4235,6 @@
     "class": "SkillDef",
     "name": "UnseenHand",
     "recharge": 7.0,
-    "stock": 1,
-    "recharge_stock": 1,
-    "required_stock": 1,
-    "stock_consume": 1,
-    "cancel_sprinting": true,
-    "cancel_from_sprinting": false,
-    "is_combat_skill": true,
-    "scales_with_attack_speed": false,
-    "attack_speed_scaling": 1.0
-  },
-  "SeekerBodyMeditate,9088926454586075887": {
-    "class": "SkillDef",
-    "name": "Meditate",
-    "recharge": 1.0,
     "stock": 1,
     "recharge_stock": 1,
     "required_stock": 1,

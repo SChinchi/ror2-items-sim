@@ -144,7 +144,7 @@
     ]
   },
   "arena": {
-    "scene_type": 1,
+    "scene_type": 4,
     "stage_order": 96,
     "required_dlc": null,
     "destinations": [],
@@ -3539,15 +3539,7 @@
                 "weight": 1.0
               }
             ],
-            "included_conditions_met": [
-              {
-                "dccs": "dccsMeridianMonsters_DLC1",
-                "weight": 1.0,
-                "required_dlc": [
-                  "DLC1"
-                ]
-              }
-            ],
+            "included_conditions_met": [],
             "included_conditions_not_met": []
           },
           {

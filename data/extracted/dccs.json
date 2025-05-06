@@ -7585,19 +7585,7 @@
   "dccsMeridianMonsters_DLC1": {
     "class": "DirectorCardCategorySelection",
     "name": "dccsMeridianMonsters_DLC1",
-    "categories": [
-      {
-        "name": "Minibosses",
-        "weight": 3.0,
-        "cards": [
-          {
-            "spawn_card": "cscGupBody",
-            "weight": 1,
-            "min_stages_cleared": 0
-          }
-        ]
-      }
-    ]
+    "categories": []
   },
   "dccsMixEnemy": {
     "class": "DirectorCardCategorySelection",
@@ -10057,12 +10045,12 @@
         "weight": 14.0,
         "cards": [
           {
-            "spawn_card": "cscDrone1",
+            "spawn_card": "iscBrokenDrone1",
             "weight": 1,
             "min_stages_cleared": 0
           },
           {
-            "spawn_card": "cscDrone2",
+            "spawn_card": "iscBrokenDrone2",
             "weight": 1,
             "min_stages_cleared": 0
           }

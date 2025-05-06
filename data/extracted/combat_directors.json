@@ -316,8 +316,8 @@
       0.5
     ],
     "reroll_spawn_interval": [
-      0.1,
-      0.1
+      2.333333,
+      4.333333
     ],
     "money_wave_intervals": [],
     "team": 2,
@@ -328,7 +328,7 @@
     "reset_monster_card": true,
     "max_spawns": 6,
     "elite_bias": 0.1,
-    "ignore_team_size": false,
+    "ignore_team_size": true,
     "_monster_cards": null
   },
   "halcyonite": {
@@ -352,7 +352,7 @@
     "reset_monster_card": true,
     "max_spawns": 6,
     "elite_bias": 2.5,
-    "ignore_team_size": false,
+    "ignore_team_size": true,
     "_monster_cards": "dccsShrineHalcyoniteActivationMonsterWave"
   }
 }

@@ -1024,8 +1024,8 @@
   },
   "ChefBody": {
     "_name": "ChefBody",
-    "name": "Chef",
-    "flags": 16,
+    "name": "CHEF",
+    "flags": 18,
     "health": [
       110.0,
       33.0
@@ -1857,13 +1857,13 @@
     ],
     "regen": [
       1.0,
-      0.5
+      0.2
     ],
     "damage": [
-      13.0,
-      2.0
+      12.0,
+      2.4
     ],
-    "attack_speed": 0.8,
+    "attack_speed": 1.0,
     "crit": 1.0,
     "luck": 0,
     "speed": 7.0,
@@ -1871,7 +1871,7 @@
     "acceleration": 50.0,
     "jump": 1,
     "jump_power": 15.0,
-    "armor": 20.0,
+    "armor": 0.0,
     "is_champion": false,
     "pain_threshold": 5.0,
     "can_be_hit_stunned": false,
@@ -1909,7 +1909,7 @@
     "pain_threshold": 5.0,
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
-    "can_be_frozen": false,
+    "can_be_frozen": true,
     "item_drop": null,
     "expansion": null
   },
@@ -1942,7 +1942,7 @@
     "pain_threshold": 5.0,
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
-    "can_be_frozen": false,
+    "can_be_frozen": true,
     "item_drop": null,
     "expansion": null
   },
@@ -1975,7 +1975,7 @@
     "pain_threshold": 5.0,
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
-    "can_be_frozen": false,
+    "can_be_frozen": true,
     "item_drop": null,
     "expansion": null
   },
@@ -2600,6 +2600,39 @@
     "armor": 0.0,
     "is_champion": false,
     "pain_threshold": 5.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
+  "ITBrotherBody": {
+    "_name": "ITBrotherBody",
+    "name": "Mithrix",
+    "flags": 2048,
+    "health": [
+      1000.0,
+      300.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      16.0,
+      3.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 15.0,
+    "sprint_multiplier": 2.6,
+    "acceleration": 45.0,
+    "jump": 1,
+    "jump_power": 25.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "pain_threshold": 0.15,
     "can_be_hit_stunned": false,
     "can_be_stunned": false,
     "can_be_frozen": true,

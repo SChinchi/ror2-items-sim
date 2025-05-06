@@ -2,7 +2,7 @@
 
 Simulate item generation for any stage and collect statistics for the spawned interactables, or simulate a run session to see how many and what items are encountered.
 
-_Targetting game version 1.3.6, but some Seekers of the Storm features have not been implemented fully._
+_Targetting game version 1.3.8, but some Seekers of the Storm features have not been implemented fully, mainly the new item effects for the run simulator._
 
 ## How to use
 

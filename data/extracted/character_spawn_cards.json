@@ -286,8 +286,8 @@
         1
       ]
     ],
-    "body": "BrotherBody",
-    "master": "BrotherMaster"
+    "body": "ITBrotherBody",
+    "master": "ITBrotherMaster"
   },
   "cscChild": {
     "class": "CharacterSpawnCard",
