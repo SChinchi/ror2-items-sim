@@ -1,6 +1,29 @@
 from ._utils import round_value
 
 
+_BODY_FLAGS = {
+    'None': 0,
+    'IgnoreFallDamage': 1,
+    'Mechanical': 2,
+    'Masterless': 4,
+    'ImmuneToGoo': 8,
+    'ImmuneToExecutes': 16,
+    'SprintAnyDirection': 32,
+    'ResistantToAOE': 64,
+    'HasBackstabPassive': 128,
+    'HasBackstabImmunity': 256,
+    'OverheatImmune': 512,
+    'Void': 1024,
+    'ImmuneToVoidDeath': 2048,
+    'IgnoreItemUpdates': 4096,
+    'Devotion': 8192,
+    'IgnoreKnockback': 16384,
+    'ImmuneToLava': 32768,
+    'UsesAmbientLevel': 65536,
+    'IgnoresRecordDeathEvent': 131072,
+}
+
+
 class CharacterBody:
     SCRIPT = 4977618279312766071
 
@@ -17,7 +40,8 @@ class CharacterBody:
             # To be filled out once all file ids have been collected
             '_name': asset['m_GameObject']['m_PathID'],
             'name': token_names.get(asset['baseNameToken'], ''),
-            'flags': asset['bodyFlags'],
+            'flags': [name for name, value in _BODY_FLAGS.items()
+                      if asset['bodyFlags'] & value != 0],
             'health': (round_value(asset['baseMaxHealth']),
                        round_value(asset['levelMaxHealth'])),
             'regen': (round_value(asset['baseRegen']),
@@ -26,7 +50,6 @@ class CharacterBody:
                        round_value(asset['levelDamage'])),
             'attack_speed': round_value(asset['baseAttackSpeed']),
             'crit': asset['baseCrit'],
-            'luck': asset['wasLucky'],
             'speed': round_value(asset['baseMoveSpeed']),
             'sprint_multiplier': round_value(asset['sprintingSpeedMultiplier']),
             'acceleration': round_value(asset['baseAcceleration']),

@@ -2,7 +2,7 @@
   "AcidLarvaBody": {
     "_name": "AcidLarvaBody",
     "name": "Larva",
-    "flags": 0,
+    "flags": [],
     "health": [
       45.0,
       14.0
@@ -17,7 +17,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 1.5,
     "sprint_multiplier": 8.0,
     "acceleration": 80.0,
@@ -35,7 +34,9 @@
   "AffixEarthHealerBody": {
     "_name": "AffixEarthHealerBody",
     "name": "Healing Core",
-    "flags": 256,
+    "flags": [
+      "HasBackstabImmunity"
+    ],
     "health": [
       50.0,
       0.0
@@ -50,7 +51,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -68,7 +68,9 @@
   "AltarSkeletonBody": {
     "_name": "AltarSkeletonBody",
     "name": "",
-    "flags": 4,
+    "flags": [
+      "Masterless"
+    ],
     "health": [
       120.0,
       36.0
@@ -83,7 +85,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -101,7 +102,7 @@
   "AncientWispBody": {
     "_name": "AncientWispBody",
     "name": "",
-    "flags": 0,
+    "flags": [],
     "health": [
       1650.0,
       495.0
@@ -116,7 +117,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 28.0,
@@ -134,7 +134,7 @@
   "ArchWispBody": {
     "_name": "ArchWispBody",
     "name": "",
-    "flags": 0,
+    "flags": [],
     "health": [
       1500.0,
       450.0
@@ -149,7 +149,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 14.0,
@@ -167,7 +166,7 @@
   "ArtifactShellBody": {
     "_name": "ArtifactShellBody",
     "name": "Artifact Reliquary",
-    "flags": 0,
+    "flags": [],
     "health": [
       100000.0,
       30000.0
@@ -182,7 +181,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -200,7 +198,7 @@
   "Assassin2Body": {
     "_name": "Assassin2Body",
     "name": "Assassin",
-    "flags": 0,
+    "flags": [],
     "health": [
       120.0,
       36.0
@@ -215,7 +213,6 @@
     ],
     "attack_speed": 1.2,
     "crit": 0.0,
-    "luck": 0,
     "speed": 12.0,
     "sprint_multiplier": 1.45,
     "acceleration": 80.0,
@@ -233,7 +230,7 @@
   "AssassinBody": {
     "_name": "AssassinBody",
     "name": "Engineer",
-    "flags": 0,
+    "flags": [],
     "health": [
       140.0,
       42.0
@@ -248,7 +245,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 9.0,
     "sprint_multiplier": 1.45,
     "acceleration": 80.0,
@@ -266,7 +262,10 @@
   "BHFallMushroomDrips": {
     "_name": "BHFallMushroomDrips",
     "name": "Blessed Culture",
-    "flags": 260,
+    "flags": [
+      "Masterless",
+      "HasBackstabImmunity"
+    ],
     "health": [
       1.0,
       0.0
@@ -281,7 +280,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -299,7 +297,10 @@
   "BHFruitBig": {
     "_name": "BHFruitBig",
     "name": "Golden Fruit",
-    "flags": 260,
+    "flags": [
+      "Masterless",
+      "HasBackstabImmunity"
+    ],
     "health": [
       1.0,
       0.0
@@ -314,7 +315,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -332,7 +332,10 @@
   "BHFruitSmall": {
     "_name": "BHFruitSmall",
     "name": "",
-    "flags": 260,
+    "flags": [
+      "Masterless",
+      "HasBackstabImmunity"
+    ],
     "health": [
       0.0,
       0.0
@@ -347,7 +350,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -365,7 +367,9 @@
   "BackupDroneBody": {
     "_name": "BackupDroneBody",
     "name": "Strike Drone",
-    "flags": 2,
+    "flags": [
+      "Mechanical"
+    ],
     "health": [
       225.0,
       68.0
@@ -380,7 +384,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 17.0,
     "sprint_multiplier": 1.45,
     "acceleration": 17.0,
@@ -398,7 +401,9 @@
   "BackupDroneOldBody": {
     "_name": "BackupDroneOldBody",
     "name": "",
-    "flags": 2,
+    "flags": [
+      "Mechanical"
+    ],
     "health": [
       150.0,
       45.0
@@ -413,7 +418,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 17.0,
     "sprint_multiplier": 1.45,
     "acceleration": 17.0,
@@ -431,7 +435,10 @@
   "Bandit2Body": {
     "_name": "Bandit2Body",
     "name": "Bandit",
-    "flags": 144,
+    "flags": [
+      "ImmuneToExecutes",
+      "HasBackstabPassive"
+    ],
     "health": [
       110.0,
       33.0
@@ -446,7 +453,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 80.0,
@@ -464,7 +470,9 @@
   "BanditBody": {
     "_name": "BanditBody",
     "name": "Bandit",
-    "flags": 16,
+    "flags": [
+      "ImmuneToExecutes"
+    ],
     "health": [
       100.0,
       30.0
@@ -479,7 +487,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 80.0,
@@ -497,7 +504,9 @@
   "BeadProjectileTrackingBomb": {
     "_name": "BeadProjectileTrackingBomb",
     "name": "",
-    "flags": 4,
+    "flags": [
+      "Masterless"
+    ],
     "health": [
       350.0,
       105.0
@@ -512,7 +521,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -530,7 +538,7 @@
   "BeetleBody": {
     "_name": "BeetleBody",
     "name": "Beetle",
-    "flags": 0,
+    "flags": [],
     "health": [
       80.0,
       24.0
@@ -545,7 +553,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 6.0,
     "sprint_multiplier": 1.45,
     "acceleration": 40.0,
@@ -563,7 +570,7 @@
   "BeetleCrystalBody": {
     "_name": "BeetleCrystalBody",
     "name": "",
-    "flags": 0,
+    "flags": [],
     "health": [
       10.0,
       3.0
@@ -578,7 +585,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 8.0,
     "sprint_multiplier": 1.45,
     "acceleration": 40.0,
@@ -596,7 +602,7 @@
   "BeetleGuardAllyBody": {
     "_name": "BeetleGuardAllyBody",
     "name": "Beetle Guard",
-    "flags": 0,
+    "flags": [],
     "health": [
       480.0,
       144.0
@@ -611,7 +617,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 17.0,
     "sprint_multiplier": 1.45,
     "acceleration": 60.0,
@@ -629,7 +634,7 @@
   "BeetleGuardBody": {
     "_name": "BeetleGuardBody",
     "name": "Beetle Guard",
-    "flags": 0,
+    "flags": [],
     "health": [
       480.0,
       144.0
@@ -644,7 +649,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 17.0,
     "sprint_multiplier": 1.45,
     "acceleration": 60.0,
@@ -662,7 +666,7 @@
   "BeetleGuardCrystalBody": {
     "_name": "BeetleGuardCrystalBody",
     "name": "Beetle Guard",
-    "flags": 0,
+    "flags": [],
     "health": [
       480.0,
       144.0
@@ -677,7 +681,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 17.0,
     "sprint_multiplier": 1.45,
     "acceleration": 60.0,
@@ -695,7 +698,9 @@
   "BeetleQueen2Body": {
     "_name": "BeetleQueen2Body",
     "name": "Beetle Queen",
-    "flags": 1,
+    "flags": [
+      "IgnoreFallDamage"
+    ],
     "health": [
       2100.0,
       630.0
@@ -710,7 +715,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 6.0,
     "sprint_multiplier": 1.45,
     "acceleration": 80.0,
@@ -728,7 +732,9 @@
   "BeetleWard": {
     "_name": "BeetleWard",
     "name": "",
-    "flags": 4,
+    "flags": [
+      "Masterless"
+    ],
     "health": [
       80.0,
       24.0
@@ -743,7 +749,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -761,7 +766,7 @@
   "BellBody": {
     "_name": "BellBody",
     "name": "Brass Contraption",
-    "flags": 0,
+    "flags": [],
     "health": [
       300.0,
       90.0
@@ -776,7 +781,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 10.0,
     "sprint_multiplier": 1.45,
     "acceleration": 12.0,
@@ -794,7 +798,9 @@
   "BirdsharkBody": {
     "_name": "BirdsharkBody",
     "name": "",
-    "flags": 4,
+    "flags": [
+      "Masterless"
+    ],
     "health": [
       1.0,
       0.0
@@ -809,7 +815,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -827,7 +832,7 @@
   "BisonBody": {
     "_name": "BisonBody",
     "name": "Bighorn Bison",
-    "flags": 0,
+    "flags": [],
     "health": [
       480.0,
       144.0
@@ -842,7 +847,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 3.0,
     "sprint_multiplier": 1.45,
     "acceleration": 60.0,
@@ -860,7 +864,7 @@
   "BomberBody": {
     "_name": "BomberBody",
     "name": "Bomber",
-    "flags": 0,
+    "flags": [],
     "health": [
       220.0,
       66.0
@@ -875,7 +879,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 80.0,
@@ -893,7 +896,10 @@
   "BrotherBody": {
     "_name": "BrotherBody",
     "name": "Mithrix",
-    "flags": 133120,
+    "flags": [
+      "ImmuneToVoidDeath",
+      "IgnoresRecordDeathEvent"
+    ],
     "health": [
       1000.0,
       300.0
@@ -908,7 +914,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 15.0,
     "sprint_multiplier": 2.6,
     "acceleration": 45.0,
@@ -926,7 +931,10 @@
   "BrotherGlassBody": {
     "_name": "BrotherGlassBody",
     "name": "Mithrix",
-    "flags": 133120,
+    "flags": [
+      "ImmuneToVoidDeath",
+      "IgnoresRecordDeathEvent"
+    ],
     "health": [
       2000.0,
       600.0
@@ -941,7 +949,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 15.0,
     "sprint_multiplier": 2.6,
     "acceleration": 45.0,
@@ -959,7 +966,9 @@
   "BrotherHauntBody": {
     "_name": "BrotherHauntBody",
     "name": "",
-    "flags": 64,
+    "flags": [
+      "ResistantToAOE"
+    ],
     "health": [
       200.0,
       60.0
@@ -974,7 +983,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -992,7 +1000,9 @@
   "BrotherHurtBody": {
     "_name": "BrotherHurtBody",
     "name": "Mithrix",
-    "flags": 2048,
+    "flags": [
+      "ImmuneToVoidDeath"
+    ],
     "health": [
       1400.0,
       420.0
@@ -1007,7 +1017,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 4.0,
     "sprint_multiplier": 2.6,
     "acceleration": 45.0,
@@ -1025,7 +1034,9 @@
   "CaptainBody": {
     "_name": "CaptainBody",
     "name": "Captain",
-    "flags": 16,
+    "flags": [
+      "ImmuneToExecutes"
+    ],
     "health": [
       110.0,
       33.0
@@ -1040,7 +1051,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 80.0,
@@ -1058,7 +1068,10 @@
   "ChefBody": {
     "_name": "ChefBody",
     "name": "CHEF",
-    "flags": 18,
+    "flags": [
+      "Mechanical",
+      "ImmuneToExecutes"
+    ],
     "health": [
       110.0,
       33.0
@@ -1073,7 +1086,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 80.0,
@@ -1091,7 +1103,7 @@
   "ChildBody": {
     "_name": "ChildBody",
     "name": "Child",
-    "flags": 0,
+    "flags": [],
     "health": [
       150.0,
       45.0
@@ -1106,7 +1118,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 8.5,
     "sprint_multiplier": 1.45,
     "acceleration": 40.0,
@@ -1124,7 +1135,7 @@
   "ClayBody": {
     "_name": "ClayBody",
     "name": "Clay Man",
-    "flags": 0,
+    "flags": [],
     "health": [
       110.0,
       33.0
@@ -1139,7 +1150,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 9.0,
     "sprint_multiplier": 1.45,
     "acceleration": 80.0,
@@ -1157,7 +1167,10 @@
   "ClayBossBody": {
     "_name": "ClayBossBody",
     "name": "Clay Dunestrider",
-    "flags": 9,
+    "flags": [
+      "IgnoreFallDamage",
+      "ImmuneToGoo"
+    ],
     "health": [
       2100.0,
       630.0
@@ -1172,7 +1185,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 9.0,
     "sprint_multiplier": 1.45,
     "acceleration": 20.0,
@@ -1190,7 +1202,9 @@
   "ClayBruiserBody": {
     "_name": "ClayBruiserBody",
     "name": "Clay Templar",
-    "flags": 8,
+    "flags": [
+      "ImmuneToGoo"
+    ],
     "health": [
       700.0,
       210.0
@@ -1205,7 +1219,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 6.0,
     "sprint_multiplier": 1.45,
     "acceleration": 45.0,
@@ -1223,7 +1236,9 @@
   "ClayGrenadierBody": {
     "_name": "ClayGrenadierBody",
     "name": "Clay Apothecary",
-    "flags": 8,
+    "flags": [
+      "ImmuneToGoo"
+    ],
     "health": [
       1050.0,
       315.0
@@ -1238,7 +1253,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 5.0,
     "sprint_multiplier": 1.45,
     "acceleration": 45.0,
@@ -1256,7 +1270,9 @@
   "CommandoBody": {
     "_name": "CommandoBody",
     "name": "Commando",
-    "flags": 16,
+    "flags": [
+      "ImmuneToExecutes"
+    ],
     "health": [
       110.0,
       33.0
@@ -1271,7 +1287,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 80.0,
@@ -1289,7 +1304,9 @@
   "CommandoPerformanceTestBody": {
     "_name": "CommandoPerformanceTestBody",
     "name": "Commando",
-    "flags": 16,
+    "flags": [
+      "ImmuneToExecutes"
+    ],
     "health": [
       110.0,
       33.0
@@ -1304,7 +1321,6 @@
     ],
     "attack_speed": 10.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 80.0,
@@ -1322,7 +1338,7 @@
   "CorruptionSpike": {
     "_name": "CorruptionSpike",
     "name": "Lunar Rain",
-    "flags": 0,
+    "flags": [],
     "health": [
       300.0,
       0.0
@@ -1337,7 +1353,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -1355,7 +1370,9 @@
   "CrocoBody": {
     "_name": "CrocoBody",
     "name": "Acrid",
-    "flags": 16,
+    "flags": [
+      "ImmuneToExecutes"
+    ],
     "health": [
       160.0,
       48.0
@@ -1370,7 +1387,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 80.0,
@@ -1388,7 +1404,7 @@
   "DeathProjectile": {
     "_name": "DeathProjectile",
     "name": "",
-    "flags": 0,
+    "flags": [],
     "health": [
       0.0,
       0.0
@@ -1403,7 +1419,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -1421,7 +1436,7 @@
   "DevotedLemurianBody": {
     "_name": "DevotedLemurianBody",
     "name": "Lemurian",
-    "flags": 0,
+    "flags": [],
     "health": [
       80.0,
       24.0
@@ -1436,7 +1451,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 30.0,
@@ -1454,7 +1468,7 @@
   "DevotedLemurianBruiserBody": {
     "_name": "DevotedLemurianBruiserBody",
     "name": "Elder Lemurian",
-    "flags": 0,
+    "flags": [],
     "health": [
       900.0,
       270.0
@@ -1469,7 +1483,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 13.0,
     "sprint_multiplier": 1.45,
     "acceleration": 45.0,
@@ -1487,7 +1500,9 @@
   "Drone1Body": {
     "_name": "Drone1Body",
     "name": "Gunner Drone",
-    "flags": 2,
+    "flags": [
+      "Mechanical"
+    ],
     "health": [
       150.0,
       45.0
@@ -1502,7 +1517,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 17.0,
     "sprint_multiplier": 1.45,
     "acceleration": 17.0,
@@ -1520,7 +1534,9 @@
   "Drone2Body": {
     "_name": "Drone2Body",
     "name": "Healing Drone",
-    "flags": 2,
+    "flags": [
+      "Mechanical"
+    ],
     "health": [
       150.0,
       45.0
@@ -1535,7 +1551,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 17.0,
     "sprint_multiplier": 1.45,
     "acceleration": 17.0,
@@ -1553,7 +1568,9 @@
   "DroneCommanderBody": {
     "_name": "DroneCommanderBody",
     "name": "Col. Droneman",
-    "flags": 2,
+    "flags": [
+      "Mechanical"
+    ],
     "health": [
       180.0,
       54.0
@@ -1568,7 +1585,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 20.0,
     "sprint_multiplier": 1.75,
     "acceleration": 20.0,
@@ -1586,7 +1602,12 @@
   "ElectricWormBody": {
     "_name": "ElectricWormBody",
     "name": "Overloading Worm",
-    "flags": 49161,
+    "flags": [
+      "IgnoreFallDamage",
+      "ImmuneToGoo",
+      "IgnoreKnockback",
+      "ImmuneToLava"
+    ],
     "health": [
       12000.0,
       3600.0
@@ -1601,7 +1622,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 20.0,
     "sprint_multiplier": 1.45,
     "acceleration": 160.0,
@@ -1619,7 +1639,9 @@
   "EmergencyDroneBody": {
     "_name": "EmergencyDroneBody",
     "name": "Emergency Drone",
-    "flags": 2,
+    "flags": [
+      "Mechanical"
+    ],
     "health": [
       300.0,
       90.0
@@ -1634,7 +1656,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 17.0,
     "sprint_multiplier": 1.45,
     "acceleration": 17.0,
@@ -1652,7 +1673,7 @@
   "EnforcerBody": {
     "_name": "EnforcerBody",
     "name": "Enforcer",
-    "flags": 0,
+    "flags": [],
     "health": [
       60.0,
       18.0
@@ -1667,7 +1688,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 7.5,
     "sprint_multiplier": 1.45,
     "acceleration": 80.0,
@@ -1685,7 +1705,9 @@
   "EngiBeamTurretBody": {
     "_name": "EngiBeamTurretBody",
     "name": "Engineer Turret",
-    "flags": 2,
+    "flags": [
+      "Mechanical"
+    ],
     "health": [
       110.0,
       33.0
@@ -1700,7 +1722,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -1718,7 +1739,9 @@
   "EngiBody": {
     "_name": "EngiBody",
     "name": "Engineer",
-    "flags": 16,
+    "flags": [
+      "ImmuneToExecutes"
+    ],
     "health": [
       130.0,
       39.0
@@ -1733,7 +1756,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 80.0,
@@ -1751,7 +1773,9 @@
   "EngiTurretBody": {
     "_name": "EngiTurretBody",
     "name": "Engineer Turret",
-    "flags": 2,
+    "flags": [
+      "Mechanical"
+    ],
     "health": [
       130.0,
       39.0
@@ -1766,7 +1790,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -1784,7 +1807,9 @@
   "EngiWalkerTurretBody": {
     "_name": "EngiWalkerTurretBody",
     "name": "Engineer Turret",
-    "flags": 2,
+    "flags": [
+      "Mechanical"
+    ],
     "health": [
       130.0,
       39.0
@@ -1799,7 +1824,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 60.0,
@@ -1817,7 +1841,9 @@
   "EquipmentDroneBody": {
     "_name": "EquipmentDroneBody",
     "name": "Equipment Drone",
-    "flags": 2,
+    "flags": [
+      "Mechanical"
+    ],
     "health": [
       250.0,
       75.0
@@ -1832,7 +1858,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 10.0,
     "sprint_multiplier": 1.45,
     "acceleration": 17.0,
@@ -1850,7 +1875,10 @@
   "ExplosivePotDestructibleBody": {
     "_name": "ExplosivePotDestructibleBody",
     "name": "Pot",
-    "flags": 260,
+    "flags": [
+      "Masterless",
+      "HasBackstabImmunity"
+    ],
     "health": [
       1.0,
       0.0
@@ -1865,7 +1893,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -1883,7 +1910,9 @@
   "FalseSonBody": {
     "_name": "FalseSonBody",
     "name": "False Son",
-    "flags": 16,
+    "flags": [
+      "ImmuneToExecutes"
+    ],
     "health": [
       180.0,
       54.0
@@ -1898,7 +1927,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 50.0,
@@ -1916,7 +1944,11 @@
   "FalseSonBossBody": {
     "_name": "FalseSonBossBody",
     "name": "False Son",
-    "flags": 133121,
+    "flags": [
+      "IgnoreFallDamage",
+      "ImmuneToVoidDeath",
+      "IgnoresRecordDeathEvent"
+    ],
     "health": [
       1000.0,
       300.0
@@ -1931,7 +1963,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 14.0,
     "sprint_multiplier": 1.85,
     "acceleration": 35.0,
@@ -1949,7 +1980,10 @@
   "FalseSonBossBodyBrokenLunarShard": {
     "_name": "FalseSonBossBodyBrokenLunarShard",
     "name": "False Son",
-    "flags": 2049,
+    "flags": [
+      "IgnoreFallDamage",
+      "ImmuneToVoidDeath"
+    ],
     "health": [
       1200.0,
       360.0
@@ -1964,7 +1998,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 10.0,
     "sprint_multiplier": 1.85,
     "acceleration": 35.0,
@@ -1982,7 +2015,11 @@
   "FalseSonBossBodyLunarShard": {
     "_name": "FalseSonBossBodyLunarShard",
     "name": "False Son",
-    "flags": 133121,
+    "flags": [
+      "IgnoreFallDamage",
+      "ImmuneToVoidDeath",
+      "IgnoresRecordDeathEvent"
+    ],
     "health": [
       1100.0,
       330.0
@@ -1997,7 +2034,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 12.0,
     "sprint_multiplier": 1.85,
     "acceleration": 35.0,
@@ -2015,7 +2051,9 @@
   "FlameDroneBody": {
     "_name": "FlameDroneBody",
     "name": "Incinerator Drone",
-    "flags": 2,
+    "flags": [
+      "Mechanical"
+    ],
     "health": [
       300.0,
       90.0
@@ -2030,7 +2068,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 10.0,
     "sprint_multiplier": 1.45,
     "acceleration": 17.0,
@@ -2048,7 +2085,9 @@
   "FlyingVerminBody": {
     "_name": "FlyingVerminBody",
     "name": "Blind Pest",
-    "flags": 1,
+    "flags": [
+      "IgnoreFallDamage"
+    ],
     "health": [
       80.0,
       24.0
@@ -2063,7 +2102,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 6.0,
     "sprint_multiplier": 1.45,
     "acceleration": 80.0,
@@ -2081,7 +2119,10 @@
   "FusionCellDestructibleBody": {
     "_name": "FusionCellDestructibleBody",
     "name": "Fusion Cell",
-    "flags": 260,
+    "flags": [
+      "Masterless",
+      "HasBackstabImmunity"
+    ],
     "health": [
       1.0,
       0.0
@@ -2096,7 +2137,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -2114,7 +2154,7 @@
   "GeepBody": {
     "_name": "GeepBody",
     "name": "Geep",
-    "flags": 0,
+    "flags": [],
     "health": [
       500.0,
       150.0
@@ -2129,7 +2169,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 8.0,
     "sprint_multiplier": 1.45,
     "acceleration": 20.0,
@@ -2147,7 +2186,7 @@
   "GipBody": {
     "_name": "GipBody",
     "name": "Gip",
-    "flags": 0,
+    "flags": [],
     "health": [
       250.0,
       75.0
@@ -2162,7 +2201,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 5.0,
     "sprint_multiplier": 1.45,
     "acceleration": 20.0,
@@ -2180,7 +2218,7 @@
   "GolemBody": {
     "_name": "GolemBody",
     "name": "Stone Golem",
-    "flags": 0,
+    "flags": [],
     "health": [
       480.0,
       144.0
@@ -2195,7 +2233,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 6.6,
     "sprint_multiplier": 1.45,
     "acceleration": 40.0,
@@ -2213,7 +2250,7 @@
   "GolemBodyInvincible": {
     "_name": "GolemBodyInvincible",
     "name": "Stone Golem",
-    "flags": 0,
+    "flags": [],
     "health": [
       4799999770624.0,
       1439999983616.0
@@ -2228,7 +2265,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 6.6,
     "sprint_multiplier": 1.45,
     "acceleration": 40.0,
@@ -2246,7 +2282,9 @@
   "GrandParentBody": {
     "_name": "GrandParentBody",
     "name": "Grandparent",
-    "flags": 512,
+    "flags": [
+      "OverheatImmune"
+    ],
     "health": [
       3625.0,
       1088.0
@@ -2261,7 +2299,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -2279,7 +2316,7 @@
   "GravekeeperBody": {
     "_name": "GravekeeperBody",
     "name": "Grovetender",
-    "flags": 0,
+    "flags": [],
     "health": [
       2800.0,
       840.0
@@ -2294,7 +2331,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 10.0,
     "sprint_multiplier": 1.45,
     "acceleration": 25.0,
@@ -2312,7 +2348,9 @@
   "GravekeeperTrackingFireball": {
     "_name": "GravekeeperTrackingFireball",
     "name": "",
-    "flags": 4,
+    "flags": [
+      "Masterless"
+    ],
     "health": [
       20.0,
       6.0
@@ -2327,7 +2365,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 20.0,
     "sprint_multiplier": 1.45,
     "acceleration": 20.0,
@@ -2345,7 +2382,7 @@
   "GreaterWispBody": {
     "_name": "GreaterWispBody",
     "name": "Greater Wisp",
-    "flags": 0,
+    "flags": [],
     "health": [
       750.0,
       225.0
@@ -2360,7 +2397,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 14.0,
@@ -2378,7 +2414,7 @@
   "GupBody": {
     "_name": "GupBody",
     "name": "Gup",
-    "flags": 0,
+    "flags": [],
     "health": [
       1000.0,
       300.0
@@ -2393,7 +2429,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 12.0,
     "sprint_multiplier": 1.45,
     "acceleration": 20.0,
@@ -2411,7 +2446,7 @@
   "HANDBody": {
     "_name": "HANDBody",
     "name": "HAN-D",
-    "flags": 0,
+    "flags": [],
     "health": [
       300.0,
       90.0
@@ -2426,7 +2461,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 8.5,
     "sprint_multiplier": 1.45,
     "acceleration": 25.0,
@@ -2444,7 +2478,9 @@
   "HalcyoniteBody": {
     "_name": "HalcyoniteBody",
     "name": "Halcyonite",
-    "flags": 2048,
+    "flags": [
+      "ImmuneToVoidDeath"
+    ],
     "health": [
       900.0,
       270.0
@@ -2459,7 +2495,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 6.6,
     "sprint_multiplier": 1.45,
     "acceleration": 40.0,
@@ -2477,7 +2512,7 @@
   "HaulerBody": {
     "_name": "HaulerBody",
     "name": "Potmobile",
-    "flags": 0,
+    "flags": [],
     "health": [
       600.0,
       180.0
@@ -2492,7 +2527,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 15.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -2510,7 +2544,9 @@
   "HereticBody": {
     "_name": "HereticBody",
     "name": "Heretic",
-    "flags": 16,
+    "flags": [
+      "ImmuneToExecutes"
+    ],
     "health": [
       440.0,
       132.0
@@ -2525,7 +2561,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 8.0,
     "sprint_multiplier": 1.45,
     "acceleration": 80.0,
@@ -2543,7 +2578,7 @@
   "HermitCrabBody": {
     "_name": "HermitCrabBody",
     "name": "Hermit Crab",
-    "flags": 0,
+    "flags": [],
     "health": [
       100.0,
       30.0
@@ -2558,7 +2593,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 10.0,
     "sprint_multiplier": 1.45,
     "acceleration": 30.0,
@@ -2576,7 +2610,9 @@
   "HuntressBody": {
     "_name": "HuntressBody",
     "name": "Huntress",
-    "flags": 16,
+    "flags": [
+      "ImmuneToExecutes"
+    ],
     "health": [
       90.0,
       27.0
@@ -2591,7 +2627,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 80.0,
@@ -2609,7 +2644,10 @@
   "ITBrotherBody": {
     "_name": "ITBrotherBody",
     "name": "Mithrix",
-    "flags": 133120,
+    "flags": [
+      "ImmuneToVoidDeath",
+      "IgnoresRecordDeathEvent"
+    ],
     "health": [
       1000.0,
       300.0
@@ -2624,7 +2662,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 15.0,
     "sprint_multiplier": 2.6,
     "acceleration": 45.0,
@@ -2642,7 +2679,7 @@
   "ImpBody": {
     "_name": "ImpBody",
     "name": "Imp",
-    "flags": 0,
+    "flags": [],
     "health": [
       140.0,
       42.0
@@ -2657,7 +2694,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 10.0,
     "sprint_multiplier": 1.45,
     "acceleration": 30.0,
@@ -2675,7 +2711,9 @@
   "ImpBossBody": {
     "_name": "ImpBossBody",
     "name": "Imp Overlord",
-    "flags": 1,
+    "flags": [
+      "IgnoreFallDamage"
+    ],
     "health": [
       2800.0,
       840.0
@@ -2690,7 +2728,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 13.0,
     "sprint_multiplier": 1.45,
     "acceleration": 15.0,
@@ -2708,7 +2745,7 @@
   "JellyfishBody": {
     "_name": "JellyfishBody",
     "name": "Jellyfish",
-    "flags": 0,
+    "flags": [],
     "health": [
       60.0,
       18.0
@@ -2723,7 +2760,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 10.0,
     "sprint_multiplier": 1.45,
     "acceleration": 20.0,
@@ -2741,7 +2777,9 @@
   "LemurianBody": {
     "_name": "LemurianBody",
     "name": "Lemurian",
-    "flags": 8192,
+    "flags": [
+      "Devotion"
+    ],
     "health": [
       80.0,
       24.0
@@ -2756,7 +2794,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 30.0,
@@ -2774,7 +2811,9 @@
   "LemurianBruiserBody": {
     "_name": "LemurianBruiserBody",
     "name": "Elder Lemurian",
-    "flags": 8192,
+    "flags": [
+      "Devotion"
+    ],
     "health": [
       900.0,
       270.0
@@ -2789,7 +2828,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 13.0,
     "sprint_multiplier": 1.45,
     "acceleration": 45.0,
@@ -2807,7 +2845,10 @@
   "LoaderBody": {
     "_name": "LoaderBody",
     "name": "Loader",
-    "flags": 17,
+    "flags": [
+      "IgnoreFallDamage",
+      "ImmuneToExecutes"
+    ],
     "health": [
       160.0,
       48.0
@@ -2822,7 +2863,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 80.0,
@@ -2840,7 +2880,7 @@
   "LunarExploderBody": {
     "_name": "LunarExploderBody",
     "name": "Lunar Chimera",
-    "flags": 0,
+    "flags": [],
     "health": [
       180.0,
       54.0
@@ -2855,7 +2895,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 8.0,
     "sprint_multiplier": 1.45,
     "acceleration": 80.0,
@@ -2873,7 +2912,7 @@
   "LunarGolemBody": {
     "_name": "LunarGolemBody",
     "name": "Lunar Chimera",
-    "flags": 0,
+    "flags": [],
     "health": [
       1615.0,
       485.0
@@ -2888,7 +2927,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 8.0,
     "sprint_multiplier": 3.0,
     "acceleration": 30.0,
@@ -2906,7 +2944,11 @@
   "LunarRain": {
     "_name": "LunarRain",
     "name": "Lunar Rain Shard",
-    "flags": 261,
+    "flags": [
+      "IgnoreFallDamage",
+      "Masterless",
+      "HasBackstabImmunity"
+    ],
     "health": [
       75.0,
       22.0
@@ -2921,7 +2963,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -2939,7 +2980,10 @@
   "LunarRain_DistanceTest": {
     "_name": "LunarRain_DistanceTest",
     "name": "Lunar Rain Shard",
-    "flags": 260,
+    "flags": [
+      "Masterless",
+      "HasBackstabImmunity"
+    ],
     "health": [
       10.0,
       3.0
@@ -2954,7 +2998,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -2972,7 +3015,7 @@
   "LunarWispBody": {
     "_name": "LunarWispBody",
     "name": "Lunar Chimera",
-    "flags": 0,
+    "flags": [],
     "health": [
       850.0,
       255.0
@@ -2987,7 +3030,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 18.0,
     "sprint_multiplier": 1.45,
     "acceleration": 14.0,
@@ -3005,7 +3047,9 @@
   "LunarWispTrackingBomb": {
     "_name": "LunarWispTrackingBomb",
     "name": "",
-    "flags": 4,
+    "flags": [
+      "Masterless"
+    ],
     "health": [
       75.0,
       22.0
@@ -3020,7 +3064,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -3038,7 +3081,9 @@
   "MageBody": {
     "_name": "MageBody",
     "name": "Artificer",
-    "flags": 16,
+    "flags": [
+      "ImmuneToExecutes"
+    ],
     "health": [
       110.0,
       33.0
@@ -3053,7 +3098,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 40.0,
@@ -3071,7 +3115,12 @@
   "MagmaWormBody": {
     "_name": "MagmaWormBody",
     "name": "Magma Worm",
-    "flags": 49161,
+    "flags": [
+      "IgnoreFallDamage",
+      "ImmuneToGoo",
+      "IgnoreKnockback",
+      "ImmuneToLava"
+    ],
     "health": [
       2400.0,
       720.0
@@ -3086,7 +3135,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 20.0,
     "sprint_multiplier": 1.45,
     "acceleration": 160.0,
@@ -3104,7 +3152,9 @@
   "MajorConstructBody": {
     "_name": "MajorConstructBody",
     "name": "",
-    "flags": 2,
+    "flags": [
+      "Mechanical"
+    ],
     "health": [
       2100.0,
       630.0
@@ -3119,7 +3169,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 0.0,
     "acceleration": 0.0,
@@ -3137,7 +3186,7 @@
   "MegaConstructBody": {
     "_name": "MegaConstructBody",
     "name": "Xi Construct",
-    "flags": 0,
+    "flags": [],
     "health": [
       2800.0,
       840.0
@@ -3152,7 +3201,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 60.0,
     "sprint_multiplier": 1.45,
     "acceleration": 100.0,
@@ -3170,7 +3218,9 @@
   "MegaDroneBody": {
     "_name": "MegaDroneBody",
     "name": "TC-280 Prototype",
-    "flags": 2,
+    "flags": [
+      "Mechanical"
+    ],
     "health": [
       900.0,
       270.0
@@ -3185,7 +3235,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 20.0,
     "sprint_multiplier": 1.45,
     "acceleration": 20.0,
@@ -3203,7 +3252,9 @@
   "MercBody": {
     "_name": "MercBody",
     "name": "Mercenary",
-    "flags": 16,
+    "flags": [
+      "ImmuneToExecutes"
+    ],
     "health": [
       110.0,
       33.0
@@ -3218,7 +3269,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 80.0,
@@ -3236,7 +3286,10 @@
   "MiniGeodeBody": {
     "_name": "MiniGeodeBody",
     "name": "",
-    "flags": 260,
+    "flags": [
+      "Masterless",
+      "HasBackstabImmunity"
+    ],
     "health": [
       1.0,
       0.0
@@ -3251,7 +3304,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -3269,7 +3321,7 @@
   "MiniMushroomBody": {
     "_name": "MiniMushroomBody",
     "name": "Mini Mushrum",
-    "flags": 0,
+    "flags": [],
     "health": [
       290.0,
       87.0
@@ -3284,7 +3336,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 2.0,
     "sprint_multiplier": 2.5,
     "acceleration": 30.0,
@@ -3302,7 +3353,11 @@
   "MiniVoidRaidCrabBodyBase": {
     "_name": "MiniVoidRaidCrabBodyBase",
     "name": "\u300cVoidling\u300d",
-    "flags": 3073,
+    "flags": [
+      "IgnoreFallDamage",
+      "Void",
+      "ImmuneToVoidDeath"
+    ],
     "health": [
       2000.0,
       600.0
@@ -3317,7 +3372,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 45.0,
     "sprint_multiplier": 1.45,
     "acceleration": 20.0,
@@ -3335,7 +3389,11 @@
   "MiniVoidRaidCrabBodyPhase1": {
     "_name": "MiniVoidRaidCrabBodyPhase1",
     "name": "\u300cVoidling\u300d",
-    "flags": 3073,
+    "flags": [
+      "IgnoreFallDamage",
+      "Void",
+      "ImmuneToVoidDeath"
+    ],
     "health": [
       2000.0,
       600.0
@@ -3350,7 +3408,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 45.0,
     "sprint_multiplier": 1.45,
     "acceleration": 20.0,
@@ -3368,7 +3425,11 @@
   "MiniVoidRaidCrabBodyPhase2": {
     "_name": "MiniVoidRaidCrabBodyPhase2",
     "name": "\u300cVoidling\u300d",
-    "flags": 3073,
+    "flags": [
+      "IgnoreFallDamage",
+      "Void",
+      "ImmuneToVoidDeath"
+    ],
     "health": [
       2000.0,
       600.0
@@ -3383,7 +3444,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 45.0,
     "sprint_multiplier": 1.45,
     "acceleration": 20.0,
@@ -3401,7 +3461,11 @@
   "MiniVoidRaidCrabBodyPhase3": {
     "_name": "MiniVoidRaidCrabBodyPhase3",
     "name": "\u300cVoidling\u300d",
-    "flags": 3073,
+    "flags": [
+      "IgnoreFallDamage",
+      "Void",
+      "ImmuneToVoidDeath"
+    ],
     "health": [
       2000.0,
       600.0
@@ -3416,7 +3480,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 45.0,
     "sprint_multiplier": 1.45,
     "acceleration": 20.0,
@@ -3434,7 +3497,7 @@
   "MinorConstructAttachableBody": {
     "_name": "MinorConstructAttachableBody",
     "name": "Alpha Construct",
-    "flags": 0,
+    "flags": [],
     "health": [
       100.0,
       30.0
@@ -3449,7 +3512,6 @@
     ],
     "attack_speed": 1.5,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -3467,7 +3529,7 @@
   "MinorConstructBody": {
     "_name": "MinorConstructBody",
     "name": "Alpha Construct",
-    "flags": 0,
+    "flags": [],
     "health": [
       100.0,
       30.0
@@ -3482,7 +3544,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -3500,7 +3561,7 @@
   "MinorConstructOnKillBody": {
     "_name": "MinorConstructOnKillBody",
     "name": "Alpha Construct",
-    "flags": 0,
+    "flags": [],
     "health": [
       100.0,
       30.0
@@ -3515,7 +3576,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -3533,7 +3593,9 @@
   "MissileDroneBody": {
     "_name": "MissileDroneBody",
     "name": "Missile Drone",
-    "flags": 2,
+    "flags": [
+      "Mechanical"
+    ],
     "health": [
       225.0,
       68.0
@@ -3548,7 +3610,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 17.0,
     "sprint_multiplier": 1.45,
     "acceleration": 17.0,
@@ -3566,7 +3627,9 @@
   "NullifierAllyBody": {
     "_name": "NullifierAllyBody",
     "name": "Void Reaver",
-    "flags": 1024,
+    "flags": [
+      "Void"
+    ],
     "health": [
       1900.0,
       570.0
@@ -3581,7 +3644,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 6.0,
     "sprint_multiplier": 1.45,
     "acceleration": 40.0,
@@ -3599,7 +3661,9 @@
   "NullifierBody": {
     "_name": "NullifierBody",
     "name": "Void Reaver",
-    "flags": 1024,
+    "flags": [
+      "Void"
+    ],
     "health": [
       1900.0,
       570.0
@@ -3614,7 +3678,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 6.0,
     "sprint_multiplier": 1.45,
     "acceleration": 40.0,
@@ -3632,7 +3695,10 @@
   "PMHead": {
     "_name": "PMHead",
     "name": "",
-    "flags": 65540,
+    "flags": [
+      "Masterless",
+      "UsesAmbientLevel"
+    ],
     "health": [
       0.0,
       0.0
@@ -3647,7 +3713,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 0.0,
     "acceleration": 0.0,
@@ -3665,7 +3730,7 @@
   "PaladinBody": {
     "_name": "PaladinBody",
     "name": "Commando",
-    "flags": 0,
+    "flags": [],
     "health": [
       150.0,
       45.0
@@ -3680,7 +3745,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 800.0,
@@ -3698,7 +3762,9 @@
   "ParentBody": {
     "_name": "ParentBody",
     "name": "Parent",
-    "flags": 512,
+    "flags": [
+      "OverheatImmune"
+    ],
     "health": [
       585.0,
       176.0
@@ -3713,7 +3779,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 11.0,
     "sprint_multiplier": 1.45,
     "acceleration": 40.0,
@@ -3731,7 +3796,7 @@
   "ParentPodBody": {
     "_name": "ParentPodBody",
     "name": "Ancestral Pod",
-    "flags": 0,
+    "flags": [],
     "health": [
       200.0,
       60.0
@@ -3746,7 +3811,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -3764,7 +3828,7 @@
   "Pot2Body": {
     "_name": "Pot2Body",
     "name": "Pot",
-    "flags": 0,
+    "flags": [],
     "health": [
       0.0,
       0.0
@@ -3779,7 +3843,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -3797,7 +3860,7 @@
   "PotMobile2Body": {
     "_name": "PotMobile2Body",
     "name": "Potmobile",
-    "flags": 0,
+    "flags": [],
     "health": [
       600.0,
       180.0
@@ -3812,7 +3875,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 15.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -3830,7 +3892,7 @@
   "PotMobileBody": {
     "_name": "PotMobileBody",
     "name": "Potmobile",
-    "flags": 0,
+    "flags": [],
     "health": [
       600.0,
       180.0
@@ -3845,7 +3907,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 15.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -3863,7 +3924,9 @@
   "RailgunnerBody": {
     "_name": "RailgunnerBody",
     "name": "Railgunner",
-    "flags": 16,
+    "flags": [
+      "ImmuneToExecutes"
+    ],
     "health": [
       110.0,
       33.0
@@ -3878,7 +3941,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 80.0,
@@ -3896,7 +3958,9 @@
   "RoboBallBossBody": {
     "_name": "RoboBallBossBody",
     "name": "Solus Control Unit",
-    "flags": 2,
+    "flags": [
+      "Mechanical"
+    ],
     "health": [
       2500.0,
       750.0
@@ -3911,7 +3975,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 14.0,
@@ -3929,7 +3992,10 @@
   "RoboBallGreenBuddyBody": {
     "_name": "RoboBallGreenBuddyBody",
     "name": "Delighted Probe",
-    "flags": 66,
+    "flags": [
+      "Mechanical",
+      "ResistantToAOE"
+    ],
     "health": [
       880.0,
       264.0
@@ -3944,7 +4010,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 10.0,
     "sprint_multiplier": 1.45,
     "acceleration": 14.0,
@@ -3962,7 +4027,9 @@
   "RoboBallMiniBody": {
     "_name": "RoboBallMiniBody",
     "name": "Solus Probe",
-    "flags": 2,
+    "flags": [
+      "Mechanical"
+    ],
     "health": [
       220.0,
       66.0
@@ -3977,7 +4044,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 10.0,
     "sprint_multiplier": 1.45,
     "acceleration": 14.0,
@@ -3995,7 +4061,10 @@
   "RoboBallRedBuddyBody": {
     "_name": "RoboBallRedBuddyBody",
     "name": "Quiet Probe",
-    "flags": 66,
+    "flags": [
+      "Mechanical",
+      "ResistantToAOE"
+    ],
     "health": [
       880.0,
       264.0
@@ -4010,7 +4079,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 10.0,
     "sprint_multiplier": 1.45,
     "acceleration": 14.0,
@@ -4028,7 +4096,11 @@
   "SMInfiniteTowerMaulingRockLarge": {
     "_name": "SMInfiniteTowerMaulingRockLarge",
     "name": "Flying Rock",
-    "flags": 4356,
+    "flags": [
+      "Masterless",
+      "HasBackstabImmunity",
+      "IgnoreItemUpdates"
+    ],
     "health": [
       40.0,
       12.0
@@ -4043,7 +4115,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -4061,7 +4132,11 @@
   "SMInfiniteTowerMaulingRockMedium": {
     "_name": "SMInfiniteTowerMaulingRockMedium",
     "name": "Flying Rock",
-    "flags": 4356,
+    "flags": [
+      "Masterless",
+      "HasBackstabImmunity",
+      "IgnoreItemUpdates"
+    ],
     "health": [
       20.0,
       6.0
@@ -4076,7 +4151,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -4094,7 +4168,11 @@
   "SMInfiniteTowerMaulingRockSmall": {
     "_name": "SMInfiniteTowerMaulingRockSmall",
     "name": "Flying Rock",
-    "flags": 4356,
+    "flags": [
+      "Masterless",
+      "HasBackstabImmunity",
+      "IgnoreItemUpdates"
+    ],
     "health": [
       10.0,
       3.0
@@ -4109,7 +4187,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -4127,7 +4204,11 @@
   "SMMaulingRockLarge": {
     "_name": "SMMaulingRockLarge",
     "name": "Flying Rock",
-    "flags": 4356,
+    "flags": [
+      "Masterless",
+      "HasBackstabImmunity",
+      "IgnoreItemUpdates"
+    ],
     "health": [
       40.0,
       12.0
@@ -4142,7 +4223,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -4160,7 +4240,11 @@
   "SMMaulingRockMedium": {
     "_name": "SMMaulingRockMedium",
     "name": "Flying Rock",
-    "flags": 4356,
+    "flags": [
+      "Masterless",
+      "HasBackstabImmunity",
+      "IgnoreItemUpdates"
+    ],
     "health": [
       20.0,
       6.0
@@ -4175,7 +4259,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -4193,7 +4276,11 @@
   "SMMaulingRockSmall": {
     "_name": "SMMaulingRockSmall",
     "name": "Flying Rock",
-    "flags": 4356,
+    "flags": [
+      "Masterless",
+      "HasBackstabImmunity",
+      "IgnoreItemUpdates"
+    ],
     "health": [
       10.0,
       3.0
@@ -4208,7 +4295,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -4226,7 +4312,7 @@
   "ScavBody": {
     "_name": "ScavBody",
     "name": "Scavenger",
-    "flags": 0,
+    "flags": [],
     "health": [
       3800.0,
       1140.0
@@ -4241,7 +4327,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 3.0,
     "sprint_multiplier": 1.45,
     "acceleration": 10.0,
@@ -4259,7 +4344,7 @@
   "ScavLunar1Body": {
     "_name": "ScavLunar1Body",
     "name": "Kipkip the Gentle",
-    "flags": 0,
+    "flags": [],
     "health": [
       3230.0,
       969.0
@@ -4274,7 +4359,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 3.0,
     "sprint_multiplier": 1.45,
     "acceleration": 10.0,
@@ -4292,7 +4376,7 @@
   "ScavLunar2Body": {
     "_name": "ScavLunar2Body",
     "name": "Wipwip the Wild",
-    "flags": 0,
+    "flags": [],
     "health": [
       4845.0,
       1454.0
@@ -4307,7 +4391,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 3.0,
     "sprint_multiplier": 1.45,
     "acceleration": 10.0,
@@ -4325,7 +4408,7 @@
   "ScavLunar3Body": {
     "_name": "ScavLunar3Body",
     "name": "Twiptwip the Devotee",
-    "flags": 0,
+    "flags": [],
     "health": [
       3230.0,
       969.0
@@ -4340,7 +4423,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 3.0,
     "sprint_multiplier": 1.45,
     "acceleration": 10.0,
@@ -4358,7 +4440,7 @@
   "ScavLunar4Body": {
     "_name": "ScavLunar4Body",
     "name": "Guragura the Lucky",
-    "flags": 0,
+    "flags": [],
     "health": [
       3230.0,
       969.0
@@ -4373,7 +4455,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 3.0,
     "sprint_multiplier": 1.45,
     "acceleration": 10.0,
@@ -4391,7 +4472,9 @@
   "ScavSackProjectile": {
     "_name": "ScavSackProjectile",
     "name": "",
-    "flags": 4,
+    "flags": [
+      "Masterless"
+    ],
     "health": [
       5.0,
       2.0
@@ -4406,7 +4489,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -4424,7 +4506,12 @@
   "ScorchlingBody": {
     "_name": "ScorchlingBody",
     "name": "Scorch Worm",
-    "flags": 49185,
+    "flags": [
+      "IgnoreFallDamage",
+      "SprintAnyDirection",
+      "IgnoreKnockback",
+      "ImmuneToLava"
+    ],
     "health": [
       425.0,
       128.0
@@ -4439,7 +4526,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 16.0,
     "sprint_multiplier": 1.45,
     "acceleration": 35.0,
@@ -4457,7 +4543,9 @@
   "ScorchlingBombProjectile": {
     "_name": "ScorchlingBombProjectile",
     "name": "",
-    "flags": 4,
+    "flags": [
+      "Masterless"
+    ],
     "health": [
       30.0,
       9.0
@@ -4472,7 +4560,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -4490,7 +4577,9 @@
   "SeekerBody": {
     "_name": "SeekerBody",
     "name": "Seeker",
-    "flags": 16,
+    "flags": [
+      "ImmuneToExecutes"
+    ],
     "health": [
       115.0,
       34.0
@@ -4505,7 +4594,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 80.0,
@@ -4523,7 +4611,9 @@
   "ShopkeeperBody": {
     "_name": "ShopkeeperBody",
     "name": "Newt",
-    "flags": 1,
+    "flags": [
+      "IgnoreFallDamage"
+    ],
     "health": [
       500000.0,
       150000.0
@@ -4538,7 +4628,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 80.0,
@@ -4556,7 +4645,7 @@
   "SniperBody": {
     "_name": "SniperBody",
     "name": "",
-    "flags": 0,
+    "flags": [],
     "health": [
       110.0,
       33.0
@@ -4571,7 +4660,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 80.0,
@@ -4589,7 +4677,7 @@
   "SpectatorBody": {
     "_name": "SpectatorBody",
     "name": "",
-    "flags": 0,
+    "flags": [],
     "health": [
       150.0,
       45.0
@@ -4604,7 +4692,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 30.0,
     "sprint_multiplier": 1.45,
     "acceleration": 60.0,
@@ -4622,7 +4709,7 @@
   "SpectatorSlowBody": {
     "_name": "SpectatorSlowBody",
     "name": "",
-    "flags": 0,
+    "flags": [],
     "health": [
       150.0,
       45.0
@@ -4637,7 +4724,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 5.0,
     "sprint_multiplier": 1.45,
     "acceleration": 60.0,
@@ -4655,7 +4741,7 @@
   "SquidTurretBody": {
     "_name": "SquidTurretBody",
     "name": "Squid Turret",
-    "flags": 0,
+    "flags": [],
     "health": [
       300.0,
       90.0
@@ -4670,7 +4756,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -4688,7 +4773,10 @@
   "SulfurPodBody": {
     "_name": "SulfurPodBody",
     "name": "Sulfur Pod",
-    "flags": 260,
+    "flags": [
+      "Masterless",
+      "HasBackstabImmunity"
+    ],
     "health": [
       1.0,
       0.0
@@ -4703,7 +4791,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -4721,7 +4808,9 @@
   "SuperRoboBallBossBody": {
     "_name": "SuperRoboBallBossBody",
     "name": "Alloy Worship Unit",
-    "flags": 2,
+    "flags": [
+      "Mechanical"
+    ],
     "health": [
       2500.0,
       750.0
@@ -4736,7 +4825,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 14.0,
@@ -4754,7 +4842,12 @@
   "TimeCrystalBody": {
     "_name": "TimeCrystalBody",
     "name": "Time Crystal",
-    "flags": 269,
+    "flags": [
+      "IgnoreFallDamage",
+      "Masterless",
+      "ImmuneToGoo",
+      "HasBackstabImmunity"
+    ],
     "health": [
       200.0,
       0.0
@@ -4769,7 +4862,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -4787,7 +4879,9 @@
   "TitanBody": {
     "_name": "TitanBody",
     "name": "Stone Titan",
-    "flags": 1,
+    "flags": [
+      "IgnoreFallDamage"
+    ],
     "health": [
       2100.0,
       630.0
@@ -4802,7 +4896,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 5.0,
     "sprint_multiplier": 1.45,
     "acceleration": 20.0,
@@ -4820,7 +4913,9 @@
   "TitanGoldBody": {
     "_name": "TitanGoldBody",
     "name": "Aurelionite",
-    "flags": 1,
+    "flags": [
+      "IgnoreFallDamage"
+    ],
     "health": [
       2100.0,
       630.0
@@ -4835,7 +4930,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 5.0,
     "sprint_multiplier": 1.45,
     "acceleration": 20.0,
@@ -4853,7 +4947,10 @@
   "ToolbotBody": {
     "_name": "ToolbotBody",
     "name": "MUL-T",
-    "flags": 18,
+    "flags": [
+      "Mechanical",
+      "ImmuneToExecutes"
+    ],
     "health": [
       200.0,
       60.0
@@ -4868,7 +4965,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 30.0,
@@ -4886,7 +4982,10 @@
   "TreebotBody": {
     "_name": "TreebotBody",
     "name": "REX",
-    "flags": 18,
+    "flags": [
+      "Mechanical",
+      "ImmuneToExecutes"
+    ],
     "health": [
       130.0,
       39.0
@@ -4901,7 +5000,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 80.0,
@@ -4919,7 +5017,9 @@
   "Turret1Body": {
     "_name": "Turret1Body",
     "name": "Gunner Turret",
-    "flags": 2,
+    "flags": [
+      "Mechanical"
+    ],
     "health": [
       200.0,
       60.0
@@ -4934,7 +5034,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -4952,7 +5051,7 @@
   "UrchinTurretBody": {
     "_name": "UrchinTurretBody",
     "name": "Malachite Urchin",
-    "flags": 0,
+    "flags": [],
     "health": [
       250.0,
       75.0
@@ -4967,7 +5066,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -4985,7 +5083,7 @@
   "VagrantBody": {
     "_name": "VagrantBody",
     "name": "Wandering Vagrant",
-    "flags": 0,
+    "flags": [],
     "health": [
       2100.0,
       630.0
@@ -5000,7 +5098,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 6.0,
     "sprint_multiplier": 1.45,
     "acceleration": 15.0,
@@ -5018,7 +5115,9 @@
   "VagrantTrackingBomb": {
     "_name": "VagrantTrackingBomb",
     "name": "",
-    "flags": 4,
+    "flags": [
+      "Masterless"
+    ],
     "health": [
       75.0,
       22.0
@@ -5033,7 +5132,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -5051,7 +5149,7 @@
   "VerminBody": {
     "_name": "VerminBody",
     "name": "Blind Vermin",
-    "flags": 0,
+    "flags": [],
     "health": [
       90.0,
       27.0
@@ -5066,7 +5164,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 13.0,
     "sprint_multiplier": 1.45,
     "acceleration": 80.0,
@@ -5084,7 +5181,9 @@
   "VoidBarnacleBody": {
     "_name": "VoidBarnacleBody",
     "name": "Void Barnacle",
-    "flags": 1024,
+    "flags": [
+      "Void"
+    ],
     "health": [
       225.0,
       68.0
@@ -5099,7 +5198,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -5117,7 +5215,9 @@
   "VoidBarnacleNoCastBody": {
     "_name": "VoidBarnacleNoCastBody",
     "name": "Void Barnacle",
-    "flags": 1024,
+    "flags": [
+      "Void"
+    ],
     "health": [
       225.0,
       68.0
@@ -5132,7 +5232,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -5150,7 +5249,10 @@
   "VoidInfestorBody": {
     "_name": "VoidInfestorBody",
     "name": "Void Infestor",
-    "flags": 1025,
+    "flags": [
+      "IgnoreFallDamage",
+      "Void"
+    ],
     "health": [
       45.0,
       14.0
@@ -5165,7 +5267,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 14.0,
     "sprint_multiplier": 1.45,
     "acceleration": 180.0,
@@ -5183,7 +5284,9 @@
   "VoidJailerAllyBody": {
     "_name": "VoidJailerAllyBody",
     "name": "Void Jailer",
-    "flags": 1024,
+    "flags": [
+      "Void"
+    ],
     "health": [
       2200.0,
       660.0
@@ -5198,7 +5301,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 50.0,
@@ -5216,7 +5318,9 @@
   "VoidJailerBody": {
     "_name": "VoidJailerBody",
     "name": "Void Jailer",
-    "flags": 1024,
+    "flags": [
+      "Void"
+    ],
     "health": [
       2200.0,
       660.0
@@ -5231,7 +5335,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 50.0,
@@ -5249,7 +5352,9 @@
   "VoidMegaCrabAllyBody": {
     "_name": "VoidMegaCrabAllyBody",
     "name": "Void Devastator",
-    "flags": 1024,
+    "flags": [
+      "Void"
+    ],
     "health": [
       2800.0,
       840.0
@@ -5264,7 +5369,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 8.0,
     "sprint_multiplier": 4.0,
     "acceleration": 60.0,
@@ -5282,7 +5386,9 @@
   "VoidMegaCrabBody": {
     "_name": "VoidMegaCrabBody",
     "name": "Void Devastator",
-    "flags": 1024,
+    "flags": [
+      "Void"
+    ],
     "health": [
       2800.0,
       840.0
@@ -5297,7 +5403,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 8.0,
     "sprint_multiplier": 4.0,
     "acceleration": 60.0,
@@ -5315,7 +5420,10 @@
   "VoidRaidCrabBody": {
     "_name": "VoidRaidCrabBody",
     "name": "\u300cVoidling\u300d",
-    "flags": 1280,
+    "flags": [
+      "HasBackstabImmunity",
+      "Void"
+    ],
     "health": [
       8000.0,
       2400.0
@@ -5330,7 +5438,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -5348,7 +5455,10 @@
   "VoidRaidCrabJointBody": {
     "_name": "VoidRaidCrabJointBody",
     "name": "\u300cVoidling\u300d",
-    "flags": 1280,
+    "flags": [
+      "HasBackstabImmunity",
+      "Void"
+    ],
     "health": [
       1000.0,
       300.0
@@ -5363,7 +5473,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -5381,7 +5490,10 @@
   "VoidSurvivorBody": {
     "_name": "VoidSurvivorBody",
     "name": "\u300cV??oid Fiend\u300f",
-    "flags": 1040,
+    "flags": [
+      "ImmuneToExecutes",
+      "Void"
+    ],
     "health": [
       110.0,
       33.0
@@ -5396,7 +5508,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 1.0,
-    "luck": 0,
     "speed": 7.0,
     "sprint_multiplier": 1.45,
     "acceleration": 80.0,
@@ -5414,7 +5525,9 @@
   "VultureBody": {
     "_name": "VultureBody",
     "name": "Alloy Vulture",
-    "flags": 1,
+    "flags": [
+      "IgnoreFallDamage"
+    ],
     "health": [
       140.0,
       42.0
@@ -5429,7 +5542,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 3.0,
     "sprint_multiplier": 1.45,
     "acceleration": 80.0,
@@ -5447,7 +5559,10 @@
   "VultureEggBody": {
     "_name": "VultureEggBody",
     "name": "",
-    "flags": 260,
+    "flags": [
+      "Masterless",
+      "HasBackstabImmunity"
+    ],
     "health": [
       1.0,
       0.0
@@ -5462,7 +5577,6 @@
     ],
     "attack_speed": 0.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 0.0,
     "sprint_multiplier": 1.45,
     "acceleration": 0.0,
@@ -5480,7 +5594,7 @@
   "WispBody": {
     "_name": "WispBody",
     "name": "Lesser Wisp",
-    "flags": 0,
+    "flags": [],
     "health": [
       35.0,
       10.0
@@ -5495,7 +5609,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 6.0,
     "sprint_multiplier": 1.45,
     "acceleration": 12.0,
@@ -5513,7 +5626,7 @@
   "WispSoulBody": {
     "_name": "WispSoulBody",
     "name": "Lesser Wisp",
-    "flags": 0,
+    "flags": [],
     "health": [
       35.0,
       10.0
@@ -5528,7 +5641,6 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "luck": 0,
     "speed": 6.0,
     "sprint_multiplier": 1.45,
     "acceleration": 12.0,
