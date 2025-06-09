@@ -263,6 +263,105 @@
     "item_drop": null,
     "expansion": null
   },
+  "BHFallMushroomDrips": {
+    "_name": "BHFallMushroomDrips",
+    "name": "Blessed Culture",
+    "flags": 260,
+    "health": [
+      1.0,
+      0.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "BHFruitBig": {
+    "_name": "BHFruitBig",
+    "name": "Golden Fruit",
+    "flags": 260,
+    "health": [
+      1.0,
+      0.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "BHFruitSmall": {
+    "_name": "BHFruitSmall",
+    "name": "",
+    "flags": 260,
+    "health": [
+      0.0,
+      0.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
   "BackupDroneBody": {
     "_name": "BackupDroneBody",
     "name": "Strike Drone",
@@ -430,39 +529,6 @@
   },
   "BeetleBody": {
     "_name": "BeetleBody",
-    "name": "Beetle",
-    "flags": 0,
-    "health": [
-      80.0,
-      24.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      12.0,
-      2.4
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 6.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 40.0,
-    "jump": 1,
-    "jump_power": 15.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": 0.2,
-    "can_be_hit_stunned": true,
-    "can_be_stunned": true,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": null
-  },
-  "BeetleBody_opt": {
-    "_name": "BeetleBody_opt",
     "name": "Beetle",
     "flags": 0,
     "health": [
@@ -791,39 +857,6 @@
     "item_drop": null,
     "expansion": null
   },
-  "BisonBody_opt": {
-    "_name": "BisonBody_opt",
-    "name": "Bighorn Bison",
-    "flags": 0,
-    "health": [
-      480.0,
-      144.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      12.0,
-      2.4
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 3.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 60.0,
-    "jump": 1,
-    "jump_power": 5.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": 0.15,
-    "can_be_hit_stunned": true,
-    "can_be_stunned": true,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": null
-  },
   "BomberBody": {
     "_name": "BomberBody",
     "name": "Bomber",
@@ -860,7 +893,7 @@
   "BrotherBody": {
     "_name": "BrotherBody",
     "name": "Mithrix",
-    "flags": 2048,
+    "flags": 133120,
     "health": [
       1000.0,
       300.0
@@ -893,7 +926,7 @@
   "BrotherGlassBody": {
     "_name": "BrotherGlassBody",
     "name": "Mithrix",
-    "flags": 2048,
+    "flags": 133120,
     "health": [
       2000.0,
       600.0
@@ -1883,7 +1916,7 @@
   "FalseSonBossBody": {
     "_name": "FalseSonBossBody",
     "name": "False Son",
-    "flags": 2049,
+    "flags": 133121,
     "health": [
       1000.0,
       300.0
@@ -1949,7 +1982,7 @@
   "FalseSonBossBodyLunarShard": {
     "_name": "FalseSonBossBodyLunarShard",
     "name": "False Son",
-    "flags": 2049,
+    "flags": 133121,
     "health": [
       1100.0,
       330.0
@@ -2540,39 +2573,6 @@
     "item_drop": null,
     "expansion": null
   },
-  "HermitCrabBody_opt": {
-    "_name": "HermitCrabBody_opt",
-    "name": "Hermit Crab",
-    "flags": 0,
-    "health": [
-      100.0,
-      30.0
-    ],
-    "regen": [
-      0.6,
-      0.12
-    ],
-    "damage": [
-      12.0,
-      2.4
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 10.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 30.0,
-    "jump": 1,
-    "jump_power": 8.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": 0.5,
-    "can_be_hit_stunned": true,
-    "can_be_stunned": true,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": null
-  },
   "HuntressBody": {
     "_name": "HuntressBody",
     "name": "Huntress",
@@ -2609,7 +2609,7 @@
   "ITBrotherBody": {
     "_name": "ITBrotherBody",
     "name": "Mithrix",
-    "flags": 2048,
+    "flags": 133120,
     "health": [
       1000.0,
       300.0
@@ -2804,39 +2804,6 @@
     "item_drop": null,
     "expansion": null
   },
-  "LemurianBruiserBody_opt": {
-    "_name": "LemurianBruiserBody_opt",
-    "name": "Elder Lemurian",
-    "flags": 8192,
-    "health": [
-      900.0,
-      270.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      16.0,
-      3.2
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 13.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 45.0,
-    "jump": 1,
-    "jump_power": 30.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": 0.15,
-    "can_be_hit_stunned": true,
-    "can_be_stunned": true,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": null
-  },
   "LoaderBody": {
     "_name": "LoaderBody",
     "name": "Loader",
@@ -2903,74 +2870,8 @@
     "item_drop": null,
     "expansion": null
   },
-  "LunarExploderBody_opt": {
-    "_name": "LunarExploderBody_opt",
-    "name": "Lunar Chimera",
-    "flags": 0,
-    "health": [
-      180.0,
-      54.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      11.0,
-      2.2
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 8.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 80.0,
-    "jump": 1,
-    "jump_power": 16.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": 0.5,
-    "can_be_hit_stunned": true,
-    "can_be_stunned": true,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": null
-  },
   "LunarGolemBody": {
     "_name": "LunarGolemBody",
-    "name": "Lunar Chimera",
-    "flags": 0,
-    "health": [
-      1615.0,
-      485.0
-    ],
-    "regen": [
-      0.6,
-      0.12
-    ],
-    "damage": [
-      35.0,
-      7.0
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 8.0,
-    "sprint_multiplier": 3.0,
-    "acceleration": 30.0,
-    "jump": 1,
-    "jump_power": 20.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": 0.5,
-    "can_be_hit_stunned": true,
-    "can_be_stunned": true,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": null
-  },
-  "LunarGolemBody_opt": {
-    "_name": "LunarGolemBody_opt",
     "name": "Lunar Chimera",
     "flags": 0,
     "health": [
@@ -3070,39 +2971,6 @@
   },
   "LunarWispBody": {
     "_name": "LunarWispBody",
-    "name": "Lunar Chimera",
-    "flags": 0,
-    "health": [
-      850.0,
-      255.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      15.0,
-      3.0
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 18.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 14.0,
-    "jump": 1,
-    "jump_power": 0.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": null,
-    "expansion": null
-  },
-  "LunarWispBody_opt": {
-    "_name": "LunarWispBody_opt",
     "name": "Lunar Chimera",
     "flags": 0,
     "health": [
@@ -3400,39 +3268,6 @@
   },
   "MiniMushroomBody": {
     "_name": "MiniMushroomBody",
-    "name": "Mini Mushrum",
-    "flags": 0,
-    "health": [
-      290.0,
-      87.0
-    ],
-    "regen": [
-      0.6,
-      0.12
-    ],
-    "damage": [
-      16.0,
-      3.2
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 2.0,
-    "sprint_multiplier": 2.5,
-    "acceleration": 30.0,
-    "jump": 1,
-    "jump_power": 14.0,
-    "armor": 0.0,
-    "is_champion": false,
-    "pain_threshold": 0.5,
-    "can_be_hit_stunned": true,
-    "can_be_stunned": true,
-    "can_be_frozen": true,
-    "item_drop": null,
-    "expansion": null
-  },
-  "MiniMushroomBody_opt": {
-    "_name": "MiniMushroomBody_opt",
     "name": "Mini Mushrum",
     "flags": 0,
     "health": [
@@ -3791,6 +3626,39 @@
     "can_be_hit_stunned": true,
     "can_be_stunned": true,
     "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
+  "PMHead": {
+    "_name": "PMHead",
+    "name": "",
+    "flags": 65540,
+    "health": [
+      0.0,
+      0.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      16.0,
+      3.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "luck": 0,
+    "speed": 0.0,
+    "sprint_multiplier": 0.0,
+    "acceleration": 0.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
     "item_drop": null,
     "expansion": null
   },
@@ -4584,7 +4452,7 @@
     "can_be_stunned": true,
     "can_be_frozen": true,
     "item_drop": null,
-    "expansion": null
+    "expansion": "DLC2"
   },
   "ScorchlingBombProjectile": {
     "_name": "ScorchlingBombProjectile",
@@ -4918,39 +4786,6 @@
   },
   "TitanBody": {
     "_name": "TitanBody",
-    "name": "Stone Titan",
-    "flags": 1,
-    "health": [
-      2100.0,
-      630.0
-    ],
-    "regen": [
-      0.0,
-      0.0
-    ],
-    "damage": [
-      40.0,
-      8.0
-    ],
-    "attack_speed": 1.0,
-    "crit": 0.0,
-    "luck": 0,
-    "speed": 5.0,
-    "sprint_multiplier": 1.45,
-    "acceleration": 20.0,
-    "jump": 1,
-    "jump_power": 5.0,
-    "armor": 20.0,
-    "is_champion": true,
-    "pain_threshold": Infinity,
-    "can_be_hit_stunned": false,
-    "can_be_stunned": false,
-    "can_be_frozen": false,
-    "item_drop": "Knurl",
-    "expansion": null
-  },
-  "TitanBody_opt": {
-    "_name": "TitanBody_opt",
     "name": "Stone Titan",
     "flags": 1,
     "health": [

@@ -1,6 +1,30 @@
 from ._utils import round_value
 from .dccs import DccsPool
 
+
+class SceneDef:
+    SCRIPT = -6686060984905549765
+
+    @staticmethod
+    def parse(asset, fname):
+        return {
+            'scene_type': asset['sceneType'],
+            'stage_order': asset['stageOrder']-1,
+            # To be filled out once all file_ids have been collected
+            'required_dlc': asset['requiredExpansion']['m_PathID'],
+            # To be filled out once all file_ids have been collected
+            'destinations': asset['destinationsGroup']['m_PathID'],
+            # To be filled out once all file_ids have been collected
+            'destinations_loop': asset['loopedDestinationsGroup']['m_PathID'],
+            'use_looping_destinations': bool(asset['shouldUpdateSceneCollectionAfterLooping']),
+            'skip_devotion': bool(asset['needSkipDevotionRespawn']),
+            'stage_file': fname,
+            'stage_info': None,
+            'scene_director': None,
+            'combat_director': None,
+            'newt': None,
+        }
+
 class ClassicStageInfo:
     SCRIPT = 8450768357395489424
 

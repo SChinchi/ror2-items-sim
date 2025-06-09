@@ -3510,23 +3510,7 @@
       "interactable_credits": 200,
       "monster_credits": 400,
       "bonus_credits": 0,
-      "interactables": {
-        "name": "dpMeridianInteractables",
-        "categories": [
-          {
-            "name": "Standard",
-            "weight": 1.0,
-            "always_included": [],
-            "included_conditions_met": [],
-            "included_conditions_not_met": [
-              {
-                "dccs": "dccsSnowyForestInteractablesDLC1",
-                "weight": 1.0
-              }
-            ]
-          }
-        ]
-      },
+      "interactables": null,
       "monsters": {
         "name": "dpMeridianMonsters",
         "categories": [
@@ -4517,6 +4501,29 @@
       1
     ]
   },
+  "testscene": {
+    "scene_type": 2,
+    "stage_order": 9998,
+    "required_dlc": null,
+    "destinations": [],
+    "destinations_loop": [],
+    "use_looping_destinations": false,
+    "skip_devotion": false,
+    "stage_info": {
+      "interactable_credits": 0,
+      "monster_credits": 0,
+      "bonus_credits": 0,
+      "interactables": null,
+      "monsters": null
+    },
+    "scene_director": {
+      "teleporter": "iscTeleporter",
+      "exp_coeff": 0.066667,
+      "elite_bias": 2.0
+    },
+    "combat_director": null,
+    "newt": null
+  },
   "village": {
     "scene_type": 1,
     "stage_order": 0,
@@ -4707,30 +4714,23 @@
       "monster_credits": 100,
       "bonus_credits": 0,
       "interactables": {
-        "name": "dpGolemplainsInteractables",
+        "name": "dpVillageNightInteractables",
         "categories": [
           {
             "name": "Standard",
             "weight": 1.0,
             "always_included": [
               {
-                "dccs": "dccsGolemplainsInteractables",
+                "dccs": "dccsVillageNightInteractables",
                 "weight": 1.0
               }
             ],
             "included_conditions_met": [
               {
-                "dccs": "dccsGolemplainsInteractablesDLC1",
+                "dccs": "dccsVillageNightInteractablesDLC1",
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC1"
-                ]
-              },
-              {
-                "dccs": "dccsGolemplainsInteractablesDLC2",
-                "weight": 1.0,
-                "required_dlc": [
-                  "DLC2"
                 ]
               }
             ],

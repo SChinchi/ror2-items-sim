@@ -3175,6 +3175,251 @@
       }
     ]
   },
+  "dccsGenericMonsters_Base": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsGenericMonsters_Base",
+    "categories": [
+      {
+        "name": "Champions",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscTitanBlackBeach",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscBeetleQueen",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscVagrant",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Minibosses",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscGolemNature",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscGreaterWisp",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Basic Monsters",
+        "weight": 4.0,
+        "cards": [
+          {
+            "spawn_card": "cscLemurian",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscLesserWisp",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscBeetle",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscJellyfish",
+            "weight": 1,
+            "min_stages_cleared": 1
+          }
+        ]
+      },
+      {
+        "name": "Special",
+        "weight": 1.0,
+        "cards": [
+          {
+            "spawn_card": "cscScav",
+            "weight": 1,
+            "min_stages_cleared": 5
+          }
+        ]
+      }
+    ]
+  },
+  "dccsGenericMonsters_DLC2_BlackBeach": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsGenericMonsters_DLC2_BlackBeach",
+    "categories": [
+      {
+        "name": "Champions",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscTitanBlackBeach",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscBeetleQueen",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscVagrant",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscHalcyonite",
+            "weight": 1,
+            "min_stages_cleared": 5
+          }
+        ]
+      },
+      {
+        "name": "Minibosses",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscGolemNature",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscGreaterWisp",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Basic Monsters",
+        "weight": 4.0,
+        "cards": [
+          {
+            "spawn_card": "cscLemurian",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscLesserWisp",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscBeetle",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscJellyfish",
+            "weight": 1,
+            "min_stages_cleared": 1
+          }
+        ]
+      },
+      {
+        "name": "Special",
+        "weight": 1.0,
+        "cards": [
+          {
+            "spawn_card": "cscScav",
+            "weight": 1,
+            "min_stages_cleared": 5
+          }
+        ]
+      }
+    ]
+  },
+  "dccsGenericMonsters_Dlc1_BlackBeach": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsGenericMonsters_Dlc1_BlackBeach",
+    "categories": [
+      {
+        "name": "Champions",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscTitanBlackBeach",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscBeetleQueen",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscVagrant",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Minibosses",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscGolem",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscGreaterWisp",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Basic Monsters",
+        "weight": 4.0,
+        "cards": [
+          {
+            "spawn_card": "cscLemurian",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscLesserWisp",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscBeetle",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscJellyfish",
+            "weight": 1,
+            "min_stages_cleared": 1
+          }
+        ]
+      },
+      {
+        "name": "Special",
+        "weight": 1.0,
+        "cards": [
+          {
+            "spawn_card": "cscScav",
+            "weight": 1,
+            "min_stages_cleared": 5
+          }
+        ]
+      }
+    ]
+  },
   "dccsGoldshoresInteractables": {
     "class": "DirectorCardCategorySelection",
     "name": "dccsGoldshoresInteractables",
@@ -4787,8 +5032,18 @@
         "weight": 45.0,
         "cards": [
           {
-            "spawn_card": "iscTripleShopLarge",
-            "weight": 4,
+            "spawn_card": "iscCategoryChest2Damage",
+            "weight": 3,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChest2Healing",
+            "weight": 3,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChest2Utility",
+            "weight": 3,
             "min_stages_cleared": 0
           }
         ]
@@ -4835,7 +5090,7 @@
             "min_stages_cleared": 0
           },
           {
-            "spawn_card": "iscTripleShop",
+            "spawn_card": "iscTripleShopLarge",
             "weight": 4,
             "min_stages_cleared": 0
           },
@@ -10217,6 +10472,228 @@
             "spawn_card": "cscScav",
             "weight": 1,
             "min_stages_cleared": 5
+          }
+        ]
+      }
+    ]
+  },
+  "dccsVillageNightInteractables": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsVillageNightInteractables",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscChest1",
+            "weight": 240,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscChest2",
+            "weight": 37,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscEquipmentBarrel",
+            "weight": 20,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTripleShop",
+            "weight": 80,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscLunarChest",
+            "weight": 20,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChestDamage",
+            "weight": 20,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChestHealing",
+            "weight": 20,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChestUtility",
+            "weight": 20,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Barrels",
+        "weight": 10.0,
+        "cards": [
+          {
+            "spawn_card": "iscBarrel1",
+            "weight": 10,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Shrines",
+        "weight": 10.0,
+        "cards": [
+          {
+            "spawn_card": "iscShrineCombat",
+            "weight": 3,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineBoss",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineChance",
+            "weight": 4,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Drones",
+        "weight": 14.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenDrone1",
+            "weight": 7,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenDrone2",
+            "weight": 7,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenEmergencyDrone",
+            "weight": 2,
+            "min_stages_cleared": 4
+          }
+        ]
+      },
+      {
+        "name": "Misc",
+        "weight": 7.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenTurret1",
+            "weight": 7,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Rare",
+        "weight": 0.4,
+        "cards": [
+          {
+            "spawn_card": "iscChest1Stealthed",
+            "weight": 6,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscRadarTower",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineGoldshoresAccess",
+            "weight": 2,
+            "min_stages_cleared": 1
+          },
+          {
+            "spawn_card": "iscGoldChest",
+            "weight": 2,
+            "min_stages_cleared": 3
+          }
+        ]
+      },
+      {
+        "name": "Duplicator",
+        "weight": 8.0,
+        "cards": [
+          {
+            "spawn_card": "iscDuplicator",
+            "weight": 30,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscDuplicatorLarge",
+            "weight": 6,
+            "min_stages_cleared": 1
+          },
+          {
+            "spawn_card": "iscDuplicatorMilitary",
+            "weight": 1,
+            "min_stages_cleared": 4
+          },
+          {
+            "spawn_card": "iscDuplicatorWild",
+            "weight": 2,
+            "min_stages_cleared": 1
+          },
+          {
+            "spawn_card": "iscScrapper",
+            "weight": 12,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Tier 1 Halcyon Shrine",
+        "weight": 9.0,
+        "cards": [
+          {
+            "spawn_card": "iscShrineHalcyoniteTier1",
+            "weight": 15,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineColossusAccess",
+            "weight": 7,
+            "min_stages_cleared": 1
+          }
+        ]
+      }
+    ]
+  },
+  "dccsVillageNightInteractablesDLC1": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsVillageNightInteractablesDLC1",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscCategoryChest2Healing",
+            "weight": 3,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Void Stuff",
+        "weight": 3.0,
+        "cards": [
+          {
+            "spawn_card": "iscVoidChest",
+            "weight": 15,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscVoidCamp",
+            "weight": 7,
+            "min_stages_cleared": 1
           }
         ]
       }

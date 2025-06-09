@@ -124,7 +124,7 @@
   },
   {
     "_name": "BarrageOnBoss",
-    "name": "ITEM_BARRAGEONBOSS_NAME",
+    "name": "War Bonds",
     "tier": "Tier3",
     "hidden": false,
     "can_remove": true,
@@ -603,6 +603,54 @@
     "hidden": false,
     "can_remove": true,
     "required_dlc": "DLC1",
+    "tags": [
+      3,
+      11
+    ]
+  },
+  {
+    "_name": "EmpowerBuff",
+    "name": "ITEM_EMPOWERBUFF_NAME",
+    "tier": "NoTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": null,
+    "tags": [
+      3,
+      11
+    ]
+  },
+  {
+    "_name": "EmpowerMagazine",
+    "name": "ITEM_EMPOWERMAGAZINE_NAME",
+    "tier": "NoTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": null,
+    "tags": [
+      3,
+      11
+    ]
+  },
+  {
+    "_name": "EmpowerOnKill",
+    "name": "ITEM_EMPOWERONKILL_NAME",
+    "tier": "NoTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": null,
+    "tags": [
+      3,
+      11
+    ]
+  },
+  {
+    "_name": "EmpowerRefresh",
+    "name": "ITEM_EMPOWERREFRESH_NAME",
+    "tier": "NoTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": null,
     "tags": [
       3,
       11

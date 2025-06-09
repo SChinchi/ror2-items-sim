@@ -46,6 +46,7 @@ def _get_child_raw(ids, game_object, child_index):
 
 def _get_component(ids, prefab_id, component, keep_path_id=False):
     if not prefab_id:
+    #if not prefab_id or prefab_id not in ids:
         return None
     for c in ids[prefab_id]['m_Component']:
         _id = c['component']['m_PathID']
@@ -59,6 +60,8 @@ def _get_component(ids, prefab_id, component, keep_path_id=False):
 
 def _get_all_components(ids, prefab_id, component, keep_path_id=False):
     out = []
+    #if prefab_id not in ids:
+    #    return out
     for c in ids[prefab_id]['m_Component']:
         _id = c['component']['m_PathID']
         if _id in ids:
@@ -84,11 +87,12 @@ def _get_transform(ids, obj_id):
 
 def _extract_names(src_path=LANGUAGE_DIR):
     names = {}
-    with open(path.join(src_path, 'output.json'), encoding='utf8') as f:
-        for line in f.readlines():
-            m = re.match('.*"([A-Z0-9_]+_NAME)".*:.*"(.*)".*\n', line)
-            if m:
-                names[m.group(1)] = m.group(2)
+    for fname in ('CharacterBodies', 'cu8', 'DLC1', 'DLC2', 'Equipment', 'InfiniteTower', 'Interactors', 'Items', 'Maps'):
+        with open(path.join(src_path, f'{fname}.json'), encoding='utf8') as f:
+            for line in f.readlines():
+                m = re.match('.*"([A-Z0-9_]+_NAME)".*:.*"(.*)".*\n', line)
+                if m:
+                    names[m.group(1)] = m.group(2)
     return names
 
 
@@ -173,9 +177,10 @@ def extract_file_data(src_path=FILES_DIR):
     masters = {'masters': {}, 'AI_driver': {}}
     skills = {}
     dccs = {}
+    scenes = {}
 
     for fname in os.listdir(src_path):
-        if re.match('(ror2-(base|dlc1|cu8|dlc2|junk)-.*_text)|(ror2-dlc1_assets_all.bundle)|(ror2-cu8_assets_all.bundle)|(ror2-dlc2_assets_all.bundle)', fname):
+        if re.match('(ror2-(base|dlc1|cu8|dlc2|junk).*_assets_all)', fname):
             env = UnityPy.load(path.join(src_path, fname))
             cabs = [cab for file, cab in env.cabs.items() if '.' not in file]
             for cab in cabs:
@@ -217,6 +222,12 @@ def extract_file_data(src_path=FILES_DIR):
                             skills[unique_name] = skill_defs[script].parse(asset)
                         elif script in dccs_classes:
                             dccs[asset['m_Name']] = dccs_classes[script].parse(asset)
+                        elif script == SceneDef.SCRIPT:
+                            # `sceneType == -1` are invalid
+                            # `sceneType == 0` are menu
+                            # `sceneType == 3` are cutscenes
+                            if asset['sceneType'] not in (-1, 0, 3):
+                                scenes[asset['m_Name']] = SceneDef.parse(asset, fname)
     for item_type in (items, equipment):
         for item in item_type:
             dlc_id = item['required_dlc']
@@ -229,6 +240,7 @@ def extract_file_data(src_path=FILES_DIR):
     for data in droptables.values():
         if data['class'] == 'ExplicitPickupDropTable':
             for entry in data['entries']:
+                #entry[0] = ids[entry[0]]['m_Name'] if entry[0] in ids else entry[0]
                 entry[0] = ids[entry[0]]['m_Name']
     for data in sc.values():
         data['name'] = ''
@@ -314,6 +326,7 @@ def extract_file_data(src_path=FILES_DIR):
     for data in dccs.values():
         for category in data['categories']:
             for card in category['cards']:
+                #card['spawn_card'] = ids[card['spawn_card']]['m_Name'] if card['spawn_card'] in ids else None
                 card['spawn_card'] = ids[card['spawn_card']]['m_Name'] if card['spawn_card'] else None
     for data in bodies.values():
         data['_name'] = ids[data['_name']]['m_Name']
@@ -343,6 +356,7 @@ def extract_file_data(src_path=FILES_DIR):
             data['expansion'] = None
     for name, data in masters['masters'].items():
         data['_name'] = name
+        #data['body'] = ids[data['body']]['m_Name'] if data['body'] in ids else None
         data['body'] = ids[data['body']]['m_Name'] if data['body'] else None
         ai = _get_component(ids, data['ai'], BaseAI)
         if ai:
@@ -366,7 +380,7 @@ def extract_file_data(src_path=FILES_DIR):
     combat_directors = {}
     d = _get_all_components(
         ids,
-        _find_object(src_path, 'ror2-base-common_text_assets_all.bundle', 'Director'),
+        _find_object(src_path, 'ror2-base-common_static_assets_all.bundle', 'Director'),
         CombatDirector,
     )
     for d_ in d:
@@ -376,155 +390,65 @@ def extract_file_data(src_path=FILES_DIR):
         combat_directors[type_name] = data
     combat_directors['combat_shrine'] = CombatDirector.parse(_get_component(
         ids,
-        _find_object(src_path, 'ror2-base-shrinecombat_text_assets_all.bundle', 'ShrineCombat'),
+        _find_object(src_path, 'ror2-base-shrinecombat_static_assets_all.bundle', 'ShrineCombat'),
         CombatDirector,
     ), ids)
     combat_directors['gouge'] = CombatDirector.parse(_get_component(
         ids,
-        _find_object(src_path, 'ror2-base-monstersonshrineuse_text_assets_all.bundle', 'MonstersOnShrineUseEncounter'),
+        _find_object(src_path, 'ror2-base-monstersonshrineuse_static_assets_all.bundle', 'MonstersOnShrineUseEncounter'),
         CombatDirector,
     ), ids)
     d = _get_all_components(
         ids,
-        _find_object(src_path, 'ror2-base-teleporters_text_assets_all.bundle', 'Teleporter1'),
+        _find_object(src_path, 'ror2-base-teleporters_static_assets_all.bundle', 'Teleporter1'),
         CombatDirector,
     )
     combat_directors['teleporter_monsters'] = CombatDirector.parse(d[0], ids)
     combat_directors['teleporter_boss'] = CombatDirector.parse(d[1], ids)
     combat_directors['arena'] = CombatDirector.parse(_get_component(
         ids,
-        _find_object(src_path, 'ror2-base-arena_text_assets_all.bundle', 'ArenaMissionController'),
+        _find_object(src_path, 'ror2-base-arena_static_assets_all.bundle', 'ArenaMissionController'),
         CombatDirector,
     ), ids)
     combat_directors['moon_battery'] = CombatDirector.parse(_get_component(
         ids,
-        _find_object(src_path, 'ror2-base-moon2_text_assets_all.bundle', 'MoonBatteryTemplate'),
+        _find_object(src_path, 'ror2-base-moon2_static_assets_all.bundle', 'MoonBatteryTemplate'),
         CombatDirector,
     ), ids)
     combat_directors['void_battery'] = CombatDirector.parse(_get_component(
         ids,
-        _find_object(src_path, 'ror2-dlc1-deepvoidportalbattery_text_assets_all.bundle', 'DeepVoidPortalBattery'),
+        _find_object(src_path, 'ror2-dlc1-deepvoidportalbattery_static_assets_all.bundle', 'DeepVoidPortalBattery'),
         CombatDirector,
     ), ids)
     combat_directors['voidcamp1'] = CombatDirector.parse(_get_component(
         ids,
-        _find_object(src_path, 'ror2-dlc1-voidcamp_text_assets_all.bundle', 'Camp 1 - Void Monsters & Interactables'),
+        _find_object(src_path, 'ror2-dlc1-voidcamp_static_assets_all.bundle', 'Camp 1 - Void Monsters & Interactables'),
         CombatDirector,
     ), ids)
     combat_directors['voidcamp2'] = CombatDirector.parse(_get_component(
         ids,
-        _find_object(src_path, 'ror2-dlc1-voidcamp_text_assets_all.bundle', 'Camp 2 - Flavor Props & Void Elites'),
+        _find_object(src_path, 'ror2-dlc1-voidcamp_static_assets_all.bundle', 'Camp 2 - Flavor Props & Void Elites'),
         CombatDirector,
     ), ids)
     combat_directors['simulacrum'] = CombatDirector.parse(_get_component(
         ids,
-        _find_object(src_path, 'ror2-dlc1-gamemodes-infinitetowerrun-infinitetowerassets_text_assets_all.bundle', 'InfiniteTowerWaveDefault'),
+        _find_object(src_path, 'ror2-dlc1-gamemodes-infinitetowerrun-infinitetowerassets_static_assets_all.bundle', 'InfiniteTowerWaveDefault'),
         CombatDirector,
     ), ids)
+    result = _find_object(src_path, 'ror2-dlc2_static_assets_all.bundle', 'ShrineHalcyonite')
     combat_directors['halcyon_shrine'] = CombatDirector.parse(_get_component(
         ids,
-        _find_object(src_path, 'ror2-dlc2_assets_all.bundle', 'ShrineHalcyonite'),
+        _find_object(src_path, 'ror2-dlc2_static_assets_all.bundle', 'ShrineHalcyonite'),
         CombatDirector,
     ), ids)
     combat_directors['halcyonite'] = CombatDirector.parse(_get_component(
         ids,
-        _find_object(src_path, 'ror2-dlc2_assets_all.bundle', 'Activation and Tier Change Wave'),
+        _find_object(src_path, 'ror2-dlc2_static_assets_all.bundle', 'Activation and Tier Change Wave'),
         CombatDirector,
     ), ids)
 
-    scenes = {}
-    for fname in os.listdir(src_path):
-        if re.match('ror2-(base|dlc1|cu8|dlc2)-.*_scenedef', fname):
-            scene_def = UnityPy.load(path.join(src_path, fname))
-            for def_container in scene_def.container.values():
-                asset = def_container.read_typetree()
-                name = asset['m_Name']
-                ids[def_container.path_id] = asset
-                # `sceneType == -1` are invalid
-                # `sceneType == 0` are menu
-                # `sceneType == 3` are cutscenes
-                if asset['sceneType'] in (-1, 0, 3):
-                    continue
-                scene_ids = {}
-                dlc_id = asset['requiredExpansion']['m_PathID']
-                dlc_name = ids[dlc_id]['m_Name'] if dlc_id else None
-                scene_data = {
-                    'scene_type': asset['sceneType'],
-                    'stage_order': asset['stageOrder']-1,
-                    'required_dlc': dlc_name,
-                    'destinations': asset['destinationsGroup']['m_PathID'],
-                    'destinations_loop': asset['loopedDestinationsGroup']['m_PathID'],
-                    'use_looping_destinations': bool(asset['shouldUpdateSceneCollectionAfterLooping']),
-                    'skip_devotion': bool(asset['needSkipDevotionRespawn']),
-                    'stage_info': None,
-                    'scene_director': None,
-                    'combat_director': None,
-                    'newt': None,
-                }
-                scene_file = fname.replace('scenedef_assets', 'scenes')
-                # Is this file changing with every update? Pain...
-                if 'villagenight' in fname:
-                    scene_file = 'ror2-dlc2-villagenight_scenes_all_eef4df1f2a954300ab264f88e786e17c.bundle'
-                scene_all = UnityPy.load(path.join(src_path, scene_file))
-                # 'blackbeach' has a test scene cabinet which we ignore
-                cabinet = [cab for name, cab in scene_all.cabs.items() if '.' not in name][0]
-                objects = cabinet.objects
-                scene_info = None
-                director = None
-                for obj in objects.values():
-                    if obj.type.name in ('GameObject', 'Transform', 'MonoBehaviour'):
-                        asset = obj.read_typetree()
-                        scene_ids[obj.path_id] = asset
-                        if obj.type.name == 'GameObject':
-                            if asset['m_Name'] == 'SceneInfo':
-                                scene_info = asset
-                            elif asset['m_Name'] in ('Director', 'InfiniteTowerSceneDirector'):
-                                director = asset
-                if scene_info:
-                    asset = _get_component_raw(objects, scene_info, ClassicStageInfo)
-                    if asset:
-                        stage_info = ClassicStageInfo.parse(asset, ids)
-                        stage_info['bonus_credits'] = sum(stage_info['bonus_credits'])
-                        if not stage_info['monsters'] or not stage_info['interactables']:
-                            text_file = fname.replace('scenedef', 'text')
-                            scene_text = UnityPy.load(path.join(src_path, text_file))
-                            for text_obj in scene_text.objects:
-                                if text_obj.type.name == 'MonoBehaviour':
-                                    text_asset = text_obj.read_typetree()
-                                    if text_asset['m_Script']['m_PathID'] != DccsPool.SCRIPT:
-                                        continue
-                                    if 'Monsters' in text_asset['m_Name']:
-                                        stage_info['monsters'] = DccsPool.parse(text_asset, ids)
-                                    elif 'Interactables' in text_asset['m_Name']:
-                                        stage_info['interactables'] = DccsPool.parse(text_asset, ids)
-                        scene_data['stage_info'] = stage_info
-                    # The SceneObjectToggleController is a child of
-                    # SceneInfo, so we can get it from its transform.
-                    toggle_controller = _get_child_raw(objects, scene_info, 0)
-                    if toggle_controller:
-                        toggle_groups = _get_component_raw(objects, toggle_controller, SceneObjectToggleGroup)
-                        if toggle_groups:
-                            scene_data['newt'] = _find_newt_group(toggle_groups['toggleGroups'], scene_ids)
-                if director:
-                    asset = _get_component_raw(objects, director, SceneDirector)
-                    if asset:
-                        scene_data['scene_director'] = SceneDirector.parse(asset, ids)
-                    if director['m_Name'] == 'Director':
-                        combat = _get_components_raw(objects, director, CombatDirector)
-                        if combat:
-                            combat_data = []
-                            for i, c in enumerate(combat):
-                                c = CombatDirector.parse(c, ids)
-                                diff = {}
-                                type_name = 'fast' if c['reroll_spawn_interval'][0] < 10 else 'slow'
-                                compare_to = combat_directors[type_name]
-                                for key, value in c.items():
-                                    if value != compare_to[key]:
-                                        diff[key] = value
-                                combat_data.append({'name': type_name, 'overrides': diff})
-                            scene_data['combat_director'] = combat_data
-                scenes[name] = scene_data
     for data in scenes.values():
+        data['required_dlc'] = ids[data['required_dlc']]['m_Name'] if data['required_dlc'] else None
         destinations = []
         path_id = data['destinations']
         if path_id:
@@ -539,11 +463,60 @@ def extract_file_data(src_path=FILES_DIR):
                 scene = ids[entry['sceneDef']['m_PathID']]
                 destinations.append((scene['m_Name'], entry['weightMinusOne'] + 1))
         data['destinations_loop'] = destinations
-    # The reference in the assets is somehow lost, quick fix
-    scenes['blackbeach2']['stage_info']['interactables'] = scenes['blackbeach']['stage_info']['interactables']
+        scene_file = data['stage_file'].replace('static_assets', 'scenes')
+        if 'villagenight' in scene_file:
+            scene_file = 'ror2-dlc2-villagenight_scenes_all_adf28954b7824ca6442fd064f4df51b5.bundle'
+        scene_all = UnityPy.load(path.join(src_path, scene_file))
+        del data['stage_file']
+        # 'blackbeach' has a test scene cabinet which we ignore
+        cabinet = [cab for name, cab in scene_all.cabs.items() if '.' not in name][0]
+        objects = cabinet.objects
+        scene_ids = {}
+        scene_info = None
+        director = None
+        for obj in objects.values():
+            if obj.type.name in ('GameObject', 'Transform', 'MonoBehaviour'):
+                asset = obj.read_typetree()
+                scene_ids[obj.path_id] = asset
+                if obj.type.name == 'GameObject':
+                    if asset['m_Name'] == 'SceneInfo':
+                        scene_info = asset
+                    elif asset['m_Name'] in ('Director', 'InfiniteTowerSceneDirector'):
+                        director = asset
+        if scene_info:
+            asset = _get_component_raw(objects, scene_info, ClassicStageInfo)
+            if asset:
+                stage_info = ClassicStageInfo.parse(asset, ids)
+                stage_info['bonus_credits'] = sum(stage_info['bonus_credits'])
+                data['stage_info'] = stage_info
+            # The SceneObjectToggleController is a child of
+            # SceneInfo, so we can get it from its transform.
+            toggle_controller = _get_child_raw(objects, scene_info, 0)
+            if toggle_controller:
+                toggle_groups = _get_component_raw(objects, toggle_controller, SceneObjectToggleGroup)
+                if toggle_groups:
+                    data['newt'] = _find_newt_group(toggle_groups['toggleGroups'], scene_ids)
+        if director:
+            asset = _get_component_raw(objects, director, SceneDirector)
+            if asset:
+                data['scene_director'] = SceneDirector.parse(asset, ids)
+            if director['m_Name'] == 'Director':
+                combat = _get_components_raw(objects, director, CombatDirector)
+                if combat:
+                    combat_data = []
+                    for i, c in enumerate(combat):
+                        c = CombatDirector.parse(c, ids)
+                        diff = {}
+                        type_name = 'fast' if c['reroll_spawn_interval'][0] < 10 else 'slow'
+                        compare_to = combat_directors[type_name]
+                        for key, value in c.items():
+                            if value != compare_to[key]:
+                                diff[key] = value
+                        combat_data.append({'name': type_name, 'overrides': diff})
+                    data['combat_director'] = combat_data
 
     voidcamps = {}
-    text_file = 'ror2-dlc1-voidcamp_text_assets_all.bundle'
+    text_file = 'ror2-dlc1-voidcamp_static_assets_all.bundle'
     scene_text = UnityPy.load(path.join(src_path, text_file))
     for obj in scene_text.objects:
         if obj.type.name in ('GameObject', 'MonoBehaviour'):
@@ -559,7 +532,7 @@ def extract_file_data(src_path=FILES_DIR):
                 voidcamps['camp1' if 'Camp 1' in asset['m_Name'] else 'camp2'] = data
 
     simulacrum = {}
-    env = UnityPy.load(path.join(FILES_DIR, 'ror2-dlc1-gamemodes-infinitetowerrun_text_assets_all.bundle'))
+    env = UnityPy.load(path.join(FILES_DIR, 'ror2-dlc1-gamemodes-infinitetowerrun_static_assets_all.bundle'))
     for obj in env.objects:
         if obj.type.name == 'MonoBehaviour':
             asset = obj.read_typetree()
