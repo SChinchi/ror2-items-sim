@@ -364,35 +364,50 @@
     "body": "CorruptionSpike",
     "master": "CorruptionSpikeMaster"
   },
-  "cscDrone1": {
+  "cscDTHaulerDrone": {
     "class": "CharacterSpawnCard",
-    "_name": "cscDrone1",
-    "name": "Gunner Drone",
+    "_name": "cscDTHaulerDrone",
+    "name": "CHIRP",
     "required_flags": 0,
     "forbidden_flags": 4,
-    "cost": 150,
+    "cost": 0,
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
     "equipment": [],
     "items": [],
-    "body": "Drone1Body",
-    "master": "Drone1Master"
+    "body": "DTHaulerDroneBody",
+    "master": "DTHaulerDroneMaster"
   },
-  "cscDrone2": {
+  "cscDefectiveUnit": {
     "class": "CharacterSpawnCard",
-    "_name": "cscDrone2",
-    "name": "Healing Drone",
+    "_name": "cscDefectiveUnit",
+    "name": "Solus Invalidator",
     "required_flags": 0,
     "forbidden_flags": 4,
-    "cost": 150,
+    "cost": 40,
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
     "equipment": [],
     "items": [],
-    "body": "Drone2Body",
-    "master": "Drone2Master"
+    "body": "DefectiveUnitBody",
+    "master": "DefectiveUnitMaster"
+  },
+  "cscDroneBomber": {
+    "class": "CharacterSpawnCard",
+    "_name": "cscDroneBomber",
+    "name": "Lt. Droneboy",
+    "required_flags": 0,
+    "forbidden_flags": 0,
+    "cost": 0,
+    "elite_rules": 0,
+    "no_elites": false,
+    "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
+    "body": "DroneBomberBody",
+    "master": "DroneBomberMaster"
   },
   "cscDroneCommander": {
     "class": "CharacterSpawnCard",
@@ -423,6 +438,21 @@
     "items": [],
     "body": "ElectricWormBody",
     "master": "ElectricWormMaster"
+  },
+  "cscExtractorUnit": {
+    "class": "CharacterSpawnCard",
+    "_name": "cscExtractorUnit",
+    "name": "Solus Extractor",
+    "required_flags": 0,
+    "forbidden_flags": 4,
+    "cost": 25,
+    "elite_rules": 0,
+    "no_elites": false,
+    "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
+    "body": "ExtractorUnitBody",
+    "master": "ExtractorUnitMaster"
   },
   "cscFalseSonBoss": {
     "class": "CharacterSpawnCard",
@@ -499,13 +529,45 @@
     "body": "FlyingVerminBody",
     "master": "FlyingVerminMaster"
   },
+  "cscFriendUnit": {
+    "class": "CharacterSpawnCard",
+    "_name": "cscFriendUnit",
+    "name": "Best Buddy",
+    "required_flags": 0,
+    "forbidden_flags": 0,
+    "cost": 0,
+    "elite_rules": 0,
+    "no_elites": true,
+    "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
+    "body": "FriendUnitBody",
+    "master": "FriendUnitMaster"
+  },
+  "cscFriendUnitQuestUnlock": {
+    "class": "CharacterSpawnCard",
+    "_name": "cscFriendUnitQuestUnlock",
+    "name": "Best Buddy",
+    "required_flags": 0,
+    "forbidden_flags": 0,
+    "cost": 0,
+    "elite_rules": 0,
+    "no_elites": true,
+    "forbidden_as_boss": false,
+    "equipment": [
+      "QuestVolatileBattery"
+    ],
+    "items": [],
+    "body": "FriendUnitBody",
+    "master": "FriendUnitMaster"
+  },
   "cscGeepBody": {
     "class": "CharacterSpawnCard",
     "_name": "cscGeepBody",
     "name": "Geep",
     "required_flags": 0,
     "forbidden_flags": 4,
-    "cost": 40,
+    "cost": 35,
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": true,
@@ -520,7 +582,7 @@
     "name": "Gip",
     "required_flags": 0,
     "forbidden_flags": 4,
-    "cost": 40,
+    "cost": 12,
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": true,
@@ -634,6 +696,21 @@
     "body": "GreaterWispBody",
     "master": "GreaterWispMaster"
   },
+  "cscGunnerDrone": {
+    "class": "CharacterSpawnCard",
+    "_name": "cscGunnerDrone",
+    "name": "CROSSHAIRS",
+    "required_flags": 0,
+    "forbidden_flags": 4,
+    "cost": 0,
+    "elite_rules": 0,
+    "no_elites": false,
+    "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
+    "body": "DTGunnerDroneBody",
+    "master": "DTGunnerDroneMaster"
+  },
   "cscGupBody": {
     "class": "CharacterSpawnCard",
     "_name": "cscGupBody",
@@ -663,6 +740,21 @@
     "items": [],
     "body": "HalcyoniteBody",
     "master": "HalcyoniteMaster"
+  },
+  "cscHealingDrone": {
+    "class": "CharacterSpawnCard",
+    "_name": "cscHealingDrone",
+    "name": "DOC",
+    "required_flags": 0,
+    "forbidden_flags": 4,
+    "cost": 0,
+    "elite_rules": 0,
+    "no_elites": false,
+    "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
+    "body": "DTHealingDroneBody",
+    "master": "DTHeallingDroneMaster"
   },
   "cscHermitCrab": {
     "class": "CharacterSpawnCard",
@@ -708,6 +800,21 @@
     "items": [],
     "body": "ImpBossBody",
     "master": "ImpBossMaster"
+  },
+  "cscIronHauler": {
+    "class": "CharacterSpawnCard",
+    "_name": "cscIronHauler",
+    "name": "Solus Transporter",
+    "required_flags": 0,
+    "forbidden_flags": 4,
+    "cost": 200,
+    "elite_rules": 0,
+    "no_elites": false,
+    "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
+    "body": "IronHaulerBody",
+    "master": "IronHaulerMaster"
   },
   "cscJellyfish": {
     "class": "CharacterSpawnCard",
@@ -859,20 +966,20 @@
     "body": "MegaConstructBody",
     "master": "MegaConstructMaster"
   },
-  "cscMegaDrone": {
+  "cscMinePod": {
     "class": "CharacterSpawnCard",
-    "_name": "cscMegaDrone",
-    "name": "TC-280 Prototype",
+    "_name": "cscMinePod",
+    "name": "Solus Distributor",
     "required_flags": 0,
     "forbidden_flags": 4,
-    "cost": 1000,
+    "cost": 20,
     "elite_rules": 0,
     "no_elites": false,
     "forbidden_as_boss": false,
     "equipment": [],
     "items": [],
-    "body": "MegaDroneBody",
-    "master": "MegaDroneMaster"
+    "body": "MinePodBody",
+    "master": "MinePodMaster"
   },
   "cscMiniMushroom": {
     "class": "CharacterSpawnCard",
@@ -1108,6 +1215,23 @@
     "body": "RoboBallMiniBody",
     "master": "RoboBallMiniMaster"
   },
+  "cscRoboBallMini_Elite": {
+    "class": "CharacterSpawnCard",
+    "_name": "cscRoboBallMini_Elite",
+    "name": "Solus Probe",
+    "required_flags": 0,
+    "forbidden_flags": 4,
+    "cost": 60,
+    "elite_rules": 0,
+    "no_elites": false,
+    "forbidden_as_boss": false,
+    "equipment": [
+      "EliteCollectiveEquipment"
+    ],
+    "items": [],
+    "body": "RoboBallMiniBody",
+    "master": "RoboBallMiniMaster"
+  },
   "cscRoboBallRedBuddy": {
     "class": "CharacterSpawnCard",
     "_name": "cscRoboBallRedBuddy",
@@ -1153,21 +1277,6 @@
     "body": "ScavBody",
     "master": "ScavMaster"
   },
-  "cscScavLunar": {
-    "class": "MultiCharacterSpawnCard",
-    "_name": "cscScavLunar",
-    "name": "Twiptwip the Devotee",
-    "required_flags": 2,
-    "forbidden_flags": 4,
-    "cost": 0,
-    "elite_rules": 0,
-    "no_elites": false,
-    "forbidden_as_boss": false,
-    "equipment": [],
-    "items": [],
-    "body": "ScavLunar3Body",
-    "master": "ScavLunar3Master"
-  },
   "cscScorchling": {
     "class": "CharacterSpawnCard",
     "_name": "cscScorchling",
@@ -1182,6 +1291,116 @@
     "items": [],
     "body": "ScorchlingBody",
     "master": "ScorchlingMaster"
+  },
+  "cscSolusAmalgamator": {
+    "class": "CharacterSpawnCard",
+    "_name": "cscSolusAmalgamator",
+    "name": "Solus Amalgamator",
+    "required_flags": 0,
+    "forbidden_flags": 4,
+    "cost": 800,
+    "elite_rules": 0,
+    "no_elites": false,
+    "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
+    "body": "SolusAmalgamatorBody",
+    "master": "SolusAmalgamatorMaster"
+  },
+  "cscSolusAmalgamatorFlamethrowerCannon": {
+    "class": "CharacterSpawnCard",
+    "_name": "cscSolusAmalgamatorFlamethrowerCannon",
+    "name": "Severed Scorcher",
+    "required_flags": 0,
+    "forbidden_flags": 4,
+    "cost": 800,
+    "elite_rules": 0,
+    "no_elites": false,
+    "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
+    "body": "SolusAmalgamatorFlamethrowerCannonBody",
+    "master": "SolusAmalgamatorFlamethrowerCannonMaster"
+  },
+  "cscSolusAmalgamatorMissilePod": {
+    "class": "CharacterSpawnCard",
+    "_name": "cscSolusAmalgamatorMissilePod",
+    "name": "Severed Breaker",
+    "required_flags": 0,
+    "forbidden_flags": 4,
+    "cost": 800,
+    "elite_rules": 0,
+    "no_elites": false,
+    "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
+    "body": "SolusAmalgamatorMissilePodBody",
+    "master": "SolusAmalgamatorMissilePodMaster"
+  },
+  "cscSolusAmalgamatorThruster": {
+    "class": "CharacterSpawnCard",
+    "_name": "cscSolusAmalgamatorThruster",
+    "name": "Severed Probe",
+    "required_flags": 0,
+    "forbidden_flags": 4,
+    "cost": 800,
+    "elite_rules": 0,
+    "no_elites": false,
+    "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
+    "body": "SolusAmalgamatorThrusterBody",
+    "master": "SolusAmalgamatorThrusterMaster"
+  },
+  "cscSolusHeart": {
+    "class": "CharacterSpawnCard",
+    "_name": "cscSolusHeart",
+    "name": "Solus Heart",
+    "required_flags": 0,
+    "forbidden_flags": 4,
+    "cost": 20,
+    "elite_rules": 0,
+    "no_elites": false,
+    "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
+    "body": "SolusHeartBody",
+    "master": "SolusHeartMaster"
+  },
+  "cscSolusMine": {
+    "class": "CharacterSpawnCard",
+    "_name": "cscSolusMine",
+    "name": "Solus Mine",
+    "required_flags": 0,
+    "forbidden_flags": 4,
+    "cost": 800,
+    "elite_rules": 0,
+    "no_elites": false,
+    "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
+    "body": "SolusMineBody",
+    "master": "SolusMineMaster"
+  },
+  "cscSolusWing": {
+    "class": "CharacterSpawnCard",
+    "_name": "cscSolusWing",
+    "name": "Solus Wing",
+    "required_flags": 0,
+    "forbidden_flags": 4,
+    "cost": 0,
+    "elite_rules": 0,
+    "no_elites": false,
+    "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [
+      [
+        "AdaptiveArmor",
+        1
+      ]
+    ],
+    "body": "SolusWingBody",
+    "master": "SolusWingMaster"
   },
   "cscSquidTurret": {
     "class": "CharacterSpawnCard",
@@ -1212,6 +1431,21 @@
     "items": [],
     "body": "SuperRoboBallBossBody",
     "master": "SuperRoboBallBossMaster"
+  },
+  "cscTanker": {
+    "class": "CharacterSpawnCard",
+    "_name": "cscTanker",
+    "name": "Solus Scorcher",
+    "required_flags": 0,
+    "forbidden_flags": 4,
+    "cost": 18,
+    "elite_rules": 0,
+    "no_elites": false,
+    "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
+    "body": "TankerBody",
+    "master": "TankerMaster"
   },
   "cscTitanBlackBeach": {
     "class": "CharacterSpawnCard",
@@ -1512,5 +1746,106 @@
     "items": [],
     "body": "VultureBody",
     "master": "VultureMaster"
+  },
+  "cscVultureHunter": {
+    "class": "CharacterSpawnCard",
+    "_name": "cscVultureHunter",
+    "name": "Alloy Hunter",
+    "required_flags": 0,
+    "forbidden_flags": 4,
+    "cost": 800,
+    "elite_rules": 0,
+    "no_elites": false,
+    "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
+    "body": "VultureHunterBody",
+    "master": "VultureHunterMaster"
+  },
+  "cscVultureHuntressInvader": {
+    "class": "CharacterSpawnCard",
+    "_name": "cscVultureHuntressInvader",
+    "name": "Huntress",
+    "required_flags": 0,
+    "forbidden_flags": 4,
+    "cost": 0,
+    "elite_rules": 0,
+    "no_elites": false,
+    "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [
+      [
+        "ScrapGreen",
+        1
+      ],
+      [
+        "LunarDagger",
+        1
+      ],
+      [
+        "InvadingDoppelganger",
+        1
+      ]
+    ],
+    "body": "HuntressBody",
+    "master": "HuntressMonsterMaster"
+  },
+  "cscVultureMulTInvader": {
+    "class": "CharacterSpawnCard",
+    "_name": "cscVultureMulTInvader",
+    "name": "MUL-T",
+    "required_flags": 0,
+    "forbidden_flags": 4,
+    "cost": 0,
+    "elite_rules": 0,
+    "no_elites": false,
+    "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [
+      [
+        "ScrapGreen",
+        1
+      ],
+      [
+        "LunarDagger",
+        1
+      ],
+      [
+        "InvadingDoppelganger",
+        1
+      ]
+    ],
+    "body": "ToolbotBody",
+    "master": "ToolbotMonsterMasterVariant"
+  },
+  "cscVulture_SH": {
+    "class": "CharacterSpawnCard",
+    "_name": "cscVulture_SH",
+    "name": "Alloy Vulture",
+    "required_flags": 0,
+    "forbidden_flags": 4,
+    "cost": 28,
+    "elite_rules": 0,
+    "no_elites": false,
+    "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
+    "body": "VultureBody",
+    "master": "VultureMaster"
+  },
+  "cscWorkerUnit": {
+    "class": "CharacterSpawnCard",
+    "_name": "cscWorkerUnit",
+    "name": "Solus Prospector",
+    "required_flags": 0,
+    "forbidden_flags": 4,
+    "cost": 11,
+    "elite_rules": 0,
+    "no_elites": false,
+    "forbidden_as_boss": false,
+    "equipment": [],
+    "items": [],
+    "body": "WorkerUnitBody",
+    "master": "WorkerUnitMaster"
   }
 }

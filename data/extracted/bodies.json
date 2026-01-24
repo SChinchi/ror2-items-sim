@@ -67,9 +67,10 @@
   },
   "AltarSkeletonBody": {
     "_name": "AltarSkeletonBody",
-    "name": "",
+    "name": "???",
     "flags": [
-      "Masterless"
+      "Masterless",
+      "Ungrabbable"
     ],
     "health": [
       120.0,
@@ -166,7 +167,9 @@
   "ArtifactShellBody": {
     "_name": "ArtifactShellBody",
     "name": "Artifact Reliquary",
-    "flags": [],
+    "flags": [
+      "Ungrabbable"
+    ],
     "health": [
       100000.0,
       30000.0
@@ -331,7 +334,7 @@
   },
   "BHFruitSmall": {
     "_name": "BHFruitSmall",
-    "name": "",
+    "name": "Golden Fruit",
     "flags": [
       "Masterless",
       "HasBackstabImmunity"
@@ -368,15 +371,16 @@
     "_name": "BackupDroneBody",
     "name": "Strike Drone",
     "flags": [
-      "Mechanical"
+      "Mechanical",
+      "Drone"
     ],
     "health": [
       225.0,
       68.0
     ],
     "regen": [
-      5.0,
-      1.0
+      7.5,
+      1.5
     ],
     "damage": [
       7.0,
@@ -384,9 +388,44 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "speed": 17.0,
+    "speed": 20.0,
     "sprint_multiplier": 1.45,
-    "acceleration": 17.0,
+    "acceleration": 32.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "BackupDroneBodyRemoteOp": {
+    "_name": "BackupDroneBodyRemoteOp",
+    "name": "Strike Drone",
+    "flags": [
+      "Mechanical",
+      "Drone"
+    ],
+    "health": [
+      225.0,
+      68.0
+    ],
+    "regen": [
+      2.5,
+      0.5
+    ],
+    "damage": [
+      7.0,
+      1.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 20.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 32.0,
     "jump": 1,
     "jump_power": 0.0,
     "armor": 0.0,
@@ -501,11 +540,84 @@
     "item_drop": null,
     "expansion": null
   },
+  "BasePodBody": {
+    "_name": "BasePodBody",
+    "name": "Heat Vent",
+    "flags": [
+      "Mechanical",
+      "Masterless",
+      "Ungrabbable"
+    ],
+    "health": [
+      250.0,
+      75.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.1,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
+  "BasePodBody_NoRevive": {
+    "_name": "BasePodBody_NoRevive",
+    "name": "Heat Vent",
+    "flags": [
+      "Mechanical",
+      "Masterless",
+      "Ungrabbable"
+    ],
+    "health": [
+      250.0,
+      75.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.1,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
   "BeadProjectileTrackingBomb": {
     "_name": "BeadProjectileTrackingBomb",
     "name": "",
     "flags": [
-      "Masterless"
+      "Masterless",
+      "Ungrabbable"
     ],
     "health": [
       350.0,
@@ -699,7 +811,8 @@
     "_name": "BeetleQueen2Body",
     "name": "Beetle Queen",
     "flags": [
-      "IgnoreFallDamage"
+      "IgnoreFallDamage",
+      "Ungrabbable"
     ],
     "health": [
       2100.0,
@@ -797,7 +910,7 @@
   },
   "BirdsharkBody": {
     "_name": "BirdsharkBody",
-    "name": "",
+    "name": "Watcher",
     "flags": [
       "Masterless"
     ],
@@ -861,6 +974,76 @@
     "item_drop": null,
     "expansion": null
   },
+  "BombardmentDroneBody": {
+    "_name": "BombardmentDroneBody",
+    "name": "Bombardment Drone",
+    "flags": [
+      "Mechanical",
+      "Drone"
+    ],
+    "health": [
+      300.0,
+      90.0
+    ],
+    "regen": [
+      10.0,
+      2.0
+    ],
+    "damage": [
+      10.0,
+      4.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 10.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 17.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
+  "BombardmentDroneBodyRemoteOp": {
+    "_name": "BombardmentDroneBodyRemoteOp",
+    "name": "Bombardment Drone",
+    "flags": [
+      "Mechanical",
+      "Drone"
+    ],
+    "health": [
+      300.0,
+      90.0
+    ],
+    "regen": [
+      3.0,
+      0.6
+    ],
+    "damage": [
+      10.0,
+      4.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 10.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 17.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
   "BomberBody": {
     "_name": "BomberBody",
     "name": "Bomber",
@@ -898,6 +1081,7 @@
     "name": "Mithrix",
     "flags": [
       "ImmuneToVoidDeath",
+      "Ungrabbable",
       "IgnoresRecordDeathEvent"
     ],
     "health": [
@@ -933,6 +1117,7 @@
     "name": "Mithrix",
     "flags": [
       "ImmuneToVoidDeath",
+      "Ungrabbable",
       "IgnoresRecordDeathEvent"
     ],
     "health": [
@@ -967,7 +1152,8 @@
     "_name": "BrotherHauntBody",
     "name": "",
     "flags": [
-      "ResistantToAOE"
+      "ResistantToAOE",
+      "Ungrabbable"
     ],
     "health": [
       200.0,
@@ -1001,7 +1187,8 @@
     "_name": "BrotherHurtBody",
     "name": "Mithrix",
     "flags": [
-      "ImmuneToVoidDeath"
+      "ImmuneToVoidDeath",
+      "Ungrabbable"
     ],
     "health": [
       1400.0,
@@ -1169,7 +1356,8 @@
     "name": "Clay Dunestrider",
     "flags": [
       "IgnoreFallDamage",
-      "ImmuneToGoo"
+      "ImmuneToGoo",
+      "Ungrabbable"
     ],
     "health": [
       2100.0,
@@ -1267,6 +1455,76 @@
     "item_drop": null,
     "expansion": "DLC1"
   },
+  "CleanupDroneBody": {
+    "_name": "CleanupDroneBody",
+    "name": "Cleanup Drone",
+    "flags": [
+      "Mechanical",
+      "Drone"
+    ],
+    "health": [
+      300.0,
+      90.0
+    ],
+    "regen": [
+      10.0,
+      2.0
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 17.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 24.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
+  "CleanupDroneBodyRemoteOp": {
+    "_name": "CleanupDroneBodyRemoteOp",
+    "name": "Cleanup Drone",
+    "flags": [
+      "Mechanical",
+      "Drone"
+    ],
+    "health": [
+      300.0,
+      90.0
+    ],
+    "regen": [
+      3.0,
+      0.6
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 17.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 24.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
   "CommandoBody": {
     "_name": "CommandoBody",
     "name": "Commando",
@@ -1335,10 +1593,84 @@
     "item_drop": null,
     "expansion": null
   },
+  "CopycatDroneBody": {
+    "_name": "CopycatDroneBody",
+    "name": "Freeze Drone",
+    "flags": [
+      "Mechanical",
+      "IgnoreKnockup",
+      "Drone"
+    ],
+    "health": [
+      225.0,
+      68.0
+    ],
+    "regen": [
+      7.5,
+      1.5
+    ],
+    "damage": [
+      10.0,
+      4.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 17.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 34.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
+  "CopycatDroneBodyRemoteOp": {
+    "_name": "CopycatDroneBodyRemoteOp",
+    "name": "Freeze Drone",
+    "flags": [
+      "Mechanical",
+      "IgnoreKnockup",
+      "Drone"
+    ],
+    "health": [
+      225.0,
+      68.0
+    ],
+    "regen": [
+      2.5,
+      0.5
+    ],
+    "damage": [
+      10.0,
+      4.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 17.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 34.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
   "CorruptionSpike": {
     "_name": "CorruptionSpike",
     "name": "Lunar Rain",
-    "flags": [],
+    "flags": [
+      "Ungrabbable"
+    ],
     "health": [
       300.0,
       0.0
@@ -1401,10 +1733,226 @@
     "item_drop": null,
     "expansion": null
   },
+  "DTGunnerDroneBody": {
+    "_name": "DTGunnerDroneBody",
+    "name": "CROSSHAIRS",
+    "flags": [
+      "Mechanical",
+      "Drone"
+    ],
+    "health": [
+      150.0,
+      45.0
+    ],
+    "regen": [
+      5.0,
+      1.0
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 17.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 34.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
+  "DTGunnerDroneBrokenBody": {
+    "_name": "DTGunnerDroneBrokenBody",
+    "name": "CROSSHAIRS",
+    "flags": [
+      "Mechanical",
+      "OverheatImmune",
+      "Buddha"
+    ],
+    "health": [
+      150.0,
+      0.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "DTHaulerDroneBody": {
+    "_name": "DTHaulerDroneBody",
+    "name": "CHIRP",
+    "flags": [
+      "Mechanical",
+      "Drone"
+    ],
+    "health": [
+      300.0,
+      90.0
+    ],
+    "regen": [
+      10.0,
+      2.0
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 10.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 40.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
+  "DTHaulerDroneBrokenBody": {
+    "_name": "DTHaulerDroneBrokenBody",
+    "name": "CHIRP",
+    "flags": [
+      "Mechanical",
+      "OverheatImmune",
+      "Buddha"
+    ],
+    "health": [
+      150.0,
+      45.0
+    ],
+    "regen": [
+      5.0,
+      1.0
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 10.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 40.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "DTHealingDroneBody": {
+    "_name": "DTHealingDroneBody",
+    "name": "DOC",
+    "flags": [
+      "Mechanical",
+      "Unmovable",
+      "Drone"
+    ],
+    "health": [
+      150.0,
+      45.0
+    ],
+    "regen": [
+      5.0,
+      1.0
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 17.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 34.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
+  "DTHealingDroneBrokenBody": {
+    "_name": "DTHealingDroneBrokenBody",
+    "name": "DOC",
+    "flags": [
+      "Mechanical",
+      "OverheatImmune",
+      "Buddha"
+    ],
+    "health": [
+      150.0,
+      45.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 17.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 17.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
   "DeathProjectile": {
     "_name": "DeathProjectile",
     "name": "",
-    "flags": [],
+    "flags": [
+      "Ungrabbable"
+    ],
     "health": [
       0.0,
       0.0
@@ -1432,6 +1980,76 @@
     "can_be_frozen": false,
     "item_drop": null,
     "expansion": null
+  },
+  "DefectiveUnitBody": {
+    "_name": "DefectiveUnitBody",
+    "name": "Solus Invalidator",
+    "flags": [
+      "Mechanical"
+    ],
+    "health": [
+      400.0,
+      120.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 10.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 30.0,
+    "jump": 1,
+    "jump_power": 26.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.35,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
+  "DestructibleSpawnerObjectBody": {
+    "_name": "DestructibleSpawnerObjectBody",
+    "name": "",
+    "flags": [
+      "Masterless",
+      "HasBackstabImmunity",
+      "IgnoreKnockup"
+    ],
+    "health": [
+      1.0,
+      0.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      25.0,
+      5.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC3"
   },
   "DevotedLemurianBody": {
     "_name": "DevotedLemurianBody",
@@ -1497,11 +2115,122 @@
     "item_drop": null,
     "expansion": null
   },
+  "DrifterBody": {
+    "_name": "DrifterBody",
+    "name": "Drifter",
+    "flags": [
+      "ImmuneToExecutes",
+      "CollectJunk"
+    ],
+    "health": [
+      170.0,
+      52.0
+    ],
+    "regen": [
+      1.0,
+      0.2
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "pain_threshold": 5.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
+  "DrifterShieldTank": {
+    "_name": "DrifterShieldTank",
+    "name": "Shield Tank",
+    "flags": [
+      "Masterless",
+      "ImmuneToGoo",
+      "ImmuneToExecutes",
+      "HasBackstabImmunity",
+      "OverheatImmune",
+      "ImmuneToVoidDeath",
+      "Ungrabbable"
+    ],
+    "health": [
+      100.0,
+      30.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      20.0,
+      4.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "DrifterThqwib": {
+    "_name": "DrifterThqwib",
+    "name": "",
+    "flags": [
+      "Masterless",
+      "Ungrabbable"
+    ],
+    "health": [
+      5.0,
+      2.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
   "Drone1Body": {
     "_name": "Drone1Body",
     "name": "Gunner Drone",
     "flags": [
-      "Mechanical"
+      "Mechanical",
+      "Drone"
     ],
     "health": [
       150.0,
@@ -1519,7 +2248,42 @@
     "crit": 0.0,
     "speed": 17.0,
     "sprint_multiplier": 1.45,
-    "acceleration": 17.0,
+    "acceleration": 24.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "Drone1BodyRemoteOp": {
+    "_name": "Drone1BodyRemoteOp",
+    "name": "Gunner Drone",
+    "flags": [
+      "Mechanical",
+      "Drone"
+    ],
+    "health": [
+      150.0,
+      45.0
+    ],
+    "regen": [
+      1.5,
+      0.3
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 17.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 24.0,
     "jump": 1,
     "jump_power": 0.0,
     "armor": 0.0,
@@ -1535,7 +2299,9 @@
     "_name": "Drone2Body",
     "name": "Healing Drone",
     "flags": [
-      "Mechanical"
+      "Mechanical",
+      "Unmovable",
+      "Drone"
     ],
     "health": [
       150.0,
@@ -1553,7 +2319,7 @@
     "crit": 0.0,
     "speed": 17.0,
     "sprint_multiplier": 1.45,
-    "acceleration": 17.0,
+    "acceleration": 34.0,
     "jump": 1,
     "jump_power": 0.0,
     "armor": 0.0,
@@ -1565,11 +2331,86 @@
     "item_drop": null,
     "expansion": null
   },
-  "DroneCommanderBody": {
-    "_name": "DroneCommanderBody",
-    "name": "Col. Droneman",
+  "Drone2BodyRemoteOp": {
+    "_name": "Drone2BodyRemoteOp",
+    "name": "Healing Drone",
     "flags": [
-      "Mechanical"
+      "Mechanical",
+      "Unmovable",
+      "Drone"
+    ],
+    "health": [
+      150.0,
+      45.0
+    ],
+    "regen": [
+      1.5,
+      0.3
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 17.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 34.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "DroneBallDotZone": {
+    "_name": "DroneBallDotZone",
+    "name": "",
+    "flags": [
+      "Masterless",
+      "IgnoreKnockup",
+      "Ungrabbable",
+      "Buddha"
+    ],
+    "health": [
+      100.0,
+      0.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "DroneBomberBody": {
+    "_name": "DroneBomberBody",
+    "name": "Lt. Droneboy",
+    "flags": [
+      "Mechanical",
+      "Devotion",
+      "Drone"
     ],
     "health": [
       180.0,
@@ -1599,14 +2440,120 @@
     "item_drop": null,
     "expansion": null
   },
+  "DroneCommanderBody": {
+    "_name": "DroneCommanderBody",
+    "name": "Col. Droneman",
+    "flags": [
+      "Mechanical",
+      "Devotion",
+      "Drone"
+    ],
+    "health": [
+      180.0,
+      54.0
+    ],
+    "regen": [
+      6.0,
+      1.2
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 20.0,
+    "sprint_multiplier": 1.75,
+    "acceleration": 20.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "DroneTechBody": {
+    "_name": "DroneTechBody",
+    "name": "Operator",
+    "flags": [
+      "ImmuneToExecutes"
+    ],
+    "health": [
+      90.0,
+      27.0
+    ],
+    "regen": [
+      1.0,
+      0.2
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 1.0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 5.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
+  "DroneTechShield": {
+    "_name": "DroneTechShield",
+    "name": "Drone Firewall",
+    "flags": [
+      "Masterless",
+      "Ungrabbable"
+    ],
+    "health": [
+      1.0,
+      0.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
   "ElectricWormBody": {
     "_name": "ElectricWormBody",
     "name": "Overloading Worm",
     "flags": [
       "IgnoreFallDamage",
       "ImmuneToGoo",
-      "IgnoreKnockback",
-      "ImmuneToLava"
+      "IgnoreKnockup",
+      "ImmuneToLava",
+      "Ungrabbable"
     ],
     "health": [
       12000.0,
@@ -1640,15 +2587,17 @@
     "_name": "EmergencyDroneBody",
     "name": "Emergency Drone",
     "flags": [
-      "Mechanical"
+      "Mechanical",
+      "Unmovable",
+      "Drone"
     ],
     "health": [
       300.0,
       90.0
     ],
     "regen": [
-      2.0,
-      0.4
+      10.0,
+      2.0
     ],
     "damage": [
       10.0,
@@ -1658,7 +2607,43 @@
     "crit": 0.0,
     "speed": 17.0,
     "sprint_multiplier": 1.45,
-    "acceleration": 17.0,
+    "acceleration": 20.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "EmergencyDroneBodyRemoteOp": {
+    "_name": "EmergencyDroneBodyRemoteOp",
+    "name": "Emergency Drone",
+    "flags": [
+      "Mechanical",
+      "Unmovable",
+      "Drone"
+    ],
+    "health": [
+      300.0,
+      90.0
+    ],
+    "regen": [
+      3.0,
+      0.6
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 17.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 20.0,
     "jump": 1,
     "jump_power": 0.0,
     "armor": 20.0,
@@ -1842,15 +2827,16 @@
     "_name": "EquipmentDroneBody",
     "name": "Equipment Drone",
     "flags": [
-      "Mechanical"
+      "Mechanical",
+      "Drone"
     ],
     "health": [
       250.0,
       75.0
     ],
     "regen": [
-      5.0,
-      1.0
+      8.0,
+      1.6
     ],
     "damage": [
       10.0,
@@ -1871,6 +2857,112 @@
     "can_be_frozen": false,
     "item_drop": null,
     "expansion": null
+  },
+  "EquipmentDroneBodyRemoteOp": {
+    "_name": "EquipmentDroneBodyRemoteOp",
+    "name": "Equipment Drone",
+    "flags": [
+      "Mechanical",
+      "Drone"
+    ],
+    "health": [
+      250.0,
+      75.0
+    ],
+    "regen": [
+      2.5,
+      0.5
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 10.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 17.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "ExhaustPortWeakpointBody": {
+    "_name": "ExhaustPortWeakpointBody",
+    "name": "Memory Module",
+    "flags": [
+      "OverheatImmune",
+      "Ungrabbable"
+    ],
+    "health": [
+      540.0,
+      162.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 10.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "ExplosiveJunkBombDestructibleBody": {
+    "_name": "ExplosiveJunkBombDestructibleBody",
+    "name": "",
+    "flags": [
+      "Masterless",
+      "HasBackstabImmunity",
+      "Devotion"
+    ],
+    "health": [
+      1.0,
+      0.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      20.0,
+      4.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC3"
   },
   "ExplosivePotDestructibleBody": {
     "_name": "ExplosivePotDestructibleBody",
@@ -1906,6 +2998,40 @@
     "can_be_frozen": false,
     "item_drop": null,
     "expansion": null
+  },
+  "ExtractorUnitBody": {
+    "_name": "ExtractorUnitBody",
+    "name": "Solus Extractor",
+    "flags": [
+      "Mechanical"
+    ],
+    "health": [
+      250.0,
+      75.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 11.2,
+    "sprint_multiplier": 1.45,
+    "acceleration": 40.0,
+    "jump": 1,
+    "jump_power": 18.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "pain_threshold": 0.3,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": "DLC3"
   },
   "FalseSonBody": {
     "_name": "FalseSonBody",
@@ -1947,6 +3073,7 @@
     "flags": [
       "IgnoreFallDamage",
       "ImmuneToVoidDeath",
+      "Ungrabbable",
       "IgnoresRecordDeathEvent"
     ],
     "health": [
@@ -1975,14 +3102,15 @@
     "can_be_stunned": false,
     "can_be_frozen": true,
     "item_drop": null,
-    "expansion": null
+    "expansion": "DLC2"
   },
   "FalseSonBossBodyBrokenLunarShard": {
     "_name": "FalseSonBossBodyBrokenLunarShard",
     "name": "False Son",
     "flags": [
       "IgnoreFallDamage",
-      "ImmuneToVoidDeath"
+      "ImmuneToVoidDeath",
+      "Ungrabbable"
     ],
     "health": [
       1200.0,
@@ -2010,7 +3138,7 @@
     "can_be_stunned": false,
     "can_be_frozen": true,
     "item_drop": null,
-    "expansion": null
+    "expansion": "DLC2"
   },
   "FalseSonBossBodyLunarShard": {
     "_name": "FalseSonBossBodyLunarShard",
@@ -2018,6 +3146,7 @@
     "flags": [
       "IgnoreFallDamage",
       "ImmuneToVoidDeath",
+      "Ungrabbable",
       "IgnoresRecordDeathEvent"
     ],
     "health": [
@@ -2046,21 +3175,58 @@
     "can_be_stunned": false,
     "can_be_frozen": true,
     "item_drop": null,
+    "expansion": "DLC2"
+  },
+  "FireExtinguisherPodBody": {
+    "_name": "FireExtinguisherPodBody",
+    "name": "Coolant Distributor",
+    "flags": [
+      "Mechanical",
+      "Masterless",
+      "Ungrabbable"
+    ],
+    "health": [
+      250.0,
+      75.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.1,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
     "expansion": null
   },
   "FlameDroneBody": {
     "_name": "FlameDroneBody",
     "name": "Incinerator Drone",
     "flags": [
-      "Mechanical"
+      "Mechanical",
+      "Drone"
     ],
     "health": [
       300.0,
       90.0
     ],
     "regen": [
-      5.0,
-      1.0
+      10.0,
+      2.0
     ],
     "damage": [
       10.0,
@@ -2068,9 +3234,44 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "speed": 10.0,
+    "speed": 12.0,
     "sprint_multiplier": 1.45,
-    "acceleration": 17.0,
+    "acceleration": 24.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "FlameDroneBodyRemoteOp": {
+    "_name": "FlameDroneBodyRemoteOp",
+    "name": "Incinerator Drone",
+    "flags": [
+      "Mechanical",
+      "Drone"
+    ],
+    "health": [
+      300.0,
+      90.0
+    ],
+    "regen": [
+      3.0,
+      0.6
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 12.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 24.0,
     "jump": 1,
     "jump_power": 0.0,
     "armor": 20.0,
@@ -2115,6 +3316,43 @@
     "can_be_frozen": true,
     "item_drop": null,
     "expansion": "DLC1"
+  },
+  "FriendUnitBody": {
+    "_name": "FriendUnitBody",
+    "name": "Best Buddy",
+    "flags": [
+      "IgnoreFallDamage",
+      "Mechanical",
+      "SprintAnyDirection",
+      "ResistantToAOE"
+    ],
+    "health": [
+      400.0,
+      120.0
+    ],
+    "regen": [
+      5.0,
+      1.0
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 12.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 12.0,
+    "jump": 1,
+    "jump_power": 26.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "pain_threshold": 0.35,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC3"
   },
   "FusionCellDestructibleBody": {
     "_name": "FusionCellDestructibleBody",
@@ -2283,7 +3521,8 @@
     "_name": "GrandParentBody",
     "name": "Grandparent",
     "flags": [
-      "OverheatImmune"
+      "OverheatImmune",
+      "Ungrabbable"
     ],
     "health": [
       3625.0,
@@ -2316,7 +3555,9 @@
   "GravekeeperBody": {
     "_name": "GravekeeperBody",
     "name": "Grovetender",
-    "flags": [],
+    "flags": [
+      "Ungrabbable"
+    ],
     "health": [
       2800.0,
       840.0
@@ -2349,7 +3590,8 @@
     "_name": "GravekeeperTrackingFireball",
     "name": "",
     "flags": [
-      "Masterless"
+      "Masterless",
+      "Ungrabbable"
     ],
     "health": [
       20.0,
@@ -2541,6 +3783,437 @@
     "item_drop": null,
     "expansion": null
   },
+  "HaulerDroneBody": {
+    "_name": "HaulerDroneBody",
+    "name": "Transport Drone",
+    "flags": [
+      "Mechanical",
+      "Drone"
+    ],
+    "health": [
+      300.0,
+      90.0
+    ],
+    "regen": [
+      10.0,
+      2.0
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 10.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 17.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
+  "HeatSinkPodBody": {
+    "_name": "HeatSinkPodBody",
+    "name": "Heat Vent",
+    "flags": [
+      "Mechanical",
+      "Masterless",
+      "Ungrabbable"
+    ],
+    "health": [
+      250.0,
+      75.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.1,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
+  "HeatSinkPodBody (1)": {
+    "_name": "HeatSinkPodBody (1)",
+    "name": "Heat Vent",
+    "flags": [
+      "Mechanical",
+      "Masterless",
+      "Ungrabbable"
+    ],
+    "health": [
+      250.0,
+      75.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.1,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
+  "HeatSinkPodBody (2)": {
+    "_name": "HeatSinkPodBody (2)",
+    "name": "Heat Vent",
+    "flags": [
+      "Mechanical",
+      "Masterless",
+      "Ungrabbable"
+    ],
+    "health": [
+      250.0,
+      75.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.1,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
+  "HeatSinkPodBody (3)": {
+    "_name": "HeatSinkPodBody (3)",
+    "name": "Heat Vent",
+    "flags": [
+      "Mechanical",
+      "Masterless",
+      "Ungrabbable"
+    ],
+    "health": [
+      250.0,
+      75.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.1,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
+  "HeatSinkPodBody (4)": {
+    "_name": "HeatSinkPodBody (4)",
+    "name": "Heat Vent",
+    "flags": [
+      "Mechanical",
+      "Masterless",
+      "Ungrabbable"
+    ],
+    "health": [
+      250.0,
+      75.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.1,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
+  "HeatSinkPodBody (5)": {
+    "_name": "HeatSinkPodBody (5)",
+    "name": "Heat Vent",
+    "flags": [
+      "Mechanical",
+      "Masterless",
+      "Ungrabbable"
+    ],
+    "health": [
+      250.0,
+      75.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.1,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
+  "HeatSinkPodBody (6)": {
+    "_name": "HeatSinkPodBody (6)",
+    "name": "Heat Vent",
+    "flags": [
+      "Mechanical",
+      "Masterless",
+      "Ungrabbable"
+    ],
+    "health": [
+      250.0,
+      75.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.1,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
+  "HeaterPodBody": {
+    "_name": "HeaterPodBody",
+    "name": "Heat Vent",
+    "flags": [
+      "Mechanical",
+      "Masterless",
+      "Ungrabbable"
+    ],
+    "health": [
+      120.0,
+      36.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      2.0,
+      0.4
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.1,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
+  "HeaterPodBodyNoRespawn": {
+    "_name": "HeaterPodBodyNoRespawn",
+    "name": "Heat Vent",
+    "flags": [
+      "Mechanical",
+      "Masterless",
+      "Ungrabbable"
+    ],
+    "health": [
+      540.0,
+      162.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      6.0,
+      1.2
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.1,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
+  "HeaterPodBodyNoRespawn_Large": {
+    "_name": "HeaterPodBodyNoRespawn_Large",
+    "name": "Heat Vent",
+    "flags": [
+      "Mechanical",
+      "Masterless",
+      "Ungrabbable"
+    ],
+    "health": [
+      540.0,
+      162.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      6.0,
+      1.2
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.1,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
+  "HeatsinkBody": {
+    "_name": "HeatsinkBody",
+    "name": "Heat Vent",
+    "flags": [
+      "Mechanical",
+      "Masterless",
+      "Ungrabbable"
+    ],
+    "health": [
+      250.0,
+      75.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.1,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": null
+  },
   "HereticBody": {
     "_name": "HereticBody",
     "name": "Heretic",
@@ -2646,6 +4319,7 @@
     "name": "Mithrix",
     "flags": [
       "ImmuneToVoidDeath",
+      "Ungrabbable",
       "IgnoresRecordDeathEvent"
     ],
     "health": [
@@ -2712,7 +4386,8 @@
     "_name": "ImpBossBody",
     "name": "Imp Overlord",
     "flags": [
-      "IgnoreFallDamage"
+      "IgnoreFallDamage",
+      "Ungrabbable"
     ],
     "health": [
       2800.0,
@@ -2741,6 +4416,110 @@
     "can_be_frozen": false,
     "item_drop": "BleedOnHitAndExplode",
     "expansion": null
+  },
+  "IronHaulerBody": {
+    "_name": "IronHaulerBody",
+    "name": "Solus Transporter",
+    "flags": [
+      "Mechanical"
+    ],
+    "health": [
+      750.0,
+      225.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 10.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 14.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 1.0,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
+  "JailerDroneBody": {
+    "_name": "JailerDroneBody",
+    "name": "Jailer Drone",
+    "flags": [
+      "Mechanical",
+      "Drone"
+    ],
+    "health": [
+      300.0,
+      90.0
+    ],
+    "regen": [
+      10.0,
+      2.0
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 12.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 22.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
+  "JailerDroneBodyRemoteOp": {
+    "_name": "JailerDroneBodyRemoteOp",
+    "name": "Jailer Drone",
+    "flags": [
+      "Mechanical",
+      "Drone"
+    ],
+    "health": [
+      300.0,
+      90.0
+    ],
+    "regen": [
+      3.0,
+      0.6
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 12.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 22.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC3"
   },
   "JellyfishBody": {
     "_name": "JellyfishBody",
@@ -2773,6 +4552,112 @@
     "can_be_frozen": true,
     "item_drop": null,
     "expansion": null
+  },
+  "JunkCubePrefab": {
+    "_name": "JunkCubePrefab",
+    "name": "Junk Cube",
+    "flags": [
+      "IgnoreFallDamage",
+      "Masterless",
+      "HasBackstabImmunity"
+    ],
+    "health": [
+      100.0,
+      0.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "JunkDroneBody": {
+    "_name": "JunkDroneBody",
+    "name": "Junk Drone",
+    "flags": [
+      "Mechanical",
+      "Drone"
+    ],
+    "health": [
+      300.0,
+      90.0
+    ],
+    "regen": [
+      10.0,
+      2.0
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 17.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 22.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
+  "JunkDroneBodyRemoteOp": {
+    "_name": "JunkDroneBodyRemoteOp",
+    "name": "Junk Drone",
+    "flags": [
+      "Mechanical",
+      "Drone"
+    ],
+    "health": [
+      300.0,
+      90.0
+    ],
+    "regen": [
+      3.0,
+      0.6
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 17.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 22.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC3"
   },
   "LemurianBody": {
     "_name": "LemurianBody",
@@ -2947,7 +4832,8 @@
     "flags": [
       "IgnoreFallDamage",
       "Masterless",
-      "HasBackstabImmunity"
+      "HasBackstabImmunity",
+      "Ungrabbable"
     ],
     "health": [
       75.0,
@@ -2982,7 +4868,8 @@
     "name": "Lunar Rain Shard",
     "flags": [
       "Masterless",
-      "HasBackstabImmunity"
+      "HasBackstabImmunity",
+      "Ungrabbable"
     ],
     "health": [
       10.0,
@@ -3048,7 +4935,8 @@
     "_name": "LunarWispTrackingBomb",
     "name": "",
     "flags": [
-      "Masterless"
+      "Masterless",
+      "Ungrabbable"
     ],
     "health": [
       75.0,
@@ -3118,8 +5006,9 @@
     "flags": [
       "IgnoreFallDamage",
       "ImmuneToGoo",
-      "IgnoreKnockback",
-      "ImmuneToLava"
+      "IgnoreKnockup",
+      "ImmuneToLava",
+      "Ungrabbable"
     ],
     "health": [
       2400.0,
@@ -3153,7 +5042,8 @@
     "_name": "MajorConstructBody",
     "name": "",
     "flags": [
-      "Mechanical"
+      "Mechanical",
+      "Ungrabbable"
     ],
     "health": [
       2100.0,
@@ -3186,7 +5076,9 @@
   "MegaConstructBody": {
     "_name": "MegaConstructBody",
     "name": "Xi Construct",
-    "flags": [],
+    "flags": [
+      "Ungrabbable"
+    ],
     "health": [
       2800.0,
       840.0
@@ -3219,19 +5111,21 @@
     "_name": "MegaDroneBody",
     "name": "TC-280 Prototype",
     "flags": [
-      "Mechanical"
+      "Mechanical",
+      "Ungrabbable",
+      "Drone"
     ],
     "health": [
-      900.0,
-      270.0
+      1200.0,
+      360.0
     ],
     "regen": [
-      5.0,
-      1.0
+      30.0,
+      8.0
     ],
     "damage": [
       14.0,
-      2.8
+      5.6
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
@@ -3240,7 +5134,43 @@
     "acceleration": 20.0,
     "jump": 1,
     "jump_power": 0.0,
-    "armor": 0.0,
+    "armor": 50.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "MegaDroneBodyRemoteOp": {
+    "_name": "MegaDroneBodyRemoteOp",
+    "name": "TC-280 Prototype",
+    "flags": [
+      "Mechanical",
+      "Ungrabbable",
+      "Drone"
+    ],
+    "health": [
+      1200.0,
+      360.0
+    ],
+    "regen": [
+      12.0,
+      8.0
+    ],
+    "damage": [
+      14.0,
+      5.6
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 20.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 20.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 50.0,
     "is_champion": false,
     "pain_threshold": Infinity,
     "can_be_hit_stunned": false,
@@ -3283,12 +5213,85 @@
     "item_drop": null,
     "expansion": null
   },
+  "MinePodBody": {
+    "_name": "MinePodBody",
+    "name": "Solus Distributor",
+    "flags": [
+      "Mechanical",
+      "IgnoreKnockup",
+      "Ungrabbable"
+    ],
+    "health": [
+      260.0,
+      78.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 0.0,
+    "acceleration": 0.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.1,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
+  "MinePodLogbookBody": {
+    "_name": "MinePodLogbookBody",
+    "name": "Solus Distributor",
+    "flags": [
+      "Mechanical",
+      "IgnoreKnockup",
+      "Ungrabbable"
+    ],
+    "health": [
+      260.0,
+      78.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 0.0,
+    "acceleration": 0.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.1,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
   "MiniGeodeBody": {
     "_name": "MiniGeodeBody",
     "name": "",
     "flags": [
       "Masterless",
-      "HasBackstabImmunity"
+      "HasBackstabImmunity",
+      "Ungrabbable"
     ],
     "health": [
       1.0,
@@ -3356,7 +5359,8 @@
     "flags": [
       "IgnoreFallDamage",
       "Void",
-      "ImmuneToVoidDeath"
+      "ImmuneToVoidDeath",
+      "Ungrabbable"
     ],
     "health": [
       2000.0,
@@ -3392,7 +5396,8 @@
     "flags": [
       "IgnoreFallDamage",
       "Void",
-      "ImmuneToVoidDeath"
+      "ImmuneToVoidDeath",
+      "Ungrabbable"
     ],
     "health": [
       2000.0,
@@ -3428,7 +5433,8 @@
     "flags": [
       "IgnoreFallDamage",
       "Void",
-      "ImmuneToVoidDeath"
+      "ImmuneToVoidDeath",
+      "Ungrabbable"
     ],
     "health": [
       2000.0,
@@ -3464,7 +5470,8 @@
     "flags": [
       "IgnoreFallDamage",
       "Void",
-      "ImmuneToVoidDeath"
+      "ImmuneToVoidDeath",
+      "Ungrabbable"
     ],
     "health": [
       2000.0,
@@ -3497,7 +5504,9 @@
   "MinorConstructAttachableBody": {
     "_name": "MinorConstructAttachableBody",
     "name": "Alpha Construct",
-    "flags": [],
+    "flags": [
+      "Ungrabbable"
+    ],
     "health": [
       100.0,
       30.0
@@ -3594,15 +5603,16 @@
     "_name": "MissileDroneBody",
     "name": "Missile Drone",
     "flags": [
-      "Mechanical"
+      "Mechanical",
+      "Drone"
     ],
     "health": [
       225.0,
       68.0
     ],
     "regen": [
-      5.0,
-      1.0
+      7.5,
+      1.5
     ],
     "damage": [
       14.0,
@@ -3610,9 +5620,44 @@
     ],
     "attack_speed": 1.0,
     "crit": 0.0,
-    "speed": 17.0,
+    "speed": 12.0,
     "sprint_multiplier": 1.45,
-    "acceleration": 17.0,
+    "acceleration": 24.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "MissileDroneBodyRemoteOp": {
+    "_name": "MissileDroneBodyRemoteOp",
+    "name": "Missile Drone",
+    "flags": [
+      "Mechanical",
+      "Drone"
+    ],
+    "health": [
+      225.0,
+      68.0
+    ],
+    "regen": [
+      2.5,
+      0.5
+    ],
+    "damage": [
+      14.0,
+      2.8
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 12.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 24.0,
     "jump": 1,
     "jump_power": 0.0,
     "armor": 0.0,
@@ -3921,6 +5966,46 @@
     "item_drop": null,
     "expansion": null
   },
+  "PowerOrbShieldTank": {
+    "_name": "PowerOrbShieldTank",
+    "name": "Shield Tank",
+    "flags": [
+      "Masterless",
+      "ImmuneToGoo",
+      "ImmuneToExecutes",
+      "HasBackstabImmunity",
+      "OverheatImmune",
+      "ImmuneToVoidDeath",
+      "Ungrabbable"
+    ],
+    "health": [
+      100.0,
+      30.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      20.0,
+      4.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
   "RailgunnerBody": {
     "_name": "RailgunnerBody",
     "name": "Railgunner",
@@ -3955,11 +6040,82 @@
     "item_drop": null,
     "expansion": "DLC1"
   },
+  "RechargeDroneBody": {
+    "_name": "RechargeDroneBody",
+    "name": "Barrier Drone",
+    "flags": [
+      "Mechanical",
+      "Drone"
+    ],
+    "health": [
+      150.0,
+      45.0
+    ],
+    "regen": [
+      5.0,
+      1.0
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 17.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 30.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
+  "RechargeDroneBodyRemoteOp": {
+    "_name": "RechargeDroneBodyRemoteOp",
+    "name": "Barrier Drone",
+    "flags": [
+      "Mechanical",
+      "Drone"
+    ],
+    "health": [
+      150.0,
+      45.0
+    ],
+    "regen": [
+      1.5,
+      0.3
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 17.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 30.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
   "RoboBallBossBody": {
     "_name": "RoboBallBossBody",
     "name": "Solus Control Unit",
     "flags": [
-      "Mechanical"
+      "Mechanical",
+      "Ungrabbable"
     ],
     "health": [
       2500.0,
@@ -4312,7 +6468,9 @@
   "ScavBody": {
     "_name": "ScavBody",
     "name": "Scavenger",
-    "flags": [],
+    "flags": [
+      "Ungrabbable"
+    ],
     "health": [
       3800.0,
       1140.0
@@ -4344,7 +6502,9 @@
   "ScavLunar1Body": {
     "_name": "ScavLunar1Body",
     "name": "Kipkip the Gentle",
-    "flags": [],
+    "flags": [
+      "Ungrabbable"
+    ],
     "health": [
       3230.0,
       969.0
@@ -4376,7 +6536,9 @@
   "ScavLunar2Body": {
     "_name": "ScavLunar2Body",
     "name": "Wipwip the Wild",
-    "flags": [],
+    "flags": [
+      "Ungrabbable"
+    ],
     "health": [
       4845.0,
       1454.0
@@ -4408,7 +6570,9 @@
   "ScavLunar3Body": {
     "_name": "ScavLunar3Body",
     "name": "Twiptwip the Devotee",
-    "flags": [],
+    "flags": [
+      "Ungrabbable"
+    ],
     "health": [
       3230.0,
       969.0
@@ -4440,7 +6604,9 @@
   "ScavLunar4Body": {
     "_name": "ScavLunar4Body",
     "name": "Guragura the Lucky",
-    "flags": [],
+    "flags": [
+      "Ungrabbable"
+    ],
     "health": [
       3230.0,
       969.0
@@ -4471,9 +6637,10 @@
   },
   "ScavSackProjectile": {
     "_name": "ScavSackProjectile",
-    "name": "",
+    "name": "Thqwib",
     "flags": [
-      "Masterless"
+      "Masterless",
+      "Ungrabbable"
     ],
     "health": [
       5.0,
@@ -4509,8 +6676,9 @@
     "flags": [
       "IgnoreFallDamage",
       "SprintAnyDirection",
-      "IgnoreKnockback",
-      "ImmuneToLava"
+      "IgnoreKnockup",
+      "ImmuneToLava",
+      "Ungrabbable"
     ],
     "health": [
       425.0,
@@ -4544,7 +6712,8 @@
     "_name": "ScorchlingBombProjectile",
     "name": "",
     "flags": [
-      "Masterless"
+      "Masterless",
+      "Ungrabbable"
     ],
     "health": [
       30.0,
@@ -4612,7 +6781,8 @@
     "_name": "ShopkeeperBody",
     "name": "Newt",
     "flags": [
-      "IgnoreFallDamage"
+      "IgnoreFallDamage",
+      "Ungrabbable"
     ],
     "health": [
       500000.0,
@@ -4665,6 +6835,515 @@
     "acceleration": 80.0,
     "jump": 1,
     "jump_power": 15.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "SolusAmalgamatorBody": {
+    "_name": "SolusAmalgamatorBody",
+    "name": "Solus Amalgamator",
+    "flags": [
+      "Mechanical",
+      "Ungrabbable"
+    ],
+    "health": [
+      3000.0,
+      900.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 7.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 14.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": "ExtraEquipment",
+    "expansion": "DLC3"
+  },
+  "SolusAmalgamatorFlamethrowerCannonBody": {
+    "_name": "SolusAmalgamatorFlamethrowerCannonBody",
+    "name": "Severed Scorcher",
+    "flags": [
+      "Mechanical"
+    ],
+    "health": [
+      300.0,
+      90.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 10.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 30.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
+  "SolusAmalgamatorMissilePodBody": {
+    "_name": "SolusAmalgamatorMissilePodBody",
+    "name": "Severed Breaker",
+    "flags": [
+      "Mechanical"
+    ],
+    "health": [
+      250.0,
+      75.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 8.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 14.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
+  "SolusAmalgamatorThrusterBody": {
+    "_name": "SolusAmalgamatorThrusterBody",
+    "name": "Severed Probe",
+    "flags": [
+      "Mechanical"
+    ],
+    "health": [
+      150.0,
+      45.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 20.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 60.0,
+    "jump": 1,
+    "jump_power": 10.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
+  "SolusAmalgamatorTrackingBomb": {
+    "_name": "SolusAmalgamatorTrackingBomb",
+    "name": "",
+    "flags": [
+      "Masterless",
+      "Ungrabbable"
+    ],
+    "health": [
+      75.0,
+      22.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "SolusHeartBody": {
+    "_name": "SolusHeartBody",
+    "name": "Solus Heart",
+    "flags": [
+      "IgnoreFallDamage",
+      "Mechanical",
+      "ImmuneToExecutes",
+      "ImmuneToVoidDeath",
+      "IgnoreKnockup",
+      "ImmuneToLava",
+      "Ungrabbable"
+    ],
+    "health": [
+      8100.0,
+      2430.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      11.0,
+      2.2
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 30.0,
+    "jump": 1,
+    "jump_power": 26.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "pain_threshold": 0.35,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
+  "SolusHeartBody_Logbook": {
+    "_name": "SolusHeartBody_Logbook",
+    "name": "Solus Heart",
+    "flags": [
+      "IgnoreFallDamage",
+      "Mechanical",
+      "Masterless",
+      "ImmuneToVoidDeath",
+      "IgnoreKnockup",
+      "ImmuneToLava",
+      "Ungrabbable"
+    ],
+    "health": [
+      100.0,
+      30.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 30.0,
+    "jump": 1,
+    "jump_power": 26.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
+  "SolusHeartBody_Offering": {
+    "_name": "SolusHeartBody_Offering",
+    "name": "Solus Heart",
+    "flags": [
+      "IgnoreFallDamage",
+      "Mechanical",
+      "Masterless",
+      "ImmuneToVoidDeath",
+      "IgnoreKnockup",
+      "ImmuneToLava",
+      "Ungrabbable"
+    ],
+    "health": [
+      100.0,
+      30.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 30.0,
+    "jump": 1,
+    "jump_power": 26.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
+  "SolusHeart_DDOSProjectile": {
+    "_name": "SolusHeart_DDOSProjectile",
+    "name": "",
+    "flags": [
+      "Masterless",
+      "ResistantToAOE",
+      "Ungrabbable",
+      "UsesAmbientLevel"
+    ],
+    "health": [
+      60.0,
+      18.0
+    ],
+    "regen": [
+      2.0,
+      0.4
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 0,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "SolusMineBody": {
+    "_name": "SolusMineBody",
+    "name": "Solus Mine",
+    "flags": [
+      "Mechanical"
+    ],
+    "health": [
+      20.0,
+      10.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 15.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 30.0,
+    "jump": 1,
+    "jump_power": 18.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
+  "SolusVendorBody": {
+    "_name": "SolusVendorBody",
+    "name": "SPEX",
+    "flags": [
+      "IgnoreFallDamage",
+      "Ungrabbable",
+      "Buddha"
+    ],
+    "health": [
+      10.0,
+      3.0
+    ],
+    "regen": [
+      10.0,
+      2.0
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 100.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 300.0,
+    "jump": 0,
+    "jump_power": 22.0,
+    "armor": 100.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
+  "SolusWingBody": {
+    "_name": "SolusWingBody",
+    "name": "Solus Wing",
+    "flags": [
+      "IgnoreFallDamage",
+      "Mechanical",
+      "ImmuneToVoidDeath",
+      "IgnoreKnockup",
+      "Ungrabbable"
+    ],
+    "health": [
+      6069.0,
+      1821.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 100.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 1000.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 1000.0,
+    "is_champion": true,
+    "pain_threshold": 0.1,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
+  "SolusWingLogbookBody": {
+    "_name": "SolusWingLogbookBody",
+    "name": "Solus Wing",
+    "flags": [
+      "IgnoreFallDamage",
+      "Mechanical",
+      "Ungrabbable"
+    ],
+    "health": [
+      2500.0,
+      750.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": true,
+    "pain_threshold": 0.1,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "SolusWing_LaserBurstBlastProjectile": {
+    "_name": "SolusWing_LaserBurstBlastProjectile",
+    "name": "",
+    "flags": [
+      "Masterless",
+      "Ungrabbable",
+      "UsesAmbientLevel"
+    ],
+    "health": [
+      75.0,
+      22.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 0,
+    "jump_power": 0.0,
     "armor": 0.0,
     "is_champion": false,
     "pain_threshold": Infinity,
@@ -4809,7 +7488,8 @@
     "_name": "SuperRoboBallBossBody",
     "name": "Alloy Worship Unit",
     "flags": [
-      "Mechanical"
+      "Mechanical",
+      "Ungrabbable"
     ],
     "health": [
       2500.0,
@@ -4839,6 +7519,146 @@
     "item_drop": "RoboBallBuddy",
     "expansion": null
   },
+  "TankerAccelerantPuddleBodyProjectile": {
+    "_name": "TankerAccelerantPuddleBodyProjectile",
+    "name": "Grease Puddle",
+    "flags": [
+      "Masterless",
+      "HasBackstabImmunity"
+    ],
+    "health": [
+      1.0,
+      0.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      20.0,
+      4.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "TankerBody": {
+    "_name": "TankerBody",
+    "name": "Solus Scorcher",
+    "flags": [
+      "Mechanical"
+    ],
+    "health": [
+      175.0,
+      53.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      12.0,
+      2.4
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 15.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 40.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "pain_threshold": 0.1,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
+  "TankerLogbookBody": {
+    "_name": "TankerLogbookBody",
+    "name": "Solus Scorcher",
+    "flags": [
+      "Mechanical"
+    ],
+    "health": [
+      175.0,
+      53.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 10.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 14.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 20.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": "DLC3"
+  },
+  "TeleportComboLaserProjectile": {
+    "_name": "TeleportComboLaserProjectile",
+    "name": "",
+    "flags": [
+      "Masterless",
+      "ResistantToAOE",
+      "Ungrabbable",
+      "UsesAmbientLevel"
+    ],
+    "health": [
+      30.0,
+      9.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
   "TimeCrystalBody": {
     "_name": "TimeCrystalBody",
     "name": "Time Crystal",
@@ -4846,7 +7666,8 @@
       "IgnoreFallDamage",
       "Masterless",
       "ImmuneToGoo",
-      "HasBackstabImmunity"
+      "HasBackstabImmunity",
+      "Ungrabbable"
     ],
     "health": [
       200.0,
@@ -4880,7 +7701,8 @@
     "_name": "TitanBody",
     "name": "Stone Titan",
     "flags": [
-      "IgnoreFallDamage"
+      "IgnoreFallDamage",
+      "Ungrabbable"
     ],
     "health": [
       2100.0,
@@ -4914,7 +7736,8 @@
     "_name": "TitanGoldBody",
     "name": "Aurelionite",
     "flags": [
-      "IgnoreFallDamage"
+      "IgnoreFallDamage",
+      "Ungrabbable"
     ],
     "health": [
       2100.0,
@@ -5025,8 +7848,8 @@
       60.0
     ],
     "regen": [
-      7.5,
-      1.5
+      20.0,
+      4.0
     ],
     "damage": [
       18.0,
@@ -5039,7 +7862,44 @@
     "acceleration": 0.0,
     "jump": 1,
     "jump_power": 0.0,
-    "armor": 20.0,
+    "armor": 30.0,
+    "is_champion": false,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": null,
+    "expansion": null
+  },
+  "UnderclockSpawnerProjectile": {
+    "_name": "UnderclockSpawnerProjectile",
+    "name": "",
+    "flags": [
+      "Masterless",
+      "ResistantToAOE",
+      "Ungrabbable",
+      "UsesAmbientLevel"
+    ],
+    "health": [
+      30.0,
+      9.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      0.0,
+      0.0
+    ],
+    "attack_speed": 0.0,
+    "crit": 0.0,
+    "speed": 0.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 0.0,
+    "jump": 1,
+    "jump_power": 0.0,
+    "armor": 0.0,
     "is_champion": false,
     "pain_threshold": Infinity,
     "can_be_hit_stunned": false,
@@ -5083,7 +7943,9 @@
   "VagrantBody": {
     "_name": "VagrantBody",
     "name": "Wandering Vagrant",
-    "flags": [],
+    "flags": [
+      "Ungrabbable"
+    ],
     "health": [
       2100.0,
       630.0
@@ -5116,7 +7978,8 @@
     "_name": "VagrantTrackingBomb",
     "name": "",
     "flags": [
-      "Masterless"
+      "Masterless",
+      "Ungrabbable"
     ],
     "health": [
       75.0,
@@ -5353,7 +8216,8 @@
     "_name": "VoidMegaCrabAllyBody",
     "name": "Void Devastator",
     "flags": [
-      "Void"
+      "Void",
+      "Ungrabbable"
     ],
     "health": [
       2800.0,
@@ -5387,7 +8251,8 @@
     "_name": "VoidMegaCrabBody",
     "name": "Void Devastator",
     "flags": [
-      "Void"
+      "Void",
+      "Ungrabbable"
     ],
     "health": [
       2800.0,
@@ -5422,7 +8287,8 @@
     "name": "\u300cVoidling\u300d",
     "flags": [
       "HasBackstabImmunity",
-      "Void"
+      "Void",
+      "Ungrabbable"
     ],
     "health": [
       8000.0,
@@ -5457,7 +8323,8 @@
     "name": "\u300cVoidling\u300d",
     "flags": [
       "HasBackstabImmunity",
-      "Void"
+      "Void",
+      "Ungrabbable"
     ],
     "health": [
       1000.0,
@@ -5558,7 +8425,7 @@
   },
   "VultureEggBody": {
     "_name": "VultureEggBody",
-    "name": "",
+    "name": "Eggs",
     "flags": [
       "Masterless",
       "HasBackstabImmunity"
@@ -5590,6 +8457,42 @@
     "can_be_frozen": false,
     "item_drop": null,
     "expansion": null
+  },
+  "VultureHunterBody": {
+    "_name": "VultureHunterBody",
+    "name": "Alloy Hunter",
+    "flags": [
+      "IgnoreFallDamage",
+      "IgnoreKnockup",
+      "Ungrabbable"
+    ],
+    "health": [
+      3600.0,
+      1080.0
+    ],
+    "regen": [
+      0.0,
+      0.0
+    ],
+    "damage": [
+      15.0,
+      3.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 3.0,
+    "sprint_multiplier": 1.45,
+    "acceleration": 80.0,
+    "jump": 1,
+    "jump_power": 15.0,
+    "armor": 0.0,
+    "is_champion": true,
+    "pain_threshold": Infinity,
+    "can_be_hit_stunned": false,
+    "can_be_stunned": false,
+    "can_be_frozen": false,
+    "item_drop": "ShockDamageAura",
+    "expansion": "DLC3"
   },
   "WispBody": {
     "_name": "WispBody",
@@ -5654,5 +8557,39 @@
     "can_be_frozen": true,
     "item_drop": null,
     "expansion": null
+  },
+  "WorkerUnitBody": {
+    "_name": "WorkerUnitBody",
+    "name": "Solus Prospector",
+    "flags": [
+      "Mechanical"
+    ],
+    "health": [
+      160.0,
+      48.0
+    ],
+    "regen": [
+      0.6,
+      0.12
+    ],
+    "damage": [
+      10.0,
+      2.0
+    ],
+    "attack_speed": 1.0,
+    "crit": 0.0,
+    "speed": 11.5,
+    "sprint_multiplier": 1.45,
+    "acceleration": 30.0,
+    "jump": 1,
+    "jump_power": 12.0,
+    "armor": 0.0,
+    "is_champion": false,
+    "pain_threshold": 0.35,
+    "can_be_hit_stunned": true,
+    "can_be_stunned": true,
+    "can_be_frozen": true,
+    "item_drop": null,
+    "expansion": "DLC3"
   }
 }

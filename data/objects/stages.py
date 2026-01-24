@@ -3,7 +3,7 @@ from .dccs import DccsPool
 
 
 class SceneDef:
-    SCRIPT = -6686060984905549765
+    SCRIPT = 8840691853520611451
 
     @staticmethod
     def parse(asset, fname):
@@ -26,7 +26,7 @@ class SceneDef:
         }
 
 class ClassicStageInfo:
-    SCRIPT = 8450768357395489424
+    SCRIPT = 5201196302767144762
 
     def __init__(self, data):
         for key, value in data.items():
@@ -47,7 +47,7 @@ class ClassicStageInfo:
 
 
 class CampDirector:
-    SCRIPT = -3655719543255941067
+    SCRIPT = 3381815531761594789
 
     def __init__(self, data):
         for key, value in data.items():
@@ -71,7 +71,7 @@ class CampDirector:
 
 
 class CombatDirector:
-    SCRIPT = 786565555335027584
+    SCRIPT = 8029171733164660570
 
     @staticmethod
     def parse(asset, ids):
@@ -100,7 +100,7 @@ class CombatDirector:
 
 
 class SceneDirector:
-    SCRIPT = -2207557892185297087
+    SCRIPT = -9115761788320711521
 
     def __init__(self, data):
         for key, value in data.items():
@@ -120,4 +120,4 @@ class SceneDirector:
 
 
 class SceneObjectToggleGroup:
-    SCRIPT = -5674775494453513432
+    SCRIPT = 255001275373988943

@@ -116,12 +116,12 @@
         "cards": [
           {
             "spawn_card": "iscBrokenFlameDrone",
-            "weight": 1,
+            "weight": 10,
             "min_stages_cleared": 0
           },
           {
             "spawn_card": "iscBrokenEquipmentDrone",
-            "weight": 2,
+            "weight": 20,
             "min_stages_cleared": 0
           }
         ]
@@ -217,6 +217,23 @@
           {
             "spawn_card": "iscShrineColossusAccess",
             "weight": 3,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
+  "dccsAncientLoftInteractablesDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsAncientLoftInteractablesDLC3",
+    "categories": [
+      {
+        "name": "Drones",
+        "weight": 3.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenHaulerDrone",
+            "weight": 5,
             "min_stages_cleared": 0
           }
         ]
@@ -714,6 +731,65 @@
       }
     ]
   },
+  "dccsArenaMonstersDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsArenaMonstersDLC3",
+    "categories": [
+      {
+        "name": "Champions",
+        "weight": 3.0,
+        "cards": [
+          {
+            "spawn_card": "cscSolusAmalgamator",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Minibosses",
+        "weight": 3.0,
+        "cards": [
+          {
+            "spawn_card": "cscDefectiveUnit",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscIronHauler",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Basic Monsters",
+        "weight": 1.0,
+        "cards": [
+          {
+            "spawn_card": "cscMinePod",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscWorkerUnit",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscExtractorUnit",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscTanker",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
   "dccsArtifactWorld01Interactables": {
     "class": "DirectorCardCategorySelection",
     "name": "dccsArtifactWorld01Interactables",
@@ -861,6 +937,28 @@
           {
             "spawn_card": "iscDuplicatorMilitary",
             "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
+  "dccsArtifactWorld01Interactables_DLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsArtifactWorld01Interactables_DLC3",
+    "categories": [
+      {
+        "name": "Drones",
+        "weight": 14.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenHaulerDrone",
+            "weight": 4,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenCleanupDrone",
+            "weight": 3,
             "min_stages_cleared": 0
           }
         ]
@@ -1553,6 +1651,28 @@
       }
     ]
   },
+  "dccsArtifactWorldInteractablesDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsArtifactWorldInteractablesDLC3",
+    "categories": [
+      {
+        "name": "Drones",
+        "weight": 14.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenHaulerDrone",
+            "weight": 4,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenCleanupDrone",
+            "weight": 3,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
   "dccsArtifactWorldMonsters": {
     "class": "DirectorCardCategorySelection",
     "name": "dccsArtifactWorldMonsters",
@@ -1644,6 +1764,46 @@
         ]
       }
     ]
+  },
+  "dccsBallFamily_ItemThemed": {
+    "class": "FamilyDirectorCardCategorySelection",
+    "name": "dccsBallFamily_ItemThemed",
+    "categories": [
+      {
+        "name": "Champions",
+        "weight": 2.0,
+        "cards": []
+      },
+      {
+        "name": "Minibosses",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscIronHauler",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscDefectiveUnit",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Basic Monsters",
+        "weight": 4.0,
+        "cards": [
+          {
+            "spawn_card": "cscExtractorUnit",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ],
+    "min_stages_cleared": 1,
+    "max_stages_cleared": 2147483647
   },
   "dccsBeetleFamily": {
     "class": "FamilyDirectorCardCategorySelection",
@@ -1960,6 +2120,39 @@
       }
     ]
   },
+  "dccsBlackBeachInteractablesDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsBlackBeachInteractablesDLC3",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscTemporaryItemsShop",
+            "weight": 5,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Drones",
+        "weight": 14.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenHaulerDrone",
+            "weight": 4,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenJunkDrone",
+            "weight": 2,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
   "dccsBlackBeachMonsters": {
     "class": "DirectorCardCategorySelection",
     "name": "dccsBlackBeachMonsters",
@@ -2007,22 +2200,22 @@
         "cards": [
           {
             "spawn_card": "cscLemurian",
-            "weight": 1,
+            "weight": 2,
             "min_stages_cleared": 0
           },
           {
             "spawn_card": "cscLesserWisp",
-            "weight": 1,
+            "weight": 2,
             "min_stages_cleared": 0
           },
           {
             "spawn_card": "cscBeetle",
-            "weight": 1,
+            "weight": 2,
             "min_stages_cleared": 0
           },
           {
             "spawn_card": "cscJellyfish",
-            "weight": 1,
+            "weight": 2,
             "min_stages_cleared": 1
           }
         ]
@@ -2061,6 +2254,363 @@
     "class": "DirectorCardCategorySelection",
     "name": "dccsBlackBeachMonstersDLC_UNUSED",
     "categories": []
+  },
+  "dccsComputationalexchangeInteractables": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsComputationalexchangeInteractables",
+    "categories": []
+  },
+  "dccsComputationalexchangeMonsters": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsComputationalexchangeMonsters",
+    "categories": []
+  },
+  "dccsConduitcanyonBosses": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsConduitcanyonBosses",
+    "categories": [
+      {
+        "name": "Champions",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscSolusAmalgamator",
+            "weight": 3,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
+  "dccsConduitcanyonInteractables": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsConduitcanyonInteractables",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscChest1",
+            "weight": 240,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscChest2",
+            "weight": 37,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscEquipmentBarrel",
+            "weight": 20,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTripleShopLarge",
+            "weight": 40,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscLunarChest",
+            "weight": 10,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChestDamage",
+            "weight": 20,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChestHealing",
+            "weight": 20,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChestUtility",
+            "weight": 20,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCasinoChest",
+            "weight": 10,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTemporaryItemsShop",
+            "weight": 10,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Barrels",
+        "weight": 10.0,
+        "cards": [
+          {
+            "spawn_card": "iscBarrel1",
+            "weight": 10,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Shrines",
+        "weight": 7.0,
+        "cards": [
+          {
+            "spawn_card": "iscShrineBlood",
+            "weight": 30,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineChance",
+            "weight": 40,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineHealing",
+            "weight": 10,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Drones",
+        "weight": 14.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenMissileDrone",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenCleanupDrone",
+            "weight": 4,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenJailerDrone",
+            "weight": 4,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenBombardmentDrone",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenEquipmentDrone",
+            "weight": 4,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTripleDroneShop",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenCopycatDrone",
+            "weight": 2,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Rare",
+        "weight": 0.4,
+        "cards": [
+          {
+            "spawn_card": "iscChest1Stealthed",
+            "weight": 6,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscRadarTower",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscGoldChest",
+            "weight": 2,
+            "min_stages_cleared": 3
+          }
+        ]
+      },
+      {
+        "name": "Duplicator",
+        "weight": 8.0,
+        "cards": [
+          {
+            "spawn_card": "iscDuplicator",
+            "weight": 30,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscDuplicatorLarge",
+            "weight": 6,
+            "min_stages_cleared": 1
+          },
+          {
+            "spawn_card": "iscDuplicatorMilitary",
+            "weight": 1,
+            "min_stages_cleared": 4
+          },
+          {
+            "spawn_card": "iscDuplicatorWild",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscScrapper",
+            "weight": 12,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscDroneScrapper",
+            "weight": 8,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscDroneCombinerStation",
+            "weight": 4,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
+  "dccsConduitcanyonInteractablesDLC1": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsConduitcanyonInteractablesDLC1",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscCategoryChest2Damage",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChest2Healing",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChest2Utility",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Void Stuff",
+        "weight": 3.0,
+        "cards": [
+          {
+            "spawn_card": "iscVoidChest",
+            "weight": 15,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
+  "dccsConduitcanyonMonsters": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsConduitcanyonMonsters",
+    "categories": [
+      {
+        "name": "Champions",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscImpBoss",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscElectricWorm",
+            "weight": 1,
+            "min_stages_cleared": 5
+          },
+          {
+            "spawn_card": "cscVagrant",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscSolusAmalgamator",
+            "weight": 1,
+            "min_stages_cleared": 5
+          }
+        ]
+      },
+      {
+        "name": "Minibosses",
+        "weight": 3.0,
+        "cards": [
+          {
+            "spawn_card": "cscClayBruiser",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscIronHauler",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscDefectiveUnit",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscParent",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Basic Monsters",
+        "weight": 4.0,
+        "cards": [
+          {
+            "spawn_card": "cscWorkerUnit",
+            "weight": 10,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscExtractorUnit",
+            "weight": 4,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscTanker",
+            "weight": 10,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscVulture",
+            "weight": 10,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Special",
+        "weight": 1.0,
+        "cards": [
+          {
+            "spawn_card": "cscScav",
+            "weight": 1,
+            "min_stages_cleared": 5
+          }
+        ]
+      }
+    ]
   },
   "dccsConstructFamily": {
     "class": "FamilyDirectorCardCategorySelection",
@@ -2143,6 +2693,11 @@
           {
             "spawn_card": "iscCasinoChest",
             "weight": 10,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCasinoChest",
+            "weight": 1,
             "min_stages_cleared": 0
           }
         ]
@@ -2330,6 +2885,49 @@
       }
     ]
   },
+  "dccsDampCaveInteractablesDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsDampCaveInteractablesDLC3",
+    "categories": [
+      {
+        "name": "Drones",
+        "weight": 14.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenCopycatDrone",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTripleDroneShop",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenJailerDrone",
+            "weight": 2,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Duplicator",
+        "weight": 8.0,
+        "cards": [
+          {
+            "spawn_card": "iscDroneScrapper",
+            "weight": 6,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscDroneCombinerStation",
+            "weight": 4,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
   "dccsDampCaveMonsters": {
     "class": "DirectorCardCategorySelection",
     "name": "dccsDampCaveMonsters",
@@ -2387,17 +2985,17 @@
         "cards": [
           {
             "spawn_card": "cscLemurian",
-            "weight": 2,
+            "weight": 10,
             "min_stages_cleared": 0
           },
           {
             "spawn_card": "cscImp",
-            "weight": 2,
+            "weight": 10,
             "min_stages_cleared": 0
           },
           {
             "spawn_card": "cscHermitCrab",
-            "weight": 1,
+            "weight": 5,
             "min_stages_cleared": 0
           }
         ]
@@ -2454,6 +3052,28 @@
           {
             "spawn_card": "cscScorchling",
             "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
+  "dccsDampCaveMonstersDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsDampCaveMonstersDLC3",
+    "categories": [
+      {
+        "name": "Basic Monsters",
+        "weight": 3.0,
+        "cards": [
+          {
+            "spawn_card": "cscTanker",
+            "weight": 10,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscExtractorUnit",
+            "weight": 4,
             "min_stages_cleared": 0
           }
         ]
@@ -2710,6 +3330,44 @@
       }
     ]
   },
+  "dccsFoggySwampInteractablesDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsFoggySwampInteractablesDLC3",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscTemporaryItemsShop",
+            "weight": 10,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Drones",
+        "weight": 14.0,
+        "cards": [
+          {
+            "spawn_card": "iscTripleDroneShop",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenJailerDrone",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenCleanupDrone",
+            "weight": 2,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
   "dccsFoggySwampMonsters": {
     "class": "DirectorCardCategorySelection",
     "name": "dccsFoggySwampMonsters",
@@ -2819,6 +3477,45 @@
             "spawn_card": "cscHalcyonite",
             "weight": 1,
             "min_stages_cleared": 5
+          }
+        ]
+      }
+    ]
+  },
+  "dccsFoggySwampMonstersDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsFoggySwampMonstersDLC3",
+    "categories": [
+      {
+        "name": "Minibosses",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscIronHauler",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
+  "dccsFriendUnitVultureEncounter": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsFriendUnitVultureEncounter",
+    "categories": [
+      {
+        "name": "",
+        "weight": 1.0,
+        "cards": [
+          {
+            "spawn_card": "cscVulture",
+            "weight": 100,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscVultureHunter",
+            "weight": 5,
+            "min_stages_cleared": 3
           }
         ]
       }
@@ -3046,6 +3743,50 @@
       }
     ]
   },
+  "dccsFrozenWallInteractablesDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsFrozenWallInteractablesDLC3",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscTemporaryItemsShop",
+            "weight": 10,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Drones",
+        "weight": 4.5,
+        "cards": [
+          {
+            "spawn_card": "iscTripleDroneShop",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenCopycatDrone",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Duplicator",
+        "weight": 8.0,
+        "cards": [
+          {
+            "spawn_card": "iscDroneScrapper",
+            "weight": 6,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
   "dccsFrozenWallMonsters": {
     "class": "DirectorCardCategorySelection",
     "name": "dccsFrozenWallMonsters",
@@ -3108,17 +3849,17 @@
         "cards": [
           {
             "spawn_card": "cscLemurian",
-            "weight": 1,
+            "weight": 10,
             "min_stages_cleared": 0
           },
           {
             "spawn_card": "cscLesserWisp",
-            "weight": 1,
+            "weight": 10,
             "min_stages_cleared": 0
           },
           {
             "spawn_card": "cscImp",
-            "weight": 1,
+            "weight": 10,
             "min_stages_cleared": 0
           }
         ]
@@ -3146,12 +3887,12 @@
         "cards": [
           {
             "spawn_card": "cscVerminSnowy",
-            "weight": 1,
+            "weight": 10,
             "min_stages_cleared": 0
           },
           {
             "spawn_card": "cscFlyingVerminSnowy",
-            "weight": 1,
+            "weight": 10,
             "min_stages_cleared": 0
           }
         ]
@@ -3169,6 +3910,34 @@
           {
             "spawn_card": "cscScorchling",
             "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
+  "dccsFrozenWallMonstersDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsFrozenWallMonstersDLC3",
+    "categories": [
+      {
+        "name": "Minibosses",
+        "weight": 3.0,
+        "cards": [
+          {
+            "spawn_card": "cscIronHauler",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Basic Monsters",
+        "weight": 3.0,
+        "cards": [
+          {
+            "spawn_card": "cscExtractorUnit",
+            "weight": 3,
             "min_stages_cleared": 0
           }
         ]
@@ -4043,6 +4812,39 @@
       }
     ]
   },
+  "dccsGolemplainsInteractablesDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsGolemplainsInteractablesDLC3",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscTemporaryItemsShop",
+            "weight": 5,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Drones",
+        "weight": 14.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenHaulerDrone",
+            "weight": 4,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenCleanupDrone",
+            "weight": 2,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
   "dccsGolemplainsMonsters": {
     "class": "DirectorCardCategorySelection",
     "name": "dccsGolemplainsMonsters",
@@ -4168,6 +4970,23 @@
             "spawn_card": "cscHalcyonite",
             "weight": 1,
             "min_stages_cleared": 5
+          }
+        ]
+      }
+    ]
+  },
+  "dccsGolemplainsMonstersDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsGolemplainsMonstersDLC3",
+    "categories": [
+      {
+        "name": "Minibosses",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscDefectiveUnit",
+            "weight": 1,
+            "min_stages_cleared": 1
           }
         ]
       }
@@ -4390,6 +5209,34 @@
       }
     ]
   },
+  "dccsGooLakeInteractablesDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsGooLakeInteractablesDLC3",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscTemporaryItemsShop",
+            "weight": 10,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Drones",
+        "weight": 1.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenJailerDrone",
+            "weight": 3,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
   "dccsGooLakeMonsters": {
     "class": "DirectorCardCategorySelection",
     "name": "dccsGooLakeMonsters",
@@ -4442,17 +5289,17 @@
         "cards": [
           {
             "spawn_card": "cscLemurian",
-            "weight": 1,
+            "weight": 2,
             "min_stages_cleared": 0
           },
           {
             "spawn_card": "cscLesserWisp",
-            "weight": 1,
+            "weight": 2,
             "min_stages_cleared": 0
           },
           {
             "spawn_card": "cscBeetle",
-            "weight": 1,
+            "weight": 2,
             "min_stages_cleared": 0
           }
         ]
@@ -4504,6 +5351,34 @@
       }
     ]
   },
+  "dccsGooLakeMonstersDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsGooLakeMonstersDLC3",
+    "categories": [
+      {
+        "name": "Minibosses",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscDefectiveUnit",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Basic Monsters",
+        "weight": 3.0,
+        "cards": [
+          {
+            "spawn_card": "cscMinePod",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
   "dccsGupFamily": {
     "class": "FamilyDirectorCardCategorySelection",
     "name": "dccsGupFamily",
@@ -4522,6 +5397,194 @@
     ],
     "min_stages_cleared": 1,
     "max_stages_cleared": 2147483647
+  },
+  "dccsHabitatFallInteractables_DLC2": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsHabitatFallInteractables_DLC2",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscChest1",
+            "weight": 24,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscChest2",
+            "weight": 4,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscEquipmentBarrel",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTripleShop",
+            "weight": 8,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscLunarChest",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChestDamage",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChestHealing",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChestUtility",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCasinoChest",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTripleShopEquipment",
+            "weight": 2,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Barrels",
+        "weight": 10.0,
+        "cards": [
+          {
+            "spawn_card": "iscBarrel1",
+            "weight": 10,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Shrines",
+        "weight": 7.0,
+        "cards": [
+          {
+            "spawn_card": "iscShrineChance",
+            "weight": 40,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineHealing",
+            "weight": 10,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineCleanse",
+            "weight": 15,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineBlood",
+            "weight": 30,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Drones",
+        "weight": 3.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenFlameDrone",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenEquipmentDrone",
+            "weight": 2,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Rare",
+        "weight": 0.4,
+        "cards": [
+          {
+            "spawn_card": "iscChest1Stealthed",
+            "weight": 6,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscRadarTower",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscGoldChest",
+            "weight": 2,
+            "min_stages_cleared": 3
+          },
+          {
+            "spawn_card": "iscShrineGoldshoresAccess",
+            "weight": 2,
+            "min_stages_cleared": 2
+          }
+        ]
+      },
+      {
+        "name": "Duplicator",
+        "weight": 8.0,
+        "cards": [
+          {
+            "spawn_card": "iscDuplicator",
+            "weight": 30,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscDuplicatorLarge",
+            "weight": 6,
+            "min_stages_cleared": 1
+          },
+          {
+            "spawn_card": "iscDuplicatorMilitary",
+            "weight": 1,
+            "min_stages_cleared": 4
+          },
+          {
+            "spawn_card": "iscDuplicatorWild",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscScrapper",
+            "weight": 12,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Storm Stuff",
+        "weight": 1.5,
+        "cards": [
+          {
+            "spawn_card": "iscShrineHalcyonite",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineColossusAccess",
+            "weight": 3,
+            "min_stages_cleared": 1
+          }
+        ]
+      }
+    ]
   },
   "dccsHabitatInteractables_DLC1": {
     "class": "DirectorCardCategorySelection",
@@ -4728,6 +5791,28 @@
             "spawn_card": "iscShrineColossusAccess",
             "weight": 3,
             "min_stages_cleared": 1
+          }
+        ]
+      }
+    ]
+  },
+  "dccsHabitatInteractables_DLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsHabitatInteractables_DLC3",
+    "categories": [
+      {
+        "name": "Drones",
+        "weight": 3.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenHaulerDrone",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenCleanupDrone",
+            "weight": 1,
+            "min_stages_cleared": 0
           }
         ]
       }
@@ -5169,7 +6254,7 @@
           },
           {
             "spawn_card": "iscBrokenEquipmentDrone",
-            "weight": 2,
+            "weight": 7,
             "min_stages_cleared": 0
           },
           {
@@ -5249,6 +6334,50 @@
           {
             "spawn_card": "iscBrokenTurret1",
             "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
+  "dccsHelminthRoostInteractables_DLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsHelminthRoostInteractables_DLC3",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscTemporaryItemsShop",
+            "weight": 5,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Drones",
+        "weight": 14.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenBombardmentDrone",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenJunkDrone",
+            "weight": 3,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Duplicator",
+        "weight": 8.0,
+        "cards": [
+          {
+            "spawn_card": "iscDroneCombinerStation",
+            "weight": 4,
             "min_stages_cleared": 0
           }
         ]
@@ -5368,6 +6497,34 @@
       }
     ]
   },
+  "dccsHelminthRoostMonstersDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsHelminthRoostMonstersDLC3",
+    "categories": [
+      {
+        "name": "Minibosses",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscDefectiveUnit",
+            "weight": 2,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Basic Monsters",
+        "weight": 3.0,
+        "cards": [
+          {
+            "spawn_card": "cscTanker",
+            "weight": 2,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
   "dccsITAncientLoftMonsters": {
     "class": "DirectorCardCategorySelection",
     "name": "dccsITAncientLoftMonsters",
@@ -5448,6 +6605,23 @@
             "spawn_card": "cscScav",
             "weight": 1,
             "min_stages_cleared": 5
+          }
+        ]
+      }
+    ]
+  },
+  "dccsITAncientLoftMonstersDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsITAncientLoftMonstersDLC3",
+    "categories": [
+      {
+        "name": "Minibosses",
+        "weight": 3.0,
+        "cards": [
+          {
+            "spawn_card": "cscIronHauler",
+            "weight": 1,
+            "min_stages_cleared": 0
           }
         ]
       }
@@ -5555,6 +6729,28 @@
             "spawn_card": "cscHalcyonite",
             "weight": 1,
             "min_stages_cleared": 3
+          }
+        ]
+      }
+    ]
+  },
+  "dccsITDampCaveMonstersDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsITDampCaveMonstersDLC3",
+    "categories": [
+      {
+        "name": "Basic Monsters",
+        "weight": 3.0,
+        "cards": [
+          {
+            "spawn_card": "cscTanker",
+            "weight": 10,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscExtractorUnit",
+            "weight": 4,
+            "min_stages_cleared": 0
           }
         ]
       }
@@ -5759,6 +6955,23 @@
       }
     ]
   },
+  "dccsITGolemplainsMonstersDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsITGolemplainsMonstersDLC3",
+    "categories": [
+      {
+        "name": "Basic Monsters",
+        "weight": 4.0,
+        "cards": [
+          {
+            "spawn_card": "cscWorkerUnit",
+            "weight": 2,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
   "dccsITGooLakeMonsters": {
     "class": "DirectorCardCategorySelection",
     "name": "dccsITGooLakeMonsters",
@@ -5844,6 +7057,34 @@
       }
     ]
   },
+  "dccsITGooLakeMonstersDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsITGooLakeMonstersDLC3",
+    "categories": [
+      {
+        "name": "Minibosses",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscDefectiveUnit",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Basic Monsters",
+        "weight": 3.0,
+        "cards": [
+          {
+            "spawn_card": "cscMinePod",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
   "dccsITMoonMonsters": {
     "class": "DirectorCardCategorySelection",
     "name": "dccsITMoonMonsters",
@@ -5891,7 +7132,7 @@
         "weight": 2.0,
         "cards": [
           {
-            "spawn_card": "cscMegaDrone",
+            "spawn_card": null,
             "weight": 1,
             "min_stages_cleared": 0
           }
@@ -5902,12 +7143,12 @@
         "weight": 4.0,
         "cards": [
           {
-            "spawn_card": "cscDrone2",
+            "spawn_card": null,
             "weight": 1,
             "min_stages_cleared": 0
           },
           {
-            "spawn_card": "cscDrone1",
+            "spawn_card": null,
             "weight": 1,
             "min_stages_cleared": 0
           }
@@ -6010,6 +7251,34 @@
         "cards": [
           {
             "spawn_card": "cscChild",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
+  "dccsITSkyMeadowMonstersDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsITSkyMeadowMonstersDLC3",
+    "categories": [
+      {
+        "name": "Champions",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscSolusAmalgamator",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Minibosses",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscDefectiveUnit",
             "weight": 1,
             "min_stages_cleared": 0
           }
@@ -6215,6 +7484,790 @@
         "cards": [
           {
             "spawn_card": "iscVoidChest",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
+  "dccsIronalluvium2Interactables": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsIronalluvium2Interactables",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscChest1",
+            "weight": 240,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscChest2",
+            "weight": 40,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscEquipmentBarrel",
+            "weight": 20,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTripleShop",
+            "weight": 80,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscLunarChest",
+            "weight": 10,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTripleShopLarge",
+            "weight": 10,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChestDamage",
+            "weight": 20,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChestHealing",
+            "weight": 20,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChestUtility",
+            "weight": 20,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTemporaryItemsShop",
+            "weight": 20,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Barrels",
+        "weight": 10.0,
+        "cards": [
+          {
+            "spawn_card": "iscBarrel1",
+            "weight": 10,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Shrines",
+        "weight": 7.0,
+        "cards": [
+          {
+            "spawn_card": "iscShrineBloodSandy",
+            "weight": 3,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineBossSandy",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineChanceSandy",
+            "weight": 4,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineCombatSandy",
+            "weight": 2,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Drones",
+        "weight": 7.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenJailerDrone",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenJunkDrone",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenCleanupDrone",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenRechargeDrone",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTripleDroneShop",
+            "weight": 10,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenMissileDrone",
+            "weight": 15,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Rare",
+        "weight": 0.4,
+        "cards": [
+          {
+            "spawn_card": "iscChest1Stealthed",
+            "weight": 6,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscRadarTower",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineGoldshoresAccess",
+            "weight": 2,
+            "min_stages_cleared": 1
+          },
+          {
+            "spawn_card": "iscGoldChest",
+            "weight": 2,
+            "min_stages_cleared": 3
+          }
+        ]
+      },
+      {
+        "name": "Duplicator",
+        "weight": 8.0,
+        "cards": [
+          {
+            "spawn_card": "iscDuplicator",
+            "weight": 30,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscDuplicatorLarge",
+            "weight": 6,
+            "min_stages_cleared": 1
+          },
+          {
+            "spawn_card": "iscDuplicatorMilitary",
+            "weight": 1,
+            "min_stages_cleared": 4
+          },
+          {
+            "spawn_card": "iscDuplicatorWild",
+            "weight": 2,
+            "min_stages_cleared": 1
+          },
+          {
+            "spawn_card": "iscScrapper",
+            "weight": 12,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscDroneScrapper",
+            "weight": 6,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
+  "dccsIronalluvium2InteractablesDLC1": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsIronalluvium2InteractablesDLC1",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscCategoryChest2Damage",
+            "weight": 3,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Void Stuff",
+        "weight": 3.0,
+        "cards": [
+          {
+            "spawn_card": "iscVoidChest",
+            "weight": 15,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscVoidCamp",
+            "weight": 7,
+            "min_stages_cleared": 1
+          }
+        ]
+      }
+    ]
+  },
+  "dccsIronalluvium2InteractablesDLC2": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsIronalluvium2InteractablesDLC2",
+    "categories": [
+      {
+        "name": "Storm Stuff",
+        "weight": 1.5,
+        "cards": [
+          {
+            "spawn_card": "iscShrineHalcyonite",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineColossusAccess",
+            "weight": 3,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
+  "dccsIronalluvium2Monsters": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsIronalluvium2Monsters",
+    "categories": [
+      {
+        "name": "Champions",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscMagmaWorm",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscGrandparent",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscRoboBallBoss",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscElectricWorm",
+            "weight": 1,
+            "min_stages_cleared": 5
+          },
+          {
+            "spawn_card": "cscSolusAmalgamator",
+            "weight": 1,
+            "min_stages_cleared": 5
+          }
+        ]
+      },
+      {
+        "name": "Minibosses",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscClayBruiser",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscParent",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscIronHauler",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Basic Monsters",
+        "weight": 4.0,
+        "cards": [
+          {
+            "spawn_card": "cscWorkerUnit",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscTanker",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscMinePod",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscExtractorUnit",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscVulture",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Special",
+        "weight": 1.0,
+        "cards": [
+          {
+            "spawn_card": "cscScav",
+            "weight": 1,
+            "min_stages_cleared": 5
+          }
+        ]
+      }
+    ]
+  },
+  "dccsIronalluvium2MonstersDLC1": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsIronalluvium2MonstersDLC1",
+    "categories": [
+      {
+        "name": "Minibosses",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscClayGrenadier",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Basic Monsters",
+        "weight": 4.0,
+        "cards": [
+          {
+            "spawn_card": "cscAcidLarva",
+            "weight": 1,
+            "min_stages_cleared": 3
+          }
+        ]
+      }
+    ]
+  },
+  "dccsIronalluvium2MonstersDLC2": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsIronalluvium2MonstersDLC2",
+    "categories": [
+      {
+        "name": "Basic Monsters",
+        "weight": 4.0,
+        "cards": [
+          {
+            "spawn_card": "cscScorchling",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
+  "dccsIronalluviumInteractables": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsIronalluviumInteractables",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscChest1",
+            "weight": 240,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscChest2",
+            "weight": 40,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscEquipmentBarrel",
+            "weight": 20,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTripleShop",
+            "weight": 80,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscLunarChest",
+            "weight": 10,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTripleShopLarge",
+            "weight": 10,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChestDamage",
+            "weight": 20,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChestHealing",
+            "weight": 20,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChestUtility",
+            "weight": 20,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTemporaryItemsShop",
+            "weight": 20,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Barrels",
+        "weight": 10.0,
+        "cards": [
+          {
+            "spawn_card": "iscBarrel1",
+            "weight": 10,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Shrines",
+        "weight": 7.0,
+        "cards": [
+          {
+            "spawn_card": "iscShrineBloodSandy",
+            "weight": 3,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineBossSandy",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineChanceSandy",
+            "weight": 4,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineCombatSandy",
+            "weight": 2,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Drones",
+        "weight": 7.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenJailerDrone",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenJunkDrone",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenCleanupDrone",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenRechargeDrone",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTripleDroneShop",
+            "weight": 10,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenMissileDrone",
+            "weight": 15,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Rare",
+        "weight": 0.4,
+        "cards": [
+          {
+            "spawn_card": "iscChest1Stealthed",
+            "weight": 6,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscRadarTower",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineGoldshoresAccess",
+            "weight": 2,
+            "min_stages_cleared": 1
+          },
+          {
+            "spawn_card": "iscGoldChest",
+            "weight": 2,
+            "min_stages_cleared": 3
+          }
+        ]
+      },
+      {
+        "name": "Duplicator",
+        "weight": 8.0,
+        "cards": [
+          {
+            "spawn_card": "iscDuplicator",
+            "weight": 30,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscDuplicatorLarge",
+            "weight": 6,
+            "min_stages_cleared": 1
+          },
+          {
+            "spawn_card": "iscDuplicatorMilitary",
+            "weight": 1,
+            "min_stages_cleared": 4
+          },
+          {
+            "spawn_card": "iscDuplicatorWild",
+            "weight": 2,
+            "min_stages_cleared": 1
+          },
+          {
+            "spawn_card": "iscScrapper",
+            "weight": 12,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscDroneScrapper",
+            "weight": 6,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
+  "dccsIronalluviumInteractablesDLC1": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsIronalluviumInteractablesDLC1",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscCategoryChest2Damage",
+            "weight": 3,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Void Stuff",
+        "weight": 3.0,
+        "cards": [
+          {
+            "spawn_card": "iscVoidChest",
+            "weight": 15,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscVoidCamp",
+            "weight": 7,
+            "min_stages_cleared": 1
+          }
+        ]
+      }
+    ]
+  },
+  "dccsIronalluviumInteractablesDLC2": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsIronalluviumInteractablesDLC2",
+    "categories": [
+      {
+        "name": "Storm Stuff",
+        "weight": 1.5,
+        "cards": [
+          {
+            "spawn_card": "iscShrineHalcyonite",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineColossusAccess",
+            "weight": 3,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
+  "dccsIronalluviumMonsters": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsIronalluviumMonsters",
+    "categories": [
+      {
+        "name": "Champions",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscMagmaWorm",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscBeetleQueen",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscRoboBallBoss",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscElectricWorm",
+            "weight": 1,
+            "min_stages_cleared": 5
+          },
+          {
+            "spawn_card": "cscSolusAmalgamator",
+            "weight": 1,
+            "min_stages_cleared": 5
+          }
+        ]
+      },
+      {
+        "name": "Minibosses",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscClayBruiser",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscBeetleGuard",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscIronHauler",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Basic Monsters",
+        "weight": 4.0,
+        "cards": [
+          {
+            "spawn_card": "cscWorkerUnit",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscTanker",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscMinePod",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Special",
+        "weight": 1.0,
+        "cards": [
+          {
+            "spawn_card": "cscScav",
+            "weight": 1,
+            "min_stages_cleared": 5
+          }
+        ]
+      }
+    ]
+  },
+  "dccsIronalluviumMonstersDLC1": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsIronalluviumMonstersDLC1",
+    "categories": [
+      {
+        "name": "Minibosses",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscClayGrenadier",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Basic Monsters",
+        "weight": 4.0,
+        "cards": [
+          {
+            "spawn_card": "cscAcidLarva",
+            "weight": 1,
+            "min_stages_cleared": 3
+          }
+        ]
+      }
+    ]
+  },
+  "dccsIronalluviumMonstersDLC2": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsIronalluviumMonstersDLC2",
+    "categories": [
+      {
+        "name": "Basic Monsters",
+        "weight": 4.0,
+        "cards": [
+          {
+            "spawn_card": "cscScorchling",
             "weight": 1,
             "min_stages_cleared": 0
           }
@@ -6447,6 +8500,39 @@
       }
     ]
   },
+  "dccsLakesInteractablesDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsLakesInteractablesDLC3",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscTemporaryItemsShop",
+            "weight": 5,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Drones",
+        "weight": 14.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenJunkDrone",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenCleanupDrone",
+            "weight": 4,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
   "dccsLakesInteractables_DLC2": {
     "class": "DirectorCardCategorySelection",
     "name": "dccsLakesInteractables_DLC2",
@@ -6610,6 +8696,23 @@
       }
     ]
   },
+  "dccsLakesMonstersDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsLakesMonstersDLC3",
+    "categories": [
+      {
+        "name": "Basic Monsters",
+        "weight": 4.0,
+        "cards": [
+          {
+            "spawn_card": "cscTanker",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
   "dccsLakesnightInteractables_DLC1": {
     "class": "DirectorCardCategorySelection",
     "name": "dccsLakesnightInteractables_DLC1",
@@ -6741,6 +8844,17 @@
         ]
       },
       {
+        "name": "Misc",
+        "weight": 7.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenTurret1",
+            "weight": 7,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
         "name": "Rare",
         "weight": 0.4,
         "cards": [
@@ -6753,6 +8867,11 @@
             "spawn_card": "iscRadarTower",
             "weight": 2,
             "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineGoldshoresAccess",
+            "weight": 2,
+            "min_stages_cleared": 1
           },
           {
             "spawn_card": "iscGoldChest",
@@ -6793,17 +8912,6 @@
         ]
       },
       {
-        "name": "Misc",
-        "weight": 7.0,
-        "cards": [
-          {
-            "spawn_card": "iscBrokenTurret1",
-            "weight": 7,
-            "min_stages_cleared": 0
-          }
-        ]
-      },
-      {
         "name": "Storm Stuff",
         "weight": 9.0,
         "cards": [
@@ -6816,6 +8924,39 @@
             "spawn_card": "iscShrineColossusAccess",
             "weight": 7,
             "min_stages_cleared": 1
+          }
+        ]
+      }
+    ]
+  },
+  "dccsLakesnightInteractables_DLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsLakesnightInteractables_DLC3",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscTemporaryItemsShop",
+            "weight": 5,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Drones",
+        "weight": 14.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenJunkDrone",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenCleanupDrone",
+            "weight": 4,
+            "min_stages_cleared": 0
           }
         ]
       }
@@ -7120,6 +9261,17 @@
         ]
       },
       {
+        "name": "Misc",
+        "weight": 7.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenTurret1",
+            "weight": 7,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
         "name": "Rare",
         "weight": 0.4,
         "cards": [
@@ -7172,17 +9324,6 @@
         ]
       },
       {
-        "name": "Misc",
-        "weight": 7.0,
-        "cards": [
-          {
-            "spawn_card": "iscBrokenTurret1",
-            "weight": 7,
-            "min_stages_cleared": 0
-          }
-        ]
-      },
-      {
         "name": "Storm Stuff",
         "weight": 1.5,
         "cards": [
@@ -7194,6 +9335,39 @@
           {
             "spawn_card": "iscShrineColossusAccess",
             "weight": 10,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
+  "dccsLemurianTempleInteractables_DLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsLemurianTempleInteractables_DLC3",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscTemporaryItemsShop",
+            "weight": 10,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Drones",
+        "weight": 14.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenRechargeDrone",
+            "weight": 3,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTripleDroneShop",
+            "weight": 5,
             "min_stages_cleared": 0
           }
         ]
@@ -7909,6 +10083,11 @@
             "spawn_card": "cscVoidMegaCrab",
             "weight": 1,
             "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscSolusAmalgamator",
+            "weight": 1,
+            "min_stages_cleared": 0
           }
         ]
       },
@@ -7995,6 +10174,16 @@
             "spawn_card": "cscScorchling",
             "weight": 1,
             "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscIronHauler",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscDefectiveUnit",
+            "weight": 1,
+            "min_stages_cleared": 0
           }
         ]
       },
@@ -8074,6 +10263,26 @@
           },
           {
             "spawn_card": "cscChild",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscWorkerUnit",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscTanker",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscMinePod",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscExtractorUnit",
             "weight": 1,
             "min_stages_cleared": 0
           }
@@ -8339,6 +10548,355 @@
     "min_stages_cleared": 1,
     "max_stages_cleared": 2147483647
   },
+  "dccsNestInteractables": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsNestInteractables",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscChest1",
+            "weight": 240,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscChest2",
+            "weight": 37,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscEquipmentBarrel",
+            "weight": 20,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTripleShop",
+            "weight": 80,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscLunarChest",
+            "weight": 10,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTripleShopLarge",
+            "weight": 10,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChestDamage",
+            "weight": 20,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChestHealing",
+            "weight": 20,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChestUtility",
+            "weight": 20,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTemporaryItemsShop",
+            "weight": 10,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Barrels",
+        "weight": 10.0,
+        "cards": [
+          {
+            "spawn_card": "iscBarrel1",
+            "weight": 10,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Shrines",
+        "weight": 10.0,
+        "cards": [
+          {
+            "spawn_card": "iscShrineHealing",
+            "weight": 20,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineBlood",
+            "weight": 30,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineBoss",
+            "weight": 10,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineChance",
+            "weight": 40,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Drones",
+        "weight": 18.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenRechargeDrone",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenDrone1",
+            "weight": 7,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenDrone2",
+            "weight": 7,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenHaulerDrone",
+            "weight": 4,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTripleDroneShop",
+            "weight": 5,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Rare",
+        "weight": 0.4,
+        "cards": [
+          {
+            "spawn_card": "iscChest1Stealthed",
+            "weight": 6,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscRadarTower",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineGoldshoresAccess",
+            "weight": 2,
+            "min_stages_cleared": 1
+          },
+          {
+            "spawn_card": "iscGoldChest",
+            "weight": 2,
+            "min_stages_cleared": 3
+          }
+        ]
+      },
+      {
+        "name": "Duplicator",
+        "weight": 8.0,
+        "cards": [
+          {
+            "spawn_card": "iscDuplicator",
+            "weight": 30,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscDuplicatorLarge",
+            "weight": 6,
+            "min_stages_cleared": 1
+          },
+          {
+            "spawn_card": "iscDuplicatorMilitary",
+            "weight": 1,
+            "min_stages_cleared": 4
+          },
+          {
+            "spawn_card": "iscDuplicatorWild",
+            "weight": 2,
+            "min_stages_cleared": 1
+          },
+          {
+            "spawn_card": "iscScrapper",
+            "weight": 12,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscDroneScrapper",
+            "weight": 6,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
+  "dccsNestInteractablesDLC1": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsNestInteractablesDLC1",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscCategoryChest2Utility",
+            "weight": 3,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Void Stuff",
+        "weight": 3.0,
+        "cards": [
+          {
+            "spawn_card": "iscVoidChest",
+            "weight": 15,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscVoidCamp",
+            "weight": 7,
+            "min_stages_cleared": 1
+          }
+        ]
+      }
+    ]
+  },
+  "dccsNestInteractablesDLC2": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsNestInteractablesDLC2",
+    "categories": [
+      {
+        "name": "Storm Stuff",
+        "weight": 1.0,
+        "cards": [
+          {
+            "spawn_card": "iscShrineHalcyonite",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineColossusAccess",
+            "weight": 3,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
+  "dccsNestMonsters": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsNestMonsters",
+    "categories": [
+      {
+        "name": "Champions",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscTitanBlackBeach",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscBeetleQueen",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscVagrant",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Minibosses",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscGolemSnowy",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscBison",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscDefectiveUnit",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Basic Monsters",
+        "weight": 4.0,
+        "cards": [
+          {
+            "spawn_card": "cscTanker",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscLemurian",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscVulture",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscLesserWisp",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Special",
+        "weight": 1.0,
+        "cards": [
+          {
+            "spawn_card": "cscScav",
+            "weight": 1,
+            "min_stages_cleared": 5
+          }
+        ]
+      }
+    ]
+  },
+  "dccsNestMonstersDLC2": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsNestMonstersDLC2",
+    "categories": [
+      {
+        "name": "Basic Monsters",
+        "weight": 4.0,
+        "cards": [
+          {
+            "spawn_card": "cscChild",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
   "dccsNullifiersOnly": {
     "class": "DirectorCardCategorySelection",
     "name": "dccsNullifiersOnly",
@@ -8374,6 +10932,382 @@
     ],
     "min_stages_cleared": 1,
     "max_stages_cleared": 2147483647
+  },
+  "dccsRepurposedcraterInteractables": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsRepurposedcraterInteractables",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscChest1",
+            "weight": 240,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscChest2",
+            "weight": 37,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscEquipmentBarrel",
+            "weight": 20,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTripleShopLarge",
+            "weight": 40,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscLunarChest",
+            "weight": 10,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChestDamage",
+            "weight": 20,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChestHealing",
+            "weight": 20,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChestUtility",
+            "weight": 20,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTemporaryItemsShop",
+            "weight": 20,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Barrels",
+        "weight": 10.0,
+        "cards": [
+          {
+            "spawn_card": "iscBarrel1",
+            "weight": 10,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Shrines",
+        "weight": 10.0,
+        "cards": [
+          {
+            "spawn_card": "iscShrineChanceSandy",
+            "weight": 40,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineBoss",
+            "weight": 10,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineHealing",
+            "weight": 30,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineCleanse",
+            "weight": 3,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Drones",
+        "weight": 17.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenBombardmentDrone",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenEmergencyDrone",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenHaulerDrone",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTripleDroneShop",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenMegaDrone",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenDrone2",
+            "weight": 7,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Rare",
+        "weight": 0.4,
+        "cards": [
+          {
+            "spawn_card": "iscChest1Stealthed",
+            "weight": 6,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscRadarTower",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineGoldshoresAccess",
+            "weight": 2,
+            "min_stages_cleared": 1
+          },
+          {
+            "spawn_card": "iscGoldChest",
+            "weight": 2,
+            "min_stages_cleared": 3
+          }
+        ]
+      },
+      {
+        "name": "Duplicator",
+        "weight": 8.0,
+        "cards": [
+          {
+            "spawn_card": "iscDuplicator",
+            "weight": 30,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscDuplicatorLarge",
+            "weight": 6,
+            "min_stages_cleared": 1
+          },
+          {
+            "spawn_card": "iscDuplicatorMilitary",
+            "weight": 1,
+            "min_stages_cleared": 4
+          },
+          {
+            "spawn_card": "iscDuplicatorWild",
+            "weight": 2,
+            "min_stages_cleared": 1
+          },
+          {
+            "spawn_card": "iscScrapper",
+            "weight": 12,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscDroneScrapper",
+            "weight": 6,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscDroneCombinerStation",
+            "weight": 4,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
+  "dccsRepurposedcraterInteractablesDLC1": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsRepurposedcraterInteractablesDLC1",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscCategoryChest2Healing",
+            "weight": 3,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Void Stuff",
+        "weight": 3.0,
+        "cards": [
+          {
+            "spawn_card": "iscVoidChest",
+            "weight": 15,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscVoidCamp",
+            "weight": 7,
+            "min_stages_cleared": 1
+          }
+        ]
+      }
+    ]
+  },
+  "dccsRepurposedcraterInteractablesDLC2": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsRepurposedcraterInteractablesDLC2",
+    "categories": [
+      {
+        "name": "Storm Stuff",
+        "weight": 1.5,
+        "cards": [
+          {
+            "spawn_card": "iscShrineHalcyonite",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineColossusAccess",
+            "weight": 3,
+            "min_stages_cleared": 1
+          }
+        ]
+      }
+    ]
+  },
+  "dccsRepurposedcraterMonsters": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsRepurposedcraterMonsters",
+    "categories": [
+      {
+        "name": "Champions",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscImpBoss",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscRoboBallBoss",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscMagmaWorm",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscSolusAmalgamator",
+            "weight": 1,
+            "min_stages_cleared": 5
+          }
+        ]
+      },
+      {
+        "name": "Minibosses",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscBell",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscLemurianBruiser",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscIronHauler",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Basic Monsters",
+        "weight": 4.0,
+        "cards": [
+          {
+            "spawn_card": "cscWorkerUnit",
+            "weight": 10,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscExtractorUnit",
+            "weight": 4,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscImp",
+            "weight": 10,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscVulture",
+            "weight": 10,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Special",
+        "weight": 1.0,
+        "cards": [
+          {
+            "spawn_card": "cscScav",
+            "weight": 1,
+            "min_stages_cleared": 5
+          }
+        ]
+      }
+    ]
+  },
+  "dccsRepurposedcraterMonstersDLC1": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsRepurposedcraterMonstersDLC1",
+    "categories": [
+      {
+        "name": "Champions",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscMegaConstruct",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
+  "dccsRepurposedcraterMonstersDLC2": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsRepurposedcraterMonstersDLC2",
+    "categories": [
+      {
+        "name": "Minibosses",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscScorchling",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
   },
   "dccsRootJungleInteractables": {
     "class": "DirectorCardCategorySelection",
@@ -8613,6 +11547,60 @@
       }
     ]
   },
+  "dccsRootJungleInteractablesDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsRootJungleInteractablesDLC3",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscTemporaryItemsShop",
+            "weight": 10,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Drones",
+        "weight": 14.0,
+        "cards": [
+          {
+            "spawn_card": "iscTripleDroneShop",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenCopycatDrone",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenJailerDrone",
+            "weight": 2,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Duplicator",
+        "weight": 8.0,
+        "cards": [
+          {
+            "spawn_card": "iscDroneScrapper",
+            "weight": 6,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscDroneCombinerStation",
+            "weight": 4,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
   "dccsRootJungleMonsters": {
     "class": "DirectorCardCategorySelection",
     "name": "dccsRootJungleMonsters",
@@ -8665,17 +11653,17 @@
         "cards": [
           {
             "spawn_card": "cscLemurian",
-            "weight": 1,
+            "weight": 10,
             "min_stages_cleared": 0
           },
           {
             "spawn_card": "cscJellyfish",
-            "weight": 1,
+            "weight": 10,
             "min_stages_cleared": 0
           },
           {
             "spawn_card": "cscMiniMushroom",
-            "weight": 1,
+            "weight": 10,
             "min_stages_cleared": 0
           }
         ]
@@ -8714,7 +11702,7 @@
         "cards": [
           {
             "spawn_card": "cscAcidLarva",
-            "weight": 1,
+            "weight": 10,
             "min_stages_cleared": 0
           }
         ]
@@ -8737,6 +11725,42 @@
         ]
       }
     ]
+  },
+  "dccsRootJungleMonstersDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsRootJungleMonstersDLC3",
+    "categories": [
+      {
+        "name": "Basic Monsters",
+        "weight": 3.0,
+        "cards": [
+          {
+            "spawn_card": "cscExtractorUnit",
+            "weight": 4,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
+  "dccsSHVultures": {
+    "class": "FamilyDirectorCardCategorySelection",
+    "name": "dccsSHVultures",
+    "categories": [
+      {
+        "name": "Basic Monsters",
+        "weight": 4.0,
+        "cards": [
+          {
+            "spawn_card": "cscVulture_SH",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ],
+    "min_stages_cleared": 1,
+    "max_stages_cleared": 2147483647
   },
   "dccsShipgraveyardInteractables": {
     "class": "DirectorCardCategorySelection",
@@ -8976,6 +12000,60 @@
       }
     ]
   },
+  "dccsShipgraveyardInteractablesDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsShipgraveyardInteractablesDLC3",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscTemporaryItemsShop",
+            "weight": 10,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Drones",
+        "weight": 11.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenBombardmentDrone",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenRechargeDrone",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTripleDroneShop",
+            "weight": 5,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Duplicator",
+        "weight": 8.0,
+        "cards": [
+          {
+            "spawn_card": "iscDroneScrapper",
+            "weight": 6,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscDroneCombinerStation",
+            "weight": 4,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
   "dccsShipgraveyardMonsters": {
     "class": "DirectorCardCategorySelection",
     "name": "dccsShipgraveyardMonsters",
@@ -9033,17 +12111,17 @@
         "cards": [
           {
             "spawn_card": "cscBeetle",
-            "weight": 1,
+            "weight": 10,
             "min_stages_cleared": 0
           },
           {
             "spawn_card": "cscJellyfish",
-            "weight": 1,
+            "weight": 10,
             "min_stages_cleared": 1
           },
           {
             "spawn_card": "cscVulture",
-            "weight": 1,
+            "weight": 10,
             "min_stages_cleared": 0
           }
         ]
@@ -9071,7 +12149,7 @@
         "cards": [
           {
             "spawn_card": "cscAcidLarva",
-            "weight": 1,
+            "weight": 10,
             "min_stages_cleared": 0
           }
         ]
@@ -9089,6 +12167,34 @@
           {
             "spawn_card": "cscScorchling",
             "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
+  "dccsShipgraveyardMonstersDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsShipgraveyardMonstersDLC3",
+    "categories": [
+      {
+        "name": "Minibosses",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscDefectiveUnit",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Basic Monsters",
+        "weight": 4.0,
+        "cards": [
+          {
+            "spawn_card": "cscExtractorUnit",
+            "weight": 4,
             "min_stages_cleared": 0
           }
         ]
@@ -9399,6 +12505,50 @@
       }
     ]
   },
+  "dccsSkyMeadowInteractablesDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsSkyMeadowInteractablesDLC3",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscTemporaryItemsShop",
+            "weight": 5,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Drones",
+        "weight": 14.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenJunkDrone",
+            "weight": 3,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenCopycatDrone",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Duplicator",
+        "weight": 8.0,
+        "cards": [
+          {
+            "spawn_card": "iscDroneCombinerStation",
+            "weight": 4,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
   "dccsSkyMeadowMonsters": {
     "class": "DirectorCardCategorySelection",
     "name": "dccsSkyMeadowMonsters",
@@ -9549,6 +12699,23 @@
         "cards": [
           {
             "spawn_card": "cscChild",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
+  "dccsSkyMeadowMonstersDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsSkyMeadowMonstersDLC3",
+    "categories": [
+      {
+        "name": "Minibosses",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscDefectiveUnit",
             "weight": 1,
             "min_stages_cleared": 0
           }
@@ -9767,6 +12934,44 @@
       }
     ]
   },
+  "dccsSnowyForestInteractablesDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsSnowyForestInteractablesDLC3",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscTemporaryItemsShop",
+            "weight": 5,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Drones",
+        "weight": 14.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenJunkDrone",
+            "weight": 3,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenCleanupDrone",
+            "weight": 3,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenRechargeDrone",
+            "weight": 3,
+            "min_stages_cleared": 4
+          }
+        ]
+      }
+    ]
+  },
   "dccsSnowyForestMonstersDLC1": {
     "class": "DirectorCardCategorySelection",
     "name": "dccsSnowyForestMonstersDLC1",
@@ -9885,6 +13090,604 @@
       }
     ]
   },
+  "dccsSolusWebInteractables": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsSolusWebInteractables",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 51.0,
+        "cards": [
+          {
+            "spawn_card": "iscChest1",
+            "weight": 24,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscChest2",
+            "weight": 4,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscEquipmentBarrel",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTripleShop",
+            "weight": 8,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscLunarChest",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChestDamage",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChestHealing",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTripleDroneShop",
+            "weight": 8,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTemporaryItemsShop",
+            "weight": 8,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Barrels",
+        "weight": 10.0,
+        "cards": [
+          {
+            "spawn_card": "iscBarrel1",
+            "weight": 10,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Shrines",
+        "weight": 10.0,
+        "cards": [
+          {
+            "spawn_card": "iscShrineHealing",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineBlood",
+            "weight": 3,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineBoss",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineChance",
+            "weight": 4,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Drones",
+        "weight": 8.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenDrone1",
+            "weight": 8,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenMissileDrone",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenFlameDrone",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenMegaDrone",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenCopycatDrone",
+            "weight": 3,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenDrone2",
+            "weight": 8,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenEmergencyDrone",
+            "weight": 3,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenRechargeDrone",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenCleanupDrone",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenJailerDrone",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenJunkDrone",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenHaulerDrone",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenBombardmentDrone",
+            "weight": 3,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenEquipmentDrone",
+            "weight": 5,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Rare",
+        "weight": 0.4,
+        "cards": [
+          {
+            "spawn_card": "iscChest1Stealthed",
+            "weight": 6,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscRadarTower",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineGoldshoresAccess",
+            "weight": 2,
+            "min_stages_cleared": 1
+          },
+          {
+            "spawn_card": "iscGoldChest",
+            "weight": 2,
+            "min_stages_cleared": 3
+          }
+        ]
+      },
+      {
+        "name": "Duplicator",
+        "weight": 8.0,
+        "cards": [
+          {
+            "spawn_card": "iscDuplicator",
+            "weight": 30,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscDuplicatorLarge",
+            "weight": 6,
+            "min_stages_cleared": 1
+          },
+          {
+            "spawn_card": "iscDuplicatorMilitary",
+            "weight": 1,
+            "min_stages_cleared": 4
+          },
+          {
+            "spawn_card": "iscDuplicatorWild",
+            "weight": 2,
+            "min_stages_cleared": 1
+          },
+          {
+            "spawn_card": "iscScrapper",
+            "weight": 12,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscDroneScrapper",
+            "weight": 12,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscDroneAssemblyStation",
+            "weight": 6,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
+  "dccsSolusWebMonsters": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsSolusWebMonsters",
+    "categories": [
+      {
+        "name": "Champions",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscTitanBlackBeach",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscBeetleQueen",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscRoboBallBoss",
+            "weight": 2,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Minibosses",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscGolemSnowy",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscGreaterWisp",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscDefectiveUnit",
+            "weight": 2,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Basic Monsters",
+        "weight": 4.0,
+        "cards": [
+          {
+            "spawn_card": "cscLesserWisp",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscLemurian",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscVulture",
+            "weight": 3,
+            "min_stages_cleared": 1
+          }
+        ]
+      },
+      {
+        "name": "Special",
+        "weight": 1.0,
+        "cards": [
+          {
+            "spawn_card": "cscScav",
+            "weight": 1,
+            "min_stages_cleared": 5
+          }
+        ]
+      }
+    ]
+  },
+  "dccsSolutionalhauntInteractables": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsSolutionalhauntInteractables",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscChest1",
+            "weight": 24,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscChest2",
+            "weight": 4,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscEquipmentBarrel",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTripleShopLarge",
+            "weight": 4,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscLunarChest",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChestDamage",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChestHealing",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscCategoryChestUtility",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTripleShopEquipment",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTripleDroneShop",
+            "weight": 4,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscTemporaryItemsShop",
+            "weight": 4,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Barrels",
+        "weight": 10.0,
+        "cards": [
+          {
+            "spawn_card": "iscBarrel1",
+            "weight": 10,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Shrines",
+        "weight": 10.0,
+        "cards": [
+          {
+            "spawn_card": "iscShrineCombat",
+            "weight": 3,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineChance",
+            "weight": 4,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Drones",
+        "weight": 8.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenDrone1",
+            "weight": 8,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenMissileDrone",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenFlameDrone",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenMegaDrone",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenCopycatDrone",
+            "weight": 3,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenDrone2",
+            "weight": 8,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenEmergencyDrone",
+            "weight": 3,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenRechargeDrone",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenCleanupDrone",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenJailerDrone",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenJunkDrone",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenHaulerDrone",
+            "weight": 5,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenBombardmentDrone",
+            "weight": 3,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenEquipmentDrone",
+            "weight": 5,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Misc",
+        "weight": 7.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenTurret1",
+            "weight": 7,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Rare",
+        "weight": 0.4,
+        "cards": [
+          {
+            "spawn_card": "iscChest1Stealthed",
+            "weight": 6,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscRadarTower",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscShrineGoldshoresAccess",
+            "weight": 2,
+            "min_stages_cleared": 1
+          },
+          {
+            "spawn_card": "iscGoldChest",
+            "weight": 2,
+            "min_stages_cleared": 3
+          }
+        ]
+      },
+      {
+        "name": "Duplicator",
+        "weight": 8.0,
+        "cards": [
+          {
+            "spawn_card": "iscDuplicator",
+            "weight": 30,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscDuplicatorLarge",
+            "weight": 6,
+            "min_stages_cleared": 1
+          },
+          {
+            "spawn_card": "iscDuplicatorMilitary",
+            "weight": 1,
+            "min_stages_cleared": 4
+          },
+          {
+            "spawn_card": "iscScrapper",
+            "weight": 12,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscDroneScrapper",
+            "weight": 12,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscDroneAssemblyStation",
+            "weight": 12,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
+  "dccsSolutionalhauntMonsters": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsSolutionalhauntMonsters",
+    "categories": [
+      {
+        "name": "Minibosses",
+        "weight": 67.0,
+        "cards": [
+          {
+            "spawn_card": "cscIronHauler",
+            "weight": 12,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscExtractorUnit",
+            "weight": 20,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Basic Monsters",
+        "weight": 100.0,
+        "cards": [
+          {
+            "spawn_card": "cscWorkerUnit",
+            "weight": 12,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscRoboBallMini",
+            "weight": 20,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
   "dccsSulfurPoolsInteractablesDLC1": {
     "class": "DirectorCardCategorySelection",
     "name": "dccsSulfurPoolsInteractablesDLC1",
@@ -9988,12 +13791,12 @@
         "cards": [
           {
             "spawn_card": "iscBrokenFlameDrone",
-            "weight": 1,
+            "weight": 10,
             "min_stages_cleared": 0
           },
           {
             "spawn_card": "iscBrokenEquipmentDrone",
-            "weight": 2,
+            "weight": 20,
             "min_stages_cleared": 0
           }
         ]
@@ -10095,6 +13898,45 @@
       }
     ]
   },
+  "dccsSulfurPoolsInteractablesDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsSulfurPoolsInteractablesDLC3",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscTemporaryItemsShop",
+            "weight": 10,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Drones",
+        "weight": 3.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenJunkDrone",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Duplicator",
+        "weight": 8.0,
+        "cards": [
+          {
+            "spawn_card": "iscDroneScrapper",
+            "weight": 6,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
   "dccsSulfurPoolsMonstersDLC1": {
     "class": "DirectorCardCategorySelection",
     "name": "dccsSulfurPoolsMonstersDLC1",
@@ -10175,6 +14017,94 @@
       }
     ]
   },
+  "dccsSulfurPoolsMonstersDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsSulfurPoolsMonstersDLC3",
+    "categories": [
+      {
+        "name": "Basic Monsters",
+        "weight": 3.0,
+        "cards": [
+          {
+            "spawn_card": "cscWorkerUnit",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscMinePod",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
+  "dccsSuperRoboBallpitFamily": {
+    "class": "FamilyDirectorCardCategorySelection",
+    "name": "dccsSuperRoboBallpitFamily",
+    "categories": [
+      {
+        "name": "Champions",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscRoboBallBoss",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscSolusAmalgamator",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Minibosses",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscIronHauler",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscDefectiveUnit",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Basic Monsters",
+        "weight": 4.0,
+        "cards": [
+          {
+            "spawn_card": "cscExtractorUnit",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscMinePod",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscTanker",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "cscWorkerUnit",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ],
+    "min_stages_cleared": 1,
+    "max_stages_cleared": 2147483647
+  },
   "dccsVillageInteractablesDLC1": {
     "class": "DirectorCardCategorySelection",
     "name": "dccsVillageInteractablesDLC1",
@@ -10202,6 +14132,44 @@
           {
             "spawn_card": "iscVoidChest",
             "weight": 15,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
+  "dccsVillageInteractablesDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsVillageInteractablesDLC3",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscTemporaryItemsShop",
+            "weight": 5,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Drones",
+        "weight": 14.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenRechargeDrone",
+            "weight": 2,
+            "min_stages_cleared": 4
+          },
+          {
+            "spawn_card": "iscBrokenJunkDrone",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenHaulerDrone",
+            "weight": 4,
             "min_stages_cleared": 0
           }
         ]
@@ -10477,6 +14445,23 @@
       }
     ]
   },
+  "dccsVillageMonstersDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsVillageMonstersDLC3",
+    "categories": [
+      {
+        "name": "Basic Monsters",
+        "weight": 4.0,
+        "cards": [
+          {
+            "spawn_card": "cscWorkerUnit",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
   "dccsVillageNightInteractables": {
     "class": "DirectorCardCategorySelection",
     "name": "dccsVillageNightInteractables",
@@ -10694,6 +14679,44 @@
             "spawn_card": "iscVoidCamp",
             "weight": 7,
             "min_stages_cleared": 1
+          }
+        ]
+      }
+    ]
+  },
+  "dccsVillageNightInteractablesDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsVillageNightInteractablesDLC3",
+    "categories": [
+      {
+        "name": "Chests",
+        "weight": 45.0,
+        "cards": [
+          {
+            "spawn_card": "iscTemporaryItemsShop",
+            "weight": 5,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Drones",
+        "weight": 14.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenRechargeDrone",
+            "weight": 2,
+            "min_stages_cleared": 4
+          },
+          {
+            "spawn_card": "iscBrokenJunkDrone",
+            "weight": 2,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenHaulerDrone",
+            "weight": 4,
+            "min_stages_cleared": 0
           }
         ]
       }
@@ -11051,6 +15074,36 @@
       }
     ]
   },
+  "dccsVultureFamily": {
+    "class": "FamilyDirectorCardCategorySelection",
+    "name": "dccsVultureFamily",
+    "categories": [
+      {
+        "name": "Champions",
+        "weight": 2.0,
+        "cards": [
+          {
+            "spawn_card": "cscVultureHunter",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Basic Monsters",
+        "weight": 4.0,
+        "cards": [
+          {
+            "spawn_card": "cscVulture",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ],
+    "min_stages_cleared": 1,
+    "max_stages_cleared": 2147483647
+  },
   "dccsWispFamily": {
     "class": "FamilyDirectorCardCategorySelection",
     "name": "dccsWispFamily",
@@ -11319,6 +15372,39 @@
       }
     ]
   },
+  "dccsWispGraveyardInteractablesDLC3": {
+    "class": "DirectorCardCategorySelection",
+    "name": "dccsWispGraveyardInteractablesDLC3",
+    "categories": [
+      {
+        "name": "Drones",
+        "weight": 3.0,
+        "cards": [
+          {
+            "spawn_card": "iscBrokenHaulerDrone",
+            "weight": 1,
+            "min_stages_cleared": 0
+          },
+          {
+            "spawn_card": "iscBrokenCleanupDrone",
+            "weight": 1,
+            "min_stages_cleared": 0
+          }
+        ]
+      },
+      {
+        "name": "Duplicator",
+        "weight": 8.0,
+        "cards": [
+          {
+            "spawn_card": "iscDroneScrapper",
+            "weight": 6,
+            "min_stages_cleared": 0
+          }
+        ]
+      }
+    ]
+  },
   "dccsWispGraveyardMonsters": {
     "class": "DirectorCardCategorySelection",
     "name": "dccsWispGraveyardMonsters",
@@ -11371,22 +15457,22 @@
         "cards": [
           {
             "spawn_card": "cscBeetle",
-            "weight": 1,
+            "weight": 2,
             "min_stages_cleared": 0
           },
           {
             "spawn_card": "cscLesserWisp",
-            "weight": 1,
+            "weight": 2,
             "min_stages_cleared": 0
           },
           {
             "spawn_card": "cscImp",
-            "weight": 1,
+            "weight": 2,
             "min_stages_cleared": 0
           },
           {
             "spawn_card": "cscVulture",
-            "weight": 1,
+            "weight": 2,
             "min_stages_cleared": 4
           }
         ]

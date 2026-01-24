@@ -1,5 +1,25 @@
 [
   {
+    "_name": "bdAccelerant",
+    "can_stack": false,
+    "is_debuff": true,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 2
+  },
+  {
+    "_name": "bdAccelerantIgnited",
+    "can_stack": false,
+    "is_debuff": true,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 2
+  },
+  {
     "_name": "bdAmputate",
     "can_stack": false,
     "is_debuff": true,
@@ -7,7 +27,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": true,
     "is_cooldown": false,
-    "flags": -1
+    "flags": 1
   },
   {
     "_name": "bdArmorBoost",
@@ -17,7 +37,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": false,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdAttackSpeedOnCrit",
@@ -27,7 +47,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": false,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdAttackSpeedPerNearbyAllyOrEnemyBuff",
@@ -97,7 +117,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": true,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdBleeding",
@@ -160,6 +180,16 @@
     "flags": 0
   },
   {
+    "_name": "bdBrittle",
+    "can_stack": false,
+    "is_debuff": true,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 0
+  },
+  {
     "_name": "bdBugWings",
     "can_stack": false,
     "is_debuff": false,
@@ -177,7 +207,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": false,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdChildFrolicCooldown",
@@ -197,7 +227,17 @@
     "is_hidden": false,
     "ignore_growth_nectar": true,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
+  },
+  {
+    "_name": "bdCleanupExecute",
+    "can_stack": false,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 1
   },
   {
     "_name": "bdCloak",
@@ -207,7 +247,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": false,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdCloakSpeed",
@@ -217,7 +257,27 @@
     "is_hidden": false,
     "ignore_growth_nectar": false,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
+  },
+  {
+    "_name": "bdCollectiveShareBuff",
+    "can_stack": false,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": -1
+  },
+  {
+    "_name": "bdConductive",
+    "can_stack": false,
+    "is_debuff": true,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 2
   },
   {
     "_name": "bdCookingChilled",
@@ -307,6 +367,16 @@
     "is_hidden": false,
     "ignore_growth_nectar": true,
     "is_cooldown": false,
+    "flags": 2
+  },
+  {
+    "_name": "bdCritChanceAndDamage",
+    "can_stack": true,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
     "flags": 0
   },
   {
@@ -357,7 +427,67 @@
     "is_hidden": false,
     "ignore_growth_nectar": true,
     "is_cooldown": false,
-    "flags": -1
+    "flags": 1
+  },
+  {
+    "_name": "bdDrifterCleanupArmor",
+    "can_stack": true,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 0
+  },
+  {
+    "_name": "bdDrifterFallProtection",
+    "can_stack": false,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": true,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 0
+  },
+  {
+    "_name": "bdDrifterHoardLuck",
+    "can_stack": false,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 0
+  },
+  {
+    "_name": "bdDroneArmor",
+    "can_stack": false,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 0
+  },
+  {
+    "_name": "bdElectrocuted",
+    "can_stack": false,
+    "is_debuff": true,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 2
+  },
+  {
+    "_name": "bdElectrocutioner",
+    "can_stack": false,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 0
   },
   {
     "_name": "bdElementalRingVoidCooldown",
@@ -407,7 +537,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": false,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdEliteAurelionite",
@@ -447,7 +577,17 @@
     "is_hidden": false,
     "ignore_growth_nectar": true,
     "is_cooldown": false,
-    "flags": -1
+    "flags": 1
+  },
+  {
+    "_name": "bdEliteCollective",
+    "can_stack": false,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 0
   },
   {
     "_name": "bdEliteEarth",
@@ -557,7 +697,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": false,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdEnergized",
@@ -567,7 +707,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": false,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdEnergizedCore",
@@ -587,7 +727,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": false,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdEngiTeamShield",
@@ -617,7 +757,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": true,
     "is_cooldown": false,
-    "flags": -1
+    "flags": 1
   },
   {
     "_name": "bdExtraBossMissile",
@@ -687,7 +827,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": true,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdFruiting",
@@ -697,7 +837,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": true,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdFullCrit",
@@ -707,7 +847,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": false,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdGeodeBuff",
@@ -730,7 +870,27 @@
     "flags": 0
   },
   {
+    "_name": "bdGravitySlow",
+    "can_stack": false,
+    "is_debuff": true,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 2
+  },
+  {
     "_name": "bdHealAndReviveRegenBuff",
+    "can_stack": false,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 0
+  },
+  {
+    "_name": "bdHealNovaRegen",
     "can_stack": false,
     "is_debuff": false,
     "is_dot": false,
@@ -747,7 +907,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": true,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdHiddenInvincibility",
@@ -780,6 +940,16 @@
     "flags": 0
   },
   {
+    "_name": "bdIgnoreInventoryDisable",
+    "can_stack": false,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": true,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 0
+  },
+  {
     "_name": "bdImmune",
     "can_stack": false,
     "is_debuff": false,
@@ -787,7 +957,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": false,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdImmuneToDebuffCooldown",
@@ -807,7 +977,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": false,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdIncreaseDamageBuff",
@@ -817,7 +987,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": false,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdIntangible",
@@ -830,6 +1000,26 @@
     "flags": 0
   },
   {
+    "_name": "bdInventoryDisable",
+    "can_stack": false,
+    "is_debuff": true,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 0
+  },
+  {
+    "_name": "bdJailed",
+    "can_stack": false,
+    "is_debuff": true,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 0
+  },
+  {
     "_name": "bdJailerSlow",
     "can_stack": false,
     "is_debuff": true,
@@ -837,7 +1027,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": true,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdJailerTether",
@@ -857,7 +1047,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": false,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdKnockBackActiveWindow",
@@ -897,7 +1087,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": false,
     "is_cooldown": false,
-    "flags": -1
+    "flags": 1
   },
   {
     "_name": "bdKnockUpHitEnemiesJuggleCount",
@@ -907,7 +1097,7 @@
     "is_hidden": true,
     "ignore_growth_nectar": false,
     "is_cooldown": false,
-    "flags": -1
+    "flags": 1
   },
   {
     "_name": "bdLaserTurbineKillCharge",
@@ -927,7 +1117,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": false,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdLightningShield",
@@ -967,7 +1157,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": true,
     "is_cooldown": false,
-    "flags": -1
+    "flags": 1
   },
   {
     "_name": "bdLunarSecondaryRoot",
@@ -997,7 +1187,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": false,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdMedkitHeal",
@@ -1007,7 +1197,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": false,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdMercExpose",
@@ -1027,7 +1217,17 @@
     "is_hidden": false,
     "ignore_growth_nectar": false,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
+  },
+  {
+    "_name": "bdNanoBug",
+    "can_stack": false,
+    "is_debuff": true,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 2
   },
   {
     "_name": "bdNoCooldowns",
@@ -1040,6 +1240,16 @@
     "flags": 0
   },
   {
+    "_name": "bdNoGravity",
+    "can_stack": false,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": true,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 0
+  },
+  {
     "_name": "bdNullified",
     "can_stack": false,
     "is_debuff": true,
@@ -1047,7 +1257,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": true,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdNullifyStack",
@@ -1087,7 +1297,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": false,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdOverheat",
@@ -1110,6 +1320,16 @@
     "flags": 0
   },
   {
+    "_name": "bdParrying",
+    "can_stack": false,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": true,
+    "is_cooldown": false,
+    "flags": 0
+  },
+  {
     "_name": "bdPermanentCurse",
     "can_stack": true,
     "is_debuff": true,
@@ -1117,7 +1337,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": true,
     "is_cooldown": false,
-    "flags": -1
+    "flags": 1
   },
   {
     "_name": "bdPermanentDebuff",
@@ -1147,6 +1367,36 @@
     "is_hidden": false,
     "ignore_growth_nectar": false,
     "is_cooldown": false,
+    "flags": 0
+  },
+  {
+    "_name": "bdPowerCubeBuff",
+    "can_stack": false,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": true,
+    "flags": 0
+  },
+  {
+    "_name": "bdPowerOrbBuff",
+    "can_stack": false,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": true,
+    "flags": 0
+  },
+  {
+    "_name": "bdPowerPyramidBuff",
+    "can_stack": false,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": true,
     "flags": 0
   },
   {
@@ -1207,6 +1457,66 @@
     "is_hidden": false,
     "ignore_growth_nectar": true,
     "is_cooldown": false,
+    "flags": 1
+  },
+  {
+    "_name": "bdSharedSuffering",
+    "can_stack": false,
+    "is_debuff": true,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": true,
+    "is_cooldown": false,
+    "flags": 0
+  },
+  {
+    "_name": "bdSharedSufferingStock",
+    "can_stack": true,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 0
+  },
+  {
+    "_name": "bdSharedSufferingStockEmpty",
+    "can_stack": false,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": true,
+    "is_cooldown": false,
+    "flags": 0
+  },
+  {
+    "_name": "bdShieldTankDamage",
+    "can_stack": false,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 0
+  },
+  {
+    "_name": "bdShockDamageEnergized",
+    "can_stack": false,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 0
+  },
+  {
+    "_name": "bdSlow10Stacking",
+    "can_stack": true,
+    "is_debuff": true,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": true,
+    "is_cooldown": false,
     "flags": -1
   },
   {
@@ -1227,7 +1537,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": true,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdSlow60",
@@ -1237,7 +1547,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": true,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdSlow80",
@@ -1247,7 +1557,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": true,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdSmallArmorBoost",
@@ -1257,7 +1567,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": false,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdSojournHealing",
@@ -1280,6 +1590,26 @@
     "flags": 0
   },
   {
+    "_name": "bdSolusWingInvulnerability",
+    "can_stack": true,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": true,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 0
+  },
+  {
+    "_name": "bdSolusWingWeakpointDestroyed",
+    "can_stack": true,
+    "is_debuff": true,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 2
+  },
+  {
     "_name": "bdSoulCost",
     "can_stack": true,
     "is_debuff": true,
@@ -1287,7 +1617,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": true,
     "is_cooldown": false,
-    "flags": -1
+    "flags": 1
   },
   {
     "_name": "bdSoulFatigue",
@@ -1297,7 +1627,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": true,
     "is_cooldown": true,
-    "flags": -1
+    "flags": 1
   },
   {
     "_name": "bdSoulSurge",
@@ -1308,6 +1638,26 @@
     "ignore_growth_nectar": false,
     "is_cooldown": false,
     "flags": 0
+  },
+  {
+    "_name": "bdSpeedOnPickup",
+    "can_stack": true,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 2
+  },
+  {
+    "_name": "bdStimShot",
+    "can_stack": true,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 2
   },
   {
     "_name": "bdStrongerBurn",
@@ -1340,6 +1690,16 @@
     "flags": 0
   },
   {
+    "_name": "bdSureProc",
+    "can_stack": false,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 2
+  },
+  {
     "_name": "bdTamperingASAndArmorBonus",
     "can_stack": true,
     "is_debuff": false,
@@ -1355,6 +1715,16 @@
     "is_debuff": false,
     "is_dot": false,
     "is_hidden": true,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 0
+  },
+  {
+    "_name": "bdTaunted",
+    "can_stack": false,
+    "is_debuff": true,
+    "is_dot": false,
+    "is_hidden": false,
     "ignore_growth_nectar": false,
     "is_cooldown": false,
     "flags": 0
@@ -1417,7 +1787,17 @@
     "is_hidden": false,
     "ignore_growth_nectar": false,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
+  },
+  {
+    "_name": "bdTinkerJitter",
+    "can_stack": false,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": true,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 1
   },
   {
     "_name": "bdTonicBuff",
@@ -1426,6 +1806,106 @@
     "is_dot": false,
     "is_hidden": false,
     "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 0
+  },
+  {
+    "_name": "bdTransferDebuffOnHit",
+    "can_stack": false,
+    "is_debuff": true,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": true,
+    "is_cooldown": false,
+    "flags": 1
+  },
+  {
+    "_name": "bdTransferingItem",
+    "can_stack": false,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": true,
+    "ignore_growth_nectar": true,
+    "is_cooldown": false,
+    "flags": -1
+  },
+  {
+    "_name": "bdTrashToTreasureGreen",
+    "can_stack": true,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": true,
+    "flags": 0
+  },
+  {
+    "_name": "bdTrashToTreasureRed",
+    "can_stack": true,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": true,
+    "flags": 0
+  },
+  {
+    "_name": "bdTrashToTreasureWhite",
+    "can_stack": true,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": true,
+    "flags": 0
+  },
+  {
+    "_name": "bdTrashToTreasureYellow",
+    "can_stack": true,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": true,
+    "flags": 0
+  },
+  {
+    "_name": "bdUltimateMealBoost",
+    "can_stack": false,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 2
+  },
+  {
+    "_name": "bdUltimateMealDecaying",
+    "can_stack": false,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": true,
+    "ignore_growth_nectar": true,
+    "is_cooldown": false,
+    "flags": 1
+  },
+  {
+    "_name": "bdUnderclock",
+    "can_stack": false,
+    "is_debuff": true,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 0
+  },
+  {
+    "_name": "bdUntargetable",
+    "can_stack": false,
+    "is_debuff": false,
+    "is_dot": false,
+    "is_hidden": true,
+    "ignore_growth_nectar": true,
     "is_cooldown": false,
     "flags": 0
   },
@@ -1480,6 +1960,16 @@
     "flags": 0
   },
   {
+    "_name": "bdVultureRoot",
+    "can_stack": false,
+    "is_debuff": true,
+    "is_dot": false,
+    "is_hidden": false,
+    "ignore_growth_nectar": false,
+    "is_cooldown": false,
+    "flags": 2
+  },
+  {
     "_name": "bdWarCryBuff",
     "can_stack": false,
     "is_debuff": false,
@@ -1487,7 +1977,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": false,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdWarbanner",
@@ -1497,7 +1987,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": false,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdWeak",
@@ -1507,7 +1997,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": true,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdWeakenedBeating",
@@ -1527,7 +2017,7 @@
     "is_hidden": false,
     "ignore_growth_nectar": false,
     "is_cooldown": false,
-    "flags": 0
+    "flags": 2
   },
   {
     "_name": "bdboostedFireEffect",

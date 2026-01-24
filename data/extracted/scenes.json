@@ -15,6 +15,10 @@
       [
         "sulfurpools",
         1.0
+      ],
+      [
+        "ironalluvium",
+        1.0
       ]
     ],
     "destinations_loop": [
@@ -28,6 +32,10 @@
       ],
       [
         "sulfurpools",
+        1.0
+      ],
+      [
+        "ironalluvium2",
         1.0
       ]
     ],
@@ -55,6 +63,13 @@
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC2"
+                ]
+              },
+              {
+                "dccs": "dccsAncientLoftInteractablesDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
                 ]
               }
             ],
@@ -199,6 +214,13 @@
                 "required_dlc": [
                   "DLC1"
                 ]
+              },
+              {
+                "dccs": "dccsArenaMonstersDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
               }
             ],
             "included_conditions_not_met": []
@@ -238,7 +260,15 @@
                 "weight": 1.0
               }
             ],
-            "included_conditions_met": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsArtifactWorldInteractablesDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
+              }
+            ],
             "included_conditions_not_met": []
           }
         ]
@@ -316,7 +346,15 @@
                 "weight": 1.0
               }
             ],
-            "included_conditions_met": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsArtifactWorld01Interactables_DLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
+              }
+            ],
             "included_conditions_not_met": []
           }
         ]
@@ -401,7 +439,15 @@
                 "weight": 1.0
               }
             ],
-            "included_conditions_met": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsArtifactWorldInteractablesDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
+              }
+            ],
             "included_conditions_not_met": []
           }
         ]
@@ -480,7 +526,13 @@
                 "weight": 1.0
               }
             ],
-            "included_conditions_met": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsArtifactWorldInteractablesDLC3",
+                "weight": 0.0,
+                "required_dlc": []
+              }
+            ],
             "included_conditions_not_met": []
           }
         ]
@@ -574,6 +626,10 @@
       [
         "ancientloft",
         1.0
+      ],
+      [
+        "nest",
+        1.0
       ]
     ],
     "destinations_loop": [
@@ -587,6 +643,10 @@
       ],
       [
         "ancientloft",
+        1.0
+      ],
+      [
+        "nest",
         1.0
       ]
     ],
@@ -621,6 +681,13 @@
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC2"
+                ]
+              },
+              {
+                "dccs": "dccsBlackBeachInteractablesDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
                 ]
               }
             ],
@@ -733,6 +800,10 @@
       [
         "ancientloft",
         1.0
+      ],
+      [
+        "nest",
+        1.0
       ]
     ],
     "destinations_loop": [
@@ -746,6 +817,10 @@
       ],
       [
         "ancientloft",
+        1.0
+      ],
+      [
+        "nest",
         1.0
       ]
     ],
@@ -780,6 +855,13 @@
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC2"
+                ]
+              },
+              {
+                "dccs": "dccsBlackBeachInteractablesDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
                 ]
               }
             ],
@@ -876,6 +958,119 @@
       1
     ]
   },
+  "computationalexchange": {
+    "scene_type": 2,
+    "stage_order": 97,
+    "required_dlc": "DLC3",
+    "destinations": [],
+    "destinations_loop": [],
+    "use_looping_destinations": false,
+    "skip_devotion": false,
+    "stage_info": {
+      "interactable_credits": 0,
+      "monster_credits": 0,
+      "bonus_credits": 0,
+      "interactables": null,
+      "monsters": null
+    },
+    "scene_director": {
+      "teleporter": null,
+      "exp_coeff": 0.0,
+      "elite_bias": 0.0
+    },
+    "combat_director": null,
+    "newt": null
+  },
+  "conduitcanyon": {
+    "scene_type": 1,
+    "stage_order": 3,
+    "required_dlc": "DLC3",
+    "destinations": [
+      [
+        "skymeadow",
+        1.0
+      ],
+      [
+        "helminthroost",
+        1.0
+      ]
+    ],
+    "destinations_loop": [
+      [
+        "skymeadow",
+        1.0
+      ],
+      [
+        "helminthroost",
+        1.0
+      ]
+    ],
+    "use_looping_destinations": true,
+    "skip_devotion": false,
+    "stage_info": {
+      "interactable_credits": 400,
+      "monster_credits": 220,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpConduitcanyonInteractables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [
+              {
+                "dccs": "dccsConduitcanyonInteractables",
+                "weight": 1.0
+              }
+            ],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsConduitcanyonInteractablesDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpConduitcanyonMonsters",
+        "categories": [
+          {
+            "name": "Standard",
+            "weight": 1.0,
+            "always_included": [
+              {
+                "dccs": "dccsConduitcanyonMonsters",
+                "weight": 1.0
+              }
+            ],
+            "included_conditions_met": [],
+            "included_conditions_not_met": []
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": null,
+      "exp_coeff": 0.066667,
+      "elite_bias": 2.0
+    },
+    "combat_director": [
+      {
+        "name": "fast",
+        "overrides": {}
+      },
+      {
+        "name": "slow",
+        "overrides": {}
+      }
+    ],
+    "newt": null
+  },
   "dampcavesimple": {
     "scene_type": 1,
     "stage_order": 3,
@@ -932,6 +1127,13 @@
                 "required_dlc": [
                   "DLC2"
                 ]
+              },
+              {
+                "dccs": "dccsDampCaveInteractablesDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
               }
             ],
             "included_conditions_not_met": []
@@ -963,6 +1165,13 @@
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC2"
+                ]
+              },
+              {
+                "dccs": "dccsDampCaveMonstersDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
                 ]
               }
             ],
@@ -1047,6 +1256,10 @@
       [
         "sulfurpools",
         1.0
+      ],
+      [
+        "ironalluvium",
+        1.0
       ]
     ],
     "destinations_loop": [
@@ -1060,6 +1273,10 @@
       ],
       [
         "sulfurpools",
+        1.0
+      ],
+      [
+        "ironalluvium2",
         1.0
       ]
     ],
@@ -1095,6 +1312,13 @@
                 "required_dlc": [
                   "DLC2"
                 ]
+              },
+              {
+                "dccs": "dccsFoggySwampInteractablesDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
               }
             ],
             "included_conditions_not_met": []
@@ -1126,6 +1350,13 @@
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC2"
+                ]
+              },
+              {
+                "dccs": "dccsFoggySwampMonstersDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
                 ]
               }
             ],
@@ -1220,6 +1451,10 @@
       [
         "rootjungle",
         1.0
+      ],
+      [
+        "repurposedcrater",
+        1.0
       ]
     ],
     "destinations_loop": [
@@ -1233,6 +1468,10 @@
       ],
       [
         "rootjungle",
+        1.0
+      ],
+      [
+        "repurposedcrater",
         1.0
       ]
     ],
@@ -1268,6 +1507,13 @@
                 "required_dlc": [
                   "DLC2"
                 ]
+              },
+              {
+                "dccs": "dccsFrozenWallInteractablesDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
               }
             ],
             "included_conditions_not_met": []
@@ -1300,6 +1546,13 @@
                 "required_dlc": [
                   "DLC2"
                 ]
+              },
+              {
+                "dccs": "dccsFrozenWallMonstersDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
               }
             ],
             "included_conditions_not_met": []
@@ -1323,6 +1576,13 @@
                 "dccs": "dccsWispFamily",
                 "weight": 1.0,
                 "required_dlc": []
+              },
+              {
+                "dccs": "dccsSuperRoboBallpitFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
               }
             ],
             "included_conditions_not_met": []
@@ -1453,6 +1713,10 @@
       [
         "ancientloft",
         1.0
+      ],
+      [
+        "nest",
+        1.0
       ]
     ],
     "destinations_loop": [
@@ -1466,6 +1730,10 @@
       ],
       [
         "ancientloft",
+        1.0
+      ],
+      [
+        "nest",
         1.0
       ]
     ],
@@ -1501,6 +1769,13 @@
                 "required_dlc": [
                   "DLC2"
                 ]
+              },
+              {
+                "dccs": "dccsGolemplainsInteractablesDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
               }
             ],
             "included_conditions_not_met": []
@@ -1532,6 +1807,13 @@
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC2"
+                ]
+              },
+              {
+                "dccs": "dccsGolemplainsMonstersDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
                 ]
               }
             ],
@@ -1619,6 +1901,10 @@
       [
         "ancientloft",
         1.0
+      ],
+      [
+        "nest",
+        1.0
       ]
     ],
     "destinations_loop": [
@@ -1632,6 +1918,10 @@
       ],
       [
         "ancientloft",
+        1.0
+      ],
+      [
+        "nest",
         1.0
       ]
     ],
@@ -1667,6 +1957,13 @@
                 "required_dlc": [
                   "DLC2"
                 ]
+              },
+              {
+                "dccs": "dccsGolemplainsInteractablesDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
               }
             ],
             "included_conditions_not_met": []
@@ -1698,6 +1995,13 @@
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC2"
+                ]
+              },
+              {
+                "dccs": "dccsGolemplainsMonstersDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
                 ]
               }
             ],
@@ -1785,6 +2089,10 @@
       [
         "sulfurpools",
         1.0
+      ],
+      [
+        "ironalluvium",
+        1.0
       ]
     ],
     "destinations_loop": [
@@ -1798,6 +2106,10 @@
       ],
       [
         "sulfurpools",
+        1.0
+      ],
+      [
+        "ironalluvium2",
         1.0
       ]
     ],
@@ -1833,6 +2145,13 @@
                 "required_dlc": [
                   "DLC2"
                 ]
+              },
+              {
+                "dccs": "dccsGooLakeInteractablesDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
               }
             ],
             "included_conditions_not_met": []
@@ -1864,6 +2183,13 @@
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC2"
+                ]
+              },
+              {
+                "dccs": "dccsGooLakeMonstersDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
                 ]
               }
             ],
@@ -1951,6 +2277,10 @@
       [
         "rootjungle",
         1.0
+      ],
+      [
+        "repurposedcrater",
+        1.0
       ]
     ],
     "destinations_loop": [
@@ -1964,6 +2294,10 @@
       ],
       [
         "rootjungle",
+        1.0
+      ],
+      [
+        "repurposedcrater",
         1.0
       ]
     ],
@@ -1991,6 +2325,13 @@
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC1"
+                ]
+              },
+              {
+                "dccs": "dccsHabitatInteractables_DLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
                 ]
               }
             ],
@@ -2088,6 +2429,10 @@
       [
         "rootjungle",
         1.0
+      ],
+      [
+        "repurposedcrater",
+        1.0
       ]
     ],
     "destinations_loop": [
@@ -2101,6 +2446,10 @@
       ],
       [
         "rootjungle",
+        1.0
+      ],
+      [
+        "repurposedcrater",
         1.0
       ]
     ],
@@ -2118,7 +2467,7 @@
             "weight": 1.0,
             "always_included": [
               {
-                "dccs": "dccsHabitatInteractables_DLC2",
+                "dccs": "dccsHabitatFallInteractables_DLC2",
                 "weight": 1.0
               }
             ],
@@ -2128,6 +2477,13 @@
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC1"
+                ]
+              },
+              {
+                "dccs": "dccsHabitatInteractables_DLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
                 ]
               }
             ],
@@ -2241,7 +2597,7 @@
       ],
       [
         "lakes",
-        1.0
+        0.5
       ],
       [
         "village",
@@ -2311,6 +2667,13 @@
                 "required_dlc": [
                   "DLC1"
                 ]
+              },
+              {
+                "dccs": "dccsHelminthRoostInteractables_DLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
               }
             ],
             "included_conditions_not_met": []
@@ -2336,6 +2699,13 @@
                 "required_dlc": [
                   "DLC2"
                 ]
+              },
+              {
+                "dccs": "dccsHelminthRoostMonstersDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
               }
             ],
             "included_conditions_not_met": []
@@ -2347,14 +2717,21 @@
             "included_conditions_met": [
               {
                 "dccs": "dccsLunarFamily",
-                "weight": 1.0,
+                "weight": 2.0,
                 "required_dlc": []
               },
               {
                 "dccs": "dccsGupFamily",
-                "weight": 1.0,
+                "weight": 2.0,
                 "required_dlc": [
                   "DLC1"
+                ]
+              },
+              {
+                "dccs": "dccsSuperRoboBallpitFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
                 ]
               }
             ],
@@ -2380,6 +2757,372 @@
     },
     "scene_director": {
       "teleporter": "iscLunarTeleporter",
+      "exp_coeff": 0.066667,
+      "elite_bias": 2.0
+    },
+    "combat_director": [
+      {
+        "name": "fast",
+        "overrides": {}
+      },
+      {
+        "name": "slow",
+        "overrides": {}
+      }
+    ],
+    "newt": [
+      1,
+      1
+    ]
+  },
+  "ironalluvium": {
+    "scene_type": 1,
+    "stage_order": 2,
+    "required_dlc": "DLC3",
+    "destinations": [
+      [
+        "dampcavesimple",
+        1.0
+      ],
+      [
+        "shipgraveyard",
+        1.0
+      ],
+      [
+        "rootjungle",
+        1.0
+      ],
+      [
+        "repurposedcrater",
+        1.0
+      ]
+    ],
+    "destinations_loop": [
+      [
+        "dampcavesimple",
+        1.0
+      ],
+      [
+        "shipgraveyard",
+        1.0
+      ],
+      [
+        "rootjungle",
+        1.0
+      ],
+      [
+        "repurposedcrater",
+        1.0
+      ]
+    ],
+    "use_looping_destinations": true,
+    "skip_devotion": false,
+    "stage_info": {
+      "interactable_credits": 280,
+      "monster_credits": 100,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpIronalluviumInteractables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [
+              {
+                "dccs": "dccsIronalluviumInteractables",
+                "weight": 1.0
+              }
+            ],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsIronalluviumInteractablesDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              },
+              {
+                "dccs": "dccsIronalluviumInteractablesDLC2",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC2"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpIronalluviumMonsters",
+        "categories": [
+          {
+            "name": "Standard",
+            "weight": 0.98,
+            "always_included": [
+              {
+                "dccs": "dccsIronalluviumMonsters",
+                "weight": 1.0
+              }
+            ],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsIronalluviumMonstersDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              },
+              {
+                "dccs": "dccsIronalluviumMonstersDLC2",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC2"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          },
+          {
+            "name": "Family",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsGolemFamilySandy",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsBeetleFamily",
+                "weight": 2.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsJellyfishFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsAcidLarvaFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              },
+              {
+                "dccs": "dccsSuperRoboBallpitFamily",
+                "weight": 2.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          },
+          {
+            "name": "VoidInvasion",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsVoidFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": "iscTeleporter",
+      "exp_coeff": 0.066667,
+      "elite_bias": 2.0
+    },
+    "combat_director": [
+      {
+        "name": "fast",
+        "overrides": {}
+      },
+      {
+        "name": "slow",
+        "overrides": {}
+      }
+    ],
+    "newt": [
+      1,
+      1
+    ]
+  },
+  "ironalluvium2": {
+    "scene_type": 1,
+    "stage_order": 2,
+    "required_dlc": "DLC3",
+    "destinations": [
+      [
+        "dampcavesimple",
+        1.0
+      ],
+      [
+        "shipgraveyard",
+        1.0
+      ],
+      [
+        "rootjungle",
+        1.0
+      ],
+      [
+        "repurposedcrater",
+        1.0
+      ]
+    ],
+    "destinations_loop": [
+      [
+        "dampcavesimple",
+        1.0
+      ],
+      [
+        "shipgraveyard",
+        1.0
+      ],
+      [
+        "rootjungle",
+        1.0
+      ],
+      [
+        "repurposedcrater",
+        1.0
+      ]
+    ],
+    "use_looping_destinations": true,
+    "skip_devotion": false,
+    "stage_info": {
+      "interactable_credits": 280,
+      "monster_credits": 100,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpIronalluvium2Interactables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [
+              {
+                "dccs": "dccsIronalluvium2Interactables",
+                "weight": 1.0
+              }
+            ],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsIronalluvium2InteractablesDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              },
+              {
+                "dccs": "dccsIronalluvium2InteractablesDLC2",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC2"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpIronalluvium2Monsters",
+        "categories": [
+          {
+            "name": "Standard",
+            "weight": 0.98,
+            "always_included": [
+              {
+                "dccs": "dccsIronalluvium2Monsters",
+                "weight": 1.0
+              }
+            ],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsIronalluvium2MonstersDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              },
+              {
+                "dccs": "dccsIronalluvium2MonstersDLC2",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC2"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          },
+          {
+            "name": "Family",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsGolemFamilySandy",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsBeetleFamily",
+                "weight": 2.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsJellyfishFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsAcidLarvaFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              },
+              {
+                "dccs": "dccsSuperRoboBallpitFamily",
+                "weight": 2.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          },
+          {
+            "name": "VoidInvasion",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsVoidFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": "iscTeleporter",
       "exp_coeff": 0.066667,
       "elite_bias": 2.0
     },
@@ -2458,14 +3201,22 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
-            "included_conditions_met": [],
-            "included_conditions_not_met": [
+            "always_included": [
               {
                 "dccs": "dccsITAncientLoftMonsters",
                 "weight": 1.0
               }
-            ]
+            ],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsITAncientLoftMonstersDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
           }
         ]
       }
@@ -2550,6 +3301,13 @@
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC2"
+                ]
+              },
+              {
+                "dccs": "dccsITDampCaveMonstersDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
                 ]
               }
             ],
@@ -2727,6 +3485,13 @@
                 "required_dlc": [
                   "DLC2"
                 ]
+              },
+              {
+                "dccs": "dccsITGolemplainsMonstersDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
               }
             ],
             "included_conditions_not_met": []
@@ -2802,14 +3567,22 @@
           {
             "name": "",
             "weight": 1.0,
-            "always_included": [],
-            "included_conditions_met": [],
-            "included_conditions_not_met": [
+            "always_included": [
               {
                 "dccs": "dccsITGooLakeMonsters",
                 "weight": 1.0
               }
-            ]
+            ],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsITGooLakeMonstersDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
           }
         ]
       }
@@ -2975,6 +3748,13 @@
                 "required_dlc": [
                   "DLC2"
                 ]
+              },
+              {
+                "dccs": "dccsITSkyMeadowMonstersDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
               }
             ],
             "included_conditions_not_met": []
@@ -3006,6 +3786,10 @@
       [
         "ancientloft",
         1.0
+      ],
+      [
+        "nest",
+        1.0
       ]
     ],
     "destinations_loop": [
@@ -3019,6 +3803,10 @@
       ],
       [
         "ancientloft",
+        1.0
+      ],
+      [
+        "nest",
         1.0
       ]
     ],
@@ -3054,6 +3842,13 @@
                 "required_dlc": [
                   "DLC2"
                 ]
+              },
+              {
+                "dccs": "dccsLakesInteractablesDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
               }
             ],
             "included_conditions_not_met": []
@@ -3085,6 +3880,13 @@
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC2"
+                ]
+              },
+              {
+                "dccs": "dccsLakesMonstersDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
                 ]
               }
             ],
@@ -3170,6 +3972,10 @@
       [
         "ancientloft",
         1.0
+      ],
+      [
+        "nest",
+        1.0
       ]
     ],
     "destinations_loop": [
@@ -3183,6 +3989,10 @@
       ],
       [
         "ancientloft",
+        1.0
+      ],
+      [
+        "nest",
         1.0
       ]
     ],
@@ -3210,6 +4020,13 @@
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC1"
+                ]
+              },
+              {
+                "dccs": "dccsLakesnightInteractables_DLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
                 ]
               }
             ],
@@ -3327,6 +4144,10 @@
       [
         "sulfurpools",
         1.0
+      ],
+      [
+        "ironalluvium",
+        1.0
       ]
     ],
     "destinations_loop": [
@@ -3340,6 +4161,10 @@
       ],
       [
         "sulfurpools",
+        1.0
+      ],
+      [
+        "ironalluvium2",
         1.0
       ]
     ],
@@ -3367,6 +4192,13 @@
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC1"
+                ]
+              },
+              {
+                "dccs": "dccsLemurianTempleInteractables_DLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
                 ]
               }
             ],
@@ -3678,6 +4510,332 @@
     ],
     "newt": null
   },
+  "nest": {
+    "scene_type": 1,
+    "stage_order": 1,
+    "required_dlc": "DLC3",
+    "destinations": [
+      [
+        "frozenwall",
+        1.0
+      ],
+      [
+        "wispgraveyard",
+        1.0
+      ],
+      [
+        "sulfurpools",
+        1.0
+      ],
+      [
+        "ironalluvium",
+        1.0
+      ]
+    ],
+    "destinations_loop": [
+      [
+        "frozenwall",
+        1.0
+      ],
+      [
+        "wispgraveyard",
+        1.0
+      ],
+      [
+        "sulfurpools",
+        1.0
+      ],
+      [
+        "ironalluvium2",
+        1.0
+      ]
+    ],
+    "use_looping_destinations": true,
+    "skip_devotion": false,
+    "stage_info": {
+      "interactable_credits": 280,
+      "monster_credits": 100,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpNestInteractables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [
+              {
+                "dccs": "dccsNestInteractables",
+                "weight": 1.0
+              }
+            ],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsNestInteractablesDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              },
+              {
+                "dccs": "dccsNestInteractablesDLC2",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC2"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpNestMonsters",
+        "categories": [
+          {
+            "name": "Standard",
+            "weight": 0.98,
+            "always_included": [
+              {
+                "dccs": "dccsNestMonsters",
+                "weight": 1.0
+              }
+            ],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsNestMonstersDLC2",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC2"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          },
+          {
+            "name": "Family",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsGolemFamilySnowy",
+                "weight": 2.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsWispFamily",
+                "weight": 2.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsConstructFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              },
+              {
+                "dccs": "dccsSuperRoboBallpitFamily",
+                "weight": 2.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          },
+          {
+            "name": "VoidInvasion",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsVoidFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": "iscTeleporter",
+      "exp_coeff": 0.066667,
+      "elite_bias": 2.0
+    },
+    "combat_director": [
+      {
+        "name": "fast",
+        "overrides": {}
+      },
+      {
+        "name": "slow",
+        "overrides": {}
+      }
+    ],
+    "newt": [
+      1,
+      1
+    ]
+  },
+  "repurposedcrater": {
+    "scene_type": 1,
+    "stage_order": 3,
+    "required_dlc": "DLC3",
+    "destinations": [
+      [
+        "skymeadow",
+        1.0
+      ],
+      [
+        "helminthroost",
+        1.0
+      ]
+    ],
+    "destinations_loop": [
+      [
+        "skymeadow",
+        1.0
+      ],
+      [
+        "helminthroost",
+        1.0
+      ]
+    ],
+    "use_looping_destinations": true,
+    "skip_devotion": false,
+    "stage_info": {
+      "interactable_credits": 400,
+      "monster_credits": 230,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpRepurposedcraterInteractables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [
+              {
+                "dccs": "dccsRepurposedcraterInteractables",
+                "weight": 1.0
+              }
+            ],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsRepurposedcraterInteractablesDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              },
+              {
+                "dccs": "dccsRepurposedcraterInteractablesDLC2",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC2"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpRepurposedcraterMonsters",
+        "categories": [
+          {
+            "name": "Standard",
+            "weight": 0.98,
+            "always_included": [
+              {
+                "dccs": "dccsRepurposedcraterMonsters",
+                "weight": 1.0
+              }
+            ],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsRepurposedcraterMonstersDLC1",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          },
+          {
+            "name": "Family",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsConstructFamily",
+                "weight": 2.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              },
+              {
+                "dccs": "dccsImpFamily",
+                "weight": 2.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsLemurianFamily",
+                "weight": 1.0,
+                "required_dlc": []
+              },
+              {
+                "dccs": "dccsSuperRoboBallpitFamily",
+                "weight": 2.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          },
+          {
+            "name": "VoidInvasion",
+            "weight": 0.02,
+            "always_included": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsVoidFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC1"
+                ]
+              }
+            ],
+            "included_conditions_not_met": []
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": "iscTeleporter",
+      "exp_coeff": 0.066667,
+      "elite_bias": 2.0
+    },
+    "combat_director": [
+      {
+        "name": "fast",
+        "overrides": {}
+      },
+      {
+        "name": "slow",
+        "overrides": {}
+      }
+    ],
+    "newt": [
+      1,
+      1
+    ]
+  },
   "rootjungle": {
     "scene_type": 1,
     "stage_order": 3,
@@ -3734,6 +4892,13 @@
                 "required_dlc": [
                   "DLC2"
                 ]
+              },
+              {
+                "dccs": "dccsRootJungleInteractablesDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
               }
             ],
             "included_conditions_not_met": []
@@ -3765,6 +4930,13 @@
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC2"
+                ]
+              },
+              {
+                "dccs": "dccsRootJungleMonstersDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
                 ]
               }
             ],
@@ -3901,6 +5073,13 @@
                 "required_dlc": [
                   "DLC2"
                 ]
+              },
+              {
+                "dccs": "dccsShipgraveyardInteractablesDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
               }
             ],
             "included_conditions_not_met": []
@@ -3932,6 +5111,13 @@
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC2"
+                ]
+              },
+              {
+                "dccs": "dccsShipgraveyardMonstersDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
                 ]
               }
             ],
@@ -3967,6 +5153,13 @@
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC1"
+                ]
+              },
+              {
+                "dccs": "dccsSuperRoboBallpitFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
                 ]
               }
             ],
@@ -4037,7 +5230,7 @@
       ],
       [
         "lakes",
-        1.0
+        0.5
       ],
       [
         "village",
@@ -4114,6 +5307,13 @@
                 "required_dlc": [
                   "DLC2"
                 ]
+              },
+              {
+                "dccs": "dccsSkyMeadowInteractablesDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
               }
             ],
             "included_conditions_not_met": []
@@ -4146,6 +5346,13 @@
                 "required_dlc": [
                   "DLC1"
                 ]
+              },
+              {
+                "dccs": "dccsSkyMeadowMonstersDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
               }
             ],
             "included_conditions_not_met": []
@@ -4157,14 +5364,21 @@
             "included_conditions_met": [
               {
                 "dccs": "dccsLunarFamily",
-                "weight": 1.0,
+                "weight": 2.0,
                 "required_dlc": []
               },
               {
                 "dccs": "dccsGupFamily",
-                "weight": 1.0,
+                "weight": 2.0,
                 "required_dlc": [
                   "DLC1"
+                ]
+              },
+              {
+                "dccs": "dccsSuperRoboBallpitFamily",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
                 ]
               }
             ],
@@ -4224,6 +5438,10 @@
       [
         "ancientloft",
         1.0
+      ],
+      [
+        "nest",
+        1.0
       ]
     ],
     "destinations_loop": [
@@ -4237,6 +5455,10 @@
       ],
       [
         "ancientloft",
+        1.0
+      ],
+      [
+        "nest",
         1.0
       ]
     ],
@@ -4264,6 +5486,13 @@
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC2"
+                ]
+              },
+              {
+                "dccs": "dccsSnowyForestInteractablesDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
                 ]
               }
             ],
@@ -4360,6 +5589,111 @@
       1
     ]
   },
+  "solusweb": {
+    "scene_type": 2,
+    "stage_order": 94,
+    "required_dlc": "DLC3",
+    "destinations": [],
+    "destinations_loop": [],
+    "use_looping_destinations": false,
+    "skip_devotion": false,
+    "stage_info": {
+      "interactable_credits": 0,
+      "monster_credits": 0,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpSolusWebInteractables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [],
+            "included_conditions_not_met": []
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpSolusWebMonsters",
+        "categories": [
+          {
+            "name": "Standard",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [],
+            "included_conditions_not_met": []
+          }
+        ]
+      }
+    },
+    "scene_director": {
+      "teleporter": null,
+      "exp_coeff": 0.066667,
+      "elite_bias": 2.0
+    },
+    "combat_director": [
+      {
+        "name": "fast",
+        "overrides": {}
+      },
+      {
+        "name": "slow",
+        "overrides": {}
+      }
+    ],
+    "newt": null
+  },
+  "solutionalhaunt": {
+    "scene_type": 2,
+    "stage_order": 92,
+    "required_dlc": "DLC3",
+    "destinations": [],
+    "destinations_loop": [],
+    "use_looping_destinations": false,
+    "skip_devotion": false,
+    "stage_info": {
+      "interactable_credits": 0,
+      "monster_credits": 0,
+      "bonus_credits": 0,
+      "interactables": {
+        "name": "dpSolutionalhauntInteractables",
+        "categories": [
+          {
+            "name": "",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsSolutionalhauntInteractables",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "monsters": {
+        "name": "dpSolutionalhauntMonsters",
+        "categories": [
+          {
+            "name": "Standard",
+            "weight": 1.0,
+            "always_included": [],
+            "included_conditions_met": [],
+            "included_conditions_not_met": [
+              {
+                "dccs": "dccsSolutionalhauntMonsters",
+                "weight": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "scene_director": null,
+    "combat_director": null,
+    "newt": null
+  },
   "sulfurpools": {
     "scene_type": 1,
     "stage_order": 2,
@@ -4376,6 +5710,10 @@
       [
         "rootjungle",
         1.0
+      ],
+      [
+        "repurposedcrater",
+        1.0
       ]
     ],
     "destinations_loop": [
@@ -4389,6 +5727,10 @@
       ],
       [
         "rootjungle",
+        1.0
+      ],
+      [
+        "repurposedcrater",
         1.0
       ]
     ],
@@ -4417,6 +5759,13 @@
                 "required_dlc": [
                   "DLC2"
                 ]
+              },
+              {
+                "dccs": "dccsSulfurPoolsInteractablesDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
               }
             ],
             "included_conditions_not_met": []
@@ -4435,7 +5784,15 @@
                 "weight": 1.0
               }
             ],
-            "included_conditions_met": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsSulfurPoolsMonstersDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
+              }
+            ],
             "included_conditions_not_met": []
           },
           {
@@ -4540,6 +5897,10 @@
       [
         "ancientloft",
         1.0
+      ],
+      [
+        "nest",
+        1.0
       ]
     ],
     "destinations_loop": [
@@ -4553,6 +5914,10 @@
       ],
       [
         "ancientloft",
+        1.0
+      ],
+      [
+        "nest",
         1.0
       ]
     ],
@@ -4583,10 +5948,10 @@
                 ]
               },
               {
-                "dccs": "dccsVillagenightInteractablesDLC2",
+                "dccs": "dccsVillageInteractablesDLC3",
                 "weight": 1.0,
                 "required_dlc": [
-                  "DLC2"
+                  "DLC3"
                 ]
               }
             ],
@@ -4606,7 +5971,15 @@
                 "weight": 1.0
               }
             ],
-            "included_conditions_met": [],
+            "included_conditions_met": [
+              {
+                "dccs": "dccsVillageMonstersDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
+                ]
+              }
+            ],
             "included_conditions_not_met": []
           },
           {
@@ -4691,6 +6064,10 @@
       [
         "ancientloft",
         1.0
+      ],
+      [
+        "nest",
+        1.0
       ]
     ],
     "destinations_loop": [
@@ -4704,6 +6081,10 @@
       ],
       [
         "ancientloft",
+        1.0
+      ],
+      [
+        "nest",
         1.0
       ]
     ],
@@ -4731,6 +6112,13 @@
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC1"
+                ]
+              },
+              {
+                "dccs": "dccsVillageNightInteractablesDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
                 ]
               }
             ],
@@ -4950,6 +6338,10 @@
       [
         "rootjungle",
         1.0
+      ],
+      [
+        "repurposedcrater",
+        1.0
       ]
     ],
     "destinations_loop": [
@@ -4963,6 +6355,10 @@
       ],
       [
         "rootjungle",
+        1.0
+      ],
+      [
+        "repurposedcrater",
         1.0
       ]
     ],
@@ -4997,6 +6393,13 @@
                 "weight": 1.0,
                 "required_dlc": [
                   "DLC2"
+                ]
+              },
+              {
+                "dccs": "dccsWispGraveyardInteractablesDLC3",
+                "weight": 1.0,
+                "required_dlc": [
+                  "DLC3"
                 ]
               }
             ],

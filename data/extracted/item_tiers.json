@@ -68,5 +68,12 @@
     "is_droppable": true,
     "can_scrap": false,
     "can_restack": true
+  },
+  "FoodTier": {
+    "_name": "FoodTier",
+    "_tier": 10,
+    "is_droppable": true,
+    "can_scrap": false,
+    "can_restack": true
   }
 }

@@ -14,7 +14,7 @@ class Category:
 
 
 class DirectorCardCategorySelection:
-    SCRIPT = -96972536530497900
+    SCRIPT = -9065466171340090710
 
     def __init__(self, data=None):
         if data:
@@ -157,7 +157,7 @@ class DirectorCardCategorySelection:
 
 
 class FamilyDirectorCardCategorySelection(DirectorCardCategorySelection):
-    SCRIPT = -1156515386080052677
+    SCRIPT = 9070779464185817160
 
     @staticmethod
     def parse(asset):
@@ -248,7 +248,7 @@ class DccsCategory:
 
 
 class DccsPool:
-    SCRIPT = 7927479212566906458
+    SCRIPT = 5634676413805604316
     
     def __init__(self, data):
         self.name = data['name']
@@ -304,7 +304,8 @@ class DccsPool:
             if total_weight:
                 modifier = category.weight / total_weight
                 for pool_entry in category.always_included:
-                    weighted_selection.add_choice(pool_entry.dccs, pool_entry.weight * modifier)
+                    values.append(pool_entry.dccs)
+                    weights.append(pool_entry.weight * modifier)
             conditions_met = False
             for pool_entry in category.included_conditions_met:
                 are_conditions_met = all(dlc in expansions for dlc in pool_entry.required_dlc)

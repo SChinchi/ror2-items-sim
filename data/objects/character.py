@@ -17,15 +17,21 @@ _BODY_FLAGS = {
     'ImmuneToVoidDeath': 2048,
     'IgnoreItemUpdates': 4096,
     'Devotion': 8192,
-    'IgnoreKnockback': 16384,
+    'IgnoreKnockup': 16384,
     'ImmuneToLava': 32768,
-    'UsesAmbientLevel': 65536,
-    'IgnoresRecordDeathEvent': 131072,
+    'Unmovable': 65536,
+    'Ungrabbable': 524288,
+    'DroneHasItems': 2097152,
+    'Drone': 4194304,
+    'Buddha': 8388608,
+    'CollectJunk': 16777216,
+    'UsesAmbientLevel': 536870912,
+    'IgnoresRecordDeathEvent': 1073741824,
 }
 
 
 class CharacterBody:
-    SCRIPT = 4977618279312766071
+    SCRIPT = 8253375550443646989
 
     def __init__(self, data):
         for key, value in data.items():
@@ -73,11 +79,11 @@ class CharacterBody:
 
 
 class DeathRewards:
-    SCRIPT = 8463862091779802982
+    SCRIPT = 1920305929605861692
 
 
 class SetStateOnHurt:
-    SCRIPT = -6843609685409672426
+    SCRIPT = -6869047393894115995
 
     @staticmethod
     def parse(asset):
@@ -90,7 +96,7 @@ class SetStateOnHurt:
 
 
 class CharacterMaster:
-    SCRIPT = -7300313650832695883
+    SCRIPT = 8746239667800116344
 
     def __init__(self, data):
         for key, value in data.items():
@@ -118,7 +124,7 @@ class CharacterMaster:
 
 
 class BaseAI:
-    SCRIPT = 8404199760932312366
+    SCRIPT = 3767439802810040867
 
     def __init__(self, data):
         for key, value in data.items():
@@ -138,7 +144,7 @@ class BaseAI:
 
 
 class AISkillDriver:
-    SCRIPT = -945280087658747711
+    SCRIPT = -3194499298619285977
 
     def __init__(self, data):
         for key, value in data.items():
@@ -179,7 +185,7 @@ class AISkillDriver:
 
 
 class GivePickupsOnStart:
-    SCRIPT = 7377157888656513569
+    SCRIPT = -4164755443011141228
 
     def __init__(self, data):
         for key, value in data.items():

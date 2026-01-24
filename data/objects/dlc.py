@@ -1,5 +1,5 @@
 class ExpansionRequirementComponent:
-    SCRIPT = -6164247658379296987
+    SCRIPT = -6227066436339345797
 
     @staticmethod
     def parse(asset, ids):

@@ -19,6 +19,164 @@
       0.0
     ]
   },
+  "CommandArtifactExcludedItems": {
+    "class": "ExplicitPickupDropTable",
+    "can_be_replaced": false,
+    "entries": [
+      [
+        "RegeneratingScrap",
+        0.0
+      ]
+    ]
+  },
+  "DroneScrapperPickupDroneTable": {
+    "class": "ExplicitPickupDropTable",
+    "can_be_replaced": true,
+    "entries": [
+      [
+        null,
+        1.0
+      ],
+      [
+        "Drone2Pickup",
+        1.0
+      ],
+      [
+        "DroneJunkPickup",
+        1.0
+      ],
+      [
+        "DroneHaulerPickup",
+        1.0
+      ],
+      [
+        "DroneMissilePickup",
+        1.0
+      ],
+      [
+        "DroneFlamePickup",
+        1.0
+      ],
+      [
+        "DroneBombardmentPickup",
+        1.0
+      ],
+      [
+        "DroneRechargePickup",
+        1.0
+      ],
+      [
+        "DroneEmergencyPickup",
+        1.0
+      ],
+      [
+        "DroneJailerPickup",
+        1.0
+      ],
+      [
+        "DroneCopycatPickup",
+        1.0
+      ],
+      [
+        "DroneMegaPickup",
+        1.0
+      ],
+      [
+        "DroneEquipmentPickup",
+        1.0
+      ],
+      [
+        "DroneCleanupPickup",
+        1.0
+      ]
+    ]
+  },
+  "DroneVendorPickupDroneTable": {
+    "class": "ExplicitPickupDropTable",
+    "can_be_replaced": true,
+    "entries": [
+      [
+        null,
+        1.0
+      ],
+      [
+        "Drone2Pickup",
+        1.0
+      ],
+      [
+        "DroneJunkPickup",
+        1.0
+      ],
+      [
+        "DroneHaulerPickup",
+        1.0
+      ],
+      [
+        "DroneMissilePickup",
+        1.0
+      ],
+      [
+        "DroneFlamePickup",
+        1.0
+      ],
+      [
+        "DroneBombardmentPickup",
+        1.0
+      ],
+      [
+        "DroneRechargePickup",
+        1.0
+      ],
+      [
+        "DroneEmergencyPickup",
+        1.0
+      ],
+      [
+        "DroneCopycatPickup",
+        1.0
+      ],
+      [
+        "DroneJailerPickup",
+        1.0
+      ]
+    ]
+  },
+  "ExcludedItemsCleanupDroneDropTable": {
+    "class": "ExplicitPickupDropTable",
+    "can_be_replaced": true,
+    "entries": [
+      [
+        "GhostOnKill",
+        0.0
+      ],
+      [
+        "RoboBallBuddy",
+        0.0
+      ],
+      [
+        "BeetleGland",
+        0.0
+      ]
+    ]
+  },
+  "ExcludedItemsDropTable": {
+    "class": "ExplicitPickupDropTable",
+    "can_be_replaced": true,
+    "entries": [
+      [
+        "GhostOnKill",
+        0.0
+      ],
+      [
+        "RoboBallBuddy",
+        0.0
+      ],
+      [
+        "BeetleGland",
+        0.0
+      ]
+    ]
+  },
   "GeodeRewardDropTable": {
     "class": "BasicPickupDropTable",
     "can_be_replaced": true,
@@ -44,7 +202,8 @@
     "can_be_replaced": true,
     "required_tags": [],
     "banned_tags": [
-      4
+      4,
+      8
     ],
     "weights": [
       1.0,
@@ -66,7 +225,8 @@
     "can_be_replaced": true,
     "required_tags": [],
     "banned_tags": [
-      4
+      4,
+      8
     ],
     "weights": [
       0.0,
@@ -88,7 +248,8 @@
     "can_be_replaced": true,
     "required_tags": [],
     "banned_tags": [
-      4
+      4,
+      8
     ],
     "weights": [
       0.0,
@@ -280,6 +441,16 @@
       ]
     ]
   },
+  "dtBossSolusAmalgamator": {
+    "class": "ExplicitPickupDropTable",
+    "can_be_replaced": true,
+    "entries": [
+      [
+        "ExtraEquipment",
+        1.0
+      ]
+    ]
+  },
   "dtBossTitan": {
     "class": "ExplicitPickupDropTable",
     "can_be_replaced": true,
@@ -316,6 +487,16 @@
     "entries": [
       [
         "VoidMegaCrabItem",
+        1.0
+      ]
+    ]
+  },
+  "dtBossVultureHunter": {
+    "class": "ExplicitPickupDropTable",
+    "can_be_replaced": true,
+    "entries": [
+      [
+        "ShockDamageAura",
         1.0
       ]
     ]
@@ -486,6 +667,26 @@
       0.0
     ]
   },
+  "dtDrifterBagChest": {
+    "class": "BasicPickupDropTable",
+    "can_be_replaced": true,
+    "required_tags": [],
+    "banned_tags": [],
+    "weights": [
+      0.8,
+      0.2,
+      0.01,
+      0.0,
+      0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
   "dtDuplicatorTier1": {
     "class": "BasicPickupDropTable",
     "can_be_replaced": true,
@@ -601,6 +802,52 @@
       [
         "FireRing",
         1.0
+      ]
+    ]
+  },
+  "dtFoodTier1": {
+    "class": "ExplicitPickupDropTable",
+    "can_be_replaced": true,
+    "entries": [
+      [
+        "CookedSteak",
+        50.0
+      ],
+      [
+        "BonusHealthBoost",
+        50.0
+      ],
+      [
+        "Stew",
+        5.0
+      ]
+    ]
+  },
+  "dtFoodTier2": {
+    "class": "ExplicitPickupDropTable",
+    "can_be_replaced": true,
+    "entries": [
+      [
+        "Stew",
+        80.0
+      ],
+      [
+        "UltimateMeal",
+        5.0
+      ]
+    ]
+  },
+  "dtFoodTier3": {
+    "class": "ExplicitPickupDropTable",
+    "can_be_replaced": true,
+    "entries": [
+      [
+        "UltimateMeal",
+        50.0
+      ],
+      [
+        "WyrmOnHit",
+        50.0
       ]
     ]
   },
@@ -752,6 +999,28 @@
       ]
     ]
   },
+  "dtJunkDrone": {
+    "class": "BasicPickupDropTable",
+    "can_be_replaced": false,
+    "required_tags": [
+      31
+    ],
+    "banned_tags": [],
+    "weights": [
+      0.7,
+      0.25,
+      0.05,
+      0.0,
+      0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
   "dtLockbox": {
     "class": "BasicPickupDropTable",
     "can_be_replaced": true,
@@ -881,12 +1150,22 @@
       ]
     ]
   },
+  "dtPowerKeyDropTable": {
+    "class": "ExplicitPickupDropTable",
+    "can_be_replaced": true,
+    "entries": [
+      [
+        "PowerCube",
+        1.0
+      ]
+    ]
+  },
   "dtSacrificeArtifact": {
     "class": "BasicPickupDropTable",
     "can_be_replaced": true,
     "required_tags": [],
     "banned_tags": [
-      24
+      32
     ],
     "weights": [
       0.7,
@@ -897,6 +1176,28 @@
       0.0,
       0.0,
       0.1,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "dtSalvage": {
+    "class": "BasicPickupDropTable",
+    "can_be_replaced": false,
+    "required_tags": [
+      31
+    ],
+    "banned_tags": [],
+    "weights": [
+      0.75,
+      0.25,
+      0.05,
+      0.0,
+      0,
+      0.0,
+      0.0,
+      0.0,
       0.0,
       0.0,
       0.0,
@@ -1053,6 +1354,56 @@
       0.0
     ]
   },
+  "dtSolusHeart": {
+    "class": "BasicPickupDropTable",
+    "can_be_replaced": true,
+    "required_tags": [
+      34
+    ],
+    "banned_tags": [
+      9,
+      28,
+      33
+    ],
+    "weights": [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "dtSolusVendorKeyBlacklist": {
+    "class": "ExplicitPickupDropTable",
+    "can_be_replaced": true,
+    "entries": [
+      [
+        "MasterCore",
+        0.0
+      ]
+    ]
+  },
+  "dtSolusVendorMaxTradesWhitelist": {
+    "class": "ExplicitPickupDropTable",
+    "can_be_replaced": true,
+    "entries": [
+      [
+        "MasterCore",
+        0.0
+      ],
+      [
+        "MasterBattery",
+        0.0
+      ]
+    ]
+  },
   "dtSonorousEcho": {
     "class": "BasicPickupDropTable",
     "can_be_replaced": true,
@@ -1062,6 +1413,38 @@
       0.9,
       0.1,
       0.001,
+      0.0,
+      0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "dtTempHoof": {
+    "class": "ExplicitPickupDropTable",
+    "can_be_replaced": false,
+    "entries": [
+      [
+        null,
+        1.0
+      ]
+    ]
+  },
+  "dtTemporaryItemsDistributor": {
+    "class": "BasicPickupDropTable",
+    "can_be_replaced": false,
+    "required_tags": [
+      31
+    ],
+    "banned_tags": [],
+    "weights": [
+      0.8,
+      0.2,
+      0.01,
       0.0,
       0,
       0.0,
@@ -1131,6 +1514,24 @@
       0.0,
       0.0,
       0.0
+    ]
+  },
+  "dtTripleDroneShopBlacklist": {
+    "class": "ExplicitPickupDropTable",
+    "can_be_replaced": true,
+    "entries": [
+      [
+        "MegaDrone",
+        8008132.0
+      ],
+      [
+        "EquipmentDrone",
+        8008132.0
+      ],
+      [
+        "Turret1",
+        8008132.0
+      ]
     ]
   },
   "dtVoidCamp": {
@@ -1221,6 +1622,36 @@
       0.0,
       0.0,
       0.0
+    ]
+  },
+  "pdtUnscrappableItems": {
+    "class": "ExplicitPickupDropTable",
+    "can_be_replaced": false,
+    "entries": [
+      [
+        "MasterCore",
+        0.0
+      ],
+      [
+        "MasterBattery",
+        0.0
+      ],
+      [
+        "ArtifactKey",
+        0.0
+      ],
+      [
+        "PowerCube",
+        0.0
+      ],
+      [
+        "PowerPyramid",
+        0.0
+      ],
+      [
+        "PowerOrbSphere",
+        0.0
+      ]
     ]
   }
 }

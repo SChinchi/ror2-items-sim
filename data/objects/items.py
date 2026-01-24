@@ -2,7 +2,7 @@ from ._utils import round_value
 
 
 class ItemTierDef:
-    SCRIPT = 4020630569963760157
+    SCRIPT = 3443689455368407851
 
     def __init__(self, data):
         for key, value in data.items():
@@ -23,7 +23,7 @@ class ItemTierDef:
 
 
 class ItemDef:
-    SCRIPT = 7272334662194190074
+    SCRIPT = 7820944914094519716
 
     def __init__(self, data):
         for key, value in data.items():
@@ -47,7 +47,7 @@ class ItemDef:
 
 
 class EquipmentDef:
-    SCRIPT = -6609762232512421743
+    SCRIPT = -7989007251262705333
 
     def __init__(self, data):
         for key, value in data.items():

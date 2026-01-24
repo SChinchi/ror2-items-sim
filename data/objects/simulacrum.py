@@ -4,7 +4,7 @@ from ._utils import round_value
 
 
 class Run:
-    SCRIPT = -1835672323730203791
+    SCRIPT = 6374308647660291833
 
     @staticmethod
     def parse(asset, ids):
@@ -12,7 +12,7 @@ class Run:
 
 
 class InfiniteTowerRun(Run):
-    SCRIPT = -5287072886721368087
+    SCRIPT = 3130180838135515719
 
     def __init__(self, data):
         for key, value in data.items():
@@ -36,7 +36,7 @@ class InfiniteTowerRun(Run):
 
 
 class InfiniteTowerWaveCategory:
-    SCRIPT = 7024568621037390213
+    SCRIPT = 353424043799966161
 
     def __init__(self, data):
         for key, value in data.items():
@@ -146,7 +146,7 @@ class WeightedWave:
 
 
 class InfiniteTowerWaveController:
-    SCRIPT = -6484494821379467026
+    SCRIPT = 2601522451847037849
 
     def __init__(self, data):
         for key, value in data.items():
@@ -172,7 +172,7 @@ class InfiniteTowerWaveController:
 
 
 class InfiniteTowerBossWaveController(InfiniteTowerWaveController):
-    SCRIPT = -3908559451701991716
+    SCRIPT = 1021589026701816550
 
     @staticmethod
     def parse(asset, ids):
@@ -185,7 +185,7 @@ class InfiniteTowerBossWaveController(InfiniteTowerWaveController):
 
 
 class InfiniteTowerExplicitWaveController(InfiniteTowerWaveController):
-    SCRIPT = -4436197429497956349
+    SCRIPT = -6243352205078112170
 
     @staticmethod
     def parse(asset, ids):

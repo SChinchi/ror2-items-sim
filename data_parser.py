@@ -46,8 +46,7 @@ def _get_child_raw(ids, game_object, child_index):
 
 def _get_component(ids, prefab_id, component, keep_path_id=False):
     if not prefab_id:
-    #if not prefab_id or prefab_id not in ids:
-        return None
+        return None if not keep_path_id else (None, None)
     for c in ids[prefab_id]['m_Component']:
         _id = c['component']['m_PathID']
         if _id in ids:
@@ -60,8 +59,8 @@ def _get_component(ids, prefab_id, component, keep_path_id=False):
 
 def _get_all_components(ids, prefab_id, component, keep_path_id=False):
     out = []
-    #if prefab_id not in ids:
-    #    return out
+    if not prefab_id:
+        return out
     for c in ids[prefab_id]['m_Component']:
         _id = c['component']['m_PathID']
         if _id in ids:
@@ -87,7 +86,7 @@ def _get_transform(ids, obj_id):
 
 def _extract_names(src_path=LANGUAGE_DIR):
     names = {}
-    for fname in ('CharacterBodies', 'cu8', 'DLC1', 'DLC2', 'Equipment', 'InfiniteTower', 'Interactors', 'Items', 'Maps'):
+    for fname in ('CharacterBodies', 'cu8', 'DLC1', 'DLC2', 'DLC3', 'Equipment', 'InfiniteTower', 'Interactors', 'Items', 'Maps'):
         with open(path.join(src_path, f'{fname}.json'), encoding='utf8') as f:
             for line in f.readlines():
                 m = re.match('.*"([A-Z0-9_]+_NAME)".*:.*"(.*)".*\n', line)
@@ -122,6 +121,13 @@ def _find_object(src_path, fname, object_name):
                 return obj.path_id
 
 
+def _find_file(partial_fname):
+    fname_pattern = partial_fname.replace('.bundle', '_[0-9a-f]*.bundle')
+    for fname in os.listdir(FILES_DIR):
+        if re.match(fname_pattern, fname):
+            return fname
+
+
 def extract_file_data(src_path=FILES_DIR):
     """
     Extract data from the asset files in the game and store in json files.
@@ -139,14 +145,7 @@ def extract_file_data(src_path=FILES_DIR):
     None
     """
     token_names = _extract_names()
-    skill_defs = (
-        SkillDef, CaptainOrbitalSkillDef, CaptainSupplyDropSkillDef, EngiMineDeployerSkillDef,
-        GroundedSkillDef, HuntressTrackingSkillDef, LunarDetonatorSkill,
-        LunarPrimaryReplacementSkill, LunarSecondaryReplacementSkill, MasterSpawnSlotSkillDef,
-        MercDashSkillDef, PassiveItemSkillDef, RailgunSkillDef, ReloadSkillDef, SteppedSkillDef,
-        ToolbotWeaponSkillDef, VoidRaidCrabBodySkillDef, VoidSurvivorSkillDef,
-    )
-    skill_defs = {s.SCRIPT: s for s in skill_defs}
+    skill_defs = {s.SCRIPT: s for s in ALL_SKILL_DEFS}
     dt_classes = (
         ArenaMonsterItemDropTable, BasicPickupDropTable, DoppelgangerDropTable,
         ExplicitPickupDropTable, FreeChestDropTable,
@@ -180,7 +179,7 @@ def extract_file_data(src_path=FILES_DIR):
     scenes = {}
 
     for fname in os.listdir(src_path):
-        if re.match('(ror2-(base|dlc1|cu8|dlc2|junk).*_assets_all)', fname):
+        if re.match('(ror2-(base|dlc1|cu8|dlc2|dlc3|junk).*_assets_all)', fname):
             env = UnityPy.load(path.join(src_path, fname))
             cabs = [cab for file, cab in env.cabs.items() if '.' not in file]
             for cab in cabs:
@@ -240,8 +239,7 @@ def extract_file_data(src_path=FILES_DIR):
     for data in droptables.values():
         if data['class'] == 'ExplicitPickupDropTable':
             for entry in data['entries']:
-                #entry[0] = ids[entry[0]]['m_Name'] if entry[0] in ids else entry[0]
-                entry[0] = ids[entry[0]]['m_Name']
+                entry[0] = ids[entry[0]]['m_Name'] if entry[0] in ids else None
     for data in sc.values():
         data['name'] = ''
     for name, data in isc.items():
@@ -380,7 +378,7 @@ def extract_file_data(src_path=FILES_DIR):
     combat_directors = {}
     d = _get_all_components(
         ids,
-        _find_object(src_path, 'ror2-base-common_static_assets_all.bundle', 'Director'),
+        _find_object(src_path, _find_file('ror2-base-common_static_assets_all.bundle'), 'Director'),
         CombatDirector,
     )
     for d_ in d:
@@ -390,60 +388,59 @@ def extract_file_data(src_path=FILES_DIR):
         combat_directors[type_name] = data
     combat_directors['combat_shrine'] = CombatDirector.parse(_get_component(
         ids,
-        _find_object(src_path, 'ror2-base-shrinecombat_static_assets_all.bundle', 'ShrineCombat'),
+        _find_object(src_path, _find_file('ror2-base-shrinecombat_static_assets_all.bundle'), 'ShrineCombat'),
         CombatDirector,
     ), ids)
     combat_directors['gouge'] = CombatDirector.parse(_get_component(
         ids,
-        _find_object(src_path, 'ror2-base-monstersonshrineuse_static_assets_all.bundle', 'MonstersOnShrineUseEncounter'),
+        _find_object(src_path, _find_file('ror2-base-monstersonshrineuse_static_assets_all.bundle'), 'MonstersOnShrineUseEncounter'),
         CombatDirector,
     ), ids)
     d = _get_all_components(
         ids,
-        _find_object(src_path, 'ror2-base-teleporters_static_assets_all.bundle', 'Teleporter1'),
+        _find_object(src_path, _find_file('ror2-base-teleporters_static_assets_all.bundle'), 'Teleporter1'),
         CombatDirector,
     )
     combat_directors['teleporter_monsters'] = CombatDirector.parse(d[0], ids)
     combat_directors['teleporter_boss'] = CombatDirector.parse(d[1], ids)
     combat_directors['arena'] = CombatDirector.parse(_get_component(
         ids,
-        _find_object(src_path, 'ror2-base-arena_static_assets_all.bundle', 'ArenaMissionController'),
+        _find_object(src_path, _find_file('ror2-base-arena_static_assets_all.bundle'), 'ArenaMissionController'),
         CombatDirector,
     ), ids)
     combat_directors['moon_battery'] = CombatDirector.parse(_get_component(
         ids,
-        _find_object(src_path, 'ror2-base-moon2_static_assets_all.bundle', 'MoonBatteryTemplate'),
+        _find_object(src_path, _find_file('ror2-base-moon2_static_assets_all.bundle'), 'MoonBatteryTemplate'),
         CombatDirector,
     ), ids)
     combat_directors['void_battery'] = CombatDirector.parse(_get_component(
         ids,
-        _find_object(src_path, 'ror2-dlc1-deepvoidportalbattery_static_assets_all.bundle', 'DeepVoidPortalBattery'),
+        _find_object(src_path, _find_file('ror2-dlc1-deepvoidportalbattery_static_assets_all.bundle'), 'DeepVoidPortalBattery'),
         CombatDirector,
     ), ids)
     combat_directors['voidcamp1'] = CombatDirector.parse(_get_component(
         ids,
-        _find_object(src_path, 'ror2-dlc1-voidcamp_static_assets_all.bundle', 'Camp 1 - Void Monsters & Interactables'),
+        _find_object(src_path, _find_file('ror2-dlc1-voidcamp_static_assets_all.bundle'), 'Camp 1 - Void Monsters & Interactables'),
         CombatDirector,
     ), ids)
     combat_directors['voidcamp2'] = CombatDirector.parse(_get_component(
         ids,
-        _find_object(src_path, 'ror2-dlc1-voidcamp_static_assets_all.bundle', 'Camp 2 - Flavor Props & Void Elites'),
+        _find_object(src_path, _find_file('ror2-dlc1-voidcamp_static_assets_all.bundle'), 'Camp 2 - Flavor Props & Void Elites'),
         CombatDirector,
     ), ids)
     combat_directors['simulacrum'] = CombatDirector.parse(_get_component(
         ids,
-        _find_object(src_path, 'ror2-dlc1-gamemodes-infinitetowerrun-infinitetowerassets_static_assets_all.bundle', 'InfiniteTowerWaveDefault'),
+        _find_object(src_path, _find_file('ror2-dlc1-gamemodes-infinitetowerrun-itassets_static_assets_all.bundle'), 'InfiniteTowerWaveDefault'),
         CombatDirector,
     ), ids)
-    result = _find_object(src_path, 'ror2-dlc2_static_assets_all.bundle', 'ShrineHalcyonite')
     combat_directors['halcyon_shrine'] = CombatDirector.parse(_get_component(
         ids,
-        _find_object(src_path, 'ror2-dlc2_static_assets_all.bundle', 'ShrineHalcyonite'),
+        _find_object(src_path, _find_file('ror2-dlc2_static_assets_all.bundle'), 'ShrineHalcyonite'),
         CombatDirector,
     ), ids)
     combat_directors['halcyonite'] = CombatDirector.parse(_get_component(
         ids,
-        _find_object(src_path, 'ror2-dlc2_static_assets_all.bundle', 'Activation and Tier Change Wave'),
+        _find_object(src_path, _find_file('ror2-dlc2_static_assets_all.bundle'), 'Activation and Tier Change Wave'),
         CombatDirector,
     ), ids)
 
@@ -463,11 +460,14 @@ def extract_file_data(src_path=FILES_DIR):
                 scene = ids[entry['sceneDef']['m_PathID']]
                 destinations.append((scene['m_Name'], entry['weightMinusOne'] + 1))
         data['destinations_loop'] = destinations
-        scene_file = data['stage_file'].replace('static_assets', 'scenes')
-        if 'villagenight' in scene_file:
-            scene_file = 'ror2-dlc2-villagenight_scenes_all_adf28954b7824ca6442fd064f4df51b5.bundle'
-        scene_all = UnityPy.load(path.join(src_path, scene_file))
+        scene_file = re.sub(
+            r'static_assets_all_[0-9a-f]*\.',
+            'scenes_all.',
+            data['stage_file'],
+        )
         del data['stage_file']
+        scene_file = _find_file(scene_file)
+        scene_all = UnityPy.load(path.join(src_path, scene_file))
         # 'blackbeach' has a test scene cabinet which we ignore
         cabinet = [cab for name, cab in scene_all.cabs.items() if '.' not in name][0]
         objects = cabinet.objects
@@ -516,8 +516,7 @@ def extract_file_data(src_path=FILES_DIR):
                     data['combat_director'] = combat_data
 
     voidcamps = {}
-    text_file = 'ror2-dlc1-voidcamp_static_assets_all.bundle'
-    scene_text = UnityPy.load(path.join(src_path, text_file))
+    scene_text = UnityPy.load(path.join(src_path, _find_file('ror2-dlc1-voidcamp_static_assets_all.bundle')))
     for obj in scene_text.objects:
         if obj.type.name in ('GameObject', 'MonoBehaviour'):
             asset = obj.read_typetree()
@@ -532,7 +531,7 @@ def extract_file_data(src_path=FILES_DIR):
                 voidcamps['camp1' if 'Camp 1' in asset['m_Name'] else 'camp2'] = data
 
     simulacrum = {}
-    env = UnityPy.load(path.join(FILES_DIR, 'ror2-dlc1-gamemodes-infinitetowerrun_static_assets_all.bundle'))
+    env = UnityPy.load(path.join(src_path, _find_file('ror2-dlc1-gamemodes-infinitetowerrun_static_assets_all.bundle')))
     for obj in env.objects:
         if obj.type.name == 'MonoBehaviour':
             asset = obj.read_typetree()

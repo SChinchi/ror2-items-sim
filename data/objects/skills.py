@@ -2,7 +2,7 @@ from ._utils import round_value
 
 
 class SkillDef:
-    SCRIPT = 7610544427805846859
+    SCRIPT = 2927579589029976309
 
     @staticmethod
     def parse(asset):
@@ -23,7 +23,7 @@ class SkillDef:
 
 
 class CaptainOrbitalSkillDef(SkillDef):
-    SCRIPT = -8444492761160495637
+    SCRIPT = -2673451021167082982
 
     @staticmethod
     def parse(asset):
@@ -33,12 +33,22 @@ class CaptainOrbitalSkillDef(SkillDef):
 
 
 class CaptainSupplyDropSkillDef(CaptainOrbitalSkillDef):
-    SCRIPT = -1520831171531849662
+    SCRIPT = 4401919094338014678
 
     @staticmethod
     def parse(asset):
         data = super(CaptainSupplyDropSkillDef, CaptainSupplyDropSkillDef).parse(asset)
         data.update({'class': 'CaptainSupplyDropSkillDef'})
+        return data
+
+
+class ChefOilSpillSkillDef(SkillDef):
+    SCRIPT = -2600163013373336914
+
+    @staticmethod
+    def parse(asset):
+        data = super(ChefOilSpillSkillDef, ChefOilSpillSkillDef).parse(asset)
+        data.update({'class': 'ChefOilSpillSkillDef'})
         return data
 
 
@@ -62,8 +72,48 @@ class ConditionalSkillDef(SkillDef):
         return data
 
 
+class DrifterSkillDef(SkillDef):
+    SCRIPT = -1725364921308895059
+
+    @staticmethod
+    def parse(asset):
+        data = super(DrifterSkillDef, DrifterSkillDef).parse(asset)
+        data.update({'class': 'DrifterSkillDef'})
+        return data
+
+
+class DrifterTrackingSkillDef(SkillDef):
+    SCRIPT = 6499377863185516973
+
+    @staticmethod
+    def parse(asset):
+        data = super(DrifterTrackingSkillDef, DrifterTrackingSkillDef).parse(asset)
+        data.update({'class': 'DrifterTrackingSkillDef'})
+        return data
+
+
+class DroneTechDroneSkillDef(SkillDef):
+    SCRIPT = -5273846027766992056
+
+    @staticmethod
+    def parse(asset):
+        data = super(DroneTechDroneSkillDef, DroneTechDroneSkillDef).parse(asset)
+        data.update({'class': 'DroneTechDroneSkillDef'})
+        return data
+
+
+class DroneTechTrackingSkillDef(SkillDef):
+    SCRIPT = None
+
+    @staticmethod
+    def parse(asset):
+        data = super(DroneTechTrackingSkillDef, DroneTechTrackingSkillDef).parse(asset)
+        data.update({'class': 'DroneTechTrackingSkillDef'})
+        return data
+
+
 class EngiMineDeployerSkillDef(SkillDef):
-    SCRIPT = -8649664645951429598
+    SCRIPT = -6723418498616801824
 
     @staticmethod
     def parse(asset):
@@ -72,8 +122,18 @@ class EngiMineDeployerSkillDef(SkillDef):
         return data
 
 
+class EnsureDroneMasterSkillDef(SkillDef):
+    SCRIPT = -2680229100660702278
+
+    @staticmethod
+    def parse(asset):
+        data = super(EnsureDroneMasterSkillDef, EnsureDroneMasterSkillDef).parse(asset)
+        data.update({'class': 'EnsureDroneMasterSkillDef'})
+        return data
+
+
 class GroundedSkillDef(SkillDef):
-    SCRIPT = -7873569907532699362
+    SCRIPT = -8460994096625872245
 
     @staticmethod
     def parse(asset):
@@ -83,7 +143,7 @@ class GroundedSkillDef(SkillDef):
 
 
 class HuntressTrackingSkillDef(SkillDef):
-    SCRIPT = 3554056196578853390
+    SCRIPT = 8672060334066177547
 
     @staticmethod
     def parse(asset):
@@ -93,7 +153,7 @@ class HuntressTrackingSkillDef(SkillDef):
 
 
 class LunarDetonatorSkill(SkillDef):
-    SCRIPT = -8772907472353264501
+    SCRIPT = 3569604752828954706
 
     @staticmethod
     def parse(asset):
@@ -103,7 +163,7 @@ class LunarDetonatorSkill(SkillDef):
 
 
 class LunarPrimaryReplacementSkill(SkillDef):
-    SCRIPT = 7336042660754702565
+    SCRIPT = -4480967723486249262
 
     @staticmethod
     def parse(asset):
@@ -113,7 +173,7 @@ class LunarPrimaryReplacementSkill(SkillDef):
 
 
 class LunarSecondaryReplacementSkill(SkillDef):
-    SCRIPT = -3218674271630078367
+    SCRIPT = 6740114260963895876
 
     @staticmethod
     def parse(asset):
@@ -123,7 +183,7 @@ class LunarSecondaryReplacementSkill(SkillDef):
 
 
 class MasterSpawnSlotSkillDef(SkillDef):
-    SCRIPT = 825776219089779548
+    SCRIPT = -3004543828381520369
 
     @staticmethod
     def parse(asset):
@@ -133,7 +193,7 @@ class MasterSpawnSlotSkillDef(SkillDef):
 
 
 class MercDashSkillDef(SkillDef):
-    SCRIPT = 8003891935907968607
+    SCRIPT = 1650509664295044365
 
     @staticmethod
     def parse(asset):
@@ -146,8 +206,18 @@ class MercDashSkillDef(SkillDef):
         return data
 
 
+class NoRechargeSkillDef(SkillDef):
+    SCRIPT = None
+
+    @staticmethod
+    def parse(asset):
+        data = super(NoRechargeSkillDef, NoRechargeSkillDef).parse(asset)
+        data.update({'class': 'NoRechargeSkillDef'})
+        return data
+
+
 class PassiveItemSkillDef(SkillDef):
-    SCRIPT = -2197157784230743673
+    SCRIPT = 1540930104905984482
 
     @staticmethod
     def parse(asset):
@@ -161,7 +231,7 @@ class PassiveItemSkillDef(SkillDef):
 
 
 class RailgunSkillDef(SkillDef):
-    SCRIPT = -8442111192690701832
+    SCRIPT = 7296964618599511131
 
     @staticmethod
     def parse(asset):
@@ -171,7 +241,7 @@ class RailgunSkillDef(SkillDef):
 
     
 class ReloadSkillDef(SkillDef):
-    SCRIPT = 6857858682788383752
+    SCRIPT = -9080018864626768989
 
     @staticmethod
     def parse(asset):
@@ -183,8 +253,58 @@ class ReloadSkillDef(SkillDef):
         return data
 
 
+class ReusableSkillDef(SkillDef):
+    SCRIPT = None
+
+    @staticmethod
+    def parse(asset):
+        data = super(ReusableSkillDef, ReusableSkillDef).parse(asset)
+        data.update({'class': 'ReusableSkillDef'})
+        return data
+
+
+class SeekerWeaponSkillDef(SkillDef):
+    SCRIPT = 7949365122622623176
+
+    @staticmethod
+    def parse(asset):
+        data = super(SeekerWeaponSkillDef, SeekerWeaponSkillDef).parse(asset)
+        data.update({'class': 'SeekerWeaponSkillDef'})
+        return data
+
+
+class SolusHeartComboSkillDef(SkillDef):
+    SCRIPT = 8666446819309190569
+
+    @staticmethod
+    def parse(asset):
+        data = super(SolusHeartComboSkillDef, SolusHeartComboSkillDef).parse(asset)
+        data.update({'class': 'SolusHeartComboSkillDef'})
+        return data
+
+
+class SolusHeartTeleportSkillDef(SkillDef):
+    SCRIPT = 8229852426038494749
+
+    @staticmethod
+    def parse(asset):
+        data = super(SolusHeartTeleportSkillDef, SolusHeartTeleportSkillDef).parse(asset)
+        data.update({'class': 'SolusHeartTeleportSkillDef'})
+        return data
+
+
+class SolusWingLaserGridSkillDef(SkillDef):
+    SCRIPT = 6166010912192768675
+
+    @staticmethod
+    def parse(asset):
+        data = super(SolusWingLaserGridSkillDef, SolusWingLaserGridSkillDef).parse(asset)
+        data.update({'class': 'SolusWingLaserGridSkillDef'})
+        return data
+
+
 class SteppedSkillDef(SkillDef):
-    SCRIPT = -5073821918752729770
+    SCRIPT = 2654350612606756206
 
     @staticmethod
     def parse(asset):
@@ -198,7 +318,7 @@ class SteppedSkillDef(SkillDef):
 
 
 class ToolbotWeaponSkillDef(SkillDef):
-    SCRIPT = -3469430727944110720
+    SCRIPT = -6630013004447834050
 
     @staticmethod
     def parse(asset):
@@ -207,8 +327,18 @@ class ToolbotWeaponSkillDef(SkillDef):
         return data
 
 
+class TrackingSkillDef(SkillDef):
+    SCRIPT = -2067494168930530403
+
+    @staticmethod
+    def parse(asset):
+        data = super(TrackingSkillDef, TrackingSkillDef).parse(asset)
+        data.update({'class': 'TrackingSkillDef'})
+        return data
+
+
 class VoidRaidCrabBodySkillDef(SkillDef):
-    SCRIPT = -909698154011760121
+    SCRIPT = -1032510644754718512
 
     @staticmethod
     def parse(asset):
@@ -238,7 +368,7 @@ class VoidSurvivorBlasterSkillDef(SteppedSkillDef):
 
 
 class VoidSurvivorSkillDef(SkillDef):
-    SCRIPT = -3301321226602919904
+    SCRIPT = -8428730001527203593
 
     @staticmethod
     def parse(asset):
@@ -249,3 +379,41 @@ class VoidSurvivorSkillDef(SkillDef):
             'max_corruption': asset['maximumCorruption'],
         })
         return data
+
+
+ALL_SKILL_DEFS = (
+    SkillDef,
+    CaptainOrbitalSkillDef,
+    CaptainSupplyDropSkillDef,
+    ChefOilSpillSkillDef,
+    ComboSkillDef,
+    ConditionalSkillDef,
+    DrifterSkillDef,
+    DrifterTrackingSkillDef,
+    DroneTechDroneSkillDef,
+    DroneTechTrackingSkillDef,
+    EngiMineDeployerSkillDef,
+    EnsureDroneMasterSkillDef,
+    GroundedSkillDef,
+    HuntressTrackingSkillDef,
+    LunarDetonatorSkill,
+    LunarPrimaryReplacementSkill,
+    LunarSecondaryReplacementSkill,
+    MasterSpawnSlotSkillDef,
+    MercDashSkillDef,
+    NoRechargeSkillDef,
+    PassiveItemSkillDef,
+    RailgunSkillDef,
+    ReloadSkillDef,
+    ReusableSkillDef,
+    SeekerWeaponSkillDef,
+    SolusHeartComboSkillDef,
+    SolusHeartTeleportSkillDef,
+    SolusWingLaserGridSkillDef,
+    SteppedSkillDef,
+    ToolbotWeaponSkillDef,
+    TrackingSkillDef,
+    VoidRaidCrabWeaponSkillDef,
+    VoidRaidCrabBodySkillDef,
+    VoidSurvivorSkillDef,
+)

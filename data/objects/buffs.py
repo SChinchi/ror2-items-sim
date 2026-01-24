@@ -1,5 +1,5 @@
 class BuffDef:
-    SCRIPT = 4179898196218652458
+    SCRIPT = 5609212355378452163
 
     def __init__(self, data):
         for key, value in data.items():

@@ -9,7 +9,7 @@ _FREE_CHEST_HIDDEN_CHANCE = 1.
 
 
 class ShopTerminalBehavior:
-    SCRIPT = -4129600921950285708
+    SCRIPT = 5408283236048349533
 
     @staticmethod
     def generate_purchase_action(isc, tier_droplists, inventory):
@@ -19,7 +19,7 @@ class ShopTerminalBehavior:
 
 
 class MultiShopController:
-    SCRIPT = 1424852041901811614
+    SCRIPT = -7922445689230849788
 
     @staticmethod
     def _drop_tripleshop_loot(drop, max_drops, inventory):
@@ -61,23 +61,23 @@ class MultiShopController:
 
 
 class ScrapperController:
-    SCRIPT = 1301021428291817354
+    SCRIPT = 7544738841730975347
 
 
 class PurchaseInteraction:
-    SCRIPT = 3424499719950130566
+    SCRIPT = -1109085999899981170
 
 
 class BarrelInteraction:
-    SCRIPT = -3449937006512166558
+    SCRIPT = -6402843602939064730
 
 
 class GenericDisplayNameProvider:
-    SCRIPT = -8577128845896015032
+    SCRIPT = 3766062818251561924
 
 
 class ChestBehavior:
-    SCRIPT = -7227317202796181736
+    SCRIPT = 3064004133398835955
 
     @staticmethod
     def generate_purchase_action(isc, tier_droplists, inventory):
@@ -97,11 +97,11 @@ class ChestBehavior:
 
 
 class RouletteChestController:
-    SCRIPT = -1192547833112862499
+    SCRIPT = 3253615885668395195
 
 
 class ShrineChanceBehavior:
-    SCRIPT = -117010359117308110
+    SCRIPT = -5094190573479519615
 
     @staticmethod
     def generate_purchase_action(isc, tier_droplists, inventory):
@@ -111,7 +111,7 @@ class ShrineChanceBehavior:
 
 
 class OptionChestBehavior:
-    SCRIPT = 6904566514339317880
+    SCRIPT = 1140539183348208526
 
     @staticmethod
     def _drop_unique_loot(items, weights, max_drops):
@@ -136,12 +136,9 @@ class OptionChestBehavior:
 
 
 class DelusionChestController:
-    SCRIPT = 2014820111434837422
+    SCRIPT = -3197331057398115314
 
 
 class PortalStatueBehavior:
-    SCRIPT = 8917583605525748003
+    SCRIPT = -6683459890407175108
 
-
-class PurchaseInteraction:
-    SCRIPT = 3424499719950130566

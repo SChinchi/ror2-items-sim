@@ -27,7 +27,9 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      3
+      3,
+      28,
+      31
     ]
   },
   {
@@ -38,7 +40,9 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      3
+      3,
+      31,
+      34
     ]
   },
   {
@@ -49,7 +53,8 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      1
+      1,
+      31
     ]
   },
   {
@@ -60,7 +65,9 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      9
+      9,
+      31,
+      33
     ]
   },
   {
@@ -72,7 +79,10 @@
     "required_dlc": "DLC1",
     "tags": [
       1,
-      3
+      3,
+      28,
+      29,
+      31
     ]
   },
   {
@@ -83,7 +93,8 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      1
+      1,
+      31
     ]
   },
   {
@@ -95,7 +106,8 @@
     "required_dlc": "DLC2",
     "tags": [
       1,
-      21
+      21,
+      31
     ]
   },
   {
@@ -119,7 +131,9 @@
     "required_dlc": null,
     "tags": [
       3,
-      6
+      6,
+      31,
+      34
     ]
   },
   {
@@ -132,7 +146,22 @@
     "tags": [
       1,
       4,
-      21
+      21,
+      31,
+      34
+    ]
+  },
+  {
+    "_name": "BarrierOnCooldown",
+    "name": "Eclipse Lite",
+    "tier": "Tier1",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC3",
+    "tags": [
+      2,
+      28,
+      31
     ]
   },
   {
@@ -145,7 +174,8 @@
     "tags": [
       2,
       3,
-      6
+      6,
+      31
     ]
   },
   {
@@ -157,7 +187,8 @@
     "required_dlc": null,
     "tags": [
       2,
-      3
+      3,
+      31
     ]
   },
   {
@@ -169,7 +200,8 @@
     "required_dlc": null,
     "tags": [
       3,
-      11
+      11,
+      31
     ]
   },
   {
@@ -181,7 +213,9 @@
     "required_dlc": "DLC1",
     "tags": [
       3,
-      11
+      11,
+      22,
+      31
     ]
   },
   {
@@ -193,7 +227,10 @@
     "required_dlc": null,
     "tags": [
       3,
-      13
+      13,
+      24,
+      28,
+      31
     ]
   },
   {
@@ -204,7 +241,9 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      1
+      1,
+      31,
+      34
     ]
   },
   {
@@ -215,7 +254,8 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      1
+      1,
+      31
     ]
   },
   {
@@ -226,7 +266,9 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      1
+      1,
+      28,
+      31
     ]
   },
   {
@@ -237,7 +279,9 @@
     "can_remove": true,
     "required_dlc": "DLC1",
     "tags": [
-      1
+      1,
+      28,
+      31
     ]
   },
   {
@@ -249,7 +293,22 @@
     "required_dlc": null,
     "tags": [
       3,
-      6
+      6,
+      31
+    ]
+  },
+  {
+    "_name": "BonusHealthBoost",
+    "name": "Quick Fix",
+    "tier": "FoodTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC3",
+    "tags": [
+      2,
+      9,
+      24,
+      31
     ]
   },
   {
@@ -261,7 +320,10 @@
     "required_dlc": "DLC2",
     "tags": [
       3,
-      21
+      21,
+      28,
+      29,
+      31
     ]
   },
   {
@@ -294,7 +356,8 @@
     "can_remove": false,
     "required_dlc": null,
     "tags": [
-      7
+      7,
+      35
     ]
   },
   {
@@ -317,7 +380,9 @@
     "required_dlc": null,
     "tags": [
       1,
-      4
+      4,
+      31,
+      34
     ]
   },
   {
@@ -328,7 +393,9 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      1
+      1,
+      31,
+      34
     ]
   },
   {
@@ -352,7 +419,9 @@
     "tags": [
       3,
       9,
-      22
+      22,
+      31,
+      34
     ]
   },
   {
@@ -363,7 +432,8 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      1
+      1,
+      31
     ]
   },
   {
@@ -374,7 +444,8 @@
     "can_remove": true,
     "required_dlc": "DLC1",
     "tags": [
-      1
+      1,
+      31
     ]
   },
   {
@@ -385,7 +456,9 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      3
+      3,
+      28,
+      31
     ]
   },
   {
@@ -397,7 +470,9 @@
     "required_dlc": "DLC1",
     "tags": [
       3,
-      20
+      20,
+      28,
+      31
     ]
   },
   {
@@ -409,6 +484,20 @@
     "required_dlc": "DLC1",
     "tags": [
       1
+    ]
+  },
+  {
+    "_name": "CookedSteak",
+    "name": "Seared Steak",
+    "tier": "FoodTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC3",
+    "tags": [
+      2,
+      9,
+      24,
+      31
     ]
   },
   {
@@ -435,6 +524,18 @@
     ]
   },
   {
+    "_name": "CritAtLowerElevation",
+    "name": "Hiker's Boots",
+    "tier": "Tier1",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC3",
+    "tags": [
+      1,
+      31
+    ]
+  },
+  {
     "_name": "CritDamage",
     "name": "Laser Scope",
     "tier": "Tier3",
@@ -442,7 +543,9 @@
     "can_remove": true,
     "required_dlc": "DLC1",
     "tags": [
-      1
+      1,
+      31,
+      34
     ]
   },
   {
@@ -453,7 +556,8 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      1
+      1,
+      31
     ]
   },
   {
@@ -464,7 +568,8 @@
     "can_remove": true,
     "required_dlc": "DLC1",
     "tags": [
-      1
+      1,
+      31
     ]
   },
   {
@@ -486,7 +591,8 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      1
+      1,
+      31
     ]
   },
   {
@@ -508,7 +614,8 @@
     "tags": [
       1,
       4,
-      6
+      6,
+      31
     ]
   },
   {
@@ -519,7 +626,8 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      1
+      1,
+      31
     ]
   },
   {
@@ -531,7 +639,21 @@
     "required_dlc": "DLC2",
     "tags": [
       3,
-      21
+      21,
+      31,
+      34
+    ]
+  },
+  {
+    "_name": "DestructibleSpawner",
+    "name": "ITEM_DESTRUCTIBLESPAWNER_NAME",
+    "tier": "NoTier",
+    "hidden": true,
+    "can_remove": true,
+    "required_dlc": "DLC3",
+    "tags": [
+      1,
+      34
     ]
   },
   {
@@ -544,6 +666,29 @@
     "tags": []
   },
   {
+    "_name": "DroneDynamiteDisplay",
+    "name": "ITEM_DRONEDYNAMITEDISPLAY_NAME",
+    "tier": "NoTier",
+    "hidden": true,
+    "can_remove": false,
+    "required_dlc": "DLC3",
+    "tags": []
+  },
+  {
+    "_name": "DroneUpgradeHidden",
+    "name": "",
+    "tier": "NoTier",
+    "hidden": true,
+    "can_remove": false,
+    "required_dlc": "DLC3",
+    "tags": [
+      12,
+      13,
+      24,
+      35
+    ]
+  },
+  {
     "_name": "DroneWeapons",
     "name": "Spare Drone Parts",
     "tier": "Tier3",
@@ -554,7 +699,10 @@
       1,
       4,
       11,
-      13
+      13,
+      24,
+      31,
+      34
     ]
   },
   {
@@ -585,6 +733,38 @@
     "tags": []
   },
   {
+    "_name": "DronesDropDynamite",
+    "name": "Box of Dynamite",
+    "tier": "Tier2",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC3",
+    "tags": [
+      1,
+      4,
+      11,
+      13,
+      24,
+      31,
+      34
+    ]
+  },
+  {
+    "_name": "Duplicator",
+    "name": "Substandard Duplicator",
+    "tier": "Tier3",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC3",
+    "tags": [
+      3,
+      4,
+      23,
+      31,
+      34
+    ]
+  },
+  {
     "_name": "ElementalRingVoid",
     "name": "Singularity Band",
     "tier": "VoidTier2",
@@ -593,7 +773,8 @@
     "required_dlc": "DLC1",
     "tags": [
       1,
-      3
+      3,
+      31
     ]
   },
   {
@@ -605,7 +786,8 @@
     "required_dlc": "DLC1",
     "tags": [
       3,
-      11
+      11,
+      22
     ]
   },
   {
@@ -666,7 +848,8 @@
     "tags": [
       1,
       4,
-      7
+      7,
+      31
     ]
   },
   {
@@ -679,7 +862,9 @@
     "tags": [
       3,
       4,
-      7
+      7,
+      31,
+      34
     ]
   },
   {
@@ -690,7 +875,8 @@
     "can_remove": true,
     "required_dlc": "DLC1",
     "tags": [
-      3
+      3,
+      31
     ]
   },
   {
@@ -702,7 +888,8 @@
     "required_dlc": null,
     "tags": [
       1,
-      4
+      4,
+      31
     ]
   },
   {
@@ -714,7 +901,8 @@
     "required_dlc": null,
     "tags": [
       1,
-      6
+      6,
+      31
     ]
   },
   {
@@ -725,7 +913,22 @@
     "can_remove": true,
     "required_dlc": "DLC1",
     "tags": [
-      1
+      1,
+      31
+    ]
+  },
+  {
+    "_name": "ExtraEquipment",
+    "name": "Functional Coupler",
+    "tier": "BossTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC3",
+    "tags": [
+      4,
+      7,
+      31,
+      34
     ]
   },
   {
@@ -736,7 +939,9 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      3
+      3,
+      24,
+      31
     ]
   },
   {
@@ -747,7 +952,8 @@
     "can_remove": false,
     "required_dlc": null,
     "tags": [
-      3
+      3,
+      30
     ]
   },
   {
@@ -758,7 +964,10 @@
     "can_remove": true,
     "required_dlc": "DLC1",
     "tags": [
-      3
+      3,
+      24,
+      28,
+      31
     ]
   },
   {
@@ -769,7 +978,8 @@
     "can_remove": false,
     "required_dlc": "DLC1",
     "tags": [
-      3
+      3,
+      30
     ]
   },
   {
@@ -784,7 +994,8 @@
       4,
       15,
       21,
-      24
+      31,
+      32
     ]
   },
   {
@@ -811,7 +1022,10 @@
     "tags": [
       1,
       3,
-      4
+      4,
+      29,
+      31,
+      34
     ]
   },
   {
@@ -823,7 +1037,9 @@
     "required_dlc": null,
     "tags": [
       3,
-      4
+      4,
+      29,
+      31
     ]
   },
   {
@@ -834,7 +1050,8 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      1
+      1,
+      31
     ]
   },
   {
@@ -845,7 +1062,9 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      1
+      1,
+      28,
+      31
     ]
   },
   {
@@ -858,7 +1077,8 @@
     "tags": [
       1,
       4,
-      18
+      18,
+      31
     ]
   },
   {
@@ -870,7 +1090,9 @@
     "required_dlc": null,
     "tags": [
       2,
-      6
+      6,
+      28,
+      31
     ]
   },
   {
@@ -896,7 +1118,9 @@
     "required_dlc": "DLC1",
     "tags": [
       1,
-      16
+      16,
+      24,
+      31
     ]
   },
   {
@@ -906,7 +1130,9 @@
     "hidden": false,
     "can_remove": false,
     "required_dlc": "DLC1",
-    "tags": []
+    "tags": [
+      30
+    ]
   },
   {
     "_name": "FreeChest",
@@ -918,7 +1144,8 @@
     "tags": [
       3,
       4,
-      20
+      20,
+      31
     ]
   },
   {
@@ -940,7 +1167,8 @@
     "tags": [
       1,
       3,
-      6
+      6,
+      31
     ]
   },
   {
@@ -963,7 +1191,8 @@
     "required_dlc": "DLC1",
     "tags": [
       3,
-      4
+      4,
+      31
     ]
   },
   {
@@ -1008,7 +1237,9 @@
       1,
       3,
       4,
-      6
+      6,
+      28,
+      31
     ]
   },
   {
@@ -1019,7 +1250,8 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      2
+      2,
+      31
     ]
   },
   {
@@ -1030,7 +1262,9 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      2
+      2,
+      28,
+      31
     ]
   },
   {
@@ -1043,7 +1277,10 @@
     "tags": [
       2,
       4,
-      16
+      16,
+      24,
+      28,
+      31
     ]
   },
   {
@@ -1054,7 +1291,8 @@
     "can_remove": false,
     "required_dlc": "DLC1",
     "tags": [
-      2
+      2,
+      30
     ]
   },
   {
@@ -1074,7 +1312,9 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      3
+      3,
+      29,
+      31
     ]
   },
   {
@@ -1085,7 +1325,8 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      1
+      1,
+      31
     ]
   },
   {
@@ -1097,7 +1338,9 @@
     "required_dlc": null,
     "tags": [
       1,
-      6
+      6,
+      28,
+      31
     ]
   },
   {
@@ -1109,7 +1352,8 @@
     "required_dlc": null,
     "tags": [
       1,
-      6
+      6,
+      31
     ]
   },
   {
@@ -1121,7 +1365,8 @@
     "required_dlc": "DLC1",
     "tags": [
       2,
-      3
+      3,
+      31
     ]
   },
   {
@@ -1134,7 +1379,8 @@
     "tags": [
       1,
       6,
-      21
+      21,
+      31
     ]
   },
   {
@@ -1145,7 +1391,9 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      2
+      2,
+      28,
+      31
     ]
   },
   {
@@ -1160,7 +1408,9 @@
       3,
       4,
       21,
-      23
+      23,
+      31,
+      34
     ]
   },
   {
@@ -1185,7 +1435,8 @@
     "tags": [
       2,
       3,
-      6
+      6,
+      31
     ]
   },
   {
@@ -1208,7 +1459,8 @@
       3,
       4,
       15,
-      21
+      21,
+      31
     ]
   },
   {
@@ -1220,7 +1472,41 @@
     "required_dlc": null,
     "tags": [
       3,
-      8
+      8,
+      29,
+      31
+    ]
+  },
+  {
+    "_name": "JumpDamageStrike",
+    "name": "Faraday Spur",
+    "tier": "Tier2",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC3",
+    "tags": [
+      1,
+      4,
+      8,
+      23,
+      29,
+      31,
+      34
+    ]
+  },
+  {
+    "_name": "Junk",
+    "name": "Junk",
+    "tier": "NoTier",
+    "hidden": true,
+    "can_remove": false,
+    "required_dlc": null,
+    "tags": [
+      11,
+      12,
+      13,
+      15,
+      22
     ]
   },
   {
@@ -1233,7 +1519,9 @@
     "tags": [
       3,
       4,
-      6
+      6,
+      28,
+      31
     ]
   },
   {
@@ -1248,7 +1536,8 @@
       3,
       4,
       21,
-      23
+      23,
+      31
     ]
   },
   {
@@ -1260,7 +1549,8 @@
     "required_dlc": null,
     "tags": [
       2,
-      3
+      3,
+      31
     ]
   },
   {
@@ -1272,7 +1562,9 @@
     "required_dlc": null,
     "tags": [
       1,
-      6
+      6,
+      31,
+      34
     ]
   },
   {
@@ -1282,7 +1574,9 @@
     "hidden": true,
     "can_remove": true,
     "required_dlc": null,
-    "tags": []
+    "tags": [
+      24
+    ]
   },
   {
     "_name": "LevelBonus",
@@ -1303,7 +1597,9 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      1
+      1,
+      28,
+      31
     ]
   },
   {
@@ -1340,7 +1636,8 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      3
+      3,
+      28
     ]
   },
   {
@@ -1364,7 +1661,9 @@
     "tags": [
       1,
       4,
-      12
+      12,
+      24,
+      28
     ]
   },
   {
@@ -1377,7 +1676,9 @@
     "tags": [
       1,
       4,
-      12
+      12,
+      24,
+      28
     ]
   },
   {
@@ -1390,7 +1691,9 @@
     "tags": [
       1,
       4,
-      12
+      12,
+      24,
+      28
     ]
   },
   {
@@ -1425,7 +1728,9 @@
     "tags": [
       3,
       4,
-      12
+      12,
+      24,
+      28
     ]
   },
   {
@@ -1449,6 +1754,44 @@
     "tags": []
   },
   {
+    "_name": "MasterBattery",
+    "name": "Encrypted Cerebellum",
+    "tier": "BossTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC3",
+    "tags": [
+      4,
+      9,
+      11,
+      12,
+      13,
+      15,
+      24,
+      30,
+      33
+    ]
+  },
+  {
+    "_name": "MasterCore",
+    "name": "Exposed Cerebellum",
+    "tier": "BossTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC3",
+    "tags": [
+      4,
+      9,
+      11,
+      12,
+      13,
+      15,
+      22,
+      24,
+      33
+    ]
+  },
+  {
     "_name": "Medkit",
     "name": "Medkit",
     "tier": "Tier1",
@@ -1456,7 +1799,8 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      2
+      2,
+      31
     ]
   },
   {
@@ -1468,7 +1812,8 @@
     "required_dlc": "DLC2",
     "tags": [
       1,
-      21
+      21,
+      31
     ]
   },
   {
@@ -1487,7 +1832,9 @@
     "hidden": true,
     "can_remove": false,
     "required_dlc": null,
-    "tags": []
+    "tags": [
+      35
+    ]
   },
   {
     "_name": "MinorConstructOnKill",
@@ -1497,7 +1844,8 @@
     "can_remove": true,
     "required_dlc": "DLC1",
     "tags": [
-      6
+      6,
+      31
     ]
   },
   {
@@ -1508,7 +1856,9 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      1
+      1,
+      31,
+      34
     ]
   },
   {
@@ -1519,8 +1869,19 @@
     "can_remove": true,
     "required_dlc": "DLC1",
     "tags": [
-      1
+      1,
+      28,
+      31
     ]
+  },
+  {
+    "_name": "MoneyLoan",
+    "name": "Ominous Loan Note",
+    "tier": "NoTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC3",
+    "tags": []
   },
   {
     "_name": "MonsoonPlayerHelper",
@@ -1551,7 +1912,9 @@
     "can_remove": true,
     "required_dlc": "DLC1",
     "tags": [
-      1
+      1,
+      31,
+      34
     ]
   },
   {
@@ -1562,7 +1925,9 @@
     "can_remove": true,
     "required_dlc": "DLC1",
     "tags": [
-      3
+      3,
+      29,
+      31
     ]
   },
   {
@@ -1574,7 +1939,9 @@
     "required_dlc": null,
     "tags": [
       2,
-      4
+      4,
+      28,
+      31
     ]
   },
   {
@@ -1585,7 +1952,10 @@
     "can_remove": true,
     "required_dlc": "DLC1",
     "tags": [
-      2
+      2,
+      28,
+      29,
+      31
     ]
   },
   {
@@ -1596,7 +1966,8 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      1
+      1,
+      31
     ]
   },
   {
@@ -1607,7 +1978,8 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      1
+      1,
+      31
     ]
   },
   {
@@ -1619,7 +1991,9 @@
     "required_dlc": null,
     "tags": [
       1,
-      16
+      16,
+      28,
+      31
     ]
   },
   {
@@ -1643,7 +2017,8 @@
     "can_remove": true,
     "required_dlc": "DLC1",
     "tags": [
-      3
+      3,
+      31
     ]
   },
   {
@@ -1654,7 +2029,9 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      1
+      1,
+      28,
+      31
     ]
   },
   {
@@ -1666,7 +2043,8 @@
     "required_dlc": null,
     "tags": [
       3,
-      9
+      9,
+      31
     ]
   },
   {
@@ -1677,7 +2055,9 @@
     "can_remove": true,
     "required_dlc": "DLC1",
     "tags": [
-      1
+      1,
+      28,
+      31
     ]
   },
   {
@@ -1688,7 +2068,9 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      3
+      3,
+      31,
+      34
     ]
   },
   {
@@ -1700,7 +2082,28 @@
     "required_dlc": null,
     "tags": [
       3,
-      16
+      16,
+      29,
+      31,
+      34
+    ]
+  },
+  {
+    "_name": "PhysicsProjectile",
+    "name": "Orphaned Core",
+    "tier": "Tier3",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC3",
+    "tags": [
+      1,
+      4,
+      11,
+      12,
+      13,
+      24,
+      31,
+      34
     ]
   },
   {
@@ -1712,7 +2115,9 @@
     "required_dlc": null,
     "tags": [
       2,
-      6
+      6,
+      28,
+      31
     ]
   },
   {
@@ -1738,6 +2143,55 @@
     ]
   },
   {
+    "_name": "PowerCube",
+    "name": "Prison Matrix",
+    "tier": "BossTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC3",
+    "tags": [
+      4,
+      9,
+      13,
+      24,
+      25,
+      27,
+      30,
+      33
+    ]
+  },
+  {
+    "_name": "PowerOrbSphere",
+    "name": "Ocular Battery",
+    "tier": "NoTier",
+    "hidden": false,
+    "can_remove": false,
+    "required_dlc": "DLC3",
+    "tags": [
+      9,
+      24,
+      25,
+      33
+    ]
+  },
+  {
+    "_name": "PowerPyramid",
+    "name": "Sentry Key",
+    "tier": "BossTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC3",
+    "tags": [
+      9,
+      13,
+      24,
+      25,
+      30,
+      31,
+      33
+    ]
+  },
+  {
     "_name": "PrimarySkillShuriken",
     "name": "Shuriken",
     "tier": "Tier2",
@@ -1745,7 +2199,8 @@
     "can_remove": true,
     "required_dlc": "DLC1",
     "tags": [
-      1
+      1,
+      31
     ]
   },
   {
@@ -1768,8 +2223,9 @@
     "required_dlc": "DLC1",
     "tags": [
       3,
-      4,
-      7
+      7,
+      28,
+      31
     ]
   },
   {
@@ -1781,7 +2237,8 @@
     "required_dlc": "DLC1",
     "tags": [
       3,
-      11
+      11,
+      22
     ]
   },
   {
@@ -1796,7 +2253,8 @@
       4,
       14,
       15,
-      20
+      20,
+      27
     ]
   },
   {
@@ -1819,7 +2277,8 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      2
+      2,
+      28
     ]
   },
   {
@@ -1831,7 +2290,10 @@
     "required_dlc": null,
     "tags": [
       3,
-      13
+      13,
+      24,
+      31,
+      34
     ]
   },
   {
@@ -1926,7 +2388,9 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      3
+      3,
+      31,
+      34
     ]
   },
   {
@@ -1937,7 +2401,35 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      2
+      2,
+      28,
+      31
+    ]
+  },
+  {
+    "_name": "SharedSuffering",
+    "name": "Networked Suffering",
+    "tier": "Tier3",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC3",
+    "tags": [
+      1,
+      31,
+      34
+    ]
+  },
+  {
+    "_name": "ShieldBooster",
+    "name": "Kinetic Dampener",
+    "tier": "Tier2",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC3",
+    "tags": [
+      2,
+      3,
+      31
     ]
   },
   {
@@ -1948,7 +2440,8 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      3
+      3,
+      28
     ]
   },
   {
@@ -1962,7 +2455,23 @@
       1,
       2,
       3,
-      9
+      9,
+      29,
+      31
+    ]
+  },
+  {
+    "_name": "ShockDamageAura",
+    "name": "Faulty Conductor",
+    "tier": "BossTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC3",
+    "tags": [
+      1,
+      3,
+      31,
+      34
     ]
   },
   {
@@ -1974,7 +2483,9 @@
     "required_dlc": null,
     "tags": [
       1,
-      4
+      4,
+      31,
+      34
     ]
   },
   {
@@ -1986,7 +2497,8 @@
     "required_dlc": null,
     "tags": [
       2,
-      11
+      11,
+      31
     ]
   },
   {
@@ -2006,7 +2518,8 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      3
+      3,
+      31
     ]
   },
   {
@@ -2017,7 +2530,8 @@
     "can_remove": true,
     "required_dlc": "DLC1",
     "tags": [
-      3
+      3,
+      31
     ]
   },
   {
@@ -2030,7 +2544,25 @@
     "tags": [
       3,
       4,
-      21
+      21,
+      28,
+      29,
+      31
+    ]
+  },
+  {
+    "_name": "SpeedOnPickup",
+    "name": "Collector's Compulsion",
+    "tier": "Tier2",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC3",
+    "tags": [
+      3,
+      4,
+      18,
+      29,
+      31
     ]
   },
   {
@@ -2042,8 +2574,9 @@
     "required_dlc": null,
     "tags": [
       3,
-      4,
-      8
+      8,
+      29,
+      31
     ]
   },
   {
@@ -2055,8 +2588,10 @@
     "required_dlc": null,
     "tags": [
       3,
-      4,
-      8
+      8,
+      28,
+      29,
+      31
     ]
   },
   {
@@ -2067,7 +2602,9 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      3
+      3,
+      29,
+      31
     ]
   },
   {
@@ -2079,7 +2616,9 @@
     "required_dlc": null,
     "tags": [
       1,
-      8
+      8,
+      29,
+      31
     ]
   },
   {
@@ -2092,7 +2631,35 @@
     "tags": [
       1,
       4,
-      18
+      18,
+      28,
+      31
+    ]
+  },
+  {
+    "_name": "StatsFromScrap",
+    "name": "ITEM_STATSFROMSCRAP_NAME",
+    "tier": "NoTier",
+    "hidden": true,
+    "can_remove": false,
+    "required_dlc": "DLC3",
+    "tags": [
+      0
+    ]
+  },
+  {
+    "_name": "Stew",
+    "name": "Hearty Stew",
+    "tier": "FoodTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC3",
+    "tags": [
+      2,
+      3,
+      9,
+      24,
+      31
     ]
   },
   {
@@ -2103,7 +2670,8 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      1
+      1,
+      31
     ]
   },
   {
@@ -2114,7 +2682,8 @@
     "can_remove": true,
     "required_dlc": "DLC1",
     "tags": [
-      1
+      1,
+      31
     ]
   },
   {
@@ -2126,7 +2695,9 @@
     "required_dlc": "DLC2",
     "tags": [
       1,
-      21
+      21,
+      31,
+      34
     ]
   },
   {
@@ -2138,7 +2709,9 @@
     "required_dlc": null,
     "tags": [
       3,
-      4
+      4,
+      31,
+      34
     ]
   },
   {
@@ -2149,7 +2722,8 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      1
+      1,
+      31
     ]
   },
   {
@@ -2163,7 +2737,9 @@
       2,
       4,
       13,
-      17
+      17,
+      28,
+      31
     ]
   },
   {
@@ -2177,7 +2753,8 @@
       3,
       4,
       6,
-      7
+      7,
+      31
     ]
   },
   {
@@ -2202,7 +2779,10 @@
       3,
       4,
       16,
-      21
+      21,
+      24,
+      31,
+      34
     ]
   },
   {
@@ -2247,7 +2827,8 @@
     "required_dlc": null,
     "tags": [
       1,
-      4
+      4,
+      31
     ]
   },
   {
@@ -2262,7 +2843,9 @@
       9,
       12,
       13,
-      17
+      17,
+      24,
+      31
     ]
   },
   {
@@ -2285,7 +2868,28 @@
     "required_dlc": null,
     "tags": [
       2,
-      6
+      6,
+      28,
+      31
+    ]
+  },
+  {
+    "_name": "TransferDebuffOnHit",
+    "name": "Neutronium Weight",
+    "tier": "LunarTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC3",
+    "tags": [
+      3,
+      4,
+      5,
+      6,
+      11,
+      12,
+      13,
+      22,
+      24
     ]
   },
   {
@@ -2298,7 +2902,8 @@
     "tags": [
       3,
       4,
-      20
+      20,
+      31
     ]
   },
   {
@@ -2311,7 +2916,8 @@
     "tags": [
       3,
       4,
-      20
+      20,
+      31
     ]
   },
   {
@@ -2323,7 +2929,23 @@
     "required_dlc": "DLC2",
     "tags": [
       1,
-      21
+      21,
+      28,
+      31
+    ]
+  },
+  {
+    "_name": "UltimateMeal",
+    "name": "Ultimate Meal",
+    "tier": "FoodTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC3",
+    "tags": [
+      2,
+      9,
+      24,
+      31
     ]
   },
   {
@@ -2335,7 +2957,8 @@
     "required_dlc": null,
     "tags": [
       12,
-      13
+      13,
+      35
     ]
   },
   {
@@ -2346,7 +2969,9 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      3
+      3,
+      31,
+      34
     ]
   },
   {
@@ -2358,7 +2983,10 @@
     "required_dlc": "DLC1",
     "tags": [
       3,
-      13
+      13,
+      24,
+      28,
+      31
     ]
   },
   {
@@ -2378,7 +3006,8 @@
     "can_remove": true,
     "required_dlc": null,
     "tags": [
-      1
+      1,
+      29
     ]
   },
   {
@@ -2390,7 +3019,9 @@
     "required_dlc": null,
     "tags": [
       1,
-      6
+      6,
+      29,
+      31
     ]
   },
   {
@@ -2403,7 +3034,24 @@
     "tags": [
       3,
       4,
-      13
+      13,
+      29,
+      31
+    ]
+  },
+  {
+    "_name": "WyrmOnHit",
+    "name": "Saut\u00e9ed Worms",
+    "tier": "FoodTier",
+    "hidden": false,
+    "can_remove": true,
+    "required_dlc": "DLC3",
+    "tags": [
+      1,
+      4,
+      9,
+      15,
+      31
     ]
   }
 ]

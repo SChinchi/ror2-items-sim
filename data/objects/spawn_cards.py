@@ -2,7 +2,7 @@ from ._utils import round_value
 
 
 class SpawnCard:
-    SCRIPT = 4691379092647972189
+    SCRIPT = -2985540449580555420
 
     def __init__(self, data):
         for key, value in data.items():
@@ -26,7 +26,7 @@ class SpawnCard:
 
 
 class InteractableSpawnCard(SpawnCard):
-    SCRIPT = -1452994546013412074
+    SCRIPT = 6350327789359737192
     
     @staticmethod
     def parse(asset):
@@ -53,7 +53,7 @@ class InteractableSpawnCard(SpawnCard):
 
 
 class CharacterSpawnCard(SpawnCard):
-    SCRIPT = -2671867307903452571
+    SCRIPT = 7108520715663773255
     
     @staticmethod
     def parse(asset):
@@ -76,7 +76,7 @@ class CharacterSpawnCard(SpawnCard):
 
 
 class MultiCharacterSpawnCard(CharacterSpawnCard):
-    SCRIPT = 4835371849398150560
+    SCRIPT = 873653667672276932
 
     @staticmethod
     def parse(asset):

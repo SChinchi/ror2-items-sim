@@ -132,6 +132,18 @@
     "required_dlc": null
   },
   {
+    "_name": "DroneShockDamage",
+    "name": "Faulty Conductor",
+    "cooldown": 60.0,
+    "can_drop": 0,
+    "death_drop_chance": 0.0,
+    "randomly_triggered": false,
+    "enigma_compatible": false,
+    "is_lunar": false,
+    "is_boss": false,
+    "required_dlc": "DLC3"
+  },
+  {
     "_name": "EliteAurelioniteEquipment",
     "name": "Aurelionite's Blessing",
     "cooldown": 25.0,
@@ -154,6 +166,18 @@
     "is_lunar": false,
     "is_boss": false,
     "required_dlc": "DLC2"
+  },
+  {
+    "_name": "EliteCollectiveEquipment",
+    "name": "Of One Mind",
+    "cooldown": 10.0,
+    "can_drop": 0,
+    "death_drop_chance": 0.00025,
+    "randomly_triggered": false,
+    "enigma_compatible": false,
+    "is_lunar": false,
+    "is_boss": false,
+    "required_dlc": "DLC3"
   },
   {
     "_name": "EliteEarthEquipment",
@@ -372,6 +396,18 @@
     "required_dlc": null
   },
   {
+    "_name": "GroundEnemies",
+    "name": "G-Force Accelerator",
+    "cooldown": 30.0,
+    "can_drop": 0,
+    "death_drop_chance": 0.0,
+    "randomly_triggered": false,
+    "enigma_compatible": false,
+    "is_lunar": false,
+    "is_boss": false,
+    "required_dlc": "DLC3"
+  },
+  {
     "_name": "GummyClone",
     "name": "Goobo Jr.",
     "cooldown": 100.0,
@@ -538,6 +574,18 @@
     "is_lunar": false,
     "is_boss": false,
     "required_dlc": null
+  },
+  {
+    "_name": "Parry",
+    "name": "Deus Ex Machina",
+    "cooldown": 60.0,
+    "can_drop": 1,
+    "death_drop_chance": 0.0,
+    "randomly_triggered": true,
+    "enigma_compatible": true,
+    "is_lunar": false,
+    "is_boss": false,
+    "required_dlc": "DLC3"
   },
   {
     "_name": "PassiveHealing",

@@ -59,7 +59,7 @@ class PickupDropTable:
 
 
 class ArenaMonsterItemDropTable(PickupDropTable):
-    SCRIPT = 6355564085484888252
+    SCRIPT = 2875886456317515108
 
     def __init__(self, data):
         super().__init__(data)
@@ -91,7 +91,7 @@ class ArenaMonsterItemDropTable(PickupDropTable):
 
     
 class BasicPickupDropTable(PickupDropTable):
-    SCRIPT = -3444164123217549294
+    SCRIPT = 5499807349241373870
 
     def __init__(self, data):
         super().__init__(data)
@@ -130,7 +130,7 @@ class BasicPickupDropTable(PickupDropTable):
 
 
 class DoppelgangerDropTable(PickupDropTable):
-    SCRIPT = 8229327428296551755
+    SCRIPT = 8231865274089221866
 
     def __init__(self, data):
         super().__init__(data)
@@ -162,7 +162,7 @@ class DoppelgangerDropTable(PickupDropTable):
 
 
 class ExplicitPickupDropTable(PickupDropTable):
-    SCRIPT = -8185837855437012288
+    SCRIPT = 9194601615848778111
 
     def __init__(self, data):
         super().__init__(data)
@@ -191,7 +191,7 @@ class ExplicitPickupDropTable(PickupDropTable):
 
 
 class FreeChestDropTable(PickupDropTable):
-    SCRIPT = 3728958355032723917
+    SCRIPT = 4497477225832010346
 
     def __init__(self, data):
         super().__init__(data)

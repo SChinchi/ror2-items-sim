@@ -56,9 +56,10 @@ class Portal:
 class Expansion:
     SOTV = 'DLC1'
     SOTS = 'DLC2'
+    AC = 'DLC3'
 
 
-ALL_EXPANSIONS = set([Expansion.SOTV, Expansion.SOTS])
+ALL_EXPANSIONS = set([Expansion.SOTV, Expansion.SOTS, Expansion.AC])
 NO_EXPANSIONS = set()
 
 IT_STAGES = (

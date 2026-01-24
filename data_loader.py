@@ -102,7 +102,7 @@ def _init_items(data):
 def _init_droptable(data):
     dt = eval(data['class'])(data)
     if data['class'] == 'ExplicitPickupDropTable':
-        dt.entries = [[getattr(Items, item, item), weight] for item, weight in dt.entries]
+        dt.entries = [[getattr(Items, item, item), weight] for item, weight in dt.entries if item]
     return dt
 
 
