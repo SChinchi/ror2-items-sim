@@ -1,0 +1,1119 @@
+[
+  {
+    "_name": "cdAlienHead",
+    "pickup": "AlienHead",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "DeathMark",
+          "HealAndRevive"
+        ]
+      },
+      {
+        "amount": 1,
+        "ingredients": [
+          "DeathMark",
+          "Infusion"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdAttackSpeedOnCrit",
+    "pickup": "AttackSpeedOnCrit",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "CritGlasses",
+          "Syringe"
+        ]
+      },
+      {
+        "amount": 1,
+        "ingredients": [
+          "CritAtLowerElevation",
+          "Syringe"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdBarrierOnKill",
+    "pickup": "BarrierOnKill",
+    "recipes": [
+      {
+        "amount": 4,
+        "ingredients": [
+          "ImmuneToDebuff",
+          "ScrapWhite"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdBeetleGland",
+    "pickup": "BeetleGland",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "Squid",
+          "Infusion"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdBleedOnHitAndExplode",
+    "pickup": "BleedOnHitAndExplode",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "TriggerEnemyDebuffs",
+          "ExplodeOnDeath"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdBonusGoldPackOnKill",
+    "pickup": "BonusGoldPackOnKill",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "GoldOnHurt",
+          "Tooth"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdBonusHealthBoost",
+    "pickup": "BonusHealthBoost",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "ScrapWhite",
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdBoostAllStats",
+    "pickup": "BoostAllStats",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "DeathMark",
+          "TriggerEnemyDebuffs"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdBossHunter",
+    "pickup": "BossHunter",
+    "recipes": [
+      {
+        "amount": 0,
+        "ingredients": [
+          "BossHunterConsumed",
+          "Missile"
+        ]
+      },
+      {
+        "amount": 0,
+        "ingredients": [
+          "BossHunterConsumed",
+          "BossDamageBonus"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdBounceNearby",
+    "pickup": "BounceNearby",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "ChainLightning",
+          "Blackhole"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdCleanse",
+    "pickup": "Cleanse",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "ImmuneToDebuff",
+          "EquipmentMagazine"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdCommandMissile",
+    "pickup": "CommandMissile",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "Missile",
+          "EquipmentMagazine"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdCookedSteak",
+    "pickup": "CookedSteak",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "FlatHealth",
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdCritDamage",
+    "pickup": "CritDamage",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "AttackSpeedOnCrit",
+          "HealOnCrit"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdCritGlasses",
+    "pickup": "CritGlasses",
+    "recipes": [
+      {
+        "amount": 4,
+        "ingredients": [
+          "CritDamage",
+          "ScrapWhite"
+        ]
+      },
+      {
+        "amount": 2,
+        "ingredients": [
+          "HealOnCrit",
+          "ScrapWhite"
+        ]
+      },
+      {
+        "amount": 2,
+        "ingredients": [
+          "AttackSpeedOnCrit",
+          "ScrapWhite"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdDroneWeapons",
+    "pickup": "DroneWeapons",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "DroneBackup",
+          "DronesDropDynamite"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdDronesDropDynamite",
+    "pickup": "DronesDropDynamite",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "StickyBomb",
+          "WardOnLevel"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdEliteCollectiveEquipment",
+    "pickup": "EliteCollectiveEquipment",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "HeadHunter",
+          "PowerPyramid"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdExecuteLowHealthElite",
+    "pickup": "ExecuteLowHealthElite",
+    "recipes": [
+      {
+        "amount": 2,
+        "ingredients": [
+          "HeadHunter",
+          "ScrapGreen"
+        ]
+      },
+      {
+        "amount": 1,
+        "ingredients": [
+          "Crowbar",
+          "BossDamageBonus"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdExplodeOnDeath",
+    "pickup": "ExplodeOnDeath",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "IgniteOnKill",
+          "StickyBomb"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdExtraLife",
+    "pickup": "ExtraLife",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "ExtraLifeConsumed",
+          "ShinyPearl"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdFallBoots",
+    "pickup": "FallBoots",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "Feather",
+          "JumpBoost"
+        ]
+      },
+      {
+        "amount": 1,
+        "ingredients": [
+          "Feather",
+          "JumpDamageStrike"
+        ]
+      },
+      {
+        "amount": 1,
+        "ingredients": [
+          "JumpBoost",
+          "JumpDamageStrike"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdFireBallDash",
+    "pickup": "FireBallDash",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "IgniteOnKill",
+          "Hoof"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdFireRing",
+    "pickup": "FireRing",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "IceRing",
+          "IgniteOnKill"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdFireballsOnHit",
+    "pickup": "FireballsOnHit",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "Missile",
+          "FireRing"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdFlatHealth",
+    "pickup": "FlatHealth",
+    "recipes": [
+      {
+        "amount": 2,
+        "ingredients": [
+          "Infusion",
+          "ScrapWhite"
+        ]
+      },
+      {
+        "amount": 2,
+        "ingredients": [
+          "CookedSteak",
+          "Icicle"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdFragileDamageBonus",
+    "pickup": "FragileDamageBonus",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "FragileDamageBonusConsumed",
+          "Pearl"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdFreeChest",
+    "pickup": "FreeChest",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "TreasureCache",
+          "Firework"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdHealAndRevive",
+    "pickup": "HealAndRevive",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "HealAndReviveConsumed",
+          "Pearl"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdHealOnCrit",
+    "pickup": "HealOnCrit",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "CritGlasses",
+          "Tooth"
+        ]
+      },
+      {
+        "amount": 1,
+        "ingredients": [
+          "CritAtLowerElevation",
+          "Tooth"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdHealthPotion",
+    "pickup": "HealingPotion",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "HealingPotionConsumed",
+          "SprintBonus"
+        ]
+      },
+      {
+        "amount": 1,
+        "ingredients": [
+          "HealingPotionConsumed",
+          "BarrierOnCooldown"
+        ]
+      },
+      {
+        "amount": 4,
+        "ingredients": [
+          "HealingPotionConsumed",
+          "RandomEquipmentTrigger"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdHoof",
+    "pickup": "Hoof",
+    "recipes": [
+      {
+        "amount": 4,
+        "ingredients": [
+          "UtilitySkillMagazine",
+          "ScrapWhite"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdIceRing",
+    "pickup": "IceRing",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "FireRing",
+          "StunChanceOnHit"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdIncreaseHealing",
+    "pickup": "IncreaseHealing",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "BossHunterConsumed",
+          "HealOnCrit"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdItemDropChanceOnKill",
+    "pickup": "ItemDropChanceOnKill",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "LowerPricedChests",
+          "RegeneratingScrap"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdJumpDamageStrike",
+    "pickup": "JumpDamageStrike",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "JumpBoost",
+          "IncreasePrimaryDamage"
+        ]
+      },
+      {
+        "amount": 1,
+        "ingredients": [
+          "JumpBoost",
+          "Lightning"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdKillEliteFrenzy",
+    "pickup": "KillEliteFrenzy",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "Bandolier",
+          "ExecuteLowHealthElite"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdKnockbackHitEnemies",
+    "pickup": "KnockBackHitEnemies",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "StunChanceOnHit",
+          "Hoof"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdKnurl",
+    "pickup": "Knurl",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "Infusion",
+          "Seed"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdLightningStrikeOnHit",
+    "pickup": "LightningStrikeOnHit",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "Missile",
+          "Lightning"
+        ]
+      },
+      {
+        "amount": 1,
+        "ingredients": [
+          "Missile",
+          "ShockNearby"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdLowerPricedChests",
+    "pickup": "LowerPricedChests",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "BonusGoldPackOnKill",
+          "FreeChest"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdMasterCore",
+    "pickup": "MasterCore",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "MasterBattery",
+          "PowerPyramid"
+        ]
+      },
+      {
+        "amount": 1,
+        "ingredients": [
+          "MasterBattery",
+          "PowerCube"
+        ]
+      },
+      {
+        "amount": 1,
+        "ingredients": [
+          "MasterBattery",
+          "PhysicsProjectile"
+        ]
+      },
+      {
+        "amount": 1,
+        "ingredients": [
+          "MasterBattery",
+          "RoboBallBuddy"
+        ]
+      },
+      {
+        "amount": 1,
+        "ingredients": [
+          "MasterBattery",
+          "TreasureCache"
+        ]
+      },
+      {
+        "amount": 1,
+        "ingredients": [
+          "MasterBattery",
+          "TreasureCacheVoid"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdMeteorAttackOnHighDamage",
+    "pickup": "MeteorAttackOnHighDamage",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "Missile",
+          "IncreasePrimaryDamage"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdMinorConstructOnKill",
+    "pickup": "MinorConstructOnKill",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "Squid",
+          "ExecuteLowHealthElite"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdMissile",
+    "pickup": "Missile",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "Firework",
+          "StickyBomb"
+        ]
+      },
+      {
+        "amount": 2,
+        "ingredients": [
+          "MoreMissile",
+          "ScrapGreen"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdMolotov",
+    "pickup": "Molotov",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "IgniteOnKill",
+          "EquipmentMagazine"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdMoreMissile",
+    "pickup": "MoreMissile",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "Missile",
+          "CommandMissile"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdMultiShopCard",
+    "pickup": "MultiShopCard",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "LowerPricedChests",
+          "FreeChest"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdMushroom",
+    "pickup": "Mushroom",
+    "recipes": [
+      {
+        "amount": 4,
+        "ingredients": [
+          "Plant",
+          "ScrapWhite"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdNovaOnLowHealth",
+    "pickup": "NovaOnLowHealth",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "Phasing",
+          "IceRing"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdParentEgg",
+    "pickup": "ParentEgg",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "Seed",
+          "Thorns"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdPersonalShield",
+    "pickup": "PersonalShield",
+    "recipes": [
+      {
+        "amount": 4,
+        "ingredients": [
+          "ShieldOnly",
+          "ScrapWhite"
+        ]
+      },
+      {
+        "amount": 2,
+        "ingredients": [
+          "ShieldBooster",
+          "ScrapWhite"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdRecycle",
+    "pickup": "Recycle",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "RandomEquipmentTrigger",
+          "EquipmentMagazine"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdRegeneratingScrap",
+    "pickup": "RegeneratingScrap",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "ScrapGreen",
+          "ScrapGreen"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdRoboballBuddy",
+    "pickup": "RoboBallBuddy",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "DronesDropDynamite",
+          "PowerPyramid"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdSaw",
+    "pickup": "Saw",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "PrimarySkillShuriken",
+          "BleedOnHit"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdScrapGreen",
+    "pickup": "ScrapGreen",
+    "recipes": [
+      {
+        "amount": 2,
+        "ingredients": [
+          "ScrapRed",
+          "ScrapGreen"
+        ]
+      },
+      {
+        "amount": 2,
+        "ingredients": [
+          "ScrapYellow",
+          "ScrapGreen"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdScrapRed",
+    "pickup": "ScrapRed",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "RegeneratingScrap",
+          "RegeneratingScrap"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdScrapWhite",
+    "pickup": "ScrapWhite",
+    "recipes": [
+      {
+        "amount": 2,
+        "ingredients": [
+          "ScrapGreen",
+          "ScrapWhite"
+        ]
+      },
+      {
+        "amount": 4,
+        "ingredients": [
+          "ScrapRed",
+          "ScrapWhite"
+        ]
+      },
+      {
+        "amount": 4,
+        "ingredients": [
+          "ScrapYellow",
+          "ScrapWhite"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdShieldBooster",
+    "pickup": "ShieldBooster",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "PersonalShield",
+          "SprintArmor"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdShockNearby",
+    "pickup": "ShockNearby",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "ChainLightning",
+          "Thorns"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdSiphonNearby",
+    "pickup": "SiphonOnLowHealth",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "TPHealingNova",
+          "DeathMark"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdSprintOutOfCombat",
+    "pickup": "SprintOutOfCombat",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "SprintBonus",
+          "HealWhileSafe"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdSprintWisp",
+    "pickup": "SprintWisp",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "SprintArmor",
+          "ExplodeOnDeath"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdStew",
+    "pickup": "Stew",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "TPHealingNova",
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdStrengthenBurn",
+    "pickup": "StrengthenBurn",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "IgniteOnKill",
+          "IgniteOnKill"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdStunAndPierce",
+    "pickup": "StunAndPierce",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "PrimarySkillShuriken",
+          "ChainLightning"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdTeleportOnLowHealth",
+    "pickup": "TeleportOnLowHealth",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "DelayedDamage",
+          "HealWhileSafe"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdTitanGoldDuringTP",
+    "pickup": "TitanGoldDuringTP",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "Knurl",
+          "EliteAurelioniteEquipment"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdTriggerEnemyDebuffs",
+    "pickup": "TriggerEnemyDebuffs",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "BleedOnHit",
+          "AttackSpeedPerNearbyAllyOrEnemy"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdUltimateMeal",
+    "pickup": "UltimateMeal",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "Clover",
+          null
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdUtilitySkillMagazine",
+    "pickup": "UtilitySkillMagazine",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "Feather",
+          "StrengthenBurn"
+        ]
+      }
+    ]
+  },
+  {
+    "_name": "cdWyrmOnHit",
+    "pickup": "WyrmOnHit",
+    "recipes": [
+      {
+        "amount": 1,
+        "ingredients": [
+          "LightningStrikeOnHit",
+          "FireballsOnHit"
+        ]
+      }
+    ]
+  }
+]

@@ -118,6 +118,7 @@ Some of the game's data has been extracted and stored in `json` files under `dat
 
 - Items & Equipment
 - Item Tiers
+- Recipes
 - Droptables
 - Spawn Cards
 - Bodies & Masters

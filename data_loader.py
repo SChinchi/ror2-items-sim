@@ -38,6 +38,15 @@ class Equipment:
             setattr(self, item._name, item)
 
 
+class Recipes:
+    def __init__(self, data):
+        self._recipes = []
+        for recipe in data:
+            recipe = CraftableDef(recipe)
+            self._recipes.append(recipe)
+            setattr(self, recipe._name, recipe)
+
+
 class DirectorCard:
     def __init__(self, data):
         for key, value in data.items():
@@ -97,6 +106,26 @@ def _init_items(data):
     for item in items._items:
         item.tier = getattr(ItemTiers, item.tier)
     return items
+
+
+def _init_recipes(data):
+    recipes = Recipes(data)
+    for recipe in recipes._recipes:
+        if hasattr(Items, recipe.pickup):
+            recipe.pickup = getattr(Items, recipe.pickup)
+        else:
+            recipe.pickup = getattr(Equipment, recipe.pickup)
+        for recipe in recipe.recipes:
+            ingredients = []
+            for ingredient in recipe.ingredients:
+                if ingredient is None:
+                    ingredients.append(None)
+                elif hasattr(Items, ingredient):
+                    ingredients.append(getattr(Items, ingredient))
+                else:
+                    ingredients.append(getattr(Equipment, ingredient))
+            recipe.ingredients = ingredients
+    return recipes
 
 
 def _init_droptable(data):
@@ -198,6 +227,7 @@ def load_data(category):
         'items': ITEMS_FILE,
         'equipment': EQUIPMENT_FILE,
         'tiers': TIERS_FILE,
+        'recipes': RECIPES_FILE,
         'droptables': DROPTABLES_FILE,
         'masters': MASTERS_FILE,
         'bodies': BODIES_FILE,
@@ -223,6 +253,7 @@ Buffs = Buffs(load_data('buffs'))
 ItemTiers = ItemTiers(load_data('tiers'))
 Items = _init_items(load_data('items'))
 Equipment = Equipment(load_data('equipment'))
+Recipes = _init_recipes(load_data('recipes'))
 droptables = {name: _init_droptable(data) for name, data in load_data('droptables').items()}
 sc = {name: SpawnCard(data) for name, data in load_data('sc').items()}
 isc = {name: _init_isc(data) for name, data in load_data('isc').items()}

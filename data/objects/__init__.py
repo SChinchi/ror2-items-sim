@@ -5,6 +5,7 @@ from .dlc import *
 from .droptables import *
 from .interactables import *
 from .items import *
+from .recipes import *
 from .simulacrum import *
 from .skills import *
 from .spawn_cards import *

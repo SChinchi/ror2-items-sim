@@ -168,6 +168,7 @@ def extract_file_data(src_path=FILES_DIR):
         'can_scrap': False,
         'can_restack': False,        
     }}
+    recipes = []
     droptables = {}
     sc = {}
     isc = {}
@@ -199,6 +200,8 @@ def extract_file_data(src_path=FILES_DIR):
                             equipment.append(EquipmentDef.parse(asset, token_names))
                         elif script == ItemTierDef.SCRIPT:
                             item_tiers[asset['m_Name'].rstrip('Def')] = ItemTierDef.parse(asset)
+                        elif script == CraftableDef.SCRIPT:
+                            recipes.append(CraftableDef.parse(asset))
                         elif script in dt_classes:
                             droptables[asset['m_Name']] = dt_classes[script].parse(asset)
                         elif script == SpawnCard.SCRIPT:
@@ -312,6 +315,11 @@ def extract_file_data(src_path=FILES_DIR):
             data['expansion'] = ExpansionRequirementComponent.parse(expansion, ids)
         else:
             data['expansion'] = None
+    for data in recipes:
+        data['pickup'] = ids[data['pickup']]['m_Name']
+        for recipe in data['recipes']:
+            recipe['ingredients'] = [ids[obj]['m_Name'] if obj else None
+                                     for obj in recipe['ingredients']]
     for data in csc.values():
         master = _get_component(ids, data['body'], CharacterMaster)
         body, path_id = _get_component(ids, master['bodyPrefab']['m_PathID'], CharacterBody, keep_path_id=True)
@@ -556,6 +564,7 @@ def extract_file_data(src_path=FILES_DIR):
     equipment.sort(key=lambda x: x['_name'])
     droptables = {key: droptables[key] for key in sorted(droptables)}
     item_tiers = {key: item_tiers[key] for key in sorted(item_tiers, key=lambda x: item_tiers[x]['_tier'])}
+    recipes.sort(key=lambda x: x['_name'])
     sc = {key: sc[key] for key in sorted(sc)}
     isc = {key: isc[key] for key in sorted(isc)}
     csc = {key: csc[key] for key in sorted(csc)}
@@ -575,6 +584,7 @@ def extract_file_data(src_path=FILES_DIR):
         (EQUIPMENT_FILE, equipment),
         (DROPTABLES_FILE, droptables),
         (TIERS_FILE, item_tiers),
+        (RECIPES_FILE, recipes),
         (SC_FILE, sc),
         (ISC_FILE, isc),
         (CSC_FILE, csc),
