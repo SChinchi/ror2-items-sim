@@ -2,7 +2,7 @@
 
 Simulate item generation for any stage and collect statistics for the spawned interactables, or simulate a run session to see how many and what items are encountered.
 
-_Targetting game version 1.3.8, but some Seekers of the Storm features have not been implemented fully, mainly the new item effects for the run simulator._
+_In terms of extracted assets it's updated for version 1.4.1, but some Seekers of the Storm and Alloyed Collective features have not been implemented fully for the run simulator. This includes the new paths for the 2 DLCs, the Halcyonite Shrine loot, and the item effects of Chance Doll, Sale Star, and Functional Coupler._
 
 ## How to use
 
@@ -51,13 +51,19 @@ The `Run` class is an implementation of a run session, which can be used to anal
 
 - While it supports multiplayer, it cannot make decisions for how to split the loot. For the purposes of this simulation loot distribution is irrelevant, therefore, a unified inventory is used.
 - It randomly selects an item to purchase from a multishop, but it will aggressively search for an Executive Card from equipment multishops.
+  - The order of priority is Executive Card > Recycler > Trophy Hunter's Tricorn > hidden terminal if available to try its luck on the aforementioned equipment > whatever.
+  - On picking up an equipment if `Run.CARD_BIAS_ENABLED` is enabled and the equipment is not any of the above, it will use the Recycler if available.
+  - Drifter's Tinker is not taken into account in all of this, as is not MUL-T's Retool.
 - Due to their interactive and rare nature, Adaptive Chests are not looted but their encounter is logged.
+- Similarly, the Temporary Item Distributor's loot is not logged. This is the case for any sources of temporary items. In theory this can have a small effect on items that spawn more interactables, but statistically it should be negligible unless one is using Drifter's Salvage.
 - It doesn't utilise printers and scrappers to optimise the build, as this technically doesn't change the number of items within an item tier.
 - Void items don't corrupt their normal counterparts both as a consequence of using a unified inventory and for decision-making reasons.
 - While it can handle items which spawn more interactables, e.g., Rusted Key, the lack of corruption means the Encrusted Cache will not spawn.
 - It selects the highest tier choice for Void Potentials and Shipping Request Forms.
 - The mechanics of items that can change the inventory, i.e., Egocentrism, Eulogy Zero, and Benthic Bloom, are not implemented, even though they are picked up.
+- Similarly, the effects of Sonorous Whispers and the Artifact of Sacrifice are not taken into account in terms of loot. The latter is only considered for the interactable generation.
 - The Lunar Cauldrons and Shop in the Bazaar Between Time are not utilised as they are only about context-related decisions. However, one can set a stage preference for the Lunar Seer for a bias towards specific stages. One can also control when or whether to visit the Void Fields at all.
+- The same reasoning applies to Chef's recipes. As such, there is no need to track the number of Food tier items.
 - The code calculates how many Newt Altars can spawn on each stage, but it does not take into account whether they are reachable in order to open a Blue Portal. It is assumed that if at least one altar has spawned, it can be reached. Only one of the Distant Roost variants has a true chance of not spawning any altars, in which case the Lunar Seer cannot be used. However, a portal is forcefully opened for the Void Fields, simulating the scenario where if the player wants to visit the Void Fields after the first stage and is unable to, they restart the game.
 - The choice to use the Gold/Artifact portals can be toggled. If more than one portal options are available on the same stage, the priority is Blue (for Void Fields) > Artifact > Gold > Blue (for Lunar Seer) > normal stage RNG.
 - Bulwark's Ambry assumes the Artifact of Command is selected, which affects interactable generation.
