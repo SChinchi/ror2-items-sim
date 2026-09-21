@@ -1,5 +1,5 @@
 from ._utils import round_value
-from .dccs import DccsPool
+from .dccs import DccsPool, DCCSBlender, FamilyDirectorCardCategorySelection
 
 
 class SceneDef:
@@ -31,6 +31,64 @@ class ClassicStageInfo:
     def __init__(self, data):
         for key, value in data.items():
             setattr(self, key, value)
+
+    def rebuild_cards(self, expansions, stages_cleared):
+        """
+        Generate the monster and interctable DCCS for the stage.
+
+        Parameters
+        ----------
+        expansions
+            The expansions enabled, which affects which selections are available.
+        stages_cleared : int
+            The number of stages cleared, which also affects which selections
+            are available.
+
+        Returns
+        -------
+        List of DirectorCardCategorySystem
+
+        Notes
+        -----
+        A partial implementation of `RoR2.ClassicStageInfo.RebuildCards`.
+        """
+        monster_pool_category = self.monsters.generate_weighted_category_selection(
+            expansions, stages_cleared,
+        )
+        if not self.is_category_selection_family(monster_pool_category):
+            monsters = DCCSBlender.get_blended_dccs(
+                monster_pool_category, expansions, stages_cleared, None
+            )
+        else:
+            monsters = self.monsters.generate_weight_selection_from_single_category(
+                monster_pool_category, expansions, stages_cleared
+            )
+        if monsters.expansions_in_effect:
+            interactables = DCCSBlender.get_blended_dccs(
+                self.interactables.categories[0], expansions, stages_cleared,
+                monsters.expansions_in_effect
+            )
+        else:
+            interactables = DCCSBlender.get_blended_dccs(
+                self.interactables.categories[0], expansions, stages_cleared,
+                None
+            )
+        return monsters, interactables
+
+    def is_category_selection_family(self, category):
+        """
+        Whether a DccsPoolCategory contains FamilyDirectorCardCategorySelection.
+        """
+        for entry in category.always_included:
+            if isinstance(entry.dccs, FamilyDirectorCardCategorySelection):
+                return True
+        for entry in category.included_conditions_met:
+            if isinstance(entry.dccs, FamilyDirectorCardCategorySelection):
+                return True
+        for entry in category.included_conditions_not_met:
+            if isinstance(entry.dccs, FamilyDirectorCardCategorySelection):
+                return True
+        return False
 
     @staticmethod
     def parse(asset, ids):

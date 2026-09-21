@@ -4,7 +4,7 @@ import warnings
 import numpy as np
 
 from constants import Expansion, ALL_EXPANSIONS, IT_STAGES
-from data.objects.dccs import DirectorCardCategorySelection, DCCSBlender
+from data.objects.dccs import DirectorCardCategorySelection
 from data_loader import scenes, voidseed, simulacrum
 
 
@@ -180,17 +180,15 @@ class SceneDirector(BaseSceneDirector):
         UserWarning
             If a required DLC is not enabled, it will be automatically enabled.
         """
-        self._scene_name = scene_name
-        self._scene_data = scenes[scene_name]
-        if self._scene_data.required_dlc and self._scene_data.required_dlc not in expansions:
-            warnings.warn('The current scene requires the DLC, which will now be enabled.')
-            expansions.add(required_dlc)
-        self._expansions = expansions
+        self.scene_name = scene_name
+        self.expansions = expansions
         self.num_players = num_players
         self.is_command_enabled = is_command_enabled
         self.is_sacrifice_enabled = is_sacrifice_enabled
         self.is_bonus_credits_available = is_bonus_credits_available
         self.is_log_available = is_log_available
+        self.interactables = None
+        self.monsters = None
 
     def _start(self, stages_cleared):
         """
@@ -215,20 +213,23 @@ class SceneDirector(BaseSceneDirector):
         item_num : int
             The total number of interactables in `interactables`.
         """
-        stage_info = self._scene_data.stage_info
+        stage_info = scenes[self.scene_name].stage_info
         if stage_info:
             interactable_credit = int(stage_info.interactable_credits * (.5 + self.num_players * .5))
             if self.is_bonus_credits_available:
                 interactable_credit += stage_info.bonus_credits
-            if self._scene_name in IT_STAGES:
+            if self.scene_name in IT_STAGES:
                 interactable_credit = simulacrum.interactable_credits
             if self.is_sacrifice_enabled:
                 interactable_credit //= 2
         else:
             interactable_credit = 0
+        self.monsters, self.interactables = stage_info.rebuild_cards(
+            self.expansions, stages_cleared
+        )
         interactables = self._generate_interactable_card_selection(stages_cleared)
         deck = interactables.generate_card_weighted_selection(
-            stages_cleared, self._expansions, self.is_sacrifice_enabled
+            stages_cleared, self.expansions, self.is_sacrifice_enabled
         )
         item_num = sum(len(category.cards) for category in interactables.categories)
         return interactable_credit, interactables, deck, item_num
@@ -244,7 +245,7 @@ class SceneDirector(BaseSceneDirector):
 
         Returns
         -------
-        categories : list
+        categories : DirectorCardCategorySelection
             The list of available categories.
 
         Notes
@@ -253,14 +254,10 @@ class SceneDirector(BaseSceneDirector):
         `RoR2.SceneDirector.GenerateInteractableCardSelection()`.
         """
         categories = DirectorCardCategorySelection()
-        stage_info = self._scene_data.stage_info
-        if not stage_info or not stage_info.interactables:
+        if not self.interactables:
             return categories
-        interactables = DCCSBlender.get_blended_dccs(
-            stage_info.interactables.categories[0], self._expansions, stages_cleared
-        )
         index = 0
-        for category in interactables.categories:
+        for category in self.interactables.categories:
             cards = []
             for card in category.cards:
                 spawn_card = card.spawn_card
@@ -371,7 +368,7 @@ class SceneDirector(BaseSceneDirector):
             generated interactables will be returned.
         """
         if stages_cleared < 0:
-            stages_cleared = self._scene_data.stage_order
+            stages_cleared = scenes[self.scene_name].stage_order
         interactable_credit, interactables, deck, item_num = self._start(stages_cleared)
         item_counter = [0] * item_num
         self._populate_scene(interactable_credit, deck, item_counter)
@@ -402,63 +399,12 @@ class SceneDirector(BaseSceneDirector):
             interactable.
         """
         if stages_cleared < 0:
-            stages_cleared = self._scene_data.stage_order
+            stages_cleared = scenes[self.scene_name].stage_order
         interactable_credit, interactables, deck, item_num = self._start(stages_cleared)
         item_counter = np.zeros((iterations, item_num), dtype=np.int32)
         for i in range(iterations):
             self._populate_scene(interactable_credit, deck, item_counter[i])
         return self._process_statistics(interactables, item_counter, print_result)
-
-    def change_scene(self, scene_name):
-        """
-        Change the scene.
-
-        Parameters
-        ----------
-        scene_name : str
-            The internal name of the new stage.
-
-        Returns
-        -------
-        None
-
-        Warns
-        -----
-        UserWarning
-            If the DLC is currently disabled and the new scene requires it, it
-            will be automatically enabled.
-        """
-        self._scene_name = scene_name
-        self._scene_data = scenes[scene_name]
-        required_dlc = self._scene_data.required_dlc
-        if required_dlc and required_dlc not in self._expansions:
-            warnings.warn('The new scene requires a DLC, which will now be enabled.')
-            self._expansions.add(required_dlc)
-
-    def set_enabled_expansions(self, expansions):
-        """
-        Select which expansions will be enabled.
-
-        Parameters
-        ----------
-        expansions : iterable
-            The expansions to be enabled, represented by their internal name.
-
-        Returns
-        -------
-        None
-
-        Warns
-        -----
-        UserWarning
-            If the currently selected scene requires a DLC, attempting to
-            disable it will fail.
-        """
-        required_dlc = self._scene_data.required_dlc
-        if required_dlc and required_dlc not in expansions:
-            warnings.warn('The current scene requires specific DLC content enabled.')
-            return
-        self._expansions = set(expansions)
 
 
 class CampDirector(BaseSceneDirector):

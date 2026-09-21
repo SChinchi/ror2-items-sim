@@ -4,6 +4,7 @@ import random
 from constants import SceneName, Portal, Expansion, ALL_EXPANSIONS
 from data_loader import ItemTiers, Items, Equipment, isc, droptables, scenes
 from data.objects import EquipmentDef, ItemDef
+from data.objects.dccs import FamilyDirectorCardCategorySelection
 from data.objects.interactables import *
 from directors import SceneDirector, CampDirector
 
@@ -202,7 +203,8 @@ class LootReport:
                 item_count
             )
         }
-        total = {'family_event': sum(dccs and 'Family' in dccs for dccs in self.dccs)}
+        total = {'family_event': sum(bool(dccs) and isinstance(dccs, FamilyDirectorCardCategorySelection)
+                                     for dccs in self.dccs)}
         for isc_name, name in (
             ('iscShrineBoss', 'mountain_shrine'),
             ('iscChest1Stealthed', 'cloaked_chect'),
@@ -401,7 +403,7 @@ class Run:
         self._stages_cleared = 0
         self._scene_name = self._pick_next_stage_scene(scenes[SceneName.SM].destinations)
         self._scene_data = scenes[self._scene_name]
-        self._scene_director.change_scene(self._scene_name)
+        self._scene_director.scene_name = self._scene_name
         self._next_scene_name = None
         self._explicit_next_scene_name = None
         self._blue_portals_opened = 0
@@ -785,11 +787,8 @@ class Run:
         if scene_name == SceneName.VF:
             self._void_fields_visited = True
         stage_info = self._scene_data.stage_info
-        if stage_info:
-            stage_dccs = (
-                stage_info.monsters.
-                generate_weighted_selection(self._expansions, self._stages_cleared)
-            )
+        self._scene_director._start(self._stages_cleared)
+        stage_dccs = self._scene_director.monsters
         portals = set()
         teleporter_exists = self._scene_data.scene_director.teleporter
         if teleporter_exists:
@@ -954,7 +953,7 @@ class Run:
         if self._scene_name in (SceneName.MW, SceneName.CO, SceneName.VL, SceneName.PL):
             raise ValueError(f'Cannot go to {self._scene_name} as this will end the run.')
         self._scene_data = scenes[self._scene_name]
-        self._scene_director.change_scene(self._scene_name)
+        self._scene_director.scene_name = self._scene_name
 
     @staticmethod
     def calculate_difficulty_coefficient(time, stages_cleared, players=1, difficulty=3):

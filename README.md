@@ -23,11 +23,11 @@ director.populate_scene(print_result=False)   # Return the generated items for f
 director.collect_statistics()                 # Gather statistics of how likely each spawnable interactable is
 ```
 
-The class also provides functionality for changing the stage, enable expansions/artifacts, whether the Environment Log has been collected, and whether the cave on Abyssal Depths is open, all of which can affect which interactables can spawn and with what frequency.
+The constructor also accepts various settings which can affect which interactables can spawn and with what frequency. These can also be changed after instantiation.
 
 ```
-director.change_scene(Scene.AD)
-director.set_enabled_expansions({})          # Vanilla
+director.scene_name = SceneName.AD
+director.expansions = {}                      # Vanilla
 director.num_players = 2
 director.is_bonus_credits_available = True
 director.is_log_available = False

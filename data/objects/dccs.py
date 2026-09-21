@@ -182,6 +182,8 @@ class FamilyDirectorCardCategorySelection(DirectorCardCategorySelection):
         -------
         bool
 
+        Notes
+        -----
         An implementation of `RoR2.FamilyDirectorCardCategorySelection.IsAvailable`.
         """
         return self.min_stages_cleared <= stages_cleared < self.max_stages_cleared
@@ -264,9 +266,9 @@ class DccsPool:
             'categories': [DccsCategory.parse(category, ids) for category in asset['poolCategories']],
         }
 
-    def generate_weighted_selection(self, expansions, stages_cleared):
+    def generate_weighted_category_selection(self, expansions, stages_cleared):
         """
-        Select a DCCS object from the available ones.
+        Select a valid category from the pool.
 
         Parameters
         ----------
@@ -275,55 +277,138 @@ class DccsPool:
         stages_cleared : int
             The number of stages cleared, which also affects which selections
             are available.
-
+            
         Returns
         -------
-        weighted_selection : DirectorCardCategorySelection
-            The selected object
+        weighted_selection : DccsPoolCategory
+            The selected object.
 
         Notes
         -----
-        An implementation of `RoR2.DccsPool.GenerateWeightedSelection`.
+        An implementation of `RoR2.DccsPool.GenerateWeightedCategorySelection`.
         """
         values = []
         weights = []
         for category in self.categories:
-            total_weight = 0
-            for pool_entry in category.always_included:
-                total_weight += pool_entry.weight
+            if self.category_has_necessary_expansion_or_default_content(category, expansions, stages_cleared):
+                values.append(category)
+                weights.append(category.weight)
+        return random.choices(values, weights)[0]
+
+    def category_has_necessary_expansion_or_default_content(self, category, expansions, stages_cleared):
+        """
+        Check whether the DccsPoolCategory is valid for selection.
+
+        Parameters
+        ----------
+        category : DccsPoolCategory
+            The selected category.
+        expansions : set
+            The expansions enabled, which affects which selections are available.
+        stages_cleared : int
+            The number of stages cleared, which also affects which selections
+            are available.
+
+        Returns
+        -------
+        bool
+
+        Notes
+        -----
+        An implementation of `RoR2.DccsPool.CategoryHasNecessaryExpansionOrDefaultContent`.
+        """
+        if category.always_included:
+            return True
+        if category.included_conditions_not_met:
+            return True
+        for entry in category.included_conditions_met:
+            if (entry.dccs.is_available(stages_cleared) and
+                self.are_conditions_met(entry, expansions)):
+                return True
+        return False
+
+    def are_conditions_met(self, entry, expansions):
+        """
+        Whether the pool entry's expansion is available.
+
+        Parameters
+        ----------
+        entry : ConditionalPoolEntry
+            The selected object.
+        expansions : set
+            The enabled expansions.
+
+        Returns
+        -------
+        bool
+
+        Notes
+        -----
+        An implementation of `RoR2.DccsPool.AreConditionsMet`.
+        """
+        return all(dlc in expansions for dlc in entry.required_dlc)
+
+    def generate_weight_selection_from_single_category(self, category, expansions, stages_cleared):
+        """
+        Select a DCCS object from the available ones.
+
+        Parameters
+        ----------
+        category : PoolEntry or ConditionalPoolEntry
+            The selected DccsPool entry.
+        expansions : set
+            The expansions enabled, which affects which selections are available.
+        stages_cleared : int
+            The number of stages cleared, which also affects which selections
+            are available.
+
+        Returns
+        -------
+        DirectorCardCategorySelection
+
+        Notes
+        -----
+        An implementation of `RoR2.DccsPool.GenerateWeightSelectionFromSingleCategory`.
+        """
+        values = []
+        weights = []
+        total_weight = 0
+        for entry in category.always_included:
+            if entry.dccs.is_available(stages_cleared):
+                total_weight += entry.weight
+        conditions_met = False
+        for entry in category.included_conditions_met:
+            if entry.dccs.is_available(stages_cleared) and self.are_conditions_met(entry, expansions):
+                total_weight += entry.weight
+                conditions_met = True
+        if not conditions_met:
+            for entry in category.included_conditions_not_met:
+                if entry.dccs.is_available(stages_cleared):
+                    total_weight += entry.weight
+        if total_weight:
+            modifier = category.weight / total_weight
+            for entry in category.always_included:
+                if entry.dccs.is_available(stages_cleared):
+                    values.append(entry.dccs)
+                    weights.append(entry.weight * modifier)
             conditions_met = False
-            for pool_entry in category.included_conditions_met:
-                are_conditions_met = all(dlc in expansions for dlc in pool_entry.required_dlc)
-                if pool_entry.dccs.is_available(stages_cleared) and are_conditions_met:
-                    total_weight += pool_entry.weight
+            for entry in category.included_conditions_met:
+                if entry.dccs.is_available(stages_cleared) and self.are_conditions_met(entry, expansions):
+                    values.append(entry.dccs)
+                    weights.append(entry.weight * modifier)
                     conditions_met = True
             if not conditions_met:
-                for pool_entry in category.included_conditions_not_met:
-                    total_weight += pool_entry.weight
-                    
-            if total_weight:
-                modifier = category.weight / total_weight
-                for pool_entry in category.always_included:
-                    values.append(pool_entry.dccs)
-                    weights.append(pool_entry.weight * modifier)
-            conditions_met = False
-            for pool_entry in category.included_conditions_met:
-                are_conditions_met = all(dlc in expansions for dlc in pool_entry.required_dlc)
-                if pool_entry.dccs.is_available(stages_cleared) and are_conditions_met:
-                    values.append(pool_entry.dccs)
-                    weights.append(pool_entry.weight * modifier)
-                    conditions_met = True
-            if not conditions_met:
-                for pool_entry in category.included_conditions_not_met:
-                    values.append(pool_entry.dccs)
-                    weights.append(pool_entry.weight * modifier)
+                for entry in category.included_conditions_not_met:
+                    if entry.dccs.is_available(stages_cleared):
+                        values.append(entry.dccs)
+                        weights.append(entry.weight * modifier)
         return random.choices(values, weights)[0]
 
 
 class DCCSBlender:
     CONTENT_MIX_LIMIT = 2
 
-    def get_blended_dccs(dccs_category, expansions, stages_cleared):
+    def get_blended_dccs(dccs_category, expansions, stages_cleared, used_expansions=None):
         """
         Blend all available DCCS from the selected category in the DccsPool.
 
@@ -336,6 +421,8 @@ class DCCSBlender:
         stages_cleared : int
             The number of stages cleared, which also affects which selections
             are available.
+        used_expansions : list
+            The list of expansions available to satisfy any DCCS requirements.
 
         Returns
         -------
@@ -349,15 +436,16 @@ class DCCSBlender:
             dccs_category, expansions, stages_cleared
         )
         selected_dccs = []
-        used_expansions = set()
+        if used_expansions is None:
+            used_expansions = set()
         content_num = 0
         while content_num < DCCSBlender.CONTENT_MIX_LIMIT and weighted_selection:
             index = random.choices(range(len(weighted_selection)),
                                    weights=[w for _, w in weighted_selection])[0]
             pool_entry = weighted_selection[index][0]
             selected_dccs.append((pool_entry.dccs, pool_entry.weight))
-            if pool_entry is ConditionalPoolEntry:
-                used_expansions.union(pool_entry.required_dlc)
+            if isinstance(pool_entry, ConditionalPoolEntry):
+                used_expansions = used_expansions.union(pool_entry.required_dlc)
             weighted_selection.pop(index)
             content_num += 1
         for pool_entry in dccs_category.always_included:
@@ -428,6 +516,8 @@ class DCCSBlender:
         -------
         bool
 
+        Notes
+        -----
         An implementation of `RoR2.DCCSBlender.AreConditionsMet`.
         """
         return all(dlc in expansions for dlc in pool_entry.required_dlc)
@@ -447,6 +537,8 @@ class DCCSBlender:
         -------
         None
 
+        Notes
+        -----
         An implementation of `RoR2.DCCSBlender.EnsureAllCategoriesExist`.
         """
         for dccs in selected_dccs:
@@ -469,6 +561,8 @@ class DCCSBlender:
         -------
         None
 
+        Notes
+        -----
         An implementation of `RoR2.DCCSBlender.MergeCategories`.
         """
         for i, category in enumerate(blended_dccs.categories):
