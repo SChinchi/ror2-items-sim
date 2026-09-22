@@ -4,28 +4,8 @@ import warnings
 import numpy as np
 
 from constants import Expansion, ALL_EXPANSIONS, IT_STAGES
-from data.objects.dccs import DirectorCardCategorySelection
-from data_loader import scenes, voidseed, simulacrum
-
-
-class IndexedDirectorCard:
-    def __init__(self, card, index):
-        self.card = card
-        self._name = card.spawn_card._name
-        self.name = card.spawn_card.name
-        self.cost = card.spawn_card.cost
-        # We're dealing with both SpawnCard and InteractableSpawnCard objects,
-        # and the former do not have some fields, for which we need some
-        # defaults.
-        self.limit = getattr(card.spawn_card, 'limit', np.inf)
-        self.weight = card.weight
-        self.skip_with_sacrifice = getattr(card.spawn_card, 'skip_with_sacrifice', False)
-        self.sacrifice_weight = getattr(card.spawn_card, 'sacrifice_weight', 1.0)
-        self.min_stages_cleared = card.min_stages_cleared
-        self.index = index
-
-    def is_available(self, stages_cleared, expansions):
-        return self.card.is_available(stages_cleared, expansions)
+from data.objects.dccs import DirectorCardCategorySelection, DCCSBlender
+from data_loader import isc, scenes, voidseed, simulacrum
 
 
 class BaseSceneDirector:
@@ -53,7 +33,7 @@ class BaseSceneDirector:
         values = []
         weights = []
         for card, weight in deck:
-            if card.cost <= max_cost:
+            if card.spawn_card.cost <= max_cost:
                 values.append(card)
                 weights.append(weight)
         if not values:
@@ -82,20 +62,20 @@ class BaseSceneDirector:
         if print_result:
             for category in interactables.categories:
                 for card in category.cards:
-                    count = item_counter[card.index]
+                    count = item_counter[card.spawn_index]
                     if count:
-                        print(f'Spawned {card.name} {count} times.')
+                        print(f'Spawned {card.spawn_card.name} {count} times.')
             return
         out = []
         for category in interactables.categories:
             for card in category.cards:
-                count = item_counter[card.index]
+                count = item_counter[card.spawn_card.index]
                 if count:
                     # The internal card name is more useful for lookups
-                    out.extend([card._name] * count)
+                    out.extend([card.spawn_card._name] * count)
         return out
 
-    def _process_statistics(sef, interactables, item_counter, print_result):
+    def _process_statistics(sef, interactables, item_counter, print_result, all_interactables=None):
         """
         Print or return the interactable spawn statistics.
 
@@ -107,6 +87,12 @@ class BaseSceneDirector:
             Spawn counter for each available interactable for each iteration.
         print_result : bool
             Whether to print or return the result.
+        all_interactables : DirectorCardCategorySelection, optional
+            The blended DCCS with all the interactables from the selected DCCS
+            Category ignoring any content mix limit. This is so we can print
+            all possible interactables, since `interactables` can be a partial
+            blend of all possible categories. By default, this is None, in
+            which cases it is the same as `interactables`.
 
         Returns
         -------
@@ -119,12 +105,14 @@ class BaseSceneDirector:
         std = item_counter.std(axis=0)
         once = (item_counter > 0).mean(axis=0)
         if print_result:
+            if not all_interactables:
+                all_interactables = interactables
             result = []
-            for category in interactables.categories:
+            for category in all_interactables.categories:
                 string = [f'---{category.name}---']
                 for card in category.cards:
-                    name = card.name
-                    index = card.index
+                    name = card.spawn_card.name
+                    index = card.spawn_card.index
                     if mean[index]:
                         string.append(
                             f'{name} spawned {mean[index]:.3f} times (SD = {std[index]:.3f}) on average. At least once {once[index]*100:.1f}% of the time.'
@@ -137,10 +125,12 @@ class BaseSceneDirector:
         out = []
         for category in interactables.categories:
             for card in category.cards:
+                spawn_card = card.spawn_card
+                index = spawn_card.index
                 # The internal card name is more useful for lookups
-                out.append((card._name, mean[card.index], std[card.index], once[card.index]))
+                out.append((spawn_card._name, mean[index], std[index], once[index]))
         return out
-    
+
 
 class SceneDirector(BaseSceneDirector):
     """Handle scene interactable generation."""
@@ -210,8 +200,6 @@ class SceneDirector(BaseSceneDirector):
             enabled.
         deck : list
             List of the filtered weighted spawn cards.
-        item_num : int
-            The total number of interactables in `interactables`.
         """
         stage_info = scenes[self.scene_name].stage_info
         if stage_info:
@@ -231,8 +219,7 @@ class SceneDirector(BaseSceneDirector):
         deck = interactables.generate_card_weighted_selection(
             stages_cleared, self.expansions, self.is_sacrifice_enabled
         )
-        item_num = sum(len(category.cards) for category in interactables.categories)
-        return interactable_credit, interactables, deck, item_num
+        return interactable_credit, interactables, deck
         
     def _generate_interactable_card_selection(self, stages_cleared):
         """
@@ -256,7 +243,6 @@ class SceneDirector(BaseSceneDirector):
         categories = DirectorCardCategorySelection()
         if not self.interactables:
             return categories
-        index = 0
         for category in self.interactables.categories:
             cards = []
             for card in category.cards:
@@ -266,10 +252,7 @@ class SceneDirector(BaseSceneDirector):
                 skip_log = self.is_log_available and spawn_card._name == 'iscRadarTower'
                 if skip_command or skip_sacrifice or skip_log:
                     continue
-                # Since we'll need to access the index of a card in a list a lot,
-                # we store it in the card object for quick access.
-                cards.append(IndexedDirectorCard(card, index))
-                index += 1
+                cards.append(card)
             categories.add_category(category.name, category.weight, cards)
         return categories
 
@@ -297,7 +280,7 @@ class SceneDirector(BaseSceneDirector):
         values = []
         weights = []
         for card, weight in deck:
-            if card.cost <= max_cost:
+            if card.spawn_card.cost <= max_cost:
                 values.append(card)
                 weights.append(weight)
         if not values:
@@ -332,19 +315,20 @@ class SceneDirector(BaseSceneDirector):
             card = self._select_card(deck, interactable_credit)
             if not card:
                 break
+            spawn_card = card.spawn_card
             if card not in card_limits:
-                card_limits[card] = card.limit if card.limit > 0 else np.inf
+                card_limits[card] = spawn_card.limit if spawn_card.limit > 0 else np.inf
             if card_limits[card] > 0:
                 card_limits[card] -= 1
-                interactable_credit -= card.cost
+                interactable_credit -= spawn_card.cost
                 # In the game's source code after paying for the card, it attempts
                 # to spawn it, but this can still fail for a few reasons. We're
                 # implementing the skip for the Artifact of Sacrifice here.
-                if not self.is_sacrifice_enabled or not card.skip_with_sacrifice:
+                if not self.is_sacrifice_enabled or not spawn_card.skip_with_sacrifice:
                     # Incrementing a counter for each spawned item's index is a
                     # design choice isntead of storing the literal items in a
                     # list, since this allows efficient statistical computations.
-                    item_counter[card.index] += 1
+                    item_counter[spawn_card.index] += 1
 
     def populate_scene(self, stages_cleared=-1, print_result=True):
         """
@@ -370,7 +354,7 @@ class SceneDirector(BaseSceneDirector):
         if stages_cleared < 0:
             stages_cleared = scenes[self.scene_name].stage_order
         interactable_credit, interactables, deck, item_num = self._start(stages_cleared)
-        item_counter = [0] * item_num
+        item_counter = [0] * len(isc)
         self._populate_scene(interactable_credit, deck, item_counter)
         return self._process_generated_interactables(interactables, item_counter, print_result)
 
@@ -400,11 +384,21 @@ class SceneDirector(BaseSceneDirector):
         """
         if stages_cleared < 0:
             stages_cleared = scenes[self.scene_name].stage_order
-        interactable_credit, interactables, deck, item_num = self._start(stages_cleared)
-        item_counter = np.zeros((iterations, item_num), dtype=np.int32)
+        item_counter = np.zeros((iterations, len(isc)), dtype=np.int32)
         for i in range(iterations):
+            interactable_credit, interactables, deck = self._start(stages_cleared)
             self._populate_scene(interactable_credit, deck, item_counter[i])
-        return self._process_statistics(interactables, item_counter, print_result)
+        # We blend all possible DCCS with no expansion limit for printing
+        limit = DCCSBlender.CONTENT_MIX_LIMIT
+        DCCSBlender.CONTENT_MIX_LIMIT = np.inf
+        all_interactables = DCCSBlender.get_blended_dccs(
+            scenes[self.scene_name].stage_info.interactables.categories[0],
+            self.expansions,
+            stages_cleared,
+            None,
+        )
+        DCCSBlender.CONTENT_MIX_LIMIT = limit
+        return self._process_statistics(interactables, item_counter, print_result, all_interactables)
 
 
 class CampDirector(BaseSceneDirector):
@@ -450,16 +444,13 @@ class CampDirector(BaseSceneDirector):
             The DCCS with the interactable categories and their items.
         deck : list
             List of the filtered weighted spawn cards.
-        item_num : int
-            The total number of interactables in `interactables`.
         """
         interactable_credit = self._data.interactable_credits
         interactables = self._generate_interactable_card_selection()
         deck = interactables.generate_card_weighted_selection(
             0, self._expansions, self.is_sacrifice_enabled
         )
-        item_num = sum(len(category.cards) for category in interactables.categories)
-        return interactable_credit, interactables, deck, item_num
+        return interactable_credit, interactables, deck
 
     def _generate_interactable_card_selection(self):
         """
@@ -477,14 +468,10 @@ class CampDirector(BaseSceneDirector):
         """
         interactables = self._data.interactables
         categories = DirectorCardCategorySelection()
-        index = 0
         for category in interactables.categories:
             cards = []
             for card in category.cards:
-                # Since we'll need to access the index of a card in a list a lot,
-                # we store it in the card object for quick access.
-                cards.append(IndexedDirectorCard(card, index))
-                index += 1
+                cards.append(card)
             categories.add_category(category.name, category.weight, cards)
         return categories
     
@@ -515,15 +502,13 @@ class CampDirector(BaseSceneDirector):
             card = self._select_card(deck, interactable_credit)
             if not card:
                 break
-            interactable_credit -= card.cost
+            spawn_card = card.spawn_card
+            interactable_credit -= spawn_card.cost
             # In the game's source code after paying for the card, it attempts
             # to spawn it, but this can still fail for a few reasons. We're
             # implementing the skip for the Artifact of Sacrifice here.
-            if not self.is_sacrifice_enabled or not card.skip_with_sacrifice:
-                # Incrementing a counter for each spawned item's index is a
-                # design choice isntead of storing the literal items in a
-                # list, since this allows efficient statistical computations.
-                item_counter[card.index] += 1
+            if not self.is_sacrifice_enabled or not spawn_card.skip_with_sacrifice:
+                item_counter[spawn_card.index] += 1
 
     def populate_camp(self, print_result=True):
         """
@@ -540,8 +525,8 @@ class CampDirector(BaseSceneDirector):
             If the `print_result` argument is set to False, the list of the
             generated interactables will be returned.
         """
-        interactable_credit, interactables, deck, item_num = self._start()
-        item_counter = [0] * item_num
+        interactable_credit, interactables, deck = self._start()
+        item_counter = [0] * len(isc)
         self._populate_camp(interactable_credit, deck, item_counter)
         return self._process_generated_interactables(interactables, item_counter, print_result)
 
@@ -563,8 +548,8 @@ class CampDirector(BaseSceneDirector):
             interactables will be returned as a list of tuple info for each
             interactable.
         """
-        interactable_credit, interactables, deck, item_num = self._start()
-        item_counter = np.zeros((iterations, item_num), dtype=np.int32)
+        interactable_credit, interactables, deck = self._start()
+        item_counter = np.zeros((iterations, len(isc)), dtype=np.int32)
         for i in range(iterations):
             self._populate_camp(interactable_credit, deck, item_counter[i])
         return self._process_statistics(interactables, item_counter, print_result)

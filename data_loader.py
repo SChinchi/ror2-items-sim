@@ -257,6 +257,8 @@ Recipes = _init_recipes(load_data('recipes'))
 droptables = {name: _init_droptable(data) for name, data in load_data('droptables').items()}
 sc = {name: SpawnCard(data) for name, data in load_data('sc').items()}
 isc = {name: _init_isc(data) for name, data in load_data('isc').items()}
+for i, card in enumerate(isc.values()):
+    card.index = i
 bodies = {name: _init_body(data) for name, data in load_data('bodies').items()}
 drivers = {name: AISkillDriver(data) for name, data in load_data('masters')['AI_driver'].items()}
 for driver in drivers.values():
