@@ -1,5 +1,4 @@
 import random
-import warnings
 
 import numpy as np
 
@@ -37,10 +36,11 @@ class BaseSceneDirector:
                 values.append(card)
                 weights.append(weight)
         if not values:
-            return
+            return None
         return random.choices(values, weights)[0]
 
-    def _process_generated_interactables(self, interactables, item_counter, print_result):
+    @staticmethod
+    def _process_generated_interactables(interactables, item_counter, print_result):
         """
         Print or return the generated interactables.
 
@@ -65,7 +65,7 @@ class BaseSceneDirector:
                     count = item_counter[card.spawn_index]
                     if count:
                         print(f'Spawned {card.spawn_card.name} {count} times.')
-            return
+            return None
         out = []
         for category in interactables.categories:
             for card in category.cards:
@@ -75,7 +75,8 @@ class BaseSceneDirector:
                     out.extend([card.spawn_card._name] * count)
         return out
 
-    def _process_statistics(self, interactables, item_counter, print_result, all_interactables=None):
+    @staticmethod
+    def _process_statistics(interactables, item_counter, print_result, all_interactables=None):
         """
         Print or return the interactable spawn statistics.
 
@@ -83,7 +84,7 @@ class BaseSceneDirector:
         ----------
         interactables : DirectorCardCategorySelection
             The DCCS with the interactable categories and their items.
-        item_counter : array
+        item_counter : np.array
             Spawn counter for each available interactable for each iteration.
         print_result : bool
             Whether to print or return the result.
@@ -264,13 +265,13 @@ class SceneDirector(BaseSceneDirector):
         ----------
         deck : list
             List of the available spawn cards.
-        msx_cost : int
+        max_cost : int
             The remaining scene credits, as cards more expensive than this
             cannot be selected.
 
         Returns
         -------
-        IndexedDirectorCard
+        DirectorCard
             The selected card.
 
         Notes
@@ -284,7 +285,7 @@ class SceneDirector(BaseSceneDirector):
                 values.append(card)
                 weights.append(weight)
         if not values:
-            return
+            return None
         return random.choices(values, weights)[0]
     
     def _populate_scene(self, interactable_credit, deck, item_counter):
@@ -395,7 +396,6 @@ class SceneDirector(BaseSceneDirector):
             scenes[self.scene_name].stage_info.interactables.categories[0],
             self.expansions,
             stages_cleared,
-            None,
         )
         DCCSBlender.CONTENT_MIX_LIMIT = limit
         return self._process_statistics(interactables, item_counter, print_result, all_interactables)
@@ -458,7 +458,7 @@ class CampDirector(BaseSceneDirector):
 
         Returns
         -------
-        categories : list
+        categories : DirectorCardCategorySelection
             The list of available categories.
 
         Notes
