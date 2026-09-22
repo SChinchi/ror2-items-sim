@@ -46,7 +46,7 @@ class ClassicStageInfo:
 
         Returns
         -------
-        List of DirectorCardCategorySystem
+        List of DirectorCardCategorySelection
 
         Notes
         -----

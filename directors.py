@@ -163,7 +163,7 @@ class SceneDirector(BaseSceneDirector):
             radio scanner will not be available for scene population.
         expansions : set, optional
             The list of enabled expansions, which adds new scenes and
-            interactables. By default they are all enabled.
+            interactables. By default, they are all enabled.
 
         Warns
         -----
@@ -416,10 +416,10 @@ class CampDirector(BaseSceneDirector):
             one is for Kelp Props & Voidtouched Stage Monsters.
         is_sacrifice_enabled : bool, optional
             Whether the Artifact of Sacrifice is enabled, which will affect
-            which interactables can spawn. By default it's disabled.
+            which interactables can spawn. By default, it's disabled.
         expansions : set, optional
             The list of enabled expansions, which adds new scenes and
-            interactables. By default the Survivors of the Void expansion is
+            interactables. By default, the Survivors of the Void expansion is
             enabled and even if it is not included in the argument, it will be
             forcefully included as it is required for the Void Seeds to exist.
 

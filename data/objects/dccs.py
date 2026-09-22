@@ -421,7 +421,7 @@ class DCCSBlender:
         stages_cleared : int
             The number of stages cleared, which also affects which selections
             are available.
-        used_expansions : list
+        used_expansions : set
             The list of expansions available to satisfy any DCCS requirements.
 
         Returns
