@@ -271,3 +271,8 @@ dccs = {name: _init_dccs(data) for name, data in load_data('dccs').items()}
 scenes = {name: Scene(name, data) for name, data in load_data('scenes').items()}
 voidseed = {name: _init_camp(data) for name, data in load_data('voidcamp').items()}
 simulacrum = _init_simulacrum(load_data('simulacrum'))
+
+# There is not a clean way for objects to reference this script, so we cache any
+# references that might be needed.
+ShrineChanceBehavior.DOLL_ITEM = Items.ExtraShrineItem
+ShrineChanceBehavior.DOLL_DROPTABLE = droptables['dtChanceDoll']

@@ -19,7 +19,10 @@ FREE_CHEST_ALLOWED = True
 TRADE_REGEN_SCRAP = True
 USE_GOLD_PORTAL = False
 USE_ARTIFACT_PORTAL = False
-
+# All items are picked up indiscriminately for item tier statistics, but Purity
+# can have negative effects for luck rolls, so we need to know whether in a
+# normal run one intends to actually pick it up.
+USE_PURITY = False
 
 class LootReport:
     """Logger for stats about spawned interactables and loot during a run."""
@@ -262,6 +265,10 @@ class Inventory:
         self.has_recycler = False
         self.can_recycle = False
         self.has_card = False
+        self.luck = 0
+
+    def _update_luck(self):
+        self.luck = self.count(Items.Clover) + USE_PURITY * self.count(Items.LunarBadLuck)
         
     def give_item(self, item, count=1):
         """
@@ -278,7 +285,13 @@ class Inventory:
         -------
         None
         """
+        if not isinstance(item, ItemDef):
+            raise ValueError(f'{item} is not an ItemDef.')
+        if count < 0:
+            self.remove_item(item, -count)
+            return
         self.items[item] += count
+        self._update_luck()
         
     def remove_item(self, item, count=1):
         """
@@ -296,10 +309,16 @@ class Inventory:
         -------
         None
         """
-        if isinstance(item, ItemDef) and item in self.items:
+        if not isinstance(item, ItemDef):
+            raise ValueError(f'{item} is not an ItemDef.')
+        if count < 0:
+            self.give_item(item, -count)
+            return
+        if item in self.items:
             self.items[item] -= count
             if self.items[item] <= 0:
                 del self.items[item]
+            self._update_luck()
 
     def count(self, item):
         """
@@ -343,6 +362,7 @@ class Inventory:
         self.has_card = False
         self.has_recycler = False
         self.can_recycle = False
+        self.luck = 0
 
 
 class Run:

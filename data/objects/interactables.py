@@ -1,6 +1,6 @@
 import random
 
-from ._utils import round_value
+from ._utils import check_roll
 from .droptables import _filter_tier_items
 
 
@@ -102,12 +102,30 @@ class RouletteChestController:
 
 class ShrineChanceBehavior:
     SCRIPT = -5094190573479519615
+    DOLL_ITEM = None
+    DOLL_DROPTABLE = None
 
     @staticmethod
     def generate_purchase_action(isc, tier_droplists, inventory):
-        drop = isc.drop_table.generate_loot_drop_action(tier_droplists)
-        max_drops = 2
-        return lambda: [drop() for _ in range(max_drops)]
+        def generate_loot():
+            max_drops = 2
+            loot = []
+            # The loot is not added to the inventory at this point, so we need
+            # to keep track if the first item is a Chance Doll so it can
+            # influence the second drop.
+            found_doll = False
+            for _ in range(max_drops):
+                doll_stacks = found_doll + inventory.count(ShrineChanceBehavior.DOLL_ITEM)
+                use_doll = False
+                if doll_stacks:
+                    use_doll = check_roll(30 + doll_stacks * 10, inventory)
+                loot.append(doll_drop() if use_doll else normal_drop())
+                found_doll = loot[-1] == ShrineChanceBehavior.DOLL_ITEM
+            return loot
+
+        normal_drop = isc.drop_table.generate_loot_drop_action(tier_droplists)
+        doll_drop = ShrineChanceBehavior.DOLL_DROPTABLE.generate_loot_drop_action(tier_droplists)
+        return generate_loot
 
 
 class OptionChestBehavior:
