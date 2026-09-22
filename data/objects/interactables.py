@@ -153,6 +153,47 @@ class OptionChestBehavior:
         return lambda: OptionChestBehavior._drop_unique_loot(all_items, all_weights, max_drops)
 
 
+class HalcyoniteShrineInteractable:
+    SCRIPT = 1412567959929496626
+    DROPTABLE = None
+    STORM_DROPTABLE = None
+
+    @staticmethod
+    def _drop_combined_unique_loot(items, weights, storm_items, storm_weights):
+        items = items.copy()
+        weights = weights.copy()
+        storm_items = storm_items.copy()
+        storm_weights = storm_weights.copy()
+        drops = []
+        for _ in range(3):
+            index = random.choices(range(len(items)), weights)[0]
+            drops.append(items.pop(index))
+            weights.pop(index)
+        for _ in range(2):
+            index = random.choices(range(len(storm_items)), storm_weights)[0]
+            drops.append(storm_items.pop(index))
+            storm_weights.pop(index)
+        return drops
+    
+    @staticmethod
+    def generate_purchase_action(tier_droplists):
+        items, weights = _filter_tier_items(HalcyoniteShrineInteractable.DROPTABLE, tier_droplists)
+        all_items = []
+        all_weights = []
+        for tier_items, weight in zip(items, weights):
+            all_items.extend(tier_items)
+            all_weights.extend([weight] * len(tier_items))
+        storm_items, storm_weights = _filter_tier_items(HalcyoniteShrineInteractable.STORM_DROPTABLE, tier_droplists)
+        all_storm_items = []
+        all_storm_weights = []
+        for tier_items, weight in zip(storm_items, storm_weights):
+            all_storm_items.extend(tier_items)
+            all_storm_weights.extend([weight] * len(tier_items))
+        return lambda: HalcyoniteShrineInteractable._drop_combined_unique_loot(
+            all_items, all_weights, all_storm_items, all_storm_weights
+        )
+
+
 class DelusionChestController:
     SCRIPT = -3197331057398115314
 

@@ -297,7 +297,8 @@ def extract_file_data(src_path=FILES_DIR):
         data['drop_table'] = dt
         controller_name = None
         for controller in (ChestBehavior, RouletteChestController, MultiShopController,
-                           ShopTerminalBehavior, ShrineChanceBehavior, OptionChestBehavior):
+                           ShopTerminalBehavior, ShrineChanceBehavior, OptionChestBehavior,
+                           HalcyoniteShrineInteractable):
             component = _get_component(ids, data['controller'], controller)
             if component:
                 controller_name = controller.__name__

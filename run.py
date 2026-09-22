@@ -216,11 +216,13 @@ class LootReport:
             ('iscCasinoChest', 'adaptive_chest'),
             ('iscVoidCamp', 'void_seed'),
             ('iscVoidChest', 'void_cradle'),
+            ('iscShrineHalcyonite', 'halcyonite'),
         ):
             total[name] = isc_counter.get(isc_name, 0)
         total['mountain_shrine'] += isc_counter.get('iscShrineBossSandy', 0)
         total['mountain_shrine'] += isc_counter.get('iscShrineBossSnowy', 0)
         total['void_cradle'] += isc_counter.get('iscVoidChestSacrificeOn', 0)
+        total['halcyonite'] += isc_counter.get('iscShrineHalcyoniteTier1', 0)
         total['drones'] = sum(count for isc, count in isc_counter.items() if 'Drone' in isc)
         total['tricorn'] = equipment_counter.get(Equipment.BossHunter, 0)
         out['total'] = total
@@ -461,6 +463,11 @@ class Run:
         actions['iscVoidTriple'] = OptionChestBehavior.generate_purchase_action(
             droptables['dtVoidTriple'], self._tier_droplists, 3
         )
+        # Halcyonite Shrine
+        for spawn_card in ('iscShrineHalcyonite', 'iscShrineHalcyoniteTier1'):
+            actions[spawn_card] = HalcyoniteShrineInteractable.generate_purchase_action(
+                self._tier_droplists,
+            )
         # Green printer
         actions['green_printer'] = ShopTerminalBehavior.generate_purchase_action(
             isc['iscDuplicatorLarge'], self._tier_droplists, self._inventory
@@ -786,6 +793,12 @@ class Run:
                     item = max(drops, key=lambda x: x.tier._tier)
                     self._inventory.give_item(item)
                     loot[type(item)].append(item)
+                elif 'ShrineHalcyonite' in isc_name:
+                    for _ in range(self._num_players):
+                        drops = self._actions[isc_name]()
+                        sorted_items = sorted(drops, key=lambda x: x.tier._tier, reverse=True)
+                        for item in sorted_items[:3]:
+                            self._inventory.give_item(item)
                 else:
                     for item in self._actions[isc_name]():
                         if isinstance(item, ItemDef):
