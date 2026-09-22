@@ -433,7 +433,7 @@ class DCCSBlender:
         An implementation of `RoR2.DCCSBlender.GetBlendedDccs`.
         """
         weighted_selection = DCCSBlender.generate_weighted_category_selections(
-            dccs_category, expansions, stages_cleared
+            dccs_category, expansions, stages_cleared, used_expansions
         )
         selected_dccs = []
         if used_expansions is None:
@@ -457,7 +457,7 @@ class DCCSBlender:
         blended_dccs.expansions_in_effect = used_expansions
         return blended_dccs
 
-    def generate_weighted_category_selections(dccs_category, expansions, stages_cleared):
+    def generate_weighted_category_selections(dccs_category, expansions, stages_cleared, used_expansions=None):
         """
         Collect all available DCCS from the selected category.
 
@@ -471,6 +471,10 @@ class DCCSBlender:
         stages_cleared : int
             The number of cleared stages, which affects which spawn cards
             will be available.
+        used_expansions : set
+            The list of expansions used already in blending. If assigned,
+            conditional pools are added until we fill up to the maximum allowed
+            number of used expansions.
 
         Returns
         -------
@@ -487,11 +491,13 @@ class DCCSBlender:
             if (pool_entry.dccs.is_available(stages_cleared) and
                 DCCSBlender.are_conditions_met(pool_entry, expansions)):
                 is_entry_available = True
-                if len(expansions) > 0:
+                if used_expansions is not None:
                     for dlc in pool_entry.required_dlc:
-                        if dlc not in expansions:
-                            is_entry_available = False
-                            break;
+                        if dlc not in used_expansions:
+                            if len(used_expansions) >= DCCSBlender.CONTENT_MIX_LIMIT:
+                                is_entry_available = False
+                                break
+                            used_expansions.add(dlc)
                 if is_entry_available:
                     has_selected_any_conditional_entries = True
                     weighted_selection.append((pool_entry, pool_entry.weight))
