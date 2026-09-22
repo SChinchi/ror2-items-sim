@@ -696,13 +696,13 @@ class Run:
                         # I imagine it is an unlikely behaviour that someone
                         # would recycle a Trophy Hunter's Tricon for the small
                         # chance of getting an Executive Card, so it is skipped.
-                        if item != Equipment.BossHunter:
-                            item = self._reroll_item(equipment)
+                        if equipment != Equipment.BossHunter:
+                            equipment = self._reroll_item(equipment)
                             if equipment == Equipment.MultiShopCard:
-                                self.has_recycler = False
-                                self.can_recycle = False
+                                inventory.has_recycler = False
+                                inventory.can_recycle = False
                     else:
-                        self.can_recycle = True
+                        inventory.can_recycle = True
         if equipment == Equipment.MultiShopCard and not inventory.has_card:
             inventory.has_card = True
         inventory.equipment.append(equipment)
