@@ -17,13 +17,13 @@ class BaseSceneDirector:
         ----------
         deck : list
             List of the available spawn cards.
-        msx_cost : int
+        max_cost : int
             The remaining scene credits, as cards more expensive than this
             cannot be selected.
 
         Returns
         -------
-        IndexedDirectorCard
+        DirectorCard
             The selected card.
 
         Notes
@@ -75,7 +75,7 @@ class BaseSceneDirector:
                     out.extend([card.spawn_card._name] * count)
         return out
 
-    def _process_statistics(sef, interactables, item_counter, print_result, all_interactables=None):
+    def _process_statistics(self, interactables, item_counter, print_result, all_interactables=None):
         """
         Print or return the interactable spawn statistics.
 
@@ -353,7 +353,7 @@ class SceneDirector(BaseSceneDirector):
         """
         if stages_cleared < 0:
             stages_cleared = scenes[self.scene_name].stage_order
-        interactable_credit, interactables, deck, item_num = self._start(stages_cleared)
+        interactable_credit, interactables, deck = self._start(stages_cleared)
         item_counter = [0] * len(isc)
         self._populate_scene(interactable_credit, deck, item_counter)
         return self._process_generated_interactables(interactables, item_counter, print_result)
