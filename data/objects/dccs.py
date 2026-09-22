@@ -408,6 +408,7 @@ class DccsPool:
 class DCCSBlender:
     CONTENT_MIX_LIMIT = 2
 
+    @staticmethod
     def get_blended_dccs(dccs_category, expansions, stages_cleared, used_expansions=None):
         """
         Blend all available DCCS from the selected category in the DccsPool.
@@ -457,6 +458,7 @@ class DCCSBlender:
         blended_dccs.expansions_in_effect = used_expansions
         return blended_dccs
 
+    @staticmethod
     def generate_weighted_category_selections(dccs_category, expansions, stages_cleared, used_expansions=None):
         """
         Collect all available DCCS from the selected category.
@@ -507,6 +509,7 @@ class DCCSBlender:
                     weighted_selection.append((pool_entry, pool_entry.weight))
         return weighted_selection
 
+    @staticmethod
     def are_conditions_met(pool_entry, expansions):
         """
         Whether this DCCS meets the requirements.
@@ -528,6 +531,7 @@ class DCCSBlender:
         """
         return all(dlc in expansions for dlc in pool_entry.required_dlc)
 
+    @staticmethod
     def ensure_all_categories_exist(blended_dccs, selected_dccs):
         """
         Add any missing categories a selected DCCS to the blended one.
@@ -552,6 +556,7 @@ class DCCSBlender:
                 if blended_dccs.get_category_index(category.name) == -1:
                     blended_dccs.add_category(category.name, 1, [])
 
+    @staticmethod
     def merge_categories(blended_dccs, selected_dccs):
         """
         Blend all selected DCCS.
