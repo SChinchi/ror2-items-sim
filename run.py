@@ -19,6 +19,7 @@ FREE_CHEST_ALLOWED = True
 TRADE_REGEN_SCRAP = True
 USE_GOLD_PORTAL = False
 USE_ARTIFACT_PORTAL = False
+USE_GREEN_PORTAL = False
 # All items are picked up indiscriminately for item tier statistics, but Purity
 # can have negative effects for luck rolls, so we need to know whether in a
 # normal run one intends to actually pick it up.
@@ -395,6 +396,7 @@ class Run:
         self._num_players = num_players
         self._expansions = set(expansions)
         self._is_sotv_enabled = Expansion.SOTV in self._expansions
+        self._is_sots_enabled = Expansion.SOTS in self._expansions
         self._is_command_enabled = False
         self._is_sacrifice_enabled = False
         self._is_delusion_enabled = is_delusion_enabled
@@ -430,6 +432,8 @@ class Run:
         self._explicit_next_scene_name = None
         self._blue_portals_opened = 0
         self._void_fields_visited = False
+        self._meridian_visited = False
+        self._false_son_boss_complete = False
         self._inventory.reset()
         self.stats.reset_data()
 
@@ -558,6 +562,8 @@ class Run:
             interactables.extend(['iscChest1'] * 4)
         if scene_name == SceneName.VF2:
             interactables.append('iscChest2' if random.random() < .5 else 'iscScrapper')
+        if scene_name == SceneName.PM:
+            interactables.extend(['iscChest2'] * 4)
         if scenes[scene_name].scene_type == 1:
             if LOCKBOX_ALLOWED:
                 # For multiplayer we assume the Rusted Keys are as evenly spread out
@@ -819,7 +825,10 @@ class Run:
         scene_name = self._scene_name
         if scene_name == SceneName.VF:
             self._void_fields_visited = True
-        stage_info = self._scene_data.stage_info
+        elif scene_name == SceneName.PM:
+            self._meridian_visited = True
+            self._false_son_boss_complete = True
+        stage_order = self._scene_data.stage_order
         self._scene_director._start(self._stages_cleared)
         stage_dccs = self._scene_director.monsters
         portals = set()
@@ -846,7 +855,7 @@ class Run:
             # portal whether it exists or not to ensure the condition is met.
             if self._stages_cleared + 1 == void_fields:
                 portals.add(Portal.B)
-            elif self._scene_data.stage_order in stage_preferences:
+            elif stage_order in stage_preferences:
                 newt = self._scene_data.newt
                 if newt:
                     newt = random.randint(*newt)
@@ -881,6 +890,25 @@ class Run:
 
         if scene_name == SceneName.SM:
             portals.add(Portal.A)
+
+        colossus_path_stages = (SceneName.RA, SceneName.TC, SceneName.GD)
+        if 'iscShrineHalcyonite' in interactables or 'iscShrineHalcyoniteTier1' in interactables:
+            if (stage_order in (0, 1, 2)
+                and scene_name not in colossus_path_stages
+                and not self._meridian_visited):
+                portals.add(Portal.Gr)
+            elif stage_order in (3, 4):
+                portals.add(Portal.G)
+            elif self._meridian_visited:
+                portals.add(Portal.G)
+
+        if not self._false_son_boss_complete:
+            if scene_name in colossus_path_stages:
+                portals.add(Portal.Gr)
+            elif scene_name == SceneName.GC and self._is_sots_enabled:
+                next_stage_order = scenes[self._next_scene_name].stage_order
+                if next_stage_order in (1, 2, 3):
+                    portals.add(Portal.Gr)
 
         regen_scraps = self._inventory.count(Items.RegeneratingScrap)
         if TRADE_REGEN_SCRAP and regen_scraps and 'iscDuplicatorLarge' in interactables:
@@ -918,19 +946,35 @@ class Run:
         """
         Choose whether to use a portal or advance to the next stage naturally.
 
-        The order of preference is Null > Artifact > Gold > Lunar Seer > RNG.
+        The order of preference is Null > Artifact > Green > Gold > Lunar Seer > RNG.
+        
         Returns
         -------
         None
         """
         portals = self.stats.portals[-1]
         blue = Portal.B in portals
+        take_gold_portal = USE_GOLD_PORTAL and Portal.G in portals
         self._explicit_next_scene_name = None
         if blue and self._stages_cleared + 1 == void_fields and not self._void_fields_visited:
             self._explicit_next_scene_name = SceneName.VF
         elif USE_ARTIFACT_PORTAL and Portal.A in portals:
             self._explicit_next_scene_name = SceneName.BA
-        elif USE_GOLD_PORTAL and Portal.G in portals:
+        elif USE_GREEN_PORTAL and Portal.Gr in portals and not take_gold_portal:
+            # If we're on the Colossus path, we can get both a green and a gold
+            # portal. Normally, the green portal has higher priority, but it is
+            # possible to visit the Gilded Coast before getting back to the
+            # path.
+            next_stage_order = scenes[self._next_scene_name].stage_order
+            if next_stage_order == 1:
+                self._explicit_next_scene_name = SceneName.RA
+            elif next_stage_order == 2:
+                self._explicit_next_scene_name = SceneName.TC
+            elif next_stage_order == 3:
+                self._explicit_next_scene_name = SceneName.PM
+            else:
+                raise ValueError('Green portal spawned on some unexpected stage.')
+        elif take_gold_portal:
             self._explicit_next_scene_name = SceneName.GC
         elif blue and self._scene_data.stage_order in stage_preferences:
             preferences = stage_preferences[self._scene_data.stage_order]
@@ -955,14 +999,20 @@ class Run:
         An implementation of `RoR2.BazaarController.SetUpSeerStations`.
         """
         if not self._next_scene_name:
-            return
-        stage_order = self._scene_data.stage_order
+            return []
+        stage_order = scenes[self._next_scene_name].stage_order
         destinations = [scene for scene, data in scenes.items()
                         if stage_order == data.stage_order and self._can_pick_stage(scene)]
         replacements = [SceneName.GC]
+        weights = [0.05]
         if self._is_sotv_enabled and self._stages_cleared >= 4:
             replacements.append(SceneName.VL)
-        replacement_chance = .05 * len(replacements)
+            weights.append(0.05)
+        if self._is_sots_enabled and not self._false_son_boss_complete:
+            replacements.append(SceneName.GC)
+            weights.append(0.1)
+        replacement_chance = sum(weights)
+        
         stations = []
         for _ in range(2):
             if not destinations:
@@ -970,7 +1020,7 @@ class Run:
             random.shuffle(destinations)
             target_scene = destinations.pop()
             if random.random() < replacement_chance:
-                target_scene = random.choice(replacements)
+                target_scene = random.choices(replacements, weights)[0]
             stations.append(target_scene)
         return stations
 

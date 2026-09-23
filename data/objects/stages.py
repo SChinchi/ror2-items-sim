@@ -52,27 +52,31 @@ class ClassicStageInfo:
         -----
         A partial implementation of `RoR2.ClassicStageInfo.RebuildCards`.
         """
-        monster_pool_category = self.monsters.generate_weighted_category_selection(
-            expansions, stages_cleared,
-        )
-        if not self.is_category_selection_family(monster_pool_category):
-            monsters = DCCSBlender.get_blended_dccs(
-                monster_pool_category, expansions, stages_cleared, None
+        monsters = None
+        interactables = None
+        if self.monsters:
+            monster_pool_category = self.monsters.generate_weighted_category_selection(
+                expansions, stages_cleared,
             )
-        else:
-            monsters = self.monsters.generate_weight_selection_from_single_category(
-                monster_pool_category, expansions, stages_cleared
-            )
-        if monsters.expansions_in_effect:
-            interactables = DCCSBlender.get_blended_dccs(
-                self.interactables.categories[0], expansions, stages_cleared,
-                monsters.expansions_in_effect
-            )
-        else:
-            interactables = DCCSBlender.get_blended_dccs(
-                self.interactables.categories[0], expansions, stages_cleared,
-                None
-            )
+            if not self.is_category_selection_family(monster_pool_category):
+                monsters = DCCSBlender.get_blended_dccs(
+                    monster_pool_category, expansions, stages_cleared, None
+                )
+            else:
+                monsters = self.monsters.generate_weight_selection_from_single_category(
+                    monster_pool_category, expansions, stages_cleared
+                )
+        if monsters and self.interactables:
+            if monsters.expansions_in_effect:
+                interactables = DCCSBlender.get_blended_dccs(
+                    self.interactables.categories[0], expansions, stages_cleared,
+                    monsters.expansions_in_effect
+                )
+            else:
+                interactables = DCCSBlender.get_blended_dccs(
+                    self.interactables.categories[0], expansions, stages_cleared,
+                    None
+                )
         return monsters, interactables
 
     def is_category_selection_family(self, category):

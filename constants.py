@@ -49,6 +49,7 @@ class Portal:
     C = 'celestial'
     D = 'deepvoid'
     G = 'gold'
+    Gr = 'green'
     N = 'null'
     V = 'void'
 

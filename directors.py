@@ -390,14 +390,17 @@ class SceneDirector(BaseSceneDirector):
             interactable_credit, interactables, deck = self._start(stages_cleared)
             self._populate_scene(interactable_credit, deck, item_counter[i])
         # We blend all possible DCCS with no expansion limit for printing
-        limit = DCCSBlender.CONTENT_MIX_LIMIT
-        DCCSBlender.CONTENT_MIX_LIMIT = np.inf
-        all_interactables = DCCSBlender.get_blended_dccs(
-            scenes[self.scene_name].stage_info.interactables.categories[0],
-            self.expansions,
-            stages_cleared,
-        )
-        DCCSBlender.CONTENT_MIX_LIMIT = limit
+        scene_interactables = scenes[self.scene_name].stage_info.interactables
+        all_interactables = DirectorCardCategorySelection()
+        if scene_interactables:
+            limit = DCCSBlender.CONTENT_MIX_LIMIT
+            DCCSBlender.CONTENT_MIX_LIMIT = np.inf
+            all_interactables = DCCSBlender.get_blended_dccs(
+                scene_interactables.categories[0],
+                self.expansions,
+                stages_cleared,
+            )
+            DCCSBlender.CONTENT_MIX_LIMIT = limit
         return self._process_statistics(interactables, item_counter, print_result, all_interactables)
 
 
