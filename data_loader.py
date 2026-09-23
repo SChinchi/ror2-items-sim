@@ -276,5 +276,3 @@ simulacrum = _init_simulacrum(load_data('simulacrum'))
 # references that might be needed.
 ShrineChanceBehavior.DOLL_ITEM = Items.ExtraShrineItem
 ShrineChanceBehavior.DOLL_DROPTABLE = droptables['dtChanceDoll']
-HalcyoniteShrineInteractable.DROPTABLE = droptables['dtShrineHalcyoniteTier3']
-HalcyoniteShrineInteractable.STORM_DROPTABLE = droptables['dtShrineHalcyoniteTier2']

@@ -470,7 +470,8 @@ class Run:
         # Halcyonite Shrine
         for spawn_card in ('iscShrineHalcyonite', 'iscShrineHalcyoniteTier1'):
             actions[spawn_card] = HalcyoniteShrineInteractable.generate_purchase_action(
-                self._tier_droplists,
+                droptables['dtShrineHalcyoniteTier3'], droptables['dtShrineHalcyoniteTier2'],
+                self._tier_droplists, 5
             )
         # Green printer
         actions['green_printer'] = ShopTerminalBehavior.generate_purchase_action(
@@ -481,9 +482,20 @@ class Run:
             actions[f'cell{tier}_drop'] = OptionChestBehavior.generate_purchase_action(
                 droptables[f'dtTier{tier}Item'], self._tier_droplists, 3
             )
+        # Meridian geode mission drops
+        actions['meridian_geode'] = HalcyoniteShrineInteractable.generate_purchase_action(
+            droptables['dtShrineHalcyoniteTier1'], droptables['dtShrineHalcyoniteTier1'],
+            self._tier_droplists, 3
+        )
         # Boss drops
         actions['teleporter_drop'] = lambda: random.choice(self._tier_droplists[1])
         actions['AWU_drop'] = lambda: random.choice(self._tier_droplists[2])
+        actions['false_son_drop'] = OptionChestBehavior.generate_purchase_action(
+            droptables['dtChest2'], self._tier_droplists, 3
+        )
+        actions['false_son_aurelionite_drop'] = OptionChestBehavior.generate_purchase_action(
+            droptables['AurelioniteHeartPickupDropTable'], self._tier_droplists, 3
+        )
         return actions
 
     def _pick_next_stage_scene(self, destination_group=None):
@@ -827,7 +839,6 @@ class Run:
             self._void_fields_visited = True
         elif scene_name == SceneName.PM:
             self._meridian_visited = True
-            self._false_son_boss_complete = True
         stage_order = self._scene_data.stage_order
         self._scene_director._start(self._stages_cleared)
         stage_dccs = self._scene_director.monsters
@@ -926,6 +937,20 @@ class Run:
         elif scene_name == SceneName.GC:
             self._inventory.give_item(Items.TitanGoldDuringTP, self._num_players)
             loot[ItemDef].extend([Items.TitanGoldDuringTP] * self._num_players)
+        elif scene_name == SceneName.PM:
+            for _ in range(self._num_players):
+                drops = self._actions['meridian_geode']()
+                item = max(drops, key=lambda x: x.tier._tier)
+                self._inventory.give_item(item)
+                loot[ItemDef].append(item)
+            self._false_son_boss_complete = True
+            boss_drop = ('false_son_drop' if not self._inventory.count(Items.TitanGoldDuringTP)
+                        else 'false_son_aurelionite_drop')
+            for _ in range(self._num_players):
+                drops = self._actions[boss_drop]()
+                item = max(drops, key=lambda x: x.tier._tier)
+                self._inventory.give_item(item)
+                loot[ItemDef].append(item)
 
         if scene_name == SceneName.AD:
             scene_name += '-open' if self._scene_director.is_bonus_credits_available else '-closed'

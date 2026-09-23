@@ -155,42 +155,44 @@ class OptionChestBehavior:
 
 class HalcyoniteShrineInteractable:
     SCRIPT = 1412567959929496626
-    DROPTABLE = None
-    STORM_DROPTABLE = None
 
     @staticmethod
-    def _drop_combined_unique_loot(items, weights, storm_items, storm_weights):
+    def _drop_combined_unique_loot(items, weights, storm_items, storm_weights, max_options):
         items = items.copy()
         weights = weights.copy()
         storm_items = storm_items.copy()
         storm_weights = storm_weights.copy()
         drops = []
-        for _ in range(3):
-            index = random.choices(range(len(items)), weights)[0]
-            drops.append(items.pop(index))
-            weights.pop(index)
-        for _ in range(2):
-            index = random.choices(range(len(storm_items)), storm_weights)[0]
-            drops.append(storm_items.pop(index))
-            storm_weights.pop(index)
+        normal_drops = storm_drops = 0
+        for _ in range(max_options):
+            if storm_drops <= normal_drops - 2:
+                index = random.choices(range(len(storm_items)), storm_weights)[0]
+                drops.append(storm_items.pop(index))
+                storm_weights.pop(index)
+                storm_drops += 1
+            else:
+                index = random.choices(range(len(items)), weights)[0]
+                drops.append(items.pop(index))
+                weights.pop(index)
+                normal_drops += 1
         return drops
     
     @staticmethod
-    def generate_purchase_action(tier_droplists):
-        items, weights = _filter_tier_items(HalcyoniteShrineInteractable.DROPTABLE, tier_droplists)
+    def generate_purchase_action(normal_droptable, storm_droptable, tier_droplists, max_options):
+        items, weights = _filter_tier_items(normal_droptable, tier_droplists)
         all_items = []
         all_weights = []
         for tier_items, weight in zip(items, weights):
             all_items.extend(tier_items)
             all_weights.extend([weight] * len(tier_items))
-        storm_items, storm_weights = _filter_tier_items(HalcyoniteShrineInteractable.STORM_DROPTABLE, tier_droplists)
+        storm_items, storm_weights = _filter_tier_items(storm_droptable, tier_droplists)
         all_storm_items = []
         all_storm_weights = []
         for tier_items, weight in zip(storm_items, storm_weights):
             all_storm_items.extend(tier_items)
             all_storm_weights.extend([weight] * len(tier_items))
         return lambda: HalcyoniteShrineInteractable._drop_combined_unique_loot(
-            all_items, all_weights, all_storm_items, all_storm_weights
+            all_items, all_weights, all_storm_items, all_storm_weights, max_options
         )
 
 

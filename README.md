@@ -2,7 +2,7 @@
 
 Simulate item generation for any stage and collect statistics for the spawned interactables, or simulate a run session to see how many and what items are encountered.
 
-_In terms of extracted assets it's updated for version 1.4.1, but some Seekers of the Storm and Alloyed Collective features have not been implemented fully for the run simulator. This includes the new paths for the 2 DLCs and the item effects of Sale Star and Functional Coupler._
+_In terms of extracted assets it's updated for version 1.4.1, but some Seekers of the Storm and Alloyed Collective features have not been implemented fully for the run simulator. This includes the Alloyed Collective path and the item effects of Sale Star and Functional Coupler._
 
 ## How to use
 
