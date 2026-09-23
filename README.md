@@ -54,8 +54,10 @@ The `Run` class is an implementation of a run session, which can be used to anal
   - The order of priority is Executive Card > Recycler > Trophy Hunter's Tricorn > hidden terminal if available to try its luck on the aforementioned equipment > whatever.
   - On picking up an equipment if `Run.CARD_BIAS_ENABLED` is enabled and the equipment is not any of the above, it will use the Recycler if available.
   - Drifter's Tinker is not taken into account in all of this, as is not MUL-T's Retool.
-- Due to their interactive and rare nature, Adaptive Chests are not looted but their encounter is logged.
-- Similarly, the Temporary Item Distributor's loot is not logged. This is the case for any sources of temporary items. In theory this can have a small effect on items that spawn more interactables, but statistically it should be negligible unless one is using Drifter's Salvage.
+- The following interactables are not looted due to special circumstances, but their encounter is logged:
+  - Adaptive Chests drop loot in an interactive way.
+  - Temporary Item Distributors spawn temp items, which are ignored in general. In theory this can have a small effect on items that spawn more interactables, but statistically it should be negligible unless one is using Drifter's Salvage.
+  - Triple Drone Shops roll for drones according to the difficulty coefficient. Since there is no time element in this simulation, it is impossible to predict how their distribution scales.
 - It doesn't utilise printers and scrappers to optimise the build, as this technically doesn't change the number of items within an item tier.
 - Void items don't corrupt their normal counterparts both as a consequence of using a unified inventory and for decision-making reasons.
 - While it can handle items which spawn more interactables, e.g., Rusted Key, the lack of corruption means the Encrusted Cache will not spawn.
@@ -65,7 +67,7 @@ The `Run` class is an implementation of a run session, which can be used to anal
 - The Lunar Cauldrons and Shop in the Bazaar Between Time are not utilised as they are only about context-related decisions. However, one can set a stage preference for the Lunar Seer for a bias towards specific stages. One can also control when or whether to visit the Void Fields at all.
 - The same reasoning applies to Chef's recipes. As such, there is no need to track the number of Food tier items.
 - The code calculates how many Newt Altars can spawn on each stage, but it does not take into account whether they are reachable in order to open a Blue Portal. It is assumed that if at least one altar has spawned, it can be reached. Only one of the Distant Roost variants has a true chance of not spawning any altars, in which case the Lunar Seer cannot be used. However, a portal is forcefully opened for the Void Fields, simulating the scenario where if the player wants to visit the Void Fields after the first stage and is unable to, they restart the game.
-- The choice to use the Gold/Artifact portals can be toggled. If more than one portal options are available on the same stage, the priority is Blue (for Void Fields) > Artifact > Gold (during the Colossus path) > Green > Gold > Blue (for Lunar Seer) > normal stage RNG.
+- The choice to use the Green/Gold/Artifact portals can be toggled. If more than one portal options are available on the same stage, the priority is Blue (for Void Fields) > Artifact > Gold (during the Colossus path) > Green > Gold > Blue (for Lunar Seer) > normal stage RNG.
 - Bulwark's Ambry assumes the Artifact of Command is selected, which affects interactable generation.
 
 Throughout the stages it keeps track of various things, e.g., on which stage the Executive Card was found, how many multishops were purchased with it, how many Regenerating Scrap the player had at the end of each stage, etc.

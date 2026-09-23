@@ -103,7 +103,7 @@ class LootReport:
         """
         self.scenes.append(scene_name)
         self.portals.append(spawned_portals)
-        self.dccs.append(dccs.name)
+        self.dccs.append(dccs.name if dccs else 'None')
         self.interactables.append(interactables)
         self.loot.append(loot)
         item_count = [self._inventory.count(item) for item in
@@ -218,13 +218,17 @@ class LootReport:
             ('iscVoidCamp', 'void_seed'),
             ('iscVoidChest', 'void_cradle'),
             ('iscShrineHalcyonite', 'halcyonite'),
+            ('iscTemporaryItemsShop', 'temp_item_shop'),
+            ('iscTripleDroneShop', 'drone_shop'),
+            ('iscDroneCombinerStation', 'drone_combiner'),
+            ('iscDroneScrapper', 'drone_scrapper')
         ):
             total[name] = isc_counter.get(isc_name, 0)
         total['mountain_shrine'] += isc_counter.get('iscShrineBossSandy', 0)
         total['mountain_shrine'] += isc_counter.get('iscShrineBossSnowy', 0)
         total['void_cradle'] += isc_counter.get('iscVoidChestSacrificeOn', 0)
         total['halcyonite'] += isc_counter.get('iscShrineHalcyoniteTier1', 0)
-        total['drones'] = sum(count for isc, count in isc_counter.items() if 'Drone' in isc)
+        total['drones'] = sum(count for isc, count in isc_counter.items() if 'iscBroken' in isc)
         total['tricorn'] = equipment_counter.get(Equipment.BossHunter, 0)
         out['total'] = total
         stage_card_found = -1
@@ -487,6 +491,8 @@ class Run:
             droptables['dtShrineHalcyoniteTier1'], droptables['dtShrineHalcyoniteTier1'],
             self._tier_droplists, 3
         )
+        # Solutional Haunt vault
+        actions['vault_han-d'] = lambda: [random.choice(self._tier_droplists[0]) for _ in range(3)]
         # Boss drops
         actions['teleporter_drop'] = lambda: random.choice(self._tier_droplists[1])
         actions['AWU_drop'] = lambda: random.choice(self._tier_droplists[2])
@@ -568,14 +574,63 @@ class Run:
             self._scene_director.is_command_enabled = is_command_enabled
         for _ in range(interactables.count('iscVoidCamp')):
             interactables.extend(self._camp_director.populate_camp(False))
-        if scene_name in (SceneName.AD, SceneName.SG):
+
+        # Specific scene interactables
+        if scene_name in (SceneName.AD, SceneName.SG, SceneName.RP):
+            # We deal with Conduit Canyon separately
             interactables.append('iscGoldChest')
         elif scene_name == SceneName.GC:
             interactables.extend(['iscChest1'] * 4)
-        if scene_name == SceneName.VF2:
+        elif scene_name == SceneName.VF2:
             interactables.append('iscChest2' if random.random() < .5 else 'iscScrapper')
-        if scene_name == SceneName.PM:
+        elif scene_name == SceneName.PM:
             interactables.extend(['iscChest2'] * 4)
+        elif scene_name == SceneName.PP:
+            drone = random.choice(('iscBrokenDrone1', 'iscBrokenDrone2',
+                                   'iscBrokenMissileDrone', 'iscBrokenHaulerDrone',
+                                   'iscBrokenJailerDrone', 'iscBrokenRechargeDrone'))
+            interactables.append(drone)
+        elif scene_name == SceneName.CC:
+            interactables.append('iscShrineRestack')
+            interactables.append('iscTemporaryItemsShop')
+            interactables.append('iscGoldChest')
+            interactables.append('iscTripleShopEquipment')
+        elif scene_name == SceneName.CE:
+            interactables.append('iscDroneScrapper')
+            interactables.append('iscDroneCombinerStation')
+            interactables.append('iscDuplicator' if random.random() < .5 else 'iscDuplicatorLarge')
+            drones = (
+                ('iscBrokenCleanupDrone', 'iscBrokenBombardmentDrone'),
+                ('iscBrokenBombardmentDrone', 'iscBrokenHaulerDrone'),
+                ('iscBrokenHaulerDrone', 'iscBrokenJunkDrone'),
+                ('iscBrokenJailerDrone', 'iscBrokenJunkDrone'),
+                ('iscBrokenJailerDrone', 'iscBrokenCopycatDrone'),
+                ('iscBrokenCleanupDrone', 'iscBrokenCopycatDrone'),
+                ('iscBrokenCleanupDrone', 'iscBrokenHaulerDrone'),
+                ('iscBrokenBombardmentDrone', 'iscBrokenJunkDrone'),
+                ('iscBrokenHaulerDrone', 'iscBrokenJailerDrone'),
+                ('iscBrokenJunkDrone', 'iscBrokenCopycatDrone'),
+                ('iscBrokenCleanupDrone', 'iscBrokenJailerDrone'),
+                ('iscBrokenBombardmentDrone', 'iscBrokenCopycatDrone'),
+                ('iscBrokenCleanupDrone', 'iscBrokenJunkDrone'),
+                ('iscDuplicatorWild',),
+                ('iscDuplicatorMilitary',),
+                ('iscDuplicatorMilitary',),
+                ('iscTripleDroneShop',),
+                ('iscTripleDroneShop',),
+                ('iscTripleDroneShop',),
+                ('iscTripleDroneShop',),
+            )
+            interactables.extend(random.choice(drones))
+        elif scene_name == SceneName.SH:
+            interactables.append('iscBrokenMegaDrone')
+            interactables.append('iscChest2')
+            interactables.append('iscChest1Stealthed')
+            # Skipping:
+            # - BrokenHAND because it doesn't belong in the isc dictionary.
+            #   This is handled manually when looting a stage.
+            # - DrifterBag because it contains temp items.
+
         if scenes[scene_name].scene_type == 1:
             if LOCKBOX_ALLOWED:
                 # For multiplayer we assume the Rusted Keys are as evenly spread out
@@ -843,7 +898,9 @@ class Run:
         self._scene_director._start(self._stages_cleared)
         stage_dccs = self._scene_director.monsters
         portals = set()
-        teleporter_exists = self._scene_data.scene_director.teleporter
+
+        scene_director = self._scene_data.scene_director
+        teleporter_exists = (scene_director and scene_director.teleporter) or scene_name == SceneName.CC
         if teleporter_exists:
             self._next_scene_name = self._pick_next_stage_scene()
             if random.random() <= BLUE_PORTAL_CHANCE / (self._blue_portals_opened + 1):
@@ -901,6 +958,11 @@ class Run:
 
         if scene_name == SceneName.SM:
             portals.add(Portal.A)
+
+        if scene_name == SceneName.SH:
+            items = self._actions['vault_han-d']()
+            for item in items:
+                self._inventory.give_item(item)
 
         colossus_path_stages = (SceneName.RA, SceneName.TC, SceneName.GD)
         if 'iscShrineHalcyonite' in interactables or 'iscShrineHalcyoniteTier1' in interactables:

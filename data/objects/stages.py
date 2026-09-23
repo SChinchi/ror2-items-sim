@@ -58,14 +58,18 @@ class ClassicStageInfo:
             monster_pool_category = self.monsters.generate_weighted_category_selection(
                 expansions, stages_cleared,
             )
-            if not self.is_category_selection_family(monster_pool_category):
-                monsters = DCCSBlender.get_blended_dccs(
-                    monster_pool_category, expansions, stages_cleared, None
-                )
-            else:
-                monsters = self.monsters.generate_weight_selection_from_single_category(
-                    monster_pool_category, expansions, stages_cleared
-                )
+            # Stages like solusweb have no valid choices, which leads to an
+            # empty weighted selection. This actually crashes in vanilla as
+            # well, but we need to safeguard here because the error is fatal.
+            if monster_pool_category:
+                if not self.is_category_selection_family(monster_pool_category):
+                    monsters = DCCSBlender.get_blended_dccs(
+                        monster_pool_category, expansions, stages_cleared, None
+                    )
+                else:
+                    monsters = self.monsters.generate_weight_selection_from_single_category(
+                        monster_pool_category, expansions, stages_cleared
+                    )
         if monsters and self.interactables:
             if monsters.expansions_in_effect:
                 interactables = DCCSBlender.get_blended_dccs(

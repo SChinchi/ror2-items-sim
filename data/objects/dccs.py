@@ -293,7 +293,9 @@ class DccsPool:
             if self.category_has_necessary_expansion_or_default_content(category, expansions, stages_cleared):
                 values.append(category)
                 weights.append(category.weight)
-        return random.choices(values, weights)[0]
+        if values:
+            return random.choices(values, weights)[0]
+        return None
 
     def category_has_necessary_expansion_or_default_content(self, category, expansions, stages_cleared):
         """
@@ -505,7 +507,7 @@ class DCCSBlender:
                     weighted_selection.append((pool_entry, pool_entry.weight))
         if not has_selected_any_conditional_entries:
             for pool_entry in dccs_category.included_conditions_not_met:
-                if pool_entry.is_available(stages_cleared):
+                if pool_entry.dccs.is_available(stages_cleared):
                     weighted_selection.append((pool_entry, pool_entry.weight))
         return weighted_selection
 
