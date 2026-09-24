@@ -27,7 +27,9 @@ class BaseSceneDirector:
 
         Notes
         -----
-        An implementation of `RoR2.SceneDirector.SelectCard()`.
+        An implementation of `RoR2.SceneDirector.SelectCard()`. This is also
+        reimplementaed verbatim in `RoR2.CampDirector` so keeping it in the
+        base class makes sense.
         """
         values = []
         weights = []
@@ -256,37 +258,6 @@ class SceneDirector(BaseSceneDirector):
                 cards.append(card)
             categories.add_category(category.name, category.weight, cards)
         return categories
-
-    def _select_card(self, deck, max_cost):
-        """
-        Select a random interactable from the list of available spawn cards.
-        
-        Parameters
-        ----------
-        deck : list
-            List of the available spawn cards.
-        max_cost : int
-            The remaining scene credits, as cards more expensive than this
-            cannot be selected.
-
-        Returns
-        -------
-        DirectorCard
-            The selected card.
-
-        Notes
-        -----
-        An implementation of `RoR2.SceneDirector.SelectCard()`.
-        """
-        values = []
-        weights = []
-        for card, weight in deck:
-            if card.spawn_card.cost <= max_cost:
-                values.append(card)
-                weights.append(weight)
-        if not values:
-            return None
-        return random.choices(values, weights)[0]
     
     def _populate_scene(self, interactable_credit, deck, item_counter):
         """
