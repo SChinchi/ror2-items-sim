@@ -2,7 +2,7 @@ from collections import Counter, defaultdict
 import random
 
 from constants import SceneName, Portal, Expansion, ALL_EXPANSIONS
-from data_loader import ItemTiers, Items, Equipment, isc, droptables, scenes
+from data_loader import ItemTiers, Items, Equipment, isc, droptables, bodies, scenes
 from data.objects import EquipmentDef, ItemDef
 from data.objects.dccs import FamilyDirectorCardCategorySelection
 from data.objects.interactables import *
@@ -17,9 +17,12 @@ CARD_BIAS_ENABLED = True
 LOCKBOX_ALLOWED = True
 FREE_CHEST_ALLOWED = True
 TRADE_REGEN_SCRAP = True
+
 USE_GOLD_PORTAL = False
 USE_ARTIFACT_PORTAL = False
 USE_GREEN_PORTAL = False
+USE_ENCRYPTED_PORTAL = False
+
 # All items are picked up indiscriminately for item tier statistics, but Purity
 # can have negative effects for luck rolls, so we need to know whether in a
 # normal run one intends to actually pick it up.
@@ -401,6 +404,7 @@ class Run:
         self._expansions = set(expansions)
         self._is_sotv_enabled = Expansion.SOTV in self._expansions
         self._is_sots_enabled = Expansion.SOTS in self._expansions
+        self._is_ac_enabled = Expansion.AC in self._expansions
         self._is_command_enabled = False
         self._is_sacrifice_enabled = False
         self._is_delusion_enabled = is_delusion_enabled
@@ -438,6 +442,8 @@ class Run:
         self._void_fields_visited = False
         self._meridian_visited = False
         self._false_son_boss_complete = False
+        self._solus_wing_defeated = False
+        self._solus_heart_defeated = False
         self._inventory.reset()
         self.stats.reset_data()
 
@@ -448,7 +454,7 @@ class Run:
         # generate drops for it.
         actions = {}
         interactables = [
-            # Chests - no Adaptive Chest
+            # Chests - no Adaptive Chest or Temporary Item Distributor
             'iscChest1', 'iscChest2', 'iscEquipmentBarrel', 'iscLunarChest',
             'iscCategoryChestDamage', 'iscCategoryChestHealing', 'iscCategoryChestUtility',
             'iscCategoryChest2Damage', 'iscCategoryChest2Healing', 'iscCategoryChest2Utility',
@@ -501,6 +507,9 @@ class Run:
         )
         actions['false_son_aurelionite_drop'] = OptionChestBehavior.generate_purchase_action(
             droptables['AurelioniteHeartPickupDropTable'], self._tier_droplists, 3
+        )
+        actions['solus_heart_drop'] = droptables['dtSolusHeart'].generate_loot_drop_action(
+            self._tier_droplists
         )
         return actions
 
@@ -717,7 +726,7 @@ class Run:
                 collected.append(item)
         return collected
 
-    def _loot_teleporter(self, dccs, shrines_activated):
+    def _loot_teleporter(self, dccs, shrines_activated, use_access_code):
         """
         Collect all the loot dropped from the teleporter event.
 
@@ -728,6 +737,9 @@ class Run:
         shrines_activated : int
             The number of the Shrines of the Mountain that have been activated.
             Each one provides 100% more loot.
+        use_access_code : bool
+            Whether the Solus Amalgamator will spawn along with the normal boss.
+            Affects which boss items can be dropped.
 
         Returns
         -------
@@ -744,17 +756,20 @@ class Run:
         """
         total_drops = self._num_players * (shrines_activated + 1)
         boss = Run.spawn_teleporter_boss(dccs, self._stages_cleared, self._expansions)
+        boss_drops = []
         if boss.body.item_drop:
-            green_item_count = sum(random.random() > BOSS_DROP_CHANCE for _ in range(total_drops))
-        else:
-            green_item_count = total_drops
-        boss_item_count = total_drops - green_item_count
+            boss_drops.append(boss.body.item_drop)
+        if use_access_code:
+            boss_drops.append(bodies['SolusAmalgamatorBody'].item_drop)
         loot = {}
-        if green_item_count:
-            green_item = self._actions['teleporter_drop']()
-            loot[green_item] = green_item_count
-        if boss_item_count:
-            loot[boss.body.item_drop] = boss_item_count
+        green_item = self._actions['teleporter_drop']()
+        for _ in range(total_drops):
+            drop = green_item
+            if boss_drops and random.random() <= BOSS_DROP_CHANCE:
+                drop = random.choice(boss_drops)
+            if drop not in loot:
+                loot[drop] = 0
+            loot[drop] += 1
         return loot
 
     def _collect_equipment(self, equipment):
@@ -933,13 +948,18 @@ class Run:
                         portals.add(Portal.B)
 
         if teleporter_exists:
-            for item, count in self._loot_teleporter(stage_dccs, boss_shrines).items():
+            use_access_code = (self._is_ac_enabled and not self._solus_wing_defeated and
+                              (stage_order == 2 or scene_name == SceneName.RP)
+                              and scene_name not in (SceneName.TC, SceneName.GD))
+            for item, count in self._loot_teleporter(stage_dccs, boss_shrines, use_access_code).items():
                 self._inventory.give_item(item, count)
                 loot[ItemDef].extend([item] * count)
             if Portal.B in portals:
                 self._blue_portals_opened += 1
             if gold_shrines:
                 portals.add(Portal.G)
+            if use_access_code or (self._is_ac_enabled and scene_name == SceneName.SC):
+                portals.add(Portal.E)
 
         if (teleporter_exists or scene_name == SceneName.BA) and self._is_delusion_enabled:
             for item in delusion_loot:
@@ -955,14 +975,11 @@ class Run:
                     loot[ItemDef].append(item)
             if self._is_sotv_enabled:
                 portals.add(Portal.V)
-
-        if scene_name == SceneName.SM:
+        elif scene_name == SceneName.SM:
             portals.add(Portal.A)
-
-        if scene_name == SceneName.SH:
-            items = self._actions['vault_han-d']()
-            for item in items:
-                self._inventory.give_item(item)
+        elif scene_name == SceneName.PM:
+            if self._is_ac_enabled:
+                portals.add(Portal.E)
 
         colossus_path_stages = (SceneName.RA, SceneName.TC, SceneName.GD)
         if 'iscShrineHalcyonite' in interactables or 'iscShrineHalcyoniteTier1' in interactables:
@@ -1013,6 +1030,17 @@ class Run:
                 item = max(drops, key=lambda x: x.tier._tier)
                 self._inventory.give_item(item)
                 loot[ItemDef].append(item)
+        elif scene_name == SceneName.SH:
+            items = self._actions['vault_han-d']()
+            for item in items:
+                self._inventory.give_item(item)
+            self._solus_wing_defeated = True
+        elif scene_name == SceneName.NS:
+            for _ in range(self._num_players):
+                item = self._actions['solus_heart_drop']()
+                self._inventory.give_item(item)
+                loot[ItemDef].append(item)
+            self._solus_heart_defeated = True
 
         if scene_name == SceneName.AD:
             scene_name += '-open' if self._scene_director.is_bonus_credits_available else '-closed'
@@ -1033,7 +1061,8 @@ class Run:
         """
         Choose whether to use a portal or advance to the next stage naturally.
 
-        The order of preference is Null > Artifact > Green > Gold > Lunar Seer > RNG.
+        The order of preference is Null > Artifact > Green > Encrypted >
+        Gold > Lunar Seer > RNG.
         
         Returns
         -------
@@ -1043,7 +1072,17 @@ class Run:
         blue = Portal.B in portals
         take_gold_portal = USE_GOLD_PORTAL and Portal.G in portals
         self._explicit_next_scene_name = None
-        if blue and self._stages_cleared + 1 == void_fields and not self._void_fields_visited:
+        scene_name = self._scene_name
+        next_stage_order = scenes[self._next_scene_name].stage_order
+        # First we do stages that chain together, then we check for any portals
+        if scene_name == SceneName.CC:
+            self._explicit_next_scene_name = SceneName.SH
+        elif scene_name == SceneName.SH:
+            self._explicit_next_scene_name = SceneName.CE
+        elif scene_name == SceneName.CE:
+            if not self._solus_heart_defeated:
+                self._explicit_next_scene_name = SceneName.NS
+        elif blue and self._stages_cleared + 1 == void_fields and not self._void_fields_visited:
             self._explicit_next_scene_name = SceneName.VF
         elif USE_ARTIFACT_PORTAL and Portal.A in portals:
             self._explicit_next_scene_name = SceneName.BA
@@ -1061,6 +1100,11 @@ class Run:
                 self._explicit_next_scene_name = SceneName.PM
             else:
                 raise ValueError('Green portal spawned on some unexpected stage.')
+        elif USE_ENCRYPTED_PORTAL and Portal.E in portals:
+            if next_stage_order == 3:
+                self._explicit_next_scene_name = SceneName.CC
+            else:
+                self._explicit_next_scene_name = SceneName.CE if self._solus_wing_defeated else SceneName.SH
         elif take_gold_portal:
             self._explicit_next_scene_name = SceneName.GC
         elif blue and self._scene_data.stage_order in stage_preferences:

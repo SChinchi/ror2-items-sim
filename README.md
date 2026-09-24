@@ -2,7 +2,7 @@
 
 Simulate item generation for any stage and collect statistics for the spawned interactables, or simulate a run session to see how many and what items are encountered.
 
-_In terms of extracted assets it's updated for version 1.4.1, but some Seekers of the Storm and Alloyed Collective features have not been implemented fully for the run simulator. This includes the Alloyed Collective path and the item effects of Sale Star and Functional Coupler._
+_Updated for version 1.4.1, but the item effects for Sale Star and Functional Coupler have not been implemented yet for the run simulator._
 
 ## How to use
 
@@ -67,7 +67,7 @@ The `Run` class is an implementation of a run session, which can be used to anal
 - The Lunar Cauldrons and Shop in the Bazaar Between Time are not utilised as they are only about context-related decisions. However, one can set a stage preference for the Lunar Seer for a bias towards specific stages. One can also control when or whether to visit the Void Fields at all.
 - The same reasoning applies to Chef's recipes. As such, there is no need to track the number of Food tier items.
 - The code calculates how many Newt Altars can spawn on each stage, but it does not take into account whether they are reachable in order to open a Blue Portal. It is assumed that if at least one altar has spawned, it can be reached. Only one of the Distant Roost variants has a true chance of not spawning any altars, in which case the Lunar Seer cannot be used. However, a portal is forcefully opened for the Void Fields, simulating the scenario where if the player wants to visit the Void Fields after the first stage and is unable to, they restart the game.
-- The choice to use the Green/Gold/Artifact portals can be toggled. If more than one portal options are available on the same stage, the priority is Blue (for Void Fields) > Artifact > Gold (during the Colossus path) > Green > Gold > Blue (for Lunar Seer) > normal stage RNG.
+- The choice to use the Green/Gold/Artifact portals can be toggled. If more than one portal options are available on the same stage, the priority is Blue (for Void Fields) > Artifact > Gold (during the Colossus path) > Green > Encrypted > Gold > Blue (for Lunar Seer) > normal stage RNG.
 - Bulwark's Ambry assumes the Artifact of Command is selected, which affects interactable generation.
 
 Throughout the stages it keeps track of various things, e.g., on which stage the Executive Card was found, how many multishops were purchased with it, how many Regenerating Scrap the player had at the end of each stage, etc.
