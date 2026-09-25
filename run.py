@@ -1121,7 +1121,8 @@ class Run:
             else:
                 raise ValueError('Green portal spawned on some unexpected stage.')
         elif USE_ENCRYPTED_PORTAL and Portal.E in portals:
-            if next_stage_order == 3:
+            # The boss check is for the portal from Prime Meridian.
+            if next_stage_order == 3 and not self._solus_wing_defeated:
                 self._explicit_next_scene_name = SceneName.CC
             else:
                 self._explicit_next_scene_name = SceneName.CE if self._solus_wing_defeated else SceneName.SH
