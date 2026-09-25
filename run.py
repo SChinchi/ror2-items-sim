@@ -513,29 +513,48 @@ class Run:
         )
         return actions
 
-    def _pick_next_stage_scene(self, destination_group=None):
+    def _pick_next_stage_scene(self, destination_group):
         """
-        Select the next scene.
+        Select the next scene from a collection of valid destinations.
 
         Parameters
         ----------
-        destination_group : list, default None
-            The explicit destination group to select from, e.g., for the
-            starting stage. By default it will use the destination group of the
-            current scene.
+        destination_group : list
+            A list of (scene_name, weight) for potential destinations.
 
         Returns
+        -------
         str
-            The internal name of the selected scene.
+
+        Notes
+        -----
+        An implementation of `RoR2.Run.PickNextStageScene`.
+        """
+        if not destination_group:
+            raise ValueError('No valid destinations found.')
+        scene, weight = zip(*destination_group)
+        return random.choices(scene, weight)[0]
+
+    def _pick_next_stage_scene_from_current_scene_destinations(self):
+        """
+        Select the next scene based on the current scene.
+
+        Returns
+        -------
+        str
 
         Notes
         -----
         An implementation of `RoR2.Run.PickNextStageSceneFromCurrentSceneDestinations`.
         """
-        destination_group = destination_group or scenes[self._scene_name].destinations
-        destinations = [d for d in destination_group if self._can_pick_stage(d[0])]
-        d, w = zip(*destinations)
-        return random.choices(d, w)[0]
+        scene_data = self._scene_data
+        collection = scene_data.destinations
+        if scene_data.destinations:
+            if self._stages_cleared >= 4 and scene_data.use_looping_destinations:
+                if scene_data.destinations_loop:
+                    collection = scene_data.destinations_loop
+        destinations = [d for d in collection if self._can_pick_stage(d[0])]
+        return self._pick_next_stage_scene(destinations)
 
     def _can_pick_stage(self, scene_name):
         """
@@ -918,7 +937,7 @@ class Run:
         scene_director = self._scene_data.scene_director
         teleporter_exists = (scene_director and scene_director.teleporter) or scene_name == SceneName.CC
         if teleporter_exists:
-            self._next_scene_name = self._pick_next_stage_scene()
+            self._next_scene_name = self._pick_next_stage_scene_from_current_scene_destinations()
             if random.random() <= BLUE_PORTAL_CHANCE / (self._blue_portals_opened + 1):
                 portals.add(Portal.B)
             if self._stages_cleared >= 5 and self._stages_cleared % 5 == 2:
