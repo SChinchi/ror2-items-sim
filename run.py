@@ -228,7 +228,7 @@ class LootReport:
             ('iscCasinoChest', 'adaptive_chest'),
             ('iscVoidCamp', 'void_seed'),
             ('iscVoidChest', 'void_cradle'),
-            ('iscShrineHalcyonite', 'halcyonite'),
+            ('iscShrineHalcyonite', 'halcyonite_shrine'),
             ('iscTemporaryItemsShop', 'temp_item_shop'),
             ('iscTripleDroneShop', 'drone_shop'),
             ('iscDroneCombinerStation', 'drone_combiner'),
@@ -238,7 +238,7 @@ class LootReport:
         total['mountain_shrine'] += isc_counter.get('iscShrineBossSandy', 0)
         total['mountain_shrine'] += isc_counter.get('iscShrineBossSnowy', 0)
         total['void_cradle'] += isc_counter.get('iscVoidChestSacrificeOn', 0)
-        total['halcyonite'] += isc_counter.get('iscShrineHalcyoniteTier1', 0)
+        total['halcyonite_shrine'] += isc_counter.get('iscShrineHalcyoniteTier1', 0)
         total['drones'] = sum(count for isc, count in isc_counter.items() if 'iscBroken' in isc)
         total['tricorn'] = equipment_counter.get(Equipment.BossHunter, 0)
         out['total'] = total
