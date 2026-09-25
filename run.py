@@ -48,6 +48,7 @@ class LootReport:
         self._tier_droplists = tier_droplists
         self._inventory = inventory
         self.scenes = []
+        self.stages_cleared = []
         self.portals = []
         self.dccs = []
         self.interactables = []
@@ -60,6 +61,7 @@ class LootReport:
     def reset_data(self):
         """Reset the logger data."""
         self.scenes.clear()
+        self.stages_cleared.clear()
         self.portals.clear()
         self.dccs.clear()
         self.interactables.clear()
@@ -69,8 +71,9 @@ class LootReport:
         self.card_multibuys.clear()
         self.delusion_loot.clear()
 
-    def update_data(self, scene_name, spawned_portals, dccs, interactables,
-                    loot, free_chest_items, card_multibuys, delusion_loot):
+    def update_data(self, scene_name, stages_cleared, spawned_portals, dccs,
+                    interactables, loot, free_chest_items, card_multibuys,
+                    delusion_loot):
         """
         Update the logger data.
 
@@ -80,6 +83,8 @@ class LootReport:
         ----------
         scene_name : str
             The name of the current scene.
+        stages_cleared : int
+            The number of stages cleared up to this point. Ignores Hidden Realms.
         spawned_portals : list
             A list of booleans for the portals spawned. They are expected to be
             in the order Blue, Gold, and Purple Portal. The Celestial, Artifact,
@@ -97,14 +102,16 @@ class LootReport:
         card_multibuys : list
             A list of multishop interactables for which all loot was purchased
             using an Executive Card.
-        delusion_loot : list
+        delusion_loot : list or None
             A list of all loot from chests that can be reset with this Artifact.
+            If the stage has no teleporter, it must be None.
 
         Returns
         -------
         None
         """
         self.scenes.append(scene_name)
+        self.stages_cleared.append(stages_cleared)
         self.portals.append(spawned_portals)
         self.dccs.append(dccs.name if dccs else 'None')
         self.interactables.append(interactables)
@@ -116,7 +123,8 @@ class LootReport:
         self.item_count.append(item_count)
         self.free_chest_items.append(free_chest_items)
         self.card_multibuys.append(card_multibuys)
-        self.delusion_loot.append(delusion_loot)
+        if delusion_loot is not None:
+            self.delusion_loot.append(delusion_loot)
 
     def consolidate_data(self):
         """
@@ -235,12 +243,11 @@ class LootReport:
         total['tricorn'] = equipment_counter.get(Equipment.BossHunter, 0)
         out['total'] = total
         stage_card_found = -1
-        for stage, loot in enumerate(self.loot):
+        scene_name_card_found = ''
+        for stage_index, loot in enumerate(self.loot):
             if Equipment.MultiShopCard in loot[EquipmentDef]:
-                # This isn't necessary the number of cleared stages if Hidden
-                # Realms have been visited. Use the result from `out['scenes']`
-                # to deduce that.
-                stage_card_found = stage
+                stage_card_found = self.stages_cleared[stage_index]
+                scene_name_card_found = self.scenes[stage_index]
                 break
         terminals = (
             'iscTripleShop',
@@ -258,6 +265,7 @@ class LootReport:
                     card_multishops[i] += card_multibuys.count(terminal)
         out['card'] = {
             'stage': stage_card_found,
+            'name': scene_name_card_found,
             'multishops': multishops,
             'card_multishops': card_multishops,
         }
@@ -1067,13 +1075,14 @@ class Run:
 
         self.stats.update_data(
             scene_name,
+            self._stages_cleared,
             portals,
             stage_dccs,
             interactables,
             loot,
             free_chest_items,
             card_multibuys,
-            delusion_loot,
+            delusion_loot if teleporter_exists else None,
         )
         return
 
