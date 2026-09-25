@@ -600,12 +600,18 @@ class Run:
           interactable generation.
         """
         scene_name = self._scene_name
-        if scene_name == SceneName.AD:
-            self._scene_director.is_bonus_credits_available = random.random() > .5
+        self._scene_director.is_bonus_credits_available = random.random() > .5 and scene_name == SceneName.AD
         if scene_name == SceneName.BA:
             is_command_enabled = self._scene_director.is_command_enabled
             self._scene_director.is_command_enabled = True
-        interactables = self._scene_director.populate_scene(self._stages_cleared, False)
+        # `self._scene_director._start` is called earlier because we need to
+        # initialise all the monster and interactable DCCS properly. However, if
+        # the scene has no SceneDirector, this process doesn't take place even
+        # if in theory the scene has valid interactable DCCS.
+        if self._scene_data.scene_director:
+            interactables = self._scene_director.populate_scene(self._stages_cleared, False)
+        else:
+            interactables = []
         if scene_name == SceneName.BA:
             self._scene_director.is_command_enabled = is_command_enabled
         for _ in range(interactables.count('iscVoidCamp')):
