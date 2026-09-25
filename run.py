@@ -113,7 +113,7 @@ class LootReport:
         self.scenes.append(scene_name)
         self.stages_cleared.append(stages_cleared)
         self.portals.append(spawned_portals)
-        self.dccs.append(dccs.name if dccs else 'None')
+        self.dccs.append(dccs)
         self.interactables.append(interactables)
         self.loot.append(loot)
         item_count = [self._inventory.count(item) for item in
