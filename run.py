@@ -640,7 +640,8 @@ class Run:
             #   This is handled manually when looting a stage.
             # - DrifterBag because it contains temp items.
 
-        if scenes[scene_name].scene_type == 1:
+        scene_data = self._scene_data
+        if scene_data.scene_type in (1, 5) or scene_data.allow_item_spawn:
             if LOCKBOX_ALLOWED:
                 # For multiplayer we assume the Rusted Keys are as evenly spread out
                 # as possible to maximise spawning Lockboxes.
@@ -1133,7 +1134,11 @@ class Run:
             return []
         stage_order = scenes[self._next_scene_name].stage_order
         destinations = [scene for scene, data in scenes.items()
-                        if stage_order == data.stage_order and self._can_pick_stage(scene)]
+                        if not data.filter_bazaar
+                        and data.scene_type != 6
+                        and data.stage_order == stage_order
+                        and (not data.required_dlc or data.required_dlc in self._expansions)
+                        and (self._stages_cleared >= 4 or not data.locked_before_looping)]
         replacements = [SceneName.GC]
         weights = [0.05]
         if self._is_sotv_enabled and self._stages_cleared >= 4:
@@ -1157,7 +1162,7 @@ class Run:
 
     def _advance_stage(self):
         """Advance to the next stage."""
-        if self._scene_data.scene_type == 1:
+        if (self._scene_data.scene_type in (1, 5)) and not self._scene_data.prevent_stage_advance:
             self._stages_cleared += 1
         if self._explicit_next_scene_name:
             self._scene_name = self._explicit_next_scene_name
