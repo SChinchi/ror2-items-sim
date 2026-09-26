@@ -2,7 +2,7 @@
 
 Simulate item generation for any stage and collect statistics for the spawned interactables, or simulate a run session to see how many and what items are encountered.
 
-_Updated for version 1.4.1, but the item effects for Sale Star and Functional Coupler have not been implemented yet for the run simulator._
+_Updated for version 1.4.1, but the Sale Star has not been implemented yet for the run simulator._
 
 ## How to use
 
@@ -50,9 +50,8 @@ director2.populate_camp(print_result=False)  # Return the generated spawn cards 
 The `Run` class is an implementation of a run session, which can be used to analyse how many items of each tier one can obtain by full looting a number of stages. Since it has no intelligent agent to make context-related decisions, it is limited in some aspects. For example,
 
 - While it supports multiplayer, it cannot make decisions for how to split the loot. For the purposes of this simulation loot distribution is irrelevant, therefore, a unified inventory is used.
-- It randomly selects an item to purchase from a multishop, but it will aggressively search for an Executive Card from equipment multishops.
-  - The order of priority is Executive Card > Recycler > Trophy Hunter's Tricorn > hidden terminal if available to try its luck on the aforementioned equipment > whatever.
-  - On picking up an equipment if `Run.CARD_BIAS_ENABLED` is enabled and the equipment is not any of the above, it will use the Recycler if available.
+- It randomly selects an item to purchase from a multishop, but it tries to prioritise the Executive Card from equipment multishops.
+  - If `USE_RECYCLER` is enabled, the decision making is more aggressive. The priority from any visible terminal is Executive Card > Recycler > Trophy Hunter's Tricorn > hidden terminal if available to try its luck on the aforementioned equipment > whatever. The Recycler is exchanged for the Executive Card when eventually found, but if it's is a multiplayer game or the player has Functional Coupler, it will keep both and reroll any non-tricorn equipment.
   - Drifter's Tinker is not taken into account in all of this, as is not MUL-T's Retool.
 - The following interactables are not looted due to special circumstances, but their encounter is logged:
   - Adaptive Chests drop loot in an interactive way.

@@ -13,10 +13,11 @@ BLUE_PORTAL_CHANCE = .05
 PURPLE_PORTAL_CHANCE = .1
 BOSS_DROP_CHANCE = .15
 
-CARD_BIAS_ENABLED = True
 LOCKBOX_ALLOWED = True
 FREE_CHEST_ALLOWED = True
-TRADE_REGEN_SCRAP = True
+
+USE_RECYCLER = True
+USE_REGEN_SCRAP = True
 
 USE_GOLD_PORTAL = False
 USE_ARTIFACT_PORTAL = False
@@ -740,7 +741,7 @@ class Run:
                         hidden.append(item)
                 if Equipment.MultiShopCard in visible:
                     item = self._collect_equipment(Equipment.MultiShopCard)
-                elif Equipment.Recycle in visible and not self._inventory.has_recycler:
+                elif USE_RECYCLER and Equipment.Recycle in visible and not self._inventory.has_recycler:
                     item = self._collect_equipment(Equipment.Recycle)
                 elif Equipment.BossHunter in visible:
                     item = self._collect_equipment(Equipment.BossHunter)
@@ -810,9 +811,11 @@ class Run:
         """
         Add an equipment to the list of encountered equipment.
 
-        If `CARD_BIAS_ENABLED` is True, the method will try to get hold of a
+        If `USE_RECYCLER` is True, the method will try to get hold of a
         Recycler and reroll any future equipment until an Executive Card is
-        found.
+        found. If the player has a Functional Coupler or this is a multiplayer
+        run, if the team has a Recycler when they find the Executive Card, they
+        will keep both, else they will exchange it for the Executive Card.
 
         Parameters
         ----------
@@ -833,26 +836,47 @@ class Run:
         stage the Recycler was first found.
         """
         inventory = self._inventory
-        if CARD_BIAS_ENABLED:
+        if USE_RECYCLER:
+            hold_multiple_equipment = self._num_players > 1 or self._inventory.count(Items.ExtraEquipment)
             if not inventory.has_card:
                 if equipment == Equipment.MultiShopCard:
-                    inventory.has_recycler = False
-                    inventory.can_recycle = False
+                    inventory.has_card = True
+                    if not hold_multiple_equipment:
+                        # Trade the Recycler if we're currently holding it
+                        inventory.has_recycler = False
+                        inventory.can_recycle = False
                 elif not inventory.has_recycler and equipment == Equipment.Recycle:
                     inventory.has_recycler = True
                 if inventory.has_recycler:
                     if inventory.can_recycle:
-                        # I imagine it is an unlikely behaviour that someone
-                        # would recycle a Trophy Hunter's Tricon for the small
-                        # chance of getting an Executive Card, so it is skipped.
-                        if equipment != Equipment.BossHunter:
+                        # If the equipment is an Executive Card, we've just
+                        # picked it up and we don't want to reroll it. And if
+                        # it's a not a Trophy Hunter's Tricorn, then reroll it.
+                        if equipment not in (Equipment.MultiShopCard, Equipment.BossHunter):
                             equipment = self._reroll_item(equipment)
                             if equipment == Equipment.MultiShopCard:
-                                inventory.has_recycler = False
-                                inventory.can_recycle = False
+                                inventory.has_card = True
+                                if not hold_multiple_equipment:
+                                    inventory.has_recycler = False
+                                    inventory.can_recycle = False
+                    else:
+                        # We've just picked up the Recycler
+                        inventory.can_recycle = True
+            else:
+                # We already have the Executive Card. If this a Recycler and we
+                # don't have one, check if we can hold multiple equipment. Else
+                # we're already holding both equipment, so we can just reroll
+                # any non-tricorn ones.
+                if not inventory.has_recycler and equipment == Equipment.Recycle:
+                    if hold_multiple_equipment:
+                        inventory.has_recycler = True
+                if inventory.has_recycler:
+                    if inventory.can_recycle:
+                        if equipment != Equipment.BossHunter:
+                            equipment = self._reroll_item(equipment)
                     else:
                         inventory.can_recycle = True
-        if equipment == Equipment.MultiShopCard and not inventory.has_card:
+        elif equipment == Equipment.MultiShopCard and not inventory.has_card:
             inventory.has_card = True
         inventory.equipment.append(equipment)
         return equipment
@@ -1035,7 +1059,7 @@ class Run:
                     portals.add(Portal.Gr)
 
         regen_scraps = self._inventory.count(Items.RegeneratingScrap)
-        if TRADE_REGEN_SCRAP and regen_scraps and 'iscDuplicatorLarge' in interactables:
+        if USE_REGEN_SCRAP and regen_scraps and 'iscDuplicatorLarge' in interactables:
             item = self._actions['green_printer']()
             self._inventory.give_item(item, regen_scraps)
             loot[ItemDef].extend([item] * regen_scraps)
