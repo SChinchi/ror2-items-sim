@@ -151,7 +151,6 @@ def simulate_run(stages, void_fields=-1, num_players=1, iterations=40000, is_del
     # Delusion item tier data
     if is_delusion_enabled:
         print('The Artifact of Delusion contributed this many items in the tally above.\n')
-        # TODO: Also add Delusion total per row (which is total per stage)
         delusion_extra['TOTAL'] = np.array(tuple(delusion_extra.values())).sum(axis=0)
         col_fmt = ('^', (9, 2), float)
         _print_results(
